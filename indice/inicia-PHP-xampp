@@ -1,7 +1,0 @@
-#!/bin/bash
-cd ..
-cd public_html/indice
-firefox localhost:8000/ &
-xterm -e /opt/lampp/bin/php -S localhost:8000
-
-
