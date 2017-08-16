@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://leituracrista.com/livros/teologia-do-pacto-ou-dispensacoes/</loc>
+    <lastmod>2017-08-07T17:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leituracrista.com/o-que-respondi-volume-11/</loc>
+    <lastmod>2017-08-01T17:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://leituracrista.com/folhetos/doutrinarios/a-cruz-e-a-gloria/</loc>
     <lastmod>2017-07-21T17:00:00+09:00</lastmod>
   </url>
@@ -13,6 +23,11 @@
   
   <url>
     <loc>http://leituracrista.com/folhetos/doutrinarios/a-fonte/</loc>
+    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leituracrista.com/livros/a-historia-da-igreja/</loc>
     <lastmod>2017-07-21T17:00:00+09:00</lastmod>
   </url>
   
@@ -788,7 +803,7 @@
   
   <url>
     <loc>http://leituracrista.com/book/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2017-08-07T17:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -799,7 +814,7 @@
   
   <url>
     <loc>http://leituracrista.com/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2017-08-07T17:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
