@@ -4,18 +4,18 @@
   <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8")'>
+    <meta charset="utf-8">
     <meta name="generator" content="Hugo 0.20.2" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1")'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")'>
-    <meta name="viewport" content="width=device-width, initial-scale=1")'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -50,6 +50,12 @@
     }
   </script>
 
+<script>
+  $("#myModal").on('hidden.bs.modal', function (e) {
+    $('#myModal iframe').attr('src', '');
+});
+</script>  
+
   </head>
 
   <body>
@@ -83,7 +89,7 @@
 </script>
 
   <div class="row">
-    <div class="col-sm-3")'>
+    <div class="col-sm-3">
       <aside class="site">
 
   
@@ -115,25 +121,25 @@
 </aside>
 
     </div> 
-    <div class="col-sm-9")'>
+    <div class="col-sm-9">
 
       <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://leituracrista.com/"/>
-        <meta itemprop="dateModified" content="2017-07-14T17:00:00&#43;09:00")'>
+        <meta itemprop="dateModified" content="2017-07-14T17:00:00&#43;09:00">
         <meta itemprop="headline" content="Os Dez Mandamentos">
         <meta itemprop="description" content="OS DEZ MANDAMENTOS Seu conteúdo moral e sua aplicação para o cristão Tenho o propósito de considerar aqui o assunto dos dez mandamentos e sua aplicação moral para o cristão. Mas antes vamos ler algumas passagens das Escrituras: &ldquo;Sabendo que o homem não é justificado pelas obras da lei, mas pela fé em Jesus Cristo&hellip; Porque eu pela lei estou morto para a lei, para viver para Deus&hellip; Todos aqueles pois que são das obras da lei estão debaixo da maldição; porque escrito está: Maldito todo aquele que não permanecer em todas as coisas que estão escritas no livro da lei, para fazê-las.">
         <meta itemprop="url" content="http://leituracrista.com/livretes/os-dez-mandamentos/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="http://leituracrista.com/images/os-dez-mandamentos-c-h-brown.jpeg" />
-          <meta itemprop="width" content="800")'>
-          <meta itemprop="height" content="800")'>
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
         </div>
         <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
           <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
             <meta itemprop="url" content="http://leituracrista.com/images/logo.jpg">
-            <meta itemprop="width" content="100")'>
-            <meta itemprop="height" content="100")'>
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
           </div>
           <meta itemprop="name" content="Leitura Cristã">
         </div>
@@ -171,6 +177,7 @@
 
         </header>
 
+
   <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -179,7 +186,7 @@
           <iframe id="myInframe"  name="myFrame" src="#" width="100%" height="75%" frameborder="0" allowtransparency="true"></iframe>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          <button onclick="$('#myModal iframe').attr('src', '');" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
         </div>
       </div>
       
@@ -206,8 +213,8 @@ lei, para fazê-las. E é evidente que pela lei ninguém será justificado
 diante de Deus, porque o justo vivera da fé. Ora a lei não é da fé; mas
 o homem, que fizer estas coisas, por elas viverá&hellip; Porque o pecado não
 terá domínio sobre vós, pois não estais debaixo da lei, mas debaixo da
-graça.&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/gl/2/16,19")'>Gálatas 2:16,19</a>;
-<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/gl/3/10-12")'>3:10-12</a>; <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/rm/6/14")'>Romanos
+graça.&rdquo; (<a href="http://bibliaonline.com.br/acf/gl/2/16,19">Gálatas 2:16,19</a>;
+<a href="http://bibliaonline.com.br/acf/gl/3/10-12">3:10-12</a>; <a href="http://bibliaonline.com.br/acf/rm/6/14">Romanos
 6:14</a>).</p>
 
 <p>A razão pela qual lemos estes versículos é a seguinte: ao considerar o
@@ -216,9 +223,9 @@ aplicá-los de uma maneira legalista como se nós, nesta dispensação da
 graça de Deus, estivéssemos sob a lei. Não! Nós estamos sob a graça; a
 pura graça soberana; não há nada legalista nela.</p>
 
-<p>Lemos no <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20")'>capítulo 20
-de</a><a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20")'>Êxodo</a>
-a augusta lei de Deus, as &ldquo;dez palavras&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/34/28")'>Êxodo
+<p>Lemos no <a href="http://bibliaonline.com.br/acf/ex/20">capítulo 20
+de</a><a href="http://bibliaonline.com.br/acf/ex/20">Êxodo</a>
+a augusta lei de Deus, as &ldquo;dez palavras&rdquo; (<a href="http://bibliaonline.com.br/acf/ex/34/28">Êxodo
 34:28</a> - Almeida Versão
 Atualizada) dadas aos filhos de Israel, por meio de Moisés, no monte
 Sinai. Nosso propósito é identificar a que correspondem essas &ldquo;dez
@@ -230,27 +237,27 @@ cristianismo. Vamos procurar identificá-los.</p>
 
 <h1 id="o-primeiro-mandamento-mosaico">O Primeiro Mandamento Mosaico</h1>
 
-<p>O primeiro mandamento se encontra em <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/3")'>Êxodo
+<p>O primeiro mandamento se encontra em <a href="http://bibliaonline.com.br/acf/ex/20/3">Êxodo
 20:3</a>: &ldquo;Não terás outros deuses
 diante de Mim&rdquo;. Este encabeça a lista e é fundamental. Era um elemento
 essencial da dispensação judaica, e a revelação cristã conserva esta
-verdade inviolada. Lemos em <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/8")'>1 Coríntios
-8</a>, no final do <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/8/4")'>versículo
+verdade inviolada. Lemos em <a href="http://bibliaonline.com.br/acf/1co/8">1 Coríntios
+8</a>, no final do <a href="http://bibliaonline.com.br/acf/1co/8/4">versículo
 4</a>, que &ldquo;não há outro Deus,
 senão um só&rdquo;. Quão clara e inequívoca é esta afirmação! Vamos ler o
-<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/8/6")'>versículo 6</a>: &ldquo;Todavia para nós
+<a href="http://bibliaonline.com.br/acf/1co/8/6">versículo 6</a>: &ldquo;Todavia para nós
 há um só Deus, o Pai, de Quem é tudo e para Quem nós vivemos; e um só
 Senhor, Jesus Cristo, pelo Qual são todas as coisas, e nós por Ele.&rdquo;
 Quando um &ldquo;testemunha de Jeová&rdquo; vier à sua porta para desafiá-lo quanto
-à fé que você professa de Cristo como sendo Deus, leia para ele <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/8/4-6")'>1 Coríntios
+à fé que você professa de Cristo como sendo Deus, leia para ele <a href="http://bibliaonline.com.br/acf/1co/8/4-6">1 Coríntios
 8:4-6</a>. Confessamos a um só
 Deus, mas aprouve Àquele um só Deus revelar-Se em três Pessoas. Filipe
 rogou ao Senhor Jesus: &ldquo;Senhor, mostra-nos o Pai&rdquo;. Quão maravilhosa foi
 a resposta do nosso Senhor! &ldquo;Quem Me vê a Mim vê o Pai&hellip; estou no Pai,
-e o Pai em Mim&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/jo/14/8-11")'>João
+e o Pai em Mim&rdquo; (<a href="http://bibliaonline.com.br/acf/jo/14/8-11">João
 14:8-11</a>).</p>
 
-<p>Vamos ler agora a primeira epístola de <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/jo/5/20")'>João, capítulo 5, versículo
+<p>Vamos ler agora a primeira epístola de <a href="http://bibliaonline.com.br/acf/jo/5/20">João, capítulo 5, versículo
 20</a>. &ldquo;Sabemos que já o Filho de
 Deus é vindo, e nos deu entendimento para conhecermos o que é
 verdadeiro; e no que é verdadeiro estamos, isto é, em Seu Filho Jesus
@@ -258,49 +265,49 @@ Cristo. Este é o verdadeiro Deus e a vida eterna&rdquo;. Oh! quão preciso!
 Estas declarações são tão resplandecentes como um cristal; JESUS É DEUS.
 Sim, no cristianismo conhecemos a um só Deus. Às vezes Ele é manifestado
 como o Pai, às vezes como o Filho, e às vezes como o Espírito (compare
-com <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/atos/5/3-4")'>Atos 5:3-4</a>). Assim, no
+com <a href="http://bibliaonline.com.br/acf/atos/5/3-4">Atos 5:3-4</a>). Assim, no
 cristianismo, nos achamos de pleno acordo com o primeiro mandamento de
 Moisés: &ldquo;Não terás outros deuses diante de Mim&rdquo;.</p>
 
 <h1 id="o-segundo-mandamento-mosaico">O Segundo Mandamento Mosaico</h1>
 
-<p>Voltando agora a <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20")'>Êxodo 20</a>, lemos o
+<p>Voltando agora a <a href="http://bibliaonline.com.br/acf/ex/20">Êxodo 20</a>, lemos o
 segundo mandamento: &ldquo;Não farás para ti imagem de escultura, nem alguma
 semelhança do que há em cima nos céus, nem em baixo na Terra, nem nas
 águas debaixo da Terra. Não te encurvarás a elas nem as servirás: porque
 Eu, o Senhor teu Deus, sou Deus zeloso, que visito a maldade dos pais
 nos filhos até a terceira e quarta geração daqueles que Me aborrecem. E
 faço misericórdia em milhares aos que Me amam e guardam os Meus
-mandamentos&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/4-6")'>Êxodo 20:4-6</a>).
-&ldquo;Não farás para ti imagem&rdquo;. Vamos agora ler <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/10/14")'>1 Coríntios
+mandamentos&rdquo; (<a href="http://bibliaonline.com.br/acf/ex/20/4-6">Êxodo 20:4-6</a>).
+&ldquo;Não farás para ti imagem&rdquo;. Vamos agora ler <a href="http://bibliaonline.com.br/acf/1co/10/14">1 Coríntios
 10:14</a>: &ldquo;portanto, meus
-amados, fugi da idolatria&rdquo;. Também o <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/10/7")'>versículo
+amados, fugi da idolatria&rdquo;. Também o <a href="http://bibliaonline.com.br/acf/1co/10/7">versículo
 7</a>: &ldquo;Não vos façais pois
 idólatras, como alguns deles, conforme está escrito: O povo assentou-se
 a comer e a beber, e levantou-se para folgar&rdquo;.</p>
 
 <p>Estamos vivendo numa época que se prepara para a chegada &ldquo;do homem do
-pecado&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/2ts/2/3")'>2 Tessalonicenses 2:3</a>). O mundo
+pecado&rdquo; (<a href="http://bibliaonline.com.br/acf/2ts/2/3">2 Tessalonicenses 2:3</a>). O mundo
 está prestes a mergulhar na mais temível idolatria, como jamais se
 conheceu. Os próprios judeus se entregarão a uma idolatria sete vezes
-pior do que a que antes cometiam (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/mt/12/43-45")'>Mateus
+pior do que a que antes cometiam (<a href="http://bibliaonline.com.br/acf/mt/12/43-45">Mateus
 12:43-45</a>). As demais nações
 do mundo seguirão o mesmo caminho e esta tendência já se vê hoje em dia.
 Você já notou o rápido aumento na comercialização de figuras e
 estatuetas nas mais diferentes lojas? Entre elas você encontrará
 réplicas exatas de ídolos pagãos. Percebe-se que tudo isso está
 promovendo a preparação de condições ideais para a adoração de ídolos e
-a da imagem da besta (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/13")'>Apocalipse 13</a>).
-Quando o homem não se importa com Deus (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/rm/1/28")'>Romanos
+a da imagem da besta (<a href="http://bibliaonline.com.br/acf/ap/13">Apocalipse 13</a>).
+Quando o homem não se importa com Deus (<a href="http://bibliaonline.com.br/acf/rm/1/28">Romanos
 1:28</a>), com o verdadeiro
 conhecimento de Deus, como é revelado na Sua Palavra, logo cai na
 idolatria. Esta tem sido a história do homem. Por detrás do
 aparentemente inocente ídolo de barro ou madeira estão a presença e o
 sinistro poder de um demônio. Trata-se, verdadeiramente, de adoração a
-demônios. Compare <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/10/20")'>1 Coríntios 10:20</a>
-e veja também <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/9/20")'>Apocalipse 9:20</a>.
-Encontramos, assim, no <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/10")'>capítulo 10 de
-1</a><a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/10")'>Coríntios</a>
+demônios. Compare <a href="http://bibliaonline.com.br/acf/1co/10/20">1 Coríntios 10:20</a>
+e veja também <a href="http://bibliaonline.com.br/acf/ap/9/20">Apocalipse 9:20</a>.
+Encontramos, assim, no <a href="http://bibliaonline.com.br/acf/1co/10">capítulo 10 de
+1</a><a href="http://bibliaonline.com.br/acf/1co/10">Coríntios</a>
 uma solene admoestação para que nós, cristãos, fujamos de qualquer coisa
 que possa ter a aparência de idolatria. Ajoelhar-se diante de imagens
 não tem nenhum lugar no cristianismo. Isto que afirmamos está de pleno
@@ -308,10 +315,10 @@ acordo com o segundo mandamento.</p>
 
 <h1 id="o-terceiro-mandamento-mosaico">O Terceiro Mandamento Mosaico</h1>
 
-<p>Voltemos a ler <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/7")'>Êxodo, capítulo 20, e desta vez o versículo
+<p>Voltemos a ler <a href="http://bibliaonline.com.br/acf/ex/20/7">Êxodo, capítulo 20, e desta vez o versículo
 7</a>: &ldquo;Não tomarás o Nome do
 Senhor teu Deus em vão: porque o Senhor não terá por inocente o que
-tomar o Seu nome em vão&rdquo;. Vamos ler <a href="http://leituracrista.com/http://bibliaonline.com.br/acf/tg/5/12")'>Tiago
+tomar o Seu nome em vão&rdquo;. Vamos ler <a href="http://leituracrista.com/http://bibliaonline.com.br/acf/tg/5/12">Tiago
 5:12</a>: &ldquo;Mas, sobretudo, meus
 irmãos, não jureis, nem pelo céu, nem pela Terra nem façais qualquer
 outro juramento; mas que a vossa palavra seja sim, sim, e não, não; para
@@ -325,7 +332,7 @@ inocente? Para poder alcançar plenamente a vitória no assunto de
 obediência à Palavra de Deus, devemos fazer da oração de Davi o nosso
 rogo diário: &ldquo;Sejam agradáveis as palavras da minha boca e a meditação
 de meu coração perante a Tua face, Senhor. Rocha minha e Libertador
-meu!&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/sl/19/14")'>Salmos 19:14</a>).</p>
+meu!&rdquo; (<a href="http://bibliaonline.com.br/acf/sl/19/14">Salmos 19:14</a>).</p>
 
 <p>Penso especialmente naqueles que são jovens e na formação de seu
 vocabulário. Convém, enquanto jovem, eliminar totalmente do vocabulário
@@ -336,7 +343,7 @@ perante o tribunal de Cristo.</p>
 
 <h1 id="o-quarto-mandamento-mosaico">O Quarto Mandamento Mosaico</h1>
 
-<p>&ldquo;Lembra-te do dia do sábado, para o santificar&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/8")'>Êxodo
+<p>&ldquo;Lembra-te do dia do sábado, para o santificar&rdquo; (<a href="http://bibliaonline.com.br/acf/ex/20/8">Êxodo
 20:8</a>). Tenho que confessar que
 não pude encontrar coisa alguma que pudesse ser o correspondente a este
 mandamento no cristianismo. Não existe. Lembremo-nos de que a palavra
@@ -348,13 +355,13 @@ economia cristã, se preferir, não encontramos nenhuma instrução para que
 se observe tal dia. Há apenas uma menção ao &ldquo;shabbat&rdquo; em todo o conjunto
 de epístolas do Novo Testamento: &ldquo;Portanto ninguém vos julgue pelo
 comer, ou pelo beber ou por causa dos dias de festa, ou da lua nova, ou
-dos sábados&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/cl/2/16")'>Colossenses 2:16</a>). Mas
-preste atenção para a declaração qualificativa do <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/cl/2/17")'>versículo
+dos sábados&rdquo; (<a href="http://bibliaonline.com.br/acf/cl/2/16">Colossenses 2:16</a>). Mas
+preste atenção para a declaração qualificativa do <a href="http://bibliaonline.com.br/acf/cl/2/17">versículo
 17</a>: &ldquo;Que são sombras das coisas
 futuras, mas o corpo é de Cristo&rdquo;. Evidentemente, a única razão de se
 ter mencionado o sábado foi para mostrar que ele não faz parte da
 revelação cristã. Pelo contrário, mostra que foi somente uma sombra do
-que havia de vir. Porém quanto ao nosso dia de repouso, sabemos que <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/hb/4/9")'>Hebreus
+que havia de vir. Porém quanto ao nosso dia de repouso, sabemos que <a href="http://bibliaonline.com.br/acf/hb/4/9">Hebreus
 4:9</a> diz: &ldquo;Portanto resta ainda
 um repouso para o povo de Deus&rdquo;. Não podemos dizer que o &ldquo;shabbat&rdquo; (o
 descanso) foi trocado pelo domingo. O &ldquo;shabbat&rdquo; sempre foi o sétimo dia
@@ -369,7 +376,7 @@ lugar que o domingo deve ocupar em nossas vidas? Porventura a própria
 expressão, &ldquo;o dia do Senhor&rdquo;, não responde a esta pergunta? Este dia
 pertence ao Senhor e devemos empregá-lo para Ele. É o dia em que nos
 reunimos para partir o pão. O termo &ldquo;o dia do Senhor&rdquo; aparece no
-original apenas uma vez na Bíblia, em <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/1/10")'>Apocalipse
+original apenas uma vez na Bíblia, em <a href="http://bibliaonline.com.br/acf/ap/1/10">Apocalipse
 1:10</a>, e pode ser traduzido do
 grego por &ldquo;dia dominical&rdquo;. Poderíamos traduzir o versículo da seguinte
 forma: &ldquo;Eu fui arrebatado em espírito no dia dominical&rdquo;. Encontramos
@@ -387,7 +394,7 @@ ressurreição. Notamos que o Espírito Santo desceu no dia de Pentecostes,
 que era também o primeiro dia da semana. Os discípulos se reuniram para
 partir o pão no primeiro dia da semana. O apóstolo exortou aos coríntios
 que cada um separasse sua oferta para os santos pobres no primeiro dia
-da semana (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/16/2")'>1 Coríntios 16:2</a>). Todas
+da semana (<a href="http://bibliaonline.com.br/acf/1co/16/2">1 Coríntios 16:2</a>). Todas
 estas passagens demonstram que no cristianismo o primeiro dia da semana
 remove totalmente o &ldquo;shabbat&rdquo; judaico. Quão impróprio seria que a igreja
 de Deus celebrasse como seu dia aquele durante o qual seu Senhor e
@@ -429,9 +436,9 @@ esse dia seja verdadeiramente o dia que pertence a Ele.</p>
 <h1 id="o-quinto-mandamento-mosaico">O Quinto Mandamento Mosaico</h1>
 
 <p>&ldquo;Honra a teu pai e a tua mãe, para que se prolonguem os teus dias na
-terra que o Senhor teu Deus te dá&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/12")'>Êxodo
+terra que o Senhor teu Deus te dá&rdquo; (<a href="http://bibliaonline.com.br/acf/ex/20/12">Êxodo
 20:12</a>). Comparando este
-mandamento com <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ef/6/2-3")'>Efésios 6:2-3</a>,
+mandamento com <a href="http://bibliaonline.com.br/acf/ef/6/2-3">Efésios 6:2-3</a>,
 vemos que ele é citado palavra por palavra. No cristianismo não se
 espera menos dos filhos do que era exigido pela lei. Quão bendito é
 vermos os filhos de pais cristãos procurando colocar em prática este
@@ -442,8 +449,8 @@ a Sua benção em suas próprias vidas.</p>
 
 <h1 id="o-sexto-mandamento-mosaico">O Sexto Mandamento Mosaico</h1>
 
-<p>&ldquo;Não matarás&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/13")'>Êxodo 20:13</a>).
-Lemos agora em <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1pe/4/15")'>1 Pedro 4:15</a>: &ldquo;Que
+<p>&ldquo;Não matarás&rdquo; (<a href="http://bibliaonline.com.br/acf/ex/20/13">Êxodo 20:13</a>).
+Lemos agora em <a href="http://bibliaonline.com.br/acf/1pe/4/15">1 Pedro 4:15</a>: &ldquo;Que
 nenhum de vós padeça como homicida&rdquo;. A norma divina quanto a tirar a
 vida de outro ser humano não é menos estrita sob a revelação cristã do
 que o foi sob o judaísmo. Não se pode tolerar o homicídio na dispensação
@@ -452,10 +459,10 @@ cristã.</p>
 <h1 id="o-sétimo-mandamento-mosaico">O Sétimo Mandamento Mosaico</h1>
 
 <p>O próximo na seqüência é o bem conhecido sétimo mandamento: &ldquo;Não
-adulterarás&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/14")'>Êxodo 20:14</a>).
-Lemos em <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/hb/13/4")'>Hebreus 13:4</a>: &ldquo;Venerado
+adulterarás&rdquo; (<a href="http://bibliaonline.com.br/acf/ex/20/14">Êxodo 20:14</a>).
+Lemos em <a href="http://bibliaonline.com.br/acf/hb/13/4">Hebreus 13:4</a>: &ldquo;Venerado
 seja entre todos o matrimônio e o leito sem mácula; porém aos que se dão
-à prostituição e aos adúlteros Deus os julgará&rdquo;. Logo em <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/6/9-11")'>1 Coríntios
+à prostituição e aos adúlteros Deus os julgará&rdquo;. Logo em <a href="http://bibliaonline.com.br/acf/1co/6/9-11">1 Coríntios
 6:9-11</a>: &ldquo;Não sabeis que os
 injustos não hão de herdar o reino de Deus? Não erreis: nem os devassos,
 nem os idólatras, nem os adúlteros, nem os efeminados, nem os sodomitas,
@@ -473,7 +480,7 @@ culpados. Eu gosto de recordar a definição dada por uma menina para o
 termo &ldquo;justificado&rdquo;. Quando sua professora lhe perguntou qual o
 significado da palavra, ela respondeu usando algumas partes da própria
 palavra: &ldquo;Significa que sou JUSTa como se nunca tivesse peCADO.&rdquo; Ela
-estava certa. É assim que Deus nos vê. Repare que no <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/6/11")'>versículo
+estava certa. É assim que Deus nos vê. Repare que no <a href="http://bibliaonline.com.br/acf/1co/6/11">versículo
 11</a> toda a Trindade Se ocupa
 nesta questão: &ldquo;mas haveis sido justificados em nome do Senhor Jesus e
 pelo Espírito do nosso Deus&rdquo;. Não obstante, jamais consideremos
@@ -504,12 +511,12 @@ erraremos. Quanto mais tempo permanecermos neste mundo, mais difícil
 será para nos mantermos fiéis aos desígnios de Deus neste assunto tão
 solene. Deus continua a falar com toda a autoridade e dignidade de Quem
 conhece o fim desde o princípio. Sua admoestação é: &ldquo;Foge destas coisas&rdquo;
-(<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1tm/6/11")'>1 Timóteo 6:11</a>).</p>
+(<a href="http://bibliaonline.com.br/acf/1tm/6/11">1 Timóteo 6:11</a>).</p>
 
 <h1 id="o-oitavo-mandamento-mosaico">O Oitavo Mandamento Mosaico</h1>
 
-<p>&ldquo;Não furtarás&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/15")'>Êxodo 20:15</a>).
-Vamos ler agora <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ef/4/28")'>Efésios 4:28</a>:
+<p>&ldquo;Não furtarás&rdquo; (<a href="http://bibliaonline.com.br/acf/ex/20/15">Êxodo 20:15</a>).
+Vamos ler agora <a href="http://bibliaonline.com.br/acf/ef/4/28">Efésios 4:28</a>:
 &ldquo;Aquele que furtava, não furte mais; antes trabalhe, fazendo com as mãos
 o que é bom, para que tenha que repartir com o que tiver necessidade&rdquo;. O
 roubar se condena tanto na dispensação cristã como na judaica. A igreja
@@ -539,11 +546,11 @@ memória para assim cumprirmos a vontade de Deus.</p>
 
 <h1 id="o-nono-mandamento-mosaico">O Nono Mandamento Mosaico</h1>
 
-<p>&ldquo;Não dirás falso testemunho contra o teu próximo&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/16")'>Êxodo
+<p>&ldquo;Não dirás falso testemunho contra o teu próximo&rdquo; (<a href="http://bibliaonline.com.br/acf/ex/20/16">Êxodo
 20:16</a>). O que equivale a isto
-encontra-se em <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ef/4/25")'>Efésios 4:25</a>: &ldquo;Pelo
+encontra-se em <a href="http://bibliaonline.com.br/acf/ef/4/25">Efésios 4:25</a>: &ldquo;Pelo
 que deixai a mentira, e falai a verdade cada um com o seu próximo&rdquo;.
-Notemos também em <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/em/13/9-10")'>Romanos
+Notemos também em <a href="http://bibliaonline.com.br/acf/em/13/9-10">Romanos
 13:9-10</a>: &ldquo;Não darás falso
 testemunho&hellip; O amor não faz mal ao próximo. De sorte que o cumprimento
 da lei é o amor&rdquo;. A demanda cristã neste assunto é igual à da lei, porém
@@ -553,8 +560,8 @@ sobrepuja em muito as exigências da lei, e manifesta o amor ao próximo.</p>
 
 <p>&ldquo;Não cobiçarás a casa do teu próximo, não cobiçarás a mulher do teu
 próximo, nem o seu servo, nem a sua serva, nem o seu boi, nem o seu
-jumento, nem cousa alguma do teu próximo&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ex/20/17")'>Êxodo
-20:17</a>). Agora vamos ler <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/hb/13/5")'>Hebreus
+jumento, nem cousa alguma do teu próximo&rdquo; (<a href="http://bibliaonline.com.br/acf/ex/20/17">Êxodo
+20:17</a>). Agora vamos ler <a href="http://bibliaonline.com.br/acf/hb/13/5">Hebreus
 13:5</a>: &ldquo;Sejam vossos costumes
 sem avareza, contentando-vos com o que tendes; porque Ele diz: não te
 deixarei, nem te desampararei&rdquo;. O décimo mandamento foi o que matou o
@@ -562,7 +569,7 @@ apóstolo Paulo. Ele parecia ser capaz de atender aos outros nove, mas
 reconheceu: &ldquo;eu não conheci o pecado senão pela lei; porque eu não
 conheceria a concupiscência, se a lei não dissesse: Não cobiçarás&hellip; Mas
 o pecado, tomando ocasião pelo mandamento, me enganou, e por ele me
-matou&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/rm/7/7-11")'>Romanos 7:7-11</a>). Paulo
+matou&rdquo; (<a href="http://bibliaonline.com.br/acf/rm/7/7-11">Romanos 7:7-11</a>). Paulo
 descobriu o que todos nós descobrimos: que cobiçar é tão natural quanto
 respirar. Porém a verdade revelada do cristianismo condena a cobiça não
 menos severamente do que o fez a lei de Moisés.</p>
@@ -586,7 +593,7 @@ Mas os que querem ser ricos caem em tentação e em laço, e em muitas
 concupiscências loucas e nocivas, que submergem os homens na perdição e
 ruína. Porque o amor do dinheiro é a raiz de toda a espécie de males; e
 nessa cobiça alguns se desviaram da fé, e se traspassaram a si mesmos
-com muitas dores. Mas tu, oh homem de Deus, foge destas coisas&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1tm/6/6-11")'>1 Timóteo
+com muitas dores. Mas tu, oh homem de Deus, foge destas coisas&rdquo; (<a href="http://bibliaonline.com.br/acf/1tm/6/6-11">1 Timóteo
 6:6-11</a>). Quão verídica é a
 Palavra de Deus! Não temos visto todas estas afirmações das Escrituras
 confirmadas na vida dos santos? Às vezes nossos jovens acham que devem
@@ -596,11 +603,11 @@ a cobiça de uma coisa após outra. A verdade é que o fato de vivermos na
 acelerar o desejo de querermos sempre mais. Quanto mais tivermos, mais
 vamos querer ter. Não há limite. Mas, quão diferente é o Espírito de
 Cristo! O de dar, e não o de conseguir. Assim nos ensinou: &ldquo;Mais
-bem-aventurada coisa é dar do que receber&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/atos/20/35")'>Atos
+bem-aventurada coisa é dar do que receber&rdquo; (<a href="http://bibliaonline.com.br/acf/atos/20/35">Atos
 20:35</a>). Porém não estou
 dizendo que devemos dar tudo o que temos. Houve apenas um homem, que é
 mencionado na Bíblia, a quem o Senhor deu esse conselho - o jovem rico
-de <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/lc/18")'>Lucas 18</a>. E disse isso para que
+de <a href="http://bibliaonline.com.br/acf/lc/18">Lucas 18</a>. E disse isso para que
 ele se desse conta do câncer que lhe corroía a própria alma - a cobiça.
 Não, irmão, as possessões terrenais não constituem o segredo da
 felicidade. A felicidade é um estado de espírito. É o desfrutar da
@@ -617,10 +624,10 @@ conteúdo moral - nós os temos, porém não da forma de &ldquo;fareis&rdquo; e 
 fareis&rdquo;, porém como a expressão da nova natureza que temos, como
 nascidos de Deus. Jamais nos lamentaremos se assim os respeitarmos. Será
 para nosso bem agora e por toda a eternidade. A justiça da lei será
-cumprida em nós (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/rm/8/4")'>Romanos 8:4</a>). Assim
+cumprida em nós (<a href="http://bibliaonline.com.br/acf/rm/8/4">Romanos 8:4</a>). Assim
 o fruto do Espírito será produzido em amor para com Deus e para com
 todos que são nascidos de Deus. &ldquo;O amor não faz mal ao próximo. De sorte
-que o cumprimento da lei é o amor&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/rm/13/10")'>Romanos
+que o cumprimento da lei é o amor&rdquo; (<a href="http://bibliaonline.com.br/acf/rm/13/10">Romanos
 13:10</a>).</p>
 
 

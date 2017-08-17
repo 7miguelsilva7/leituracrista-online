@@ -4,18 +4,18 @@
   <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8")'>
+    <meta charset="utf-8">
     <meta name="generator" content="Hugo 0.20.2" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1")'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")'>
-    <meta name="viewport" content="width=device-width, initial-scale=1")'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -50,6 +50,12 @@
     }
   </script>
 
+<script>
+  $("#myModal").on('hidden.bs.modal', function (e) {
+    $('#myModal iframe').attr('src', '');
+});
+</script>  
+
   </head>
 
   <body>
@@ -83,7 +89,7 @@
 </script>
 
   <div class="row">
-    <div class="col-sm-3")'>
+    <div class="col-sm-3">
       <aside class="site">
 
   
@@ -104,26 +110,26 @@
 </aside>
 
     </div> 
-    <div class="col-sm-9")'>
+    <div class="col-sm-9">
 
       <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://leituracrista.com/"/>
-        <meta itemprop="dateModified" content="2017-06-29T17:00:00&#43;09:00")'>
+        <meta itemprop="dateModified" content="2017-06-29T17:00:00&#43;09:00">
         <meta itemprop="headline" content="Amando A Sua Vinda">
         <meta itemprop="description" content="Amando A Sua Vinda &ldquo;Desde agora, a coroa da justiça me está guardada, a qual o Senhor, justo juiz, me dará naquele dia; e não somente a mim, mas também a todos os que amarem a Sua vinda&rdquo; (2 Tm 4:8).
 Quem são os que amam a Sua vinda? Estes não terão só uma &ldquo;coroa da vida&rdquo;, mas uma &ldquo;coroa de justiça&rdquo;. Que pensamento precioso! O que devemos então entender como amar Sua vinda?">
         <meta itemprop="url" content="http://leituracrista.com/livretes/amando-a-sua-vinda/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="http://leituracrista.com/images/amando-a-sua-vinda.jpeg" />
-          <meta itemprop="width" content="800")'>
-          <meta itemprop="height" content="800")'>
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
         </div>
         <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
           <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
             <meta itemprop="url" content="http://leituracrista.com/images/logo.jpg">
-            <meta itemprop="width" content="100")'>
-            <meta itemprop="height" content="100")'>
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
           </div>
           <meta itemprop="name" content="Leitura Cristã">
         </div>
@@ -161,6 +167,7 @@ Quem são os que amam a Sua vinda? Estes não terão só uma &ldquo;coroa da vid
 
         </header>
 
+
   <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -169,7 +176,7 @@ Quem são os que amam a Sua vinda? Estes não terão só uma &ldquo;coroa da vid
           <iframe id="myInframe"  name="myFrame" src="#" width="100%" height="75%" frameborder="0" allowtransparency="true"></iframe>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          <button onclick="$('#myModal iframe').attr('src', '');" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
         </div>
       </div>
       
@@ -185,7 +192,7 @@ Quem são os que amam a Sua vinda? Estes não terão só uma &ldquo;coroa da vid
 
 <p>&ldquo;Desde agora, a coroa da justiça me está guardada, a qual o Senhor,
 justo juiz, me dará naquele dia; e não somente a mim, mas também a todos
-os que amarem a Sua vinda&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/2tm/4/8")'>2 Tm
+os que amarem a Sua vinda&rdquo; (<a href="http://bibliaonline.com.br/acf/2tm/4/8">2 Tm
 4:8</a>).</p>
 
 <p>Quem são os que amam a Sua vinda? Estes não terão só uma &ldquo;coroa da
@@ -210,10 +217,10 @@ se encontrarem com Ele nos ares, e antes de Sua aparição juntamente com
 estes para julgar o mundo. Quão rapidamente estas previsões podem se
 tornar fato consumado!</p>
 
-<p>&ldquo;A pedra que os edificadores reprovaram&rdquo; bem cedo virá em poder (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1pe/2/7")'>1 Pd
+<p>&ldquo;A pedra que os edificadores reprovaram&rdquo; bem cedo virá em poder (<a href="http://bibliaonline.com.br/acf/1pe/2/7">1 Pd
 2:7</a>). A &ldquo;pedra cortada, sem
 auxílio de mão&rdquo; há muito que está para cair sobre as nações, e as
-esmiuçar (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/dn/2/34")'>Dn 2:34</a>). Oh, quão
+esmiuçar (<a href="http://bibliaonline.com.br/acf/dn/2/34">Dn 2:34</a>). Oh, quão
 poucos parecem pensar nisto, e quantos são os que estão tentando se
 satisfazer com um tipo de cristianismo sem Cristo, ao que eles chamam de
 religião! Neste exato momento muitas almas preciosas estão sendo
@@ -222,14 +229,14 @@ competentes para julgar as coisas de Deus por suas capacidades naturais
 e colocam assim de lado a divina autoridade de Sua Palavra, ao invés de
 permitirem que esta os julgue. Por outro lado, multidões estão sendo
 engodadas pela infidelidade do ritualismo, o qual se recusa a aceitar a
-obra do Senhor Jesus Cristo &ldquo;feita uma vez&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/hb/10/10")'>Hb
+obra do Senhor Jesus Cristo &ldquo;feita uma vez&rdquo; (<a href="http://bibliaonline.com.br/acf/hb/10/10">Hb
 10:10</a>).</p>
 
 <p>Podemos estar certos de que o único livramento desses enganos fatais
 está em se repousarem Cristo e encontrar paz e gozo naquilo que Ele fez
 e naquilo que Ele é. Bendito seja o nome dAquele que, com os braços
 abertos e um coração cheio do mais terno amor, disse: &ldquo;Vinde a Mim&hellip; e
-Eu vos alivia rei&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/mt/11/28")'>Mt
+Eu vos alivia rei&rdquo; (<a href="http://bibliaonline.com.br/acf/mt/11/28">Mt
 11:28</a>). Que imensa dádiva é o
 descanso! Principalmente o descanso de consciência quanto à nossa
 segurança eterna.</p>
@@ -242,7 +249,7 @@ são preciosas:&rdquo; Eu vos aliviarei&rdquo;. Sim, Ele o dá.</p>
 estar, na prática e de coração, unido em um só jugo com Ele e aprendendo
 dEle. O tomar o Seu jugo é uma obra e experiência distintas na alma. Oh,
 quão doces palavras, &ldquo;Tomai sobre vós o Meu jugo&rdquo;, &ldquo;Aprendei de Mim&rdquo;,
-&ldquo;Encontrareis descanso para as vossas almas&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/mt/11/28-29")'>Mt
+&ldquo;Encontrareis descanso para as vossas almas&rdquo; (<a href="http://bibliaonline.com.br/acf/mt/11/28-29">Mt
 11:28-29</a>). O único jugo
 suave é o dEle e dEle é também o único fardo verdadeiramente leve. Você
 não pode descrevê-lo, mas o coração conhece. O que Ele concede é
@@ -253,7 +260,7 @@ quando rejeitado por aquelas cidades onde a maior parte das Suas obras
 de poder haviam sido manifestadas. Doce ternura! Isto é cristianismo, e
 aqueles que o conhecem por experiência sem dúvida alguma olham para o
 futuro, para outro descanso sem fim, eternal descanso, pois &ldquo;resta ainda
-um repouso para o povo de Deus&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/hb/4/9")'>Hb
+um repouso para o povo de Deus&rdquo; (<a href="http://bibliaonline.com.br/acf/hb/4/9">Hb
 4:9</a>).</p>
 
 <p>Nos dias dos apóstolos, os crentes sabiam que haviam sido chamados não
@@ -262,9 +269,9 @@ sempre por Ele, estariam sofrendo com Ele. Eles conheciam também a
 preciosidade de Cristo como o jubiloso e agradável objeto de seus
 corações. Dele verdadeiramente podia ser dito: &ldquo;Ao qual, não O havendo
 visto, amais; No qual, não O vendo agora, mas crendo, vos alegrais com
-gozo inefável e glorioso&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1pe/1/18")'>1 Pd
-1:8</a> - veja também <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/rm/8/17")'>Rm
-8:17</a>; <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/fp/1/29")'>Fp
+gozo inefável e glorioso&rdquo; (<a href="http://bibliaonline.com.br/acf/1pe/1/18">1 Pd
+1:8</a> - veja também <a href="http://bibliaonline.com.br/acf/rm/8/17">Rm
+8:17</a>; <a href="http://bibliaonline.com.br/acf/fp/1/29">Fp
 1:29</a>). Tal era o frescor e o
 fervor dos crentes nos primeiros dias do cristianismo. Seus corações
 estavam tomados da Pessoa que os amou, morreu por eles e os redimiu de
@@ -282,7 +289,7 @@ e abra a porta para desfrutar de comunhão pessoal com Ele. Para corações
 sinceros isto é algo comovente. Aqueles que mais O amam são os que
 sentem mais. Ele não está aqui, mas Sua vinda está próxima. &ldquo;Quando
 Cristo, que é a nossa vida, Se manifestar, então também vós vos
-manifestareis com Ele em glória&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/cl/3/4")'>Cl
+manifestareis com Ele em glória&rdquo; (<a href="http://bibliaonline.com.br/acf/cl/3/4">Cl
 3:4</a>).</p>
 
 <p>Em Sua morte na cruz, ao invés da vitória de Satanás sobre Ele, por sua
@@ -328,7 +335,7 @@ Cantando alegres, sem cessar, mil cantos entoai.</p>
 <p>É o próprio Senhor que assim virá. Ele vem com as nuvens e todo olho O
 verá. Ele morreu por todos, enviou o evangelho a todos, esperou
 pacientemente por todos, e agora a divina paciência chegou ao seu ápice,
-e os homens &ldquo;se lamentarão sobre Ele (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/1/7")'>Ap
+e os homens &ldquo;se lamentarão sobre Ele (<a href="http://bibliaonline.com.br/acf/ap/1/7">Ap
 1:7</a>). E que lamento será. Pior
 do que inútil será então clamar às rochas para que caiam sobre eles, ou
 aos montes para que os cubram, ou ir às covas nas rochas e cavernas da
@@ -343,14 +350,14 @@ pois Ele destituirá todo juízo, autoridade e poder. O ultimo inimigo a
 ser destruído é a morte. A ultima parte de Seu reino será tomada pelo
 juízo dos mortos, de cada homem conforme as suas obras, após a
 ressurreição destes; por esta razão o Senhor chamou a isto de
-ressurreição para condenação&rdquo;, ou juízo (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/jo/5/29")'>Jo
+ressurreição para condenação&rdquo;, ou juízo (<a href="http://bibliaonline.com.br/acf/jo/5/29">Jo
 5:29</a>). Quão indescritivelmente
 solene! E quão bendito é para nossas almas o pensamento da exaltação de
 nosso Senhor ao Seu lugar de direito e da Igreja, Sua noiva, reinando e
 usufruindo da herança juntamente com Ele.</p>
 
 <p>Cada tribo de Israel terá a sua porção na terra, em conformidade com a
-palavra profética (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ez/47")'>Ez 47</a> <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ez/48")'>e
+palavra profética (<a href="http://bibliaonline.com.br/acf/ez/47">Ez 47</a> <a href="http://bibliaonline.com.br/acf/ez/48">e
 48</a>). Eles saberão que Jeová foi
 misericordioso para com sua injustiça. Ele não irá mais se lembrar de
 seus pecados e iniqüidades, e já os terá livrado de suas enfermidades do
@@ -361,7 +368,7 @@ seu verdadeiro Messias, o Filho de Davi.</p>
 para estar na casa de oração para todas as nações. Nosso Senhor Jesus
 será então revelado como o único Potentado Rei de reis e Senhor de
 senhores, Governador dentre as nações e Rei sobre toda a Terra. Podemos
-pensar nEle como o Filho do Homem, em conformidade com o <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/sl/8")'>Sl
+pensar nEle como o Filho do Homem, em conformidade com o <a href="http://bibliaonline.com.br/acf/sl/8">Sl
 8</a>, tendo domínio sobre Sua
 criação, a qual é por Ele libertada e levada à liberdade da glória dos
 filhos de Deus. Acaso não é isto algo de profundo gozo para aqueles que
@@ -375,11 +382,11 @@ e toda língua confessará que Ele é o Senhor para glória do Pai?</p>
 Reino afeta nossos corações? Estamos amando a Sua vinda? Vamos parar e
 pensar bem que, se amamos Sua vinda, Ele estará sendo para nós não
 apenas o alvo a comandar nosso lugar onde Ele não está, e onde a
-sentença que predomina é: &ldquo;Não queremos que Este reine sobre nós&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/lc/19/14")'>Lc
+sentença que predomina é: &ldquo;Não queremos que Este reine sobre nós&rdquo; (<a href="http://bibliaonline.com.br/acf/lc/19/14">Lc
 19:14</a>). Quão breve Ele virá e
 nos receberá para Si mesmo par aparecermos em glória com Ele! &ldquo;Quando
 Cristo, que é a nossa vida, Se manifestar, então também vós vos
-manifestarei com Ele em glória&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/cl/3/4")'>Cl
+manifestarei com Ele em glória&rdquo; (<a href="http://bibliaonline.com.br/acf/cl/3/4">Cl
 3:4</a>). Possamos estar assim
 ocupados com nosso Senhor onde ele está; possamos aprender dEle e viver
 para Sua honra a fim de podermos cada vez mais amar a Sua vinda!</p>

@@ -4,18 +4,18 @@
   <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8")'>
+    <meta charset="utf-8">
     <meta name="generator" content="Hugo 0.20.2" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1")'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")'>
-    <meta name="viewport" content="width=device-width, initial-scale=1")'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -50,6 +50,12 @@
     }
   </script>
 
+<script>
+  $("#myModal").on('hidden.bs.modal', function (e) {
+    $('#myModal iframe').attr('src', '');
+});
+</script>  
+
   </head>
 
   <body>
@@ -83,7 +89,7 @@
 </script>
 
   <div class="row">
-    <div class="col-sm-3")'>
+    <div class="col-sm-3">
       <aside class="site">
 
   
@@ -104,26 +110,26 @@
 </aside>
 
     </div> 
-    <div class="col-sm-9")'>
+    <div class="col-sm-9">
 
       <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://leituracrista.com/"/>
-        <meta itemprop="dateModified" content="2017-07-21T17:00:00&#43;09:00")'>
+        <meta itemprop="dateModified" content="2017-07-21T17:00:00&#43;09:00">
         <meta itemprop="headline" content="A VINDA DE CRISTO">
         <meta itemprop="description" content="A VINDA DE CRISTO BRUCE ANSTEY
 O Senhor Jesus prometeu: &ldquo;Na casa de meu Pai há muitas moradas; se não fosse assim, eu vo-lo teria dito: vou preparar-vos lugar. E se eu for, e vos preparar lugar, virei outra vez e vos levarei para mim mesmo, para que onde eu estiver estejais vós também.&rdquo; (João 14:2,3). Ele também disse: &ldquo;Certamente cedo venho.&rdquo; (Apoc. 22:20). A esperança própria ao Cristão é aguardar o Senhor para qualquer momento.">
         <meta itemprop="url" content="http://leituracrista.com/folhetos/doutrinarios/a-vinda-de-cristo/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="http://leituracrista.com/images/A-VINDA-DE-CRISTO-BRUCE-ANSTEY.jpeg" />
-          <meta itemprop="width" content="800")'>
-          <meta itemprop="height" content="800")'>
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
         </div>
         <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
           <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
             <meta itemprop="url" content="http://leituracrista.com/images/logo.jpg">
-            <meta itemprop="width" content="100")'>
-            <meta itemprop="height" content="100")'>
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
           </div>
           <meta itemprop="name" content="Leitura Cristã">
         </div>
@@ -161,6 +167,7 @@ O Senhor Jesus prometeu: &ldquo;Na casa de meu Pai há muitas moradas; se não f
 
         </header>
 
+
   <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -169,7 +176,7 @@ O Senhor Jesus prometeu: &ldquo;Na casa de meu Pai há muitas moradas; se não f
           <iframe id="myInframe"  name="myFrame" src="#" width="100%" height="75%" frameborder="0" allowtransparency="true"></iframe>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          <button onclick="$('#myModal iframe').attr('src', '');" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
         </div>
       </div>
       
@@ -188,13 +195,13 @@ O Senhor Jesus prometeu: &ldquo;Na casa de meu Pai há muitas moradas; se não f
 <p>O Senhor Jesus prometeu: &ldquo;Na casa de meu Pai há muitas moradas; se não
 fosse assim, eu vo-lo teria dito: vou preparar-vos lugar. E se eu for, e
 vos preparar lugar, virei outra vez e vos levarei para mim mesmo, para
-que onde eu estiver estejais vós também.&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/jo/14/2,3")'>João
+que onde eu estiver estejais vós também.&rdquo; (<a href="http://bibliaonline.com.br/acf/jo/14/2,3">João
 14:2,3</a>). Ele também disse:
-&ldquo;Certamente cedo venho.&rdquo; (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/22/20")'>Apoc.
+&ldquo;Certamente cedo venho.&rdquo; (<a href="http://bibliaonline.com.br/acf/ap/22/20">Apoc.
 22:20</a>). A esperança própria ao
 Cristão é aguardar o Senhor para qualquer momento. Há muitas indicações
 que nos levam a concluir que a vinda do Senhor está prestes a acontecer;
-o Senhor Jesus poderá vir ainda hoje! (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/hb/10/37")'>Hebreus
+o Senhor Jesus poderá vir ainda hoje! (<a href="http://bibliaonline.com.br/acf/hb/10/37">Hebreus
 10:37</a>).</p>
 
 <p>É da maior importância notarmos a diferença que existe nas Escrituras
@@ -203,79 +210,79 @@ ser confundido com a vinda de Cristo pois, embora o Senhor venha dos
 céus em ambas ocasiões, o arrebatamento e a vinda de Cristo são eventos
 completamente diferentes.</p>
 
-<p>O arrebatamento ocorrerá quando o Senhor vier para os Seus santos (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/jo/14/2,3")'>João
+<p>O arrebatamento ocorrerá quando o Senhor vier para os Seus santos (<a href="http://bibliaonline.com.br/acf/jo/14/2,3">João
 14:2,3</a>); na Sua vinda, Cristo
 virá com os Seus santos, os quais foram levados para a glória no
-arrebatamento (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/jd/14")'>Judas 14</a>; <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/zc/14/5")'>Zac.
+arrebatamento (<a href="http://bibliaonline.com.br/acf/jd/14">Judas 14</a>; <a href="http://bibliaonline.com.br/acf/zc/14/5">Zac.
 14:5</a>).</p>
 
 <p>O arrebatamento pode acontecer a qualquer momento, enquanto que a vinda
 de Cristo não acontecerá até cerca de 7 anos depois do arrebatamento. No
-arrebatamento o Senhor virá secretamente, em um piscar de olhos (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/15/52")'>I Co.
+arrebatamento o Senhor virá secretamente, em um piscar de olhos (<a href="http://bibliaonline.com.br/acf/1co/15/52">I Co.
 15:52</a>); na Sua vinda Ele virá
-publicamente e todo olho O verá (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/1/7")'>Apocalipse
+publicamente e todo olho O verá (<a href="http://bibliaonline.com.br/acf/ap/1/7">Apocalipse
 1:7</a>).</p>
 
-<p>No arrebatamento Ele virá para livrar a igreja (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1ts/1/10")'>I Tess.
+<p>No arrebatamento Ele virá para livrar a igreja (<a href="http://bibliaonline.com.br/acf/1ts/1/10">I Tess.
 1:10</a>); na Sua vinda Ele virá
-para livrar Israel (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/sl/6/1-4")'>Salmos
+para livrar Israel (<a href="http://bibliaonline.com.br/acf/sl/6/1-4">Salmos
 6:1-4</a>).</p>
 
 <p>No arrebatamento Ele virá encontrar a Sua igreja nos ares, pois trata-se
-do Seu povo celestial (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1ts/4/15-18")'>I Tess.
+do Seu povo celestial (<a href="http://bibliaonline.com.br/acf/1ts/4/15-18">I Tess.
 4:15-18</a>); na Sua vinda Ele
 voltará para a terra (o Monte das Oliveiras), para Israel, pois é o Seu
-povo terrenal (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/zc/14/4,5")'>Zac. 14:4,5</a>).</p>
+povo terrenal (<a href="http://bibliaonline.com.br/acf/zc/14/4,5">Zac. 14:4,5</a>).</p>
 
-<p>No arrebatamento, é o próprio Senhor Quem reunirá os Seus santos (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1ts/4/15-18")'>I
-Tess. 4:15-18</a>; <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/2ts/2/1")'>II Tess.
+<p>No arrebatamento, é o próprio Senhor Quem reunirá os Seus santos (<a href="http://bibliaonline.com.br/acf/1ts/4/15-18">I
+Tess. 4:15-18</a>; <a href="http://bibliaonline.com.br/acf/2ts/2/1">II Tess.
 2:1</a>); na Sua vinda os ímpios
 serão tirados do mundo, pelos anjos, para julgamento e os que crêem
 (aqueles que se converteram por meio do evangelho do Reino, que será
 pregado durante a tribulação) serão deixados para desfrutar de bênçãos
-sobre a terra (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/mt/13/41-43")'>Mateus
+sobre a terra (<a href="http://bibliaonline.com.br/acf/mt/13/41-43">Mateus
 13:41-43</a>;
-<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/mt/25/41")'>25:41</a>).</p>
+<a href="http://bibliaonline.com.br/acf/mt/25/41">25:41</a>).</p>
 
 <p>No arrebatamento Ele virá para livrar Seus santos (a igreja) da ira
-vindoura (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1ts/1/10")'>I Tess. 1:10</a>); na
-Sua vinda Ele virá para derramar a ira (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/19/15")'>Apocalipse
+vindoura (<a href="http://bibliaonline.com.br/acf/1ts/1/10">I Tess. 1:10</a>); na
+Sua vinda Ele virá para derramar a ira (<a href="http://bibliaonline.com.br/acf/ap/19/15">Apocalipse
 19:15</a>).</p>
 
 <p>No arrebatamento Ele virá como Noivo, para receber Sua noiva, a igreja
-(<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/mt/25/6-10")'>Mateus 25:6-10</a>); na Sua vinda
-Ele virá como o Filho do Homem em juízo sobre os que O rejeitaram (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/mt/24/27,28")'>Mateus
+(<a href="http://bibliaonline.com.br/acf/mt/25/6-10">Mateus 25:6-10</a>); na Sua vinda
+Ele virá como o Filho do Homem em juízo sobre os que O rejeitaram (<a href="http://bibliaonline.com.br/acf/mt/24/27,28">Mateus
 24:27,28</a>).</p>
 
 <p>No arrebatamento Ele virá como a &ldquo;Estrela da Manhã&rdquo; que aparece logo
-antes do dia raiar (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/22/16")'>Apocalipse
+antes do dia raiar (<a href="http://bibliaonline.com.br/acf/ap/22/16">Apocalipse
 22:16</a>); na Sua vinda Ele virá
-como o &ldquo;Sol de Justiça&rdquo;, que é o próprio amanhecer (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ml/4/2")'>Mal.
+como o &ldquo;Sol de Justiça&rdquo;, que é o próprio amanhecer (<a href="http://bibliaonline.com.br/acf/ml/4/2">Mal.
 4:2</a>).</p>
 
 <p>No arrebatamento Ele virá sem quaisquer sinais, pois o Cristão anda por
-fé e não por vista (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/2co/5/7")'>II Co.
+fé e não por vista (<a href="http://bibliaonline.com.br/acf/2co/5/7">II Co.
 5:7</a>); a Sua vinda, será
-acompanhada de sinais, pois os Judeus buscam sinais (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/lc/21/11,25-27")'>Lucas
-21:11,25-27</a>; <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1co/1/22")'>I Co.
+acompanhada de sinais, pois os Judeus buscam sinais (<a href="http://bibliaonline.com.br/acf/lc/21/11,25-27">Lucas
+21:11,25-27</a>; <a href="http://bibliaonline.com.br/acf/1co/1/22">I Co.
 1:22</a>).</p>
 
 <p>As Escrituras nunca dizem que, no arrebatamento, o Senhor virá &ldquo;como
 ladrão, à noite.&rdquo; Na vinda do Senhor, isto sim, Ele virá como um ladrão
-à noite (<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1ts/5/2")'>I Tess. 5:2</a>; <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/2pe/3/10")'>II Pd.
-3:10</a>; <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/mt/24/43")'>Mateus
-24:43</a>; <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/16/15")'>Apocalipse
+à noite (<a href="http://bibliaonline.com.br/acf/1ts/5/2">I Tess. 5:2</a>; <a href="http://bibliaonline.com.br/acf/2pe/3/10">II Pd.
+3:10</a>; <a href="http://bibliaonline.com.br/acf/mt/24/43">Mateus
+24:43</a>; <a href="http://bibliaonline.com.br/acf/ap/16/15">Apocalipse
 16:15</a>;
-<a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/ap/3/3")'>3:3</a>).</p>
+<a href="http://bibliaonline.com.br/acf/ap/3/3">3:3</a>).</p>
 
 <p>Em um certo sentido, existem três vindas; Sua vinda para o que era Seu
-(quando veio ao mundo, <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/jo/1/10,11")'>João
-1:10,11</a>: <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/hb/10/7")'>Hebreus
+(quando veio ao mundo, <a href="http://bibliaonline.com.br/acf/jo/1/10,11">João
+1:10,11</a>: <a href="http://bibliaonline.com.br/acf/hb/10/7">Hebreus
 10:7</a>), Sua vinda para os que
-são Seus (no arrebatamento, <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/jo/14/2,3")'>João
-14:2,3</a>; <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/1ts/4/15-18")'>I Tess.
+são Seus (no arrebatamento, <a href="http://bibliaonline.com.br/acf/jo/14/2,3">João
+14:2,3</a>; <a href="http://bibliaonline.com.br/acf/1ts/4/15-18">I Tess.
 4:15-18</a>), e Sua vinda com
-os que são Seus (na vinda de Cristo, <a data-toggle="modal" href="#myModal" onclick='loadURL("https://www.bibliaonline.com.br/acf/jd/1/14")'>Jud.
+os que são Seus (na vinda de Cristo, <a href="http://bibliaonline.com.br/acf/jd/1/14">Jud.
 14</a>).</p>
 
 <p>&ldquo;Outline of Prophetic Events&rdquo; - B. Anstey</p>
