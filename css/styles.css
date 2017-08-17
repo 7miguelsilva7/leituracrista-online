@@ -478,3 +478,11 @@ nav.paging .right {
   color: #999;
   padding: 0 .5rem;
 }
+
+#modal{ 
+   background: url(imagem.jpg); 
+   width: igual da imagem; 
+   height: igual da imagem; 
+   display: block;
+   margin: 0 auto;
+}
