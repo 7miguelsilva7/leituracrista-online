@@ -50,6 +50,12 @@
     }
   </script>
 
+<script>
+  $("#myModal").on('hidden.bs.modal', function (e) {
+    $('#myModal iframe').attr('src', '');
+});
+</script>  
+
   </head>
 
   <body>
