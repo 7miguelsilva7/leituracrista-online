@@ -1,7 +1,0 @@
----
-date: 2017-06-19T17:00:00+09:00
-slug: enderecoLivroEmADC 
-title: Titulo 
-author: autor
-image: imagem.jpeg
----
