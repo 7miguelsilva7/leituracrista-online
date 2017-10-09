@@ -3,7 +3,6 @@ book
 categories
 css
 enderecolivroemadc
-estudos-sobre-o-livro-de-gênesis
 file
 folhetos
 images
@@ -11,6 +10,7 @@ index.html
 index.xml
 índice-o-que-respondi-por-mario-persona
 js
+línguas-e-outros-dons-de-sinais
 lista.txt
 livretes
 livros
