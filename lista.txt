@@ -3,7 +3,6 @@ book
 categories
 css
 enderecolivroemadc
-estudos-sobre-o-livro-de-gênesis
 file
 folhetos
 images
