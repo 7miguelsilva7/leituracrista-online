@@ -17,7 +17,7 @@
    height="154.35435"
    viewBox="0 0 109.30931 154.35435"
    sodipodi:docname="1- NotasSobreOPentateuco-Genesis- C.H.Mackintosh.svg"
-   inkscape:export-filename="/opt/lampp/htdocs/leituracrista/themes/hugo_theme_robust/static/images/1- NotasSobreOPentateuco-Deuteronomio-PARTE1- C.H.Mackintosh.png"
+   inkscape:export-filename="/opt/lampp/htdocs/leituracrista/themes/hugo_theme_robust/static/images/1- NotasSobreOPentateuco-Deuteronomio-PARTE2- C.H.Mackintosh.png"
    inkscape:export-xdpi="199.89"
    inkscape:export-ydpi="199.89">
   <metadata
@@ -105,7 +105,7 @@
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:10px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="54.412956"
-     y="104.01881"
+     y="94.018806"
      id="text3339"
      sodipodi:linespacing="125%"
      inkscape:export-xdpi="300.12411"
@@ -113,16 +113,28 @@
        sodipodi:role="line"
        id="tspan3341"
        x="54.412956"
-       y="104.01881"
+       y="94.018806"
        style="font-weight:bold;text-align:center;text-anchor:middle">Deuteronômio</tspan><tspan
        sodipodi:role="line"
        x="54.412956"
-       y="116.51881"
+       y="106.51881"
        style="font-weight:bold;text-align:center;text-anchor:middle"
-       id="tspan3340"></tspan><tspan
+       id="tspan3340" /><tspan
        sodipodi:role="line"
        x="54.412956"
-       y="129.0188"
+       y="119.01881"
        style="font-weight:bold;text-align:center;text-anchor:middle"
-       id="tspan3342">PARTE 1</tspan></text>
-</svg>
+       id="tspan3342">PARTE 2</tspan></text>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3342"
+     style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10px;line-height:125%;letter-spacing:0px;word-spacing:0px"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300"><flowRegion
+       id="flowRegion3344"><rect
+         id="rect3346"
+         width="14.568084"
+         height="14.105605"
+         x="-80.008842"
+         y="37.115963" /></flowRegion><flowPara
+       id="flowPara3348"></flowPara></flowRoot></svg>
