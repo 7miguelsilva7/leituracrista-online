@@ -1,8 +1,8 @@
+a-oferta-cristã-e-o-dízimo
 a-oração-e-as-reuniões-de-oração
 book
 categories
 css
-enderecolivroemadc
 file
 folhetos
 images
@@ -10,6 +10,7 @@ index.html
 index.xml
 índice-o-que-respondi-por-mario-persona
 js
+línguas-e-outros-dons-de-sinais
 lista.txt
 livretes
 livros

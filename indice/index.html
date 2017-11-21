@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    
 </head>
 
 <body>
@@ -31,7 +33,17 @@
 <div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F%2F&amp;src=sdkpreparse">Compartilhar</a></div>
 
 </p>
+</br>
 
+<script>
+$(function(){
+  var regex = new RegExp('[\?]', 'g');
+  // repare a flag "g" de global, para substituir todas as ocorrências
+  $('input').bind('input', function(){
+    $(this).val($(this).val().replace(regex, ''));
+  });
+})
+</script>
 
      <input type="text" placeholder="Digite sua pergunta" autofocus name="query" size="16" style="font-size: 11 pt; color: #000000; font-family: Verdana; font-variant: small-; border: 1 solid #000000">
      </font></font> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
@@ -595,7 +607,7 @@ the_entries[81]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-02
 the_entries[82]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-04/#a-relação-bíblica-homem-mulher-está-fora-de-moda","A relação bíblica homem-mulher esta fora de moda?"," casamento, namoro, noivado ","</br> <a href='https://youtu.be/fcb-gA7CRok?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[83]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#a-religião-pode-nos-levar-a-deus","A religião pode nos levar a Deus?"," filosofia, oriental, pecado, religião, religiões, vida nova ","</br>");
+the_entries[83]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#a-religião-pode-nos-levar-a-deus","A religião pode nos levar a Deus?"," filosofia, oriental, pecado, religião, religiões, vida nova ","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[84]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-06/#a-revelação-de-deus-está-completa","A revelação de Deus esta completa?"," cânon, falso profeta, revelação ","</br> <a href='https://youtu.be/HflP75jbnII?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -619,7 +631,7 @@ the_entries[89]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-06
 the_entries[90]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#a-terra-foi-criada-antes-das-estrelas","A terra foi criada antes das estrelas?"," criação, estrelas, evolução, Lua, Sol ","</br> <a href='https://youtu.be/0box5iIBTJU?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[91]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-05/#a-única-bíblia-correta-é-a-king-james","A única bíblia correta é a Kong James?"," bíblia, King James, versões ","</br> <a href='https://youtu.be/1M2jmkDPTQM?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+the_entries[91]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-05/#a-única-bíblia-correta-é-a-king-james","A única bíblia correta é a King James?"," bíblia, King James, versões ","</br> <a href='https://youtu.be/1M2jmkDPTQM?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
 the_entries[92]	=	new	entry (	"http://www.respondi.com.br/2017/03/abrao-mentiu.html","Abrão mentiu?"," Abraão, Isaque, mentira, parteiras, Raab, Rebeca, Sara ","</br> <a href='https://youtu.be/OBA9kvkpRyU?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -631,7 +643,7 @@ the_entries[93]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-11
 the_entries[94]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-06/#adão-e-eva-tiveram-filhos-enquanto-estavam-no-éden","Adão e Eva tiveram filhos enquanto estavam no Éden?"," Adão, consciência, Eva ","</br> <a href='https://youtu.be/06fy1l3BK_A?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[95]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#adão-tinha-umbigo","Adão tinha umbigo?","tags","</br>");
+the_entries[95]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#adão-tinha-umbigo","Adão tinha umbigo?","tags","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[96]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-05/#adulterei-e-estou-grávida-o-que-fazer","Adulterei e estou gravida. O que fazer?"," adultério, confissão, infidelidade ","</br> <a href='https://youtu.be/1z7osDBmMgs?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -805,7 +817,7 @@ the_entries[151]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-0
 the_entries[152]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-07/#como-a-minha-justiça-pode-exceder-a-dos-fariseus","Como a minha justiça pode exceder a dos fariseus?"," fariseus, justiça, justificação ","</br> <a href='https://youtu.be/oxnGtRbtbiY?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[153]	=	new	entry (	"http://www.respondi.com.br/2017/08/como-aconselhar-uma-amiga-que-traiu-o.html","Como aconselhar uma amiga que traiu o marido? "," aborto, adultério, adúlteros, consciência, hipocrisia, pastor, sexo, traição ","</br>");
+the_entries[153]	=	new	entry (	"http://www.respondi.com.br/2017/08/como-aconselhar-uma-amiga-que-traiu-o.html","Como aconselhar uma amiga que traiu o marido? "," aborto, adultério, adúlteros, consciência, hipocrisia, pastor, sexo, traição ","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[154]	=	new	entry (	"http://www.respondi.com.br/2017/03/como-agir-quando-nao-existe-um.html","Como agir quando não existe um mandamento explicito na Bíblia?"," amor, graça, lei, olhar, verdade ","</br> <a href='https://youtu.be/s-L8NWOUd_s?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -871,7 +883,7 @@ the_entries[173]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-0
 the_entries[174]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-07/#como-devem-ser-os-que-ministram","Como devem ser os que ministram?"," bispos, diáconos, dons, ministros ","</br> <a href='https://youtu.be/AMxrop8eYJM?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[175]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-05/#como-devemos-nos-congregar","Como devemos nos congregar?"," congregar, igreja, reunir ","</br>");
+the_entries[175]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-05/#como-devemos-nos-congregar","Como devemos nos congregar?"," congregar, igreja, reunir ","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[176]	=	new	entry (	"http://www.respondi.com.br/2011/02/como-devemos-nos-congregar-parte-1.html","Como devemos nos congregar? PARTE 1"," congregar, igreja, reunir ","</br> <a href='https://youtu.be/4RFH7SE_mMg?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -1315,7 +1327,7 @@ the_entries[321]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-0
 the_entries[322]	=	new	entry (	"http://www.respondi.com.br/2017/03/deus-nao-seria-injusto-salvando-um.html","Deus não seria injusto salvando um filho que se desviou?","  arrependimento, batismo, fé, obras, salvação ","</br> <a href='https://youtu.be/s-DZsqvsAsQ?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[323]	=	new	entry (	"http://www.respondi.com.br/2017/07/deus-perdoaria-meu-suicidio.html","Deus perdoaria meu suicidio? ","  aborto, Baleia Azul, eutanásia, homicídio, morte, se matar, suicídio, vida ","</br>");
+the_entries[323]	=	new	entry (	"http://www.respondi.com.br/2017/07/deus-perdoaria-meu-suicidio.html","Deus perdoaria meu suicidio? ","  aborto, Baleia Azul, eutanásia, homicídio, morte, se matar, suicídio, vida ","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[324]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-02/#deus-pode-usar-nossas-habilidades-naturais","Deus pode usar nossas habilidades naturais?","  dons, habilidades, talentos ","</br> <a href='https://youtu.be/hyXXdJrNTdw?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -1822,7 +1834,7 @@ the_entries[490]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-0
 the_entries[491]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-04/#existe-consciência-no-pós-morte-para-quem-não-foi-salvo","Existe consciência no pós-morte para quem não foi salvo?"," consciência, pós-morte ","</br> <a href='https://youtu.be/ly5Odsnd8dY?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[492]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#existe-diferença-entre-lei-e-a-lei","Existe diferença entre &#39;lei&#39; e &#39;a lei&#39;?"," lei, Moisés, sermão da montanha ","</br>");
+the_entries[492]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#existe-diferença-entre-lei-e-a-lei","Existe diferença entre &#39;lei&#39; e &#39;a lei&#39;?"," lei, Moisés, sermão da montanha ","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[493]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#existe-diferença-entre-dom-e-ministério","Existe diferença entre dom e ministério?"," dons, Espírito Santo, manifestações, ministério ","</br> <a href='https://youtu.be/rfNRkm9YOBk?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -2119,7 +2131,7 @@ the_entries[589]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-0
 the_entries[590]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#mateus-24-40-41-fala-do-arrebatamento","Mateus 24:40-41 fala do arrebatamento?","arrebatamento, grande tribulação, juízo final","</br> <a href='https://youtu.be/zam7eU8kVSo?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[591]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#membros-de-denominações-não-são-seus-irmãos","Membros de denominações não são seus irmãos?","denominação, igreja, seitas","</br>");
+the_entries[591]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#membros-de-denominações-não-são-seus-irmãos","Membros de denominações não são seus irmãos?","denominação, igreja, seitas","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[592]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#mesas-denominacionais-são-de-demônios","Mesas denominacionais são de demônios?","altar, ceia, mesa de demônios, mesa do Senhor","</br> <a href='https://youtu.be/Mw2_x5vBzco?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -2380,7 +2392,7 @@ the_entries[676]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-0
 the_entries[677]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#o-cristão-deve-impor-sua-cultura-e-costumes","O cristão deve impor sua cultura e costumes?","costumes, cristianização, cultura, imposição, influência","</br> <a href='https://youtu.be/QcZH0vSl-os?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[678]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#o-cristão-deve-ir-à-guerra","O cristão deve ir à guerra?","cristão, guerra, política, soldado","</br>");
+the_entries[678]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#o-cristão-deve-ir-à-guerra","O cristão deve ir à guerra?","cristão, guerra, política, soldado","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[679]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-02/#o-cristão-deve-orar-na-direção-de-jerusalém","O cristão deve orar na direção de Jerusalém?","astronauta, céu, islamita, jerusalém, judeu, meca, muçulmano, orar","</br> <a href='https://youtu.be/Wlf1Ln6io7A?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -3157,7 +3169,7 @@ the_entries[935]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-0
 the_entries[936]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-08/#os-dias-estão-sendo-abreviados","Os dias estão sendo abreviados?","dias abreviados, fim da era, tribulação","</br> <a href='https://youtu.be/C5qU1s3XFLQ?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[937]	=	new	entry (	"http://www.respondi.com.br/2017/07/os-diferentes-ministerios-em-1.html","Os diferentes ministérios em 1 Corintios 12 são denominacoes? ","denominação, divisões, igreja, ministérios, nome","</br>");
+the_entries[937]	=	new	entry (	"http://www.respondi.com.br/2017/07/os-diferentes-ministerios-em-1.html","Os diferentes ministérios em 1 Corintios 12 são denominacoes? ","denominação, divisões, igreja, ministérios, nome","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[938]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#os-discípulos-receberam-o-espírito-santo-em-joão-20","Os discípulos receberam o Espirito Santo em João 20?","batismo, Espírito Santo, igreja","</br> <a href='https://youtu.be/LDieKZQ48_s?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -3793,7 +3805,7 @@ the_entries[1147]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-
 the_entries[1148]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-02/#preciso-ser-católico-para-ser-salvo","Preciso ser católico para ser salvo?","católica, catolicismo, igreja, sacramentos","</br> <a href='https://youtu.be/IIE1xr7sxWY?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[1149]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#preciso-ser-rebatizado","Preciso ser rebatizado?","batismo, igreja, rebatismo, novamente, de novo","</br>");
+the_entries[1149]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#preciso-ser-rebatizado","Preciso ser rebatizado?","batismo, igreja, rebatismo, novamente, de novo","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[1150]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-10/#problema-de-vírgula","Problema de virgula?","Adventismo do Sétimo Dia, Hoje, paraíso, testemunhas de Jeová","</br> <a href='https://youtu.be/zkKkhdzXA3Q?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -3931,7 +3943,7 @@ the_entries[1193]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-
 the_entries[1194]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#qual-o-significado-da-besta-e-do-666-em-apocalipse","Qual o significado da Besta e do 666?","666, anticristo, apocalipse, besta, número, perfeição, revelação, satanás","</br> <a href='https://youtu.be/thRYM479PGQ?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[1195]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#qual-o-significado-de-dois-dias-de-oséias-6-1-3","Qual o significado de &#39;dois dias&#39; de Oséias 6:1-3?","dias, fim do mundo, profecia","</br>");
+the_entries[1195]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-01/#qual-o-significado-de-dois-dias-de-oséias-6-1-3","Qual o significado de &#39;dois dias&#39; de Oséias 6:1-3?","dias, fim do mundo, profecia","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[1196]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-03/#qual-o-significado-de-1-coríntios-13","Qual o significado de 1 Coríntios 13?","amor, fé, línguas, profecia","</br> <a href='https://youtu.be/bev3sBWLACg?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -4456,7 +4468,7 @@ the_entries[1368]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-
 the_entries[1369]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-08/#tito-abandonou-paulo","Tito abandonou Paulo?","abandonar, João Marcos, Paulo, Tito","</br> <a href='https://youtu.be/I9mL10TWmK0?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[1370]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#tocar-música-ao-contrário-revela-mensagem-satânica","Tocar música ao contrário revela mensagem satânica?","contrário, demoníaca, mensagens subliminares, música, satânica","</br>");
+the_entries[1370]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-09/#tocar-música-ao-contrário-revela-mensagem-satânica","Tocar música ao contrário revela mensagem satânica?","contrário, demoníaca, mensagens subliminares, música, satânica","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 the_entries[1371]	=	new	entry (	"http://leituracrista.com/o-que-respondi-volume-07/#tocar-no-ungido-de-deus-significa-falar-mal-do-pastor","Tocar no ungido de Deus significa falar mal do pastor?","mercenários, pastores, prosperidade, unção, ungido","</br> <a href='https://youtu.be/QnsblhezGI0?autoplay=1' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
@@ -4747,7 +4759,112 @@ the_entries[1465]	=	new	entry (	"http://www.respondi.com.br/2017/09/jesus-mentiu
 the_entries[1466]	=	new	entry (	"http://www.respondi.com.br/2011/08/com-que-o-crente-deve-se-ocupar-parte-2.html"," Com que o crente deve se ocupar. Parte 2 "," crente, ocupação, vida cristã ","</br> <a href='https://youtu.be/aVus9RRda2A' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
 
 
-the_entries[1467]	=	new	entry (	"http://www.respondi.com.br/2017/10/essa-pastora-pode-me-processar.html","Essa pastora pode me processar?","acusador, heresias, mulheres, ofensa, pastoras","</br>");
+the_entries[1467]	=	new	entry (	"http://www.respondi.com.br/2017/10/essa-pastora-pode-me-processar.html","Essa pastora pode me processar?","acusador, heresias, mulheres, ofensa, pastoras","</br> <a href='https://youtu.be/vsI8__dUCAc' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1468]	=	new	entry (	"http://www.respondi.com.br/2017/10/um-deficiente-e-salvo-por-merito.html","Um deficiente é salvo por merito?","autistas, crianças, deficientes, doente mental, embriões, fetos","</br> <a href='https://youtu.be/5OYTbDtcrQ0' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1469]	=	new	entry (	"http://www.respondi.com.br/2017/10/como-o-arrebatamento-pode-ser-secreto.html","Como o arrebatamento pode ser secreto com tanto barulho?","arrebatamento, audível, invisível, secreto","</br> <a href='https://youtu.be/6kKwpVjwDXI' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1470]	=	new	entry (	"http://www.respondi.com.br/2017/10/quem-praticar-as-obras-de-galatas-519.html","Quem praticar as obras de Gálatas 5:19-21 não será salvo?","carne, nova criação, nova natureza, novo nascimento, obras da carne","</br> <a href='https://youtu.be/ioFk3a-7r4U' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1471]	=	new	entry (	"http://www.respondi.com.br/2017/10/como-identificar-um-lobo-ou-herege.html","Como identificar um lobo ou herege?","falsos mestres, falsos profetas, herege, heresias, lobos","</br> <a href='https://youtu.be/tgsIEKKIU0Y' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1472]	=	new	entry (	"http://www.respondi.com.br/2017/10/como-deus-permite-uma-crianca-ser.html","Como Deus permite uma crianca ser violentada?","estupro, marginal, pedófilos, psicopatas, torturas","</br> <a href='https://youtu.be/JPy6mjcyE5E' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1473]	=	new	entry (	"http://www.respondi.com.br/2017/10/o-que-significa-rudimentos-da-doutrina.html","O que significa &#39;rudimentos da doutrina de Cristo&#39;?","apostasias, hebreus, judaísmo","</br> <a href='https://youtu.be/_nH17rIYEQk' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1474]	=	new	entry (	"http://www.respondi.com.br/2017/10/demonios-eram-seres-hibridos-da-uniao.html","Demonios eram seres hibridos da uniao de anjos com mulheres?","anjos, dilúvio, gênesis, gigantes, Livro de Enoque","</br> <a href='https://youtu.be/Ded3gHC6bCY' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1475]	=	new	entry (	"http://www.respondi.com.br/2017/10/posso-ouvir-qualquer-doutrina-e-filtrar.html","Posso ouvir qualquer doutrina e filtrar o que for bom?","contaminação, heresias, má doutrina, ministério, pecados, profecias, profetas","</br> <a href='https://youtu.be/p1JQ9U8H8sU' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1476]	=	new	entry (	"http://www.respondi.com.br/2017/10/em-minha-cidade-ninguem-congrega-fora.html","Em minha cidade ninguem congrega fora do sistema denominacional. O que fazer?","assembleia, ceia do Senhor, congregar, denominações, igreja","</br> <a href='https://youtu.be/XgInYdpmiTA' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1477]	=	new	entry (	"http://www.respondi.com.br/2017/10/o-que-acha-do-que-esse-pastor-fala.html","O que acha do que esse pastor fala sobre a Igreja?","denominação, igreja, pastor, Paul Washer, salvação pelo senhorio","</br> <a href='https://youtu.be/4JxHZnJA26E' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1478]	=	new	entry (	"http://www.respondi.com.br/2017/10/alguem-pode-ser-cristao-sem-ser.html","Alguem pode ser cristao sem ser convertido a Cristo?","clube, conversão, converter, denominação, entretenimento","</br> <a href='https://youtu.be/HfvZTAHoCjw' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1479]	=	new	entry (	"http://www.respondi.com.br/2017/10/se-nao-dizimar-para-que-batizar.html","Se nao dizimar, para que batizar?","denominação, dízimo, franquia, igreja, pastores","</br> <a href='https://youtu.be/3HHdMXaWZBs' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1480]	=	new	entry (	"http://www.respondi.com.br/2017/10/preciso-perseverar-para-ser-salvo-e.html","Preciso perseverar para ser salvo e salvar outros?","a salvo, salvação, salvar, Timóteo","</br> <a href='https://youtu.be/muODM2FV9BQ' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1481]	=	new	entry (	"http://www.respondi.com.br/2017/10/se-jesus-e-o-verbo-ou-palavra-entao.html","Se Jesus é o Verbo ou Palavra, entao a Biblia é Jesus?","criação, criador, Logos, palavra, verbo","</br> <a href='https://youtu.be/BQCAkGN0oDU' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1482]	=	new	entry (	"http://www.respondi.com.br/2017/10/minha-filhinha-corre-risco-de-morrer.html","Minha filhinha corre risco de morrer?","assédio moral, bullying, morte, falsos profetas, profetadas, psico terrorista, revelação, terrorismo psicológico","</br> <a href='https://youtu.be/tQp4iSZbm1U' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1483]	=	new	entry (	"http://www.respondi.com.br/2017/11/o-que-jesus-diz-nos-evangelhos-e-so.html","O que Jesus diz nos evangelhos e&#39; so&#39; para judeus?","bodas, gentios, igreja, judeus, noiva, noivo, vigiar","</br> <a href='https://youtu.be/qi6rs8Sa6CQ' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1484]	=	new	entry (	"http://www.respondi.com.br/2017/11/e-pecado-matar-insetos.html","E&#39; pecado matar insetos?","animais, comer, crudismo, matar, veganismo, vegeratianismo","</br> <a href='https://youtu.be/EdhM572IQwQ' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1485]	=	new	entry (	"http://www.respondi.com.br/2017/11/o-que-voce-gostaria-que-tivesse-sido.html","O que voce gostaria que tivesse sido diferente?","arrependimento, Efeito Borboleta, linha do tempo, remorso, sofrimento, tribulação, viagem no tempo","</br> <a href='https://youtu.be/Cq6isDBiUTI' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1486]	=	new	entry (	"http://www.respondi.com.br/2017/11/estaria-freud-com-razao.html","Estaria Freud com a razão?","conhecimento, dados, Deus, evolução, experiência, inteligência, sabedoria, Sigmund Freud","</br> <a href='https://youtu.be/PALM_0EZ1c8' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1487]	=	new	entry (	"http://www.respondi.com.br/2017/11/por-que-biblia-manda-esmagar-criancas.html","Por que a Biblia manda esmagar criancas nas pedras?","autoridade, crueldade, Deus, espada, israel, judeus, morte, politicamente correto","</br> <a href='https://youtu.be/KJ5_GCof6GM' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1488]	=	new	entry (	"http://www.respondi.com.br/2017/11/o-cristao-deveria-adorar-descalco.html","O cristão deveria adorar descalco?"," adoração, descalcismo, descalço, dignidade, filho pródigo","</br> <a href='https://youtu.be/c9TwxxH7qNI' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1489]	=	new	entry (	"http://www.respondi.com.br/2017/11/por-que-nao-transmitir-as-reunioes-em.html","Por que nao transmitir as reunioes em video?"," assembleia, igreja, online, reuniões, transmissão, vídeo","</br> <a href='https://youtu.be/-Iwz-Yh8p20' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1490]	=	new	entry (	"http://www.respondi.com.br/2017/11/teria-paulo-resistido-as-autoridades.html","Teria Paulo resistido às autoridades?"," carteirada, manifestações, política, protestos","</br> <a href='https://youtu.be/Xm1N3M1qVjw' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1491]	=	new	entry (	"http://www.respondi.com.br/2017/11/como-duvidar-se-o-pregador-falou-em.html","Como duvidar, se o pregador falou &#39;em nome de Jesus&#39;?"," anticristos, em nome de Jesus, maravilhas, milagres, pregadores, sinais, sinal","</br> <a href='https://youtu.be/bRqjmUvCjWQ' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1492]	=	new	entry (	"http://www.respondi.com.br/2017/11/o-que-significa-romper-em-fe.html","O que significa &#39;romper em fé&#39;?"," eu determino, eu profetizo, romper em fé, vencer, vitória","</br> <a href='https://youtu.be/4Z_J6w1plIw' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1493]	=	new	entry (	"http://www.respondi.com.br/2017/11/seria-correto-divulgar-nas-redes.html","Seria correto divulgar nas redes sociais as reunioes?"," assembleia, cenáculo, igreja, públicas, reservadas, reuniões","</br> <a href='https://youtu.be/tHoSlJAzI2A' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1494]	=	new	entry (	"http://www.respondi.com.br/2017/11/noe-colocou-tambem-insetos-na-arca.html","Noé colocou também insetos na Arca?"," animais, arca, chuva, dilúvio, insetos, Noé","</br> <a href='https://youtu.be/WloF_vPCBnQ' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1495]	=	new	entry (	"http://www.respondi.com.br/2017/11/voce-viu-que-coisa-horrivel-este-video.html","Voce viu que coisa horrivel este video?"," divulgar, heresias, hoax, notícias falsas, redes sociais, vídeos","</br> <a href='https://youtu.be/MegFI4qExqU' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1496]	=	new	entry (	"http://www.respondi.com.br/2017/11/a-biblia-e-um-manual-confiavel-para-o.html","A Bíblia é um manual confiavel para o homem?"," bíblia, credibilidade, Jesus, manual, manuscritos, salvação","</br> <a href='https://youtu.be/HNpapx0y8nk' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1497]	=	new	entry (	"http://www.respondi.com.br/2017/11/no-ceu-estarao-apenas-as-pessoas-boas.html","No céu estarao apenas as pessoas boas?"," boas obras, caridade, céu, Cristo, pessoas boas, salvação","</br> <a href='https://youtu.be/tIMKhumL_4I' target='_blank'><img style='cursor:pointer;width:50px;height:40px;'  src='logos/youtube-2-1.svg'/></a>");
+
+
+the_entries[1498]	=	new	entry (	"http://www.respondi.com.br/2017/11/qual-sua-prioridade-evangelizar-ou.html","Qual sua prioridade: Evangelizar ou ensinar?","  certeza da salvação, evangelho explicado, nova vida, perdão, vida eterna ","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
+
+
+the_entries[1499]	=	new	entry (	"http://www.respondi.com.br/2017/11/qual-o-nome-do-pai-de-jesus.html","Qual o nome do Pai de Jesus?","Deus, divindade, Elohim, Filho, Jeová, Jesus, nomes, Pai","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
+
+
+the_entries[1500]	=	new	entry (	"http://www.respondi.com.br/2017/11/existe-algo-que-um-crente-nao-deva-pedir.html","Existe algo que um crente nao deva pedir?","caridade, dar, obra do Senhor, pedir","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
+
+
+the_entries[1501]	=	new	entry (	"http://www.respondi.com.br/2017/11/quais-dons-cessaram.html","Quais dons cessaram?","cessacionismo, curas, dons, espirituais, línguas, manifestações, milagres, sinais","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
+
+
+the_entries[1502]	=	new	entry (	"http://www.respondi.com.br/2017/11/qual-o-significado-de-ossos-na-biblia.html","Qual o significado de ossos na Biblia?","1948, amuletos, diáspora, inveja, israel, mau olhado, ossos, Palestina, superstição","</br><img style='cursor:pointer;width:50px;height:40px;'  src='logos/emBreve.svg'/></br>");
 
 
 
