@@ -1,71 +1,7 @@
 #!/bin/bash
 echo "Qual arquivo modificar?" 
 read arquivo
-sed -i 's/ gn / Gn /g' $arquivo
-sed -i 's/ ex / Ex /g' $arquivo
-sed -i 's/ lv / Lv /g' $arquivo
-sed -i 's/ nm / Nm /g' $arquivo
-sed -i 's/ dt / Dt /g' $arquivo
-sed -i 's/ js / Js /g' $arquivo
-sed -i 's/ jz / Jz /g' $arquivo
-sed -i 's/ rt / Rt /g' $arquivo
-sed -i 's/ 1sm / 1 Sm /g' $arquivo
-sed -i 's/ 2sm / 2 Sm /g' $arquivo
-sed -i 's/ 1rs / 1 Rs /g' $arquivo
-sed -i 's/ 2rs / 2 Rs /g' $arquivo
-sed -i 's/ 1cr / 1 Cr /g' $arquivo
-sed -i 's/ 2cr / 2 Cr /g' $arquivo
-sed -i 's/ ed / Ed /g' $arquivo
-sed -i 's/ ne / Ne /g' $arquivo
-sed -i 's/ et / Et /g' $arquivo
-sed -i 's/ jó / Jó /g' $arquivo
-sed -i 's/ sl / Sl /g' $arquivo
-sed -i 's/ pv / Pv /g' $arquivo
-sed -i 's/ ec / Ec /g' $arquivo
-sed -i 's/ ct / Ct /g' $arquivo
-sed -i 's/ is / Is /g' $arquivo
-sed -i 's/ jr / Jr /g' $arquivo
-sed -i 's/ lm / Lm /g' $arquivo
-sed -i 's/ ez / Ez /g' $arquivo
-sed -i 's/ dn / Dn /g' $arquivo
-sed -i 's/ jl / Jl /g' $arquivo
-sed -i 's/ am / Am /g' $arquivo
-sed -i 's/ ob / Ob /g' $arquivo
-sed -i 's/ jn / Jn /g' $arquivo
-sed -i 's/ mq / Mq /g' $arquivo
 
-sed -i 's/ hc / Hc /g' $arquivo
-sed -i 's/ sf / Sf /g' $arquivo
-sed -i 's/ ag / Ag /g' $arquivo
-sed -i 's/ zc / Zc /g' $arquivo
-sed -i 's/ ml / Ml /g' $arquivo
-sed -i 's/ mt / Mt /g' $arquivo
-sed -i 's/ mc / Mc /g' $arquivo
-sed -i 's/ lc / Lc /g' $arquivo
-sed -i 's/ jo / Jo /g' $arquivo
-sed -i 's/ atos / Atos /g' $arquivo
-sed -i 's/ rm / Rm /g' $arquivo
-sed -i 's/ 1co / 1 Co /g' $arquivo
-sed -i 's/ 2co / 2 Co /g' $arquivo
-sed -i 's/ gl / Gl /g' $arquivo
-sed -i 's/ ef / Ef /g' $arquivo
-sed -i 's/ fp / Fp /g' $arquivo
-sed -i 's/ cl / Cl /g' $arquivo
-sed -i 's/ 1ts / 1Ts /g' $arquivo
-sed -i 's/ 2ts / 2Ts /g' $arquivo
-sed -i 's/ 1tm / 1Tm /g' $arquivo
-sed -i 's/ 2tm / 2Tm /g' $arquivo
-sed -i 's/ tt / Tt /g' $arquivo
-sed -i 's/ fm / Fm /g' $arquivo
-sed -i 's/ hb / Hb /g' $arquivo
-sed -i 's/ tg / Tg /g' $arquivo
-sed -i 's/ 1pe / 1 Pe /g' $arquivo
-sed -i 's/ 2pe / 2 Pe /g' $arquivo
-sed -i 's/ 1jo / 1 Jo /g' $arquivo
-sed -i 's/ 2jo / 2 Jo /g' $arquivo
-sed -i 's/ 3jo / 3 Jo /g' $arquivo
-sed -i 's/ jd / Jd /g' $arquivo
-sed -i 's/ ap / Ap /g' $arquivo
 
 ## entre Colchete
 
@@ -181,7 +117,7 @@ sed -i 's:\/Mc:\/mc:g' $arquivo
 sed -i 's:\/Lc:\/lc:g' $arquivo
 sed -i 's:\/Jo:\/jo:g' $arquivo
 sed -i 's:\/At:\/atos:g' $arquivo
-sed -i 's:\/At:\/atos:g' $arquivo
+sed -i 's:\/at:\/atos:g' $arquivo
 sed -i 's:\/Rm:\/rm:g' $arquivo
 sed -i 's:\/1Co:\/1co:g' $arquivo
 sed -i 's:\/2Co:\/2co:g' $arquivo
@@ -201,6 +137,7 @@ sed -i 's:\/2Pe:\/2pe:g' $arquivo
 sed -i 's:\/1Jo:\/1jo:g' $arquivo
 sed -i 's:\/Ap:\/ap:g' $arquivo
 
+#retirar barra de final de links
 sed -i 's:\/):):g' $arquivo
 
 # siglas soltas Maiusculas para nomes Completos
@@ -380,7 +317,7 @@ sed -i 's/ \[Gl/ \[Gálatas/g' $arquivo
 sed -i 's/ \[Gn/ \[Gênesis/g' $arquivo
 sed -i 's/ \[Hc/ \[Habacuque/g' $arquivo
 sed -i 's/ \[Hb/ \[Hebreus/g' $arquivo
-sed -i 's/ \[Is/ \[Isaías/g' $arquivo
+sed -i 's/ \[Is / \[Isaías/g' $arquivo
 sed -i 's/ \[Jr/ \[Jeremias/g' $arquivo
 sed -i 's/ \[Jó / \[Jó/g' $arquivo
 sed -i 's/ \[Jo / \[João/g' $arquivo
@@ -449,7 +386,7 @@ sed -i 's/ \[gl/ \[Gálatas/g' $arquivo
 sed -i 's/ \[gn/ \[Gênesis/g' $arquivo
 sed -i 's/ \[hc/ \[Habacuque/g' $arquivo
 sed -i 's/ \[hb/ \[Hebreus/g' $arquivo
-sed -i 's/ \[is/ \[Isaías/g' $arquivo
+sed -i 's/ \[is / \[Isaías/g' $arquivo
 sed -i 's/ \[jr/ \[Jeremias/g' $arquivo
 sed -i 's/ \[jó / \[Jó/g' $arquivo
 sed -i 's/ \[jo / \[João/g' $arquivo
