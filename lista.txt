@@ -1,11 +1,14 @@
 a-oferta-cristã-e-o-dízimo
 a-oração-e-as-reuniões-de-oração
 book
+categories
 CONV-para-MAISCULO-Inicial.sh
 css
 file
 folhetos
 images
+index.html
+index.xml
 js
 línguas-e-outros-dons-de-sinais
 lista.txt
@@ -24,3 +27,6 @@ o-que-respondi-volume-09
 o-que-respondi-volume-10
 o-que-respondi-volume-11
 os-limites-da-disciplina
+page
+sitemap.xml
+tags
