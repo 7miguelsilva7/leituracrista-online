@@ -6,9 +6,9 @@ ao-seu-nome
 a-total-suficiencia-de-cristo-2
 a-vinda-do-senhor
 cartas-aos-evangelistas
-cartas-a-um-novo-convertido
 estudo-do-livro-de-levitico
 lista.txt
+minha-decisao
 o-evangelho-em-03-minutos-joao
 o-evangelho-em-03-minutos-lucas
 o-evangelho-em-03-minutos-mateus
