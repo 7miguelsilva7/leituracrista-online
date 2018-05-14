@@ -1,6 +1,6 @@
 a-oferta-cristã-e-o-dízimo
 a-oração-e-as-reuniões-de-oração
-categories
+book
 CONV-para-MAISCULO-Inicial.sh
 css
 file
