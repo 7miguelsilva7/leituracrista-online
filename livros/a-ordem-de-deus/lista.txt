@@ -25,9 +25,11 @@ cobrir_a_cabeca_era_um_costume_cultural_antigo_que.html
 coleta_ou_dizimo.html
 colocando_a_profissao_de_fe_da_pessoa_a_prova.html
 comandoEmPastas.sh
+comandoEmPastas.sh~
 como_os_servos_do_senhor_devem_ser_mantidos_financ.html
 conclusoes.html
 consequencias_praticas_de_se_abandonar_as_quatro_a.html
+custom.js
 denominacionalismo_-_uma_ordem_de_deus_ou_do_homem.html
 deveriamos_iniciar_uma_comunhao_crista_em_conformi.html
 diaconos.html
