@@ -31,7 +31,7 @@ for subpastas in `cat lista.txt`
 
 ###### Digite seus comando aqui ########
  
-sed -i 's/{.*}//g' *.md
+sed -i 's/{#.*}//g' *.html
 
 ########################################
                                                                            
