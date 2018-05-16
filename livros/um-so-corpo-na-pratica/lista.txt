@@ -1,0 +1,10 @@
+capitulo_1_-_o_corpo_de_cristo_e_sua_manifestacao_
+capitulo_2_-_a_ruina_na_cristandade_e_o_testemunho
+capitulo_3_-_a_assembleia_revestida_da_autoridade_
+capitulo_4_-_o_terreno_biblico_de_reuniao_mateus_1
+capitulo_5_-_existe_mais_de_um_testemunho_diviname
+comandoEmPastas.sh
+comandoEmPastas.sh~
+lista.txt
+README.md
+SUMMARY.md
