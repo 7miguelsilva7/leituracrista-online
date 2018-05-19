@@ -1,9 +1,20 @@
 html {
   font-family: "Open Sans", sans-serif;
-  color: #333;
+  color: rgb(34, 34, 34);
+  /*  */
+  
 }
+
+p { 
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 18px;
+
+}
+
+
 body {
-  margin: 0;
+  margin-left: 10;
   font-size: 1rem;
   overflow-x: hidden;
 }
@@ -12,7 +23,7 @@ code {
   font-size: 0.875em;
 }
 .left {
-  float: left;
+  float: 10%;
 }
 .right {
   float: right;
@@ -1457,3 +1468,4 @@ ul#searchresults span.teaser em {
   font-weight: bold;
   font-style: normal;
 }
+
