@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>INTRODUÇÃO - AO SEU NOME</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> AO SEU NOME</a></li><li><a href="apresentacao.html"><strong aria-hidden="true">2.</strong> APRESENTAÇÃO</a></li><li><a href="introducao.html" class="active"><strong aria-hidden="true">3.</strong> INTRODUÇÃO</a></li><li><a href="capitulo_1.html"><strong aria-hidden="true">4.</strong> CAPÍTULO 1</a></li><li><a href="capitulo_2.html"><strong aria-hidden="true">5.</strong> CAPÍTULO 2</a></li><li><a href="capitulo_3.html"><strong aria-hidden="true">6.</strong> CAPÍTULO 3</a></li><li><a href="capitulo_4.html"><strong aria-hidden="true">7.</strong> CAPÍTULO 4</a></li><li><a href="capitulo_5.html"><strong aria-hidden="true">8.</strong> CAPÍTULO 5</a></li><li><a href="capitulo_6.html"><strong aria-hidden="true">9.</strong> CAPÍTULO 6</a></li><li><a href="capitulo_7.html"><strong aria-hidden="true">10.</strong> CAPÍTULO 7</a></li><li><a href="capitulo_8.html"><strong aria-hidden="true">11.</strong> CAPÍTULO 8</a></li><li><a href="capitulo_9.html"><strong aria-hidden="true">12.</strong> CAPÍTULO 9</a></li><li><a href="capitulo_10.html"><strong aria-hidden="true">13.</strong> CAPÍTULO 10</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">AO SEU NOME</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="introducao.html#introduÇÃo" id="introduÇÃo"><h1>INTRODUÇÃO</h1></a>
+<p>Gostaria de abordar algumas das difíceis questões que muitos jovens enfrentam com respeito a estarem congregados ao nome do Senhor (<a href="http://bibliaonline.com.br/acf/mt/18/20">Mateus 18:20</a>). Meu desejo é procurar esclarecer algumas dessas dúvidas para aqueles que estejam verdadeiramente buscando a verdade. Espero que o que tenho a dizer possa lhes dar uma compreensão maior dos princípios envolvidos no divino terreno de reunião que foi dado aos cristãos.</p>
+<p>Para aqueles que cresceram nas assembleias dos chamados &quot;santos reunidos&quot; eu sei que a maioria dos pais possui uma grande consideração pela verdade de estarem congregados ao nome do Senhor. Eles colocam esta verdade logo depois daquela relacionada à salvação. Você provavelmente já os escutou dizer coisas como, &quot;Conheço o Senhor Jesus como meu Salvador pessoal, e estou congregado ao Seu precioso nome&quot;. Desnecessário é dizer que eles creem que a assembleia é o único e verdadeiro modo de os cristãos congregarem. Eles também entendem que a maneira como nos reunimos é contrária ao cristianismo corrente, e que esse caminho é estreito no que diz respeito à comunhão. Assim como eu, eles estão profundamente convencidos de que só existe uma forma correta e bíblica para os cristãos se reunirem para a adoração e o ministério -- e é isto que desejamos ardentemente comunicar a você. Queremos que você “compre a verdade” concernente à assembleia (<a href="http://bibliaonline.com.br/acf/pv/23/23">Pv 23:23</a>), buscando você mesmo por ela e verificando se essas coisas são verdadeiramente bíblicas (<a href="http://bibliaonline.com.br/acf/atos/17/11">Atos 17:11</a>). Nossa oração é que você venha a valorizar e andar de forma coerente com essas verdades, assim como também procuramos fazer.</p>
+<p>Sei que muitos estão pesquisando este assunto, o que é bom, pois todos nós precisamos saber a razão de estarmos congregados ao nome do Senhor. Mas em todas as buscas que são feitas sei que alguns acabam ficando completamente confusos e com mais perguntas do que respostas. Talvez você tenha pesquisado as igrejas na cristandade evangélica e tenha ouvido falar de como são as coisas por lá, e depois compararam com a assembleia em sua singularidade e, desnecessário é dizer, acabaram ficando com várias dúvidas. Isso é perfeitamente compreensível.</p>
+<p>Gosto de pensar que suas dúvidas sejam dúvidas boas e sinceras, e acredito que boas perguntas merecem boas respostas. Acho que todos nós concordamos que as únicas respostas boas e corretas estejam na Palavra de Deus. A última coisa de que você precisa é de ideias e opiniões humanas a respeito deste assunto. Portanto, o que desejo trazer aqui não são minhas próprias ideias e opiniões, mas princípios da Palavra de Deus que irão guiar seus pés. De nada serviria todo este exercício se você saísse dizendo: &quot;O Bruce pensa isto...&quot;, &quot;O Bruce pensa aquilo...&quot;. Não são os meus pensamentos que você procura, mas a verdade da Palavra de Deus.</p>
+<p>Além disso, não é meu objetivo aqui criticar os grupos cristãos que existem atualmente. Não estou aqui para denegrir meus irmãos em suas denominações na cristandade evangélica. Se alguém está contente em permanecer em sua denominação, isso não é assunto meu. A Bíblia diz: &quot;Subverter ao homem no seu pleito, não o veria o Senhor?&quot; (<a href="http://bibliaonline.com.br/acf/lm/3/36">Lm 3:36</a>). Portanto não estou aqui para tentar convencer alguém a abandonar suas convicções, independente de suas preferências eclesiásticas. Não tenho a intenção de coagir pessoa alguma a caminhar na senda que adotamos como congregados ao nome do Senhor, se essa pessoa não tiver fé ou convicção para isso. Ao contrário, meu objetivo é esclarecer alguns dos pontos que causam perplexidade e têm incomodado a muitos dos que estão sinceramente buscando por respostas sobre estarmos reunidos ao nome do Senhor.</p>
+<p>Gostaria apenas de dizer que minha impressão é que a maioria das dúvidas surge por uma má compreensão da própria verdade, e pelo uso de um critério errado para julgar o que é certo e errado. Como resultado disso alguns ficam em um dilema perguntando-se se estão ou não no lugar correto. É claro que o único padrão para julgar isso é a verdade de Deus na Palavra de Deus.</p>
+<p>Apenas mais uma coisa antes de começarmos: Procurarei dar o melhor de mim ao elaborar, com base na Palavra de Deus, as respostas a estas dúvidas, mas quero logo dizer que de nada adiantará se a sua vontade própria estiver no caminho e você não desejar a verdade. Portanto, espero que todos nós tenhamos o mesmo espírito de Davi, que disse: &quot;Ensina-me, SENHOR, o teu caminho, e guia-me pela vereda direita&quot; (<a href="http://bibliaonline.com.br/acf/sl/27/11">Sl 27:11</a>). Um espírito que se deixa ensinar é o que o Senhor deseja para nós. O que estou dizendo é que precisamos ter um correto estado de espírito se quisermos aproveitar este exercício. Se estivermos sinceramente buscando a verdade, creio que o Senhor irá usar a Sua Palavra para nos guiar. Ele disse: &quot;<em>Se alguém quiser fazer a vontade dele,</em> <em>conhecerá a respeito da doutrina</em>&quot; (<a href="http://bibliaonline.com.br/acf/jo/7/17">Jo 7:17</a>). A condição colocada nesta promessa de conhecer a verdade é querer fazer a vontade dEle. O Senhor não está interessado em nos ensinar a Sua vontade se não tivermos o desejo de colocá -la em prática. Portanto, precisamos ter isto bem claro em nosso coração, que faremos a vontade de Deus, seja ela qual for, mesmo que ela entre em rota de colisão com nossas próprias ideias. Estarmos desejosos de fazer a Sua vontade é a melhor escolha, ainda que possa ser dolorosa. Esta promessa do Senhor é tão verdadeira agora como foi quando Ele a deu -- se você tiver o desejo de fazer a vontade do Senhor &quot;<em>conhecerá a respeito da doutrina</em>&quot;.</p>
+<p>Tendo diante de nós tal promessa, e a Palavra de Deus em nossas mãos, vamos verificar algumas destas dúvidas agora mesmo, e esperar que o Senhor nos dê as respostas.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="apresentacao.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="capitulo_1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="apresentacao.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="capitulo_1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>
