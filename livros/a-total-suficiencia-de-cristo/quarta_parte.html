@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Quarta Parte - A Total Suficiência de Cristo</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="primeira_parte.html"><strong aria-hidden="true">1.</strong> Primeira Parte</a></li><li><a href="segunda_parte.html"><strong aria-hidden="true">2.</strong> Segunda Parte</a></li><li><a href="terceira_parte.html"><strong aria-hidden="true">3.</strong> Terceira Parte</a></li><li><a href="quarta_parte.html" class="active"><strong aria-hidden="true">4.</strong> Quarta Parte</a></li><li><a href="quinta_parte.html"><strong aria-hidden="true">5.</strong> Quinta Parte</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">A Total Suficiência de Cristo</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="quarta_parte.html#quarta-parte" id="quarta-parte"><h1>Quarta Parte</h1></a>
+<p>Cristo como um Objeto para o coração</p>
+<p>Havendo procurado descortinar, nos três capítulos anteriores, as grandes verdades fundamentais ligadas à obra de Cristo por nós – Sua obra no passado e sua obra no presente – Sua expiação e Sua intercessão, devemos agora procurar, pela graciosa ajuda do Espírito de Deus, apresentar ao leitor algo daquilo que as Escrituras nos ensinam quanto ao segundo ramo de nosso assunto, a saber, Cristo como um objeto para o coração.</p>
+<p>Trata-se de algo maravilhosamente bendito poder dizer: “Encontrei Alguém que satisfaz perfeitamente meu coração – encontrei a Cristo”. É isto o que nos coloca verdadeiramente acima do mundo. Nos torna completamente independentes dos recursos, aos quais o coração inconverso sempre se apega. Nos concede um descanso permanente. Nos dá uma calma e quietude de espírito que o mundo não pode compreender. O pobre amante do mundo pode pensar que a vida do verdadeiro cristão é muito parada, insípida, chegando até mesmo a ser uma ocupação idiota. Talvez ele fique espantado de ver como alguém pode seguir adiante sem aquilo que ele chama de diversão, distração e prazer; sem teatros, sem festas ou jogos de bola, sem concertos, sem baralho ou bilhar, sem caçadas ou corridas, sem clube ou bate-papo, sem campeonat de críquete.</p>
+<p>Privar o inconverso dessas coisas seria quase o mesmo que levá-lo ao desespero ou à loucura; mas o cristão não deseja tais coisas – ele não as praticaria. Elas seriam até mesmo um aborrecimento para ele. Falamos aqui, evidentemente, do verdadeiro cristão, de alguém que não é meramente cristão de nome, mas de verdade. Oh, há muitos que professam ser cristãos, e até ocupam uma posição elevada em sua profissão cristã, e que, todavia, encontram-se misturados em todas as buscas vãs e frívolas dos homens deste mundo. Pessoas assim podem ser encontradas à mesa de comunhão no dia do Senhor, e no teatro ou em um concerto na segunda-feira; podem ser vistas tomando parte em algum dos ramos da obra cristã no domingo, e durante a semana podem ser encontradas no salão de bilhar, no hipódromo ou em algum outro cenário de vaidade e futilidade.</p>
+<p>É mais do que evidente que uma tal pessoa não sabe nada de Cristo como um objeto para o coração. Pode-se até questionar como é que alguém com uma única centelha de vida divina na alma possa achar prazer nos desprezíveis anseios de um mundo ímpio. O cristão sincero e verdadeiro desvia-se instintivamente; e isso não meramente por causa do erro ou do mal que há nessas coisas – apesar dele certamente sentir que são coisas erradas e más – mas porque ele não tem nenhum gosto por elas, e porque encontrou algo infinitamente superior, algo que satisfez perfeitamente todos os desejos da nova natureza. Poderíamos imaginar um anjo do céu tendo prazer em um jogo de bola, em um teatro ou em uma corrida? O simples pensamento disso já é sobremaneira ridículo. Lugares assim são totalmente estranhos a um ser celestial.</p>
+<p>E o que é um cristão? É um homem celestial; um participante da natureza divina. Ele está morto para o mundo – morto para o pecado – vivo para Deus. Não tem nem mesmo uma única ligação com o mundo: pertence ao céu. Assim como Cristo, seu Senhor, ele não pertence mais ao mundo. Poderia Cristo tomar parte nos divertimentos, brincadeiras e festejos deste mundo? A própria ideia disso seria uma blasfêmia. Bem, então, o que dizer do cristão? Será que é para ele ser encontrado em lugares onde o seu Senhor não estaria? Pode ele tomar parte em coisas que ele sabe em seu coração serem contrárias a Cristo? Pode ele ir a lugares, frequentar ambientes e se envolver em circunstâncias onde, ele tem que admitir, seu Salvador e Senhor não podem tomar parte? Pode ele ter comunhão com um mundo que odeia Aquele a Quem ele professa dever todas as coisas?</p>
+<p>Talvez a alguns de nossos leitores possa parecer que estamos falando de um terreno muito elevado. A estes perguntaremos: Que terreno devemos tomar? Certamente, terreno cristão, se somos cristãos. Bem, então, se devemos assumir uma posição cristã, como podemos saber o que é uma posição cristã? Evidentemente buscando no Novo Testamento. E o que é que ele ensina? Acaso ele dá qualquer autorização para que o cristão se misture, em qualquer forma ou medida, com os divertimentos e os vãos anseios deste presente século mau? Escutemos com atenção as importantes palavras de nosso bendito Senhor em <a href="http://bibliaonline.com.br/acf/jo/17">João 17</a>. Escutemos de Seus próprios lábios a verdade quanto à nossa porção, nossa posição, e nosso caminho aqui neste mundo. Ao se dirigir ao Pai, Ele diz: “Dei-lhes a Tua palavra, e o mundo os odiou, porquenão são do mundo, assim como Eu não sou do mundo. Não peço que os tires do mundo, mas que os livres do mal.Não são do mundo, como Eu do mundo não sou. Santifica-os na verdade; a Tua Palavra é a verdade. Assim como Tu Me enviaste ao mundo, também Eu os enviei ao mundo” <a href="http://bibliaonline.com.br/acf/jo/17/14-18">(jo 17:14-18</a>).</p>
+<p>Será possível conceber uma medida mais próxima de identificação do que a que nos é apresentada nestas palavras? Por duas vezes, nesta breve passagem, nosso Senhor declara que não somos do mundo, assim como Ele não é. O que é que nosso bendito Senhor tinha a ver com o mundo? Nada. O mundo O rejeitou completamente e o expulsou. O mundo pregou-O numa vergonhosa cruz, entre dois malfeitores. O mundo continua tão atual e plenamente sob a acusação de tudo isso como se o ato da crucificação tivesse ocorrido ontem, bem no centro de sua civilização e com o consentimento unânime de todos. Não existe nem mesmo um único vínculo moral entre Cristo e o mundo. Sim, o mundo está manchado com Seu assassinato, e nada terá a dizer a Deus por seu crime.</p>
+<p>Quão solene é isto! Que assunto sério para ser considerado pelos cristãos! Estamos passando por um mundo que crucificou a nosso Senhor e Mestre, e Ele declara que não somos deste mundo, assim como Ele não é. Daí vem que se tivermos alguma comunhão com o mundo estaremos sendo falsos para com Cristo. O que pensaríamos de uma esposa que se sentasse, e risse, e contasse anedotas com um grupo de homens que tivesse assassinado seu marido? E é exatamente o que os cristãos professos estão fazendo quando se misturam com o presente mundo mau, e se fazem parte e porção dele.</p>
+<p>Talvez alguém pergunte: O que devemos fazer? Devemos sair do mundo? De modo nenhum. Nosso Senhor diz expressamente: “Não peço que os tires do mundo, mas que os livres do mal” (<a href="http://bibliaonline.com.br/acf/jo/17/15">Jo 17:15</a>). No mundo, mas não do mundo, é o verdadeiro princípio para o cristão. Para nos valermos de uma figura, o cristão no mundo é como um mergulhador equipado com um escafandro. Ele está imerso em um elemento que o destruiria, se não estivesse protegido de sua ação, e mantido por uma contínua comunicação com o cenário que está acima dele.</p>
+<p>E o que deve o cristão fazer com o mundo? Qual é a sua missão aqui? Esta: “Assim como Tu me enviaste ao mundo, também Eu os enviei ao mundo”. “Assim como o Pai Me enviou, também Eu vos envio a vós” (<a href="http://bibliaonline.com.br/acf/jo/17/18">João 17:18</a>; <a href="http://bibliaonline.com.br/acf/jo/20/21">20:21</a>).</p>
+<p>Tal é a missão do cristão. Ele não deve se trancar entre as paredes de um mosteiro ou convento. O cristianismo não consiste em se fazer membro de uma irmandade, como monges ou freiras. Nada disso. Somos chamados para estarmos ocupados nas diversas responsabilidades da vida, e para agirmos nas esferas que nos são divinamente designadas, para a glória de Deus. Não é uma questão do que estamos fazendo, mas de como estamos fazendo. Tudo depende do objeto que governa nossos corações. Se for Cristo o que comanda e cativa o coração, tudo estará bem; se não for Ele, nada estará bem. Duas pessoas podem se sentar à mesma mesa para comer; uma come para satisfazer seu apetite, a outra come para a glória de Deus – come simplesmente para conservar seu corpo em forma como vaso de Deus, como templo do Espírito Santo, instrumento para o serviço de Cristo.</p>
+<p>Assim deve ser em todas as coisas. Trata-se de nosso doce privilégio colocarmos o Senhor sempre diante de nós. Ele é nosso modelo. Assim como Ele foi enviado ao mundo, nós o somos também. O que foi que Ele veio fazer? Glorificar a Deus. Como foi que Ele viveu? Pelo Pai. “Assim como o Pai, que vive, Me enviou, e Eu vivo pelo Pai, assim quem de Mim se alimenta, também viverá por Mim” (<a href="http://bibliaonline.com.br/acf/jo/6/57">Jo 6:57</a>).</p>
+<p>Isso torna tudo muito simples. Cristo é o padrão e o gabarito para tudo. Já não se trata meramente de uma questão de certo e errado de acordo com as regras humanas; é simplesmente uma questão do que é digno de Cristo. Será que Ele faria isso ou aquilo? Será que Ele iria ali ou acolá? Ele deixou-nos “o exemplo, para que sigais as Suas pisadas” (<a href="http://bibliaonline.com.br/acf/1pe/2/21">1 Pe 2:21</a>). E com toda a certeza, nunca deveríamos ir aonde não pudéssemos enxergar suas benditas pegadas. Se vamos de um lado para o outro unicamente para satisfazer a nós mesmos, não estamos seguindo Suas pisadas, e não podemos esperar desfrutar de sua bendita presença.</p>
+<p>Aqui está o verdadeiro segredo do assunto todo. A grande questão é só esta: É Cristo o meu objeto? Para que estou vivendo? Será que posso dizer que “a vida que agora vivo na carne, vivo-a na fé do Filho de Deus, O qual me amou, e Se entregou a Si mesmo por mim” (<a href="http://bibliaonline.com.br/acf/gl/2/20">Gl 2:20</a>)? Nada menos do que isto é o que cabe a um cristão. Trata-se de algo demasiadamente miserável estar contente apenas em ser salvo, e então seguir adiante de braços dados com o mundo, vivendo para a satisfação própria e em busca de seus próprios interesses – aceitar a salvação como o fruto da paixão e tribulação de Cristo, e depois viver longe dele. O que iríamos pensar de uma criança que só se importa com as coisas boas que seu pai lhe dá, e que nunca procura a companhia de seu pai – sim, que prefere até a companhia de estranhos? Certamente seria alguém digno de desprezo; mas quão mais desprezível é o cristão que deve todo o seu presente e todo o seu futuro eterno à obra de Cristo e, ainda assim, se contenta em viver a uma fria distância de Sua bendita Pessoa, sem se preocupar nem um pouco com a promoção da Sua causa – com a promoção da Sua glória!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="terceira_parte.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="quinta_parte.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="terceira_parte.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="quinta_parte.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>
