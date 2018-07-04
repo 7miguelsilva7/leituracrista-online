@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Oitava Carta - Minha Decisão</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> MINHA DECISAO - EDWARD DENNETT </a></li><li><a href="esclarecimento.html"><strong aria-hidden="true">2.</strong> Esclarecimento</a></li><li><a href="primeira_carta.html"><strong aria-hidden="true">3.</strong> Primeira Carta</a></li><li><a href="segunda_carta.html"><strong aria-hidden="true">4.</strong> Segunda Carta</a></li><li><a href="terceira_carta.html"><strong aria-hidden="true">5.</strong> Terceira Carta</a></li><li><a href="quarta_carta.html"><strong aria-hidden="true">6.</strong> Quarta Carta</a></li><li><a href="quinta_carta.html"><strong aria-hidden="true">7.</strong> Quinta Carta</a></li><li><a href="sexta_carta.html"><strong aria-hidden="true">8.</strong> Sexta Carta</a></li><li><a href="setima_carta.html"><strong aria-hidden="true">9.</strong> Sétima Carta</a></li><li><a href="oitava_carta.html" class="active"><strong aria-hidden="true">10.</strong> Oitava Carta</a></li><li><a href="nona_carta.html"><strong aria-hidden="true">11.</strong> Nona Carta</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Minha Decisão</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="oitava_carta.html#oitava-carta-oitava-carta" id="oitava-carta-oitava-carta"><h1>Oitava Carta </h1></a>
+<p>Blackheath, janeiro de 1875</p>
+<p>Meu amado irmão,</p>
+<p>Depois de resolvidas as questões quanto ao “ministério” e “adoração”, no modo como elas são tratadas pelos assim chamados “irmãos”, senti a necessidade de esclarecer a questão da disciplina antes de tomar qualquer decisão prática. Existem muitos cristãos, e nós estamos entre eles, que acreditam que a mesa do Senhor seja aberta a todos os crentes. Isto, evidentemente, é verdadeiro em princípio, ou não seria a mesa do do Senhor. Todavia, será que o Senhor colocou em Sua Palavra alguma limitação a esse acesso? As respostas a esta pergunta variam. No sistema Anglicano não existe qualquer preocupação com a disciplina. Qualquer paroquiano, exceto por um ou dois tipos específicos de pecado grave, tem o direito de “comungar” seguindo as regras que regem aquele sistema, seja ele salvo ou não. Já que esses um ou dois pecados que poderiam impedir sua comunhão raramente são tornados públicos, a verdade é que não existe essencialmente qualquer restrição para os que estão nesse sistema.</p>
+<p>Com outras denominações a prática varia. Os Congregacionais ou Independentes costumam ser tão abertos quanto os Episcopais. Todos os que se considerarem crentes são convidados a participarem do “Culto de Comunhão”. Este é também o caso com alguns Batistas, apesar de não agirem todos da mesma maneira. A verdade é que eles estão divididos em diferentes classes. Alguns fazem do batismo a condição para a comunhão, outros levam em consideração o fato de a pessoa pertencer a uma igreja, mas quase todos afirmam excluir aqueles que tiverem problemas em seu andar. Mas, até onde tenho conhecimento, nunca é considerada a doutrina que a pessoa professe. Veja, por exemplo, a Associação das Igrejas Batistas de Londres, à qual nós pertencíamos. Um membro muito conhecido ali negou por escrito que o ser humano seja totalmente pecador por natureza, enquanto outro tem ensinado que o castigo não é eterno. Mesmo assim estas coisas não afetam a posição deles como membros daquela denominação. Eu e você considerávamos isto deplorável. Em uma ocasião chegamos a nos afastar de uma congregação pois achávamos que, aos olhos de Deus, se continuássemos ali poderíamos estar endossando a maneira de pensar do irmão em cuja capela a Associação estava reunida.</p>
+<p>Voltando aos chamados “irmãos”, descobri que ocorreu uma divisão entre eles por causa deste mesmo assunto. Portanto, fui obrigado a examinar com cuidado a questão segundo as Escrituras. Minha pergunta era: Será que a Bíblia ensina que falsas doutrinas -- doutrinas que comprometam a Pessoa e obra do Senhor -- desqualificariam alguém para estar à mesa do Senhor? Colocando de outra maneira, será que deveríamos ter comunhão com pessoas que professam e ensinam falsa doutrina?</p>
+<p>Abra em Gálatas 1:8-9. Ali o assunto são os evangelistas que pregavam outro evangelho. Que evangelho era esse? Um evangelho que acrescentava a observância de rituais à fé em Cristo como meios de salvação -- um “evangelho” que é comum hoje em dia. Se não existisse disciplina por falsa doutrina aqueles pregadores da Galácia teriam sido recebido a destra à comunhão, do mesmo modo como a maioria faz hoje em todos os lugares. Mas o que Paulo diz? “Eu quereria que fossem cortados aqueles que vos andam inquietando” (<a href="http://bibliaonline.com.br/acf/gl/5/12">Gl 5:12</a>).</p>
+<p>No final da carta aos Gálatas, Paulo estabelece o princípio que continua sendo uma responsabilidade da Igreja: “E a todos quantos andarem conforme esta regra” -- ou seja, a verdadeira doutrina da “cruz de nosso Senhor Jesus Cristo” - <a href="http://bibliaonline.com.br/acf/gl/6/14-15">Gálatas 6:14-15</a> --, “paz e misericórdia sobre eles e sobre o Israel de Deus” (<a href="http://bibliaonline.com.br/acf/gl/6/16">Gl 6:16</a>). Portanto, conclui-se que não devemos ter comunhão com aqueles que não andam em conformidade com esta “regra”.</p>
+<p>Paulo também diz que “se alguém ensina alguma outra doutrina, e se não conforma com as sãs palavras de nosso Senhor Jesus Cristo, e com a doutrina que é segundo a piedade... aparta -te dos tais” (<a href="http://bibliaonline.com.br/acf/1tm/6/3-5">1 Tm 6:3-5</a>). Leia também as afirmações igualmente fortes de <a href="http://bibliaonline.com.br/acf/2tm/2/15-21">2 Timóteo 2:15-21</a> e <a href="http://bibliaonline.com.br/acf/2jo/1/9-11">2 João </a><a href="http://bibliaonline.com.br/acf/2jo/1/9-11">9-11</a>. As epístolas às sete igrejas em <a href="http://bibliaonline.com.br/acf/ap/2">Apocalipse 2</a> e <a href="http://bibliaonline.com.br/acf/ap/3">3</a> também estão cheias de ensino semelhante a este. Veja a porção endereçada à “igreja em Éfeso”. Nosso Senhor aprova o fato de eles terem colocado “à prova os que dizem ser apóstolos mas não são, e descobriu que eles eram impostores” (<a href="http://bibliaonline.com.br/acf/ap/2/2">Ap 2:2</a>). Por outro lado Ele condena Pérgamo e Tiatira por tolerarem falsa doutrina na igreja (<a href="http://bibliaonline.com.br/acf/ap/2/14,20">Ap 2:14, 20</a>).</p>
+<p>Estas passagens me convenceram de que o desejo do Senhor era que existisse disciplina contra a falsa doutrina. A razão é evidente. Se alguém que anda desordenadamente deve ser colocado fora da comunhão dos santos, mais ainda aquele que ensina falsa doutrina deve ser afastado, pois “um pouco de fermento (pecado) leveda toda a massa” (<a href="http://bibliaonline.com.br/acf/1co/5/6">1 Co 5:6</a>). Portanto, se um andar desordenado contamina, muito mais a falsa doutrina.</p>
+<p>Se um crente se entregar à embriaguez e a outros tipos de pecados notórios, ele causará desonra ao Seu senhor, mas os crentes com quem ele está associado provavelmente não seguirão seu triste exemplo. Por outro lado, se um santo é convencido de uma falsa doutrina ele irá ensiná-la e muitos ficarão contaminados (“fermento”). Darei a você um exemplo que conheço. Um certo ministro adotou pontos de vista que comprometiam a Pessoa e obra do Senhor Jesus Cristo. Muitos dos crentes associados a ele o seguiram nessas más doutrinas. Durante algum tempo o remanescente fiel que havia entre eles ficou sem ação. Mas o ministro, muito confiante de sua própria influência, não se contentou com o apoio que já estava recebendo. Por isso ele propôs que suas doutrinas deveriam se tornar a base sobre a qual eles estivessem congregados.</p>
+<p>Aquilo abriu os olhos de alguns que tinha estado em silêncio, mas quando a questão foi colocada em votação (o estatuto daquela igreja determinava que questões assim deveriam ser decididas pela maioria) a proposta do ministro foi derrotada por apenas um voto. Dessa forma o “fermento” teve sua ação bloqueada, já que o ministro foi forçado a se demitir. Mas se aquele ministro tivesse se lembrado do verdadeiro caráter do fermento, que atua silenciosamente, toda a massa estaria logo levedada, como boa parte dela já estava aos olhos de Deus antes que qualquer ação fosse tomada.</p>
+<p>A ideia de que o ensino de má doutrina possa ser tolerado é um erro fatal. A condição da Igreja hoje é resultado dessa terrível negligência. Ao invés de serem estabelecidos na verdade, os santos estão perguntando “O que é a verdade?”, pois a opinião humana costuma ser o único padrão que têm para se basearem.</p>
+<p>Depois de ter ficado satisfeito com o princípio da disciplina, passei a examinar relutantemente a “controvérsia de Bethesda”, que surgiu entre os assim chamados “irmãos” dividindo-os em dois grupos: um que costuma ser conhecido como “irmãos abertos” e outro como “irmãos exclusivistas”. Há alguns anos eu tinha examinado apenas um lado da questão. Agora investiguei também o outro lado e conversei com alguns que conheciam o assunto desde o princípio.</p>
+<p>Concluí que a dificuldade toda surgiu por causa da questão da disciplina por falsa doutrina e pela dúvida se a ação de uma assembleia em executar a disciplina deveria ser respeitada e mantida por outras assembleias. Por exemplo, suponha que alguém que ensine falsa doutrina seja colocado fora de comunhão em uma localidade. Seria correto recebê-lo em outra? O caso não deveria apresentar qualquer dificuldade, pois uma pessoa com um mínimo de inteligência espiritual seria capaz de enxergar que se a assembleia em Liverpool revertesse uma ação tomada pela assembleia em Manchester em uma questão envolvendo disciplina, ela estaria assim negando a verdade da unidade do corpo de Cristo. Ela também estaria declarando que aquilo que era correto para os santos em uma localidade poderia não ser para os santos em outra.</p>
+<p>Não discordo que erros possam ter sido cometidos na aplicação dos princípios genuínos de disciplina. Não cabia a mim decidir. Minha responsabilidade estava em decidir se os princípios tinham sido baseados na Palavra de Deus. Gostaria que todos os que se preocupam com este assunto se despojassem de todas as demais considerações e simplesmente se limitassem a examinar os princípios da disciplina em questão, perguntando apenas isto: “É bíblico ou não?”. Até que alguém tenha isto muito claro, não poderá decidir os méritos da “controvérsia de Bethesda”.</p>
+<p>Meu objetivo é eliminar uma dificuldade encontrada entre aqueles que questionam. As pessoas costumam perguntar: “Seria correto excluir fulano ou sicrano da comunhão da assembleia? Veja que vidas santas eles levam com sua devoção! Você ousaria julgar suas qualificações para estarem à mesa do Senhor?”.</p>
+<p>Perguntas como estas são comuns e para alguns elas são muito importantes. Mas estas questões simplesmente não têm nada a ver com o assunto! A única dúvida que devemos decidir é se a disciplina é algo que deve ser exercido de acordo com a Palavra de Deus. Se assim for, então a questão se transforma em uma simples obediência ao Senhor, e não em julgar ou não julgar outros crentes.</p>
+<p>O apóstolo João nos diz: “Nisto conhecemos que amamos os filhos de Deus, quando amamos a Deus e guardamos os seus mandamentos” (<a href="http://bibliaonline.com.br/acf/1jo/5/2">1 Jo 5:2</a>). Portanto, demonstramos amor aos santos, não por recebê-los à mesa do Senhor contra a expressa vontade de Deus, mas ao guardarmos os Seus mandamentos. Quero, por esta carta, aconselhar a todos os crentes, amado irmão, a não olharem para os homens, mas para o Senhor. Fazendo assim eles descobrirão que o caminho da disciplina contra a falsa doutrina, apesar de ser às vezes um caminho “estreito”, é o caminho da obediência a Deus.</p>
+<p>O ensino deste princípio de “disciplina” irá gerar a mais ferrenha oposição, pois tudo aquilo que ajuda a manter a Igreja de Deus como “coluna e firmeza da verdade” (<a href="http://bibliaonline.com.br/acf/1tm/3/15">1 Tm 3:15</a>), de acordo com o propósito divino, costuma despertar a ira de Satanás. Não existe melhor maneira de Satanás cumprir seus objetivos do que destruindo os limites que separam a verdade do erro. Você, querido irmão, está bem ciente da história da Igreja. Acaso não é verdade que a fraqueza e corrupção da Igreja sempre foram consequências da indiferença em se guardar a verdade livre da entrada do “fermento” (pecado) tanto no ensino quanto no andar? O que ocorre é que, uma vez que você pare de aplicar a disciplina bíblica, toda a certeza acerca da verdade logo é perdida no conflito causado pelas confusas opiniões dos homens.</p>
+<p>Qualquer que seja a oposição que este princípio de disciplina venha a causar, ninguém tem o direito de acusar de “sectarismo” aqueles que o mantêm. Uma seita é formada por pessoas que se reúnem ou se juntam por concordarem em alguma verdade ou doutrina, ou por compartilharem de uma determinada forma de administração eclesiástica. Portanto, Congregacionais, Batistas, Wesleyanos, Anglicanos e Presbiterianos são todas elas seitas. Todavia eles falam de si mesmos como se fossem apenas diferentes seções da Igreja.</p>
+<p>Mas quando os crentes estão simplesmente congregados, como membros do corpo de Cristo, em torno dEle que é a Cabeça, em obediência a Ele como Senhor, e buscando dependência do Espírito Santo para fazerem todas as coisas em sujeição à Palavra de Deus -- quando estão empenhados em manter a disciplina que Palavra de Deus exige -- eles não são uma “seita” de maneira alguma, pois existe um lugar à mesa do Senhor para todo crente que não esteja desqualificado pelo próprio Senhor em virtude de um andar desordenado ou de falsa doutrina. Isto, penso eu, ficará muito claro para qualquer mente que não seja preconceituosa.</p>
+<p>Afetuosamente seu, no Senhor, Edward Dennett</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="setima_carta.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="nona_carta.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="setima_carta.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="nona_carta.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

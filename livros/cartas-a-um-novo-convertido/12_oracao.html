@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>12 Oração - CARTAS A UM NOVO CONVERTIDO</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> CARTA A UM NOVO CONVERTIDO  - EDWARD DENNETT</a></li><li><a href="1_paz_com_deus.html"><strong aria-hidden="true">2.</strong> 1 Paz com Deus</a></li><li><a href="2_nosso_lugar_perante_deus.html"><strong aria-hidden="true">3.</strong> 2 Nosso lugar perante Deus</a></li><li><a href="3_nosso_lugar_neste_mundo/README.html"><strong aria-hidden="true">4.</strong> 3 Nosso lugar neste mundo</a></li><li><ol class="section"><li><a href="3_nosso_lugar_neste_mundo/1_nosso_lugar_em_relacao_ao_mundo.html"><strong aria-hidden="true">4.1.</strong> Nosso lugar em relação ao mundo.</a></li><li><a href="3_nosso_lugar_neste_mundo/2_nosso_lugar_em_relacao_ao_arraial.html"><strong aria-hidden="true">4.2.</strong> Nosso lugar em relação ao “arraial”.</a></li></ol></li><li><a href="4_o_corpo_de_cristo.html"><strong aria-hidden="true">5.</strong> 4 O Corpo de Cristo</a></li><li><a href="5_a_mesa_do_senhor.html"><strong aria-hidden="true">6.</strong> 5 A mesa do Senhor</a></li><li><a href="6_a_ceia_do_senhor.html"><strong aria-hidden="true">7.</strong> 6 A ceia do Senhor</a></li><li><a href="7_o_senhor_jesus_cristo_no_centro.html"><strong aria-hidden="true">8.</strong> 7 O Senhor Jesus Cristo no centro</a></li><li><a href="8_o_verdadeiro_lugar_de_adoracao.html"><strong aria-hidden="true">9.</strong> 8 O verdadeiro lugar de adoração</a></li><li><a href="9_adoracao.html"><strong aria-hidden="true">10.</strong> 9 Adoração</a></li><li><a href="10_ministerio.html"><strong aria-hidden="true">11.</strong> 10 Ministério</a></li><li><a href="11_a_palavra_de_deus.html"><strong aria-hidden="true">12.</strong> 11 A Palavra de Deus</a></li><li><a href="12_oracao.html" class="active"><strong aria-hidden="true">13.</strong> 12 Oração</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">CARTAS A UM NOVO CONVERTIDO</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="12_oracao.html#a12-oração-12-ora-o" id="a12-oração-12-ora-o"><h1>12 Oração </h1></a>
+<p>Prezado irmão,</p>
+<p>Resta apenas mais um assunto para lhe apresentar nesta série de cartas. Em minha última carta mostrei a importância da Palavra de Deus e agora gostaria de falar da oração e de sua conexão com a vida espiritual. Ambas as coisas — a Palavra de Deus e a oração — estão sempre ligadas. Assim também foi nos benditos afazeres da vida de nosso Senhor. Após um longo dia de ministério, encontramos um registro como este: <em>&quot;Porém Ele retirava-se para os desertos, e ali orava&quot;</em> (<a href="http://bibliaonline.com.br/acf/lc/5/16">Lc 5:16</a>); <em>&quot;E aconteceu que naqueles dias subiu ao monte a orar, e passou a noite em oração a Deus&quot;</em> (<a href="http://bibliaonline.com.br/acf/lc/6/12">Lc 6:12</a>). O mesmo encontramos nos primórdios da igreja, pois quando surgiram dificuldades com respeito à distribuição das ofertas dos santos, o apóstolo disse, <em>&quot;Não é</em> <em>razoável que nós deixemos a palavra de Deus e sirvamos às mesas... nós perseveraremos na oração e no ministério da palavra&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/6/2-4">Atos 6:2-4</a>). O apóstolo Paulo também uniu a Palavra de Deus à oração quando descreveu a armadura completa de Deus: <em>&quot;Tomai também o capacete da salvação, e a espada do Espírito, que é a palavra de Deus; orando em todo o tempo com toda a oração e súplica no Espírito&quot;</em> (<a href="http://bibliaonline.com.br/acf/ef/6/17,18">Efésios 6:17,18</a>).</p>
+<p>Temos, além do mais, exortações diretas para a oração, como por exemplo, <em>&quot;perseverai na oração&quot;</em>, <em>&quot;orai sem cessar&quot;</em>, <em>etc.</em> (<a href="http://bibliaonline.com.br/acf/rm/12/12">Rm 12:12</a>; <a href="http://bibliaonline.com.br/acf/1ts/5/17">1 Tessalonicenses 5:17</a>, e também <a href="http://bibliaonline.com.br/acf/lc/18">Lucas 18</a>). Se você ler também as introduções das epístolas de Paulo, verá como ele próprio agia de acordo com as suas exortações. À medida que você for seguindo o caminho do apóstolo, como nos é traçado no livro de Atos, chegará a pensar que ele nunca fez coisa alguma além de pregar; mas ao ler as introduções e outras partes de suas epístolas, você quase chegará a conclusão de que ele nunca fez outra coisa senão orar. Aproximando-se do exemplo de nosso bendito Senhor em Seus incansáveis trabalhos, iremos encontrar que Ele descobriu — sim, que Ele até mesmo aprendeu — a necessidade de esperar constantemente em Deus. De modo semelhante, a oração é uma necessidade para cada filho de Deus, pois em nós mesmos somos fracos e incapazes, totalmente dependentes, e a oração nada mais é do que a expressão de nossa dependência naquele a Quem oramos. Sendo dependentes de Deus para tudo, nossas próprias necessidades nos levam correndo à Sua presença; e pela liberdade de acesso que temos por meio de Cristo, graças ao lugar que ocupamos e em virtude do parentesco que desfrutamos, é mister que <em>&quot;cheguemos pois com confiança ao trono da graça, para que possamos alcançar misericórdia e achar graça a fim de sermos ajudados em tempo oportuno&quot;</em> (<a href="http://bibliaonline.com.br/acf/hb/4/16">Hb 4:16</a>).</p>
+<p>​1. Nosso Senhor ensina como deveria ser, por assim dizer, a maneira de orarmos. Falando aos Seus discípulos acerca da época quando Ele estaria ausente, Ele diz, “E tudo quanto pedirdes em Meu nome Eu o farei”; e mais uma vez, <em>&quot;Se pedirdes alguma coisa em Meu nome, Eu o farei”</em> (<a href="http://bibliaonline.com.br/acf/jo/14/13,14">Jo 14:13,14</a>). Duas coisas estão envolvidas nisto. O nome de Cristo é nossa garantia para nos apresentarmos diante de Deus, diante do Pai, recordando-nos de que nossas únicas credenciais para essa aproximação encontram-se em Cristo somente. Com certeza isto nos dá confiança. Se fosse para pensarmos em nós mesmos, em nossas falhas e indignidades, nunca iríamos nos aventurar a entrar na presença de Deus; mas quando os nossos olhos estão voltados para Cristo, para o que Ele é em Si mesmo, o que Ele é para Deus, e o que Ele é para nós, lembrando-nos de que entramos na presença de Deus em toda a infinita aceitação que Cristo ali desfruta, somos levados a compreender que Deus tem prazer em nós — em nos aproximarmos, em nossas lágrimas e orações. Somos, assim, encorajados a nos aproximarmos de Deus, e a derramarmos nosso coração diante dele a qualquer hora de tribulação ou necessidade.</p>
+<p>Mas pedir em nome de Cristo é mais do que usar o Seu nome como uma credencial de acesso; trata-se, na verdade, de nos apresentarmos diante de Deus munidos de todo o valor e autoridade daquele nome. Se, por exemplo, eu vou a um banco para sacar o dinheiro de algum cheque que recebi, estou retirando aquele valor em nome da pessoa que assinou o cheque. Do mesmo modo, quando me apresento diante de Deus em nome de Cristo, estou apresentando minhas súplicas a Deus com base em todo o valor que aquele nome tem para Deus. É por isso que nosso Senhor diz que, <em>&quot;se pedirdes alguma coisa em Meu nome Eu o farei&quot;</em> (<a href="http://bibliaonline.com.br/acf/jo/14/14">João 14:14</a>), pois se trata verdadeiramente de um gozo para o coração de Deus aceitar toda petição que é assim apresentada. A promessa é absoluta, sem qualquer limitação; pela simples razão de que nada poderia ser pedido em nome de Cristo que não estivesse de acordo com a vontade de Deus. Pois não poderíamos nos valer de Seu nome para qualquer pedido que não tivesse sido inspirado em nosso coração pelo próprio Espírito de Deus.</p>
+<p>​2. No <a href="http://bibliaonline.com.br/acf/jo/15">capítulo 15 de João</a>, nosso Senhor nos dá mais instruções a respeito do mesmo assunto. “Se vós estiverdes em Mim, e as Minhas palavras estiverem em vós, pedireis tudo o que quiserdes, e vos será feito” (<a href="http://bibliaonline.com.br/acf/jo/15/7">João 15:7</a>). Podemos conectar isto com outra passagem: <em>&quot;E esta é a confiança que temos nele, que, se pedirmos alguma coisa, segundo a Sua vontade, Ele nos ouve&quot;</em> (<a href="http://bibliaonline.com.br/acf/1jo/5/14">1 Jo 5:14</a>). Vemos que é segundo a vontade de Deus, o que exclui tudo aquilo que não esteja neste caráter. Mas nosso Senhor diz, “tudo o que quiserdes”, e isto nos traz diante de um aspecto muito importante da oração. Neste caso trata-se de algo condicional: <em>&quot;Se vós estiverdes em Mim, e as Minhas palavras estiverem em vós&quot;</em>; isto é, permanecendo em Cristo, lembrando-nos sempre de nossa dependência dele para tudo, e de que sem Ele nada podemos fazer; e Suas palavras permanecendo em nós, nos moldando conforme a Sua vontade, nos fazendo conformes a Si mesmo, necessariamente iremos expressar Seus próprios pensamentos e desejos, e, consequentemente, o <em>&quot;tudo o que quiserdes&quot;</em> acabará sendo, neste caso, <em>&quot;segundo a Sua vontade&quot;</em>. Será notado, ao mesmo tempo, que o poder de nossas orações depende de nossa condição espiritual. Trata-se de um princípio infalível. O mesmo é apresentado pelo apóstolo João: <em>&quot;Se o nosso coração nos condena, maior é Deus do que os nossos corações, e conhece todas as coisas. Amados, se o nosso coração nos não condena, temos confiança para com Deus; e qualquer coisa que Lhe pedirmos, dele a receberemos; porque guardamos os Seus mandamentos, e fazemos o que é agradável à Sua vista&quot;</em> (<a href="http://bibliaonline.com.br/acf/1jo/3/20,22">1 Jo 3:20,22</a>). Tiago também nos diz que, <em>&quot;a oração feita por um justo pode muito em seus efeitos&quot;</em> (<a href="http://bibliaonline.com.br/acf/tg/5/16">Tg 5:16</a>).</p>
+<p>Isto é de extrema importância, pois se negligenciarmos nosso estado espiritual, e como consequência perdermos nossa presente comunhão com Deus, nossas orações se tornarão frias e sem vida, degeneradas em uma repetição de verdades conhecidas ou de velhas frases, perdendo assim todo o seu significado e transformando-se em fórmulas mortas. As palavras se repetirão a fim de satisfazer a consciência, mas não expressarão qualquer necessidade sincera, e nenhum derramar da alma perante Deus, deixando de trazer qualquer tipo de resposta ou bênção. Cuidado com tal estado de espírito! Ele geralmente é prenúncio de um descarrilamento na vida do crente, e, se não for reprimido a tempo pela graça de Deus, irá acabar lançando a alma em aberta vergonha e desonra ao nome de Cristo.</p>
+<p>​3. os usos da oração são múltiplos. Em primeiro lugar, o Senhor nos associou Consigo mesmo em todos os Seus desejos. Sim, nossa comunhão é com o Pai, e com o Seu Filho Jesus Cristo (<a href="http://bibliaonline.com.br/acf/1jo/1/3">1 Jo 1:3</a>). Por isso, Deus espera que o nosso amor seja dirigido para tudo aquilo que é precioso ao Seu próprio coração. Ele nos incluiu em Seus interesses, e, portanto, quer que nos inteiremos da Sua vontade e que esta seja o objeto de nossas orações. Que imenso privilégio! Ele nos permite percorrer todos os Seus propósitos que nos são revelados na Sua Palavra; assistir com gozo ao cumprimento dos mesmos; observar a todos eles convergindo para a Pessoa do Seu amado Cristo e irradiando da mesma Pessoa, enquanto que tudo se reverte em glória ao Seu nome! Verdadeiramente, se formos capazes de entrar totalmente no gozo dessa esplêndida posição, pelo poder do Espírito, não deixaremos de ter um assunto ou um motivo para orar.</p>
+<p>Além disso, podemos expressar em oração as múltiplas necessidades de nossas próprias almas. <em>&quot;Não estejais inquietos por coisa alguma: antes as vossas petições sejam em tudo conhecidas diante de Deus pela oração e súplicas, com ação de graças. E a paz de Deus, que excede todo o entendimento, guardará os vossos corações e os vossos sentimentos em Cristo Jesus&quot;</em> (<a href="http://bibliaonline.com.br/acf/fp/4/6,7">Fl 4:6,7</a>). O mais marcante nesta passagem é que ela é encontrada no mesmo capítulo em que o apóstolo nos assegura, <em>&quot;O meu Deus, segundo as Suas riquezas, suprirá todas as vossas necessidades em glória, por Cristo Jesus&quot;</em> (<a href="http://bibliaonline.com.br/acf/fp/4/19">Fl 4:19</a>). Apesar desta bendita confiança que temos, continua válido o desejo de Deus para que nós, com toda a liberdade que temos como filhos, façamos conhecidas diante dele as nossas petições; e embora Ele não nos prometa que sempre atenderá a todas elas sem distinção, Ele nos assegura que a Sua paz guardará os nossos corações. É desta forma, portanto, que se estabelece a confiança em nosso relacionamento para com Deus; que é formado o inestimável hábito de podermos abrir o nosso coração, sem reservas, para com Ele, e que é cultivada a intimidade de comunhão. Foi em relação a isto que o salmista exclamou, <em>&quot;Confiai nele, ó povo, em todos os tempos; derramai perante Ele o vosso coração”</em> (<a href="http://bibliaonline.com.br/acf/sl/62/8">Salmo 62:8</a>); e o apóstolo Pedro disse, “Lançando sobre Ele toda a vossa ansiedade, porque Ele tem cuidado de vós” (<a href="http://bibliaonline.com.br/acf/1pe/5/7">1 Pe 5:7</a>).</p>
+<p>​4. Deve ser acrescentado que a palavra de Deus dá grande ênfase à conexão da fé com a oração. Nosso Senhor diz, <em>&quot;Por isso vos digo que tudo o que pedirdes, orando, crede que o recebereis, e tê-lo-eis&quot;</em> (<a href="http://bibliaonline.com.br/acf/mc/11/24">Mc 11:24</a>). Tiago também, após sua exortação para que se peça a Deus a sabedoria, diz, <em>&quot;Peça-a, porém, com fé, não duvidando”</em> (<a href="http://bibliaonline.com.br/acf/tg/1/6">Tg 1:6</a>); e em outra passagem, acrescenta que “a oração da fé salvará o doente” (<a href="http://bibliaonline.com.br/acf/tg/5/15">Tg 5:15</a>). O mesmo encontramos em Hebreus, quando lemos que <em>&quot;sem fé é impossível agradar-Lhe: porque é necessário que aquele que se aproxima de Deus creia que Ele existe, e que é galardoador dos que O buscam&quot;</em> (<a href="http://bibliaonline.com.br/acf/hb/11/6">Hb 11:6</a>). É fácil compreender isto, pois certamente Deus tem o direito de contar com nossa confiança em Seu amor e no Seu caráter, e com nossa fé na Sua Palavra, uma vez que Ele já Se revelou tão plenamente a nós na Pessoa de Seu Filho. Por isso, seria uma desonra para o Seu nome se duvidássemos ao nos aproximarmos dele. E assim como Ele espera que tenhamos confiança e fé, Ele deseja que contemos com Sua fidelidade e amor. Por isso o nosso bendito Senhor recorda a Seus discípulos, <em>&quot;vosso Pai sabe o que vos é necessário, antes de vós olho pedirdes&quot;</em> (Mateus 6:8). E o apóstolo Paulo nos ensina que, <em>&quot;Aquele que nem mesmo a Seu próprio Filho poupou, antes O entregou por todos nós, como nos não dará também com Ele todas as coisas?&quot;</em> (Romanos 8:32). Portanto, é o dom do Seu próprio Filho, Sua maior dádiva e a mais perfeita garantia do Seu amor, que é o fundamento sobre o qual podemos descansar, em completa confiança de que Ele não nos privará de qualquer bem, e que ainda Se deleitará em nos abençoar conforme o Seu próprio coração, e de acordo com o Seu próprio conhecimento de nossa necessidade.</p>
+<p>​5. Mais uma vez, toda verdadeira oração deve ser no Espírito Santo, e por meio dele. (Leia <a href="http://bibliaonline.com.br/acf/rm/8/26,27">Romanos 8:26,27</a>; <a href="http://bibliaonline.com.br/acf/fp/3/3">Fl 3:3</a>; <a href="http://bibliaonline.com.br/acf/jd/1/20">Judas 1:20</a>). Ele é o poder para a oração, como também o é para toda atividade da vida espiritual. Somos, assim, totalmente dependentes do Senhor Jesus Cristo para termos acesso a Deus; dependentes do Espírito Santo para termos o poder para orar, e dependentes de Deus para recebermos as bênçãos que buscamos. Ao Seu nome seja dado todo o louvor!</p>
+<p>Não vou me estender mais do que isto. Porém creio que você entenderá que devo exortá-lo quanto à importância de perseverar em oração. Não temos o direito de impor quaisquer normas ou regras quanto a este assunto, seja com respeito à hora ou à frequência com que se deve orar. Mas de uma coisa você pode ter certeza — nunca é demais orar. E se você permanecer na presença de Deus, encontrará sempre o momento e a disposição necessários à oração. Nossa responsabilidade é orar sem cessar, sempre mantendo sem interrupção a consciência de dependência, e de nossa necessidade da graça divina. Assim estaremos sempre lançando sobre Deus toda a nossa ansiedade, sempre desfrutando de liberdade de coração em Sua presença, e consequentemente estaremos sempre encontrando, no constante recebimento de Suas misericórdias, graça e bênção como respostas às nossas petições, as quais certamente se transformarão em novos temas para louvor e ações de graças.</p>
+<p><em>Edward Dennett</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="11_a_palavra_de_deus.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="11_a_palavra_de_deus.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

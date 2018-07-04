@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Sétima Carta - Minha Decisão</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> MINHA DECISAO - EDWARD DENNETT </a></li><li><a href="esclarecimento.html"><strong aria-hidden="true">2.</strong> Esclarecimento</a></li><li><a href="primeira_carta.html"><strong aria-hidden="true">3.</strong> Primeira Carta</a></li><li><a href="segunda_carta.html"><strong aria-hidden="true">4.</strong> Segunda Carta</a></li><li><a href="terceira_carta.html"><strong aria-hidden="true">5.</strong> Terceira Carta</a></li><li><a href="quarta_carta.html"><strong aria-hidden="true">6.</strong> Quarta Carta</a></li><li><a href="quinta_carta.html"><strong aria-hidden="true">7.</strong> Quinta Carta</a></li><li><a href="sexta_carta.html"><strong aria-hidden="true">8.</strong> Sexta Carta</a></li><li><a href="setima_carta.html" class="active"><strong aria-hidden="true">9.</strong> Sétima Carta</a></li><li><a href="oitava_carta.html"><strong aria-hidden="true">10.</strong> Oitava Carta</a></li><li><a href="nona_carta.html"><strong aria-hidden="true">11.</strong> Nona Carta</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Minha Decisão</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="setima_carta.html#sétima-carta-s-tima-carta" id="sétima-carta-s-tima-carta"><h1>Sétima Carta </h1></a>
+<p>Blackheath, janeiro de 1875</p>
+<p>Meu amado irmão,</p>
+<p>A questão do “ministério” do modo como é visto pelos assim chamados “irmãos” foi a próxima coisa a ocupar minha atenção. Mais uma vez descobri que a verdade sobre esta questão está relacionada ao Espírito Santo na assembleia. Quando este fato é claramente entendido, muitas dificuldades são solucionadas. Descobri que os chamados “irmãos” sustentam a ideia de que o Espírito Santo deve ter a liberdade de ministrar na assembleia por intermédio de quem Ele desejar; que qualquer um que possuir um dom, seja ele grande ou pequeno, é responsável em usá-lo para o Senhor. Minhas buscas nas Escrituras me levaram a descobrir estes dois princípios como sendo da vontade do Senhor.</p>
+<p>Abri em <a href="http://bibliaonline.com.br/acf/1co/12">1 Coríntios capítulos 12</a> e <a href="http://bibliaonline.com.br/acf/1co/14">14</a>. Nunca em meu próprio ministério eu havia lido ou explicado estes capítulos para minha congregação, pois sentia que eles não se encaixavam com o que praticávamos. Tentei acreditar que as passagens se aplicavam a um estado de coisas que já tinha terminado. Talvez seja esta a crença geral entre os denominacionais, pois eu raciocinava, como já ouvi outros raciocinarem, que “o Novo Testamento ainda não existia. Portanto essa ‘diversidade de dons’ foi dada para a edificação temporária da Igreja, até que eles pudessem conhecer a vontade do Espírito Santo através das Escrituras do Novo Testamento”. Mas será mesmo assim? Achei que tudo dependia de encontrar a resposta a esta questão. Portanto busquei mais cuidadosamente e em oração por luz e direção.</p>
+<p>Você está ciente de que, ao explicarmos e aplicarmos a verdade, sempre damos grande importância à questão: “A quem isto foi originalmente escrito”? Por exemplo, as instruções dadas a um judeu nem sempre podem ser aplicadas a um cristão. Por isso procurei o início da primeira carta aos Coríntios para ver a quem ela era endereçada, e encontrei o seguinte: “À igreja de Deus que está em Corinto, aos santificados em Cristo Jesus, chamados santos, com todos os que em todo o lugar invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso” (<a href="http://bibliaonline.com.br/acf/1co/1/2">1 Co 1:2</a>). Fica por demais evidente, a partir deste “destinatário”, que as instruções desta epístola não eram para ficar limitadas à assembleia local em Corinto. Ao contrário, elas eram destinadas a todos os crentes. Quando entendi o caráter permanente da passagem, fui obrigado a crer que estas instruções tinham por destino crentes em todo lugar e em todas as épocas.</p>
+<p>Esta conclusão foi confirmada por uma passagem em Efésios, onde temos uma lista de dons na qual estão incluídos os profetas, amplamente mencionados em 1 Coríntios 14. Então somos ensinados que estes dons são dados “querendo o aperfeiçoamento dos santos, para a obra do ministério, para edificação do corpo de Cristo; até que todos cheguemos à unidade da fé, e ao conhecimento do Filho de Deus, a homem perfeito, à medida da estatura completa de Cristo” (<a href="http://bibliaonline.com.br/acf/ef/4/11-13">Ef 4:11-13</a>). Evidentemente ainda não chegamos à unidade da fé. Portanto Deus tinha em mente a continuidade dos dons e a consequente aplicação das instruções contidas em <a href="http://bibliaonline.com.br/acf/1co/12">1 Coríntios capítulos 12</a> e <a href="http://bibliaonline.com.br/acf/1co/14">14</a>.</p>
+<p>Sendo assim, o fato de Espírito Santo ter liberdade para ministrar por meio de quem Ele quiser é uma verdade bíblica. Caso contrário, seria impossível entender uma declaração do tipo: “Falem dois ou três profetas, e os outros julguem. Mas, se a outro, que estiver assentado, for revelada alguma coisa, cale-se o primeiro. Porque todos podereis profetizar, uns depois dos outros; para que todos aprendam, e todos sejam consolados” (<a href="http://bibliaonline.com.br/acf/1co/14/29-31">1 Co 14:29-31</a>).</p>
+<p>Muitos concluem erroneamente que um “profeta” seja alguém que faça previsão das coisas ainda futuras e desconhecidas. Por isso questionam: “Que lugar teriam os profetas na Igreja de Deus já que a revelação da vontade e propósito de Deus está completa nas Escrituras?” Todavia, a verdadeira definição de um profeta é a de alguém que comunica o pensamento e a vontade de Deus àqueles a quem ele tiver sido foi enviado. Samuel e Elias eram profetas, mas tiveram muito pouco a ver com a previsão de eventos futuros. Seu principal trabalho era apresentar a vontade de Deus, que já tinha sido revelada na Lei, a fim de introduzi-la nos corações e consciências de sua nação. Assim é também com os profetas do Novo Testamento. Sua função é aplicar verdades conhecidas aos corações dos santos. Portanto, existe uma contínua necessidade do ministério desses profetas.</p>
+<p>A mesma coisa é vista em outra epístola. Em <a href="http://bibliaonline.com.br/acf/rm/12/68">Romanos 12:68</a> Paulo diz: “De modo que, tendo diferentes dons, segundo a graça que nos é dada, se é profecia, seja ela segundo a medida da fé; se é ministério, seja em ministrar; se é ensinar... etc.” (<a href="http://bibliaonline.com.br/acf/rm/12/6-8">Rm 12:6-8</a>). Estas exortações foram endereçadas à assembleia local em Roma, mas se aquela assembleia estivesse sob o cuidado pastoral de um único homem, não teria existido uma oportunidade de estas instruções, sobre o uso dos variados dons mencionados ali, serem obedecidas. Ao escrever, o apóstolo tinha em mente a total liberdade de o Espírito Santo ministrar por meio de quem Ele desejasse. A verdade é que este é claramente o objetivo das palavras de Paulo “Porque a um pelo Espírito é dada a palavra da sabedoria; e a outro, pelo mesmo Espírito, a palavra da ciência... e a outro a profecia... mas um só e o mesmo Espírito opera todas estas coisas, repartindo particularmente a cada um como quer” (<a href="http://bibliaonline.com.br/acf/1co/12/8-11">1 Co 12:8-11</a>).</p>
+<p>Poucos contestam que esta seria a ordem na Igreja primitiva, mas o argumento comum é que todos os dons cessaram no final da era apostólica, de modo que as instruções a respeito dos dons já não teria aplicação nos dias de hoje. Eu já previa em parte esta objeção ao apresentar a continuada aplicação das Escrituras em 1 Coríntios, mas gostaria de completar minha resposta fazendo duas considerações.</p>
+<p>Primeiro, se esta objeção fosse verdadeira por demonstração (o que não é), ela não afetaria o princípio do congregar. Nossa obrigação ainda seria estarmos congregados sobre o terreno bíblico, deixando liberdade para o uso dos dons quando o poder do Espírito nos fosse restaurado; ou caso isto nunca acontecesse, mesmo assim estaríamos reunidos em torno do Senhor em adoração e louvor, submissos à Sua vontade em nossa carência de dons.</p>
+<p>Em segundo lugar, se todos os dons tivessem desaparecido, como se costuma argumentar, isto não seria uma desculpa para mascararmos nossa condição de fraqueza substituindo a liberdade do Espírito por esquemas humanos. Se isto tiver sido uma disciplina do Senhor, não estamos livres para estabelecer ministros e cargos eclesiásticos conforme desejar nosso coração. Não, querido irmão, não podemos supor que temos tal liberdade; e o simples fato de que ela seja praticada só revela a crença de que a presença e o poder do Espírito Santo na assembleia estejam rapidamente se desvanecendo na mente dos crentes.</p>
+<p>O assunto pode ser sintetizado com poucas palavras. Já que deveria existir liberdade para o Espírito Santo ministrar por meio de quem Ele quisesse, a consequência lógica disto é que o dom é a medida da responsabilidade! Digo dom, e não ofício, pois aquele que possui o dom é responsável apenas diante do Senhor em usá-lo a favor dos santos. Sendo assim, supondo que você tenha o dom de exortar, Deus espera que você o use sem precisar aguardar que a Igreja aprove isso elegendo você para ocupar um ofício.</p>
+<p>A passagem já citada de <a href="http://bibliaonline.com.br/acf/rm/12/6-8">Romanos 12:6-8</a> demonstra isto. Ali Paulo escreve: “De modo que, tendo diferentes dons” (não ofícios), então que estes sejam usados. Os <a href="http://bibliaonline.com.br/acf/1co/12">capítulos 12</a> e <a href="http://bibliaonline.com.br/acf/1co/14">14 de 1 Coríntios</a> ensinam a mesma coisa, assim como <a href="http://bibliaonline.com.br/acf/ef/4/8-13">Efésios 4:8-13</a>, onde nos é dito claramente que o Senhor deu dons aos homens e, como princípio mostrado na parábola dos talentos de <a href="http://bibliaonline.com.br/acf/mt/25/14-30">Mateus 25:14-30</a>, Ele busca por resultados. Temos o mesmo princípio declarado em <a href="http://bibliaonline.com.br/acf/1pe/4/10-11">1 Pedro 4:10-11</a>: “Cada um administre aos outros o dom como o recebeu, como bons despenseiros da multiforme graça de Deus” . Sendo assim, o Senhor declara todos os Seus servos -- todos nós -- responsáveis pelo uso de nossos dons para edificarmos o Seu povo.</p>
+<p>Repito que isto é totalmente impossível sob ao “governo eclesiástico” dos denominacionais. Na verdade, suas políticas eclesiásticas desprezam as profecias e, consequentemente, extinguem o Espírito (<a href="http://bibliaonline.com.br/acf/1ts/19/20">1 Tessalonicenses 19:20</a>). Sendo assim, querido irmão, tenho de concordar com o caráter bíblico do “ministério” no modo como este é praticado entre os “irmãos”.</p>
+<p>Já ouvi a objeção de que “isto não funciona, independente de quão bíblico seja, e entre os chamados ‘irmãos’ há uma grande triste carência de mestres; portanto devemos adotar outras formas de abordagem”. Não tenho ainda como julgar a primeira parte desta objeção, e pretendo fazê-lo já que fiquei satisfeito com o que vi da vontade do Senhor relacionada ao ministério, no modo como este é revelado nas Escrituras. Estou totalmente convencido de que a sua forma de ministério é, como acontece com tudo mais, melhor do que o modo humano. Também não estou em posição de dizer se a segunda parte da objeção seja verdadeira, todavia sei que aqueles crentes que estão com os chamados “irmãos” são muito mais versados nas Escrituras do que os que estão nas denominações. Estou confiante, querido irmão, de que você irá concordar comigo nisto também, pois uma das maiores dificuldades que eu e você tivemos em nossas tentativas de instruir os cristãos em nosso “cuidado pastoral” tem sido sua falta de conhecimento da Palavra de Deus, devido ao hábito comum de obterem suas “opiniões” prontas dos pregadores de sua escolha.</p>
+<p>Seja como for, fico feliz por poder apoiar minhas conclusões apenas nas Escrituras, pois não temos outro guia. Se nos permitirmos acrescentar a sabedoria humana abrimos a porta para todo tipo de corrupção, como a que tem afligido e enfraquecido a Igreja de Deus. Guardando a Palavra de Deus posso contar com um guia certo e infalível e, ao mesmo tempo, uma forma de testar cada “sistema eclesiástico” que procure meu apoio. Também tenho a espada do Espírito, com a qual posso lutar as batalhas do Senhor neste dia de trevas e abandono da verdade.</p>
+<p>Afetuosamente seu no Senhor, Edward Dennett</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="sexta_carta.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="oitava_carta.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="sexta_carta.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="oitava_carta.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

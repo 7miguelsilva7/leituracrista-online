@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Segunda Carta - Minha Decisão</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> MINHA DECISAO - EDWARD DENNETT </a></li><li><a href="esclarecimento.html"><strong aria-hidden="true">2.</strong> Esclarecimento</a></li><li><a href="primeira_carta.html"><strong aria-hidden="true">3.</strong> Primeira Carta</a></li><li><a href="segunda_carta.html" class="active"><strong aria-hidden="true">4.</strong> Segunda Carta</a></li><li><a href="terceira_carta.html"><strong aria-hidden="true">5.</strong> Terceira Carta</a></li><li><a href="quarta_carta.html"><strong aria-hidden="true">6.</strong> Quarta Carta</a></li><li><a href="quinta_carta.html"><strong aria-hidden="true">7.</strong> Quinta Carta</a></li><li><a href="sexta_carta.html"><strong aria-hidden="true">8.</strong> Sexta Carta</a></li><li><a href="setima_carta.html"><strong aria-hidden="true">9.</strong> Sétima Carta</a></li><li><a href="oitava_carta.html"><strong aria-hidden="true">10.</strong> Oitava Carta</a></li><li><a href="nona_carta.html"><strong aria-hidden="true">11.</strong> Nona Carta</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Minha Decisão</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="segunda_carta.html#segunda-carta-segunda-carta" id="segunda-carta-segunda-carta"><h1>Segunda Carta </h1></a>
+<p>Blackheath, janeiro de 1875.</p>
+<p>Meu amado irmão,</p>
+<p>Quão misericordioso é o Senhor para esconder de nós o futuro. Meu receio é que se tivéssemos visto o caminho que havia diante de nós, nossas orações teriam morrido em nossos lábios. Como o Senhor responde às nossas orações? Em ambos os casos foi por meio de uma doença. Eu fui o primeiro a ser afligido, em outubro de 1872. Após ter me recuperado um pouco, empenhei-me em meu trabalho até março de 1873. Aquele período de fraqueza foi o mais fértil de meu ministério na conversão de almas. Era, portanto, meu mais sincero desejo permanecer em meu posto de ministro Batista, mas o Senhor iria me enviar para o deserto para uma longa temporada a fim de que eu perscrutasse meu coração em Sua presença.</p>
+<p>Por ter ficado muito doente, fui enviado para o continente para um seis meses de descanso, período que acabou se estendendo por treze meses até eu voltar. Embora o Senhor já tivesse me separado de minha congregação, eu alegremente me recordo de como eles ministraram para minhas necessidades ao longo daquele período. Que o Senhor possa reembolsá-los abundantemente, pois fizeram aquilo como a Ele próprio na pessoa de Seu servo. Ele, “segundo as suas riquezas, suprirá todas as suas necessidades em glória, por Cristo Jesus” (<a href="http://bibliaonline.com.br/acf/fp/4/19">Filipenses 4:19</a>).</p>
+<p>Antes de apresentar os exercícios que tive durante a minha estadia na Suíça, deixe-me olhar para frente alguns meses. Não muito tempo depois de eu ter partido, a sua saúde também falhou e você também foi para o continente onde, inesperadamente, nos encontramos em Lausanne. Você sabe como fiquei impressionado com essas “coincidências” no modo como o Senhor nos tratou! Assim, sugeri considerarmos se poderia existir algo em nossa posição e ensino que tivesse trazido sobre nós a amorosa disciplina do Senhor, e que talvez pudesse ser a intenção do Senhor nos corrigir e nos levar a uma compreensão mais completa da Sua verdade, e a uma posição mais de acordo com a sua vontade.</p>
+<p>Esta questão veio depois de muito autoexame e autojulgamento. É natural que a tribulação leve o filho de Deus a perscrutar seu próprio coração. Portanto, tão logo cheguei ao continente comecei, em minhas caminhadas diárias e durante as minhas noites insones, a ter sempre diante de mim a seguinte questão: “Qual seria o propósito do Senhor naquela aflição?” ou “O que Ele queria me ensinar?”. Resolvi não descansar até descobrir a razão de Sua mão pesando sobre mim. Por isso, examinei e reexaminei os métodos de trabalho que estava acostumado a usar, as verdades que ensinava, e a posição que ocupava. Deixe-me brevemente detalhar os resultados de minha investigação.</p>
+<p>Em primeiro lugar, ponderei sobre meu livro contra “os irmãos”. Logo depois de ter sido publicado eu já tinha lamentado a sua publicação, pois embora eu acreditasse em tudo o que tinha escrito, eu sinceramente admirava aquilo que conhecia dos assim chamados “irmãos”. Eu admirava seu caminhar separado, sua simplicidade de vida e seu amor pela Palavra de Deus e pela Pessoa de nosso amado Senhor. Fiquei triste por tê-los ferido e, por causa de meu livro, fechado todas as portas de comunhão com eles. Além disso, questionei se eu tinha sido justo em criticar citações tiradas do contexto; se, na verdade, eu tinha honestamente procurado determinar o seu significado real e, em seguida, testá-las pelas Escrituras.</p>
+<p>Portanto, muito antes de deixar a Inglaterra, parei de promover meu livro. De posse de informações mais autênticas sobre muitos dos pontos que eu tinha abordado, e tendo sido forçado a renunciar, depois de examinar as Escrituras, algumas doutrinas que eu tinha defendido no livro, eu me sentia obrigado não só a retirar o livro do mercado, mas a confessar que eu já não podia concordar com todas as declarações que fizera nele. Eu também havia decidido que, na primeira oportunidade, diria isso publicamente e expressaria minha tristeza pela publicação do livro.</p>
+<p>Em seguida, eu examinei minha prática à luz de meu ensino. Será que eu tinha sido coerente? Eu tinha que admitir algumas discrepâncias importantes. Eu havia pregado por muitos anos que os crentes deviam estar congregados, como crentes no dia do Senhor, para “partir o pão”. Eu também conhecia o mal que havia no costume de se alugar bancos na congregação. Mesmo sem levar em conta a inexistência de fundamento bíblico para tal prática, eu havia percebido que os crentes pobres tinham de se sentar onde pudessem, por mais desconfortável que fosse, pois os incrédulos em condições de pagar podiam escolher seus assentos. Eu havia expressado com frequência as minhas convicções sobre estes pontos e, por conseguinte, sentia-me satisfeito apenas com meu testemunho contra tal prática.</p>
+<p>Mas a falha era minha. Eu era responsável pelas verdades que o Senhor me revelara. Assim, eu era responsável, na fidelidade a Deus, por colocá-las em prática. Eu havia negligenciado isso, mas agora Deus me concedia a graça de confessar meu erro e buscar forças para ser fiel quando retornasse.</p>
+<p>Depois testei as doutrinas que tinha pregado à luz das Escrituras. Aqui também descobri motivos para me arrepender. Eu havia ensinado a mortalidade do corpo humano do Senhor, no sentido de que tal corpo iria necessariamente morrer. Eu não estava ciente dos erros que associados a esta doutrina, caso contrário eu a teria evitado e ficado horrorizado com ela. Um estudo mais aprofundado mostrou-me que o corpo humano do Senhor era mortal, mas apenas no sentido de ser capaz de morrer, e não de maneira alguma, como estando sob a necessidade da morte! Perseverar em tal ideia seria atacar os próprios fundamentos do sacrifício expiatório do Senhor na cruz.</p>
+<p>A vinda do Senhor para os Seus santos também ocupou a minha atenção. Eu havia sustentado que, embora sua vinda fosse pré-milenar (antes do reino de mil anos do Senhor sobre a terra), eu inseria eventos intermediários antes do “arrebatamento” dos santos. No meu pensar, a Igreja teria de passar pela grande tribulação e, portanto, estar na terra durante o reinado do Anticristo. Dediquei todo o inverno debruçando-me sobre este assunto. Busquei as Escrituras junto com outros cristãos e, finalmente, conclui que a Igreja não estaria na “tribulação” -- o período que ocorre entre a vinda do Senhor nas nuvens para os crentes (“Arrebatamento”) e seu retorno à Terra para reinar (Sua Vinda). Percebi, por exemplo, que Mateus 24 não se aplica à Igreja.</p>
+<p>Com grande alegria percebi que o crente tem o privilégio de diariamente esperar a volta do Senhor. Há muito eu tinha uma convicção secreta de que, a menos que fosse assim, muitas das exortações das Escrituras quanto a “esperar” e “vigiar” tinham pouca força, e que essa expectativa deveria exercer, no poder do Espírito Santo, a mais abençoada e santificadora influência sobre a alma do crente.</p>
+<p>Minha mudança de ponto de vista sobre este assunto me ajudou a modificar vários outros pontos. Isso esclareceu para mim a “natureza” e “vocação” da Igreja; o contraste entre a esperança terrena do judeu e a esperança celestial do crente, e entre o “reino” e a “Igreja”. Aquilo me levou a corrigir meu entendimento de outras verdades decorrentes desta verdade. Todavia, naquele momento não fui mais longe que isso.</p>
+<p>Embora durante o inverno, em leituras bíblicas e conversas com amigos, eu achasse difícil defender as “práticas eclesiásticas” da denominação com a qual eu estava associado, permaneci na posição que ocupava nela. Com as exceções acima, eu não tinha alterado qualquer princípio fundamental -- ao menos nada que afetasse a minha continuidade no posto que mantido por tantos anos. Se eu tinha qualquer ideia de alterar a minha posição, a simples perspectiva de em breve voltar à minha amada congregação era suficiente para eliminar tal ideia e restabelecer minha confiança. Assim, quando finalmente comecei a viagem de volta para casa, meu único medo era se minha saúde me permitiria retomar o trabalho interrompido por tanto tempo.</p>
+<p>Afetuosamente, no Senhor,</p>
+<p>Edward Dennett</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="primeira_carta.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="terceira_carta.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="primeira_carta.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="terceira_carta.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>
