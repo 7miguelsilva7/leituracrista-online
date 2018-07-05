@@ -3,17 +3,17 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         var share = window.location.href;
         var title = document.title;
     
-        document.write('<a id="mobile"  href="https://api.whatsapp.com/send?&text=*Leitura Cristã:* %0A' + share + '" target="_blank"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/whatsapp.png"/></a> <a href="http://www.facebook.com/sharer.php?u=' + share + '"target="_blank"> <img style="width:30px;height:30px;;display:scroll;position:fixed;bottom:70px;right:25px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/face.png"/> </a>');
+        document.write('<a id="mobile"  href="https://api.whatsapp.com/send?&text=*Leitura Cristã:* %0A*' + title + '* %0A' + share + '" target="_blank"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/whatsapp.png"/></a> <a href="http://www.facebook.com/sharer.php?u=' + share + '"target="_blank"> <img style="width:30px;height:30px;;display:scroll;position:fixed;bottom:70px;right:25px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/face.png"/> </a>');
     }else{
         var share = window.location.href;
         var title = document.title;
         
-        document.write('<a id="desktop"  href="https://web.whatsapp.com/send?&text=*Leitura Cristã:* %0A' + share + '" target="_blank"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/whatsapp.png"/></a> <a href="http://www.facebook.com/sharer.php?u=' + share + '" target="_blank"> <img style="width:30px;height:30px;;display:scroll;position:fixed;bottom:65px;right:25px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/face.png"/> </a>');
+        document.write('<a id="desktop"  href="https://web.whatsapp.com/send?&text=*Leitura Cristã:* %0A*' + title + '* %0A' + share + '" target="_blank"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/whatsapp.png"/></a> <a href="http://www.facebook.com/sharer.php?u=' + share + '" target="_blank"> <img style="width:30px;height:30px;;display:scroll;position:fixed;bottom:65px;right:25px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/face.png"/> </a>');
     }
 
 var links = document.links;
 for (var i = 0, linksLength = links.length; i < linksLength; i++) {
     if (links[i].hostname != window.location.hostname) {
-        links[i].target = 'right';
+        links[i].target = '_blank';
     }
 }
