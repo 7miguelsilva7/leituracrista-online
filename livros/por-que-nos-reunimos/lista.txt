@@ -1,0 +1,21 @@
+assets
+comandoEmPastas.sh
+como_o_espirito_de_deus_quer.md
+de_acordo_com_a_biblia.md
+e_custoso_deixar_o_arraial.md
+ele_me_glorificara.md
+lista.txt
+nenhum_outro_nome.md
+nenhum_programa_estabelecido.md
+o_espirito_de_deus_esta_aqui_para_guiar.md
+o_nome_do_senhor_jesus.md
+o_que_significa_o_arraial.md
+o_santuario_terreno.md
+PORQUE NOS REUNIMOS ASSIM  J. R. GILL.odt
+que_nome_levamos.md
+README.md
+reunidos_ao_seu_nome.md
+sair_a_ele_fora_do_arraial.md
+SUMMARY.md
+um_pao.md
+um_so_corpo.md

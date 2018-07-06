@@ -1,0 +1,15 @@
+assets
+comandoEmPastas.sh
+dia_primeiro
+dia_quarto
+dia_quinto
+dia_segundo
+dia_sexto
+dia_terceiro
+introducao
+lista.txt
+O QUE A BIBLIA DIZ SOBRE ROMANCE NAMORO DOUGLAS NICOLAS.odt
+perguntas_sobre_namoro
+prefacio.md
+README.md
+SUMMARY.md
