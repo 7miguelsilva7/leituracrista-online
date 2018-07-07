@@ -591,5 +591,3 @@ function playpen_text(playpen) {
         previousScrollTop = document.scrollingElement.scrollTop;
     }, { passive: true });
 })();
-
-<script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='1d99be6957ec6f84c218290527b400910a5bc2390d94919429ed203fcb8b6882';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
