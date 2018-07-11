@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>CAPÍTULO 3 - AO SEU NOME</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> AO SEU NOME</a></li><li><a href="apresentacao.html"><strong aria-hidden="true">2.</strong> APRESENTAÇÃO</a></li><li><a href="introducao.html"><strong aria-hidden="true">3.</strong> INTRODUÇÃO</a></li><li><a href="capitulo_1.html"><strong aria-hidden="true">4.</strong> CAPÍTULO 1</a></li><li><a href="capitulo_2.html"><strong aria-hidden="true">5.</strong> CAPÍTULO 2</a></li><li><a href="capitulo_3.html" class="active"><strong aria-hidden="true">6.</strong> CAPÍTULO 3</a></li><li><a href="capitulo_4.html"><strong aria-hidden="true">7.</strong> CAPÍTULO 4</a></li><li><a href="capitulo_5.html"><strong aria-hidden="true">8.</strong> CAPÍTULO 5</a></li><li><a href="capitulo_6.html"><strong aria-hidden="true">9.</strong> CAPÍTULO 6</a></li><li><a href="capitulo_7.html"><strong aria-hidden="true">10.</strong> CAPÍTULO 7</a></li><li><a href="capitulo_8.html"><strong aria-hidden="true">11.</strong> CAPÍTULO 8</a></li><li><a href="capitulo_9.html"><strong aria-hidden="true">12.</strong> CAPÍTULO 9</a></li><li><a href="capitulo_10.html"><strong aria-hidden="true">13.</strong> CAPÍTULO 10</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">AO SEU NOME</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="capitulo_3.html#capÍtulo-3" id="capÍtulo-3"><h1>CAPÍTULO 3</h1></a>
+<p><strong>PERGUNTA:</strong> <a href="http://bibliaonline.com.br/acf/mt/18/20"><strong>Mateus 18:20</strong></a> <strong>e</strong> <a href="http://bibliaonline.com.br/acf/lc/22/7-10"><strong>Lucas 22:7-10</strong></a> <strong>indicam que o Espírito de Deus é o divino Reunidor, que Ele guia os cristãos ao lugar escolhido por Deus. Se a posição dos assim chamados “santos reunidos” é nesse terreno, por que há tão poucos? Ou trata-se de um problema com o poder do Espírito em reunir, ou talvez esse não seja o lugar ao qual Ele está guiando o povo.</strong></p>
+<p>O problema aqui é que adotamos o número de pessoas em um grupo de cristãos como o padrão de medida. Nossa ideia é que se existir muita gente, então esse deve ser o lugar ao qual o Espírito de Deus está guiando as pessoas, mas este é um critério falso para julgar o verdadeiro terreno de reunião.</p>
+<p>De onde será que tiramos a ideia de que quanto mais, melhor? Este é um princípio mundano que encontramos em todas as esferas da vida aqui -- nos negócios, nos esportes <em>etc.</em> Todavia tal ideia não deveria ter lugar na igreja de Deus. Não lemos nas Escrituras que existiriam grandes grupos de crentes fiéis nos últimos dias. A Bíblia indica que nos últimos dias aumentaria o número de homens maus -- e não de homens fiéis (<a href="http://bibliaonline.com.br/acf/2tm/3/13">2 Tm 3:13</a>). É esta a grande diferença entre a primeira e a segunda epístola a Timóteo. Em 1 Tm a massa da profissão cristã é vista caminhando bem, embora alguns poucos indivíduos tivessem se desviado para o erro. Em 2 Tm (que descreve os últimos dias) ocorre exatamente o oposto; a massa é vista indo mal, e existem apenas alguns poucos indivíduos seguindo fielmente. Na verdade as Escrituras mostram que os únicos grupos que são descritos como grandes nos últimos dias são os movimentos heréticos! Por exemplo, <a href="http://bibliaonline.com.br/acf/2pe/2/1-2">2 Pe 2:1-2</a> diz: <em>&quot;E também houve entre o povo falsos profetas, como entre vós haverá também falsos doutores, que introduzirão encobertamente heresias de perdição, e negarão o Senhor que os resgatou, trazendo sobre si mesmos repentina perdição. E muitos seguirão as suas dissoluções, pelos quais será blasfemado o caminho da verdade&quot;</em>. Não estou dizendo que todos os grandes grupos de cristãos existentes hoje na cristandade evangélica ensinem doutrinas reprováveis, mas que se grandes números fossem um sinal de se estar certo, então a Igreja Católica seria o lugar correto -- eles reúnem mais pessoas que qualquer outra denominação. Certamente não podemos ser ingênuos.</p>
+<p>Deus não está ocupado com o aumento em números tanto quanto nós. Você já reparou que nas Escrituras quando números são mencionados sempre é dito algo como <em>&quot;</em><strong><em>quase</em></strong> <em>três mil almas”</em> ou <em>&quot;</em><strong><em>quase</em></strong> <em>cinco mil&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/2/41">Atos 2:41</a>; 4:4)? Mesmo na contagem de um número pequeno, diz <em>&quot;uns doze homens&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/19/7">At 19:7</a>). Deus está nos mostrando que não deveríamos ficar ocupados com o número de pessoas envolvidas em Seu testemunho -- o qual, por sinal, foi o pecado de Davi (<a href="http://bibliaonline.com.br/acf/2sm/24/1">2 Sm 24:1</a>).</p>
+<p>Uma frase que se costuma dizer é <em>&quot;Nossa igreja está crescendo&quot;</em>. O que se pretende dizer é que o número de pessoas naquele grupo em particular está aumentando. Ora, todos nós gostaríamos de ver isso acontecer, mas nas Escrituras o crescimento é usado para denotar o desenvolvimento espiritual na alma, e não para o tamanho numérico de um grupo de cristãos. Suponha que eu estivesse em uma reunião que tivesse 50 cristãos reunindo-se regularmente para adoração e ministério, e visse que não havia muito interesse ali. Eles estariam mais interessados em esportes, em suas casas <em>etc.</em> Embora eu pudesse estar grato por vê-los reunidos, sairia dizendo a mim mesmo: <em>&quot;Gostaria de ver um pouco mais de devoção ali&quot;</em>. Então, após um ano, suponha que eu voltasse àquele mesmo grupo de 50 crentes e imediatamente notasse uma mudança evidente. Eu os veria realmente ocupados com as coisas de Deus, fazendo muitas perguntas e ficando juntos após as reuniões para terem comunhão uns com os outros. Seu entendimento e maturidade na verdade teriam definitivamente progredido. Apesar de não terem acrescentado uma pessoa sequer, eu poderia dizer que eles realmente tinham crescido! Esta é a maneira como o crescimento é usado nas Escrituras.</p>
+<p>Quando ficamos ocupados com números sempre existe a tentação de comprometermos os princípios para acrescentarmos mais gente. Por exemplo, poderíamos conseguir mais pessoas em nossas reuniões se anunciássemos que uma banda de rock iria se apresentar ali. Mas não vamos fazer tal coisa, pois devemos servir em conformidade com os princípios da Palavra de Deus, se quisermos contar com a aprovação do Senhor (<a href="http://bibliaonline.com.br/acf/2tm/2/5">2 Tm 2:5</a>).</p>
+<p>Acredito não ter ainda respondido à pergunta, portanto vamos buscar algumas passagens que têm a ver com o assunto.</p>
+<p><strong>RESPOSTA:</strong> Existem muitos milhares de pessoas congregadas ao nome do Senhor nos dias de hoje, mas relativamente falando há poucos em comparação com a grande massa de crentes em todo o mundo. Creio que há pelo menos três razões para o pequeno tamanho deste testemunho.</p>
+<p>Trata-se de um Testemunho Remanescente</p>
+<p>A primeira razão pela qual os <em>&quot;santos reunidos&quot;</em> são relativamente poucos em número é que hoje é o dia das coisas pequenas. <a href="http://bibliaonline.com.br/acf/zc/4/9-10">Zacarias 4:9-10</a> diz: <em>&quot;As mãos de Zorobabel têm lançado os alicerces desta casa; também as suas mãos a acabarão, para que saibais que o SENHOR dos Exércitos me enviou a vós. Porque, quem despreza o dia das coisas pequenas?&quot;</em>. Os tempos nos quais zc foi chamado a viver eram dias de um testemunho remanescente. Naquela época o Senhor havia permitido que o Seu povo fosse levado para a Assíria (<a href="http://bibliaonline.com.br/acf/2rs/17/6">2 Reis 17:6</a>) e para a Babilônia (<a href="http://bibliaonline.com.br/acf/2rs/24/-25">2 Rs 24-25</a>), e apenas um remanescente deles foi deixado no divino centro em Jerusalém. Uma das características de um testemunho remanescente é que ele é de <em>&quot;coisas pequenas”</em>, já que a maioria do povo de Deus não estava ali para participar do privilégio de estarem no centro divino. Vivemos dias de um testemunho remanescente na história da igreja, e não podemos esperar que venha a existir grandes números de pessoas reunidas ao nome do Senhor do modo como Deus queria fazer no princípio.</p>
+<p>Creio ser de extrema importância entender o que significa um <em>&quot;testemunho remanescente&quot;</em> -- portanto deixe-me explicar com mais detalhes. Um grande princípio sobre o qual Deus age, quando falha aquilo que foi confiado aos homens em testemunho, é que Ele reduz seu tamanho, poder, glória e número, e daí para frente o conduz na forma de um remanescente. Ele não Se identifica com aquele testemunho em poder e glória como no princípio, quando foi estabelecido. Se Ele fizesse assim, pareceria aos olhos do mundo que Ele estaria aprovando seu estado caído e arruinado. Ao invés disso, Ele se recolhe em Seu poder e graça soberanos para manter Seu testemunho -- mas em um modo remanescente. A palavra “remanescente” significa uma pequena parte do todo. Portanto a própria natureza de um testemunho assim é seu pequeno tamanho. Se todo o povo de Deus estivesse ali participando dele não seria um remanescente. Deus agiu sobre este princípio com Israel no passado; Ele irá fazer o mesmo outra vez com o remanescente judeu em um dia vindouro; e Ele está fazendo isso com o testemunho cristão hoje.</p>
+<p><em>Para enxergar com maior clareza este princípio na Palavra de Deus vamos abrir em</em> <a href="http://bibliaonline.com.br/acf/dt/12/5-7"><em>Deuteronômio 12:5-7</em></a><em>: “Mas o lugar que o SENHOR vosso Deus escolher de todas as vossas tribos, para ali por o seu nome, buscareis, para sua habitação, e ali vireis. E ali trareis os vossos holocaustos, e os vossos sacrifícios, e os vossos dízimos, e a oferta alçada da vossa mão, e os vossos votos, e as vossas ofertas voluntárias, e os primogênitos das vossas vacas e das vossas ovelhas. E ali comereis perante o SENHOR vosso Deus, e vos alegrareis em tudo em que puserdes a vossa mão, vós e as vossas casas, no que abençoar o SENHOR vosso Deus”. Isto mostra claramente que o desejo original de Deus era que todo o Seu povo estivesse reunido para adoração naquele único lugar de Sua escolha, o qual era Jerusalém.</em></p>
+<p><em>Agora vamos abrir em</em> <a href="http://bibliaonline.com.br/acf/1rs/11/9-13"><em>1 Reis 11:9-13</em></a><em>: “Pelo que o SE-NHOR se indignou contra Salomão; porquanto desviara o seu coração do SENHOR Deus de Israel, o qual duas vezes lhe aparecera. E acerca deste assunto lhe tinha dado ordem que não seguisse a outros deuses; porém não guardou o que o SENHOR lhe ordenara. Assim disse o SENHOR a Salomão: Pois que houve isto em ti, que não guardaste a minha aliança e os meus estatutos que te mandei, certamente rasgarei de ti este reino, e o darei a teu servo. Todavia nos teus dias não o farei, por amor de Davi, teu pai; da mão de teu filho o rasgarei; Porém todo o reino não rasgarei; uma tribo darei a teu filho, por amor de meu servo Davi, e por amor a Jerusalém, que tenho escolhido”.</em></p>
+<p><em>Então, nos</em> <a href="http://bibliaonline.com.br/acf/1rs/11/29-36"><em>versículos 29-36</em></a><em>, diz: “Sucedeu, pois, naquele tempo que, saindo Jeroboão de Jerusalém, o profeta Aías, o silonita, o encontrou no caminho, e ele estava vestido com uma roupa nova, e os dois estavam sós no campo. E Aías pegou na roupa nova que tinha sobre si, e a rasgou em doze pedaços. E disse a Jeroboão: Toma para ti os dez pedaços, porque assim diz o SENHOR Deus de Israel: Eis que rasgarei o reino da mão de Salomão, e a ti darei as dez tribos. Porém ele terá uma tribo, por amor de Davi, meu servo, e por amor de Jerusalém, a cidade que escolhi de todas as tribos de Israel. Porque me deixaram, e se encurvaram a Astarote, deusa dos sidônios, a Quemós, deus dos moabitas, e a Milcom, deus dos filhos de Amom; e não andaram pelos meus caminhos, para fazerem o que é reto aos meus olhos, a saber, os meus estatutos e os meus juízos, como Davi, seu pai. Porém não tomarei nada deste reino da sua mão; mas por príncipe o ponho por todos os dias da sua vida, por amor de Davi, meu servo, a quem escolhi, o qual guardou os meus mandamentos e os meus estatutos. Mas da mão de seu filho tomarei o reino, e darei a ti, as dez tribos dele. E a seu filho darei uma tribo; para que Davi, meu servo, sempre tenha uma lâmpada diante de mim em Jerusalém, a cidade que escolhi para por ali o meu nome”.</em></p>
+<p><em>Depois, no</em> <a href="http://bibliaonline.com.br/acf/1rs/12/22-24"><em>capítulo 12:22-24</em></a><em>, diz: “Porém veio a palavra de Deus a Semaías, homem de Deus, dizendo: Fala a Roboão, filho de Salomão, rei de Judá, e a toda a casa de Judá, e a Benjamim, e ao restante do povo, dizendo: Assim diz o SENHOR: Não subireis nem pelejareis contra vossos irmãos, os filhos de Israel; volte cada um para a sua casa, porque eu é que fiz esta obra”.</em></p>
+<p>Vemos que, apesar de ter sido o desejo de Deus ter todo o Seu povo reunido em Jerusalém para oferecer seus sacrifícios (<a href="http://bibliaonline.com.br/acf/dt/12">Dt 12</a>), uma vez que a ruína tomou lugar, Ele não queria mais continuar o Seu testemunho em Seu divino centro no mesmo poder e glória que tinha no princípio. Salomão e os filhos de Israel haviam falhado e se desviado do Senhor para a idolatria (<a href="http://bibliaonline.com.br/acf/1rs/11/10-11,33">1 Rs 11:10-11, 33</a>), e isso fez com que o Senhor mudasse o modo de tratá-los. Ele iria reduzir o tamanho, poder e glória de Seu testemunho em Israel e daí em diante levá-lo como um “restante” ou “remanescente”. Esta é a primeira vez nas Escrituras que a palavra é usada em conexão com o testemunho público do povo de Deus. É importante observar a regra da “primeira vez” na Bíblia, isto é, quando algo é primeiramente usado nas Escrituras isso costuma dar o sentido de como será usado daí em diante em outras passagens. Portanto, faremos bem em prestar atenção ao que é dito aqui. O princípio de um testemunho remanescente é desenvolvido em mais detalhes em Esdras e Neemias, e nos escritos dos profetas Ageu, zacarias e Malaquias. Todavia, usei a passagem de 1 Reis por ela estabelecer o princípio de forma clara e simples.</p>
+<p>O que é importante reparar aqui é que ocorreu uma evidente mudança no modo de Deus agir em meio ao fracasso. Ele removeu dez das tribos do centro divino e manteve apenas <em>&quot;uma tribo”</em> ali -- um remanescente. Não se trata de uma contradição dos princípios de Deus, mas de uma mudança em sua forma de agir quando a ruína é generalizada.</p>
+<p>Ora, você poderia dizer: “Posso ver este princípio no modo de Deus agir com Israel no Antigo Testamento, mas poderia isto ser aplicado àqueles que vivem na época do Novo Testamento? Será que existe realmente algo como um testemunho remanescente na igreja?”. Sem dúvida alguma a resposta é sim. Você encontra isto na passagem que vimos em <a href="http://bibliaonline.com.br/acf/2tm/2/19-22">2 Timóteo 2:19-22</a>. Ali Deus encoraja os crentes exercitados a se separarem da mistura existente na casa de Deus e a se recolherem a uma posição remanescente <em>&quot;com os que, com um coração puro, invocam o Senhor&quot;</em>.</p>
+<p>Mas para ver isto mais claramente, abra agora em Apocalipse, <a href="http://bibliaonline.com.br/acf/ap/2">capítulos 2 e 3</a>. Estes capítulos trazem um esboço da história profética da igreja desde os primeiros dias, logo após os apóstolos, chegando até os últimos dias. Se seguirmos o curso de eventos apresentados nessas mensagens às sete igrejas veremos um declínio no testemunho cristão, até que finalmente chega-se a um ponto em que não há retorno, o que leva o Senhor a agir sobre o princípio de um testemunho remanescente.</p>
+<p>Em Éfeso aprendemos que <em>&quot;o anjo da igreja&quot;</em> os líderes responsáveis) julgava corretamente tudo o que fosse inconsistente com Senhor. Ali diz <em>&quot;que não podes sofrer os maus&quot;</em>. Mas infelizmente seus corações não estavam com Ele (<a href="http://bibliaonline.com.br/acf/ap/2/2-4">Ap 2:2-4</a>). Em Esmirna qualquer eventual aumento no declínio foi temporariamente pausado pelas grandes perseguições que se abateram sobre aquela igreja. A severidade da tribulação lhes fez retornar ao Senhor. Mas em Pérgamo, quando os tempos de grande perseguição haviam terminado, <em>&quot;o anjo da igreja&quot;</em> começou a tolerar alguns que tinham “a doutrina de Balaão”, que é o mundanismo e a idolatria. O anjo não foi acusado de ter essas doutrinas, mas o Senhor viu falta neles por não denunciarem o mal, como havia feito o anjo em Éfeso.</p>
+<p>Em Tiatira ocorreu uma condição pior: “O anjo da igreja” permitiu que se ensinasse a mesma má doutrina e prática que havia sido combatida por alguns em Pérgamo! (Compare <a href="http://bibliaonline.com.br/acf/ap/2/14">Ap 2:14</a> com <a href="http://bibliaonline.com.br/acf/ap/2/20">2:20</a>). O que teve início com alguns professando má doutrina terminou em muitos ensinando a mesma má doutrina. Isto mostra que se a existência do mal não for julgada ele acabará sendo aceito. Em Tiatira o ensino daquele mal havia se desenvolvido em todo um sistema de coisas chamado <em>&quot;Jezabel”,</em> que certamente corresponde ao catolicismo. Na Idade Média este sistema ímpio exercia um poder tão tirânico sobre a igreja como um todo, com seu poder e organização, que controlava até mesmo o anjo! Aqueles que ocupavam um lugar de responsabilidade haviam falhado em lidar com isso quando poderiam ter feito, e agora ele havia crescido em um monstro que os controlava! (Veja <a href="http://bibliaonline.com.br/acf/atos/27/14-15">Atos 27:14-15</a>. O “Euro-aquilão”, um forte vento mediterrâneo, tomou o controle da embarcação e a tripulação nada podia fazer senão se deixar levar: <em>&quot;E não podendo navegar contra o vento, dando de mão a tudo, nos deixamos ir à toa”</em>). A figura de <em>&quot;Jezabel”</em> é adequadamente utilizada aqui, pois aquela mulher não somente introduziu formalmente a idolatria em Israel, como também controlava e manipulava seu marido, o rei Acabe. Sendo esta a situação da condição pública da igreja, onde já não existia poder para lidar com o mal, o Senhor separou um remanescente, dizendo: <em>&quot;Mas eu vos digo a vós, e aos restantes [remanescentes]...&quot;</em>. Ele deixa de lado a grande massa de pessoas (<a href="http://bibliaonline.com.br/acf/ap/2/24">Ap 2:24</a>). Daquele momento em diante Ele passou a trabalhar com um remanescente que podia ouvir o que o Espírito estava dizendo às igrejas. Aqui temos a palavra <em>&quot;remanescente&quot;</em> usada em conexão com o testemunho cristão. É significativo que o Senhor não tenha colocado <em>&quot;outra carga&quot;</em> ou responsabilidade de consertarem a confusão existente no testemunho cristão, num esforço de levar a igreja de volta ao seu estado original. Ao invés disso, Ele dirigiu o foco deles para Sua vinda, dizendo: <em>&quot;Mas o que tendes, retende-o até que eu venha&quot;</em> (<a href="http://bibliaonline.com.br/acf/ap/2/25">Ap 2:25</a>).</p>
+<p>Daquele ponto em diante é vista uma notória mudança no modo de o Senhor tratar com a igreja. Até ali, nas três primeiras igrejas, a voz do Espírito era dirigida à igreja como um todo. <em>&quot;O que o Espírito diz às igrejas&quot;</em> vinha <strong>antes</strong> da promessa <em>&quot;ao que vencer&quot;</em>. Isto indica que a recompensa para o vencedor era colocada diante de toda a igreja, pois o Senhor ainda estava tratando com ela de um modo geral. Mas agora, deste ponto em diante, a ordem é revertida. O chamado para ouvir <em>&quot;o que o Espírito diz às igrejas&quot;</em> vem <strong>depois</strong> da promessa feita <em>&quot;ao que vencer&quot;</em>. Esta é a ordem nas últimas quatro igrejas. O que o Espírito tem a dizer com respeito à ordem na igreja já não é mais dado à multidão, mas apenas ao que vencer. A razão é que se supõe que apenas o vencedor irá escutar o que o Espírito está dizendo. Não se espera que as multidões venham a escutar e a se arrepender. A previsão de Paulo a Timóteo, de que as pessoas, em sua maioria, <em>&quot;não suportarão a sã doutrina; mas, tendo comichão nos ouvidos, amontoarão para si doutores conforme as suas próprias concupiscências&quot;</em> havia se realizado (<a href="http://bibliaonline.com.br/acf/2tm/4/2-3">2Tm 4:2-3</a>), e por isso o Espírito já não falava ao corpo como um todo.</p>
+<p>Fazendo uma observação sobre tal mudança, J. N. Darby escreveu que o corpo como um todo é <em>&quot;deixado de lado&quot;</em> deste ponto em diante, pois a grande massa pública da profissão cristã é tratada como sendo incapaz de ouvir e se arrepender. William Kelly escreveu: “Desse momento em diante o Senhor apresenta a promessa [ao que vencer] primeiro, e isto porque é em vão esperar que a igreja como um todo venha a recebê-la... apenas um remanescente [a recebe], o vencedor, e a promessa é para eles; quanto aos outros, está tudo acabado”. Como resultado disso, o Senhor já não esperava que a massa da profissão cristã escutasse e voltasse ao ponto de onde havia se desviado. Qualquer ideia de recuperar a igreja como um todo é abandonada, já que ela atingiu um ponto em que não há volta. É por isso que eu não creio que o Espírito esteja necessariamente falando a todas as pessoas na cristandade hoje no que diz respeito à verdade de reunir. Com a maioria Ele está simplesmente deixando que siga seu caminho junto às suas organizações denominacionais.</p>
+<p>Trabalhando com um testemunho remanescente desde então, o Senhor tem tido o prazer de recuperar a verdade que foi perdida pelo descuido da igreja nos séculos anteriores. Todavia Ele não parece achar apropriado recuperar a verdade toda de uma só vez. O remanescente mencionado em <a href="http://bibliaonline.com.br/acf/ap/2/24-29">Apocalipse 2:24-29</a> é formado pelos Valdenses, Albigenses e outros grupos semelhantes que se separaram do mal de <em>&quot;Jezabel&quot;</em> nos tempos medievais. A eles foi dito “o que tendes, retende-o até que eu venha”, referindo-se àquela pequena medida de verdade que eles possuíam. Algum tempo depois, por ocasião da Reforma, o Senhor permitiu que um pouco mais de verdade fosse recuperada, a saber, a supremacia da Bíblia e a fé unicamente em Cristo para a salvação. Mas aquele movimento do Espírito foi frustrado pelos próprios reformadores, que se uniram a determinados governos em busca de ajuda contra as perseguições da Igreja de Roma. Aquilo foi o mesmo que recorrer à carne em busca de socorro, ao invés de depender do Senhor (<a href="http://bibliaonline.com.br/acf/jr/17/5">Jeremias 17:5</a>; <a href="http://bibliaonline.com.br/acf/sl/118/8-9">Salmos 118:8-9</a>; <a href="http://bibliaonline.com.br/acf/is/31/1">Isaías 31:1</a>). O resultado foi a formação das grandes igrejas nacionais na cristandade e teve início aí o declínio do protestantismo, conforme é mostrado na igreja de Sardes (<a href="http://bibliaonline.com.br/acf/ap/3/1-6">Ap 3:1-6</a>).</p>
+<p>Não foi senão até o início dos anos 1800 que o Senhor trouxe uma completa recuperação da verdade da “fé que uma vez foi dada aos santos” (<a href="http://bibliaonline.com.br/acf/jd/1/1">Jd 1:3</a>). Isto aconteceu quando alguns saíram de todas as organizações formais criadas pelos homens na igreja e é mostrado na mensagem do Senhor à igreja de Filadélfia (<a href="http://bibliaonline.com.br/acf/ap/3/7-13">Ap 3:7-13</a>). Naquela ocasião Deus estabeleceu um testemunho corporativo da verdade do um só corpo. Antes dessa época o remanescente era formado por indivíduos que buscavam seguir adiante fielmente em separação da corrupção da igreja romana. Vivemos hoje nos dias em que cada homem faz aquilo que acha certo aos seus próprios olhos (<a href="http://bibliaonline.com.br/acf/jz/21/25">Jz 21:25</a>), e a maioria é complacente com esta lamentável condição. Isto é mostrado na igreja em Laodiceia (<a href="http://bibliaonline.com.br/acf/ap/3/14-22">Ap 3:14-22</a>).</p>
+<p>O que nos interessa aqui é que o testemunho cristão atingiu um ponto de irremediável ruína, o que exigiu uma mudança no modo do Senhor tratá-lo. Ele abandonou qualquer tentativa de restaurar a condição pública da igreja e agora está trabalhando com um testemunho remanescente. Não se trata de dizer que os santos reunidos sejam exatamente o remanescente, mas sim que eles ocupam, eclesiasticamente falando e como testemunho, uma posição remanescente em meio à confusão que permeia a igreja. De um modo geral, o remanescente é formado por todos os verdadeiros crentes espalhados pela grande massa da mera profissão cristã na cristandade.</p>
+<p>Assim como ocorreu com Israel, para manter hoje um testemunho remanescente da verdade de que há um só corpo o Senhor não precisa ter todos os cristãos do mundo congregados ao Seu nome, mesmo que seja este o Seu desejo para com eles. Como já foi mencionado, o próprio significado da palavra remanescente implica que nem todos estão ali. Em divina prerrogativa e graça Deus está tomando um aqui e outro ali e os está reunindo ao nome do Senhor, de modo que tal testemunho remanescente possa seguir adiante. A manutenção disso é uma obra soberana. Isto é visto na observação que o Senhor faz a Filadélfia: <em>&quot;O que abre, e ninguém fecha; e fecha, e ninguém abre&quot;</em> (<a href="http://bibliaonline.com.br/acf/ap/3/7">Ap 3:7</a>). Nem homens nem o diabo podem impedir sua continuação, embora tal testemunho possa parecer seguir em grande fraqueza. Por mais humilde que seja o testemunho, Deus não precisa de nenhum daqueles que Ele reuniu, independente de quão espiritualmente dotados eles possam ser. Se não quisermos permanecer e abandonarmos, o Senhor irá reunir outros de modo que Seu testemunho remanescente seja levado adiante até Sua vinda. O fato de existir alguém reunido já é totalmente uma obra de Deus; a graça que salva uma alma é a mesma graça que reúne para o nome do Senhor. Se algum de nós escutou <em>&quot;o que o Espírito diz às igrejas&quot;</em> e enxergou a verdade de como reunir, isso foi só por Ele ter aberto nossos ouvidos (<a href="http://bibliaonline.com.br/acf/pv/20/12">Pv 20:12</a>).</p>
+<p>Praticar Toda a Verdade é Impopular</p>
+<p>Uma segunda razão pela qual os “santos reunidos” são relativamente poucos em números é que eles procuram praticar toda a verdade de Deus - e isto não é nem um pouco popular. Coisas como adorar em espírito e em verdade sem instrumentos musicais (<a href="http://bibliaonline.com.br/acf/jo/4/23-24">Jo 4:23-24</a>; <a href="http://bibliaonline.com.br/acf/atos/17/24-25">Atos 17:24-25</a>), entender o lugar das irmãs na igreja (<a href="http://bibliaonline.com.br/acf/1co/11/2-16">1 Co 11:2-16</a>; <a href="http://bibliaonline.com.br/acf/1co/14/34-40">14:34-40</a>; <a href="http://bibliaonline.com.br/acf/1tm/2/9-15">1 Timóteo 2:9-15</a>); praticar o julgamento coletivo do pecado e a excomunhão (<a href="http://bibliaonline.com.br/acf/1co/5/1-13">1 Co 5:1-13</a>) e outras verdades não são populares. A maioria dos cristãos hoje não quer estar conectada com algo que restrinja seu estilo de vida.</p>
+<p>A Mão de Deus em Juízo Governamental Pesa Sobre Nós</p>
+<p>A <em>terceira</em> razão do pequeno número de pessoas entre os reunidos ao nome do Senhor é que temos falhado em nossa responsabilidade de estarmos reunidos ao Seu nome, e a mão de Deus tem pesado sobre nós em disciplina governamental. Consequentemente, Deus nos reduziu numericamente a fim de nos humilhar. Isto também para nossa própria vergonha.</p>
+<p>É triste dizer, mas houve épocas quando nos sentíamos orgulhosos de sermos aqueles que o Senhor havia reunido ao Seu nome, quando na verdade tudo não passava de uma obra da graça soberana. É claro que esse não deveria ser nosso espírito, quando o testemunho cristão está em ruínas. Se nós fomos reunidos assim, nada temos de nos gloriar, pois foi somente pela Sua graça que Ele nos concedeu tamanho privilégio. Se aqueles que Ele reuniu ao Seu nome são um testemunho, nada mais são do que um testemunho do fato de que existe uma ruína no testemunho cristão, e isto é algo de que ninguém iria querer se orgulhar. Como resultado de nosso lamentável estado, o Senhor tem pesado Sua mão sobre nós e nos reduziu em número como santos reunidos ao Seu nome, em comparação ao que era no passado. Possamos nós ouvir <em>&quot;a vara, e quem a ordenou&quot;</em> (<a href="http://bibliaonline.com.br/acf/mq/6/9">Mq 6:9</a>).</p>
+<p><a href="http://bibliaonline.com.br/acf/sf/3/11-12"><em>Sofonias 3:11-12</em></a> <em>nos apresenta o princípio da ação governamental do Senhor. Ali diz: “Naquele dia não te envergonharás de nenhuma das tuas obras, com as quais te rebelaste contra mim; porque então tirarei do meio de ti os que exultam na tua soberba, e tu nunca mais te ensoberbecerás no meu monte santo. Mas deixarei no meio de ti um povo humilde e pobre; e eles confiarão no nome do SENHOR”.</em></p>
+<p><strong>RESUMINDO:</strong> A resposta resumida para a razão de os “santos reunidos” serem relativamente poucos em número é:</p>
+<ol>
+<li>A intenção era que fosse pequeno -- está em sua própria natureza. Por ser um testemunho remanescente, o Espírito de Deus não está necessariamente reunindo cada cristão restante na face da terra ao nome do Senhor para manter este testemunho. Por meio de Sua graça soberana Ele está mantendo uma <em>&quot;lâmpada&quot;</em> (<a href="http://bibliaonline.com.br/acf/1rs/11/36">1 Rs 11:36</a>) na terra quanto à prática da verdade do um só corpo até que o Senhor venha.</li>
+</ol>
+<p>​2) Aqueles reunidos ao nome do Senhor procuram praticar toda a verdade de Deus, e muitas coisas nas Escrituras, como já observamos, não são populares. Portanto a maioria dos cristãos não está interessada em se identificar com este movimento.</p>
+<p>​3) Aqueles congregados ao nome do Senhor falharam e a mão de Deus tem estado sobre eles de forma disciplinar. Deus reduziu o número deste testemunho remanescente para humilhar os que estão conectados a ele.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="capitulo_2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="capitulo_4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="capitulo_2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="capitulo_4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

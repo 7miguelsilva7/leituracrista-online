@@ -1,0 +1,11 @@
+a_comunhao_dos_apostolos.md
+a_doutrina_dos_apostolos.md
+assets
+comandoEmPastas.sh
+lista.txt
+oracao.md
+partir_o_pao.md
+Princípios Fundamentais Sobre os quais A Igreja é Edificada.odt
+quem_eram_eles.md
+README.md
+SUMMARY.md

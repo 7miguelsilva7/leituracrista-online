@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Quinta Parte - A Total Suficiência de Cristo</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="primeira_parte.html"><strong aria-hidden="true">1.</strong> Primeira Parte</a></li><li><a href="segunda_parte.html"><strong aria-hidden="true">2.</strong> Segunda Parte</a></li><li><a href="terceira_parte.html"><strong aria-hidden="true">3.</strong> Terceira Parte</a></li><li><a href="quarta_parte.html"><strong aria-hidden="true">4.</strong> Quarta Parte</a></li><li><a href="quinta_parte.html" class="active"><strong aria-hidden="true">5.</strong> Quinta Parte</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">A Total Suficiência de Cristo</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="quinta_parte.html#quinta-parte" id="quinta-parte"><h1>Quinta Parte</h1></a>
+<p>A Palavra de Cristo como guia todo-suficiente para o nosso andar</p>
+<p>Se o leitor foi, por graça, capacitado a se apossar do que nos foi apresentado nestes capítulos, terá à disposição o remédio perfeito para toda intranquilidade de consciência e para toda inquietude de coração. A obra de Cristo, quando tão somente apropriada por uma fé simples, deverá, por bendita necessidade, atender a intranquilidade de consciência; e a Pessoa de Cristo, quando tão somente contemplada com um olho simples, irá atender perfeitamente toda inquietude de coração. Se, por conseguinte, não nos encontramos desfrutando de paz de consciência, só pode ser por não estarmos descansando na obra consumada de Cristo; e se o coração não estiver à vontade, é prova de que não estamos satisfeitos com o próprio Cristo.</p>
+<p>E mesmo assim, quão poucos, mesmo dentre o amado povo do Senhor, conhecem a paz de consciência e a quietude de coração. Quão raro é encontrar uma pessoa desfrutando da verdadeira paz de consciência e de tranquilidade de coração! os cristãos, de um modo geral, não se encontram nem um pouquinho mais adiantados da condição dos santos do Antigo Testamento. Eles não conhecem a bênção de uma redenção consumada; não estão desfrutando de uma consciência limpa; não podem se aproximar com verdadeiro coração, em inteira certeza de fé, com os corações purificados da má consciência, e o corpo lavado com água limpa; não compreendem a grande verdade que é serem habitados pelo Espírito Santo, que os capacita a clamar “Aba, Pai”. Encontram-se, no que diz respeito à sua experiência, sob a lei; na realidade, nunca entraram na profundidade da bênção que é estar sob o reinado da graça. Eles têm vida. É impossível duvidar disso. Eles amam as coisas divinas; suas preferências, seus hábitos, suas aspirações – sim, até mesmo seus exercícios, conflitos, ansiedades, dúvidas e temores, tudo isso demonstra a existência de vida divina. Eles se encontram, de um certo modo, separados do mundo, mas sua separação é mais negativa que positiva. É mais por verem a completa vaidade do mundo, e sua inabilidade em satisfazer seus corações, do que por terem encontrado em Cristo um objetivo. Perderam o gosto pelas coisas do mundo, mas não encontraram seu lugar e porção no Filho de Deus onde Ele agora está à destra de Deus. As coisas do mundo não podem satisfazê-los, e não se encontram desfrutando da posição, objetivo e esperança celestiais que lhes são próprias; portanto, se encontram em uma condição totalmente anômala; não têm certeza, nem descanso, nem constância de propósitos; não são felizes; não conhecem qual o verdadeiro ponto de apoio; não são nem uma coisa nem outra.</p>
+<p>Será que é assim com o leitor? Esperamos sinceramente que não. Cremos que o leitor seja um daqueles que, por graça infinita, conhecem “o que nos é dado gratuitamente por Deus” (<a href="http://bibliaonline.com.br/acf/1co/2/12">1 Co 2:12</a>); que sabem haver passado da morte para a vida – que têm vida eterna; que desfrutam do precioso testemunho do Espírito; que entendem sua associação com uma Cabeça ressurreta e glorificada nos céus, a Quem estão ligados pelo Espírito Santo, que neles habita; que encontraram seu objetivo na Pessoa daquele Ser bendito cuja obra consumada é a base divina e eterna de sua salvação e paz; e que estão sinceramente ansiando pelo bendito momento quando Jesus virá para recebê-los para Si mesmo, para que onde Ele estiver, eles possam estar também, para de lá nunca mais saírem, eternamente.</p>
+<p>Isto é cristianismo. Nada mais merece este nome. É algo que permanece em evidente e notável contraste com a religiosidade espúria de nossos dias, a qual não é nem puro judaísmo, nem puro cristianismo, mas uma péssima mistura, composta de alguns elementos de cada, cujo povo inconverso pode adotar e seguir, pois concede liberdade às concupiscências da carne e lhes permite desfrutar dos prazeres e vaidades do mundo, em busca de contentamento para seus corações. O arqui-inimigo de Cristo e das almas foi bem sucedido ao produzir um horrível sistema de religião, meio judaico, meio cristão, combinando, da maneira mais habilidosa, o mundo e a carne, com um certo montante de passagens das Escrituras, utilizadas de modo a destruir sua força moral e impedir sua correta aplicação. As almas ficam, assim, emaranhadas e sem esperança. Por um lado os inconversos são enganados com a ideia de que são cristãos realmente muito bons, e que estão seguindo direto para o céu; e, por outro lado, o querido povo do Senhor é roubado de seu lugar e privilégios que lhe são próprios, e arrastados para baixo pela escura e depressiva influência da atmosfera religiosa que o cercam e quase o sufocam.</p>
+<p>Não está, cremos, ao alcance da língua humana expressar as aterrorizantes consequências dessa mistura do povo de Deus com o povo do mundo em um sistema comum de religiosidade e crença teológica. Seu efeito sobre os que pertencem ao povo de Deus é o de cegar seus olhos para as glórias morais do cristianismo, como são apresentadas nas páginas do Novo Testamento; e isto a um ponto tal que se alguém tentar desvendar essas glórias aos seus olhos, será reputado como um entusiasta visionário ou um perigoso herege. O efeito de tudo isso, sobre os que pertencem ao mundo, é o de enganá-los totalmente quanto à sua verdadeira condição, caráter e destino. Ambas as classes de pessoas recitam as mesmas fórmulas, compartilham do mesmo credo, fazem as mesmas orações, são membros da mesma comunidade, tomam parte do mesmo sacramento, estão, em suma, eclesiasticamente, teologicamente, religiosamente unidas.</p>
+<p>Talvez se diga em resposta a tudo isso, que nosso Senhor, em Seu maravilhoso sermão de <a href="http://bibliaonline.com.br/acf/mt/13">Mateus 13</a>, ensina de modo distinto que o trigo e o joio devem ser deixados a crescer juntos. Sim; mas onde? na Igreja? Não; mas “no campo”; e Ele nos diz que “o campo é o mundo”. Confundir estas coisas é falsificar a posição cristã como um todo, e se livrar de toda a piedosa disciplina que deve ser exercida na assembleia. É colocar o ensino de nosso Senhor em Mateus 13 em oposição ao ensino do Espírito Santo em <a href="http://bibliaonline.com.br/acf/1co/5">1 Corintios 5</a>.</p>
+<p>Todavia, não vamos nos deter mais neste assunto. Ele é importante e extenso demais para ser tratado em um artigo tão breve quanto este. Talvez venhamos a discuti-lo melhor em alguma outra ocasião. Estamos completamente convencidos de que ele exige a consideração séria do leitor cristão, apoiado, como está de modo tão manifesto, na glória de Cristo, nos verdadeiros interesses do Seu povo, no progresso do evangelho, na integridade do testemunho e serviço cristãos, de modo que seria praticamente impossível superestimar a sua importância. Mas devemos deixá-lo por enquanto, e direcionar este artigo para seu encerramento com uma breve referência ao terceiro e último ramo de nosso assunto, a saber, a Palavra de Cristo como o guia todo-suficiente para nosso caminho.</p>
+<p>Se a obra de Cristo é suficiente para a consciência, se Sua bendita Pessoa é suficiente para o coração, então, com toda a certeza, a Sua preciosa Palavra é suficiente para o caminho. Podemos admitir, com toda a confiança possível, que possuímos no divino volume das Sagradas Escrituras tudo o que poderíamos precisar, não apenas para atender as necessidades de nossa senda individual, mas também para as variadas necessidades da Igreja de Deus, nos mínimos detalhes de sua história neste mundo.</p>
+<p>Estamos bem cientes de que ao fazermos uma tal afirmação nos expomos a muita zombaria e oposição, vindas de mais de uma direção. Seremos confrontados, por um lado, com os que defendem a tradição e, por outro, por aqueles que lutam pela supremacia do raciocínio e vontade humana; mas isto nos deixa verdadeiramente muito pouco preocupados. Consideramos as tradições dos homens, sejam eles pais, irmãos ou doutores, quando apresentadas como sendo de alguma autoridade, como uma partícula de poeira na balança; e no que se refere ao raciocínio humano, só pode ser comparado ao morcego, ao sol do meio-dia, cego pela luz, e se lançando contra obstáculos que não pode ver.</p>
+<p>É do mais profundo gozo para o coração do cristão poder se desvencilhar das conflitantes tradições e doutrinas dos homens e entrar na tranquila luz das Sagradas Escrituras; e quando diante dos impudentes raciocínios do ímpio, do racionalista, do cético, sujeitar todo o seu ser moral à autoridade e poder das Sagradas Escrituras. Ele reconhece, com gratidão, na Palavra de Deus o único padrão perfeito para doutrina, moral, e tudo mais. “Toda a Escritura é divinamente inspirada, e proveitosa para ensinar, para redarguir, para corrigir, para instruir em justiça; para que o homem de Deus seja perfeito, e perfeitamente instruído para toda a boa obra” (<a href="http://bibliaonline.com.br/acf/2tm/3/16,17">2Tm 3:16,17</a>).</p>
+<p>De que mais podemos precisar? De nada. Se as Escrituras podem tornar um menino “sábio para a salvação”, e se elas podem tornar um homem “perfeito e perfeitamente instruído para toda a boa obra”, o que é que queremos com a tradição ou com o raciocínio humano?</p>
+<p>Se Deus escreveu um volume para nós, se Ele condescendeu em nos dar uma revelação do Seu pensamento, quanto a tudo o que devemos conhecer, pensar, sentir, crer e fazer, iríamos nós nos voltar para um pobre mortal nosso semelhante – seja ele ritualista ou racionalista – para nos ajudar? Longe de nós um tal pensamento! Seria o mesmo que nos voltarmos ao nosso semelhante a fim de acrescentarmos algo à obra consumada de Cristo; a fim de fazê-la suficiente para a nossa própria consciência, ou suprir o necessário para cobrir alguma deficiência que encontrássemos na Pessoa de Cristo, visando fazer dele um objeto que fosse suficiente para nosso coração. Seria como nos entregarmos à tradição ou ao raciocínio humano para suprir alguma deficiência que encontrássemos na revelação divina.</p>
+<p>Todo louvor e graças sejam ao nosso Deus por não ser este o caso. Ele nos deu, em Seu amado Filho, tudo o que necessitamos para a consciência, para o coração, para o caminho aqui – para o tempo, com todos os seus cenários em constante mutação – para a eternidade, com suas eras incontáveis.</p>
+<p>Podemos dizer:</p>
+<p>Tu, Oh, Cristo, és tudo de que precisamos; Mais que tudo em Ti encontramos.</p>
+<p>Não há, e nem poderia existir, qualquer falta no Cristo de Deus. Sua expiação e Sua intercessão devem satisfazer todos os anseios da consciência mais profundamente exercitada. As glórias morais – a poderosa atração de Sua divina Pessoa – devem satisfazer as mais intensas aspirações e desejos do coração. E sua inigualável revelação – esse volume sem preço – contém entre suas capas tudo o que possamos necessitar, do princípio ao fim de nossa carreira cristã.</p>
+<p>Leitor cristão: acaso essas coisas não são assim? Acaso você não reconhece a verdade que há nelas, do mais íntimo do seu ser moral renovado? Se assim for, será que você está descansando, em tranquilo repouso, na obra de Cristo? Está se deleitando em Sua Pessoa? Está se sujeitando, em todas as coisas, à autoridade da Sua Palavra? Deus queira que assim possa ser com você, e com todos os que professam o Seu nome! Possa haver um testemunho cada vez mais pleno, mais claro e mais decidido para a total suficiência de Cristo, até aquele dia.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="quarta_parte.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="quarta_parte.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

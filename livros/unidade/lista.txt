@@ -1,0 +1,7 @@
+assets
+comandoEmPastas.sh
+lista.txt
+README.md
+SUMMARY.md
+UNIDADE.odt
+unidade_o_que_e_sera_isso_que_professo.md

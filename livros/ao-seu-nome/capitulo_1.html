@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>CAPÍTULO 1 - AO SEU NOME</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> AO SEU NOME</a></li><li><a href="apresentacao.html"><strong aria-hidden="true">2.</strong> APRESENTAÇÃO</a></li><li><a href="introducao.html"><strong aria-hidden="true">3.</strong> INTRODUÇÃO</a></li><li><a href="capitulo_1.html" class="active"><strong aria-hidden="true">4.</strong> CAPÍTULO 1</a></li><li><a href="capitulo_2.html"><strong aria-hidden="true">5.</strong> CAPÍTULO 2</a></li><li><a href="capitulo_3.html"><strong aria-hidden="true">6.</strong> CAPÍTULO 3</a></li><li><a href="capitulo_4.html"><strong aria-hidden="true">7.</strong> CAPÍTULO 4</a></li><li><a href="capitulo_5.html"><strong aria-hidden="true">8.</strong> CAPÍTULO 5</a></li><li><a href="capitulo_6.html"><strong aria-hidden="true">9.</strong> CAPÍTULO 6</a></li><li><a href="capitulo_7.html"><strong aria-hidden="true">10.</strong> CAPÍTULO 7</a></li><li><a href="capitulo_8.html"><strong aria-hidden="true">11.</strong> CAPÍTULO 8</a></li><li><a href="capitulo_9.html"><strong aria-hidden="true">12.</strong> CAPÍTULO 9</a></li><li><a href="capitulo_10.html"><strong aria-hidden="true">13.</strong> CAPÍTULO 10</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">AO SEU NOME</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="capitulo_1.html#capÍtulo-1" id="capÍtulo-1"><h1>CAPÍTULO 1</h1></a>
+<p><strong>PERGUNTA:</strong> <a href="http://bibliaonline.com.br/acf/jo/12/32"><strong>João 12:32</strong></a> <strong>diz que se levantarmos o Senhor em nossas reuniões todos serão atraídos a Ele. Se verdadeiramente temos o Senhor em nosso meio, por que tão poucos são atraídos? Por que entre nós há tão pouca bênção na pregação do evangelho?</strong></p>
+<p><em>Vamos abrir nesta passagem em João 12 e ler os</em> <a href="http://bibliaonline.com.br/acf/jo/12/31:32"><em>versículos 31 e 32</em></a><em>: &quot;Agora é o juízo deste mundo; agora será expulso o príncipe deste mundo. E eu, quando for levantado da terra, todos atrairei a mim&quot;.</em></p>
+<p>Antes de tentar responder à sua pergunta, é preciso entender que esta passagem não fala do testemunho do evangelho neste tempo de graça. O contexto do capítulo é o reino milenial de Cristo. O Senhor tinha vindo a Jerusalém e estava sendo recebido pela multidão, que clamava: &quot;<em>Hosana! Bendito o Rei de Israel que vem em nome do Senhor</em>&quot; (<a href="http://bibliaonline.com.br/acf/jo/12/13">vers. 13</a>). O povo esperava que Ele estabelecesse o reino e reinasse em poder e glória. Os gentios são também mencionados como tendo ido à festa para adorar, o que é outro importante aspecto do reino milenial (<a href="http://bibliaonline.com.br/acf/zc/2/11">Zc 2:11</a>; <a href="http://bibliaonline.com.br/acf/is/14/1">Isaías 14:1</a>; <a href="http://bibliaonline.com.br/acf/is/56/6">56:6</a>; <a href="http://bibliaonline.com.br/acf/sl/47/9">Salmos 47:9</a>; <a href="http://bibliaonline.com.br/acf/sl/72/10-11">72:10-11</a>). O Senhor viu que, para que tudo isso se cumprisse, Ele deveria cair na terra e morrer, tal qual o &quot;<em>grão de trigo</em>&quot; (<a href="http://bibliaonline.com.br/acf/jo/12/24">vers. 24</a>). Morrendo, Ele daria &quot;<em>muito fruto</em>&quot;. A verdade é que esta era a verdadeira razão de Ele ter vindo &quot;<em>a esta hora</em>&quot; (<a href="http://bibliaonline.com.br/acf/jo/12/27-30">vers. 27-30</a>). Mas, se Ele fosse &quot;<em>levantado</em>&quot; sobre a cruz em rejeição, sua promessa era de que haveria um dia quando Ele atrairia a Si todas as nações no Milênio. O mundo estava prestes a crucificar o Senhor, mas ao fazê-lo, estaria condenando a si mesmo. Por isso o Senhor disse: &quot;<em>Agora é o juízo deste mundo</em>&quot;.</p>
+<p>Portanto, esta passagem não está falando de crentes &quot;<em>levantando</em>&quot; o Senhor no testemunho evangelístico, mas de incrédulos que O levantariam na cruz em escárnio. O <a href="http://bibliaonline.com.br/acf/jo/12/33">versículo seguinte (33)</a> confirma isto. Ali diz: &quot;<em>E dizia isto, significando de que morte havia de morrer</em>&quot;. Além disso, o fato de atrair &quot;<em>todos</em>&quot; a Si, que é o que diz aqui, não se refere necessariamente a crentes. No Milênio, quando todas as nações da terra se posicionarem ao lado do Senhor, muitos nem sequer terão fé. A passagem não poderia estar se referindo às campanhas evangelísticas que hoje ocorrem na cristandade evangélica, pois mesmo as maiores e mais bem sucedidas campanhas não chegam sequer perto de atrair &quot;<em>todos</em>&quot; ao Senhor.</p>
+<p>Entendo que isto não responda à sua pergunta, mas achei ser importante sabermos que a passagem citada na pergunta não está se referindo a campanhas evangelísticas. E acredito que entendi perfeitamente sua pergunta: Você está querendo saber a razão de vermos tanta bênção nas denominações religiosas e não encontrarmos o mesmo entre nós, apesar de estarmos reunidos da forma correta e eles não. É uma boa pergunta e merece uma boa resposta.</p>
+<p>RESPOSTA: O problema está em considerarmos o sucesso no testemunho do evangelho como evidência de um grupo de cristãos estar ou não congregado no terreno eclesiástico correto. É um erro pensarmos assim. É perfeitamente compreensível que alguém tenha tal ideia. Você poderia pensar que se Deus aprova algo Ele irá Se identificar com isso em poder e a Sua bênção será derramada sobre isso para que todos vejam. Mas as coisas não são necessariamente assim.</p>
+<p>Acredito que exista uma boa razão para ocorrerem mui-tas bênçãos na pregação do evangelho nas igrejas evangélicas em nossos dias, e relativamente poucos resultados entre aqueles congregados ao nome do Senhor.</p>
+<p>Deus abençoa a Sua Palavra onde quer que ela seja pregada.</p>
+<p>Primeiro, Deus abençoa a Sua Palavra onde quer que ela seja pregada. Paulo disse a Timóteo: &quot;<em>A palavra de Deus não está presa</em>&quot; (<a href="http://bibliaonline.com.br/acf/2tm/2/9">2 Tm 2:9</a>). Naquela ocasião Paulo estava numa prisão. Seus trabalhos tinham sido motivo de bênção por vários anos, mas agora ele tinha sido colocado de lado. Todavia, ele estava confiante de que a bênção continuaria a ser derramada por meio do evangelho, mesmo que o próprio Paulo estivesse preso. Ele sabia que Deus poderia usar outros, e iria fazê-lo, na disseminação do evangelho. Ele entendia que o Senhor não precisava dele para propagar a mensagem, mesmo que Deus o tivesse usado no passado para fazer aquele trabalho. Quem quer que fosse suficientemente diligente para sair levando a Palavra de Deus cedo ou tarde colheria os resultados da pregação do evangelho. O Senhor disse: &quot;<em>Assim será a minha palavra, que sair da minha boca; ela não voltará para mim vazia, antes fará o que me apraz, e prosperará naquilo para que a enviei</em>&quot; (<a href="http://bibliaonline.com.br/acf/is/55/11">Is 55:11</a>). Os que estão nas denominações têm sido diligentes naquilo que Paulo exortou Timóteo a fazer -- &quot;Que pregues a palavra&quot; (<a href="http://bibliaonline.com.br/acf/2tm/4/2">2Tm 4:2</a>) -- e Deus está abençoando a Sua Palavra. Por esta razão existe bênção em muitas denominações. Deveríamos estar gratos por cada esforço que é feito entre os cristãos na propagação das boas novas, e orar para que o resultado disso seja uma grande colheita de almas. Não devemos pensar que a bênção no evangelho que é pregado pela Palavra de Deus fique restrita a um grupo de cristãos; os santos congregados ao nome do Senhor não têm o monopólio da pregação da Palavra de Deus.</p>
+<p>Todavia, seria um erro acharmos que a bênção obtida na pregação do evangelho seja prova de que as denominações estejam eclesiasticamente corretas. Alguém poderia olhar para as várias organizações eclesiásticas e pensar: &quot;Deus deve aprovar essas denominações, pois Ele as está usando para salvar pessoas&quot;. Pode <em>parecer</em> que Deus esteja usando as igrejas evangélicas na cristandade, mas não são essas organizações feitas por homens que Ele está usando. Deus está usando a Sua Palavra. Como já disse, Deus pode e usa a Sua Palavra para bênção onde quer que ela seja ministrada. Se um assim chamado Pastor ou Ministro prega a Palavra de Deus para sua audiência, o Espírito de Deus tomará a Palavra de Deus e a aplicará nas almas e estas serão salvas. É inegável que as pessoas estejam sendo salvas nesses lugares. Mas isto não significa que Deus aprove a ordem denominacional inventada pelos homens. Uma pessoa poderia levar a Palavra de Deus em um lugar impróprio, como um bar, e mesmo assim o Espírito usar essa Palavra para a salvação de alguém. Mas nós não nos atreveríamos a dizer que Deus estaria usando os bares! A existência das denominações não pode ser assim justificada. (Não estou colocando as denominações e os bares em um mesmo nível, mas apenas ilustrando minha opinião de que Deus pode usar a Sua Palavra em qualquer lugar).</p>
+<p>Trata-se de um fato: Deus abençoa a Sua Palavra <em>onde quer que ela seja pregada, e por quem quer que ela seja pregada</em>. No capítulo 1 da carta aos Fl Paulo fala de alguns que estavam pregando a Palavra com uma motivação errada, e mesmo assim Deus a estava abençoando! Mais uma vez, isto não significa que Deus aprove os servos que pregam com segundas intenções, mas simplesmente demonstra que a Sua Palavra será de bênção onde e por quem quer que seja pregada, até mesmo por uma pessoa em um estado de espírito completamente errado.</p>
+<p>Existe mais gente nas igrejas denominacionais.</p>
+<p>A segunda razão de existirem mais resultados observáveis da pregação do evangelho nas igrejas evangélicas do que entre os santos congregados ao nome do Senhor é porque existe um número maior de pessoas nessas igrejas que estão engajadas no trabalho evangelístico. O <a href="http://bibliaonline.com.br/acf/sl/68/11">Salmo 68:11</a> diz: &quot;<strong>O Senhor deu a palavra;</strong> <strong><em>grande</em></strong> <strong>era o exército dos que anunciavam as boas novas&quot;</strong>. Enfatizo a palavra &quot;grande&quot; neste versículo porque um número maior de pessoas envolvidas em um trabalho geralmente alcançam maiores resultados. É simples de entender: aqueles nas denominações têm mais gente envolvida e naturalmente obtêm mais resultados. Os que estão nas igrejas evangélicas devem ser vistos como exemplo de diligência no trabalho evangelístico. Na verdade eles nos fazem ficar envergonhados.</p>
+<p>Sei que os resultados dos quais ouvimos falar nas denominações são espantosos, mas os mesmos números podem nos enganar. Deixe-me dar um exemplo. Um amigo contou que em sua igreja não passa uma semana sem que pelo menos uma pessoa seja salva! Perguntei a ele quantas pessoas há em sua igreja e se não me falha a memória ele disse que por volta de 3500. Para facilitar um cálculo, vamos supor, a título de ilustração, que este número fosse 5000. Isto significa cinco mil pessoas envolvidas para que cerca de 50 pessoas sejam salvas todos os anos, já que existem 52 semanas no ano. Mas suponha que tirássemos um zero do número de membros dessa congregação e existissem apenas 500 pessoas ali. Quantos seriam salvos por ano neste caso? Usando a mesma proporção, cinco. Se tirarmos outro zero daquele número teríamos apenas 50 pessoas naquela igreja, o que é mais ou menos o tamanho da maioria das assembleias dos irmãos congregados ao nome do Senhor. Quantas pessoas seriam salvas por ano usando a mesma média? Bem, meia pessoa, ou uma pessoa a cada dois anos.</p>
+<p>Vistos deste ângulo os números não parecem tão intimidadores. Sua taxa de sucesso em relação ao número de pessoas não é muito melhor do que aquilo que acontece entre os santos congregados ao nome do Senhor. Portanto, na próxima vez em que alguém me disser que a cada semana uma pessoa é salva em sua <em>mega igreja</em>, vou dizer: &quot;Só isso? Com tanta gente ali era de se esperar que tivessem um resultado melhor do que esse!&quot;. Sendo assim, não nos deixemos levar por estatísticas. Nossa primeira responsabilidade é fazermos a vontade de Deus e deixarmos os resultados com Ele. Quando o assunto é o evangelho, é Deus quem dá o &quot;crescimento&quot; na seara das almas (<a href="http://bibliaonline.com.br/acf/1co/3/6">1 Co 3:6</a>).</p>
+<p>Gostaria apenas de acrescentar que se você estiver seriamente preocupado com os tristes resultados da obra evangelística entre nós talvez devesse pensar em se envolver nela. É comum que aqueles que criticam essa fraqueza sejam os mesmos que parecem fazer muito pouco a respeito.</p>
+<p><strong>RESUMINDO:</strong> Existe mais bênção no trabalho evangelístico nas igrejas evangélicas do que entre os santos congregados ao nome do Senhor porque Deus abençoa a Sua Palavra onde e por quem quer que ela seja pregada, e as pessoas nas denominações têm sido mais diligentes do que nós neste trabalho. Além disso, existe nesses lugares um número maior de pessoas engajadas neste trabalho e estatisticamente isto leva a maiores resultados.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="introducao.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="capitulo_2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="introducao.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="capitulo_2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

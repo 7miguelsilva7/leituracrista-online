@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O ENGANADOR - CARTAS AOS EVANGELISTAS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> CARTAS AOS EVANGELISTAS - C. H. MACKINTOSH</a></li><li><a href="primeira_parte/README.html"><strong aria-hidden="true">2.</strong> PRIMEIRA PARTE</a></li><li><ol class="section"><li><a href="primeira_parte/uma_palavra_ao_evangelista.html"><strong aria-hidden="true">2.1.</strong> UMA PALAVRA AO EVANGELISTA</a></li><li><a href="primeira_parte/um_lema_para_o_evangelista.html"><strong aria-hidden="true">2.2.</strong> UM LEMA PARA O EVANGELISTA</a></li><li><a href="primeira_parte/a_obra_de_um_evangelista.html"><strong aria-hidden="true">2.3.</strong> A OBRA DE UM EVANGELISTA</a></li><li><a href="primeira_parte/o_que_busca_com_sinceridade.html"><strong aria-hidden="true">2.4.</strong> O QUE BUSCA COM SINCERIDADE</a></li><li><a href="primeira_parte/o_enganador.html" class="active"><strong aria-hidden="true">2.5.</strong> O ENGANADOR</a></li><li><a href="primeira_parte/o_pecador_endurecido.html"><strong aria-hidden="true">2.6.</strong> O PECADOR ENDURECIDO</a></li></ol></li><li><a href="segunda_parte/README.html"><strong aria-hidden="true">3.</strong> SEGUNDA PARTE</a></li><li><ol class="section"><li><a href="segunda_parte/primeira_carta__a_procura_de_almas.html"><strong aria-hidden="true">3.1.</strong> PRIMEIRA CARTA — À Procura de Almas</a></li><li><a href="segunda_parte/segunda_carta__o_espirito_santo.html"><strong aria-hidden="true">3.2.</strong> SEGUNDA CARTA — O Espírito Santo</a></li><li><a href="segunda_parte/terceira_carta__a_palavra_de_deus.html"><strong aria-hidden="true">3.3.</strong> TERCEIRA CARTA — A Palavra de Deus</a></li><li><a href="segunda_parte/quarta_carta__a_oracao.html"><strong aria-hidden="true">3.4.</strong> QUARTA CARTA — A Oração</a></li><li><a href="segunda_parte/quinta_carta__obra_de_literatura.html"><strong aria-hidden="true">3.5.</strong> QUINTA CARTA — Obra de Literatura</a></li><li><a href="segunda_parte/sexta_carta__a_pregacao_do_evangelho.html"><strong aria-hidden="true">3.6.</strong> SEXTA CARTA — A Pregação do Evangelho</a></li><li><a href="segunda_parte/setima_carta__a_escola_dominical.html"><strong aria-hidden="true">3.7.</strong> SÉTIMA CARTA — A Escola Dominical</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">CARTAS AOS EVANGELISTAS</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="primeira_parte/o_enganador.html#o-enganador-o-enganador" id="o-enganador-o-enganador"><h2>O ENGANADOR </h2></a>
+<p>“<em>E ACONTECEU que, indo nós à oração, nos saiu ao encontro uma jovem, que tinha espírito de adivinhação, a qual, adivinhando, dava grande lucro aos seus senhores. Esta, seguindo a Paulo e a nós, clamava, dizendo: Estes homens, que vos anunciam o caminho da salvação, são servos do Deus Altíssimo. E isto fez ela por muitos dias. Mas Paulo, perturbado, voltou-se, e disse ao espírito: Em nome de Jesus Cristo, te mando que saias dela. E na mesma hora saiu.” (</em><a href="http://bibliaonline.com.br/acf/atos/16/16-18"><em>Atos 16:16-18</em></a><em>).</em></p>
+<p>Tratava-se, portanto, de um caso eminentemente calculado para testar a espiritualidade e integridade do evangelista. A maioria dos homens teria dado as boas-vindas a tais palavras saídas dos lábios dessa jovem, como um testemunho de encorajamento à obra. Por que então Paulo se perturbou? Por que não permitiu que ela continuasse a dar testemunho do objetivo de sua missão? Acaso não estava ela dizendo a verdade? Não eram eles servos do Deus Altíssimo? E porventura não estavam anunciando o caminho da salvação? Por que se perturbar então? Por que silenciar uma testemunha assim? Porque provinha de Satanás; e, com toda a certeza, o apóstolo não iria receber um testemunho vindo dele. Paulo não iria permitir que Satanás o ajudasse em seu trabalho. É verdade que ele poderia ter andado pelas ruas de Filipos sendo honrado e reconhecido como um servo de Deus, se tão somente tivesse consentido em deixar o diabo dar uma mão na obra. Mas Paulo nunca poderia concordar com isto. Ele nunca poderia permitir que o inimigo se misturasse com a obra do Senhor. Se assim tivesse feito, teria desferido o golpe mortal ao testemunho em Filipos. Permitir que Satanás colocasse sua mão na obra teria resultado no completo naufrágio da missão à Macedônia.</p>
+<p>Para o obreiro do Senhor, ponderar neste assunto é algo da mais profunda importância. Podemos ficar assegurados de que esta narrativa da jovem foi escrita para nossa instrução. Não é apenas um registro do que aconteceu, mas uma amostra do que pode acontecer, e acontece, todos os dias. A cristandade está cheia de falsa profissão cristã. Há multidões de falsos cristãos hoje, espalhados por todos os domínios do cristianismo professo. Triste é dizer isto, mas assim é, e devemos chamar a atenção do leitor para este fato. Estamos cercados, de todos os lados, por aqueles que dão um mero assentimento nominal às verdades da religião cristã. Eles vivem, semana após semana, e ano após ano, professando crer em certas coisas nas quais, na verdade, não creem realmente. Há milhares que, a cada dia do Senhor, professam crer no perdão dos pecados e, ainda assim, se tais pessoas fossem examinadas, seria descoberto que nem pensam sobre o assunto ou, se pensam, desprezam-no considerando uma grande presunção alguém ter certeza de que seus pecados estejam perdoados.</p>
+<p>Isto é algo muito sério. Apenas pense em uma pessoa que fica rezando diante de Deus, dizendo: <em>&quot;Creio no perdão dos pecados&quot;</em>, e que ao mesmo tempo não está crendo em tal coisa! Poderia algo ser mais endurecedor a um coração, ou mais mortal a uma consciência do que isto? Estamos persuadidos de que as cerimônias e formalismos do cristianismo professo estão ocasionando mais destruição às almas preciosas do que todas as formas de depravação moral colocadas juntas. É verdadeiramente aterrador contemplarmos as incontáveis multidões que estão, neste exato momento, correndo pela bem pavimentada estrada da profissão religiosa, em direção às chamas eternas do inferno. Sentimo-nos obrigados a erguer um sinal de aviso. Queremos que o leitor solenemente dê atenção a este assunto.</p>
+<p>Nós tão somente mencionamos um ponto em especial, pois se refere a um assunto de interesse e importância bem abrangentes. Quão poucos, comparativamente falando, estão esclarecidos e bem fundamentados quanto à questão do perdão dos pecados! Quão poucos são capazes de calma, decidida e inteligentemente dizer: <em>EU SEI</em> que meus pecados estão perdoados! Quão poucos estão realmente desfrutando do pleno perdão dos pecados, pela fé naquele precioso sangue que nos limpa de todo pecado! Portanto, quão solene é quando escutamos pessoas rezando palavras como, <em>'Creio no perdão dos pecados’</em>, quando, na verdade, não creem nas palavras que estão saindo de suas próprias bocas.</p>
+<p>Porventura o leitor tem o costume de usar este palavreado? Acaso crê nisto? Diga-me, querido leitor: estão os seus pecados perdoados? Você já foi lavado no precioso sangue expiatório de Cristo? Se não, por que não? O caminho está aberto. Não há nada que impeça. Você é perfeitamente bem-vindo para usufruir, neste exato momento, dos benefícios gratuitos da obra expiatória de Cristo. Ainda que seus pecados sejam como a escarlata; ainda que sejam escuros como a meia-noite, enegrecidos como o inferno; ainda que se elevem como uma pavorosa montanha perante a visão de sua alma atribulada, e queiram fazer com que você afunde na perdição eterna; ainda assim estas palavras resplandecem nas páginas da inspiração com um lustro celestial: <em>&quot;O sangue de Jesus Cristo, Seu Filho, nos purifica de TODO o pecado&quot;</em>. (<a href="http://bibliaonline.com.br/acf/1jo/1/7">1 Jo 1:7</a>) Mas atente bem, amigo; não siga adiante, semana após semana, zombando de Deus, endurecendo seu próprio coração e fazendo uso dos métodos do grande inimigo de Cristo, por meio de uma falsa profissão cristã. Era isto o que caracterizava a jovem possessa de um espírito de adivinhação, e sua história aqui está ligada à horrível condição da cristandade atual. Onde estava a ênfase de sua proclamação, durante aqueles “muitos dias” durante os quais o apóstolo cuidadosamente analisou seu caso? <em>&quot;Estes homens, que nos anunciam o caminho da salvação, são servos do Deus Altíssimo.&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/16/17">Atos 16:17</a>). No entanto ela não estava salva — ela não estava liberta — ela própria estava, o tempo todo, sob o poder de Satanás.</p>
+<p>Assim é com a cristandade — assim é com cada falso professo em cada canto da Igreja professa. Não conhecemos nada — nos mais profundos abismos do mal moral, ou nas mais tenebrosas sombras do ateísmo — que seja mais verdadeiramente horrível do que o estado dos descuidados, endurecidos, egoístas e mundanos cristãos professos que, a cada domingo, a cada dia do Senhor, fazem afirmações, tanto em suas orações como em seus cânticos, com palavras que, no que concerne a eles próprios, são totalmente falsas.</p>
+<p>O simples pensamento disto é, às vezes, quase desalentador. Não podemos nos ater mais neste assunto. É realmente muito triste. Devemos seguir adiante, depois de termos solenemente alertado uma vez mais nosso leitor contra qualquer indício ou sombra de falsa profissão cristã. Que não venha a dizer ou cantar aquilo que não creia de coração. O diabo está por detrás de toda falsa profissão cristã, e, por esses meios, procura trazer descrédito à obra do Senhor.</p>
+<p>Mas quão verdadeiramente animador é contemplarmos a atitude do fiel apóstolo no caso da jovem. Se ele estivesse procurando seus próprios interesses, ou se fosse um mero ministro religioso, talvez tivesse dado as boas-vindas às palavras dela, como uma fonte jorrando reconhecimento para elevar a maré de sua popularidade, ou para promover o interesse em prol de sua causa. Mas Paulo não era um mero ministro de alguma religião; ele era um ministro de Cristo — algo completamente diferente. E devemos notar que a jovem não diz uma palavra sequer a respeito de Cristo. Ela não menciona o precioso e inestimável nome de Jesus. Há um completo silêncio acerca dele. Isto denota que tudo aquilo vinha de Satanás.</p>
+<p>“N_inguém pode dizer que Jesus é o Senhor, senão pelo Espírito Santo.&quot;_ (<a href="http://bibliaonline.com.br/acf/1co/12/3">1 Co 12:3</a>) As pessoas podem falar de Deus e de religião; mas Cristo não tem lugar em seus corações. os fariseus, no capítulo nove de João, podiam dizer ao pobre homem, <em>&quot;Dá glória a Deus&quot;</em>; mas ao falarem de Jesus, diziam, <em>&quot;Esse homem é pecador&quot;</em>. (<a href="http://bibliaonline.com.br/acf/jo/9/24">Jo 9:24</a>) E assim sempre ocorre no caso da religião corrompida, ou do falso cristianismo professo. Era isto o que acontecia com a jovem de <a href="http://bibliaonline.com.br/acf/atos/16">Atos 16</a>: Não havia uma só sílaba acerca de Cristo. Não havia verdade, não havia vida e nem realidade. Era algo falso e vazio. Era algo que provinha de Satanás; e por esta razão Paulo não poderia, e não iria, aceitá-lo; ele ficou perturbado com aquilo e acabou rejeitando-o completamente.</p>
+<p>Quisera todos fossem como Paulo. Quisera existisse em todos um “olho simples” para detectar, e a integridade de coração para rejeitar, a obra de Satanás em muito daquilo que está acontecendo ao nosso redor! Paulo, por graça, possuía esse <em>&quot;olho simples&quot;</em>. Alguém queria enganá-lo. Ele viu que a coisa toda era um esforço de Satanás para misturar-se com a obra, a fim de poder neutralizá-la completamente.</p>
+<p>“<em>Mas Paulo, perturbado, voltou-se, e disse ao espírito: Em nome de Jesus Cristo, te mando que saias dela. E na mesma hora saiu.” (</em><a href="http://bibliaonline.com.br/acf/atos/16/18"><em>Atos 16:18</em></a><em>).</em></p>
+<p>Aquela era uma atitude verdadeiramente espiritual. Paulo não iria, de modo algum, se precipitar e entrar em choque com o mal, ou mesmo tomar alguma posição prematura acerca daquilo; ele esperou muitos dias; mas no momento exato em que o inimigo foi detectado, Paulo resistiu a ele e o expulsou com inquestionável decisão. Um obreiro menos espiritual teria deixado a coisa toda passar, pensando que poderia ser de proveito e auxílio no desenvolvimento do trabalho. Paulo pensava diferente; e estava certo. Ele não iria receber ajuda de Satanás. Não iria trabalhar sob uma tal influência; e, portanto, em nome de Jesus Cristo — o nome que o inimigo com tanto cuidado omitiu — ele põe Satanás a correr.</p>
+<p><em>Porém, mal era repelido como serpente, Satanás já assumia o caráter de um leão. Havendo falhado a astúcia, ele tenta a violência. “E, vendo seus senhores que a esperança do seu lucro estava perdida, prenderam Paulo e Silas, e os levaram à presença dos magistrados. E, apresentando-os aos magistrados, disseram: Estes homens, sendo judeus, perturbaram a nossa cidade. E nos expõem costumes que nos não é lícito receber nem praticar, visto que somos romanos. E a multidão se levantou unida contra eles, e os magistrados, rasgando-lhes os vestidos, mandaram açoitá-los com varas. E, havendo-lhes dado muitos açoites, os lançaram na prisão, mandando ao carcereiro que os guardasse com segurança.” (</em><a href="http://bibliaonline.com.br/acf/atos/16/19-23"><em>Atos 16:19-23</em></a><em>).</em></p>
+<p>O inimigo parece, assim, triunfar; mas deve ser lembrado que os guerreiros de Cristo conquistam suas mais esplêndidas vitórias por meio de aparentes derrotas. O diabo cometeu um grande erro quando lançou o apóstolo na prisão. Na verdade é um consolo pensar que ele nunca fez nada além de cometer grandes erros, desde quando deixou seu estado original até o presente momento. Toda a sua história, do começo ao fim, está formada por erros.</p>
+<p>Sendo assim, como já foi assinalado, o diabo cometeu um grande erro quando lançou Paulo na prisão em Filipos. Do ponto de vista do olho natural parecia justamente o contrário; mas, pela análise que vem da fé, o servo de Cristo estava em um lugar que lhe era muito mais apropriado, estando na prisão por causa da verdade, do que se estivesse fora dela à custa da reputação de seu Mestre. Sim, Paulo poderia ter se livrado. Ele poderia ter sido um homem honrado, aceito e reconhecido como um <em>&quot;servo do Deus Altíssimo&quot;</em>, se tão somente tivesse aceitado o testemunho da jovem e permitido que o diabo o ajudasse em seu trabalho. Mas ele não podia permitir isso e, portanto, tinha que sofrer. <em>&quot;E a multidão (sempre inconstante e fácil de se deixar influenciar) se levantou unida contra eles, e os magistrados, rasgando-lhes os vestidos, mandaram açoitá-los com varas. E, havendo-lhes dado muitos açoites, os lançaram na prisão, mandando ao carcereiro que os guardasse com segurança. O qual, tendo recebido tal ordem, os lançou no cárcere interior, e lhes segurou os pés no tronco.&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/16/22-24">Atos 16:22-24</a>).</p>
+<p>Alguns bem poderiam dizer que esse era o fim da obra do evangelista na cidade de Filipos. Que ali estava um freio eficaz à pregação. Mas não foi assim; a prisão era, naquele momento, o lugar mais apropriado para o evangelista. Seu trabalho estava ali. Dentro das paredes daquela prisão ele iria encontrar uma congregação que não poderia ter encontrado fora dela. Mas isto nos leva ao terceiro e último evento — ao caso do pecador endurecido.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="primeira_parte/o_que_busca_com_sinceridade.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="primeira_parte/o_pecador_endurecido.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="primeira_parte/o_que_busca_com_sinceridade.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="primeira_parte/o_pecador_endurecido.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

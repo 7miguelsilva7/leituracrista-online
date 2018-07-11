@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O PECADOR ENDURECIDO - CARTAS AOS EVANGELISTAS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> CARTAS AOS EVANGELISTAS - C. H. MACKINTOSH</a></li><li><a href="primeira_parte/README.html"><strong aria-hidden="true">2.</strong> PRIMEIRA PARTE</a></li><li><ol class="section"><li><a href="primeira_parte/uma_palavra_ao_evangelista.html"><strong aria-hidden="true">2.1.</strong> UMA PALAVRA AO EVANGELISTA</a></li><li><a href="primeira_parte/um_lema_para_o_evangelista.html"><strong aria-hidden="true">2.2.</strong> UM LEMA PARA O EVANGELISTA</a></li><li><a href="primeira_parte/a_obra_de_um_evangelista.html"><strong aria-hidden="true">2.3.</strong> A OBRA DE UM EVANGELISTA</a></li><li><a href="primeira_parte/o_que_busca_com_sinceridade.html"><strong aria-hidden="true">2.4.</strong> O QUE BUSCA COM SINCERIDADE</a></li><li><a href="primeira_parte/o_enganador.html"><strong aria-hidden="true">2.5.</strong> O ENGANADOR</a></li><li><a href="primeira_parte/o_pecador_endurecido.html" class="active"><strong aria-hidden="true">2.6.</strong> O PECADOR ENDURECIDO</a></li></ol></li><li><a href="segunda_parte/README.html"><strong aria-hidden="true">3.</strong> SEGUNDA PARTE</a></li><li><ol class="section"><li><a href="segunda_parte/primeira_carta__a_procura_de_almas.html"><strong aria-hidden="true">3.1.</strong> PRIMEIRA CARTA — À Procura de Almas</a></li><li><a href="segunda_parte/segunda_carta__o_espirito_santo.html"><strong aria-hidden="true">3.2.</strong> SEGUNDA CARTA — O Espírito Santo</a></li><li><a href="segunda_parte/terceira_carta__a_palavra_de_deus.html"><strong aria-hidden="true">3.3.</strong> TERCEIRA CARTA — A Palavra de Deus</a></li><li><a href="segunda_parte/quarta_carta__a_oracao.html"><strong aria-hidden="true">3.4.</strong> QUARTA CARTA — A Oração</a></li><li><a href="segunda_parte/quinta_carta__obra_de_literatura.html"><strong aria-hidden="true">3.5.</strong> QUINTA CARTA — Obra de Literatura</a></li><li><a href="segunda_parte/sexta_carta__a_pregacao_do_evangelho.html"><strong aria-hidden="true">3.6.</strong> SEXTA CARTA — A Pregação do Evangelho</a></li><li><a href="segunda_parte/setima_carta__a_escola_dominical.html"><strong aria-hidden="true">3.7.</strong> SÉTIMA CARTA — A Escola Dominical</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">CARTAS AOS EVANGELISTAS</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="primeira_parte/o_pecador_endurecido.html#o-pecador-endurecido-o-pecador-endurecido" id="o-pecador-endurecido-o-pecador-endurecido"><h2>O PECADOR ENDURECIDO </h2></a>
+<p>ERA BEM IMPROVÁVEL que o carcereiro alguma vez fosse encontrado indo à reunião de oração à beira do rio. Ele não ligava para essas coisas. Não era um desses que busca com sinceridade, e nem um enganador. Ele era um pecador endurecido, com uma profissão que o tornava ainda mais insensível. Pela própria exigência de seu trabalho, os carcereiros são, de uma forma geral, homens duros e severos. Não há dúvidas de que há exceções. Há alguns homens de coração terno que podem ser encontrados em ocupações assim; mas, como regra geral, os carcereiros não são ternos de coração. A profissão que exercem dificilmente permitiria que se mantivessem assim. Eles têm que tratar com a pior classe da sociedade. A maior parte dos crimes de todo o país não lhes é desconhecida; e muitos desses criminosos são colocados aos seus cuidados. Por estarem habituados a tratar com aquilo que é rude e grosseiro, eles acabam tornando-se também rudes e grosseiros.</p>
+<p>Agora, a julgar pela narrativa inspirada que temos diante de nós, podemos muito bem indagar se o carcereiro de Filipos não seria uma exceção à regra geral acerca dessa classe de homens.</p>
+<p>Certamente não parece que ele tenha demonstrado muita ternura para com Paulo e Silas. <em>&quot;os lançou no cárcere interior, e lhes segurou os pés no tronco.&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/16/24">Atos 16:24</a>) Parece que ele fez tudo o que podia para que não tivessem conforto algum.</p>
+<p>Mas Deus tinha uma rica misericórdia reservada para aquele pobre, insensível e cruel carcereiro; e, como tudo indicava que ele nunca iria sair para escutar o evangelho, o Senhor enviou o evangelho até ele; e, mais do que isso, usou o diabo como instrumento para que recebesse o evangelho. Mal sabia o carcereiro quem é que ele estava recolhendo ao cárcere interior — mal podia ele imaginar o que iria acontecer antes que visse novamente a luz do sol. E, podemos acrescentar, o diabo não tinha nem ideia do que estava fazendo quando mandou os pregadores do evangelho para a prisão, para que, ali, fossem os meios usados por Deus para a conversão do carcereiro. Mas o Senhor Jesus Cristo sabia o que Ele estava para fazer no caso daquele pobre e endurecido pecador. Ele pode transformar a ira do homem em louvor para Si e impedir o que possa se opor.</p>
+<p>Onde quer que Ele opere, Tudo se dobra ao Seu poder, Cada ação Sua é pura bênção, E Sua senda, luz pura há de ser.</p>
+<p>Quando desnuda Ele Seu braço, Quem é que pode opor-se ao Seu mover?</p>
+<p>Quando defende a causa de Seu povo, Quem teria forças para O deter?</p>
+<p>O Senhor tinha o propósito de salvar o carcereiro; e Satanás não só era incapaz de frustrar aquele propósito, como acabou sendo um instrumento para concretizá-lo. O propósito de Deus prevalecerá, Ele cumprirá o que Lhe apraz. E onde quer que Deus coloque o Seu amor sobre um pobre, desventurado e culpado pecador, Ele o introduzirá no céu, apesar de toda a malícia e fúria do inferno.</p>
+<p>No que diz respeito a Paulo e Silas, fica bem evidente que, naquela prisão, eles estavam onde deveriam estar. Eles se encontravam ali <em>por causa da verdade</em> e, portanto, <em>o Senhor estava com eles</em>. É por isso que estavam plenamente felizes. Muito embora tivessem sido confinados entre as escuras paredes daquela prisão, com seus pés presos ao tronco, aquelas mesmas paredes não poderiam reter seus espíritos. Nada poderá impedir o gozo de alguém que tem o Senhor consigo. Sadraque, Mesaque e Abedenego estavam felizes na fornalha de fogo. Daniel estava feliz na cova dos leões; e Paulo e Silas estavam felizes no calabouço de Filipos: “<em>E, perto da meia-noite, Paulo e Silas oravam e cantavam hinos a Deus, e os outros presos os escutavam.&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/16/25">Atos 16:25</a>).</p>
+<p>Que sons estranhos eram aqueles, para saírem das profundezas de um calabouço! Podemos seguramente dizer que sons como aqueles nunca antes tinham sido produzidos ali. Maldições, maledicências e blasfêmias podem ter sido ouvidas; lamentos, choros e gemidos costumavam atravessar aquelas paredes. Mas deve ter sido algo estranho escutar aqueles acordes de louvor e oração sendo entoados à meia-noite. A fé pode cantar em um calabouço com a mesma doçura que canta numa reunião de oração. Não importa onde estamos, desde que tenhamos Deus conosco. Sua presença ilumina a mais escura cela, e transforma um calabouço na própria porta do céu. Ele pode fazer os Seus servos felizes, não importa onde se encontrem, e pode dar-lhes vitória nas circunstâncias mais adversas, fazendo com que cantem de gozo onde, naturalmente, deveriam estar oprimidos pela tristeza.</p>
+<p>Mas o Senhor tinha os Seus olhos postos no carcereiro. Ele havia escrito seu nome no livro da vida do Cordeiro antes da fundação do mundo, e estava a ponto de introduzi-lo no mais completo gozo da salvação que Ele dá. <em>&quot;E de repente sobreveio um tão grande terremoto, que os alicerces do cárcere se moveram, e logo se abriram todas as portas, e foram soltas as prisões de todos.&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/16/26">Atos 16:26</a>).</p>
+<p>Se Paulo não estivesse em completa comunhão com o pensamento e o coração de Cristo, teria com toda a certeza se voltado para Silas e falado: “<em>Chegou a hora de escaparmos. Deus nos socorreu de modo bem evidente e nos providenciou uma porta aberta. Nunca houve uma porta tão claramente aberta pela providência divina do que agora</em>.” Mas não foi assim; Paulo conhecia melhor. Ele estava totalmente imerso na torrente de pensamentos do Seu bendito Mestre, e em completa sintonia com Seu coração. Portanto não fez nenhuma tentativa de escapar. A <em>verdade</em> o levara para a prisão; <em>a graça</em> o mantivera ali; a providência abrira a porta; mas a <em>fé</em> recusava-se a fugir. As pessoas falam de se deixarem guiar pela providência; todavia se Paulo tivesse se deixado guiar assim, nunca teria tido o carcereiro como mais uma joia em sua coroa.</p>
+<p>“<em>E, acordando o carcereiro, e vendo abertas as portas da prisão, tirou a espada, e quis matar-se, cuidando que os presos já tinham fugido.&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/16/27">At 16:27</a>) Isso prova bem claramente que o terremoto, com tudo o que causou, não havia sequer tocado o coração do carcereiro. Ele naturalmente supôs, ao encontrar as portas abertas, que todos os prisioneiros tivessem fugido. Ele nem podia imaginar que havia um grupo de prisioneiros sentados silenciosamente em suas celas, enquanto as portas permaneciam abertas e soltas as correntes. E o que aconteceria com ele se os prisioneiros tivessem fugido? Como é que poderia comparecer diante das autoridades? Seria impossível fazê-lo. Qualquer coisa seria melhor do que isso. Era preferível a morte, mesmo que por suas próprias mãos.</p>
+<p>E assim o diabo conduziu esse endurecido pecador até à beira do precipício, e estava a ponto de dar o empurrão final e fatal que o levaria às eternas chamas do inferno, quando uma voz de amor soou em seus ouvidos. Era a voz de Jesus através dos lábios de Seu servo — uma voz de terna e profunda compaixão — <em>&quot;Não te faças nenhum mal&quot;</em>.</p>
+<p>Aquilo era irresistível. Um pecador endurecido podia enfrentar um terremoto; podia ir até mesmo ao encontro da morte; mas não podia resistir ao imenso, terno e quebrantador poder do amor. <em>&quot;E, pedindo luz, saltou dentro, e,</em> <strong><em>todo trêmulo</em></strong><em>, se prostrou ante Paulo e Silas. E, tirando-os para fora, disse: Senhores, que é necessário que eu faça para me salvar?&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/16/30">Atos 16:30</a>) O amor pode quebrar o coração mais duro. E com toda a certeza havia amor naquelas palavras, “Não te faças nenhum mal”, que saíram dos lábios daquele a quem o carcereiro havia feito tanto mal poucas horas antes.</p>
+<p>E deve ser notado que não havia, nas palavras de Paulo, nenhuma sílaba sequer de reprovação ou censura dirigida ao carcereiro. Era tudo à maneira de Cristo. Tudo do jeito que a graça divina sempre faz. Se olharmos por todo o evangelho, nunca encontraremos o Senhor lançando qualquer reprimenda sobre o pecador. Ele sempre tem lágrimas de compaixão; Ele sempre tem palavras comoventes de graça e ternura; mas não há nenhuma reprimenda em Suas palavras — não há censuras dirigidas ao pobre e aflito pecador. Não podemos tentar fornecer aqui os muitos exemplos e provas desta afirmação; mas o leitor terá que tão somente ler os evangelhos para ver que é verdade. Veja o filho pródigo; veja o ladrão na cruz. Nenhuma palavra de reprovação a qualquer um deles.</p>
+<p>É sempre assim; e assim foi com o Espírito de Deus em Paulo. Não há uma palavra acerca do áspero tratamento que recebeu — nada sobre ter sido lançado no cárcere interior — nem uma única palavra sobre os pés terem sido presos no tronco. <em>&quot;Não te faças nenhum mal.&quot;</em> E, então, <em>&quot;Crê no Senhor Jesus Cristo, e serás salvo, tu e a tua casa&quot;</em>. (<a href="http://bibliaonline.com.br/acf/atos/16/31">Atos 16:31</a>) Tal é a rica e preciosa graça de Deus. Ela brilha nesta cena com inusitado fulgor. Ela se apraz em tomar pecadores embrutecidos para derreter e conquistar seus duros corações, e introduzi-los no pleno fulgor de uma completa salvação; e tudo isso usando de um estilo que lhe é peculiar. Sim, Deus tem Seu estilo próprio de fazer as coisas, bendito seja o Seu nome; e quando Ele salva um desventurado pecador, o faz de uma maneira tal que comprove que todo o Seu coração está envolvido naquela obra. Ele tem gozo em salvar um pecador — até o principal deles — e o faz de um modo digno de Si mesmo.</p>
+<p>Vamos ver agora o fruto de tudo isso. A conversão do carcereiro era inequívoca. Salvo da beira do inferno, ele foi introduzido na própria atmosfera do céu. Guardado da autodestruição, ele foi levado para o círculo da salvação dada por Deus; e as evidências disso foram tão claras quanto se podia desejar. <em>&quot;E lhe pregavam a palavra do Senhor, e a todos os que estavam em sua casa. E, tomando-os ele consigo naquela mesma hora da noite, lavou-lhes os vergões; e logo foi batizado, ele e todos os seus. E, levando-os a sua casa, lhes pôs a mesa; e, na sua crença em Deus alegrou-se com toda a sua casa.&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/16/34">At 16:34</a>).</p>
+<p>Que mudança maravilhosa! O implacável carcereiro tornou-se um gentil hospedeiro! <em>&quot;Assim que, se alguém está em Cristo, nova criatura é: as coisas velhas já passaram; eis que tudo se fez novo.&quot;</em> (<a href="http://bibliaonline.com.br/acf/2co/5/17">2 Co 5:17</a>) Com que clareza podemos ver que Paulo estava certo em não se deixar guiar pela providência! Quão melhor e mais elevado foi se deixar dirigir pelos <em>&quot;olhos&quot;</em> de Deus (<a href="http://bibliaonline.com.br/acf/sl/32/8">Salmo 32:8</a>)! Que eterna perda teria sido se ele tivesse saído por aquela porta aberta! Quão melhor foi ter sido levado para fora pela mesma mão que o havia colocado ali — uma mão que, outrora instrumento de crueldade e pecado, era agora um instrumento de justiça e amor! Que magnífico triunfo! Que cena ímpar! Quão longe estava o diabo de pensar que haveria um resultado assim da prisão dos servos do Senhor! O diabo era todo ele astúcia, mas o caldo entornou do seu lado. Ele, que pensava impedir o evangelho, achou-se prestando um auxílio à sua expansão. Ele, que queria se livrar dos dois servos de Cristo, acabou perdendo um servo seu. Cristo é mais forte que Satanás; e todos os que confiam no Senhor e seguem a corrente dos Seus pensamentos irão, com toda a certeza, compartilhar dos triunfos da Sua graça agora, e brilhar no fulgor de Sua glória eternamente.</p>
+<p>Assim é a <em>&quot;obra do evangelista&quot;</em>. Assim são as circunstâncias pelas quais ele poderá passar — tais são os casos com os quais talvez venha a ter contato. Vimos o que buscava ansiosamente sendo satisfeito; vimos o enganador silenciado; e vimos o pecador endurecido salvo. Que todos os que seguem pregando o evangelho da graça de Deus possam saber como tratar dos vários tipos de caráter que poderão encontrar pelo caminho! Que muitos possam ser levantados para fazerem a obra de um evangelista!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="primeira_parte/o_enganador.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="segunda_parte/README.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="primeira_parte/o_enganador.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="segunda_parte/README.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

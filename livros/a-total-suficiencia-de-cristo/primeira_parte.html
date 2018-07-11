@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Primeira Parte - A Total Suficiência de Cristo</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="primeira_parte.html" class="active"><strong aria-hidden="true">1.</strong> Primeira Parte</a></li><li><a href="segunda_parte.html"><strong aria-hidden="true">2.</strong> Segunda Parte</a></li><li><a href="terceira_parte.html"><strong aria-hidden="true">3.</strong> Terceira Parte</a></li><li><a href="quarta_parte.html"><strong aria-hidden="true">4.</strong> Quarta Parte</a></li><li><a href="quinta_parte.html"><strong aria-hidden="true">5.</strong> Quinta Parte</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">A Total Suficiência de Cristo</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="primeira_parte.html#a-total-suficiÊncia-de-cristo" id="a-total-suficiÊncia-de-cristo"><h1>A TOTAL SUFICIÊNCIA DE CRISTO</h1></a>
+<p>C. H. MACKINTOSH</p>
+<p>Traduzido de &quot;The All-sufficiency of Christ”</p>
+<a class="header" href="primeira_parte.html#primeira-parte" id="primeira-parte"><h1>Primeira Parte</h1></a>
+<p>A obra de Cristo como o único lugar de descanso para a consciência</p>
+<p>A partir do momento em que a alma é levada a sentir a realidade de sua condição diante de Deus – a profundidade de sua ruína, culpa e miséria – sua completa e irremediável ruína, não poderá haver descanso até que o Espírito Santo revele ao coração um Cristo pleno e todo-suficiente. É esta a única solução possível, e o remédio perfeito de Deus, para nossa completa ruína.</p>
+<p>Trata-se de uma verdade muito simples, mas da maior importância; e podemos dizer, com toda a segurança, que quanto mais completa e profundamente o leitor aprender isso para si mesmo, melhor será. O verdadeiro segredo da paz está em se descer até o fundo de um eu irremediavelmente culpado, arruinado e sem esperanças, e aí encontrar um Cristo todo-suficiente como a provisão de Deus para nossa mais profunda necessidade. Isto é verdadeiramente descanso – um descanso que nunca pode ser perturbado. Pode haver tristeza, pressão, conflito; pode existir um exercício de alma, e o fardo de se ter que passar por múltiplas tentações, por subidas e descidas e por toda sorte de dificuldade e tribulação; mas sentimo-nos persuadidos de que quando uma alma é verdadeiramente levada pelo Espírito de Deus a enxergar o fim do seu próprio eu, e a descansar em um Cristo pleno, ela encontra uma paz que nunca poderá ser interrompida.</p>
+<p>O estado de incerteza em que vivem muitos dos queridos do povo de Deus é o resultado de não terem recebido em seus corações um Cristo pleno, como a provisão exata do próprio Deus para eles. Não há dúvida de que este resultado triste e doloroso pode ser gerado com a ajuda de diversas causas, como uma mentalidade legalista, uma consciência mórbida, um coração que se ocupa consigo mesmo, um ensino errôneo, um anseio secreto pelas coisas deste mundo, alguma reserva no coração em se aceitar as reivindicações de Deus, de Cristo e da eternidade. Mas qualquer que possa ser a causa que esteja produzindo isso, cremos que, na maioria dos casos, se descobrirá que a falta de uma paz bem alicerçada, um problema tão comum entre o povo do Senhor, é o resultado de não se enxergar, de não se crer, naquilo que Deus fez o Seu Cristo ser para eles e por eles, e isso para todo o sempre.</p>
+<p>Assim, o que propomos neste artigo é mostrar ao leitor ansioso, buscando nas preciosas páginas da Palavra de Deus, que em Cristo se encontra entesourado para ele tudo o que possa vir a necessitar, seja para atender às necessidades de sua própria consciência, aos ardentes desejos de seu coração, ou às exigências de seu caminho. Buscaremos provar, pela graça de Deus, que a obra de Cristo é o único lugar de repouso verdadeiro para a consciência; que Sua Pessoa é o único objeto para o coração; e que Sua Palavra é o único guia verdadeiro para o caminho.</p>
+<p>E para começar, vamos nos deter um pouco na obra de Cristo como o único lugar de descanso para a consciência.</p>
+<p>Ao considerarmos este importante assunto, há duas coisas que exigem nossa atenção: primeiro, o que Cristo fez por nós; segundo, o que Ele está fazendo para nós. Na primeira, temos a expiação; na última, a intercessão como Advogado. Ele morreu na cruz por nós: Ele vive para nós assentado no trono. Por Sua preciosa morte expiatória Ele supriu plenamente tudo o que dizia respeito à nossa condição como pecadores. Ele carregou nossos pecados, e os levou para todo o sempre. Ele levou a culpa por todos os nossos pecados – os pecados de todos os que creem no Seu nome. Jeová lançou sobre Ele todas as nossas iniquidades (<a href="http://bibliaonline.com.br/acf/is/53">Is 53</a>). “Porque também Cristo padeceu uma vez pelos pecados, o Justo pelos injustos, para levar-nos a Deus” (<a href="http://bibliaonline.com.br/acf/1pe/3/18">1 Pe 3:18</a>).</p>
+<p>Esta é uma verdade imensa, e de total importância para a alma ansiosa – uma verdade que se assenta no próprio alicerce de toda a posição cristã. É impossível que qualquer alma despertada, que qualquer consciência espiritualmente esclarecida, possa desfrutar da paz divinamente estabelecida até que esta tão preciosa verdade seja recebida em simplicidade de fé. Devo saber, com base na autoridade divina, que todos os meus pecados foram tirados da vista de Deus para sempre; que Ele próprio Se desfez deles de um modo que viesse a satisfazer todas as exigências do Seu trono e todos os atributos da Sua natureza; que Ele glorificou a Si próprio por lançar fora os meus pecados, e isto numa maneira muito mais tremenda e maravilhosa do que se tivesse me mandado para um inferno eterno por causa deles.</p>
+<p>Sim, foi Ele mesmo Quem o fez. É esta a essência e o cerne – o âmago de toda a questão. Deus colocou os nossos pecados sobre Jesus, e Ele nos diz isto em Sua santa Palavra, a fim de podermos saber disso com base na autoridade divina – uma autoridade que não pode mentir. Deus planejou assim; Deus fez assim; e assim Deus o diz. Tudo vem de Deus, do princípio ao fim, e nós tão somente temos que descansar nisso como uma criança. Como sei que Jesus levou meus pecados em seu próprio corpo sobre o madeiro? Pela mesma autoridade que me diz que eu tinha pecados para serem levados. Deus, em Seu maravilhoso e inigualável amor, me assegura, a mim, um pobre e culpado pecador, merecedor do inferno, que Ele próprio cuidou da questão toda dos meus pecados, e Se livrou deles de um modo tal que veio a trazer uma rica colheita de glória para o Seu eterno Nome, por todo o universo, na presença de toda a inteligência criada. É nisto que a fé viva deve tranquilizar a consciência. Se Deus satisfez a Si próprio com a solução para os meus pecados, devo ficar igualmente satisfeito. Sei que sou um pecador – pode até ser que seja o principal dos pecadores. Sei que meus pecados são em maior número do que os cabelos da minha cabeça; que são negros como a meia-noite – negros como o próprio inferno. Sei que qualquer um desses pecados, o menos importante deles, merece as chamas eternas do inferno. Sei – porque a Palavra de Deus me diz – que uma simples partícula de pecado não pode jamais entrar em Sua santa presença; e que, por conseguinte, não havia para mim outro destino senão a eterna separação de Deus. Tudo isso eu sei, com base na clara e inquestionável autoridade daquela Palavra que está para sempre firmada no céu.</p>
+<p>Mas, oh, o profundo mistério da cruz! – o glorioso mistério do amor redentor! Vejo o próprio Deus levando todos os meus pecados – pecados da pior espécie – todos os meus pecados, do modo como Ele os viu e avaliou. Eu O vejo colocando-os todos sobre a cabeça de meu bendito Substituto, e tratando com Ele ali por causa dos pecados. Vejo todas as ondas e vagas da justa ira de Deus – Sua ira contra os meus pecados – Sua ira que deveria ter queimado a mim, alma e corpo, no inferno, por toda uma terrível eternidade; eu as vejo rolando sobre o Homem que ficou em meu lugar, que me representou diante de Deus, que suportou tudo o que eu merecia, com Quem um Deus santo tratou como se tivesse tratado comigo. Vejo a imparcialidade de um Juiz, a santidade, verdade e justiça tratando com meus pecados, e livrando-se deles eternamente. Não deixando escapar nenhum deles por tratar! Sem conivência, sem paliativos, sem distinção, sem indiferença. Coisas como estas não poderiam mesmo se fazer presentes já que o próprio Deus tomou o caso em Suas mãos. Sua glória estava em jogo; Sua imaculada santidade, Sua eterna majestade, as sublimes reivindicações de Seu governo.</p>
+<p>Tudo isso tinha que ser satisfeito numa medida tal que O glorificasse diante de anjos, homens e demônios. Ele podia ter me mandado para o inferno – com justiça; podia justamente me mandar para o inferno – por causa dos meus pecados. Eu não merecia nada mais do que isto. Todo o meu ser moral, desde o mais profundo, merecia isto – e deveria recebê-lo. Não tenho uma palavra sequer a dizer como desculpa para um simples pensamento pecaminoso, isso para não falar de uma vida manchada pelo pecado, do princípio ao fim – sim, uma vida de rebelião e de arrogante e deliberado pecado.</p>
+<p>Outros podem argumentar como quiserem acerca da injustiça de uma eternidade de punição para uma vida de pecado – a completa falta de proporção que há entre alguns anos de práticas más e infindáveis eras de tormento no lago de fogo. Podem argumentar, mas creio plenamente, e confesso sem reservas, que por um simples pecado contra um Ser tal como é o Deus que vejo na cruz, eu mais que merecia a punição eterna no profundo, escuro e sombrio abismo do inferno.</p>
+<p>Não estou escrevendo como um teólogo; se fosse um, seria realmente uma tarefa bem simples adornar isto com uma inegável lista de evidências das Escrituras a fim de provar a solene verdade da punição eterna. Mas não; estou escrevendo como alguém que foi divinamente instruído do verdadeiro deserto que é o pecado, e este deserto eu, calma, deliberada e solenemente declaro, é, e só pode ser nada menos do que a eterna exclusão da presença de Deus e do Cordeiro – tormento eterno no lago que arde com fogo e enxofre.</p>
+<p>Porém – e eternas aleluias sejam ao Deus de toda a graça! – ao invés de nos mandar para o inferno por causa de nossos pecados, Ele enviou o Seu Filho para ser a propiciação por esses mesmos pecados. E no desdobramento do maravilhoso plano da redenção, vemos um Deus santo tratando com a questão dos nossos pecados, e executando juízo sobre eles na Pessoa de Seu tão amado, eterno e co-igual Filho, a fim de que o pleno manancial do Seu amor pudesse fluir em nossos corações. “Nisto está o amor, não em que nós tenhamos amado a Deus, mas em que Ele nos amou a nós, e enviou Seu Filho para propiciação pelos nossos pecados” (<a href="http://bibliaonline.com.br/acf/1jo/4/10">1 João 4:10</a>).</p>
+<p>Portanto, isto deve trazer paz à consciência, se tão somente for recebido com simplicidade de fé. Como é possível que uma pessoa creia que Deus satisfez a Si mesmo quanto aos pecados dela, e ao mesmo tempo ela própria não ter paz? Se Deus nos diz: “Nunca mais Me lembrarei dos seus pecados”</p>
+<p>(<a href="http://bibliaonline.com.br/acf/jr/31/34">Jr 31:34</a>), o que mais poderíamos desejar como fundamento de paz para nossa consciência? Se Deus me assegura que todos os meus pecados estão invisíveis como que em denso nevoeiro – que foram lançados para trás de Si – tendo saído para sempre de diante de Seus olhos, por que é que eu não teria paz? Se Ele me mostra o Homem que carregou meus pecados sobre a cruz, agora coroado à destra da Majestade nas alturas, porventura minha alma não deveria entrar no perfeito descanso no que diz respeito à questão de meus pecados? Com toda a certeza.</p>
+<p>Pois, permita-me perguntar, como foi que Cristo chegou ao lugar que Ele agora ocupa no trono de Deus? Será que foi como Deus sobre tudo, bendito para sempre? Não; Ele sempre o foi – sempre esteve no seio do Pai – sempre foi o objeto do prazer eterno e inefável do Pai. Será que foi como um Homem perfeito, santo e sem mancha alguma – alguém cuja natureza seria absolutamente pura, perfeitamente livre de pecado? Não; pois nesse caráter, e nessa posição, Ele poderia ter, a qualquer momento, da manjedoura à cruz, exigido um lugar à destra de Deus. Como foi então? Eterno louvor seja ao Deus de toda a graça! Foi como Aquele que, por Sua morte, cumpriu a gloriosa obra da redenção – Aquele que foi carregado com todo o peso dos nossos pecados – Aquele que satisfez perfeitamente todas as justas reivindicações daquele trono no qual Ele agora Se assenta. Este é um ponto de cardeal importância para o leitor angustiado se agarrar. E não falhará em emancipar o coração e tranquilizar a consciência. Não é possível que tenhamos, por fé, o Homem que foi pregado no madeiro, e está agora coroado no trono, e não tenhamos paz com Deus. Após o Senhor Jesus Cristo ter tomado sobre Si os nossos pecados, e o juízo que a eles era devido, Ele não poderia estar onde agora está se um só daqueles pecados tivesse ficado por expiar. Ver Aquele que carregou os pecados coroado de glória é ver nossos pecados tirados para sempre de diante da divina presença. Onde estão nossos pecados? Estão todos apagados. Como sabemos disso? Aquele que os levou sobre Si atravessou os céus e chegou ao mais alto pináculo de glória. A justiça eterna coroou Sua bendita cabeça com um diadema de glória, como o Consumador de nossa redenção – o Carregador de nossos pecados; provando assim, acima de qualquer dúvida, ou acima de qualquer possibilidade de se questionar, que nossos pecados foram todos tirados da vista de Deus para sempre. Um Cristo coroado e uma consciência limpa estão, na bendita dispensação da graça, inseparavelmente ligados. Tremendo fato! Bem podemos cantar, com todas as nossas forças remidas, os louvores do amor redentor.</p>
+<p>Mas vejamos como esta verdade tão consoladora nos é apresentada nas Sagradas Escrituras. Em Romanos 3 lemos: “Mas agora se manifestou sem a lei a justiça de Deus, tendo o testemunho da lei e dos profetas; isto é, a justiça de Deus pela fé em Jesus Cristo para todos e sobre todos os que creem; porque não há diferença. Porque <em>todos pecaram</em> e destituídos estão da glória de Deus; sendo justificados <strong>gratuitamente</strong> pela Sua graça, pela redenção que há em Cristo Jesus, <strong>ao qual Deus propôs</strong> para propiciação pela fé no Seu sangue, para demonstrar a Sua justiça pela remissão dos pecados dantes cometidos, sob a paciência de Deus; para demonstração da Sua justiça neste tempo presente, para que Ele seja Justo e justificador daquele que tem fé em Jesus” (<a href="http://bibliaonline.com.br/acf/rm/3/21-26">Rm 3:21-26</a>).</p>
+<p>Outra vez, no capítulo 4, falando da fé de Abraão lhe sendo imputada como justiça, o apóstolo acrescenta, “Ora, não só por causa dele está escrito, que lhe fosse tomado em conta, mas também por nós, a quem será tomado em conta, os que cremos naquele que dentre os mortos ressuscitou a Jesus nosso Senhor; O qual por nossos pecados foi entregue, e ressuscitou para nossa justificação” (<a href="http://bibliaonline.com.br/acf/rm/23-25">Romanos 4:23-25</a>). Temos Deus aqui apresentado à nossa alma como Aquele que ressuscitou de entre os mortos ao Carregador de nossos pecados. E por que o fez? Porque Aquele que foi entregue por causa das nossas ofensas O havia glorificado perfeitamente no que dizia respeito àquelas ofensas, e as havia levado para sempre. Deus não apenas enviou o Seu Filho Unigênito ao mundo, mas moeu-O por causa das nossas iniquidades, e ressuscitou-O de entre os mortos, a fim de que pudéssemos saber e crer que nossas iniquidades foram todas tratadas de uma maneira que glorificou a Deus, infinita e eternamente. Ao Seu nome seja dada eterna e universal honra!</p>
+<p>Mas temos um testemunho ainda mais extenso desta grande verdade fundamental. Em Hebreus 1 lemos palavras que mexem com nossa alma, como estas: “Havendo Deus antigamente falado muitas vezes, e de muitas maneiras, aos pais, pelos profetas, a nós falou-nos nestes últimos dias pelo Filho, a Quem constituiu herdeiro de tudo, por Quem fez também o mundo. O qual, sendo o resplendor da Sua glória, e a expressa imagem da Sua Pessoa, e sustentando todas as coisas pela palavra do Seu poder,havendo feito por Si mesmo a purificação dos nossos pecados, assentou-Se à destra da Majestade nas alturas” (<a href="http://bibliaonline.com.br/acf/hb/1/1-3">Hb 1:1-3</a>).</p>
+<p>Nosso Senhor Jesus Cristo – bendito seja o Seu nome! – não tomaria o Seu lugar no trono de Deus até que tivesse, pela oferta de Si mesmo na cruz, purificado nossos pecados. Portanto, um Cristo ressurreto à destra de Deus é uma prova gloriosa e inquestionável de que nossos pecados todos já se foram, pois Ele não poderia estar onde agora está, se restasse um só daqueles pecados. Deus ressuscitou de entre os mortos, Aquele mesmíssimo Homem sobre o qual Ele mesmo havia posto todo o peso dos nossos pecados. Portanto, tudo está resolvido – divina e eternamente resolvido. É tão impossível que um só pecado possa ser achado no mais fraco crente em Jesus, quanto no próprio Jesus. Isto é algo extraordinário de se afirmar, mas trata-se da sólida verdade de Deus, estabelecida em diversos lugares das Sagradas Escrituras, e a alma que crê nisto deve possuir uma paz que o mundo não pode dar e nem tirar.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="segunda_parte.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="segunda_parte.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>
