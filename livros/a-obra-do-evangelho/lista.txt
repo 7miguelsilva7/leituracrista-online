@@ -1,0 +1,20 @@
+A OBRA DO EVANGELHO CHARLES STANLEY.odt
+assets
+capitulo_1
+capitulo_10
+capitulo_11
+capitulo_12
+capitulo_13
+capitulo_14
+capitulo_2
+capitulo_3
+capitulo_4
+capitulo_5
+capitulo_6
+capitulo_7
+capitulo_8
+capitulo_9
+comandoEmPastas.sh
+lista.txt
+README.md
+SUMMARY.md
