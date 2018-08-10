@@ -799,6 +799,10 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/livros/chapter-a-day/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/</loc>
     <lastmod>2017-08-07T17:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -807,6 +811,10 @@
   <url>
     <loc>https://leituracrista.com/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/livros/teste/</loc>
   </url>
   
 </urlset>
