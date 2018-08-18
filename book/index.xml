@@ -1721,15 +1721,6 @@ Esclarecimento As cartas a seguir, publicadas com a permissão do amigo a quem s
     </item>
     
     <item>
-      <title>A Fonte</title>
-      <link>https://leituracrista.com/a-fonte/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/a-fonte/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>A Igreja e a Tribulação</title>
       <link>https://leituracrista.com/folhetos/doutrinarios/a-igreja-e-a-tribulacao/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1870,6 +1861,15 @@ Esclarecimento As cartas a seguir, publicadas com a permissão do amigo a quem s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leituracrista.com/folhetos/doutrinarios/a-vinha-de-nabote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A fonte</title>
+      <link>https://leituracrista.com/folhetos/doutrinarios/a-fonte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/folhetos/doutrinarios/a-fonte/</guid>
       <description></description>
     </item>
     
