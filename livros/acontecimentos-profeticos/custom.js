@@ -3,7 +3,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         var share = window.location.href;
         var title = document.title;
     
-        document.write('<a id="mobile"  href="https://api.whatsapp.com/send?&text=*Leitura Cristã:* %0A*' + title + '* %0A' + share + '" target="_blank"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/whatsapp.png"/></a> <a href="http://www.facebook.com/sharer.php?u=' + share + '"target="_blank"> <img style="width:30px;height:30px;;display:scroll;position:fixed;bottom:12px;right:125px;color:#f00;font-weight:bold;"  src="http://leituracrista.com/img/face.png"/> </a>');
+        document.write('<a id="mobile"  href="https://api.whatsapp.com/send?&text=*Leitura Cristã:* %0A*' + title + '* %0A' + share + '" target="_blank"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="whatsapp.png"/></a> <a href="http://www.facebook.com/sharer.php?u=' + share + '"target="_blank"> <img style="width:30px;height:30px;;display:scroll;position:fixed;bottom:12px;right:125px;color:#f00;font-weight:bold;"  src="face.png"/> </a>');
     }else{
         var share = window.location.href;
         var title = document.title;
