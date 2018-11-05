@@ -1,21 +1,7 @@
 <html>
 
 <head>
-<script>
-// resolve erro de redirecionamento a partir do facebook
-$(document).ready(function() {
-var url_atual = window.location.href;
 
-var str = url_atual;
-var match = str.split('&fbclid=');
-// document.write(match[0]);
-
-window.location.replace(match[0]);
-
-//break;
-//FIM de resolve erro de redirecionamento a partir do facebook
-}
-</script>
 
 <title>Índice Respondi.com.br Por Mario Persona</title>
     <meta charset="utf-8">
@@ -27,6 +13,24 @@ window.location.replace(match[0]);
 </head>
 
 <body>
+
+<script>
+// resolve erro de redirecionamento a partir do facebook
+$(document).ready(function() {
+var url = location.href;
+if(url.indexOf("&fbclid=")==-1) {
+
+var url_atual = window.location.href;
+var str = url_atual;
+var match = str.split('&fbclid=');
+window.location.replace(match[0]);
+
+} else {
+
+}
+});
+//FIM de resolve erro de redirecionamento a partir do facebook
+</script>
 
 
 
