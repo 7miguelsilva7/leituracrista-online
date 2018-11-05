@@ -1,22 +1,6 @@
 <html>
 
 <head>
-
-<script>
-
-  // resolve erro de redirecionamento a partir do facebook
-var url_atual = window.location.href;
-
-var str = url_atual;
-var match = str.split('&fbclid=');
-var parte1 = match[0];
-// document.write(match[0]);
-
-window.location.replace(parte1);
-//FIM de resolve erro de redirecionamento a partir do facebook
-
-</script>  
-
 <title>Índice Respondi.com.br Por Mario Persona</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +11,12 @@ window.location.replace(parte1);
 </head>
 
 <body>
+
+
+
+
+
+
 <center>
      <form method="GET">
      <p align="center">
@@ -38,13 +28,29 @@ window.location.replace(parte1);
      <font size="2">
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+
+<script>
+
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+// resolve erro de redirecionamento a partir do facebook
+var url_atual = window.location.href;
+
+var str = url_atual;
+var match = str.split('&fbclid=');
+// document.write(match[0]);
+
+window.location.replace(match[0]);
+//FIM de resolve erro de redirecionamento a partir do facebook
+
+
+</script>
 
 <div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F%2F&amp;src=sdkpreparse">Compartilhar</a></div>
 
