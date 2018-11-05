@@ -364,6 +364,19 @@ no_entry_printed (key_list.original_query);
 the_entries = new Array ();
 
 
+// resolve erro de redirecionamento a partir do facebook
+function (){
+var url_atual = window.location.href;
+
+var str = url_atual;
+var match = str.split('&fbclid=');
+// document.write(match[0]);
+
+window.location.replace(match[0]);
+
+break;
+}
+//FIM de resolve erro de redirecionamento a partir do facebook
 //aqui vai as entradas para a pesquisa
 
 //aqui vai as entradas para a pesquisa
