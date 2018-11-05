@@ -39,17 +39,6 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-// resolve erro de redirecionamento a partir do facebook
-var url_atual = window.location.href;
-
-var str = url_atual;
-var match = str.split('&fbclid=');
-// document.write(match[0]);
-
-window.location.replace(match[0]);
-//FIM de resolve erro de redirecionamento a partir do facebook
-
-
 </script>
 
 <div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F%2F&amp;src=sdkpreparse">Compartilhar</a></div>
@@ -374,4 +363,13 @@ no_entry_printed (key_list.original_query);
 
 the_entries = new Array ();
 
+// resolve erro de redirecionamento a partir do facebook
+var url_atual = window.location.href;
+
+var str = url_atual;
+var match = str.split('&fbclid=');
+// document.write(match[0]);
+
+window.location.replace(match[0]);
+//FIM de resolve erro de redirecionamento a partir do facebook
 //aqui vai as entradas para a pesquisa
