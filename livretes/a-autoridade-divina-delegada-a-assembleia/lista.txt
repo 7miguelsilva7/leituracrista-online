@@ -1,6 +1,0 @@
-A AUTORIDADE DELEGADA A ASSEMBLEIA R. GUILLEN.odt
-assets
-comandoEmPastas.sh
-lista.txt
-README.md
-SUMMARY.md

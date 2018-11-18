@@ -1,6 +1,0 @@
-A HUMANIDADE SEM PECADO DE NOSSO SENHOR JE G. H. HAYHOE.odt
-assets
-comandoEmPastas.sh
-lista.txt
-README.md
-SUMMARY.md
