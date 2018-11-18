@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A MENTIRA - A Mentira</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html" class="active"><strong aria-hidden="true">1.</strong> A MENTIRA</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">A Mentira</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="README.html#a-mentira" id="a-mentira"><h1>A MENTIRA</h1></a>
+<p>AUTOR DESCONHECIDO</p>
+<p>Mentir é falar ou dizer algo contrário à verdade; é a expressão e manifestação contrária ao que alguém sabe, crê ou pensa. Pode-se crer na mentira, falar mentira e praticar a mentira. É o engano em seus diferentes aspectos; nocivo ao ser humano e ofensa grave diante de Deus. O diabo é o pai da mentira (<a href="http://bibliaonline.com.br/acf/jo/8/44">João 8:44</a>) e, portanto, a mentira é um instrumento diabólico que o homem usa para sua própria perdição. O mais triste é que o homem ama a mentira, não ama a verdade pois ele é mau por natureza (<a href="http://bibliaonline.com.br/acf/rm/1/25">Rom. 1:25</a>; <a href="http://bibliaonline.com.br/acf/ap/22/15">Apoc. 22:15</a>).</p>
+<p>A juventude, em termos gerais, está sendo arrastada à perdição eterna pelo prazer transitório da inclinação à droga, sexo, etc. Tudo não passa de uma grande mentira; é enganoso, anormal, trazendo prejuízos físicos, morais e espirituais. Tais coisas podem ser definidas como praticar a mentira. Esta prática abrange os mais variados aspectos da mentira como idolatria, homicídio, adultério, fornicação, cobiça, etc.</p>
+<p>Falar mentira é um mal muito comum em todos os ambientes e esferas da vida. Algumas pessoas dizem que certas mentiras são benignas, mas isto não é correto. Toda mentira, pequena ou grande, é um instrumento do diabo, portanto é recomendável que o crente não se comprometa com coisa alguma que possa levá-lo a mentir. Todo verdadeiro crente deve tratar tudo de uma forma positiva; na verdade o seu falar deve ser &quot;Sim, sim, Não, não, porque o que passa disto é de procedência maligna&quot; (<a href="http://bibliaonline.com.br/acf/mt/5/37">Mateus 5:37</a>).</p>
+<p>Existe também a mentira doutrinária e a mentira teórica. O espírito do erro nega que Jesus Cristo veio em carne, nega que Cristo é Deus (<a href="http://bibliaonline.com.br/acf/1jo/4/6">I jo 4:6</a>). Esta é uma mentira doutrinária. A teoria da evolução é uma mentira teórica pois nega a criação, negando assim o Criador que é Deus. Há pessoas que crêem nessas mentiras, e haverá muitíssimos que irão crer na mentira por não terem dado crédito à verdade (<a href="http://bibliaonline.com.br/acf/2ts/2/10-12">II Tess. 2:10-12</a>).</p>
+<p>Quando Adão e Eva pecaram no Éden, o pecado entrou no ser humano; entrou a mentira, o mal e, consequentemente, a morte. &quot;Porque o salário do pecado é a morte&quot;, mas graças a Deus que &quot;o dom gratuito de Deus é a vida eterna, por Cristo Jesus nosso Senhor&quot; (<a href="http://bibliaonline.com.br/acf/rm/6/23">Rom. 6:23</a>). Portanto, ao homem agrada, por natureza, crer na mentira; agrada-lhe praticar a mentira e ele até mesmo ama a mentira. Repito, a mentira é prejuízo ao homem e, com todos os seus horrorosos aspectos, o degenera e o leva à perdição. O diabo com seu instrumental de mentira rouba, mata e destrói o homem. Está escrito: &quot;O ladrão vem somente para roubar, matar e destruir&quot; (<a href="http://bibliaonline.com.br/acf/jo/10/10">João 10:10</a>). O diabo lançou a sua mentira no mundo: &quot;a concupiscência da carne, a concupiscência dos olhos e a soberba da vida&quot; (<a href="http://bibliaonline.com.br/acf/1jo/2/16">I jo 2:16</a>).</p>
+<p>Devemos aborrecer a mentira, em qualquer forma que se apresente, e não nos esquecermos que o primeiro pecado grave, pecado de morte, registrado na igreja, foi uma mentira (<a href="http://bibliaonline.com.br/acf/atos/5/1-11">Atos. 5:1-11</a>). Temos que amar a verdade, a qual está em nós, e estará para sempre (<a href="http://bibliaonline.com.br/acf/2jo/1/1,2">II jo 1,2</a>). Procuremos praticar a verdade em nossas vidas, crer na verdade, falar a verdade e amar a verdade. Cristo disse: &quot;Eu sou o caminho, e a verdade, e a vida; ninguém vem ao Pai, senão por mim&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/6">João </a><a href="http://bibliaonline.com.br/acf/jo/14/6">14:6</a>). &quot;Pelo que deixai a mentira, e falai a verdade cada um com o seu próximo; porque somos membros uns dos outros&quot; (<a href="http://bibliaonline.com.br/acf/ef/4/25">Efésios 4:25</a>).</p>
+<p>Autor desconhecido</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

@@ -1,0 +1,12 @@
+1-a_natureza_da_ordenacao_da_ceia_do_senhor.md
+2-as_circunstancias_em_que_foi_instituida_a_ceia_d.md
+3-para_quem_foi_instituida_a_ceia_do_senhor.md
+4-a_ocasiao_e_a_maneira_de_celebrar_a_ceia_do_senh.md
+A CEIA DO SENHOR C. H. MACKINTOSH.odt
+assets
+comandoEmPastas.sh
+lista.txt
+pensamentos_acerca_da_ceia_do_senhor.md
+prefacio_do_autor.md
+README.md
+SUMMARY.md

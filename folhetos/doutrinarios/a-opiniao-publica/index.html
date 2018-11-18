@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A OPINIAO PUBLICA - A OPINIÃO PÚBLICA</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html" class="active"><strong aria-hidden="true">1.</strong> A OPINIAO PUBLICA</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">A OPINIÃO PÚBLICA</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="README.html#a-opiniao-publica" id="a-opiniao-publica"><h1>A OPINIAO PUBLICA</h1></a>
+<p>C. BUCHANAN</p>
+<p>A opinião pública é uma das duas coisas que controlam o homem natural. A outra é a sua própria concupiscência. Na sua epístola, Tiago nos fala claramente da concupiscência e do seu resultado logo no primeiro capítulo. &quot;Ninguém, sendo tentado, diga: De Deus sou tentado; porque Deus não pode ser tentado pelo mal, e a ninguém tenta. Mas cada um é tentado, quando atraído e engodado pela sua própria concupiscência. Depois, havendo a concupiscência concebido, dá à luz o pecado; e o pecado, sendo consumado, gera a morte.&quot; (<a href="http://bibliaonline.com.br/acf/tg/1/13-15">Tiago 1:13-15</a>).</p>
+<p>Herodes foi controlado pela opinião pública quando, por causa dos que estavam se banqueteando com ele, ordenou que João Batista fosse decapitado. Pilatos também, mesmo depois de ter dito, por três vezes, &quot;Não acho culpa alguma neste homem&quot; (<a href="http://bibliaonline.com.br/acf/lc/23/4,14,22">Lucas 23:4,14,22</a>), ainda assim, por causa da opinião pública, entregou Jesus para ser crucificado.</p>
+<p>Às vezes a opinião pública é um fator que restringe o avanço do mal. Os ladrões não querem que o público saiba o que estão fazendo, pois sabem que é errado. À medida que os padrões morais sofrem declínio, esse obstáculo parcial do mal declina juntamente. Isto tem ficado bem claro nas últimas duas ou mais décadas. Os padrões morais, de uma maneira geral, estão cada vez mais baixos a cada ano. O que era considerado errado e até mesmo repulsivo há alguns anos é, a princípio aceito e, mais tarde, ensinado.</p>
+<p>A exortação dada aos cristãos é: &quot;A prostituição, e toda a impureza ou avareza, nem ainda se nomeie entre vós, como convém a santos&quot; (<a href="http://bibliaonline.com.br/acf/ef/5/3">Efésios 5:3</a>). Este é o padrão de Deus. Nunca muda. Com respeito às obras infrutuosas das trevas no mundo, a palavra dada é: &quot;O que eles fazem em oculto até dizê-lo é torpe&quot; (<a href="http://bibliaonline.com.br/acf/ef/5/12">Efésios 5:12</a>).</p>
+<p>À medida que a opinião pública desce de nível vai sendo cada vez menos um impedimento ao mal. Como Sofonias, o profeta, escreveu: &quot;O perverso não conhece a vergonha&quot; (<a href="http://bibliaonline.com.br/acf/sf/3/5">Sofonias 3:5</a>). Coisas que antes deixavam as pessoas vermelhas de vergonha são agora motivo de riso. Coisas que antes eram feitas só em segredo agora o são abertamente. E mais, são ensinadas e comercializadas com fins a um lucro imundo. No mundo a devassidão e imoralidade são aceitas como uma evolução natural. A opinião pública baixou seu nível e o padrão geral de conduta desce juntamente.</p>
+<p>Será que é necessário perguntar qual deveria ser a conduta do cristão, ou mesmo qual sua atitude para com estas coisas? A Palavra de Deus é clara: &quot;Conserva-te a ti mesmo puro&quot; (<a href="http://bibliaonline.com.br/acf/1tm/5/22">1 Timóteo 5:22</a>). &quot;Sede santos, porque Eu sou santo.&quot; (<a href="http://bibliaonline.com.br/acf/1pe/1/16">1 Pd 1:16</a>). &quot;(Ele) nos chamou por Sua glória e virtude.&quot; (<a href="http://bibliaonline.com.br/acf/2pe/1/3">2 Pd 1:3</a>).</p>
+<p>As influências que corrompem são encontradas nas escolas, universidades, escritórios, fábricas, lares deste mundo, e até mesmo nos lares dos crentes, se estes não tomarem o cuidado de preservar a santidade no lar. De quão grande importância é, para o cristão, procurar andar com Deus. Enoque andou assim em meio ao mundo ímpio do seu tempo, e não foi achado, pois Deus o tomou. Esta é também a nossa esperança; todavia, enquanto estamos aqui neste mundo, possamos nós não pertencer a ele (<a href="http://bibliaonline.com.br/acf/jo/17/14">João 17:14</a>).</p>
+<p>Se lemos as Sagradas Escrituras com frequência, ao ponto de nossos pensamentos serem formados pela preciosa Palavra de Deus, nosso padrão será o padrão de Deus e não o padrão dos homens, que se declina mais e mais.</p>
+<p>C. Buchanan</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>
