@@ -1,6 +1,0 @@
-A EXPECTATIVA H WITHERBY H. WITHERBY.odt
-assets
-comandoEmPastas.sh
-lista.txt
-README.md
-SUMMARY.md

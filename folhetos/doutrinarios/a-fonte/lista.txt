@@ -1,6 +1,0 @@
-A FONTE.odt
-assets
-comandoEmPastas.sh
-lista.txt
-README.md
-SUMMARY.md
