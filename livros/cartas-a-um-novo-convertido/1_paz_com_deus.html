@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>1 Paz com Deus - CARTAS A UM NOVO CONVERTIDO</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> CARTA A UM NOVO CONVERTIDO  - EDWARD DENNETT</a></li><li><a href="1_paz_com_deus.html" class="active"><strong aria-hidden="true">2.</strong> 1 Paz com Deus</a></li><li><a href="2_nosso_lugar_perante_deus.html"><strong aria-hidden="true">3.</strong> 2 Nosso lugar perante Deus</a></li><li><a href="3_nosso_lugar_neste_mundo/README.html"><strong aria-hidden="true">4.</strong> 3 Nosso lugar neste mundo</a></li><li><ol class="section"><li><a href="3_nosso_lugar_neste_mundo/1_nosso_lugar_em_relacao_ao_mundo.html"><strong aria-hidden="true">4.1.</strong> Nosso lugar em relação ao mundo.</a></li><li><a href="3_nosso_lugar_neste_mundo/2_nosso_lugar_em_relacao_ao_arraial.html"><strong aria-hidden="true">4.2.</strong> Nosso lugar em relação ao “arraial”.</a></li></ol></li><li><a href="4_o_corpo_de_cristo.html"><strong aria-hidden="true">5.</strong> 4 O Corpo de Cristo</a></li><li><a href="5_a_mesa_do_senhor.html"><strong aria-hidden="true">6.</strong> 5 A mesa do Senhor</a></li><li><a href="6_a_ceia_do_senhor.html"><strong aria-hidden="true">7.</strong> 6 A ceia do Senhor</a></li><li><a href="7_o_senhor_jesus_cristo_no_centro.html"><strong aria-hidden="true">8.</strong> 7 O Senhor Jesus Cristo no centro</a></li><li><a href="8_o_verdadeiro_lugar_de_adoracao.html"><strong aria-hidden="true">9.</strong> 8 O verdadeiro lugar de adoração</a></li><li><a href="9_adoracao.html"><strong aria-hidden="true">10.</strong> 9 Adoração</a></li><li><a href="10_ministerio.html"><strong aria-hidden="true">11.</strong> 10 Ministério</a></li><li><a href="11_a_palavra_de_deus.html"><strong aria-hidden="true">12.</strong> 11 A Palavra de Deus</a></li><li><a href="12_oracao.html"><strong aria-hidden="true">13.</strong> 12 Oração</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">CARTAS A UM NOVO CONVERTIDO</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="1_paz_com_deus.html#a1-paz-com-deus-1-paz-com-deus" id="a1-paz-com-deus-1-paz-com-deus"><h1>1 Paz com Deus </h1></a>
+<p><em>Prezado irmão</em>, Você se queixa de não ter uma <em>&quot;paz firme&quot;</em> e que por isso está fazendo pouco progresso na verdade ou no conhecimento do Senhor. Sinto admitir que sua queixa não é algo incomum, mas brota de um conhecimento imperfeito do evangelho e por você confundir duas coisas que são diferentes. Portanto espero, com a bênção do Senhor, ser capaz de ajudá-lo, isto se você estiver disposto a considerar cuidadosamente o que estou para escrever.</p>
+<p>Seu caso me faz lembrar o de outra pessoa com quem me deparei recentemente. <em>&quot;Você tem paz com Deus?&quot;</em>, perguntei. Sua resposta foi: <em>&quot;Nem sempre...&quot;</em>. Assim como no seu caso, confunde-se a paz estabelecida com o desfrutar dessa paz. Quero dizer, quando você está alegre no Senhor, diz: <em>&quot;Agora sim, eu tenho paz&quot;</em>; mas quando fica deprimido por causa de algum fracasso ou tribulação acha que sua paz foi-se embora.</p>
+<p>Para prover uma solução para um sentimento assim, quero que considere atentamente quais são os fundamentos da paz com Deus. A alma tem muito a ganhar quando percebe com clareza que estes fundamentos não se encontram dentro, mas fora. Então poderá também enxergar que nossas experiências nada têm a ver com a questão.</p>
+<p>Leia comigo <a href="http://bibliaonline.com.br/acf/rm/5/1">Romanos 5:1</a>. Ali vemos que, <em>“sendo, pois, justificados pela fé, temos paz com Deus, por nosso Senhor Jesus Cristo”, e se examinarmos a ligação desta passagem com o contexto, aprenderemos, de uma vez por todas, qual é a origem da paz a que ela se refere. É este o contexto: Depois de haver explicado a maneira pela qual Abraão foi justificado diante de Deus, o apóstolo Paulo continua: “Ora não só por causa dele está escrito, que lhe fosse tomado</em> <em>em conta, mas também por nós, a quem será tomado em conta; os que cremos naquele que dos mortos ressuscitou a Jesus nosso Senhor; O qual por nossos pecados foi entregue, e ressuscitou para nossa justificação. Sendo pois justificados pela fé, temos paz com Deus, por nosso Senhor Jesus Cristo” (</em><a href="http://bibliaonline.com.br/acf/rm/4/23-25"><em>Rm 4:23-25</em></a><em>;</em> <a href="http://bibliaonline.com.br/acf/rm/5/1"><em>5:1</em></a><em>).</em></p>
+<p>Esta passagem deixa bem claro que o único fundamento de paz com Deus está na obra de Cristo. Na realidade, após o fundamento haver sido assim colocado, Deus declara que todo aquele que crê em Seu testemunho a esse respeito, crê que Ele intercedeu em graça para providenciar tudo o que era necessário para a salvação do pecador. E declara ainda que aquele que assim crê em Deus está justificado e, por estar justificado, já tem a paz que foi feita pela morte de Cristo – já entra na posse dela. Mas, deve ser observado que está escrito que Cristo foi entregue por nossas ofensas, e que <em>&quot;ressuscitou para nossa justificação&quot;</em> (<a href="http://bibliaonline.com.br/acf/rm/4/25">Rm 4:25</a>). Ou seja, a ressurreição de Cristo é a prova final que demonstrou como foi completa a Sua obra; a evidência de que os pecados pelos quais Ele morreu, e sob os quais desceu até à morte, foram-se para sempre.</p>
+<p>A ressurreição de Cristo é o testemunho de que todas as exigências de Deus que recaíam sobre nós foram plenamente atendidas e satisfeitas. Pois se Ele foi entregue por nossas ofensas, e deixou o túmulo, tendo sido ressuscitado da morte, as <em>&quot;ofensas&quot;</em> sob as quais Ele padeceu a morte foram-se para sempre, caso contrário Ele continuaria na sepultura. Portanto, a ressurreição de Cristo é a expressão clara e enfática da satisfação de Deus com a expiação que foi feita na cruz.</p>
+<p>Fica assim mais que evidente, como já foi dito, que o único fundamento de paz com Deus está na morte de Cristo. Isto é repetido muitas e muitas vezes nas Escrituras. Em <a href="http://bibliaonline.com.br/acf/rm/5/9">Romanos 5:9</a>lemos que somos <em>&quot;justificados pelo Seu sangue&quot;</em>; e em <a href="http://bibliaonline.com.br/acf/cl/1/20">Colossenses 1:20</a> diz que “havendo por Ele feito a paz pelo sangue da Sua cruz”. Portanto, é Cristo (e não nós) Quem faz a paz com Deus, e Ele já a fez por meio de Sua morte como sacrifício – a morte que cumpriu todas as exigências que Deus fazia ao pecador, e que satisfez tudo aquilo que Ele com justiça poderia requerer do homem, glorificando ainda a Deus em cada atributo de Seu caráter. É por isso que Deus agora pode rogar ao pecador que se reconcilie com a Sua Pessoa.</p>
+<p><em>&quot;Rogamo-vos pois da parte de Cristo que vos reconcilieis com Deus”</em> (<a href="http://bibliaonline.com.br/acf/2co/5/20">2 Coríntios 5:20</a>).</p>
+<p>Depois de haver explicado tudo isso, é necessário fazer à alma uma importante pergunta: Você crê no testemunho de Deus a respeito do Seu Filho e da obra que Ele consumou? Se houver qualquer dificuldade para responder a esta pergunta, então nenhum progresso poderá ser feito. Todavia um teste simples ajudará a elucidar a verdade. Mais uma pergunta, e tenho certeza de que você perceberá claramente a verdade: Em que você se baseia para pensar que Deus o aceita? Será que é em si próprio, em suas obras, seus méritos ou no que merece? Se assim for, então você não está descansando na obra de Cristo. Porém, se você reconhece que, por natureza, é um pecador perdido e arruinado, e confessa que não põe a sua esperança em coisa alguma além de Cristo e naquilo que Ele fez, então você pode humildemente dizer: <em>&quot;Pela graça de Deus eu creio no Senhor Jesus Cristo&quot;</em>.</p>
+<p>Supondo, então, que você possa falar dessa maneira, esteja certo de que a questão de sua paz com Deus está resolvida para sempre e nada poderá privá-lo dela – nenhuma mudança, nenhuma experiência diversa; pois ela é sua imutável e inalienável possessão. As Escrituras dizem que, <em>&quot;sendo pois justificados pela fé&quot;</em> (e você diz que crê), “temos paz com Deus, por nosso Senhor Jesus Cristo” (<a href="http://bibliaonline.com.br/acf/rm/5/1">Romanos 5:1</a>).</p>
+<p>Todo crente – no exato momento em que crê – é justificado, libertado de toda forma de culpa, e feito justiça de Deus em Cristo. <em>&quot;Àquele que não conheceu pecado, (Deus) O fez pecado por nós; para que nele fôssemos feitos justiça de Deus&quot;</em> (<a href="http://bibliaonline.com.br/acf/2co/5/21">2 Co 5:21</a>). E, sendo justificado, o crente tem paz – não paz em si mesmo, é importante ressaltar, mas paz por meio de nosso Senhor Jesus Cristo. Isto é, a paz que agora pertence ao crente é aquela paz com Deus que Cristo fez por meio de Seu sacrifício expiatório. E, uma vez que essa é a paz que Ele fez, o que ocorreu fora de nós, ela nunca poder variar ou ser alterada; ela é tão estável e duradoura quanto o trono de Deus; pois, como já vimos, é uma paz que Cristo fez pela Sua cruz; e o que Ele fez não poderá nunca ser desfeito, e é, portanto, uma paz eterna. E é esta paz, permanente, firme e eterna, que pertence a cada crente no Senhor Jesus.</p>
+<p>Quando você se queixa de que não tem uma paz firme, na verdade deveria dizer que não está desfrutando de uma paz firme, e que seus sentimentos são instáveis. Por isso pode ser bom perguntar como é que o crente pode desfrutar de uma paz constante em sua alma. A resposta é muito simples: Pela fé. Se eu creio no testemunho de Deus de que a paz me pertence pela fé no Senhor Jesus, devo então entrar imediatamente no gozo dessa paz.</p>
+<p>Isto pode ficar mais simples por meio de um exemplo. Suponha que alguém lhe traga a notícia de que um parente seu lhe deixou uma herança milionária. O efeito que isso produzirá em sua mente irá depender totalmente de você acreditar ou não naquilo que está ouvindo. Se você duvidar da veracidade daquela notícia, não haverá nenhuma reação a ela; mas se, por outro lado, ficar totalmente comprovado ser verdade, e você a receber de fato, então dirá imediatamente, <em>&quot;A herança é minha&quot;</em>. Se você crê no testemunho de Deus de que foi feita paz pelo sangue de Cristo, nenhum sentimento de depressão, nenhum pensamento de ser indigno disso, nenhuma circunstância, qualquer que seja, poderá perturbar sua segurança a esse respeito, pois você verá que ela depende inteiramente daquilo que outro fez por você. Portanto, é necessário repousar com inabalável confiança na Palavra de Deus para poder desfrutar de uma paz firme.</p>
+<p>A causa de tanta incerteza a respeito deste assunto advém principalmente de se olhar para dentro ao invés de olhar para fora, para Cristo – de olharmos para dentro em busca de algo que nos dê confiança de que esteja ocorrendo uma obra verdadeira de graça na alma, ao invés de olharmos para fora para percebermos que o único fundamento sobre o qual uma alma pode descansar diante de Deus é o precioso sangue de Cristo. A consequência é que, ao perceber a corrupção, este mal da carne, a alma começa a ter dúvidas e a cogitar se porventura não foi enganada. Satanás começa, dessa forma, a enredar o nosso coração e a semeá-lo com dúvidas e temores, na esperança de fazer com que duvidemos de Deus; isso quando não nos lança em total desespero. O modo eficaz de frustrarmos seus ataques neste sentido é apelando para a Palavra escrita de Deus. Em resposta a qualquer sugestão maligna devemos fazer como nosso bendito Senhor quando foi tentado: <em>&quot;Está escrito&quot;</em> (<a href="http://bibliaonline.com.br/acf/mt/4/4">Mt 4:4</a>). Então, logo descobriremos que nada pode impedir que desfrutemos daquela paz com Deus que foi feita pelo precioso sangue de Cristo, e que passou a nos pertencer tão logo nós cremos.</p>
+<p>Estando resolvida a questão do fundamento, e deixando de ocupar-se consigo mesmo, você encontrará descanso para sua mente e para sua alma – descanso suficiente para meditar sobre a verdade conforme é revelada nas Escrituras. <em>&quot;Desejai afetuosamente, como meninos novamente nascidos, o leite racional, não falsificado, para que por ele vades crescendo&quot;</em> (<a href="http://bibliaonline.com.br/acf/1pe/2/2">1 Pe 2:2</a>). Quero dizer ainda que se você estudar a Palavra na presença do Senhor será guiado por ela a uma intimidade de comunhão cada vez maior com Ele, e à medida que for descobrindo a infinita glória e perfeição de Cristo que nos são reveladas, e por nós assimiladas, por meio do Espírito de Deus, suas afeições serão atraídas em um sempre crescente fervor, e seu coração, agora satisfeito, irá transbordar em adoração aos pés daquele que morreu por você. Deste modo o seu lamento se transformará em um hino de louvor.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="README.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="2_nosso_lugar_perante_deus.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="README.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="2_nosso_lugar_perante_deus.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

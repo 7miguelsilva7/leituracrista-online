@@ -1,0 +1,18 @@
+<!-- COMENTARIOS
+size="50" = largura do campo de busca que pode ser alterado a seu critério
+placeholder = texto que fica dentro do campo de busca, pode ser alterado a seu critério
+value="Buscar" = texto do botão de busca, pode ser alterado a seu critério 
+-->
+
+<form align="center" method="GET">
+    <input type="text" placeholder="Digite Sua Pergunta Aqui" autofocus name="query" size="50">
+    <input  type="submit" onclick="myFunction()" value="Buscar">
+</form>
+    
+<script>
+function myFunction() {
+  var query = document.getElementsByName('query')[0];
+  window.open("https://leituracrista.com/indice/?query=" + query.value);
+}
+</script>
+

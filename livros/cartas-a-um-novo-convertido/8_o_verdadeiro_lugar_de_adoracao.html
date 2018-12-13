@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>8 O verdadeiro lugar de adoração - CARTAS A UM NOVO CONVERTIDO</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> CARTA A UM NOVO CONVERTIDO  - EDWARD DENNETT</a></li><li><a href="1_paz_com_deus.html"><strong aria-hidden="true">2.</strong> 1 Paz com Deus</a></li><li><a href="2_nosso_lugar_perante_deus.html"><strong aria-hidden="true">3.</strong> 2 Nosso lugar perante Deus</a></li><li><a href="3_nosso_lugar_neste_mundo/README.html"><strong aria-hidden="true">4.</strong> 3 Nosso lugar neste mundo</a></li><li><ol class="section"><li><a href="3_nosso_lugar_neste_mundo/1_nosso_lugar_em_relacao_ao_mundo.html"><strong aria-hidden="true">4.1.</strong> Nosso lugar em relação ao mundo.</a></li><li><a href="3_nosso_lugar_neste_mundo/2_nosso_lugar_em_relacao_ao_arraial.html"><strong aria-hidden="true">4.2.</strong> Nosso lugar em relação ao “arraial”.</a></li></ol></li><li><a href="4_o_corpo_de_cristo.html"><strong aria-hidden="true">5.</strong> 4 O Corpo de Cristo</a></li><li><a href="5_a_mesa_do_senhor.html"><strong aria-hidden="true">6.</strong> 5 A mesa do Senhor</a></li><li><a href="6_a_ceia_do_senhor.html"><strong aria-hidden="true">7.</strong> 6 A ceia do Senhor</a></li><li><a href="7_o_senhor_jesus_cristo_no_centro.html"><strong aria-hidden="true">8.</strong> 7 O Senhor Jesus Cristo no centro</a></li><li><a href="8_o_verdadeiro_lugar_de_adoracao.html" class="active"><strong aria-hidden="true">9.</strong> 8 O verdadeiro lugar de adoração</a></li><li><a href="9_adoracao.html"><strong aria-hidden="true">10.</strong> 9 Adoração</a></li><li><a href="10_ministerio.html"><strong aria-hidden="true">11.</strong> 10 Ministério</a></li><li><a href="11_a_palavra_de_deus.html"><strong aria-hidden="true">12.</strong> 11 A Palavra de Deus</a></li><li><a href="12_oracao.html"><strong aria-hidden="true">13.</strong> 12 Oração</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">CARTAS A UM NOVO CONVERTIDO</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="8_o_verdadeiro_lugar_de_adoracao.html#a8-o-verdadeiro-lugar-de-adoração-8-o-verdadeiro-lugar-de-adora-o" id="a8-o-verdadeiro-lugar-de-adoração-8-o-verdadeiro-lugar-de-adora-o"><h1>8 O verdadeiro lugar de adoração </h1></a>
+<p>Prezado irmão,</p>
+<p>Nesta carta eu me proponho a indagar: Onde é o lugar de adoração do cristão? Devo apenas lembrá-lo de que a expressão <em>&quot;lugar de adoração&quot;</em> é muito usada, e embora eu admita plenamente que o seu significado seja simplesmente o lugar onde crentes e outras pessoas se congregam aos domingos, ainda assim é da maior importância não utilizarmos, nas coisas divinas, palavras que possam criar uma impressão errada ou dar um falso significado da verdade de Deus. Nosso único recurso, portanto, é buscarmos nas Escrituras a resposta para nossa pergunta.</p>
+<p>Sendo assim, deixe-me dirigir sua atenção para a seguinte passagem: <em>&quot;Tendo pois, irmãos, ousadia para entrar no santuário, pelo sangue de Jesus, pelo novo e vivo caminho que Ele nos consagrou, pelo véu, isto é, pela Sua carne, e tendo um grande sacerdote sobre a casa de Deus, cheguemo-nos com verdadeiro coração, em inteira certeza de fé; tendo os corações purificados da má consciência, e o corpo lavado com água limpa&quot;</em>. (<a href="http://bibliaonline.com.br/acf/hb/10/19-22">Hb 10:19-22</a>) De uma forma geral, vemos nesta passagem três pontos principais: o sangue de Jesus, o véu rasgado e o Sumo Sacerdote (literalmente, o Grande Sacerdote) sobre a casa de Deus. É sobre o fundamento destas três coisas que somos exortados a nos aproximar de Deus para adoração. Se examinarmos um pouco o significado de cada uma delas, encontraremos a resposta à nossa pergunta.</p>
+<p>Em primeiro lugar, temos ousadia para entrar no santuário pelo sangue de Jesus. Se você acompanhar o raciocínio do apóstolo, verá que fica evidente que o sangue de Jesus é apresentado em contraste com o <em>&quot;sangue dos touros e dos bodes&quot;</em> (<a href="http://bibliaonline.com.br/acf/hb/10/4">Hb 10:4</a>). Na verdade, o assunto principal de toda a primeira parte do capítulo é a eficácia do sangue de Jesus em contraste com a ineficácia do sangue de touros e bodes.</p>
+<p>O fato de os sacrifícios do Antigo Testamento terem sido oferecidos continuamente, ano após ano, é apresentado como prova de que os adoradores nunca eram realmente purificados até o ponto de não terem mais consciência dos pecados; pois na repetição dos sacrifícios havia, ano após ano, uma contínua lembrança dos pecados (<a href="http://bibliaonline.com.br/acf/hb/10/1-3">Hb 10:1-3</a>). E a razão disto era que “é impossível que o sangue dos touros e dos bodes tire os pecados” (<a href="http://bibliaonline.com.br/acf/hb/10/4">Hebreus 10:4</a>). Por esta razão, os inúmeros sacrifícios, dos mais variados tipos, não faziam mais do que demonstrar sua completa ineficácia, embora tivessem sido ordenados por Deus tendo em vista o Único Sacrifício que era dessa forma anunciado.</p>
+<p>Após demonstrar isto, o apóstolo traz à tona, no mais claro contraste, o valor do sacrifício de Cristo (leia cuidadosamente <a href="http://bibliaonline.com.br/acf/hb/10/5-14">Hebreus, do versículo 5 ao 14</a>); e para resumir e deixar tudo estabelecido em uma única sentença declara: <em>&quot;Porque com uma só oblação (ou oferenda) aperfeiçoou para sempre os que são santificados&quot;</em>. (<a href="http://bibliaonline.com.br/acf/hb/10/14">vers. 14</a>) As oferendas ou sacrifícios sob a lei nunca tornavam perfeitos os adoradores, mas com uma só oferenda Cristo nos tornou perfeitos para sempre. Esta verdade é tão vasta e abrangente, que é necessário meditar sobre ela mais e mais, a fim de assimilá-la, ainda que em parte. Pois ela implica, não somente que eu agora não tenho mais consciência de pecados — se me encontro sob o valor do sacrifício de Cristo — mas também que eu nunca mais preciso ter qualquer consciência de pecados no aspecto aqui apresentado; que por meio da eficácia daquele sangue precioso tenho agora o direito, e terei sempre esse direito, de entrar na presença de Deus. Em resumo, que nada poderá jamais me privar do lugar que me foi dado, na maior proximidade da Sua presença, pois por uma oblação ou oferenda Ele aperfeiçoou para sempre aqueles que são santificados. Por meio daquele sacrifício eu recebi uma credencial de acesso perpétuo à presença de Deus.</p>
+<p>O segundo ponto é o véu rasgado. O sangue de Cristo nos deu o direito da aproximação; e em seguida temos, <em>&quot;pelo novo e vivo caminho que Ele nos consagrou, pelo véu, isto é, pela Sua carne&quot;</em>. (<a href="http://bibliaonline.com.br/acf/hb/10/20">Hb 10:20</a>) Vemos aqui, mais uma vez, um contraste com a velha dispensação, pois lemos no capítulo 9 de Hebreus: <em>&quot;Mas no segundo (isto é, no santo dos santos, além do véu) só o sumo sacerdote, uma vez no ano, não sem sangue, que oferecia por si mesmo e pelas culpas do povo: dando nisto a entender o Espírito Santo que ainda o caminho do santuário não estava descoberto enquanto se conservava em pé o primeiro tabernáculo&quot;</em>. (<a href="http://bibliaonline.com.br/acf/hb/9/7-9">Hb 9:7-9</a>) O povo estava, portanto, totalmente excluído, e isto porque, como já vimos, não era possível que o sangue de touros e bodes tirasse os pecados. Por conseguinte a morte era certa, pelo juízo de Deus, para todo aquele, exceto o sumo sacerdote, que se aventurasse a entrar além daquele terrível véu (<a href="http://bibliaonline.com.br/acf/lv/16/1,2">Lv 16:1,2</a>; <a href="http://bibliaonline.com.br/acf/nm/15">Números 15</a>, <a href="http://bibliaonline.com.br/acf/nm/16">16</a>). Mas tão logo foi consumado o sacrifício de Cristo na cruz, o véu foi rasgado de alto a baixo (<a href="http://bibliaonline.com.br/acf/mt/27/51">Mt 27:51</a>), pois por meio de Sua morte Ele glorificou a Deus em cada atributo do Seu caráter concernente à questão do pecado, e por aquela única oferta aperfeiçoou para sempre aqueles que são santificados. Daquele momento em diante o véu estava rasgado para significar que o caminho para o santo dos santos estava aberto a partir de então. Pois Aquele que rasgou o véu para nos dar entrada, igualmente tirou o pecado que nos excluía, e é agora privilégio de cada crente, firmado na eficácia do sacrifício de Cristo, entrar sempre no santo dos santos, tendo toda liberdade de fazê-lo pelo sangue de Jesus.</p>
+<p>Há, porém, uma terceira coisa que é indicada, da qual podemos fazer uma breve menção antes de chamar sua atenção para o resultado final destas benditas verdades, a saber, que temos <em>&quot;um grande sacerdote sobre a casa de Deus&quot;</em>. (<a href="http://bibliaonline.com.br/acf/hb/10/21">Hb 10:21</a>) E onde está o nosso Sumo Sacerdote? <em>&quot;E assim todo o sacerdote aparece cada dia, ministrando e oferecendo muitas vezes os mesmos sacrifícios, que nunca podem tirar os pecados; mas Este, havendo oferecido um único sacrifício pelos pecados, está assentado para sempre à destra de Deus, daqui em diante esperando até que os Seus inimigos sejam postos por escabelo de Seus pés. Porque com uma só oblação aperfeiçoou para sempre os que são santificados.”</em> (<a href="http://bibliaonline.com.br/acf/hb/10/11-14">Hebreus 10:11-14</a>) Aprendemos assim que nosso Sumo Sacerdote está sentado à direita de Deus e que essa posição é devida ao fato de Sua obra sacrificial ter sido consumada. Daí em diante a Sua presença no Céu é um testemunho e uma prova da perpétua eficácia de Sua obra, e consequentemente um estímulo permanente para encorajar o Seu povo a entrar ousadamente no santo dos santos — para além do véu já rasgado.</p>
+<p>Tais são os três imensos fatos — o sangue de Jesus, o véu rasgado, e o Sumo Sacerdote sobre a casa de Deus — para os quais o Espírito Santo dirige a nossa atenção antes de nos exortar a nos achegarmos <em>&quot;com verdadeiro coração, em inteira certeza de fé; tendo os corações purificados da má consciência, e o corpo lavado com água limpa&quot;</em> (<a href="http://bibliaonline.com.br/acf/hb/10/22">Hb 10:22</a>). E o lugar ao qual somos convidados a nos achegar, ou no qual devemos entrar, é o mais santo — o santo dos santos. É o lugar que foi representado como um tipo pelo santo dos santos que existia no tabernáculo no deserto, o lugar no qual Cristo, nosso Representante e nosso Precursor, já entrou (<a href="http://bibliaonline.com.br/acf/hb/4/14">Hb 4:14</a>; <a href="http://bibliaonline.com.br/acf/hb/6/19,20">6:19,20</a>). Portanto, nosso lugar de adoração está na imediata presença de Deus, no próprio lugar onde Cristo ministra a nosso favor como Sumo Sacerdote.</p>
+<p>É verdade que ainda nos encontramos aqui neste mundo como estrangeiros e peregrinos, quando se trata da questão do sacerdócio. Mas este mundo nunca pode ser o lugar de nossa adoração, pois temos <em>&quot;ousadia para entrar no santuário, pelo sangue de Jesus&quot;</em>, e é somente ali que nossa adoração pode ser oferecida e aceita por Deus. Se eu quisesse render uma homenagem ao Rei, teria de fazê-lo diante do trono real para que fosse recebido. Quanto mais se desejo adorar a Deus! Devo fazê-lo no lugar onde Ele está assentado no Seu trono, e onde posso entrar com este propósito graças ao direito que Ele me deu para sempre poder fazê-lo, por Sua inefável graça, por meio do precioso sangue de Cristo. Portanto é lá nas alturas, para além do véu rasgado, na Sua própria presença, e em nenhum outro lugar, que o Seu povo deve adorar. E que maravilhoso privilégio é este; que graça inexprimível Ele nos concedeu, que desfrutássemos de constante liberdade de acesso diante dele, para ali nos prostrarmos em adoração e louvor!</p>
+<p>No sangue de Cristo, eis-nos lavados; Além do véu, tão santo lugar!</p>
+<p>Diante do trono caímos prostrados, Para, Ó Deus! a Ti adorar!</p>
+<p>Com esta verdade claramente diante de nós, tenho certeza de que você poderá perceber que se falarmos de um lugar de adoração aqui neste mundo, estaremos obscurecendo o ensino das Escrituras, além de estarmos privando a nós mesmos de nossos privilégios. Não me esqueci de que em muitos casos, como já disse, a expressão <em>&quot;lugar de adoração&quot;</em> pouco representa no modo como é usada; mas, por outro lado, ela tem um significado muito grande para algumas pessoas, dando-lhes a ideia de edifícios santos e templos consagrados.</p>
+<p>os judeus tinham um <em>&quot;santuário terrestre&quot;</em> (<a href="http://bibliaonline.com.br/acf/hb/9/1">Hb 9:1</a>), um que fora construído segundo a direção de Deus e de acordo com o Seu mandamento. Porém, construir um “santuário”, um templo “consagrado” ou um edifício “santo” nos dias de hoje, é o mesmo que voltar ao judaísmo e ignorar que <em>&quot;temos um Sumo Sacerdote tal, que está assentado nos céus à destra do trono da majestade, Ministro do santuário, e do verdadeiro tabernáculo, o qual o Senhor fundou, e não o homem”</em>. (<a href="http://bibliaonline.com.br/acf/hb/8/1,2">Hb 8:1,2</a>) Portanto não pode haver um lugar de culto ou adoração neste mundo, e chamar a um edifício desta forma, mesmo que inconscientemente, é desprezar, para não dizer mais, o lugar e o privilégio do crente, além de falsificar a verdade do cristianismo.</p>
+<p>Talvez seja necessário discorrer sobre mais um assunto, ou seja, que todos os crentes igualmente possuem o mesmo privilégio de acesso ao santo dos santos. As Escrituras, ou melhor dizendo, as passagens das Escrituras concernentes à Igreja, ignoram qualquer classe consagrada de homens que seja distinta dos outros crentes, que conte com privilégios especiais ou com direitos de se aproximar de Deus como intermediários de outros homens. Todos os crentes são igualmente sacerdotes (<a href="http://bibliaonline.com.br/acf/1pe/2/9">1 Pedro 2:9</a>) e, portanto, todos estão igualmente qualificados para entrar na presença de Deus como adoradores. A passagem à qual nos referimos em <a href="http://bibliaonline.com.br/acf/hb/10/19-22">Hebreus 10:19-22</a> é categórica a este respeito. Guarde bem estas palavras: “Tendo pois, irmãos”. Isto é dirigido a todos os crentes, e todos são lembrados que têm ousadia para entrar no santuário pelo sangue de Jesus. E mais uma vez o apóstolo diz: <em>&quot;Cheguemo-nos&quot;</em> associando-se a todos aqueles aos quais está se dirigindo, pois na verdade ele mostra que se encontra, junto com todos os outros, na mesma posição perante Deus quanto à adoração. É muito importante que se compreenda esta verdade, principalmente nestes dias quando vemos um incremento do sistema sacerdotal com suas pretensões supersticiosas. Ambas as coisas estão ligadas. Se você tem um lugar terrestre de adoração, então necessita de uma ordem clerical de sacerdotes; e estas duas coisas combinadas constituem uma afronta ao verdadeiro cristianismo. Por isso é nossa incumbência batalharmos <em>&quot;pela fé que uma vez foi dada aos santos&quot;</em> (<a href="http://bibliaonline.com.br/acf/jd/1/3">Jd 1:3</a>).</p>
+<p>Mas não devemos nos dar por satisfeitos apenas com a doutrina a respeito deste assunto. A questão para nossas almas é: Sabemos o que significa nos achegarmos para adorar no santíssimo lugar? Gostaria de frisar solenemente este ponto; pois nada menos do que isto irá satisfazer o coração daquele, por meio de cujo sangue precioso nós recebemos tal inexprimível privilégio. Que nunca nos contentemos com menos do que o pleno desfrutar desta verdade. Se tivéssemos visto Arão, no dia da expiação, levantando o véu sagrado para entrar na terrível presença de Deus, teríamos ficado impressionados, não apenas com a solenidade do ato, mas também com a maravilhosa posição de favor e proximidade de Deus que ele ocupava em virtude de seu sacerdócio. Todos os crentes têm agora a mesma posição. Que possamos, cada vez mais, ter consciência do que podemos encontrar dentro do véu rasgado, para que tenhamos uma compreensão mais completa da eficácia daquele único sacrifício que nos introduziu na presença de Deus, sem qualquer mancha sobre nós, e sem um véu para nos separar dele.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="7_o_senhor_jesus_cristo_no_centro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="9_adoracao.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="7_o_senhor_jesus_cristo_no_centro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="9_adoracao.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

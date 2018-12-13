@@ -1,0 +1,6 @@
+A CRUZ E A GLORIA E H CHATER E. H. CHATER.odt
+assets
+comandoEmPastas.sh
+lista.txt
+README.md
+SUMMARY.md

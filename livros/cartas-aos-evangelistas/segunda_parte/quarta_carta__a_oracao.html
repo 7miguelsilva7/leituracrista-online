@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>QUARTA CARTA — A Oração - CARTAS AOS EVANGELISTAS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> CARTAS AOS EVANGELISTAS - C. H. MACKINTOSH</a></li><li><a href="primeira_parte/README.html"><strong aria-hidden="true">2.</strong> PRIMEIRA PARTE</a></li><li><ol class="section"><li><a href="primeira_parte/uma_palavra_ao_evangelista.html"><strong aria-hidden="true">2.1.</strong> UMA PALAVRA AO EVANGELISTA</a></li><li><a href="primeira_parte/um_lema_para_o_evangelista.html"><strong aria-hidden="true">2.2.</strong> UM LEMA PARA O EVANGELISTA</a></li><li><a href="primeira_parte/a_obra_de_um_evangelista.html"><strong aria-hidden="true">2.3.</strong> A OBRA DE UM EVANGELISTA</a></li><li><a href="primeira_parte/o_que_busca_com_sinceridade.html"><strong aria-hidden="true">2.4.</strong> O QUE BUSCA COM SINCERIDADE</a></li><li><a href="primeira_parte/o_enganador.html"><strong aria-hidden="true">2.5.</strong> O ENGANADOR</a></li><li><a href="primeira_parte/o_pecador_endurecido.html"><strong aria-hidden="true">2.6.</strong> O PECADOR ENDURECIDO</a></li></ol></li><li><a href="segunda_parte/README.html"><strong aria-hidden="true">3.</strong> SEGUNDA PARTE</a></li><li><ol class="section"><li><a href="segunda_parte/primeira_carta__a_procura_de_almas.html"><strong aria-hidden="true">3.1.</strong> PRIMEIRA CARTA — À Procura de Almas</a></li><li><a href="segunda_parte/segunda_carta__o_espirito_santo.html"><strong aria-hidden="true">3.2.</strong> SEGUNDA CARTA — O Espírito Santo</a></li><li><a href="segunda_parte/terceira_carta__a_palavra_de_deus.html"><strong aria-hidden="true">3.3.</strong> TERCEIRA CARTA — A Palavra de Deus</a></li><li><a href="segunda_parte/quarta_carta__a_oracao.html" class="active"><strong aria-hidden="true">3.4.</strong> QUARTA CARTA — A Oração</a></li><li><a href="segunda_parte/quinta_carta__obra_de_literatura.html"><strong aria-hidden="true">3.5.</strong> QUINTA CARTA — Obra de Literatura</a></li><li><a href="segunda_parte/sexta_carta__a_pregacao_do_evangelho.html"><strong aria-hidden="true">3.6.</strong> SEXTA CARTA — A Pregação do Evangelho</a></li><li><a href="segunda_parte/setima_carta__a_escola_dominical.html"><strong aria-hidden="true">3.7.</strong> SÉTIMA CARTA — A Escola Dominical</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">CARTAS AOS EVANGELISTAS</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="segunda_parte/quarta_carta__a_oracao.html#quarta-carta--a-oração-quarta-carta-a-ora-o" id="quarta-carta--a-oração-quarta-carta-a-ora-o"><h2>QUARTA CARTA — A Oração </h2></a>
+<p>QUANDO PEGUEI a caneta para dirigir-me a você em minha primeira carta, não fazia ideia de que teria oportunidade de estender o assunto até uma quarta carta. De qualquer maneira, o assunto me é de grande interesse; e há só mais dois ou três pontos que desejo tratar rapidamente.</p>
+<p>Em primeiro lugar, sinto profundamente a falta que há em nós de um espírito apto a fazer continuamente a obra de evangelização. Já me referi à obra do Espírito; e também ao lugar que a Palavra de Deus deve sempre ocupar; mas me surpreende o fato de que somos muito deficientes quando se trata de uma fervorosa, perseverante e confiante oração. É este o verdadeiro segredo do poder. <em>&quot;Nós&quot;</em>, disse o apóstolo, “<em>perseveraremos na oração e no ministério da Palavra&quot;</em>. (<a href="http://bibliaonline.com.br/acf/atos/6/4">Atos 6:4</a>) A ordem é esta: “<em>Oração&quot;</em> e <em>&quot;ministério da Palavra&quot;</em>. A oração traz à tona o poder de Deus; e é isto o que queremos, não o poder da eloquência, mas o poder de Deus; e isto nós só podemos obter mantendo-nos em dependência dele. <em>&quot;Dá esforço ao cansado, e multiplica as forças ao que não tem nenhum vigor. os jovens se cansarão e se fatigarão, e os mancebos certamente cairão. Mas os que esperam no Senhor renovarão as suas forças, subirão com asas como águias: correrão, e não se cansarão; caminharão, e não se fatigarão</em>.” (<a href="http://bibliaonline.com.br/acf/is/40/29-31">Is 40:29-31</a>).</p>
+<p>Ao que me parece, somos muito mecânicos na obra, se é que posso usar esta palavra para me expressar. Queremos terminar logo o serviço. Temo imensamente que alguns de nós estejamos mais apoiados nos pés do que nos joelhos; passando mais tempo nos vagões dos trens do que na intimidade de seus dormitórios; mais nas estradas do que no santuário; mais com homens do que com Deus. Isso não funciona. É impossível que nossa pregação possa ser marcada pelo poder e coroada com resultados, se falhamos em depender de Deus. Veja o próprio Bendito Senhor — aquele grande Obreiro. Veja com que frequência Ele era encontrado em oração. Em Seu batismo; em Sua transfiguração; antes da escolha e da missão dos doze. Em resumo, vez após outra nós encontramos aquele Bendito Ser em atitude de oração. Numa ocasião Ele acorda bem antes do sol nascer para Se entregar à oração. Noutra, passa a noite toda em oração por ter dedicado o dia ao trabalho.</p>
+<p>Que exemplo é para nós! Possamos nós segui-lo! Possamos conhecer um pouco mais do que é agonizar em oração. Quão pouco nós conhecemos disso! Falo por mim mesmo. Às vezes me parece que ficamos tão ocupados com os compromissos de pregar que não temos tempo para a oração — não temos tempo para o trabalho na privacidade — não temos tempo para ficarmos a sós com Deus. Envolvemo-nos em um turbilhão de trabalho público; corremos de um lugar para outro, de uma reunião para outra, em um estado de alma árido e alheio à oração. Será que é de se espantar que haja pouco resultado? E como é que poderia ser diferente quando falhamos tanto em depender de Deus? <em>Nós não podemos converter as almas</em> — só Deus pode fazê-lo; e se seguimos adiante sem esperar nele, se deixamos que a pregação pública remova do seu lugar a oração a sós com Deus, podemos ficar bem certos de que nossa pregação acabará sendo árida e inútil. Devemos verdadeiramente <em>&quot;perseverar na oração&quot;</em>, se quisermos ser bem sucedidos no “ministério da Palavra”.</p>
+<p>E não é só isso. Não se trata apenas de estarmos falhando na santa e bendita prática da oração a sós. Isto, infelizmente, também é uma verdade, como já o dissemos. Mas há algo mais além disso. Falhamos em nossas reuniões públicas de oração. Nelas a grande obra de evangelização não é suficientemente lembrada. Não é ali colocada com fervor, diligência e constância diante de Deus. É, às vezes, apresentada de uma maneira formal e costumeira, para ser então esquecida. Verdadeiramente, sinto que, de um modo geral, há uma grande falta de fervor e perseverança em nossas reuniões de oração, não só no que diz respeito à obra do evangelho, mas também em outros assuntos. Há, com frequência, muito formalismo e debilidade. Não parecemos ser homens imersos em fervor. Falta-nos aquele espírito que tinha a viúva em Lucas 18, a qual venceu o juiz injusto apenas com a força de sua importunação. Parece que nos esquecemos de que estamos ali para rogarmos a Deus, e que Ele é galardoador daqueles que diligentemente O buscam.</p>
+<p>De nada vale alguém dizer: <em>&quot;Deus pode agir sem nossas fervorosas petições; Ele cumprirá os</em> <em>Seus propósitos; Ele reunirá os que Lhe pertencem&quot;</em>. Sabemos disso tudo; mas sabemos também que Ele, que determinou o fim, também determinou os meios; e se falharmos em depender dele, então Ele usará outros para fazer a Sua obra. A obra será feita, sem dúvida alguma, mas perderemos a dignidade, o privilégio e a recompensa do trabalho. Será que isso não tem nenhum valor? Será que é algo de pouca importância sermos privados do doce privilégio de colaborarmos com Deus, de termos comunhão com Ele na bendita obra que está executando? Ah, quão triste é darmos tão pouco valor a isso! Que possamos dar o valor devido; e é provável que existam poucas coisas mais em que possamos experimentar o mesmo privilégio de numa fervorosa e unida oração. É algo em que todos os santos podem estar engajados. É algo a que todos podem acrescentar um sincero Amém. Nem todos podem ser pregadores, mas todos podem orar — todos podem se engajar na oração; todos podem ter comunhão nisso.</p>
+<p>Porventura você não observa, querido irmão, que há sempre uma torrente de bênção profunda e verdadeira onde a <em>assembleia</em> se encontra mergulhada em fervorosa oração pelo evangelho e pela salvação das almas? Tenho visto invariavelmente isto, e é verdadeiramente uma fonte de indizível conforto, gozo e encorajamento para meu coração encontrar a assembleia envolvida na oração, pois quando é assim, tenho certeza, Deus dá copiosas chuvas de bênçãos.</p>
+<p>Além do mais, quando é este o caso, quando este espírito dos mais excelentes prevalece em toda a assembleia, pode estar certo de que não se terá problemas com o que se costuma chamar de “responsabilidade pela pregação”. Poderão ser sempre os mesmos a fazer o trabalho, desde que seja feito da melhor maneira possível. Se uma assembleia estiver esperando em Deus, em fervorosa intercessão pelo progresso da obra, não importará muito saber quem se responsabilizará pela pregação, desde que Cristo seja pregado e almas abençoadas.</p>
+<p>Há ainda uma coisa mais que tem ocupado bastante o meu pensamento ultimamente; trata-se do modo como tratamos os recém-convertidos. Sem dúvida alguma, há uma imensa necessidade de cuidado e cautela, para não sermos achados ocupados com aquilo que nada tem de um fruto genuíno da obra do Espírito de Deus. Há nisto um perigo muito grande. O inimigo está sempre buscando introduzir material espúrio na assembleia, a fim de estragar o testemunho e trazer descrédito à verdade de Deus.</p>
+<p>Isso tudo é algo bem real que deve merecer nossa séria consideração. Todavia, será que você não concorda, amado irmão, que com muita frequência caímos no outro extremo? Acaso não é comum jogarmos água fria sobre os recém-convertidos, ainda que o façamos com um estilo formal e peculiar? E será que não expressamos, em nosso espírito e conduta, uma certa repulsa pelos novos convertidos? Achamos que os que acabam de se tornar cristãos devem possuir um padrão de inteligência espiritual que levamos anos para alcançar. E não apenas isto, mas às vezes os colocamos sob um processo de exame que só leva à hostilidade e ao embaraço.</p>
+<p>É evidente que isso não está certo. O Espírito de Deus jamais iria confundir, embaraçar ou repelir uma alma que viesse com dúvidas sinceras — o Espírito nunca faria isso; jamais. Tal procedimento nunca poderia estar em conformidade com o pensamento ou o coração de Cristo; Ele nunca iria jogar água fria nem mesmo na mais débil ovelha de todo o Seu rebanho, o qual foi comprado com sangue. Ele gostaria que as guiássemos, levando-as adiante de modo gentil e terno — que as tranquilizássemos, alimentássemos e cuidássemos delas, tudo em conformidade com o profundo amor do Seu coração. É algo de grande importância deixar de lado o nosso ego e nos mantermos abertos para discernir e apreciar a obra de Deus nas almas, e não as embaraçarmos colocando nossos próprios caprichos e pedras de tropeço em seu caminho. Necessitamos do auxílio e da direção divina neste assunto, tanto quanto em qualquer outra área de nosso trabalho. Mas, bendito seja Deus, Ele é suficiente tanto para isto, como para tudo o mais. Apenas confiemos nele: juntemo-nos a Ele e façamos uso de Seu inesgotável tesouro, disponível para cada caso que surgir, para a necessidade de cada momento. Ele nunca decepcionará um coração confiante, esperançoso e dependente.</p>
+<p>Devo agora terminar esta série de cartas. Acho que já cobri, senão todos, pelo menos a maioria dos pontos que tinha em mente. Estou certo, amado no Senhor, de que você estará sempre ciente de que nestas cartas procurei simplesmente apresentar breves anotações daquilo que penso, usando de total liberdade e com toda a intimidade de uma amizade de verdadeiros irmãos. Não escrevi um tratado formal, mas tão somente derramei meu coração a um amado amigo e obreiro juntamente comigo. E todos os que leem estas cartas devem ter o mesmo em mente.</p>
+<p>Que Deus possa abençoá-lo e guardá-lo, querido irmão. Que Ele possa coroar seus trabalhos com Sua mais rica e melhor bênção! Que Ele possa guardá-lo de toda obra má, e preservá-lo para o Seu reino eterno!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="segunda_parte/terceira_carta__a_palavra_de_deus.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="segunda_parte/quinta_carta__obra_de_literatura.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="segunda_parte/terceira_carta__a_palavra_de_deus.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="segunda_parte/quinta_carta__obra_de_literatura.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

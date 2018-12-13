@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Nenhum programa estabelecido - Porque Nos Reunimos Assim</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> PORQUE NOS REUNIMOS ASSIM  J. R. GILL</a></li><li><a href="de_acordo_com_a_biblia.html"><strong aria-hidden="true">2.</strong> De acordo com a bíblia</a></li><li><a href="que_nome_levamos.html"><strong aria-hidden="true">3.</strong> Que nome levamos?</a></li><li><a href="o_nome_do_senhor_jesus.html"><strong aria-hidden="true">4.</strong> O nome do Senhor Jesus</a></li><li><a href="nenhum_outro_nome.html"><strong aria-hidden="true">5.</strong> Nenhum outro nome</a></li><li><a href="reunidos_ao_seu_nome.html"><strong aria-hidden="true">6.</strong> Reunidos ao Seu Nome</a></li><li><a href="ele_me_glorificara.html"><strong aria-hidden="true">7.</strong> Ele me glorificará</a></li><li><a href="o_espirito_de_deus_esta_aqui_para_guiar.html"><strong aria-hidden="true">8.</strong> O Espírito de Deus está aqui para guiar</a></li><li><a href="como_o_espirito_de_deus_quer.html"><strong aria-hidden="true">9.</strong> Como o Espírito de Deus quer</a></li><li><a href="nenhum_programa_estabelecido.html" class="active"><strong aria-hidden="true">10.</strong> Nenhum programa estabelecido</a></li><li><a href="sair_a_ele_fora_do_arraial.html"><strong aria-hidden="true">11.</strong> Sair a Ele fora do arraial</a></li><li><a href="o_que_significa_o_arraial.html"><strong aria-hidden="true">12.</strong> O que significa &quot;o arraial&quot;?</a></li><li><a href="o_santuario_terreno.html"><strong aria-hidden="true">13.</strong> O santuário terreno</a></li><li><a href="e_custoso_deixar_o_arraial.html"><strong aria-hidden="true">14.</strong> É custoso deixar o arraial</a></li><li><a href="um_so_corpo.html"><strong aria-hidden="true">15.</strong> Um só corpo</a></li><li><a href="um_pao.html"><strong aria-hidden="true">16.</strong> Um pão</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Porque Nos Reunimos Assim</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="nenhum_programa_estabelecido.html#nenhum-programa-estabelecido" id="nenhum-programa-estabelecido"><h1>Nenhum programa estabelecido</h1></a>
+<p>Quando nos reunimos, por exemplo, para recordar o Senhor na Sua morte, não temos qualquer programa estabelecido. Se algum irmão estiver selecionando um hino em sua casa, estará cometendo um erro. Não tem base bíblica para fazê-lo. E se outro irmão escolher de antemão algo que acha bonito para ler no final da reunião, estará cometendo um erro. Não se deve fazer assim. O Espírito de Deus deve ter a direção nestas coisas. Não sabemos quem irá distribuir os símbolos [o pão e o vinho]. Não sabemos quem irá sugerir um hino, ou quem irá se levantar e louvar a Deus. Não temos um programa. Não seria correto se o tivéssemos. O Espírito de Deus deve ser Aquele a dirigir conforme a Sua vontade na reunião da assembléia.</p>
+<p>É adequado que nos reunamos e nos comportemos de um modo tal que o Espírito de Deus possa ter liberdade para agir por meio de quem Ele quiser. Na reunião de oração, não é conveniente que se convide um irmão a orar ou que se peça a outro que dê um determinado hino. Não; o Espírito de Deus é Quem deve fazê-lo. Não estou dizendo que tudo acontece com perfeição em nossas assembléias, pois somos falhos, e podemos ser lembrados disto de vez em quando, mas o terreno sobre o qual estamos, e os princípios que sustentamos são de Deus. Nos reunimos assim para dar espaço ao Seu Espírito.</p>
+<p>Em Wales, há muitos anos, Evan Roberts reuniu, em um grande salão público, alguns milhares de pessoas que haviam sido salvas. Eles estavam ali para uma cerimônia especial naquele dia. O que havia de peculiar naquela ocasião era o fato de não ter sido preparado nenhum programa de antemão. Além disso, quando a congregação chegou e todos os assentos estavam ocupados e havia pessoas em pé até nos corredores e portas, todos observaram que no centro do salão havia uma cadeira vazia. Ninguém poderia se sentar naquela cadeira. Ela estava reservada, como um símbolo - um lembrete - de que o Espírito de Deus estava presente. Naquele dia o desejo de Evans Roberts, e creio que de outros fiéis também, era que não tivessem nenhum programa estabelecido, mas que o Espírito de Deus pudesse ter liberdade para dirigir e reger. Aquilo gerou muitos comentários. Houve até uma notícia no jornal sobre aquela experiência extraordinária – uma cerimônia sem um programa preestabelecido e sem um ministro! O dia passou alegremente, e com uma clara evidência da direção do Espírito. Podemos agradecer a Deus pelas convicções de fé de Evans Roberts e outros cristãos, mas porque não continuou sendo assim depois? É isto que nos dá o segundo motivo para nos reunirmos do modo como nos reunimos. Queremos dar ao Espírito de Deus o Seu lugar e ofício em nosso meio.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="como_o_espirito_de_deus_quer.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="sair_a_ele_fora_do_arraial.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="como_o_espirito_de_deus_quer.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="sair_a_ele_fora_do_arraial.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

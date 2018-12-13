@@ -1,0 +1,22 @@
+assets
+capitulo_10_-_a_proclamacao_de_uma_perfeita_justic.md
+capitulo_11_-_a_fidelidade_de_deus.md
+capitulo_12_-_cristianismo_pratico.md
+capitulo_13_-_deveres_e_discernimento.md
+capitulo_14_-_sensibilidade_espiritual.md
+capitulo_15_-_um_em_cristo.md
+capitulo_16_-_instrucoes_finais.md
+capitulo_1_-_um_evangelho_de_poder_para_o_homem_mo.md
+capitulo_2_-_o_inevitavel_juizo_de_deus.md
+capitulo_3_-_diagnostico_e_antidoto.md
+capitulo_4_-_o_substituto_para_uma_raca_de_pecador.md
+capitulo_5_-_a_posicao_do_crente_em_cristo.md
+capitulo_6_-_vida_de_santidade.md
+capitulo_7_-_duas_naturezas_em_conflito.md
+capitulo_8_-_experiencia_vitoriosa.md
+capitulo_9_-_a_eleicao_divina_por_meio_de_uma_naca.md
+comandoEmPastas.sh
+lista.txt
+README.md
+SUMMARY.md
+VIDA ATRAVES DA MORTE.odt

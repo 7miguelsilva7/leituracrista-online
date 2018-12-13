@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>TERCEIRA CARTA — A Palavra de Deus - CARTAS AOS EVANGELISTAS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> CARTAS AOS EVANGELISTAS - C. H. MACKINTOSH</a></li><li><a href="primeira_parte/README.html"><strong aria-hidden="true">2.</strong> PRIMEIRA PARTE</a></li><li><ol class="section"><li><a href="primeira_parte/uma_palavra_ao_evangelista.html"><strong aria-hidden="true">2.1.</strong> UMA PALAVRA AO EVANGELISTA</a></li><li><a href="primeira_parte/um_lema_para_o_evangelista.html"><strong aria-hidden="true">2.2.</strong> UM LEMA PARA O EVANGELISTA</a></li><li><a href="primeira_parte/a_obra_de_um_evangelista.html"><strong aria-hidden="true">2.3.</strong> A OBRA DE UM EVANGELISTA</a></li><li><a href="primeira_parte/o_que_busca_com_sinceridade.html"><strong aria-hidden="true">2.4.</strong> O QUE BUSCA COM SINCERIDADE</a></li><li><a href="primeira_parte/o_enganador.html"><strong aria-hidden="true">2.5.</strong> O ENGANADOR</a></li><li><a href="primeira_parte/o_pecador_endurecido.html"><strong aria-hidden="true">2.6.</strong> O PECADOR ENDURECIDO</a></li></ol></li><li><a href="segunda_parte/README.html"><strong aria-hidden="true">3.</strong> SEGUNDA PARTE</a></li><li><ol class="section"><li><a href="segunda_parte/primeira_carta__a_procura_de_almas.html"><strong aria-hidden="true">3.1.</strong> PRIMEIRA CARTA — À Procura de Almas</a></li><li><a href="segunda_parte/segunda_carta__o_espirito_santo.html"><strong aria-hidden="true">3.2.</strong> SEGUNDA CARTA — O Espírito Santo</a></li><li><a href="segunda_parte/terceira_carta__a_palavra_de_deus.html" class="active"><strong aria-hidden="true">3.3.</strong> TERCEIRA CARTA — A Palavra de Deus</a></li><li><a href="segunda_parte/quarta_carta__a_oracao.html"><strong aria-hidden="true">3.4.</strong> QUARTA CARTA — A Oração</a></li><li><a href="segunda_parte/quinta_carta__obra_de_literatura.html"><strong aria-hidden="true">3.5.</strong> QUINTA CARTA — Obra de Literatura</a></li><li><a href="segunda_parte/sexta_carta__a_pregacao_do_evangelho.html"><strong aria-hidden="true">3.6.</strong> SEXTA CARTA — A Pregação do Evangelho</a></li><li><a href="segunda_parte/setima_carta__a_escola_dominical.html"><strong aria-hidden="true">3.7.</strong> SÉTIMA CARTA — A Escola Dominical</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">CARTAS AOS EVANGELISTAS</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="segunda_parte/terceira_carta__a_palavra_de_deus.html#terceira-carta--a-palavra-de-deus-terceira-carta-a-palavra-de-deus" id="terceira-carta--a-palavra-de-deus-terceira-carta-a-palavra-de-deus"><h2>TERCEIRA CARTA — A Palavra de Deus </h2></a>
+<p>HÁ ALGO que também está intimamente ligado ao assunto de minha última carta; trata-se do lugar que a Palavra de Deus ocupa na obra de evangelização. Em minha última carta, como você se recordará, me referi à obra do Espírito Santo, e à imensa importância de se dar a Ele o lugar apropriado. É desnecessário mostrar com que clareza a preciosa Palavra de Deus está ligada à ação do Espírito Santo. Ambos estão inseparavelmente ligados naquelas memoráveis palavras de nosso Senhor a Nicodemos — palavras estas tão pouco compreendidas — tão mal interpretadas: <em>&quot;Aquele que não nascer da água e do Espírito, não pode entrar no reino de Deus&quot;</em>. (<a href="http://bibliaonline.com.br/acf/jo/3/5">Jo 3:5</a>) Tanto eu como você entendemos claramente que na passagem acima a Palavra está sendo representada, em figura, como <em>&quot;água”.</em> Graças a Deus, não estamos dispostos a dar nenhum crédito ao absurdo ritualismo da regeneração batismal. Acredito que já estamos mais que convencidos de que ninguém jamais recebeu, recebe ou receberá, vida pela água do batismo. Concordamos plenamente que todos aqueles que creem em Cristo devem ser batizados; mas isto é algo totalmente diferente do erro fatal que troca a morte expiatória de Cristo, o poder regenerador do Espírito Santo, e as virtudes provedoras de vida que tem a Palavra de Deus, por uma ordenança. Não vou perder nem o seu tempo e nem o meu em combater esse erro, mas vou simplesmente partir do ponto que você concorda comigo em pensar que, quando nosso Senhor fala de alguém <em>&quot;nascer da água e do Espírito&quot;</em>, Ele Se refere à Palavra e ao Espírito Santo. (Compare com <a href="http://bibliaonline.com.br/acf/ef/5/26">Ef 5:26</a>) Assim sendo, a Palavra é o grande instrumento a ser utilizado na obra de evangelização. Muitas passagens das Sagradas Escrituras afirmam isso com tal clareza e determinação ao ponto de não restar o que quer que seja para ser discutido. No primeiro capítulo de <a href="http://bibliaonline.com.br/acf/tg/1/18">Tiago, versículo 18</a>, lemos: <em>&quot;Segundo a Sua vontade Ele nos gerou</em> <strong><em>pela Palavra da verdade</em></strong><em>&quot;</em>. Também em <a href="http://bibliaonline.com.br/acf/1pe/1/23,25">1 Pedro 1:23, 25</a>, lemos: <em>&quot;Sendo de novo gerados, não de semente corruptível, mas da incorruptível, pela Palavra de Deus, viva, e que permanece para sempre... E esta é a Palavra que entre vós foi evangelizada&quot;</em>.</p>
+<p>Esta última cláusula é de indizível valor para o evangelista. Ela o obriga, da forma mais clara, a ter a Palavra de Deus como o instrumento — o único instrumento — o todo-suficiente instrumento, a ser utilizado em sua gloriosa obra. Ele deve dar a Palavra às pessoas; e quanto mais simples a maneira em que o fizer, melhor será. A água pura deve ser deixada fluir livremente do coração de Deus para o coração do pecador, sem receber qualquer coloração, ou influência, do canal pelo qual ela flui. O evangelista deve pregar a Palavra; e deve pregá-la em simples dependência do poder do Espírito Santo. É este o verdadeiro segredo do sucesso na pregação.</p>
+<p>Todavia, enquanto dou ênfase a este grande ponto cardeal na obra da pregação — e creio que nunca é demais frisá-lo bem — estou bem longe de pensar que o evangelista deva dar aos seus ouvintes um grande volume de verdade. Muito pelo contrário, considero isto um grande equívoco. O evangelista deve deixar isto para aquele que ensina, aquele que expõe a Palavra ou para o que pastoreia. Temo que com frequência uma grande parte de nossa pregação passa por sobre as cabeças das pessoas, devido ao fato de preferirmos desdobrar a verdade a alcançar as almas. Pode ser que descansemos satisfeitos depois de termos dado uma palavra de impacto, uma exposição bem interessante e instrutiva das Escrituras, algo de grande valor para o povo de Deus; mas o ouvinte inconverso ficou ali sentado sem ser tocado, sem ser alcançado, sem ser impressionado. Não continha nada para ele. O que falou esteve mais preocupado com sua explanação do que com o pecador — esteve mais absorvido com seu assunto do que com a alma.</p>
+<p>Assim, estou plenamente convencido de que isto é um sério erro, e um erro tal que todos nós — ou pelo menos eu — somos muito propensos a cometer. Considero este um erro deplorável, e desejo sinceramente evitar cometê-lo. Fico a pensar se não é neste erro que está o verdadeiro segredo de não sermos bem sucedidos. Mas talvez eu não devesse dizer <em>nosso</em> erro, mas sim <em>meu</em> erro. Não creio — pelo menos até onde conheço o seu ministério — que você possa ser acusado do defeito a que acabo de me referir. Neste caso, como em tudo mais, você será o seu melhor juiz; mas de uma coisa eu estou certo: o mais bem sucedido evangelista é aquele que mantém o seu olho fixo no pecador; aquele que tem seu coração inclinado para a salvação das almas, sim, aquele a quem o amor para com as almas preciosas é tanto que chega a ser uma paixão. Não é o homem que explica a maior verdade, mas o que almeja mais pelas almas, que terá as melhores credenciais para seu ministério.</p>
+<p>Afirmo isso tudo, entenda bem, em total e inequívoco reconhecimento à afirmação que fiz no início desta carta, ou seja, que a Palavra é o grande instrumento na obra da conversão. Isto é algo que nunca pode ser perdido de vista; que nunca pode ser diminuído de seu valor. Não importa qual o arado usado para fazer o sulco, ou de que maneira a Palavra possa vir vestida, ou por qual veículo ela possa ser transportada; é somente pela “Palavra da verdade” que as almas são conquistadas.</p>
+<p>É tudo divinamente verdadeiro, e deveríamos sempre ter isso em mente. Mas, acaso não encontramos com frequência que aqueles que se propõem a pregar o evangelho (particularmente se continuam sempre no mesmo lugar) são inclinados a abandonar os domínios do evangelista — domínios estes dos mais benditos! — e invadir o terreno do que ensina ou explica a Palavra? Isto é algo que desaprovo e deploro ao extremo. Sei que tenho errado nisto, e lamento pelo erro. Escrevo em total liberdade para confessar que ultimamente o Senhor tem aprofundado imensamente em minha alma o senso da vasta importância da sincera pregação do evangelho. Deus não permita que, fazendo assim, eu venha a considerar de menor importância o trabalho do mestre ou do pastor. Creio que onde quer que haja um coração que ame a Cristo, ele se deleitará em alimentar e cuidar dos preciosos cordeiros e ovelhas do rebanho de Cristo, o rebanho que Ele comprou com Seu próprio sangue.</p>
+<p>Mas as ovelhas devem ser reunidas antes que possam ser alimentadas; e como podem ser reunidas senão pela fervorosa pregação do evangelho? O grande negócio do evangelista é ir até as tenebrosas montanhas do pecado e do erro, a fim de soar a trombeta do evangelho e reunir as ovelhas; e sinto-me convencido de que fará melhor o seu trabalho, não pela elaborada explanação da verdade; não por explicações claras, valiosas e instrutivas; não por cuidadosas explicações da verdade profética, dispensacional ou doutrinária — por mais preciosas e importantes que sejam quando em seu devido lugar — mas por uma ocupação fervorosa, direta e sincera com as almas imortais; com uma voz de aviso, com um apelo solene, com uma argumentação fiel da justiça, da temperança e do juízo vindouro — com uma alarmante apresentação da morte e do juízo, das terríveis realidades da eternidade, “onde seu bicho não morre, e o fogo nunca se apaga”.</p>
+<p>Em suma, me comove o fato de que precisamos pregadores que despertem seus ouvintes. Admito plenamente que exista algo como <em>ensinar</em> o evangelho, tanto quanto existe o <em>pregar</em> o evangelho. Por exemplo, encontro Paulo ensinando o evangelho em <a href="http://bibliaonline.com.br/acf/rm/1">Romanos, do capítulo 1 ao 7</a>, tanto quanto o encontro pregando o evangelho em <a href="http://bibliaonline.com.br/acf/atos/13">Atos 13</a> ou <a href="http://bibliaonline.com.br/acf/atos/17">17</a>: Trata-se de algo de grande importância em todas as épocas, ainda mais quando se tem quase certeza de que existe um grande número de pessoas que costumamos chamar de “almas <em>exercitadas”</em> em nossas pregações públicas, e pessoas assim precisam de um evangelho que as torne emancipadas — o completo, claro e elevado evangelho da ressurreição.</p>
+<p>Mas, embora admitindo isso tudo, continuo a crer que o que é necessário para uma bem sucedida evangelização é, não tanto o volume de verdade, mas sim um intenso amor pelas almas. Veja o eminente evangelista George Whitefield.* Qual você acha que era o segredo de seu sucesso? Não tenho dúvida de que você já tenha lido seus sermões. Porventura encontrou neles alguma grande amplitude de verdade? Duvido. No entanto devo dizer que fiquei impressionado justamente pelo contrário. Mas oh! havia algo em Whitefield que tanto eu como você devemos cobiçar e ter o desejo de cultivar. Havia um amor ardente pelas almas — uma sede pela sua salvação — um poderoso corpo-a-corpo com a consciência — uma argumentação clara, sincera e face-a-face com os homens acerca de seus caminhos passados, sua condição atual e seu destino futuro. Havia tudo aquilo com que Deus concordaria e abençoaria; e Ele continuará ainda concordando e abençoando as mesmas coisas.</p>
+<p>[*Nota do Tradutor: Convertido em 1735, George Whitefield (1714-1770) começou a pregar ao ar-livre em 1739: Seu trabalho esteve voltado à pregação do evangelho na Inglaterra e Estados Unidos, ao cuidado do orfanato que fundou.]</p>
+<p>Estou persuadido — e escrevo isto diante de Deus — de que se nossos corações estiverem inclinados à salvação de almas, Deus nos usará nessa divina e gloriosa obra. Mas se, por outro lado, nos entregarmos às debilitantes influências de um fatalismo frio, cruel e ímpio; se nos contentarmos com uma apresentação formal e oficial do evangelho — algo bem desanimado; se, para usarmos de uma expressão vulgar, nossa pregação for do tipo <em>&quot;é pegar ou largar&quot;</em>, não será surpresa nenhuma se não houver conversões. Seria surpreendente, isto sim, se as tivéssemos.</p>
+<p>Não, não podemos ser assim; creio que devemos olhar com seriedade para este assunto de tão grandes consequências.</p>
+<p>Ele exige uma consideração solene e imparcial de todos os que estejam engajados na obra. Há perigos de todos os lados. Há opiniões contraditórias de todos os lados. Mas não podemos conceber como é que algum cristão possa ficar satisfeito em esquivar-se da responsabilidade sair em busca de almas. Alguém pode dizer: <em>&quot;Não sou um evangelista; não é minha área; estou mais para mestre ou pastor&quot;</em>. Bem, entendo o que quer dizer; mas será que alguém poderia me mostrar que um mestre ou pastor não deva sair fervorosamente buscando pelas almas? Não posso aceitar tal recusa nem por um momento sequer.</p>
+<p>E mais, não tem a mínima importância qual seja o dom de alguém, ou mesmo se for o caso de não possuir nenhum dom que se destaque; todavia, ainda assim ele pode e deve cultivar um sincero desejo pela salvação das almas. Seria correto passar por uma casa em chamas sem darmos um grito de aviso, ainda que não fôssemos do Corpo de Bombeiros? Será que não deveríamos procurar salvar um homem se afogando, ainda que não fôssemos salva-vidas? Quem, de boa mente, seria vil ao ponto de discordar disso? Portanto, no que diz respeito às almas, não é tão necessário um dom ou um conhecimento da verdade, quanto um profundo e fervoroso interesse pelas almas — um agudo senso do perigo que correm, e um desejo de que sejam resgatadas.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="segunda_parte/segunda_carta__o_espirito_santo.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="segunda_parte/quarta_carta__a_oracao.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="segunda_parte/segunda_carta__o_espirito_santo.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="segunda_parte/quarta_carta__a_oracao.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

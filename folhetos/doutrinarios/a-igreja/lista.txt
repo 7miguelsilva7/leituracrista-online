@@ -1,0 +1,6 @@
+A IGREJA A H RULE A. H. RULE.odt
+assets
+comandoEmPastas.sh
+lista.txt
+README.md
+SUMMARY.md

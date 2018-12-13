@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>SEGUNDA CARTA — O Espírito Santo - CARTAS AOS EVANGELISTAS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> CARTAS AOS EVANGELISTAS - C. H. MACKINTOSH</a></li><li><a href="primeira_parte/README.html"><strong aria-hidden="true">2.</strong> PRIMEIRA PARTE</a></li><li><ol class="section"><li><a href="primeira_parte/uma_palavra_ao_evangelista.html"><strong aria-hidden="true">2.1.</strong> UMA PALAVRA AO EVANGELISTA</a></li><li><a href="primeira_parte/um_lema_para_o_evangelista.html"><strong aria-hidden="true">2.2.</strong> UM LEMA PARA O EVANGELISTA</a></li><li><a href="primeira_parte/a_obra_de_um_evangelista.html"><strong aria-hidden="true">2.3.</strong> A OBRA DE UM EVANGELISTA</a></li><li><a href="primeira_parte/o_que_busca_com_sinceridade.html"><strong aria-hidden="true">2.4.</strong> O QUE BUSCA COM SINCERIDADE</a></li><li><a href="primeira_parte/o_enganador.html"><strong aria-hidden="true">2.5.</strong> O ENGANADOR</a></li><li><a href="primeira_parte/o_pecador_endurecido.html"><strong aria-hidden="true">2.6.</strong> O PECADOR ENDURECIDO</a></li></ol></li><li><a href="segunda_parte/README.html"><strong aria-hidden="true">3.</strong> SEGUNDA PARTE</a></li><li><ol class="section"><li><a href="segunda_parte/primeira_carta__a_procura_de_almas.html"><strong aria-hidden="true">3.1.</strong> PRIMEIRA CARTA — À Procura de Almas</a></li><li><a href="segunda_parte/segunda_carta__o_espirito_santo.html" class="active"><strong aria-hidden="true">3.2.</strong> SEGUNDA CARTA — O Espírito Santo</a></li><li><a href="segunda_parte/terceira_carta__a_palavra_de_deus.html"><strong aria-hidden="true">3.3.</strong> TERCEIRA CARTA — A Palavra de Deus</a></li><li><a href="segunda_parte/quarta_carta__a_oracao.html"><strong aria-hidden="true">3.4.</strong> QUARTA CARTA — A Oração</a></li><li><a href="segunda_parte/quinta_carta__obra_de_literatura.html"><strong aria-hidden="true">3.5.</strong> QUINTA CARTA — Obra de Literatura</a></li><li><a href="segunda_parte/sexta_carta__a_pregacao_do_evangelho.html"><strong aria-hidden="true">3.6.</strong> SEXTA CARTA — A Pregação do Evangelho</a></li><li><a href="segunda_parte/setima_carta__a_escola_dominical.html"><strong aria-hidden="true">3.7.</strong> SÉTIMA CARTA — A Escola Dominical</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">CARTAS AOS EVANGELISTAS</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="segunda_parte/segunda_carta__o_espirito_santo.html#segunda-carta--o-espírito-santo-segunda-carta-o-esp-rito-santo" id="segunda-carta--o-espírito-santo-segunda-carta-o-esp-rito-santo"><h2>SEGUNDA CARTA — O Espírito Santo </h2></a>
+<p>HÁ ALGO que está ligado ao nosso assunto e que há muito tem ocupado meu pensamento: a imensa importância de se cultivar uma fé genuína na presença e ação do Espírito Santo. Queremos sempre lembrar que nada podemos fazer, e que Deus, o Espírito Santo, pode fazer tudo. O versículo, <em>&quot;Não por força nem por violência, mas pelo Meu Espírito, diz o Senhor dos Exércitos&quot;</em> (<a href="http://bibliaonline.com.br/acf/jr/4/6">Jr 4:6</a>), vale tanto para a grande obra de evangelização, como para tudo mais. Uma percepção constante disso nos manteria humildes e, ainda assim, cheios de alegre confiança. Humildes, pois nada podemos fazer; cheios de alegre confiança, porque Deus pode fazer tudo. Além do mais, teria o efeito de nos manter bem sóbrios e quietos em nosso trabalho — não frios e indiferentes, mas calmos e sérios, o que, por si só, já é um grande tema para ser tratado aqui.</p>
+<p>Fiquei bastante impressionado com uma afirmação que foi feita por um idoso obreiro, pouco tempo atrás, em uma carta a alguém que acabava de entrar no campo de trabalho. Ele dizia que “entusiasmo não é poder, mas fraqueza; fervor e energia provêm de Deus”. Isto é uma grande verdade, e de grande valor também. Mas gosto de tomar ambas as sentenças juntas. Se as separássemos, creio que tanto eu como você iríamos preferir a última; e por esta razão temo que existam muitos que considerariam como sendo “excitação”, aquilo que você e eu na verdade consideraríamos como “<em>fervor e energia&quot;</em>. Devo agora confessar que gosto muito quando vejo um profundo fervor na obra. Não posso imaginar de que modo alguém, que entenda, em qualquer medida, o quão terrível é a eternidade e a condição daqueles que morrem em seus pecados, possa se portar de outro modo que não seja estar profunda e completamente imerso em fervor. Como pode alguém pensar em uma alma imortal, à beira do inferno e correndo o perigo de a qualquer momento ser ali lançada, sem ter um sentimento de seriedade e fervor?</p>
+<p>Mas isso não é excitação. Entendo por excitação uma ação da mera natureza, liberando os esforços que ela possui para produzir na própria natureza, e sempre de modo extremo, coisas que não passam de sensações. É tudo em vão e se evanesce. E não apenas isto, mas é de grande incentivo à fraqueza. Jamais encontramos qualquer sinal disso no ministério de nosso bendito Senhor, ou no de Seus apóstolos; e, no entanto, quanto fervor havia! Quanto de infatigável energia! Quanta ternura! Encontramos um fervor que parecia sempre acompanhá-los; uma energia que dificilmente se permitia um momento de descanso ou refrigério; e uma ternura que podia chorar por pecadores impenitentes. Vemos tudo isso; mas não encontramos excitação. Em suma, era tudo o fruto do Espírito Eterno; e era tudo para a glória de Deus. E mais, estava sempre presente aquela calma e solenidade que convém à presença de Deus, aliada àquele profundo fervor que denotava que a séria condição em que se encontra o homem era perfeitamente compreendida.</p>
+<p>E é precisamente isto, querido irmão, o que almejamos e procuramos diligentemente cultivar. Trata-se de uma grande misericórdia sermos guardados de tudo aquilo que não passa de excitação natural, e, ao mesmo tempo, estarmos devidamente impressionados pela magnitude e solenidade da obra. Desta forma o pensamento será mantido em um equilíbrio adequado e seremos guardados de toda tendência de ficarmos ocupados com <em>nossa</em> obra meramente por ser nossa. Deveríamos estar nos regozijando por Cristo ser magnificado e almas serem salvas, não importando o instrumento usado para isso.</p>
+<p>Ultimamente tenho pensado bastante naquela época memorável, há exatamente dez anos, quando o Espírito de Deus operou tão maravilhosamente na província de Ulster. Acredito ter adquirido uma valiosa experiência por meio daquilo que chegou ao meu conhecimento. Foi uma época para nunca mais ser esquecida por aqueles que tiveram o privilégio de testemunhar a magnífica onda de bênção que se derramou sobre a região. Faço referência a isto aqui em relação à ação do Espírito. Mas não tenho dúvidas de que, em 1859, o Espírito Santo foi entristecido e encontrou obstáculos colocados pela interferência humana. Você está lembrado de como aquela obra começou. Você deve lembrar-se daquela pequena sala de aulas à beira da estrada onde dois ou três homens reuniram-se, semana após semana, para derramar seus corações em oração a Deus, a fim de que Ele Se agradasse em interferir na morte e nas trevas que prevaleciam ao redor: e que Ele reavivasse Sua obra e derramasse a Sua luz e verdade em poder para conversão. Você está ciente de como aquelas orações foram ouvidas e respondidas. Eu e você tivemos o privilégio de participar daquelas cenas comoventes que tiveram lugar na província de Ulster; e não tenho dúvidas de que a lembrança delas ainda esteja viva em sua memória, como acontece comigo até hoje.</p>
+<p>Bem, qual era o caráter especial daquela obra no início? Acaso não estava mais do que evidente de que se tratava de uma obra do Espírito de Deus, O qual levantou e usou instrumentos, ainda que dos mais impróprios e despreparados segundo o modo humano de julgar, para o cumprimento de Seu gracioso propósito? Porventura não nos lembramos dos modos e do caráter daqueles que foram mais usados na conversão das almas? E acaso não eram eles, em sua maioria, <em>&quot;homens sem letras e indoutos&quot;</em>? E, mais ainda, não nos recordamos claramente do fato de que havia o mais voluntário desejo de se deixar de lado toda e qualquer rotina oficial e organização humana? Trabalhadores vinham dos campos, das fábricas e dos escritórios para pregar a auditórios lotados; e pudemos testemunhar centenas de pessoas com a respiração suspensa de interesse pelo que saía dos lábios de homens que eram incapazes de falar cinco palavras gramaticalmente corretas. Em suma, a poderosa corrente de vida e poder espiritual se derramou sobre nós, descartando, na ocasião, uma grande parte do engenho humano e ignorando todas as questões da autoridade humana nas coisas de Deus e no serviço de Cristo.</p>
+<p>Podemos agora nos lembrar de que, enquanto o Espírito Santo foi reconhecido e honrado, a gloriosa obra prosseguiu; e que, por outro lado, na mesma proporção em que o homem se intrometeu, fazendo alarido de sua própria importância, e invadindo os domínios do Espírito Eterno, a obra foi impedida de seguir adiante e acabou feita em pedaços. Vi a verdade disto em inúmeros casos. Houve um vigoroso esforço para obrigar a água viva a correr nos canais oficiais e denominacionais, e isso era algo que o Espírito Santo não iria sancionar. Além do mais, havia um forte desejo, manifestado em várias partes, de dar ao bendito movimento uma importância sectária, e o Espírito Santo ficou ressentido com isso.</p>
+<p>E não parou por aí. Em toda parte a obra e os obreiros foram transformados em <em>atração.</em> Casos de conversão considerados comoventes passaram a ser usados como propaganda e eram alardeados nos jornais e revistas. Viajantes e turistas vinham de todas as partes para visitar essas pessoas, tomavam notas de suas palavras e da sua maneira de viver e espalhavam seu relato aos quatro cantos da terra. Muitas pobres criaturas, que até então haviam vivido no anonimato, desconhecidas e despercebidas, acharam-se, de repente, como objetos do interesse de ricos, nobres e do público em geral. O púlpito e a imprensa proclamavam suas palavras e seus feitos; e, como era de se esperar, tais pessoas acabaram perdendo completamente o equilíbrio. Houve abundância de hipócritas e oportunistas. Dar testemunho de alguma experiência exótica e extravagante, ou poder relatar sonhos e visões extraordinárias, passaram a ser coisas consideradas esplêndidas. E mesmo onde esse imprudente modo de agir não conseguia gerar oportunismo e hipocrisia, os novos convertidos tornavam-se soberbos e cheios de si, olhando com certa medida de desprezo para aqueles que eram cristãos há mais tempo, ou para os que não tinham se convertido da mesma maneira peculiar.</p>
+<p>Somando-se a isso tudo, alguns homens famosos pela má reputação, e que pareciam convertidos, eram levados de um lugar ao outro e anunciados em cada esquina, onde multidões eram reunidas para vê-los e escutar suas histórias; histórias essas que eram, com muita frequência, relatos horríveis, cheio de detalhes de imoralidades e transgressões tais como nunca deveriam ser mencionadas. Muitos desses homens famosos acabaram depois largando tudo e voltando com maior ardor às suas práticas do passado.</p>
+<p>Essas coisas eu testemunhei em vários lugares. Creio que o Espírito Santo foi entristecido e encontrou obstáculos, e a obra, daí em diante, acabou sendo desfigurada. Estou plenamente convencido de uma coisa, e esta é que acredito que deveríamos buscar com sinceridade honrar o bendito Espírito; confiar nele em todo nosso trabalho; seguir para onde quer que Ele nos guie, e não sair correndo na frente. Sua obra permanecerá: <em>&quot;Tudo quanto Deus faz durará eternamente&quot;</em>. (<a href="http://bibliaonline.com.br/acf/ec/3/14">Ec 3:14</a>) É Ele Quem tudo faz. Se tivermos isto em mente, nossas ideias serão bem equilibradas.</p>
+<p>Há um grande perigo de jovens obreiros tornarem-se tão entusiasmados com <em>sua</em> obra, sua pregação, seus dons, a ponto de acabarem perdendo de vista o próprio Bendito Mestre. Além disso, acabam fazendo da pregação o <em>fim</em> ao invés do <em>meio</em>. Isso é ruim em todos os aspectos. Prejudica a eles próprios e desfigura seu trabalho. A partir do momento em que faço da pregação o fim, estou fora da corrente do pensamento de Deus, cujo fim é glorificar a Cristo; e estou fora da corrente do coração de Cristo, cujo fim é a salvação de almas, e a plena bênção de Sua Igreja. Mas onde quer que o Espírito Santo encontre o Seu lugar de direito, onde quer que seja devidamente reconhecido, e nele se confie, tudo estará bem. Não haverá exaltação do homem; não se fará alarde da importância de cada um; não se fará um espetáculo dos frutos da obra; não haverá excitação. Tudo será calmo, quieto, real e despretensioso. Haverá uma espera em Deus, a qual será simples, sincera, confiante e paciente. O ego ficará encoberto; Cristo será exaltado.</p>
+<p>Sempre me recordo de uma frase sua; algo que me disse: <em>&quot;O céu será o melhor e mais seguro lugar para ouvirmos falar dos resultados de nosso trabalho&quot;</em>. Trata-se de uma palavra salutar para todos os obreiros. Estremeço quando encontro os nomes de servos de Cristo sendo notícia de jornais, com alusões lisonjeiras ao seu trabalho e aos seus frutos. Certamente aqueles que escrevem tais artigos deveriam refletir no que estão fazendo: deveriam considerar que estão alimentando exatamente aquilo que deveriam desejar ver mortificado e vencido. Estou por demais persuadido de que o caminho quieto, obscuro e retirado é o melhor e mais seguro para o obreiro cristão. Um caminho assim não o tornará menos fervoroso, pelo contrário; não porá obstáculos à sua energia, mas irá aumentá-la e intensificá-la. Que Deus não permita que eu nem você venhamos a escrever uma linha, ou fazer uma afirmação sequer, que possa, ainda que da forma mais remota, desencorajar ou limitar algum obreiro na vinha de Cristo. Não; não, este não é o momento para algo assim. Queremos ver os obreiros do Senhor seguindo com fervor; mas cremos sinceramente que o verdadeiro fervor será sempre o resultado da mais absoluta dependência no Espírito Santo de Deus.</p>
+<p>Mas veja só você como acabei indo longe! E até agora não me referi às passagens das Escrituras que mencionei em minha carta anterior. Bem, mui amado no Senhor, sei que estou me dirigindo a alguém que está bem familiarizado com os Evangelhos e com o livro de Atos, e que, portanto, conhece o grande Obreiro pessoalmente, e todos os que buscaram seguir Suas benditas pegadas, reconheceram e se submeteram ao Espírito Eterno como sendo Aquele por meio de Quem seus trabalhos eram executados.</p>
+<p>Devo agora terminar por aqui, meu mui amado irmão e colaborador; e o faço de todo o coração, encomendando você, em espírito, alma e corpo, Àquele que nos amou e nos lavou de nossos pecados em Seu próprio sangue, e que nos chamou para o honroso posto de obreiros em Seu campo evangelístico. Que ele possa abençoar a você e sua família abundantemente, e aumentar mil vezes mais sua utilidade em Suas mãos!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="segunda_parte/primeira_carta__a_procura_de_almas.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="segunda_parte/terceira_carta__a_palavra_de_deus.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="segunda_parte/primeira_carta__a_procura_de_almas.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="segunda_parte/terceira_carta__a_palavra_de_deus.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

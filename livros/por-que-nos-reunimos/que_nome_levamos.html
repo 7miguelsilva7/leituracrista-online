@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Que nome levamos? - Porque Nos Reunimos Assim</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> PORQUE NOS REUNIMOS ASSIM  J. R. GILL</a></li><li><a href="de_acordo_com_a_biblia.html"><strong aria-hidden="true">2.</strong> De acordo com a bíblia</a></li><li><a href="que_nome_levamos.html" class="active"><strong aria-hidden="true">3.</strong> Que nome levamos?</a></li><li><a href="o_nome_do_senhor_jesus.html"><strong aria-hidden="true">4.</strong> O nome do Senhor Jesus</a></li><li><a href="nenhum_outro_nome.html"><strong aria-hidden="true">5.</strong> Nenhum outro nome</a></li><li><a href="reunidos_ao_seu_nome.html"><strong aria-hidden="true">6.</strong> Reunidos ao Seu Nome</a></li><li><a href="ele_me_glorificara.html"><strong aria-hidden="true">7.</strong> Ele me glorificará</a></li><li><a href="o_espirito_de_deus_esta_aqui_para_guiar.html"><strong aria-hidden="true">8.</strong> O Espírito de Deus está aqui para guiar</a></li><li><a href="como_o_espirito_de_deus_quer.html"><strong aria-hidden="true">9.</strong> Como o Espírito de Deus quer</a></li><li><a href="nenhum_programa_estabelecido.html"><strong aria-hidden="true">10.</strong> Nenhum programa estabelecido</a></li><li><a href="sair_a_ele_fora_do_arraial.html"><strong aria-hidden="true">11.</strong> Sair a Ele fora do arraial</a></li><li><a href="o_que_significa_o_arraial.html"><strong aria-hidden="true">12.</strong> O que significa &quot;o arraial&quot;?</a></li><li><a href="o_santuario_terreno.html"><strong aria-hidden="true">13.</strong> O santuário terreno</a></li><li><a href="e_custoso_deixar_o_arraial.html"><strong aria-hidden="true">14.</strong> É custoso deixar o arraial</a></li><li><a href="um_so_corpo.html"><strong aria-hidden="true">15.</strong> Um só corpo</a></li><li><a href="um_pao.html"><strong aria-hidden="true">16.</strong> Um pão</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Porque Nos Reunimos Assim</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="que_nome_levamos.html#que-nome-levamos" id="que-nome-levamos"><h1>Que nome levamos?</h1></a>
+<p>Quanto ao primeiro - o nome para o qual nos reunimos: Que nome levamos? Se as pessoas perguntassem a você a que &quot;igreja&quot; você está ligado, o que responderia? Creio que alguns aqui já se sentiram embaraçados para responder a esta pergunta. Não há dúvida de que existem várias maneiras como esta pergunta poderia ser feita, mas porventura não é bom sermos bem claros sobre isto, ou seja, que reconhecemos somente o nome do Senhor Jesus Cristo? Nenhum ou no nome. Alguns dirão: &quot;Vocês são chamados irmãos de Plymouth', não são?&quot; O que você diria diante disto? Creio que alguém poderia dizer: &quot;Sim; sim, somos chamados assim, mas não nos chamamos assim&quot;. Não podemos evitar que nos chamem desta maneira. O nome pelo qual nos chamamos é de santos de Deus, reconhecendo a dignidade do nome do Senhor Jesus Cristo, e reunidos a este nome.</p>
+<p>Poderíamos ler algumas passagens das Escrituras que tratam deste ponto, começando, talvez, com <a href="http://bibliaonline.com.br/acf/fp/2/8-11">Filipenses 2, versículos 8 ao 11</a>: &quot;E, achado na forma de homem, humilhou-Se a Si mesmo, sendo obediente até à morte, e morte de cruz. Por isso, também Deus O exaltou soberanamente, e Lhe deu um nome que é sobre todo o nome; para que ao nome de Jesus se dobre todo o joelho dos que estão nos céus, e na terra, e debaixo da terra, e toda a língua confesse que Jesus Cristo é o Senhor, para glória de Deus Pai.&quot;</p>
+<p>Vamos ver também o primeiro capítulo de Colossenses, <a href="http://bibliaonline.com.br/acf/cl/1/15-18">versículos 15 a 18</a>: &quot;O qual é imagem do Deus invisível, o primogênito de toda a criação; porque nEle foram criadas todas as coisas que há nos céus e na Terra, visíveis e invisíveis, sejam tronos, sejam dominações, sejam principados, sejam potestades. Tudo foi criado por Ele e para Ele. E Ele é antes de todas as coisas, e todas as coisas subsistem por Ele. E Ele é a cabeça do corpo, da igreja; é o princípio e o primogênito dentre os mortos, para que em tudo tenha a preeminência.&quot;</p>
+<p>Podemos também voltar para o primeiro capítulo de Efésios enquanto tratamos desta linha de pensamento, nos <a href="http://bibliaonline.com.br/acf/ef/1/20,21">versículos 20 e 21</a>.</p>
+<p>&quot;Que manifestou em Cristo, ressuscitando-O dentre os mortos, e pondo-O à Sua direita nos céus. Acima de todo o principado, e poder, e potestade, e domínio, e de todo o nome que se nomeia, não só neste século, mas também no vindouro.&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="de_acordo_com_a_biblia.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="o_nome_do_senhor_jesus.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="de_acordo_com_a_biblia.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="o_nome_do_senhor_jesus.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

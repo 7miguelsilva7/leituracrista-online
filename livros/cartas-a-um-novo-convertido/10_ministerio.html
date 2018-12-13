@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>10 Ministério - CARTAS A UM NOVO CONVERTIDO</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> CARTA A UM NOVO CONVERTIDO  - EDWARD DENNETT</a></li><li><a href="1_paz_com_deus.html"><strong aria-hidden="true">2.</strong> 1 Paz com Deus</a></li><li><a href="2_nosso_lugar_perante_deus.html"><strong aria-hidden="true">3.</strong> 2 Nosso lugar perante Deus</a></li><li><a href="3_nosso_lugar_neste_mundo/README.html"><strong aria-hidden="true">4.</strong> 3 Nosso lugar neste mundo</a></li><li><ol class="section"><li><a href="3_nosso_lugar_neste_mundo/1_nosso_lugar_em_relacao_ao_mundo.html"><strong aria-hidden="true">4.1.</strong> Nosso lugar em relação ao mundo.</a></li><li><a href="3_nosso_lugar_neste_mundo/2_nosso_lugar_em_relacao_ao_arraial.html"><strong aria-hidden="true">4.2.</strong> Nosso lugar em relação ao “arraial”.</a></li></ol></li><li><a href="4_o_corpo_de_cristo.html"><strong aria-hidden="true">5.</strong> 4 O Corpo de Cristo</a></li><li><a href="5_a_mesa_do_senhor.html"><strong aria-hidden="true">6.</strong> 5 A mesa do Senhor</a></li><li><a href="6_a_ceia_do_senhor.html"><strong aria-hidden="true">7.</strong> 6 A ceia do Senhor</a></li><li><a href="7_o_senhor_jesus_cristo_no_centro.html"><strong aria-hidden="true">8.</strong> 7 O Senhor Jesus Cristo no centro</a></li><li><a href="8_o_verdadeiro_lugar_de_adoracao.html"><strong aria-hidden="true">9.</strong> 8 O verdadeiro lugar de adoração</a></li><li><a href="9_adoracao.html"><strong aria-hidden="true">10.</strong> 9 Adoração</a></li><li><a href="10_ministerio.html" class="active"><strong aria-hidden="true">11.</strong> 10 Ministério</a></li><li><a href="11_a_palavra_de_deus.html"><strong aria-hidden="true">12.</strong> 11 A Palavra de Deus</a></li><li><a href="12_oracao.html"><strong aria-hidden="true">13.</strong> 12 Oração</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">CARTAS A UM NOVO CONVERTIDO</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="10_ministerio.html#a10-ministério-10-minist-rio" id="a10-ministério-10-minist-rio"><h1>10 Ministério </h1></a>
+<p>Prezado irmão,</p>
+<p>É surpreendente notarmos que o ministério que é praticado nas chamadas <em>&quot;igrejas&quot;</em> da Cristandade não tem a mínima semelhança com o que encontramos na Palavra de Deus. Procure o mais que puder, desde os tempos quando a Igreja de Deus foi constituída, até à conclusão do registro inspirado (as Escrituras), e você não encontrará um traço sequer de haver existido a prática do ministério por um único homem. São mencionados apóstolos, anciãos (ou bispos), diáconos, pastores e doutores (ou mestres), e evangelistas; mas não existe qualquer indicação de algo parecido com os ministros e pregadores de nossos dias. Pois todas as denominações da Cristandade — salvo uma ou duas exceções pouco significativas — concordam em sua opinião quanto ao que é o ministério. Nas denominações, como regra geral, um homem é escolhido para cuidar ou tomar o encargo de uma <em>&quot;igreja&quot;</em> ou congregação, e dele se espera que ensine, pregue o evangelho e seja um pastor. Em poucas palavras, espera-se que nele estejam unidos os ofícios de um ancião, e os dons de um pastor e mestre, e também de um evangelista. Desta forma, é comum ocorrer que somente um homem tenha o completo e contínuo cuidado da mesma congregação por vinte, trinta ou quarenta anos; e não pode ser negado que os cristãos professos gostam que seja assim.</p>
+<p>Mas a questão é: será que tal prática é bíblica? Conto com mais um pouco de sua paciência enquanto procuro responder a esta pergunta com base na própria Palavra de Deus. Nem preciso lembrá-lo de que nosso bendito Senhor escolheu apóstolos durante Sua jornada terrena, e que, após Sua ressurreição e ascensão, apareceu a Saulo e também o escolheu, fazendo dele, de uma forma especial, o apóstolo dos Gentios (leia <a href="http://bibliaonline.com.br/acf/atos/9">Atos capítulos 9</a>, <a href="http://bibliaonline.com.br/acf/atos/22">22</a>, <a href="http://bibliaonline.com.br/acf/atos/26">26</a> e <a href="http://bibliaonline.com.br/acf/1co/15">1 Coríntioscapítulo 15</a>).</p>
+<p>os apóstolos, como todos reconhecem, tiveram um lugar único e peculiar foram dotados de autoridade e dons extraordinários e nunca tiveram sucessores. Não deveria detê-lo por mais tempo falando sobre isto pois a inexistência de sucessores dos apóstolos é geralmente aceita fora das igrejas Romana e Anglicana (ao menos no Ocidente). Portanto creio que duas passagens serão suficientes. Pedro, escrevendo aos crentes de seu próprio povo <em>&quot;aos estrangeiros dispersos no Ponto&quot;</em>, <em>etc.</em> diz, <em>&quot;eu procurarei (por meio de sua carta) em toda a ocasião que depois da minha morte tenhais lembrança destas coisas&quot;</em> (<a href="http://bibliaonline.com.br/acf/2pe/1/15">2 Pe 1:15</a>). Assim ele os entregava, para o futuro, à direção estabelecida pela Palavra escrita (e não pela sucessão apostólica). Do mesmo modo, Paulo, ao se dirigir aos anciãos da Igreja em Éfeso, alertando-os para as dificuldades e perigos que haviam de vir, diz, <em>&quot;Agora, pois, irmãos, encomendo-vos a Deus e à palavra da sua graça&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/20/32">Atos 20:32</a>). Portanto, os dois grandes apóstolos o da circuncisão, e o da incircuncisão concordavam neste ponto; igualmente declaram que a fonte onde a Igreja deveria buscar o seu suprimento deveria ser a Palavra de Deus. Fica bem evidente que eles não previam sucessores para exercer o seu ofício.</p>
+<p>O ofício seguinte, na ordem que nos é apresentado na Palavra de Deus, é o de bispos ou anciãos. Digo bispos ou anciãos pois na verdade nada mais são do que dois nomes para o mesmo ofício. O <a href="http://bibliaonline.com.br/acf/atos/20">capítulo 20 de Atos</a> torna isto bem evidente e elimina qualquer discussão que se pretenda a respeito. Lemos ali que Paulo mandou chamar os <em>&quot;anciãos da igreja”</em> (<a href="http://bibliaonline.com.br/acf/atos/20/17">vers. 17</a>). Ao se dirigir a eles, ele os chama de <em>&quot;bispos&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/20/28">vers. 28</a>). Bem, eles nunca são encontrados no singular. A Igreja em Éfeso, no versículo que citamos, tinha mais de um bispo. Paulo chamou os <em>&quot;anciãos&quot;</em> da Igreja. O mesmo ocorre em <a href="http://bibliaonline.com.br/acf/atos/14/23">Atos 14:23</a> quando Paulo e Barnabé elegeram “anciãos em cada igreja”. Também na epístola aos Fl lemos de <em>&quot;bispos e diáconos&quot;</em> (<a href="http://bibliaonline.com.br/acf/fp/1/1">Fl 1:1</a>), <em>&quot;anciãos&quot;</em> (<a href="http://bibliaonline.com.br/acf/atos/15/23">Atos 15:23</a>) ou <em>&quot;presbíteros&quot;</em> (<a href="http://bibliaonline.com.br/acf/tt/1/5">Tt 1:5</a>).</p>
+<p>Passando agora à questão dos dons, que se trata de algo distinto dos ofícios, iremos encontrar “pastores e doutores” (ou mestres, segundo outras traduções) (<a href="http://bibliaonline.com.br/acf/ef/4/11">Ef 4:11</a>). Vou tratar de ambos de uma só vez pois, na verdade, eles encontram-se ligados nas Escrituras, e ligados de uma forma tão estreita na passagem citada como que para indicar que poderiam ser encontrados em uma mesma pessoa. Será que isto autorizaria uma só pessoa a tomar o encargo de toda uma congregação? De maneira nenhuma, pois lemos que <em>&quot;na igreja que estava em Antioquia havia alguns profetas e doutores&quot;</em>, sendo apresentados a seguir os nomes de pelo menos cinco deles (<a href="http://bibliaonline.com.br/acf/atos/13/1">Atos 13:1</a>).</p>
+<p>Para aqueles que pensam que Timóteo e Tito formam uma evidência em contrário, basta uma breve análise para que isto também seja esclarecido. A Tito é dito claramente que ele havia sido deixado em Creta para que pusesse <em>&quot;em boa ordem as coisas que ainda restam, e de cidade em cidade estabelecesse presbíteros&quot;</em> (<a href="http://bibliaonline.com.br/acf/tt/1/5">Tt 1:5</a>); e a Timóteo são mostradas quais as qualificações dos bispos (<a href="http://bibliaonline.com.br/acf/1tm/3">1Tm 3</a>), e é expressamente ordenado para não impor <em>&quot;precipitadamente as mãos&quot;</em> a ninguém (<a href="http://bibliaonline.com.br/acf/1tm/5/22">1Tm 5:22</a>), isto é, para não designá-los para o ofício. Portanto nada pode estar mais claro do que o fato de que estes dois, Timóteo e Tito, estavam agindo com a autoridade que lhes foi delegada pelo apóstolo e como tais estavam fazendo um tipo de supervisão geral, tendo ainda autoridade para nomear homens idôneos para o ofício de bispos e diáconos; uma autoridade exercida por indivíduos, e não por igrejas. E ela nunca foi exercida senão pelos apóstolos, ou no caso que acabamos de ver, por seus delegados diretos, nunca tendo sido transmitida a qualquer sucessor, e havendo consequentemente cessado com a morte dos apóstolos.</p>
+<p>Falta ainda outro dom que deve ser notado — o dom de evangelista (<a href="http://bibliaonline.com.br/acf/ef/4/11">Ef 4:11</a>). Vem depois de “profetas”, mas vamos tratar dele antes devido ao seu caráter. Como o próprio nome diz, o trabalho do evangelista é pregar o evangelho; portanto o alvo do seu ministério não é a Igreja, mas o mundo. O próprio Senhor descreve a responsabilidade do evangelista quando ordena aos Seus apóstolos, <em>&quot;Ide por todo o mundo, pregai o evangelho a toda a criatura&quot;</em> (<a href="http://bibliaonline.com.br/acf/mc/16/15">Mc 16:15</a>). Tentar limitar o trabalho de um evangelista a uma congregação, ou mesmo a uma única vila ou cidade, é ignorar o propósito do seu dom. Por isso o apóstolo Paulo, quando fala de si mesmo a este respeito, diz, <em>&quot;Eu sou devedor, tanto a gregos como a bárbaros, tanto a sábios como a ignorantes. E assim, quanto está em mim, estou pronto para também vos anunciar o evangelho, a vós que estais em Roma&quot;</em> (<a href="http://bibliaonline.com.br/acf/rm/1/14,15">Rm 1:14,15</a>).</p>
+<p>Voltamos à questão: De acordo com a Palavra de Deus, qual é o verdadeiro caráter do ministério? Em primeiro lugar, ele flui de Cristo que está à direita de Deus, como Cabeça da Igreja. É Ele a fonte. <em>&quot;Mas a graça foi dada a cada um de nós segundo a medida do dom de Cristo. Pelo que diz: Subindo ao alto, levou cativo o cativeiro, e deu dons aos homens... E Ele mesmo deu uns para apóstolos, e outros para profetas, e outros para evangelistas, e outros para pastores e</em> <em>doutores, querendo o aperfeiçoamento dos santos, para a obra do ministério, para edificação do corpo de Cristo; até que todos cheguemos à unidade da fé, e ao conhecimento do Filho de Deus, a varão perfeito, à medida da estatura completa de Cristo”</em> (<a href="http://bibliaonline.com.br/acf/ef/4/7-13">Ef 4:7-13</a>). Eis um princípio importante: os dons não foram dados à Igreja, mas aos homens para benefício da Igreja. Sendo assim, aqueles que os receberam são responsáveis — não perante a Igreja, mas diante do Senhor — pelo seu exercício. Portanto a Igreja fica impossibilitada de designar pastores e doutores (ou mestres) ou qualquer dos dons mencionados, uma vez que vimos que a responsabilidade da Igreja é de receber o ministério de todo aquele que foi qualificado pelo Senhor para a sua edificação. Assim como o ofício apostólico de Paulo, o dom não vem <em>&quot;da parte dos homens, nem por homem algum”</em> (<a href="http://bibliaonline.com.br/acf/gl/1/1">Gl 1:1</a>), mas do Cristo ressuscitado.</p>
+<p>Existe outra verdade de igual importância, a saber, que os dons só podem ser adequadamente exercitados no poder do Espírito Santo. A presença do Espírito Santo é a característica marcante desta dispensação. Ele habita na casa de Deus, a Igreja, e habita também nos crentes (<a href="http://bibliaonline.com.br/acf/jo/7/39">Jo 7:39</a>; 14:16,17; <a href="http://bibliaonline.com.br/acf/atos/2">Atos 2</a>; <a href="http://bibliaonline.com.br/acf/rm/8/15,16">Romanos 8:15,16</a>; <a href="http://bibliaonline.com.br/acf/1co/6/19">1 Co 6:19</a>; <a href="http://bibliaonline.com.br/acf/2co/6/16">2 Coríntios 6:16</a>; <a href="http://bibliaonline.com.br/acf/ef/1/13">Ef 1:13</a>; <a href="http://bibliaonline.com.br/acf/ef/2/22">2:22</a>; etc.). Portanto, quando os crentes estão reunidos, conforme nos ensina <a href="http://bibliaonline.com.br/acf/1co/12">1 Coríntios 12</a> e <a href="http://bibliaonline.com.br/acf/1co/14">14</a>, o Espírito Santo atua soberanamente nos membros do corpo de Cristo e também por meio destes, de acordo com o dom de cada um: <em>&quot;Porque a um pelo Espírito é dada a palavra da sabedoria; e a outro, pelo mesmo Espírito, a palavra da ciência;... mas um só e o mesmo Espírito opera todas estas coisas, repartindo particularmente a cada um como quer&quot;</em> (<a href="http://bibliaonline.com.br/acf/1co/12/8-11">1 Co 12:8-11</a>). Qualquer regra humana para o ministério na assembleia não só é incompatível com esta verdade, como chega ao ponto de ignorar totalmente o direito que o Espírito de Deus tem de ministrar por meio de quem Ele escolher. Com toda a certeza isto é algo extremamente solene e não deve ser tratado com leviandade. Mas como é triste vermos que isto é menosprezado pela maioria! Além do mais, a presença da Espírito Santo é de tal forma esquecida, que a autoridade e as pretensões do homem a substitui, sendo isto aceito e considerado perfeitamente correto pela grande maioria dos que professam ser de Cristo.</p>
+<p>Você deve ter o cuidado de observar que as Escrituras não ensinam que todos têm liberdade para ministrar, mas que deve haver liberdade para o Espírito Santo ministrar por meio de quem Ele quiser. Existe uma enorme diferença entre ambas as coisas. A primeira seria democracia, e não há nada mais longe dos pensamentos de Deus do que isto; a segunda envolve a manutenção do Senhorio de Cristo no poder do Espírito; a sujeição de todos os membros do corpo à Cabeça, e completa dependência da direção e sabedoria do Espírito de Deus. No primeiro caso, o homem é quem toma a primazia; no segundo, Cristo é reconhecido como supremo.</p>
+<p>Enquanto afirmamos estes princípios cardeais do ministério, devemos ser cuidadosos em lembrar que todo verdadeiro ministério deve estar em sujeição à Palavra de Deus e em conformidade a ela. Isto está claro nas instruções de <a href="http://bibliaonline.com.br/acf/1co/14">1 Coríntios 14</a>. O apóstolo chega até mesmo a dar instruções precisas concernentes ao exercício dos dons, e segue dizendo, <em>&quot;Se alguém cuida ser profeta, ou espiritual, reconheça que as coisas que vos escrevo são mandamentos do Senhor&quot;</em> (<a href="http://bibliaonline.com.br/acf/1co/14/37">1 Coríntios 14:37</a>). À assembleia é dado com isso o direito, ou mais ainda, a responsabilidade de julgar se aquilo que está sendo ministrado está de acordo com a verdade (<a href="http://bibliaonline.com.br/acf/1co/14/29">1 Co 14:29</a>), e rejeitar tudo aquilo que não esteja de acordo com este critério. Portanto, não se trata de algo deixado à mercê de homens voluntariosos, mas é algo dado como salvaguarda para inspecionar e repreender toda manifestação que seja da carne e não do Espírito.</p>
+<p>Pode-se acrescentar algo mais. Após tratar da questão dos dons, e mostrar que o seu exercício sem amor é de nenhum valor (<a href="http://bibliaonline.com.br/acf/1co/12">1 Co 12</a> e <a href="http://bibliaonline.com.br/acf/1co/13">13</a>), o apóstolo ensina que o propósito do exercício dos dons é a edificação da assembleia (<a href="http://bibliaonline.com.br/acf/1co/14/3-5">1 Co 14:3-5</a>). Quão maravilhosos são os caminhos de Deus! Reunidos pelo Espírito ao redor da Pessoa de nosso Senhor Jesus, à Sua mesa, para celebrar a Sua morte, Ele dirige os nossos corações em adoração e louvor, e então Ele ministra a nós aquilo que vem diretamente de Deus por meio dos vários membros do corpo de Cristo. Ocorre, assim, uma dupla ação do Espírito. Ele nos capacita a oferecer os sacrifícios de louvor a Deus e, consciente das nossas necessidades, provê a palavra de sabedoria, conhecimento ou exortação, conforme nossa necessidade no momento.</p>
+<p>Creio que atingi os limites desta minha carta. De qualquer forma, você mesmo será capaz de descobrir mais sobre este assunto, e assim verificar se o que já lhe adiantei está de acordo com a Palavra de Deus. “Examinai tudo. Retende o bem” (<a href="http://bibliaonline.com.br/acf/1ts/5/21">1Ts 5:21</a>). É recomendável ainda a leitura de <a href="http://bibliaonline.com.br/acf/rm/12/4-8">Romanos 12:4-8</a> e <a href="http://bibliaonline.com.br/acf/1pe/4/10,11">1 Pe 4:10,11</a>:</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="9_adoracao.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="11_a_palavra_de_deus.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="9_adoracao.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="11_a_palavra_de_deus.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>
