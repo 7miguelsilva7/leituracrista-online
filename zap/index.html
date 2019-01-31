@@ -32,25 +32,27 @@ img {
 }
 </style>
 
-<script>
-        // resolve erro de redirecionamento a partir do facebook
-        $(document).ready(function() {
-        var url = location.href;
-        if(url.indexOf("?fbclid=")==-1) {
-        } else {
-        var url_atual = window.location.href;
-        var str = url_atual;
-        var match = str.split('?fbclid=');
-        window.location.replace(match[0]);
-        }
-        });
-        //FIM de resolve erro de redirecionamento a partir do facebook
-        </script>
+      
 
 </head>
 
 
 <body>
+
+                <script>
+                // resolve erro de redirecionamento a partir do facebook
+                $(document).ready(function() {
+                var url = location.href;
+                if(url.indexOf("?fbclid=")==-1) {
+                } else {
+                var url_atual = window.location.href;
+                var str = url_atual;
+                var match = str.split('?fbclid=');
+                window.location.replace(match[0]);
+                }
+                });
+                //FIM de resolve erro de redirecionamento a partir do facebook
+                </script>
 
 <div align="center">
     <h3>Receba mensagens do evangelho em texto, vídeo e links em seu WhatsApp</h3>
