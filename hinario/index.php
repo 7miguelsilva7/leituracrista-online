@@ -14,7 +14,7 @@
   <button class="btn" data-cad="@MT@" onclick="filterSelection('matematica')"> Matamática</button>
 </div><br> -->
 
-<a target="_parent" href='http://edumais.com.br/gerarprovas'><img style="display:scroll;position:fixed;top:20px;right:30px;width:40px;height:40px;" src="#"></a>
+<img onclick="myFunction()" style="display:scroll;position:fixed;top:20px;right:30px;width:40px;height:40px;" src="#">
 
 <style>
 
@@ -162,9 +162,9 @@ border-top:3px dashed #FFF
 <?php
 
   echo "
-  
-  <div class=\"footer-mt\">
-     <a href=\"#\" class=\"btn\" data-cad=\"@Todos@\" onclick=\"filterSelection('matematica')\"><B >MATEMÁTICA</B></a><P>
+
+  <div id=\"myDIV\" class=\"footer-mt\">
+     <a href=\"#\" class=\"btn\" data-cad=\"@Todos@\" onclick=\"filterSelection('matematica')\"><B >HINOS</B></a><P>
      <a href=\"#\" class=\"btn\" data-cad=\"@001@\">001</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@002@\">002</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@MT@@D03@\">D03</a>
@@ -328,6 +328,17 @@ if ($pc<$tp) {
     
     });
 </script> 
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 </html>
 
