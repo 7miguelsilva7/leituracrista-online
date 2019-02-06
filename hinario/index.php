@@ -171,6 +171,7 @@ border-top:3px dashed #FFF
   echo "
 
   <div id=\"myDIV\" class=\"footer-mt\" style=\"overflow-y: auto; height:100%; \">
+  </p>
      <a href=\"#\" class=\"btn\" data-cad=\"@Todos@\" onclick=\"filterSelection('matematica');onclick=\"myFunction()\";\"><B >HINOS</B></a><P>
      <a onclick=\"myFunction()\" href=\"#\" class=\"btn\" data-cad=\"@001@\">001</a>
      <a onclick=\"myFunction()\" href=\"#\" class=\"btn\" data-cad=\"@002@\">002</a>
