@@ -206,10 +206,12 @@ echo "
 <div align=\"center\" class=\"naoSelecionavel\" class=\"blocos\">
   <div class=\"bloco\">
 
-  <font color=\"white\">@001@</font>
-  <font color=\"white\">@$disciplina@@$descritor@</font>
+  
 
 001 - Aba, Pai, a Ti Chegamos </p>
+
+<font color=\"white\">@001@</font>
+<font color=\"white\">@$disciplina@@$descritor@</font></p>
 
 1.Aba, Pai! A Ti chegamos, hoje, em nome de Jesus,</br> 
 Deus e Pai a Ti chamamos, sendo filhos já da luz.</br> 
