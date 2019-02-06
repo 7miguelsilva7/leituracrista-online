@@ -211,24 +211,24 @@ echo "
 
 001 - Aba, Pai, a Ti Chegamos </p>
 
-1.Aba, Pai! A Ti chegamos, hoje, em nome de Jesus, 
-Deus e Pai a Ti chamamos, sendo filhos já da luz. 
-Dos delitos libertados, pelo sangue do Senhor; 
+1.Aba, Pai! A Ti chegamos, hoje, em nome de Jesus,</br> 
+Deus e Pai a Ti chamamos, sendo filhos já da luz.</br> 
+Dos delitos libertados, pelo sangue do Senhor; </br>
 Pelo Espírito ensinados, damos-Te real louvor.</p>
 
-2.Fomos como fugitivos, longe do paterno lar, 
-Mas, quais filhos redimidos, nos quiseste abençoar. 
-Por amor nos perdoaste, nos levaste para Ti; 
+2.Fomos como fugitivos, longe do paterno lar, </br>
+Mas, quais filhos redimidos, nos quiseste abençoar.</br> 
+Por amor nos perdoaste, nos levaste para Ti; </br>
 Nos beijaste, nos sentaste à paterna mesa aqui.</p>
 
-3.Já por Tuas mãos vestidos com os trajes de favor, 
-Dentro em casa recolhidos desfrutamos Teu amor. 
-Redimidos e lavados, renascidos para Deus; 
+3.Já por Tuas mãos vestidos com os trajes de favor, </br>
+Dentro em casa recolhidos desfrutamos Teu amor. </br>
+Redimidos e lavados, renascidos para Deus; </br>
 Restaurados, bem amados, feitos cidadãos dos céus.</p>
 
-4.Aba, aqui, nós Te adoramos, muito alegres por saber 
-Que por nós que em Cristo estamos, vão Teus anjos conhecer 
-Teu saber maravilhoso, Tua graça, Teu amor; 
+4.Aba, aqui, nós Te adoramos, muito alegres por saber </br>
+Que por nós que em Cristo estamos, vão Teus anjos conhecer </br>
+Teu saber maravilhoso, Tua graça, Teu amor; </br>
 E movidos de alegria Te adorar com novo ardor.</p>
 
 <hr>
