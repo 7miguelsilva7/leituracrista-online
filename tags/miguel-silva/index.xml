@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miguel Silva on Leitura Cristã</title>
+    <link>http://localhost/hugo-teste/public/tags/miguel-silva/</link>
+    <description>Recent content in Miguel Silva on Leitura Cristã</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost/hugo-teste/public/tags/miguel-silva/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Peregrinos e Estrangeiros</title>
+      <link>http://localhost/hugo-teste/public/peregrinos/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/hugo-teste/public/peregrinos/</guid>
+      <description>Peregrinos e estrangeiros
+Gn 19:9 Eles, porém, disseram: Sai daí. Disseram mais: Como estrangeiro este indivíduo veio aqui habitar, e quereria ser juiz em tudo? Agora te faremos mais mal a ti do que a eles&amp;hellip;
+Estas palavras foram ditas pelos homens de Sodoma a Ló, um estrangeiro, mas que em tudo queria opinar e se intrometer nas coisas daquela cidade. Assentar-se a porta dela, era a seu costume.. Gn 19:1.</description>
+    </item>
+    
+    <item>
+      <title>Um morto, é um morto</title>
+      <link>http://localhost/hugo-teste/public/um-morto-morto/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/hugo-teste/public/um-morto-morto/</guid>
+      <description>Isso é lógico, mas às vezes nos esquecemos deste fato.
+Muitas vezes nos dirigimos a alguém pra falar de Jesus, e expressamos o que Deus gostaria que elas fossem, modo de agir e de ser. Queremos que elas se comportem como cristãos, sem ao menos nos atentarmos em despertar suas consciências para o fato de elas serem pecadoras necessitando de salvação. A menos que sejam vivificadas pelo Espírito de nada adianta todo bem proceder de suas vidas, seria como vestir um porco, ou um cão, com pele de ovelha, logo eles acabariam voltando a lama ou ao seu próprio vômito.</description>
+    </item>
+    
+  </channel>
+</rss>

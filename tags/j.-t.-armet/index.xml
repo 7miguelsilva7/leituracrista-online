@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>J. T. Armet on Leitura Cristã</title>
+    <link>http://localhost/hugo-teste/public/tags/j.-t.-armet/</link>
+    <description>Recent content in J. T. Armet on Leitura Cristã</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 21 Jul 2017 17:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://localhost/hugo-teste/public/tags/j.-t.-armet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QUEM DESPREZA O DIA DAS COISAS PEQUENAS</title>
+      <link>http://localhost/hugo-teste/public/folhetos/doutrinarios/quem-despreza-o-dia-das-coisas-pequenas/</link>
+      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
+      
+      <guid>http://localhost/hugo-teste/public/folhetos/doutrinarios/quem-despreza-o-dia-das-coisas-pequenas/</guid>
+      <description>QUEM DESPREZA O DIA DAS COISAS PEQUENAS Zacarias 4:10
+Para o mundo, hoje é o dia das grandes coisas. Em matéria de guerra, antigamente os homens estavam satisfeitos em contar seus exércitos em milhares, mas agora os milhares são desprezados - as nações devem ter seus milhões de soldados. Em matéria de finanças, onde antes as fortunas eram avaliadas em alguns poucos algarismos, agora fortunas com valores expressos em vários dígitos passaram a ser consideradas apenas como pequenas heranças.</description>
+    </item>
+    
+  </channel>
+</rss>

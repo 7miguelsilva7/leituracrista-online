@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robert Pilkington on Leitura Cristã</title>
+    <link>http://localhost/hugo-teste/public/tags/robert-pilkington/</link>
+    <description>Recent content in Robert Pilkington on Leitura Cristã</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 19 Jun 2017 17:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://localhost/hugo-teste/public/tags/robert-pilkington/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Espere</title>
+      <link>http://localhost/hugo-teste/public/livretes/espere/</link>
+      <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
+      
+      <guid>http://localhost/hugo-teste/public/livretes/espere/</guid>
+      <description>ESPERE! Gostaria de falar a respeito de algo que, creio eu, se puder ser aprendido enquanto somos jovens, será para nós de grande auxílio. Sei, porém, que esta característica é também muito necessária para os anos mais avançados de nossa vida. Vamos ler 1 Samuel, capítulo 10, versículos 6 ao 8, que é onde o povo escolhe um rei. Tendo Saul sido escolhido para ser o rei, Samuel se dirige a ele e diz: &amp;ldquo;E o Espírito do Senhor se apoderará de ti, e profetizarás com eles, e te mudarás em outro homem.</description>
+    </item>
+    
+  </channel>
+</rss>
