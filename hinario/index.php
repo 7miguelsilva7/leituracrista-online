@@ -164,7 +164,7 @@ border-top:3px dashed #FFF
   echo "
   
   <div class=\"footer-mt\">
-  <a href=\"#\" class=\"btn\" data-cad=\"@MT@\" onclick=\"filterSelection('matematica')\"><B >MATEMÁTICA</B></a><P>
+     <a href=\"#\" class=\"btn\" data-cad=\"@001@\" onclick=\"filterSelection('matematica')\"><B >MATEMÁTICA</B></a><P>
      <a href=\"#\" class=\"btn\" data-cad=\"@MT@@D01@\">D01</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@MT@@D02@\">D02</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@MT@@D03@\">D03</a>
