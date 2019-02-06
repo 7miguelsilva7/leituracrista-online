@@ -165,18 +165,13 @@ border-top:3px dashed #FFF
 
 </style>
 
-
-<?php
-
-  echo "
-
-  <div id=\"myDIV\" class=\"footer-mt\" style=\"overflow-y: auto; height:100%; \">
+  <div id="myDIV" class="footer-mt" style="overflow-y: auto; height:100%; ">
   </p>
-     <a href=\"#\" class=\"btn\" data-cad=\"@Todos@\" onclick=\"myFunction()\"><B>HINOS</B></a><P>
-     <a onclick=\"myFunction()\" href=\"#\" class=\"btn\" data-cad=\"@001@\">001</a>
-     <a onclick=\"myFunction()\" href=\"#\" class=\"btn\" data-cad=\"@002@\">002</a>
-     <a href=\"#\" class=\"btn\" data-cad=\"@003@\">003</a>
-     <a href=\"#\" class=\"btn\" data-cad=\"@004@\">004</a>
+     <a href="#" class="btn" data-cad="@Todos@" onclick="myFunction()"><B>HINOS</B></a><P>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@001@">001</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@002@">002</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@003@">003</a>
+     <!-- <a href=\"#\" class=\"btn\" data-cad=\"@004@\">004</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@005@\">005</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@006@\">006</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@007@\">007</a>
@@ -298,13 +293,11 @@ border-top:3px dashed #FFF
      <a href=\"#\" class=\"btn\" data-cad=\"@028@\">028</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@028@\">028</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@028@\">028</a>
-     <a href=\"#\" class=\"btn\" data-cad=\"@028@\">028</a>
-     <a href=\"#\" class=\"btn\" data-cad=\"@Todos@\">Todos</a>
+     <a href=\"#\" class=\"btn\" data-cad=\"@028@\">028</a> -->
         
   <br><br>
-  </div>"
+  </div>
 
-  ?>
 <?php
 
 echo "
