@@ -382,6 +382,12 @@ E movidos de alegria Te adorar com novo ardor.</p>
 //# sourceMappingURL=jquery.min.map
 </script>
 
+
+
+</body>
+
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+
 <script>
 
    $(function(){ 
@@ -414,9 +420,5 @@ function myFunction() {
   }
 }
 </script>
-
-</body>
-
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 
 </html>
