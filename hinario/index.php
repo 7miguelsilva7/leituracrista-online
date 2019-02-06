@@ -206,15 +206,10 @@ echo "
 <div class=\"naoSelecionavel\" class=\"blocos\">
   <div class=\"bloco\">
 
-  <form target=\"_direita\" id=\"form\" method=\"post\" action=\"provasimples.php\">
-  <td>
-
-  <div align=\"left\"><input onchange=\"autoform(form);\" type=\"checkbox\" id=\"$id\" name=\"question_id[]\" value=\"$id\" ><label for=\"$id\"><u><b>($questionname</b></u>)$espaco$espaco$espaco $questioncategory</label>  </td>
-  <td><a href=\"javascript:void(window.open('viewQuestion.php?question_id=$id', 'popup', 'width=750,height=560'));\">visualizar</a></td></div>
-  
   <font color=\"white\">@$disciplina@</font>
   <font color=\"white\">@$disciplina@@$descritor@</font>
-  
+
+//   Hino
   <hr>
  </div>
 </div>";  
