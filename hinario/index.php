@@ -220,8 +220,8 @@ border-top:3px dashed #FFF
      <a href=\"#\" class=\"btn\" data-cad=\"@MT@\">Todos</a>
         
   <br><br>
-  </div>";
-}
+  </div>"
+  
   ?>
 
 <?php
