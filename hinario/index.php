@@ -209,7 +209,29 @@ echo "
   <font color=\"white\">@$disciplina@</font>
   <font color=\"white\">@$disciplina@@$descritor@</font>
 
-//   Hino
+001 - Aba, Pai, a Ti Chegamos
+
+1.Aba, Pai! A Ti chegamos, hoje, em nome de Jesus, 
+Deus e Pai a Ti chamamos, sendo filhos já da luz. 
+Dos delitos libertados, pelo sangue do Senhor; 
+Pelo Espírito ensinados, damos-Te real louvor.
+
+2.Fomos como fugitivos, longe do paterno lar, 
+Mas, quais filhos redimidos, nos quiseste abençoar. 
+Por amor nos perdoaste, nos levaste para Ti; 
+Nos beijaste, nos sentaste à paterna mesa aqui.
+
+3.Já por Tuas mãos vestidos com os trajes de favor, 
+Dentro em casa recolhidos desfrutamos Teu amor. 
+Redimidos e lavados, renascidos para Deus; 
+Restaurados, bem amados, feitos cidadãos dos céus.
+
+4.Aba, aqui, nós Te adoramos, muito alegres por saber 
+Que por nós que em Cristo estamos, vão Teus anjos conhecer 
+Teu saber maravilhoso, Tua graça, Teu amor; 
+E movidos de alegria Te adorar com novo ardor.
+
+
   <hr>
  </div>
 </div>";  
