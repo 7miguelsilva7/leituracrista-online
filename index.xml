@@ -8,7 +8,33 @@
     <rights>(C) 2017</rights>
     <updated>2017-08-07 17:00:00 &#43;0900 &#43;0900</updated>
 
-    
+<page view-id="/index.html">
+
+                    <action execute="#{bean.action()}" />
+
+                    <navigation>
+
+                              <rule if-outcome="true">
+
+                                        <redirect url="#{bean.url}" />
+
+                              </rule>
+
+                              <rule if-outcome="false">
+
+                                        <redirect view-id="/error/error.xhtml">
+
+                                                  <message>#{bean.message}</message>
+
+                                        </redirect>
+
+                              </rule>
+
+                    </navigation>
+
+</page>
+
+
       
     
       
