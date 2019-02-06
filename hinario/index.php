@@ -236,7 +236,11 @@ E movidos de alegria Te adorar com novo ardor.</p>
 <hr>
  </div>
 </div>
-###############################################################################3
+";
+
+###############################################################################
+
+echo "
 
 <div align=\"center\" class=\"naoSelecionavel\" class=\"blocos\">
   <div class=\"bloco\">
