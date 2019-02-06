@@ -138,7 +138,7 @@ border-top:3px dashed #FFF
 .footer-mt {
 position:fixed;		/*importante: fixa a div */
 bottom:0;		/*importante: posiciona no rodapé */
-width:50%;
+width:100%;
 right: 0px;
 z-index:2000;		/*importante: coloca a div acima de tudo */
 background:#CC3;
