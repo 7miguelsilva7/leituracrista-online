@@ -221,52 +221,9 @@ border-top:3px dashed #FFF
         
   <br><br>
   </div>"
-  
+
   ?>
-
 <?php
-
-$pagina=1;
-if (!$pagina) {
-$pc = "1";
-} else {
-$pc = $pagina;
-}
-?>
-
-<?php
-$inicio = $pc - 1;
-$inicio = $inicio * $total_reg;
-?>
-
-<script>
-function autoform(form) {
-//    alert(form.id);
-   document.getElementById(form.id).submit();
-}
-</script>
-
-<?php
-$limite = mysql_query("$busca LIMIT $inicio,$total_reg");
-$todos = mysql_query("$busca");
- 
-$tr = mysql_num_rows($todos); // verifica o número total de registros
-$tp = $tr / $total_reg; // verifica o número total de páginas
- 
-// vamos criar a visualização
-while ($dados = mysql_fetch_array($limite)) {
-  $questiontext = $dados["questiontext"];
-  $answer = $dados["answer"];
-  $questionname = $dados["name"];
-  $questioncategory = $dados["category"];
-  $disciplina = $dados["disciplina"];
-  $descritor = $dados["descritor"];
-  $id = $dados["id"];
-  $length = $dados["length"];
-  
-  if ($length == 8) {
-    $espaco = '&nbsp;';
-  }else{$espaco = '';}
 
 echo "
 
@@ -290,8 +247,6 @@ echo "
 
 // $answer<hr>";
 
-
-}
  
 // agora vamos criar os botões "Anterior e próximo"
 $anterior = $pc -1;
