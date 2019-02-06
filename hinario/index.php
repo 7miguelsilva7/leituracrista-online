@@ -206,7 +206,7 @@ echo "
 <div align=\"center\" class=\"naoSelecionavel\" class=\"blocos\">
   <div class=\"bloco\">
 
-  <font color=\"white\">@$disciplina@</font>
+  <font color=\"white\">001</font>
   <font color=\"white\">@$disciplina@@$descritor@</font>
 
 001 - Aba, Pai, a Ti Chegamos </p>
