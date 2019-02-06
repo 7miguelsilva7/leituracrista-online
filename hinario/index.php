@@ -5,9 +5,7 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-    <title><?
-  echo "Gerador-" . date("d-m-Y");
-  ?></title>
+    <title>Hinário para Uso Offline</title>
 </head>
 
 <body >
@@ -16,7 +14,7 @@
   <button class="btn" data-cad="@MT@" onclick="filterSelection('matematica')"> Matamática</button>
 </div><br> -->
 
-<a target="_parent" href='http://edumais.com.br/gerarprovas'><img style="display:scroll;position:fixed;top:20px;right:30px;width:40px;height:40px;" src="http://edumais.com.br/gerarprovas/img/back.png"></a>
+<a target="_parent" href='http://edumais.com.br/gerarprovas'><img style="display:scroll;position:fixed;top:20px;right:30px;width:40px;height:40px;" src="#"></a>
 
 <style>
 
