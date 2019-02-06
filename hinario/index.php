@@ -172,7 +172,7 @@ border-top:3px dashed #FFF
 
   <div id=\"myDIV\" class=\"footer-mt\" style=\"overflow-y: auto; height:100%; \">
   </p>
-     <a href=\"#\" class=\"btn\" data-cad=\"@Todos@\" onclick=\"filterSelection('matematica');myFunction()\"><B>HINOS</B></a><P>
+     <a href=\"#\" class=\"btn\" data-cad=\"@Todos@\" onclick=\"filterSelection('matematica');\"><B>HINOS</B></a><P>
      <a onclick=\"myFunction()\" href=\"#\" class=\"btn\" data-cad=\"@001@\">001</a>
      <a onclick=\"myFunction()\" href=\"#\" class=\"btn\" data-cad=\"@002@\">002</a>
      <a href=\"#\" class=\"btn\" data-cad=\"@003@\">003</a>
@@ -428,6 +428,7 @@ if ($pc<$tp) {
           }else {
             $(this).fadeIn();
           }
+          myFunction()
         }); 
     
       });
