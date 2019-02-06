@@ -167,134 +167,133 @@ border-top:3px dashed #FFF
 
   <div id="myDIV" class="footer-mt" style="overflow-y: auto; height:100%; ">
   </p>
-     <a href="#" class="btn" data-cad="@Todos@" onclick="myFunction()"><B>HINOS</B></a><P>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@Todos@"><B>HINOS</B></a><P>
      <a onclick="myFunction()" href="#" class="btn" data-cad="@001@">001</a>
      <a onclick="myFunction()" href="#" class="btn" data-cad="@002@">002</a>
-     <a href="#" class="btn" data-cad="@003@">003</a>
-     <a href="#" class="btn" data-cad="@004@">004</a>
-     <a href="#" class="btn" data-cad="@005@">005</a>
-     <a href="#" class="btn" data-cad="@006@">006</a>
-     <a href="#" class="btn" data-cad="@007@">007</a>
-     <a href="#" class="btn" data-cad="@008@">008</a>
-     <a href="#" class="btn" data-cad="@009@">009</a>
-     <a href="#" class="btn" data-cad="@010@">010</a>
-     <a href="#" class="btn" data-cad="@011@">011</a>
-     <a href="#" class="btn" data-cad="@012@">012</a>
-     <a href="#" class="btn" data-cad="@013@">013</a>
-     <a href="#" class="btn" data-cad="@014@">014</a>
-     <a href="#" class="btn" data-cad="@015@">015</a>
-     <a href="#" class="btn" data-cad="@016@">016</a>
-     <a href="#" class="btn" data-cad="@017@">017</a>
-     <a href="#" class="btn" data-cad="@018@">018</a>
-     <a href="#" class="btn" data-cad="@019@">019</a>
-     <a href="#" class="btn" data-cad="@020@">020</a>
-     <a href="#" class="btn" data-cad="@021@">021</a>
-     <a href="#" class="btn" data-cad="@022@">022</a>
-     <a href="#" class="btn" data-cad="@023@">023</a>
-     <a href="#" class="btn" data-cad="@024@">024</a>
-     <a href="#" class="btn" data-cad="@025@">025</a>
-     <a href="#" class="btn" data-cad="@026@">026</a>
-     <a href="#" class="btn" data-cad="@027@">027</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@028@">028</a>
-     <a href="#" class="btn" data-cad="@Todos@">Todos</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@003@">003</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@004@">004</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@005@">005</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@006@">006</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@007@">007</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@008@">008</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@009@">009</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@010@">010</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@011@">011</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@012@">012</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@013@">013</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@014@">014</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@015@">015</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@016@">016</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@017@">017</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@018@">018</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@019@">019</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@020@">020</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@021@">021</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@022@">022</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@023@">023</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@024@">024</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@025@">025</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@026@">026</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@027@">027</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
+     <a onclick="myFunction()" href="#" class="btn" data-cad="@028@">028</a>
         
   <br><br>
   </div>
