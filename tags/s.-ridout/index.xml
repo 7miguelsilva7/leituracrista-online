@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S. Ridout on Leitura Cristã</title>
+    <link>http://localhost/hugo-teste/public/tags/s.-ridout/</link>
+    <description>Recent content in S. Ridout on Leitura Cristã</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 21 Jul 2017 17:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://localhost/hugo-teste/public/tags/s.-ridout/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Os Limites da Disciplina</title>
+      <link>http://localhost/hugo-teste/public/folhetos/dotrinarios/os-limites-da-disciplina/</link>
+      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
+      
+      <guid>http://localhost/hugo-teste/public/folhetos/dotrinarios/os-limites-da-disciplina/</guid>
+      <description>Os Limites da Disciplina  janeiro 10, 2017  fonte: https://minutos-finais.blogspot.com.br:2017:01/os-limites-da-disciplina-s-ridout.html
+Por “disciplina” queremos dizer o exercício geral de cuidado no governo da casa de Deus, com o qual Ele se comprometeu com seu povo. Isso inclui então as várias formas nas quais esse cuidado se manifesta, desde a mais simples forma de interesse e aconselhamento dos irmãos, a mais pública correção e reprovação na assembleia, assim como a final, algumas vezes necessária, exclusão da comunhão dos santos.</description>
+    </item>
+    
+  </channel>
+</rss>

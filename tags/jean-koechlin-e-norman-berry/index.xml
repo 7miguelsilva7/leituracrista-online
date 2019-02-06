@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jean Koechlin E Norman Berry on Leitura Cristã</title>
+    <link>http://localhost/hugo-teste/public/tags/jean-koechlin-e-norman-berry/</link>
+    <description>Recent content in Jean Koechlin E Norman Berry on Leitura Cristã</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 01 May 2017 17:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://localhost/hugo-teste/public/tags/jean-koechlin-e-norman-berry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Estudo do Livro de Levítico</title>
+      <link>http://localhost/hugo-teste/public/livros/estudo-do-livro-de-levitico/</link>
+      <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
+      
+      <guid>http://localhost/hugo-teste/public/livros/estudo-do-livro-de-levitico/</guid>
+      <description>Levítico 1:1-17 (1:1-17)
+Vamos mostrar uma visão ampla de alguns livros no Antigo e no Novo Testamento.
+Gênesis - os começos, as origens, a semente no jardim.
+Romanos - A verdade fundamental do Cristianismo. Como Deus pode receber pecadores e ainda assim permanecer santo e verdadeiro.
+Êxodo - A saída. A Redenção pelo sangue de um cordeiro. Libertação do poder do Egito através da água do Mar Vermelho.
+Atos - A saída.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gordon Hayhoe on Leitura Cristã</title>
+    <link>http://localhost/hugo-teste/public/tags/gordon-hayhoe/</link>
+    <description>Recent content in Gordon Hayhoe on Leitura Cristã</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 19 Jun 2017 17:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://localhost/hugo-teste/public/tags/gordon-hayhoe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>O Amigo e as Coisas que Nunca Mudam</title>
+      <link>http://localhost/hugo-teste/public/livretes/o-amigo-e-as-coisas-que-nunca-mudam/</link>
+      <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
+      
+      <guid>http://localhost/hugo-teste/public/livretes/o-amigo-e-as-coisas-que-nunca-mudam/</guid>
+      <description>“The Friend And The Things That Never Change”; palestra a cristãos em La Mirada, CA, 29:12:85.
+O AMIGO E AS COISAS QUE NUNCA MUDAM &amp;ldquo;O Seu falar é muitíssimo suave; sim, Ele é totalmente desejável. Tal é o meu Amado, e tal o meu Amigo, ó filhas de Jerusalém.&amp;rdquo; (Cânticos 5:16) &amp;ldquo;Tu, Senhor, no princípio fundaste a Terra, e os céus são obra das Tuas mãos: eles perecerão, mas Tu permanecerás; e todos eles, como roupa, envelhecerão, e como um manto os enrolarás, e como um vestido se mudarão, mas Tu és o mesmo, e os Teus anos não acabarão.</description>
+    </item>
+    
+  </channel>
+</rss>

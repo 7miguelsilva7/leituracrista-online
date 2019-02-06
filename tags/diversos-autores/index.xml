@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diversos Autores on Leitura Cristã</title>
+    <link>http://localhost/hugo-teste/public/tags/diversos-autores/</link>
+    <description>Recent content in Diversos Autores on Leitura Cristã</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 09 Jun 2017 17:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://localhost/hugo-teste/public/tags/diversos-autores/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qual o Teu Destino</title>
+      <link>http://localhost/hugo-teste/public/livros/qual-seu-destino/</link>
+      <pubDate>Fri, 09 Jun 2017 17:00:00 +0900</pubDate>
+      
+      <guid>http://localhost/hugo-teste/public/livros/qual-seu-destino/</guid>
+      <description>Título do original inglês: Whither Bound? — Diversos Autores — Editado originalmente por A. C. Groth. Publicado também em outros países, no todo ou em parte, em inglês, alemão, árabe, chinês, espanhol, francês, italiano, russo, tamil, telugú e várias outras línguas.
+Publicado no Brasil em versão impressa por VERDADES VIVAS
+Primeira Edição — 1980
+Segunda Edição — 1986
+Terceira Edição — 1993
+VERDADES VIVAS é uma Associação sem fins lucrativos, com o objetivo de divulgar o evangelho e a sã doutrina de nosso Senhor Jesus Cristo.</description>
+    </item>
+    
+  </channel>
+</rss>
