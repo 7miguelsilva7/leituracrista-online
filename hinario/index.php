@@ -218,7 +218,7 @@ echo "
   <font color=\"white\">@001@</font>
   <font color=\"white\">@Todos@</font></p>
 
-  001 - Aba, Pai, a Ti Chegamos </p></p>
+  <b>001 - Aba, Pai, a Ti Chegamos</b> </p></p>
 
 1.Aba, Pai! A Ti chegamos, hoje, em nome de Jesus,</br> 
 Deus e Pai a Ti chamamos, sendo filhos já da luz.</br> 
@@ -257,7 +257,7 @@ echo "
   <font color=\"white\">@002@</font>
   <font color=\"white\">@Todos@</font></p>
 
-  002 - Foi Nessa Noite Escura</p></p>
+  <b>002 - Foi Nessa Noite Escura</b></p></p>
 
   1.Foi nessa noite escura que Tu, Senhor Jesus,</br>
   Com Tu'alma já afligida prevendo Tua cruz,</br>
