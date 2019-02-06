@@ -1,6 +1,8 @@
 <html>
 
 <head>
+<link rel="shortcut icon" href="http://playlistcrista.esy.es/favicon.ico">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,7 +16,7 @@
   <button class="btn" data-cad="@MT@" onclick="filterSelection('matematica')"> Matamática</button>
 </div><br> -->
 
-<img onclick="myFunction()" style="display:scroll;position:fixed;top:20px;right:30px;width:40px;height:40px;" src="#">
+<img onclick="myFunction()" style="display:scroll;position:fixed;top:20px;right:30px;width:40px;height:40px;" src="http://playlistcrista.esy.es/favicon.ico">
 
 <style>
 
