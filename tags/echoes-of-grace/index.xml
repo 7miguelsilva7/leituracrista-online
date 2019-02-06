@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Echoes of Grace on Leitura Cristã</title>
-    <link>http://localhost/hugo-teste/public/tags/echoes-of-grace/</link>
+    <link>https://leituracrista.com/tags/echoes-of-grace/</link>
     <description>Recent content in Echoes of Grace on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 21 Jul 2017 17:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://localhost/hugo-teste/public/tags/echoes-of-grace/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leituracrista.com/tags/echoes-of-grace/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>O FIM DE UMA JORNADA</title>
-      <link>http://localhost/hugo-teste/public/folhetos/doutrinarios/o-fim-de-uma-jornada/</link>
+      <link>https://leituracrista.com/folhetos/doutrinarios/o-fim-de-uma-jornada/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>http://localhost/hugo-teste/public/folhetos/doutrinarios/o-fim-de-uma-jornada/</guid>
+      <guid>https://leituracrista.com/folhetos/doutrinarios/o-fim-de-uma-jornada/</guid>
       <description>O FIM DE UMA JORNADA O poema abaixo foi encontrado entre as anotações de um homem que viveu somente em busca do sucesso e da fama neste mundo. As palavras falam por si só, pairando como um solene aviso a todos os que colocam este mundo em primeiro lugar, andando na senda da ambição.
 Por que trabalhar por honra humana, E por que a glória e fama buscar? Existe razão pra ter tanta gana, Na busca de um nome famoso a zelar?</description>
     </item>

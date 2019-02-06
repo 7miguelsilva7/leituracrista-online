@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ron Reeves on Leitura Cristã</title>
-    <link>http://localhost/hugo-teste/public/tags/ron-reeves/</link>
+    <link>https://leituracrista.com/tags/ron-reeves/</link>
     <description>Recent content in Ron Reeves on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://localhost/hugo-teste/public/tags/ron-reeves/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leituracrista.com/tags/ron-reeves/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A SALVAÇÃO É PARA SEMPRE</title>
-      <link>http://localhost/hugo-teste/public/folhetos/doutrinarios/a-salvacao-e-para-sempre/</link>
+      <link>https://leituracrista.com/folhetos/doutrinarios/a-salvacao-e-para-sempre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/hugo-teste/public/folhetos/doutrinarios/a-salvacao-e-para-sempre/</guid>
+      <guid>https://leituracrista.com/folhetos/doutrinarios/a-salvacao-e-para-sempre/</guid>
       <description></description>
     </item>
     
