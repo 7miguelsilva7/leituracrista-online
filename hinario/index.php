@@ -20,6 +20,11 @@
 
 <style>
 
+body {
+    font-size: 18px;
+
+}    
+
  input[type="checkbox"], input[type="checkbox"] + label {
     cursor: pointer;
 }  
