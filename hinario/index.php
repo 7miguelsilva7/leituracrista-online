@@ -298,17 +298,13 @@ border-top:3px dashed #FFF
   <br><br>
   </div>
 
-<?php
-
-echo "
-
-<div align=\"center\" class=\"naoSelecionavel\" class=\"blocos\">
-  <div class=\"bloco\">
+<div align="center" class="naoSelecionavel" class="blocos">
+  <div class="bloco">
 
   
 
-  <font color=\"white\">@001@</font>
-  <font color=\"white\">@Todos@</font></p>
+  <font color="white">@001@</font>
+  <font color="white">@Todos@</font></p>
 
   <b>001 - Aba, Pai, a Ti Chegamos</b> </p></p>
 
@@ -335,25 +331,22 @@ E movidos de alegria Te adorar com novo ardor.</p>
 <hr>
  </div>
 </div>
-";
 
-###############################################################################
+<!-- ############################################################################### -->
 
-echo "
-
-<div align=\"center\" class=\"naoSelecionavel\" class=\"blocos\">
-  <div class=\"bloco\">
+<div align="center" class="naoSelecionavel" class="blocos">
+  <div class="bloco">
 
   
 
-  <font color=\"white\">@002@</font>
-  <font color=\"white\">@Todos@</font></p>
+  <font color="white">@002@</font>
+  <font color="white">@Todos@</font></p>
 
   <b>002 - Foi Nessa Noite Escura</b></p></p>
 
   1.Foi nessa noite escura que Tu, Senhor Jesus,</br>
   Com Tu'alma já afligida prevendo Tua cruz,</br>
-  Amando nos pediste: \"Fazei assim por Mim\";</br>
+  Amando nos pediste: "Fazei assim por Mim";</br>
   De coração fervente Te recordamos sim.</p>
   
   2.Teu coração sofrendo - imensa foi a dor!</br>
@@ -362,7 +355,7 @@ echo "
   Com gratidão lembramos que assim nos perdoou.</p>
   
   3.Imóvel, em tormento, estavas Tu ali,</br>
-  \"As ondas e as vagas\" passando sobre Ti;</br>
+  "As ondas e as vagas" passando sobre Ti;</br>
   Tão infinita graça, amor em perfeição,</br>
   Com gozo e real tristeza, recorda o coração.</p>
   
@@ -380,24 +373,6 @@ echo "
  </div>
 </div>
 
-";  
-
-// <input type=\"checkbox\">$questioncategory - $questionname<br>$questiontext<br>
-
-// $answer<hr>";
-
- 
-// agora vamos criar os botões "Anterior e próximo"
-$anterior = $pc -1;
-$proximo = $pc +1;
-if ($pc>1) {
-// echo " <a href='?pagina=$anterior'><- Anterior</a> ";
-}
-// echo "|";
-if ($pc<$tp) {
-// echo " <a href='?pagina=$proximo'>Próxima -></a>";
-}
-?>
 
 </body>
 <script>
