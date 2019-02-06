@@ -235,10 +235,49 @@ E movidos de alegria Te adorar com novo ardor.</p>
 
 <hr>
  </div>
-</div>"
+</div>
+###############################################################################3
 
+<div align=\"center\" class=\"naoSelecionavel\" class=\"blocos\">
+  <div class=\"bloco\">
 
-;  
+  
+
+  <font color=\"white\">@001@</font>
+  <font color=\"white\">@Todos@</font></p>
+
+  002 - Foi Nessa Noite Escura</p></p>
+
+  1.Foi nessa noite escura que Tu, Senhor Jesus,</br>
+  Com Tu'alma já afligida prevendo Tua cruz,</br>
+  Amando nos pediste: \"Fazei assim por Mim\";</br>
+  De coração fervente Te recordamos sim.</p>
+  
+  2.Teu coração sofrendo - imensa foi a dor!</br>
+  Bebeste por nós toda a taça de amargor,</br>
+  Lá, quando no Calvário, Teu Deus Te abandonou;</br>
+  Com gratidão lembramos que assim nos perdoou.</p>
+  
+  3.Imóvel, em tormento, estavas Tu ali,</br>
+  \"As ondas e as vagas\" passando sobre Ti;</br>
+  Tão infinita graça, amor em perfeição,</br>
+  Com gozo e real tristeza, recorda o coração.</p>
+  
+  4.Já dentre os mortos, Cristo, ressuscitado estás!</br>
+  Te vemos lá em glória, Autor de nossa paz;</br>
+  Por graça em Ti aceitos, gozando filiação,</br>
+  Lembramos Tua pena, amor e submissão.</p>
+  
+  5.Pois até que Tu venhas chamar-nos, ó Senhor!</br>
+  Pra onde o dia brilha e eterno é o esplendor,</br>
+  Queremos Tua morte aqui anunciar,</br>
+  E a ela conformados, Teu nome recordar!</p>
+
+<hr>
+ </div>
+</div>
+
+";  
 
 // <input type=\"checkbox\">$questioncategory - $questionname<br>$questiontext<br>
 
