@@ -21,7 +21,7 @@
 <style>
 
 body {
-    font-size: 18px;
+    font-size: 22px;
 
 }    
 
