@@ -203,7 +203,7 @@ border-top:3px dashed #FFF
 
 echo "
 
-<div class=\"naoSelecionavel\" class=\"blocos\">
+<div align=\"center\" class=\"naoSelecionavel\" class=\"blocos\">
   <div class=\"bloco\">
 
   <font color=\"white\">@$disciplina@</font>
