@@ -90,7 +90,7 @@ background-color: green;
 cursor: pointer;
 }
 
-p {
+/* p {
   margin-top: 4pt;
   margin-bottom: 4pt;
 }
@@ -98,7 +98,7 @@ p {
 p {
   -webkit-margin-before: 4pt;
   -webkit-margin-after: 4pt;
-}
+} */
 
 a{
 cursor: pointer;
