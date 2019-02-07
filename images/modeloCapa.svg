@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="modeloCapa.svg"
+   viewBox="0 0 116.5966 164.64464"
+   height="164.64464"
+   width="116.5966"
+   id="svg2"
+   version="1.1"
+   inkscape:export-filename="/opt/lampp/htdocs/hugo-teste/themes/hugo_theme_robust/static/images/breve-historia-da-humanidade.png"
+   inkscape:export-xdpi="100.28872"
+   inkscape:export-ydpi="100.28872"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg2"
+     inkscape:window-maximized="1"
+     inkscape:window-y="24"
+     inkscape:window-x="0"
+     inkscape:cy="84.399598"
+     inkscape:cx="74.359169"
+     inkscape:zoom="2.8284271"
+     showgrid="false"
+     id="namedview4"
+     inkscape:window-height="680"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <rect
+     style="opacity:1;fill:#808000;fill-opacity:0.92941176;stroke:none;stroke-width:4.61265659;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:0.5"
+     id="rect31"
+     width="116.5966"
+     height="164.64464"
+     x="1.7763568e-15"
+     y="-4.6169627e-15" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:14.47897243px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.65318674px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="6.4526477"
+     y="36.920811"
+     id="text35"
+     transform="scale(0.93016368,1.0750796)"><tspan
+       sodipodi:role="line"
+       id="tspan33"
+       x="6.4526477"
+       y="36.920811"
+       style="font-weight:bold;stroke-width:0.65318674px">BREVE</tspan><tspan
+       sodipodi:role="line"
+       x="6.4526477"
+       y="55.019527"
+       id="tspan37"
+       style="font-weight:bold;stroke-width:0.65318674px">HISTÓRIA</tspan><tspan
+       sodipodi:role="line"
+       x="6.4526477"
+       y="73.11824"
+       id="tspan39"
+       style="font-weight:bold;stroke-width:0.65318674px">DA </tspan><tspan
+       sodipodi:role="line"
+       x="6.4526477"
+       y="91.216957"
+       id="tspan41"
+       style="font-weight:bold;stroke-width:0.65318674px">HUMANIDADE</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:11.41376019px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51490653px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="58.87788"
+     y="146.58588"
+     id="text45"><tspan
+       sodipodi:role="line"
+       id="tspan43"
+       x="58.877876"
+       y="146.58588"
+       style="stroke-width:0.51490653px">W. W. Fereday</tspan></text>
+</svg>

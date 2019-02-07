@@ -18,11 +18,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/folhetos/doutrinarios/breve-historia-da-humanidade/</loc>
-    <lastmod>2018-11-02T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/livros/teologia-do-pacto-ou-dispensacoes/</loc>
     <lastmod>2017-08-07T17:00:00+09:00</lastmod>
   </url>
@@ -814,6 +809,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/folhetos/doutrinarios/breve-historia-da-humanidade/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/tags/bruce-anstey/</loc>
     <lastmod>2017-08-07T17:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -1119,10 +1118,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/livros/o-evangelho-em-03-minutos-lucas/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/tags/paul-wilson/</loc>
     <lastmod>2017-07-21T17:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -1207,7 +1202,6 @@
   
   <url>
     <loc>http://localhost:1313/tags/w.-w.-fereday/</loc>
-    <lastmod>2018-11-02T17:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
