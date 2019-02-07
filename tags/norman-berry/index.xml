@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Norman Berry on Leitura Cristã</title>
-    <link>http://localhost:1313/tags/norman-berry/</link>
+    <link>https://leituracrista.com/tags/norman-berry/</link>
     <description>Recent content in Norman Berry on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://localhost:1313/tags/norman-berry/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leituracrista.com/tags/norman-berry/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chapter a Day</title>
-      <link>http://localhost:1313/livros/chapter-a-day/</link>
+      <link>https://leituracrista.com/livros/chapter-a-day/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/livros/chapter-a-day/</guid>
+      <guid>https://leituracrista.com/livros/chapter-a-day/</guid>
       <description></description>
     </item>
     
