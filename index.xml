@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leitura Cristã</title>
-    <link>https://leituracrista.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://leituracrista.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Peregrinos e Estrangeiros</title>
-      <link>https://leituracrista.com/peregrinos/</link>
+      <link>http://localhost:1313/peregrinos/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/peregrinos/</guid>
+      <guid>http://localhost:1313/peregrinos/</guid>
       <description>Peregrinos e estrangeiros
 Gn 19:9 Eles, porém, disseram: Sai daí. Disseram mais: Como estrangeiro este indivíduo veio aqui habitar, e quereria ser juiz em tudo? Agora te faremos mais mal a ti do que a eles&amp;hellip;
 Estas palavras foram ditas pelos homens de Sodoma a Ló, um estrangeiro, mas que em tudo queria opinar e se intrometer nas coisas daquela cidade. Assentar-se a porta dela, era a seu costume.. Gn 19:1.</description>
@@ -23,30 +23,39 @@ Estas palavras foram ditas pelos homens de Sodoma a Ló, um estrangeiro, mas que
     
     <item>
       <title>Um morto, é um morto</title>
-      <link>https://leituracrista.com/um-morto-morto/</link>
+      <link>http://localhost:1313/um-morto-morto/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/um-morto-morto/</guid>
+      <guid>http://localhost:1313/um-morto-morto/</guid>
       <description>Isso é lógico, mas às vezes nos esquecemos deste fato.
 Muitas vezes nos dirigimos a alguém pra falar de Jesus, e expressamos o que Deus gostaria que elas fossem, modo de agir e de ser. Queremos que elas se comportem como cristãos, sem ao menos nos atentarmos em despertar suas consciências para o fato de elas serem pecadoras necessitando de salvação. A menos que sejam vivificadas pelo Espírito de nada adianta todo bem proceder de suas vidas, seria como vestir um porco, ou um cão, com pele de ovelha, logo eles acabariam voltando a lama ou ao seu próprio vômito.</description>
     </item>
     
     <item>
       <title>A Autoridade Divina Delegada a Assembleia</title>
-      <link>https://leituracrista.com/livretes/a-autoridade-divina-delegada-a-assembleia/</link>
+      <link>http://localhost:1313/livretes/a-autoridade-divina-delegada-a-assembleia/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-autoridade-divina-delegada-a-assembleia/</guid>
+      <guid>http://localhost:1313/livretes/a-autoridade-divina-delegada-a-assembleia/</guid>
       <description>A Autoridade Divina Delegada a Assembleia “Em verdade vos digo que tudo o que ligardes na terra será ligado no céu, e tudo o que desligardes na terra será desligado no céu”. Mateus 18:18
 Não há nenhuma dúvida que o assunto da autoridade da Assembleia local, para ligar e desligar em nome do Senhor Jesus Cristo, representa o poder mais alto e extraordinário que lhe foi concedido e confiado. Tal autoridade foi delegada e garantida pelo próprio Senhor Jesus Cristo para ser exercida em Seu nome e em Seu lugar.</description>
     </item>
     
     <item>
+      <title>BREVE HISTÓRIA DA HUMANIDADE</title>
+      <link>http://localhost:1313/folhetos/doutrinarios/breve-historia-da-humanidade/</link>
+      <pubDate>Fri, 02 Nov 2018 17:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/folhetos/doutrinarios/breve-historia-da-humanidade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Teologia do Pacto ou Dispensações</title>
-      <link>https://leituracrista.com/livros/teologia-do-pacto-ou-dispensacoes/</link>
+      <link>http://localhost:1313/livros/teologia-do-pacto-ou-dispensacoes/</link>
       <pubDate>Mon, 07 Aug 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/teologia-do-pacto-ou-dispensacoes/</guid>
+      <guid>http://localhost:1313/livros/teologia-do-pacto-ou-dispensacoes/</guid>
       <description>Qual a maneira correta de se interpretar as Escrituras?
 Título Original: “A Dispensational or a Covenantal Interpretation of Scripture - Which Isaías the Truth?”
 Bruce Anstey
@@ -62,10 +71,10 @@ Salvo indicação em contrário, as passagens bíblicas desta edição em portug
     
     <item>
       <title>O que respondi Volume 11</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-11/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-11/</link>
       <pubDate>Tue, 01 Aug 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-11/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-11/</guid>
       <description>O que respondi&amp;hellip; aos que me perguntaram sobre a Bíblia
 — Volume 11 —
 por
@@ -83,28 +92,28 @@ As citações são da Bíblia nas das versões ACF - Almeida Corrigida Fiel, ARC
     
     <item>
       <title>A Cruz e a Glória</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-cruz-e-a-gloria/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-cruz-e-a-gloria/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-cruz-e-a-gloria/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-cruz-e-a-gloria/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Expectativa</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-expectativa/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-expectativa/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-expectativa/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-expectativa/</guid>
       <description>A EXPECTATIVA Amado, paremos um pouco para considerar quanto tempo ainda resta até que vejamos a face do Senhor! Sua face, Sua própria face, Aquele que é &amp;ldquo;o mais distinguido entre dez mil&amp;rdquo; (Cânticos 5:10 V. Atualizada), o &amp;ldquo;totalmente desejável&amp;rdquo; (Cânticos 5:16) - Jesus, nosso Senhor. Alguns de nós ainda são jovens; outros já estão velhos, mas mesmo que Ele não venha nos buscar no tempo de vida que nos resta aqui, Ele não tardará.</description>
     </item>
     
     <item>
       <title>A História da Igreja</title>
-      <link>https://leituracrista.com/livros/a-historia-da-igreja/</link>
+      <link>http://localhost:1313/livros/a-historia-da-igreja/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/a-historia-da-igreja/</guid>
+      <guid>http://localhost:1313/livros/a-historia-da-igreja/</guid>
       <description>A História da Igreja Título do original em Inglês: “Church History”, por Andrew Miller.
 Licença Creative Commons: Tradução do livro “Church History” de Andrew Miller de http://a-historia-da-igreja.blogspot.com.br/ está licenciado com uma Licença Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional. Baseado no trabalho disponível em http://www.stempublishing.com/history/.
 Mais conteúdo em texto e áudio com a sã doutrina você encontra em:
@@ -114,49 +123,49 @@ Literaturas em formato impresso: www.verdadesvivas.com.br Evangelho em</descript
     
     <item>
       <title>A Igreja</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-igreja/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-igreja/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-igreja/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-igreja/</guid>
       <description>&amp;ldquo;A Few Thoughts on The Church&amp;rdquo;, Christian Treasury, Jun. 94
 A IGREJA A Palavra de Deus mostra claramente que havia, para o ministério, dons de diversos tipos, mas nunca insinua que a Igreja concedesse tais dons, ou que ela dava a autoridade necessária para que fossem usados. Os dons são divinamente concedidos, e a autoridade flui diretamente da Palavra de Deus. &amp;ldquo;Ora há diversidade de dons, mas o Espírito é o mesmo.</description>
     </item>
     
     <item>
       <title>A ÚLTIMA TROMBETA</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-ultima-trombeta/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-ultima-trombeta/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-ultima-trombeta/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-ultima-trombeta/</guid>
       <description>A ÚLTIMA TROMBETA F. G. PATTERSON &amp;ldquo;Porquanto o Senhor mesmo, dada a Sua palavra de ordem, ouvida a voz do arcanjo, e ressoada a trombeta de Deus, descerá dos céus, e os mortos em Cristo ressuscitarão primeiro.&amp;rdquo; 1 Tessalonicenses 4:16
 O Exército do Senhor espera por uma ordem apenas &amp;ndash; uma preciosa e gloriosa palavra! Aquele que outrora fez ouvir Sua voz neste mundo em humilde graça, e que agora fala no céu com graça jamais alterada pelo pecado do homem, irá em breve dar a &amp;ldquo;Sua palavra de ordem&amp;rdquo; (1 Tessalonicenses 4:16) dirigida aos que são Seus.</description>
     </item>
     
     <item>
       <title>ADORAÇÃO CRISTÃ</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/adoracao-crista/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/adoracao-crista/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/adoracao-crista/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/adoracao-crista/</guid>
       <description>ADORAÇÃO CRISTÃ Os dois grandes elementos da adoração cristã são a presença do Espírito Santo e a recordação do sacrifício de Cristo, a qual é comemorada na ceia do Senhor. Porém, nesta adoração, as afeições estão conectadas com todo o nosso relacionamento com Deus e aí se desenvolvem. Deus, em Sua majestade, é adorado. Os dons de Sua própria providência são reconhecidos. Ele, que é Espírito, é adorado em espírito e em verdade.</description>
     </item>
     
     <item>
       <title>ALIANÇAS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/aliancas/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/aliancas/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/aliancas/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/aliancas/</guid>
       <description>Traduzido de MORRISH BIBLE DICTIONARY
 ALIANÇAS Deus faz Suas alianças por conta própria, sem consultar o homem. Com Noé Deus fez uma aliança de que não voltaria a destruir o mundo com um dilúvio, e como garantia daquele concerto Ele colocou o arco-íris nas nuvens (Gênesis 9:8-17). Este tipo de aliança assume a forma de uma promessa incondicional. Assim foi a aliança que Deus fez com Abraão, primeiro para com sua posteridade biológica em Gênesis 15:4-6 e depois no sentido de seu descendente, Cristo (Gênesis 22:15-18).</description>
     </item>
     
     <item>
       <title>AS CARTAS AS SETE IGREJAS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/as-cartas-as-7-igrejas/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/as-cartas-as-7-igrejas/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/as-cartas-as-7-igrejas/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/as-cartas-as-7-igrejas/</guid>
       <description>(Traduzido de Concise Bible Dictionary - G.A.Morrish, E.L.Bevir, J.N.Darby e J.A.Trench)
 AS CARTAS ÀS 7 IGREJAS Apocalipse 2 e 3
 ​1. ÉFESO - Quando observamos as várias citações a respeito desta igreja, verificamos que houve um declínio gradual: Atos 20:29-30; 1 Coríntios 15:32; 1 Timóteo 1:3; 2 Timóteo 1:15. A característica apontada por Cristo é que ela havia deixado o seu primeiro amor. A perda da sua motivação e do poder de devoção e serviço caracterizam a primeira decadência da igreja, e embora talvez ninguém tivesse observado, isso foi notado pelo Senhor.</description>
@@ -164,47 +173,47 @@ AS CARTAS ÀS 7 IGREJAS Apocalipse 2 e 3
     
     <item>
       <title>AS VERDADES ABSOLUTAS DE DEUS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/as-verdades-absolutas-de-deus/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/as-verdades-absolutas-de-deus/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/as-verdades-absolutas-de-deus/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/as-verdades-absolutas-de-deus/</guid>
       <description>AS VERDADES ABSOLUTAS DE DEUS Certa vez, um professor fez um comentário que tem vindo a minha mente nestes dias. Depois de ter ouvido falar de sua necessidade do Salvador, ele comentou: &amp;ldquo;Você não pode ter certeza das coisas de que você fala, não existem verdades absolutas. Tudo é relativo&amp;rdquo;. Ele então passou a falar das &amp;ldquo;zonas cinzentas &amp;rdquo; da vida, no qual é impossível saber com precisão o que é verdadeiro.</description>
     </item>
     
     <item>
       <title>CONSIDERANDO MEU IRMÃO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/considerando-meu-irmao/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/considerando-meu-irmao/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/considerando-meu-irmao/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/considerando-meu-irmao/</guid>
       <description>CONSIDERANDO MEU IRMÃO &amp;ldquo;O amor cobre todas as transgressões&amp;rdquo; (Provérbios 10:12). Que maravilhosa declaração é esta! Implica em algo muito prático e ativo, nada teórico, pois é a marca característica pela qual os cristãos são conhecidos (João 13:35). Amor é a diferença entre religião e Cristianismo, entre sinceridade e o que é abstrato e superficial. É o único motivo para um serviço aceitável ao Senhor.
 Este amor, posto por Deus nos corações dos crentes (Romanos 5:5), é o poder que nos capacita a agirmos como devemos.</description>
     </item>
     
     <item>
       <title>DEUS ESTÁ EM TODAS AS CIRCUNSTNCIAS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/deus-esta-em-todas-as-circunstancias/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/deus-esta-em-todas-as-circunstancias/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/deus-esta-em-todas-as-circunstancias/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/deus-esta-em-todas-as-circunstancias/</guid>
       <description>DEUS ESTÁ EM TODAS AS CIRCUNSTNCIAS Não há nada que ajude tanto o cristão a suportar as provas que encontra em seu caminho do que o hábito de ver Deus em todas as circunstâncias. Não há circunstância, por mais trivial ou comum que seja, que não possa ser considerada como um mensageiro de Deus, se apenas o ouvido tiver sido circuncidado para ouvir, e a mente for espiritual para entender a mensagem.</description>
     </item>
     
     <item>
       <title>EU SOU DO SENHOR</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/eu-sou-do-senhor/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/eu-sou-do-senhor/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/eu-sou-do-senhor/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/eu-sou-do-senhor/</guid>
       <description>EU SOU DO SENHOR Que conforto podemos encontrar em tais palavras! O Senhor Jesus nos redimiu com Seu sangue precioso (1 Pd. 1:18,19), nos tem em grande estima e, nos tendo comprado para Si (1 Coríntios 7:23), irá, com toda certeza, nos guardar (1 Pd. 1:5). Ninguém nos arrebatará de Sua mão (João 10:28). Nossa vida está segura muito além de todas as eventualidades, pois está &amp;ldquo;escondida com Cristo em Deus&amp;rdquo; (Colossenses 3:3).</description>
     </item>
     
     <item>
       <title>JESUS NÃO PODERIA PECAR</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/jesus-nao-poderia-pecar/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/jesus-nao-poderia-pecar/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/jesus-nao-poderia-pecar/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/jesus-nao-poderia-pecar/</guid>
       <description>JESUS NÃO PODERIA PECAR WILLIAM MACDONALD
 Heb 2:18 Porque, naquilo que ele mesmo, sendo tentado, padeceu, pode socorrer aos que são tentados.
 O Senhor Jesus foi tentado de fora para dentro, mas nunca de dentro para fora. A tentação no deserto mostra ele sendo tentado de fora para dentro. Satanás apareceu a ele e tentou atraí-lo com um estímulo externo. Mas o Salvador jamais podia ser tentado a pecar por cobiças ou paixões internas, pois não havia pecado nele e não havia nada para responder ao pecado.</description>
@@ -212,10 +221,10 @@ O Senhor Jesus foi tentado de fora para dentro, mas nunca de dentro para fora. A
     
     <item>
       <title>JUGO DESIGUAL</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/jugo-desigual/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/jugo-desigual/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/jugo-desigual/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/jugo-desigual/</guid>
       <description>Answers to Correspondents, C. H. Mackintosh, pg. 103
 JUGO DESIGUAL &amp;ldquo;Não vos prendais a um jugo desigual com os infiéis; porque, que sociedade tem a justiça com a injustiça? E que comunhão tem a luz com as trevas?&amp;rdquo; (2 Coríntios 6:14).
 Cremos que é um lamentável pecado para um cristão, casar-se com uma pessoa não convertida; e temos tomado conhecimento de casos em que as pessoas que agiram em deliberada desobediência neste solene assunto tiveram que colher os mais amargos frutos por toda a vida.</description>
@@ -223,49 +232,49 @@ Cremos que é um lamentável pecado para um cristão, casar-se com uma pessoa n�
     
     <item>
       <title>MEDO DE PERDER A SALVAÇÃO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/medo-de-perder-a-salvacao/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/medo-de-perder-a-salvacao/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/medo-de-perder-a-salvacao/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/medo-de-perder-a-salvacao/</guid>
       <description>MEDO DE PERDER A SALVAÇÃO É um sentimento muito comum, aos recém-convertidos ao Senhor, o medo de perderem a sua salvação, por notarem que o pecado continua a operar em sua carne. Como quem escreve estas linhas viveu também tal experiência e, pela graça de Deus, a superou, desejo ajudar os que sentem tal amargura que é o medo de se perderem novamente.
 Não é possível que isto aconteça, pois Cristo &amp;ldquo;com uma só oblação aperfeiçoou PARA SEMPRE os que são santificados&amp;rdquo; (Hebreus 10:14).</description>
     </item>
     
     <item>
       <title>MISSIONÁRIOS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/missionarios/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/missionarios/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/missionarios/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/missionarios/</guid>
       <description>MISSIONÁRIOS A palavra “ Missionários traz à mente a imagem de cristãos intrépidos viajando para terras distantes para falar a rudes selvagens acerca do amor de Deus. Eles atravessam indescritíveis perigos e enfrentam imensos obstáculos sem que sejam abalados em sua fé em Deus. Um “ missionário” parece ser alguém com uma força espiritual muito maior do que aquela que eu tenho, ou possa esperar possuir. Pelo menos é isto o que eu gostaria de acreditar.</description>
     </item>
     
     <item>
       <title>MÚSICA INSTRUMENTAL NAS REUNIÕES</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/musica-instrumental-nas-reunioes/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/musica-instrumental-nas-reunioes/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/musica-instrumental-nas-reunioes/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/musica-instrumental-nas-reunioes/</guid>
       <description>MÚSICA INSTRUMENTAL NAS REUNIÕES C. BUCHANAN
 O ensino acerca do que é aceitável e agradável a Deus nesta dispensação presente é de primordial importância para nosso louvor e adoração, o que se trata do mais alto privilégio que um cristão pode ter enquanto aqui. Três passagens das Escrituras nos dão instruções claras a respeito: &amp;ldquo;Ora o Deus de paciência e consolação vos conceda o mesmo sentimento uns para com os outros, segundo Cristo Jesus.</description>
     </item>
     
     <item>
       <title>NAAMÃ, O LEPROSO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/naama-o-leproso/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/naama-o-leproso/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/naama-o-leproso/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/naama-o-leproso/</guid>
       <description>NAAMÃ, O LEPROSO CHARLES STANLEY
 &amp;ldquo;Naamã, chefe do exército do rei da Síria, era um grande homem diante do seu senhor, e de muito respeito; porque por ele o Senhor dera livramento aos siros: e era este varão homem valoroso porém leproso.&amp;rdquo; (2 Reis 5:1) Quanto vale, afinal, a grandeza nas coisas deste mundo? Um homem pode se tornar bem famoso; pode prosperar nos negócios até superar quem quer que seja, ou pode escalar o mais alto pináculo de honra da grandeza política ou militar.</description>
     </item>
     
     <item>
       <title>NO MUNDO MAS NÃO DO MUNDO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/no-mundo-mas-nao-do-mundo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/no-mundo-mas-nao-do-mundo/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/no-mundo-mas-nao-do-mundo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/no-mundo-mas-nao-do-mundo/</guid>
       <description>Tradução: MARCIO ROGÉRIO DE FREITAS
 NO MUNDO MAS NÃO DO MUNDO W. J. Prost
 Em Sua oração ao Pai em João 17, pouco antes de ir para a cruz, o Senhor Jesus fez várias referências a Ele mesmo no que diz respeito ao mundo. Duas delas são muito significativas para o cristão hoje. Primeiro, lemos: &amp;ldquo;Eu não estou mais no mundo; mas eles estão no mundo&amp;rdquo; (v. 11). Em segundo lugar, Ele diz: &amp;ldquo;porque não são do mundo, assim como eu não sou do mundo&amp;rdquo; (v.</description>
@@ -273,39 +282,39 @@ Em Sua oração ao Pai em João 17, pouco antes de ir para a cruz, o Senhor Jesu
     
     <item>
       <title>NO MUNDO MAS NÃO DO MUNDO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/no-mundo-mas-nao-do-mundo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/no-mundo-mas-nao-do-mundo/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/no-mundo-mas-nao-do-mundo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/no-mundo-mas-nao-do-mundo/</guid>
       <description>NOSSA LUTA Deus ainda não está julgando as nações, e nem ainda introduzindo um governo justo na Terra sob a direção do &amp;ldquo;Seu Ungido&amp;rdquo;. Não; pelo contrário, em soberana graça e bondade, Ele está salvando pecadores dentre as nações antes que caia o juízo. Portanto, nós que somos santos com uma vocação celestial totalmente acima e fora deste mundo, não devemos nos preocupar com os assuntos mundanos, e sim com o &amp;ldquo;reino de Deus, e&amp;hellip; as coisas pertencentes ao Senhor Jesus Cristo&amp;rdquo; (Atos 28:31).</description>
     </item>
     
     <item>
       <title>NOSSO SENHOR JESUS CRISTO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/nosso-senhor-jesus-cristo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/nosso-senhor-jesus-cristo/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/nosso-senhor-jesus-cristo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/nosso-senhor-jesus-cristo/</guid>
       <description>NOSSO SENHOR JESUS CRISTO H. E. HAYHOE
 A Pessoa do Senhor Jesus Cristo, o Filho de Deus, está além da compreensão da mente humana. Ele mesmo disse: &amp;ldquo;Ninguém conhece o Filho, senão o Pai; e ninguém conhece o Pai, senão o Filho, e aquele a quem o Filho o quiser revelar&amp;rdquo; (Mateus 11:27). O Filho revelou o Pai, mas NINGUÉM compreende o Filho. A Sua Pessoa é um mistério divino.</description>
     </item>
     
     <item>
       <title>NOTAS SOBRE O SALMO 22</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/notas-sobre-o-salmo-22/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/notas-sobre-o-salmo-22/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/notas-sobre-o-salmo-22/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/notas-sobre-o-salmo-22/</guid>
       <description>NOTAS SOBRE O SALMO 22 SALMO 22
 O Salmos 22 nos foi dado por Deus para nossa devoção e adoração. O capítulo 53 de Isaías é um diálogo sobre os sofrimentos de Cristo entre Jeová, o profeta e o remanescente judeu fiel. O capítulo 2 de Jonas trata dos sofrimentos do Senhor descritos por Ele após ter passado por eles ou prevendo a libertação quando em meio a eles.</description>
     </item>
     
     <item>
       <title>NÃO ESTEJAIS INQUIETOS POR COISA ALGUMA</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/nao-estejais-inquietos-por-coisa-alguma/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/nao-estejais-inquietos-por-coisa-alguma/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/nao-estejais-inquietos-por-coisa-alguma/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/nao-estejais-inquietos-por-coisa-alguma/</guid>
       <description>&amp;ldquo;NÃO ESTEJAIS INQUIETOS POR COISA ALGUMA&amp;rdquo; H.Smith, &amp;ldquo;Seven Exortations&amp;rdquo;, Pág. 10.
 Filipenses 4:6
 A exortação do apóstolo aqui tem em vista as circunstâncias desta vida. Ele não desconhece que, em um mundo de tristezas e enfermidades, de necessidades e preocupações, haverá tribulações para se enfrentar e fardos para se carregar; mas, não deveríamos torturar nosso pobre coração com coisas assim. O próprio apóstolo escreve de uma prisão, e havia sofrido necessidades, havia tido um companheiro e colaborador doente à beira da morte; mas nessas circunstâncias tão tristes ele foi elevado acima de todo cuidado e ansiedade, e por isso podia dizer a outros: &amp;ldquo;Não estejais inquietos por coisa alguma&amp;rdquo;.</description>
@@ -313,20 +322,20 @@ A exortação do apóstolo aqui tem em vista as circunstâncias desta vida. Ele 
     
     <item>
       <title>NÃO REPOUSES A TUA MÃO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/nao-repouses-a-tua-mao/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/nao-repouses-a-tua-mao/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/nao-repouses-a-tua-mao/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/nao-repouses-a-tua-mao/</guid>
       <description>NÃO REPOUSES A TUA MÃO &amp;ldquo;Quem somente observa o vento, nunca semeará, e o que olha para as nuvens nunca segará. Semeia pela manhã a tua semente, e à tarde não repouses a tua mão, porque não sabes qual prosperará: se esta, se aquela, ou se ambas igualmente serão boas&amp;rdquo; Eclesiastes 11:4,6
 Paralisado como consequência de um acidente, um jovem chamado Pascal não tinha nenhuma companhia além daqueles que lhe prestavam cuidados.</description>
     </item>
     
     <item>
       <title>NÃO VOS COMOVE ISTO?</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/nao-vos-comove-isto/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/nao-vos-comove-isto/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/nao-vos-comove-isto/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/nao-vos-comove-isto/</guid>
       <description>NÃO VOS COMOVE ISTO? R. Erisman
 &amp;ldquo;Não vos comove isto a todos vós que passais pelo caminho? Atendei, e vede, se há dor como a minha dor, que veio sobre mim, com que o Senhor me afligiu, no dia do furor da Sua ira.&amp;rdquo; Lamentações 1:12
 Estas são palavras fortes, com certeza, que atingem o mais profundo do coração enquanto buscam por uma resposta à questão que foi levantada. Foi Jeremias, o profeta, quem primeiro pronunciou estas palavras há uns 2500 anos.</description>
@@ -334,10 +343,10 @@ Estas são palavras fortes, com certeza, que atingem o mais profundo do coraçã
     
     <item>
       <title>O CHAMADO DE DEUS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/o-chamado-de-deus/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/o-chamado-de-deus/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/o-chamado-de-deus/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/o-chamado-de-deus/</guid>
       <description>J. G. BELLET
 O CHAMADO DE DEUS J. G. Bellet
 Nos dias que antecedem o dilúvio, os que pertencem à família de Deus trilham um caminho de peregrinos. Eles deixam o mundo para Caim. Não há neles nenhum sentimento de disputa e nem tampouco o menor indício de queixa. Eles não dizem, e nem pensam em dizer, &amp;ldquo;Mestre, dize a meu irmão que reparta comigo a herança&amp;rdquo; (Lucas 12:13). Em seus hábitos e princípios de conduta, eles são tão distintos de seu irmão infrator (Caim) que parecem pertencer a uma outra raça; é como se vivessem em outro mundo.</description>
@@ -345,147 +354,147 @@ Nos dias que antecedem o dilúvio, os que pertencem à família de Deus trilham 
     
     <item>
       <title>O CÂNTICO DOS CÂNTICOS DO NOIVO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/o-cantico-dos-canticos-do-noivo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/o-cantico-dos-canticos-do-noivo/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/o-cantico-dos-canticos-do-noivo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/o-cantico-dos-canticos-do-noivo/</guid>
       <description>O CÂNTICO DOS CÂNTICOS DO NOIVO C. E. Lunden
 A criação não seria completa sem a mulher, portanto enquanto Adão dormia, Deus tirou uma costela do seu lado e formou a mulher. Ela se tornou osso de seus ossos e carne de sua carne. Seu nome, Eva, significa mãe de todos os viventes. Cristo em ressurreição é o último Adão, o primogênito da nova criação, e a Igreja se torna Sua noiva.</description>
     </item>
     
     <item>
       <title>O ESPÍRITO DE GRAÇA</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/o-espirito-de-graca/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/o-espirito-de-graca/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/o-espirito-de-graca/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/o-espirito-de-graca/</guid>
       <description>O ESPÍRITO DE GRAÇA QUE ESPÍRITO NÓS MANIFESTAMOS?
 O Senhor prometeu estar perto de nós em certas condições de coração, pois Ele é compassivo. Ele diz, &amp;ldquo;Perto está o Senhor dos que têm o coração quebrantado&amp;rdquo; (Salmos 34:18). Você já experimentou isto? Um coração quebrantado&amp;hellip; quanto ele dói! Acaso isto produz um espírito contrito? Se assim for, a promessa é que o Senhor &amp;ldquo;salva os contritos de espírito. Muitas são as aflições do justo, mas o Senhor o livra de todas&amp;rdquo; (Salmos 34:18-19).</description>
     </item>
     
     <item>
       <title>O FALSO MESSIAS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/o-falso-messias/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/o-falso-messias/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/o-falso-messias/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/o-falso-messias/</guid>
       <description>O FALSO MESSIAS W. SCOTT
 Uma determinada pessoa, um homem judeu e apóstata, é o Anticristo que encontramos nas profecias das Escrituras. Há aqueles que costumam apresentar o Anticristo como o líder civil do Império Romano, mas não é verdade. O Anticristo é o falso messias,o ministro de Satanás para com os judeus em Jerusalém, operando sinais e fazendo maravilhas por meio de um poder vindo diretamente de Satanás. Ele se assenta no templo de Deus, que estará construído em Jerusalém, e exige ser adorado como Deus.</description>
     </item>
     
     <item>
       <title>O FARISEU, O PUBLICANO E UM HOMEM EM CRISTO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/o-fariseu-o-publicano-e-um-homem-em-cristo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/o-fariseu-o-publicano-e-um-homem-em-cristo/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/o-fariseu-o-publicano-e-um-homem-em-cristo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/o-fariseu-o-publicano-e-um-homem-em-cristo/</guid>
       <description>O FARISEU, O PUBLICANO E UM HOMEM EM CRISTO Lucas 18:9-14 e II Corintios 12:1-11
 Lemos em Lucas 18 que – dois homens subiram ao templo a orar, um fariseu e outro publicano. Não é tão fácil como aprece erradicar o – fariseu – , pois há muito que se pode argumentar a seu favor. Vemo-lo no templo, lugar adequado para um homem religioso como ele costuma ser e o local indicado por Deus para adoração.</description>
     </item>
     
     <item>
       <title>O FIM DE UMA JORNADA</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/o-fim-de-uma-jornada/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/o-fim-de-uma-jornada/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/o-fim-de-uma-jornada/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/o-fim-de-uma-jornada/</guid>
       <description>O FIM DE UMA JORNADA O poema abaixo foi encontrado entre as anotações de um homem que viveu somente em busca do sucesso e da fama neste mundo. As palavras falam por si só, pairando como um solene aviso a todos os que colocam este mundo em primeiro lugar, andando na senda da ambição.
 Por que trabalhar por honra humana, E por que a glória e fama buscar? Existe razão pra ter tanta gana, Na busca de um nome famoso a zelar?</description>
     </item>
     
     <item>
       <title>O MUNDO INVISÍVEL - IREMOS NOS CONHECER NO CÉU?</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/o-mundo-invisivel-iremos-nos-conhecer-no-ceu/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/o-mundo-invisivel-iremos-nos-conhecer-no-ceu/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/o-mundo-invisivel-iremos-nos-conhecer-no-ceu/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/o-mundo-invisivel-iremos-nos-conhecer-no-ceu/</guid>
       <description>O MUNDO INVISÍVEL Iremos nos conhecer no céu?
 No céu o Senhor Jesus será o centro de atração e o imã de cada coração. Se por um lado isto é uma verdade, por outro é igualmente claro que um de nossos gozos estará em desfrutarmos da companhia de todos os redimidos que lá estarão. Enquanto estamos aqui na Terra, o Senhor ocupa o supremo lugar em nossos corações. No entanto, desfrutamos da companhia e da comunhão uns dos outros, e o gozo e a comunhão dos santos será também conhecido e desfrutado no céu.</description>
     </item>
     
     <item>
       <title>OS DESAPONTAMENTOS DA VIDA</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/os-desapontamentos-da-vida/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/os-desapontamentos-da-vida/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/os-desapontamentos-da-vida/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/os-desapontamentos-da-vida/</guid>
       <description>OS DESAPONTAMENTOS DA VIDA Os desapontamentos da vida são, na realidade, apenas determinações do Meu amor. Tenho hoje uma mensagem para ti, Meu filho. Vou segredá-la suavemente ao teu ouvido, a fim de que as nuvens anunciadoras da tempestade, quando aparecerem, sejam douradas de glória, e para que Os espinhos que porventura cerquem o teu caminho, sejam afastados. A mensagem é curta - uma simples frase, mas deixe que entre no fundo do teu coração e que seja para ti como que uma almofada onde possas descansar a tua cabeça fatigada.</description>
     </item>
     
     <item>
       <title>Os Limites da Disciplina</title>
-      <link>https://leituracrista.com/folhetos/dotrinarios/os-limites-da-disciplina/</link>
+      <link>http://localhost:1313/folhetos/dotrinarios/os-limites-da-disciplina/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/dotrinarios/os-limites-da-disciplina/</guid>
+      <guid>http://localhost:1313/folhetos/dotrinarios/os-limites-da-disciplina/</guid>
       <description>Os Limites da Disciplina  janeiro 10, 2017  fonte: https://minutos-finais.blogspot.com.br:2017:01/os-limites-da-disciplina-s-ridout.html
 Por “disciplina” queremos dizer o exercício geral de cuidado no governo da casa de Deus, com o qual Ele se comprometeu com seu povo. Isso inclui então as várias formas nas quais esse cuidado se manifesta, desde a mais simples forma de interesse e aconselhamento dos irmãos, a mais pública correção e reprovação na assembleia, assim como a final, algumas vezes necessária, exclusão da comunhão dos santos.</description>
     </item>
     
     <item>
       <title>PARA QUE SERVEM OS MILAGRES?</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/para-que-servem-os-milagres/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/para-que-servem-os-milagres/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/para-que-servem-os-milagres/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/para-que-servem-os-milagres/</guid>
       <description>PARA QUE SERVEM OS MILAGRES? W. FEREDAY
 Vivemos em uma época de incredulidade. Os homens dizem não acreditar mais em milagres. Isto é dito não apenas entre ateus ou céticos, mas na própria Cristandade, onde o evangelho derrama sua luz. Só falta a Cristandade dar mais um passo em sua senda de incredulidade: repudiar o próprio Deus. Este passo será dado muito em breve quando o homem se endeusar na pessoa do filho da perdição, o Anticristo, que é encontrado nas Escrituras (2 Tessalonicenses 2:3,4).</description>
     </item>
     
     <item>
       <title>POLÍTICA</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/politica/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/politica/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/politica/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/politica/</guid>
       <description>POLÍTICA Quando a campanha política começa a se aquecer e o mundo é envolvido com clamores contra ou a favor deste ou daquele candidato, os cristãos que são conscientes de sua chamada celestial podem continuar serenos, sabendo que os homens estão tão somente executando o que Deus já predeterminou por Sua mão e por Seus desígnios.
 Apesar de Satanás ser o príncipe deste mundo e estar cegando as mentes daqueles que não crêem em Cristo, Deus continua acima de todas as coisas e Se move por detrás dos cenários para executar Seus conselhos e propósitos.</description>
     </item>
     
     <item>
       <title>POR SEUS FRUTOS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/por-seus-frutos/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/por-seus-frutos/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/por-seus-frutos/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/por-seus-frutos/</guid>
       <description>POR SEUS FRUTOS Normalmente uma árvore é conhecida pelos seus frutos. Muitas pessoas que dificilmente conseguiriam diferenciar uma árvore de outra, são capazes de fazê-lo quando vêem o fruto. Existem muitos mestres religiosos cujos lábios podem nos enganar, e cujas pretensões quase que nos fazem cultivar um grande respeito por eles, mas o Senhor não nos disse que deveríamos julgá-los pelo que falavam. Não existiam mestres religiosos mais rigorosos, e nem mais presunçosos, do que os Fariseus, mas Jesus os julgou por seus frutos.</description>
     </item>
     
     <item>
       <title>QUE DENOMINAÇÃO É ESTA?</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/que-denominacao-e-esta/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/que-denominacao-e-esta/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/que-denominacao-e-esta/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/que-denominacao-e-esta/</guid>
       <description>QUE DENOMINAÇÃO É ESTA? Esta é uma pergunta que de um modo geral se faz quando se dá um folheto, ou quando convidamos a alguma reunião para o estudo da Palavra de Deus. Sem dúvida é uma pergunta sábia, especialmente nestes dias de tanta confusão.
 Mas, o que teria acontecido se a mesma pergunta houvesse sido feita nos dias dos apóstolos? Suponhamos que você tivesse vivido naquela época, e um dia se encontrasse com o apóstolo Pedro e lhe perguntasse: — Pedro, que denominação é esta?</description>
     </item>
     
     <item>
       <title>QUEM DESPREZA O DIA DAS COISAS PEQUENAS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/quem-despreza-o-dia-das-coisas-pequenas/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/quem-despreza-o-dia-das-coisas-pequenas/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/quem-despreza-o-dia-das-coisas-pequenas/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/quem-despreza-o-dia-das-coisas-pequenas/</guid>
       <description>QUEM DESPREZA O DIA DAS COISAS PEQUENAS Zacarias 4:10
 Para o mundo, hoje é o dia das grandes coisas. Em matéria de guerra, antigamente os homens estavam satisfeitos em contar seus exércitos em milhares, mas agora os milhares são desprezados - as nações devem ter seus milhões de soldados. Em matéria de finanças, onde antes as fortunas eram avaliadas em alguns poucos algarismos, agora fortunas com valores expressos em vários dígitos passaram a ser consideradas apenas como pequenas heranças.</description>
     </item>
     
     <item>
       <title>QUEM É JESUS?</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/quem-e-jesus/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/quem-e-jesus/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/quem-e-jesus/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/quem-e-jesus/</guid>
       <description>QUEM É JESUS? O mundo hoje está cheio de confusão e engano acerca de Jesus; quem Ele é, o que fez, e o que ensinou. Parte disso se deve à ignorância, mas muito é resultado da obra de Satanás para manter os homens afastados de Deus. Apesar de ser Jesus o fundamento da fé cristã, nem sempre temos uma compreensão clara de Quem Ele é! Dizer que Jesus é Deus santo, e perfeito Homem é verdade, mas parece ser uma contradição.</description>
     </item>
     
     <item>
       <title>REUNIÃO DE ORAÇÃO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/reuniao-de-oracao/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/reuniao-de-oracao/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/reuniao-de-oracao/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/reuniao-de-oracao/</guid>
       <description>REUNIÃO DE ORAÇÃO Necessitamos orar pela reunião de oração; assisti-la e orar, não como meros espectadores, mas como membros do corpo de Cristo, entrando ao trono da graça juntamente com os demais reunidos (Hebreus 4:16).
 Necessitamos resistir a toda fraqueza e cansaço; a presente graça sacerdotal de Cristo pode nos elevar sobre todo espírito mau.
 Mas se você se põe a dormir na reunião, sussurra e ora com os dentes cerrados, com as mãos sobre o rosto a cobrirem sua boca, tal oração é injusta, porque provoca a carne dos demais que ficam se esforçando para conseguir ouvi-lo, o que os cansa e aborrece.</description>
@@ -493,20 +502,20 @@ Mas se você se põe a dormir na reunião, sussurra e ora com os dentes cerrados
     
     <item>
       <title>SEGUIR A CRISTO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/seguir-a-cristo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/seguir-a-cristo/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/seguir-a-cristo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/seguir-a-cristo/</guid>
       <description>SEGUIR A CRISTO J. N. DARBY
 Se você decidiu seguir a Cristo, terá que levar em conta o quanto isto lhe custará. Talvez você tenha que deixar amigos por amor a Ele; pode ser que tenha que deixar tudo, mas a questão é: Devo deixar tudo ou deixar a Deus? &amp;ldquo;Você não poderá ter dois corações, um para o mundo e outro para Mim&amp;rdquo;, é o que Cristo poderia lhe dizer.</description>
     </item>
     
     <item>
       <title>SEGURANÇA ETERNA</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/seguranca-eterna/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/seguranca-eterna/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/seguranca-eterna/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/seguranca-eterna/</guid>
       <description>SEGURANÇA ETERNA Existem cinco coisas que deveriam acontecer antes que um salvo perca a sua salvação. Porém, são coisas impossíveis de acontecer!
 ​1. Alguém teria que nos tirar da mão do próprio Deus. &amp;ldquo;Meu Pai, que mas deu, é maior do que todos; e ninguém pode arrebatá-las da mão de meu Pai&amp;rdquo; (João 10:29).
 ​2. Alguém teria que quebrar o selo de propriedade que nos tornou propriedade particular de Deus.</description>
@@ -514,58 +523,58 @@ Se você decidiu seguir a Cristo, terá que levar em conta o quanto isto lhe cus
     
     <item>
       <title>SEUS ELEITOS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/seus-eleitos/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/seus-eleitos/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/seus-eleitos/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/seus-eleitos/</guid>
       <description>SEUS ELEITOS WILLIAM KELLY
 Os &amp;ldquo;eleitos&amp;rdquo; podem não necessariamente se referir a cristãos. Se alguém falar de eleitos em nossos dias, aí sim, mas acaso Deus não tinha &amp;ldquo;eleitos&amp;rdquo; celestiais antes de existirem cristãos? E depois que os cristãos forem levados para o céu, porventura não existirão eleitos sobre a terra? Estaria Deus impedido de mostrar misericórdia na terra porque Sua graça soberana já teria dado a nós e aos santos do Antigo Testamento nossos respectivos lugares no céu?</description>
     </item>
     
     <item>
       <title>SOBERANIA E RESPONSABILIDADE</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/soberania-e-responsabilidade/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/soberania-e-responsabilidade/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/soberania-e-responsabilidade/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/soberania-e-responsabilidade/</guid>
       <description>SOBERANIA E RESPONSABILIDADE F. B. HOLE
 Que Deus é soberano e que o homem, embora caído, é uma criatura responsável, são dois fatos que estão bem claros nas Escrituras. É quando estudamos estes dois fatos em suas implicações que nos vemos diante de uma dificuldade intelectual. É fácil colocarmos todo o peso de um lado, enquanto ignoramos quase completamente o outro. Os dois extremos são conhecidos como Hiper-Calvinismo e Arminianismo.</description>
     </item>
     
     <item>
       <title>SOFRIMENTO HUMANO E CUIDADO DIVINO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/sofrimento-humano-e-cuidado-divino/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/sofrimento-humano-e-cuidado-divino/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/sofrimento-humano-e-cuidado-divino/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/sofrimento-humano-e-cuidado-divino/</guid>
       <description>SOFRIMENTO HUMANO E CUIDADO DIVINO É necessário que Cristo esteja entre o nosso coração e o sofrimento, ao invés de este último vir a colocar-se como uma parede entre nosso coração e Cristo. Quando passamos por uma provação, não nos esqueçamos de que o que necessitamos não é ver nossas circunstâncias mudarem, mas sim obtermos uma vitória sobre nós mesmos.
 A aceitação de seguir a Cristo não significa colocar-se ao abrigo das provas e dos dissabores que gostaríamos de evitar.</description>
     </item>
     
     <item>
       <title>TEMPOS DIFÍCEIS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/tempos-dificeis/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/tempos-dificeis/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/tempos-dificeis/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/tempos-dificeis/</guid>
       <description>TEMPOS DIFÍCEIS Passamos por tempos difíceis em nossa vida. Pode acontecer de ficarmos sem dinheiro, ou talvez perdermos algo ou alguém de grande valor para nós, ou mesmo passarmos por dificuldades em nossos estudos ou em nosso trabalho. Poderá ser que venham sobre nós tempos de dificuldades tais que nunca foram experimentadas por outros. Mas devemos nos lembrar de que tudo o que nos acontece é permitido por Deus.</description>
     </item>
     
     <item>
       <title>UMA CARTA SOBRE LOUVAR A HOMENS</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/uma-carta-sobre-louvar-a-homens/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/uma-carta-sobre-louvar-a-homens/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/uma-carta-sobre-louvar-a-homens/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/uma-carta-sobre-louvar-a-homens/</guid>
       <description>Uma carta sobre louvar a homens Carta escrita no século dezenove por John Nelson Darby (1800-1882) ao Editor de um de seus livros: Meu caro amigo e irmão em Jesus Cristo, Deu-me muita satisfação ver sua tradução de meu livro. Tive o grato prazer de lê-la, ou melhor dizendo, de ter alguém que a lesse para mim, naqueles momentos dos quais o Senhor nos diz, como disse aos apóstolos, &amp;ldquo;Vinde vós, aqui à parte, a um lugar deserto, e repousai um pouco&amp;rdquo; (Marcos 6:31).</description>
     </item>
     
     <item>
       <title>ÚTIL</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/util/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/util/</link>
       <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/util/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/util/</guid>
       <description>ÚTIL G. V. WIGRAM
 Por que afinal o cristão é deixado no mundo? Se um homem constrói um relógio, ele o faz para um propósito. Ele o faz com ponteiros para mostrar o tempo; e assim, os cristãos são como membros vivos de Cristo aqui no mundo &amp;ndash; feitos para serem usados, para servir a Cristo.
 Por que você não se converteu um pouco antes de morrer? Deus teria poupado muitos problemas, e muita desonra, se Ele tivesse nos convertido um pouco antes de morrermos.</description>
@@ -573,48 +582,48 @@ Por que você não se converteu um pouco antes de morrer? Deus teria poupado mui
     
     <item>
       <title>Mefibosete - A Bondade de Deus</title>
-      <link>https://leituracrista.com/livretes/mefibosete-a-bondade-de-deus/</link>
+      <link>http://localhost:1313/livretes/mefibosete-a-bondade-de-deus/</link>
       <pubDate>Wed, 19 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/mefibosete-a-bondade-de-deus/</guid>
+      <guid>http://localhost:1313/livretes/mefibosete-a-bondade-de-deus/</guid>
       <description>MEFIBOSETE - A BONDADE DE DEUS Certa manhã bem cedo, há muitos anos, estava lendo o capítulo 9 de 2 Samuel. Depois de lê-lo uma vez, pensei, &amp;ldquo;Que capítulo estranho, acerca de um jovem aleijado de ambos os pés&amp;rdquo;. Li-o novamente, e ainda não podia ver nada nele.
 Depois de lê-lo pela terceira vez, meus olhos pararam nestas palavras: &amp;ldquo;Decerto usarei contigo de beneficência por amor de Jônatas, teu pai&amp;rdquo; (2 Samuel 9:7).</description>
     </item>
     
     <item>
       <title>O Diadema Perdido</title>
-      <link>https://leituracrista.com/livretes/o-diadema-perdido/</link>
+      <link>http://localhost:1313/livretes/o-diadema-perdido/</link>
       <pubDate>Wed, 19 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-diadema-perdido/</guid>
+      <guid>http://localhost:1313/livretes/o-diadema-perdido/</guid>
       <description>O DIADEMA PERDIDO Dizer que uma característica marcante do tempo presente é o espírito quase universal de inquietação é falar o óbvio. A coisa toda é tão patente ao ponto de ser evidente até para a mente mais frívola. Confronto de interesses, conflito, revolta e inquietação já não são novidades no mundo. Desde a entrada do pecado, quando foi que coisas assim não existiram? Todavia, ao admitirmos isso nos atrevemos a afirmar que a atual epidemia de agitação e revolta atingiu proporções tais que pode ser corretamente denominada como a principal característica desta era.</description>
     </item>
     
     <item>
       <title>O Centro de Todo Descanso</title>
-      <link>https://leituracrista.com/livretes/o-centro-de-todo-descanso/</link>
+      <link>http://localhost:1313/livretes/o-centro-de-todo-descanso/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-centro-de-todo-descanso/</guid>
+      <guid>http://localhost:1313/livretes/o-centro-de-todo-descanso/</guid>
       <description>O CENTRO DE TODO DESCANSO O próprio Deus é o único centro de todo descanso. Em toda a criação há movimento. A crosta terrestre sofre mudanças - enquanto umas ilhas são formadas, outras desaparecem sob as ondas. Terremotos atiram ao solo edifícios antes considerados sólidos. Erupções vulcânicas cobrem de destruição populações inteiras. Primavera, verão, outono e inverno se sucedem propiciando plantios e colheitas. Os rios correm para o mar, e a evaporação leva suas águas de volta aos picos das montanhas.</description>
     </item>
     
     <item>
       <title>O Espírito Santo</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/o-espirito-santo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/o-espirito-santo/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/o-espirito-santo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/o-espirito-santo/</guid>
       <description>Revisão: Luiz Amalfi
 PREFÁCIO Este breve estudo a respeito do Espírito Santo não busca apresentar qualquer novidade, mas é fruto do desejo de colocar diante dos amados santos de Deus o ensino das Escrituras sobre este importante assunto. Que estas linhas possam levar o leitor a uma meditação cuidadosa sobre as passagens bíblicas que são constantemente citadas neste estudo. Aquele que desejarem um ministério que dê uma explanação mais ampla do assunto devem buscá-lo nos escritos de J.</description>
     </item>
     
     <item>
       <title>O Falar em Línguas e o Movimento Carismático</title>
-      <link>https://leituracrista.com/livretes/o-falar-em-linguas-e-o-movimento-carismatico/</link>
+      <link>http://localhost:1313/livretes/o-falar-em-linguas-e-o-movimento-carismatico/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-falar-em-linguas-e-o-movimento-carismatico/</guid>
+      <guid>http://localhost:1313/livretes/o-falar-em-linguas-e-o-movimento-carismatico/</guid>
       <description>Revisão: Maria Cristina Marucci
 O FALAR EM LÍNGUAS E O MOVIMENTO CARISMÁTICO Algumas sérias advertências “Amados, não creiais a todo o espírito&amp;hellip;” 1 João 4:1
 Capítulo 1 - Línguas&amp;hellip; força espiritual, força satânica ou o quê? Esta é a pergunta que os cristãos enfrentam enquanto pensam no fenômeno do movimento de falar em línguas, um movimento que ultrapassou os círculos pentecostais e se estendeu a quase todos os segmentos de grupos que professam ser cristãos.</description>
@@ -622,29 +631,29 @@ Capítulo 1 - Línguas&amp;hellip; força espiritual, força satânica ou o quê
     
     <item>
       <title>O Filho de Deus</title>
-      <link>https://leituracrista.com/livretes/o-filho-de-deus/</link>
+      <link>http://localhost:1313/livretes/o-filho-de-deus/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-filho-de-deus/</guid>
+      <guid>http://localhost:1313/livretes/o-filho-de-deus/</guid>
       <description>O FILHO DE DEUS Sua Deidade, Encarnação, e Humanidade
 INTRODUÇÃO Desde o advento do Filho do Deus no mundo que as Suas mãos tinham feito, a Sua Pessoa foi objeto de incessante ataque pelo Seu inimigo mortal o diabo. Além disso, na carne com sua imutável inimizade contra Deus, o diabo sempre encontrou um instrumento pronto para empreende a sua guerra contra Aquele que foi manifestado para destruir as obras do diabo.</description>
     </item>
     
     <item>
       <title>O Grande Plano de Deus</title>
-      <link>https://leituracrista.com/livretes/o-grande-plano-de-deus/</link>
+      <link>http://localhost:1313/livretes/o-grande-plano-de-deus/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-grande-plano-de-deus/</guid>
+      <guid>http://localhost:1313/livretes/o-grande-plano-de-deus/</guid>
       <description>O GRANDE PLANO DE DEUS É reconfortante abrirmos a Palavra de Deus em busca de versículos ou assuntos que se refiram a nós mesmos - que nos mostrem como podemos desfrutar das bênçãos que nos cabem, ou então de como o Senhor pode resolver algum problema particular ou guiar-nos em alguma decisão a tomar. No entanto, se realmente desejamos conhecer o coração de Deus, é de extrema importância que desfrutemos, juntamente com Deus, de Sua Palavra - não apenas de alguns bocados aqui e ali, mas de toda ela.</description>
     </item>
     
     <item>
       <title>O Livro de Ester</title>
-      <link>https://leituracrista.com/livretes/o-livro-de-ester/</link>
+      <link>http://localhost:1313/livretes/o-livro-de-ester/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-livro-de-ester/</guid>
+      <guid>http://localhost:1313/livretes/o-livro-de-ester/</guid>
       <description>Revisão: Luiz A. P. Amalfi
 Título Original: Lecture On The Book Of Esther
 LIVRO DE ESTER INTRODUÇÃO O livro de Ester é uma das poucas porções das Escrituras que nos chamam a atenção pela ausência do nome de Deus. Isto tem, com frequência, surpreendido a muitos: os próprios judeus não eram capazes de compreender o por quê, e há hoje muitos cristãos que não diferem muito deles. E isto chegou ao ponto de se ter tornado um hábito para alguns, especialmente nestes últimos tempos, tratarem o livro de Ester com uma certa medida de descrédito, como se a ausência do nome do Senhor fosse algo suspeito — como se o livro não fosse de Deus pelo fato de o nome de Deus não ser encontrado nele.</description>
@@ -652,28 +661,28 @@ LIVRO DE ESTER INTRODUÇÃO O livro de Ester é uma das poucas porções das Esc
     
     <item>
       <title>O Mesmo Senhor Descerá do Céu</title>
-      <link>https://leituracrista.com/livretes/o-mesmo-senhor-descera-do-ceu/</link>
+      <link>http://localhost:1313/livretes/o-mesmo-senhor-descera-do-ceu/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-mesmo-senhor-descera-do-ceu/</guid>
+      <guid>http://localhost:1313/livretes/o-mesmo-senhor-descera-do-ceu/</guid>
       <description>&amp;ldquo;O MESMO SENHOR DESCERÁ DO CÉU&amp;rdquo; Um Breve Estudo sobre 1 Tessalonicenses A volta do Senhor, amado irmão, é o assunto que gostaria de tratar. Antes da vinda do Senhor a este mundo, as Escrituras não mostravam muita coisa acerca do céu. Porém, tão logo Ele aqui chegou, veio do céu um testemunho dirigido aos pastores de ovelhas, que anunciava haver glória a Deus nas maiores alturas e paz na Terra aos homens a quem Ele quer bem(?</description>
     </item>
     
     <item>
       <title>O Servo Vigilante – ou A vinda do Senhor</title>
-      <link>https://leituracrista.com/livretes/o-servo-vigilante-ou-a-vinda-do-senhor/</link>
+      <link>http://localhost:1313/livretes/o-servo-vigilante-ou-a-vinda-do-senhor/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-servo-vigilante-ou-a-vinda-do-senhor/</guid>
+      <guid>http://localhost:1313/livretes/o-servo-vigilante-ou-a-vinda-do-senhor/</guid>
       <description>O Servo Vigilante – ou A vinda do Senhor O que caracteriza a vida cristã Proponho tratar de um assunto que sinto ser de profunda importância - a vinda do Senhor Jesus; e abordá-lo, não para prová-lo como doutrina, mas para demonstrar que, no princípio, esta era uma parte substancial do próprio cristianismo. A base está na primeira vinda de Cristo e em Sua morte expiatória; mas quando olhamos além do fundamento, então vemos que a vinda do Senhor Jesus não se trata meramente uma partícula de conhecimento, mas de uma parte substancial da fé da Igreja de Deus, da qual depende o estado moral dos santos, e até mesmo o da própria igreja.</description>
     </item>
     
     <item>
       <title>O Tribunal de Cristo</title>
-      <link>https://leituracrista.com/livretes/o-tribunal-de-cristo/</link>
+      <link>http://localhost:1313/livretes/o-tribunal-de-cristo/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-tribunal-de-cristo/</guid>
+      <guid>http://localhost:1313/livretes/o-tribunal-de-cristo/</guid>
       <description>Revisão: Ana Julia Ferreira
 O Tribunal de Cristo Hamer Bay, Ontario – 11 de outubro de 2008
 Eu gostaria de falar sobre o assunto do tribunal de Cristo nesta tarde. Enquanto sua mais larga aplicação inclui crentes e incrédulos, é sobre o lado dos crentes que eu quero limitar minhas observações.
@@ -682,57 +691,57 @@ O tribunal de Cristo em conexão com os crentes é um evento que irá acontecer 
     
     <item>
       <title>O Vínculo Matrimonial</title>
-      <link>https://leituracrista.com/livretes/o-vinculo-matrimonial/</link>
+      <link>http://localhost:1313/livretes/o-vinculo-matrimonial/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-vinculo-matrimonial/</guid>
+      <guid>http://localhost:1313/livretes/o-vinculo-matrimonial/</guid>
       <description>O VÍNCULO MATRIMONIAL O QUE DIZEM AS ESCRITURAS ACERCA DE DIVÓRCIO E NOVO CASAMENTO É importante reconhecer que &amp;ldquo;casado&amp;rdquo; significa uma posição assumida por um tempo determinado e de uma forma que é reconhecida como tal pelas &amp;ldquo;potestades que há&amp;rdquo; (Romanos 13:1). Quando um homem e uma mulher se unem, eles tornam-se &amp;ldquo;dois numa só carne&amp;rdquo; (1 Coríntios 6:16), mas isso não é exatamente o matrimônio no sentido bíblico (João 4:18).</description>
     </item>
     
     <item>
       <title>Os Dez Mandamentos</title>
-      <link>https://leituracrista.com/livretes/os-dez-mandamentos/</link>
+      <link>http://localhost:1313/livretes/os-dez-mandamentos/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/os-dez-mandamentos/</guid>
+      <guid>http://localhost:1313/livretes/os-dez-mandamentos/</guid>
       <description>OS DEZ MANDAMENTOS Seu conteúdo moral e sua aplicação para o cristão Tenho o propósito de considerar aqui o assunto dos dez mandamentos e sua aplicação moral para o cristão. Mas antes vamos ler algumas passagens das Escrituras: &amp;ldquo;Sabendo que o homem não é justificado pelas obras da lei, mas pela fé em Jesus Cristo&amp;hellip; Porque eu pela lei estou morto para a lei, para viver para Deus&amp;hellip; Todos aqueles pois que são das obras da lei estão debaixo da maldição; porque escrito está: Maldito todo aquele que não permanecer em todas as coisas que estão escritas no livro da lei, para fazê-las.</description>
     </item>
     
     <item>
       <title>Os Sofrimentos e as Glórias de Cristo no Salmo 22</title>
-      <link>https://leituracrista.com/livretes/os-sofrimentos-e-as-glorias-de-cristo-no-salmo-22/</link>
+      <link>http://localhost:1313/livretes/os-sofrimentos-e-as-glorias-de-cristo-no-salmo-22/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/os-sofrimentos-e-as-glorias-de-cristo-no-salmo-22/</guid>
+      <guid>http://localhost:1313/livretes/os-sofrimentos-e-as-glorias-de-cristo-no-salmo-22/</guid>
       <description>OS SOFRIMENTOS E AS GLÓRIAS DE CRISTO NO SALMO 22 A suma da verdade ensinada neste salmo é que &amp;ldquo;louvarão ao Senhor os que O buscam&amp;rdquo; (Salmos 22:26). Trata-se do fruto da pura graça, expressa de uma maneira notável e bem diferente de uma esperança ou promessa. Com toda a certeza, o fato de que o Santo devesse ser desamparado por Deus não se trata de uma promessa, e é esta a base que é posta aqui para o louvor.</description>
     </item>
     
     <item>
       <title>Participantes da Natureza Divina 2 Pedro 1</title>
-      <link>https://leituracrista.com/livretes/participantes-da-natureza-divina-2-pedro-1/</link>
+      <link>http://localhost:1313/livretes/participantes-da-natureza-divina-2-pedro-1/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/participantes-da-natureza-divina-2-pedro-1/</guid>
+      <guid>http://localhost:1313/livretes/participantes-da-natureza-divina-2-pedro-1/</guid>
       <description>PARTICIPANTES DA NATUREZA DIVINA 2 PEDRO 1
 O grande cuidado que o apóstolo tem para escrever pela segunda vez a estes crentes hebreus dando-lhes instruções a respeito de seu andar, e advertindo-os dos males que viriam, é uma prova clara de que ele não contava com uma continuação da ordem apostólica. O tema geral da carta e seus detalhes também excluem tal pensamento. Certamente, no segundo capítulo, foi mostrado o estado terrível que estava previsto, e então, que Deus julgaria todo aquele cenário.</description>
     </item>
     
     <item>
       <title>Parábolas De Mateus 13</title>
-      <link>https://leituracrista.com/livretes/parabolas-de-mateus/</link>
+      <link>http://localhost:1313/livretes/parabolas-de-mateus/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/parabolas-de-mateus/</guid>
+      <guid>http://localhost:1313/livretes/parabolas-de-mateus/</guid>
       <description>Título original: Papers on Evangelization — C. H. Mackintosh
 PARÁBOLAS DE MATEUS 13 Parábolas de Mateus 13 representa o comentário sobre o mesmo capítulo do Evangelho e é parte do livro Lectures on The Gospel of Matthew escrito por William Kelly e publicado pela primeira vez em 1868: Na impossibilidade de publicarmos, no momento, o livro na sua íntegra, procuramos trazer aos leitores ao menos uma pequena parte que, temos certeza, será de grande valor a todo aquele que se alegra em conhecer um pouco mais da Palavra de Deus.</description>
     </item>
     
     <item>
       <title>Pedras Grandes e Preciosas</title>
-      <link>https://leituracrista.com/livretes/pedras-grandes-e-preciosas/</link>
+      <link>http://localhost:1313/livretes/pedras-grandes-e-preciosas/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/pedras-grandes-e-preciosas/</guid>
+      <guid>http://localhost:1313/livretes/pedras-grandes-e-preciosas/</guid>
       <description>PEDRAS GRANDES E PRECIOSAS CHARLES STANLEY
 &amp;ldquo;E ordenou cortadores de pedras, para que lavrassem pedras de cantaria, para edificar a casa de Deus.&amp;rdquo; (1 Crônicas 22:2).
 Desnecessário é dizer que a construção do Templo de Salomão é um dos mais interessantes estudos da antiguidade; e quando aquele edifício no Monte Moriá é visto como o tipo do atual edifício celestial de Deus, o assunto torna-se infinitamente mais interessante.
@@ -741,37 +750,37 @@ A primeira coisa que nos é apresentada nessa edificação é esta: Davi, o pai,
     
     <item>
       <title>Por Causa dos Anjos</title>
-      <link>https://leituracrista.com/livretes/por-causa-dos-anjos/</link>
+      <link>http://localhost:1313/livretes/por-causa-dos-anjos/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/por-causa-dos-anjos/</guid>
+      <guid>http://localhost:1313/livretes/por-causa-dos-anjos/</guid>
       <description>POR CAUSA DOS ANJOS &amp;ldquo;Mas quero que saibais que Cristo é a cabeça de todo o varão, e o varão a cabeça da mulher; e Deus a cabeça de Cristo. Todo o homem que ora ou profetiza, tendo a cabeça coberta, desonra a sua própria cabeça. Mas toda a mulher que ora ou profetiza com a cabeça descoberta, desonra a sua própria cabeça, porque é como se estivesse rapada. Portanto, se a mulher não se cobre com véu, tosquie-se também.</description>
     </item>
     
     <item>
       <title>Santificação o Que É?</title>
-      <link>https://leituracrista.com/livretes/santificacao-o-que-e/</link>
+      <link>http://localhost:1313/livretes/santificacao-o-que-e/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/santificacao-o-que-e/</guid>
+      <guid>http://localhost:1313/livretes/santificacao-o-que-e/</guid>
       <description>SANTIFICAÇÃO - O QUE É? Tendo o propósito de ministrar paz e conforto àqueles que, embora verdadeiramente convertidos, ainda não se apossaram da plenitude de Cristo, e que, como conseqüência, não estão desfrutando da liberdade do evangelho, consideramos de grande interesse e importância escrever sobre o assunto da Santificação. Cremos que muitos, daqueles cujo bem-estar espiritual desejamos promover, sofrem por terem uma idéia errada acerca deste assunto. Na verdade, em alguns casos, a doutrina da santificação é tão mal compreendida que chega a interferir com a fé na perfeita justificação e aceitação do crente perante Deus.</description>
     </item>
     
     <item>
       <title>Segurança Certeza e Gozo da Salvação Eterna</title>
-      <link>https://leituracrista.com/livretes/seguranca-certeza-e-gozo-da-salvacao-eterna/</link>
+      <link>http://localhost:1313/livretes/seguranca-certeza-e-gozo-da-salvacao-eterna/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/seguranca-certeza-e-gozo-da-salvacao-eterna/</guid>
+      <guid>http://localhost:1313/livretes/seguranca-certeza-e-gozo-da-salvacao-eterna/</guid>
       <description>SEGURANÇA, CERTEZA E GOZO Da Salvação Eterna Quando estamos numa estação ferroviária ouvimos, com certa freqüência, a seguinte pergunta: &amp;ldquo;Em que classe você está viajando?&amp;rdquo; Você, leitor, com toda a certeza está de viagem - de viagem para a eternidade - e pode ser que neste momento esteja muito próximo da estação final: a Morte. Permita-me, então, que lhe pergunte: &amp;ldquo;Nesta jornada pela vida, em que classe você está viajando?</description>
     </item>
     
     <item>
       <title>Sucesso</title>
-      <link>https://leituracrista.com/livretes/sucesso/</link>
+      <link>http://localhost:1313/livretes/sucesso/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/sucesso/</guid>
+      <guid>http://localhost:1313/livretes/sucesso/</guid>
       <description>SUCESSO! &amp;ldquo;Resta, irmãos meus, que vos regozijeis no Senhor. Não me aborreço de escrever-vos as mesmas coisas, e é segurança para vós.&amp;rdquo; (Fp 3:1).
 O apóstolo Paulo dá início ao terceiro capítulo de sua carta aos Filipenses lembrando-lhes de que o fato de estar escrevendo &amp;ldquo;as mesmas coisas&amp;rdquo;, ou seja, aquilo que já lhes havia comunicado, não o aborrecia, pelo contrário, era para eles um fator de segurança.
 Às vezes fico surpreso de como pode resultar em proveito as breves conversas que temos com os jovens; conversas estas muitas vezes repetitivas.</description>
@@ -779,20 +788,20 @@ O apóstolo Paulo dá início ao terceiro capítulo de sua carta aos Filipenses 
     
     <item>
       <title>Televisão</title>
-      <link>https://leituracrista.com/livretes/televisao/</link>
+      <link>http://localhost:1313/livretes/televisao/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/televisao/</guid>
+      <guid>http://localhost:1313/livretes/televisao/</guid>
       <description>TELEVISÃO Sentimo-nos na obrigação de examinar o assunto da televisão no lar e, sobretudo, em como isto afeta o cristão. Com o rápido crescimento deste último gigante do mundo da diversão e entretenimento, e com o aumento da propaganda para que os cristãos abram os seus lares a esta obra-prima da invenção humana, cremos que é hora de encarar o assunto de frente.
 Sendo assim, seria apropriado nos lembrarmos de uma pergunta que fez o profeta Isaías ao rei Ezequias: &amp;ldquo;Que viram em tua casa?</description>
     </item>
     
     <item>
       <title>Um Deus Justo e Salvador</title>
-      <link>https://leituracrista.com/livretes/um-deus-justo-e-salvador/</link>
+      <link>http://localhost:1313/livretes/um-deus-justo-e-salvador/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/um-deus-justo-e-salvador/</guid>
+      <guid>http://localhost:1313/livretes/um-deus-justo-e-salvador/</guid>
       <description>Revisão: Luiz Amalfi
 UM DEUS JUSTO E SALVADOR &amp;ldquo;Anunciai, e chegai-vos, e tomai conselho todos juntos: quem fez ouvir isto desde a antiguidade? Quem desde então o anunciou? Porventura não sou eu, o Senhor? E não há outro Deus senão eu; Deus JUSTO E SALVADOR não há fora de mim.&amp;rdquo; Isaías 45:21
 Todas as pessoas têm um certo conhecimento do bem e do mal; tal coisa elas dizem ser boa e tal coisa má.</description>
@@ -800,20 +809,20 @@ Todas as pessoas têm um certo conhecimento do bem e do mal; tal coisa elas dize
     
     <item>
       <title>Uma Palavra Sobre Noivado</title>
-      <link>https://leituracrista.com/livretes/uma-palavra-sobre-noivado/</link>
+      <link>http://localhost:1313/livretes/uma-palavra-sobre-noivado/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/uma-palavra-sobre-noivado/</guid>
+      <guid>http://localhost:1313/livretes/uma-palavra-sobre-noivado/</guid>
       <description>UMA PALAVRA SOBRE NOIVADO &amp;rdquo;&amp;hellip;e foi-lhe ela por mulher e amou-a&amp;rdquo; (Gênesis 24:67). Tal é o grande clímax para esta maravilhosa história de amor encontrada na Palavra de Deus, a qual nós gostaríamos de considerar em conexão com sua aplicação prática para esta importante decisão na vida dos jovens cristãos.
 Costuma-se dizer que todos buscam a satisfação de suas afeições e, maravilha das maravilhas, Deus é amor e deseja encontrar a satisfação de Suas Divinas afeições na bênção do homem redimido.</description>
     </item>
     
     <item>
       <title>Uma Variedade de Reuniões</title>
-      <link>https://leituracrista.com/livretes/uma-variedade-de-reunioes/</link>
+      <link>http://localhost:1313/livretes/uma-variedade-de-reunioes/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/uma-variedade-de-reunioes/</guid>
+      <guid>http://localhost:1313/livretes/uma-variedade-de-reunioes/</guid>
       <description>Revisão: Mario Persona
 Extraído do livro &amp;ldquo;The search for a Scripturally Gathered Assembly - A profile of a Scriptural Assembly&amp;rdquo; - Bruce Anstey
 Uma Variedade de Reuniões Uma assembleia baseada nas Escrituras terá uma variedade de reuniões como na igreja primitiva. A exortação nas escrituras é de não abandonarmos nossa congregação (Hebreus 10:25). Procurando no livro de Atos e nas Epístolas, vemos que a igreja primitiva perseverava numa variedade de reuniões (Atos 2:42).</description>
@@ -821,67 +830,67 @@ Uma Variedade de Reuniões Uma assembleia baseada nas Escrituras terá uma varie
     
     <item>
       <title>Uma Voz Mansa E Delicada</title>
-      <link>https://leituracrista.com/livretes/uma-voz-mansa-e-delicada/</link>
+      <link>http://localhost:1313/livretes/uma-voz-mansa-e-delicada/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/uma-voz-mansa-e-delicada/</guid>
+      <guid>http://localhost:1313/livretes/uma-voz-mansa-e-delicada/</guid>
       <description>UMA VOZ MANSA E DELICADA “&amp;hellip; uma voz mansa e delicada” ( 1 Reis 19:1-18) Deus geralmente usa homens para falar Sua palavra para outros homens. Elias foi um desses mensageiros. Em 1 Reis 19, nós vemos o arrependimento de Elias, o qual é uma das sete figuras de arrependimento em seu ministério. Além da missão de Elias para com Israel, seu ministério e carreira descrevem também eventos futuros para os gentios.</description>
     </item>
     
     <item>
       <title>Vem, Mostrar-Te-Ei</title>
-      <link>https://leituracrista.com/livretes/vem-mostrar-te-ei/</link>
+      <link>http://localhost:1313/livretes/vem-mostrar-te-ei/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/vem-mostrar-te-ei/</guid>
+      <guid>http://localhost:1313/livretes/vem-mostrar-te-ei/</guid>
       <description>&amp;ldquo;VEM, MOSTRAR-TE-EI&amp;rdquo; &amp;ldquo;Vem, mostrar-te-ei a esposa, a mulher do Cordeiro&amp;rdquo; (Apocalipse 21:9). Logo vem a pergunta Quem é a esposa, a mulher do Cordeiro? Em Apocalipse 22:17 são mencionados dois - &amp;ldquo;o Espírito e a esposa&amp;rdquo;. Sem dúvida, tanto o servo de Abraão como Rebeca aguardavam pelo fim da jornada que empreendiam juntos. O servo é um tipo do Espírito Santo que ocupa o lugar de Servo para a glória do Filho do Homem.</description>
     </item>
     
     <item>
       <title>Você Parte o Pão - Por Que, Quando, Onde e Como?</title>
-      <link>https://leituracrista.com/livretes/voce-parte-o-pao/</link>
+      <link>http://localhost:1313/livretes/voce-parte-o-pao/</link>
       <pubDate>Fri, 14 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/voce-parte-o-pao/</guid>
+      <guid>http://localhost:1313/livretes/voce-parte-o-pao/</guid>
       <description>INTRODUÇÃO Na noite em que Jesus foi traído, após a ceia pascal, Ele tomou &amp;ldquo;o pão, e havendo dado graças, partiu-o, e deu-lho (aos Seus discípulos), dizendo: Isto é o Meu corpo, que por vós é dado; fazei isto em memória de Mim. Semelhantemente tomou o cálice, depois da ceia, dizendo: Este cálice é o Novo Testamento no Meu sangue, que é derramado por vós&amp;rdquo; (Lucas 22:19-20).
 Jesus estava para ir à cruz, e ao Pai, deixando os Seus amados discípulos neste mundo.</description>
     </item>
     
     <item>
       <title>Como Educar a Criança?</title>
-      <link>https://leituracrista.com/livretes/como-educar-sua-crianca/</link>
+      <link>http://localhost:1313/livretes/como-educar-sua-crianca/</link>
       <pubDate>Tue, 04 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/como-educar-sua-crianca/</guid>
+      <guid>http://localhost:1313/livretes/como-educar-sua-crianca/</guid>
       <description>Prefácio Ao publicarmos “Como Educar A Criança?”, sentimos que é importante lembrar, antes de tudo, que coisa alguma pode ser feita apropriadamente se os pais ou responsáveis não forem verdadeiros filhos de Deus. Se este livreto caiu nas mãos de uma mãe ou de um pai incrédulo, nosso desejo é que você aceite o Senhor Jesus como Salvador.
 Talvez você tenha um lar em ordem, segundo os padrões humanos, mas lembre-se do que Deus diz em Hebreus 11:6: “Sem fé é impossível agradar a Deus”.</description>
     </item>
     
     <item>
       <title>Auxílio ou Empecilho</title>
-      <link>https://leituracrista.com/livretes/auxilio-ou-empecilho/</link>
+      <link>http://localhost:1313/livretes/auxilio-ou-empecilho/</link>
       <pubDate>Sun, 02 Jul 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/auxilio-ou-empecilho/</guid>
+      <guid>http://localhost:1313/livretes/auxilio-ou-empecilho/</guid>
       <description>AUXÍLIO OU EMPECILHO Que és tu? De entre os muitos favores que nos são concedidos pelo nosso bondoso Senhor, um dos mais elevados é, sem dúvida, o privilegio de estarmos presentes na Assembléia do Seu amado povo. Podemos assegurar, com confiança, que todo aquele que verdadeiramente ama a Cristo, se alegará, com os Seus onde Ele prometeu estar, seja qual for o caráter da reunião; quer seja para tomar a Ceia do Senhor, e assim recordar a Sua morte, quer para estudar a Palavra de Deus e conhecer a Sua vontade, quer para oração a fim de lhe narrarmos as nossas necessidades e receber bênçãos do Seu inesgotável tesouro - todo o coração devoto desejará estar aí presente.</description>
     </item>
     
     <item>
       <title>Amando A Sua Vinda</title>
-      <link>https://leituracrista.com/livretes/amando-a-sua-vinda/</link>
+      <link>http://localhost:1313/livretes/amando-a-sua-vinda/</link>
       <pubDate>Thu, 29 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/amando-a-sua-vinda/</guid>
+      <guid>http://localhost:1313/livretes/amando-a-sua-vinda/</guid>
       <description>Amando A Sua Vinda &amp;ldquo;Desde agora, a coroa da justiça me está guardada, a qual o Senhor, justo juiz, me dará naquele dia; e não somente a mim, mas também a todos os que amarem a Sua vinda&amp;rdquo; (2 Tm 4:8).
 Quem são os que amam a Sua vinda? Estes não terão só uma &amp;ldquo;coroa da vida&amp;rdquo;, mas uma &amp;ldquo;coroa de justiça&amp;rdquo;. Que pensamento precioso! O que devemos então entender como amar Sua vinda?</description>
     </item>
     
     <item>
       <title>Algumas Marcas Da Igreja De Deus</title>
-      <link>https://leituracrista.com/livretes/algumas-marcas-da-igreja-de-deus/</link>
+      <link>http://localhost:1313/livretes/algumas-marcas-da-igreja-de-deus/</link>
       <pubDate>Mon, 26 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/algumas-marcas-da-igreja-de-deus/</guid>
+      <guid>http://localhost:1313/livretes/algumas-marcas-da-igreja-de-deus/</guid>
       <description>Extraído Da Brochura “Letters to a Friend” (Hindrances to Fellowship)
 Algumas Marcas Da Igreja De Deus Blackheath, Agosto de 1876.
 Meu Caro Irmão, Antes de eu responder a questão pendente, parece me ser meu dever indicar em qual base o Senhor Jesus gostaria de ter o Seu povo reunido na assembleia; pois eu tenho lhe mostrado por que não podemos nos reunir com outros crentes; e isso me exporia a uma acusação de crueldade se eu me contentasse com isso.</description>
@@ -889,10 +898,10 @@ Meu Caro Irmão, Antes de eu responder a questão pendente, parece me ser meu de
     
     <item>
       <title>A Humanidade Sem Pecado Do Senhor Jesus Cristo</title>
-      <link>https://leituracrista.com/livretes/a-humanidade-sem-pecado-de-nosso-senhor-jesus-cristo/</link>
+      <link>http://localhost:1313/livretes/a-humanidade-sem-pecado-de-nosso-senhor-jesus-cristo/</link>
       <pubDate>Sun, 25 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-humanidade-sem-pecado-de-nosso-senhor-jesus-cristo/</guid>
+      <guid>http://localhost:1313/livretes/a-humanidade-sem-pecado-de-nosso-senhor-jesus-cristo/</guid>
       <description>Revisão: Luiz Amalfi
 A Humanidade Sem Pecado De Nosso Senhor Jesus Cristo &amp;ldquo;Porque nEle habita corporalmente toda a plenitude da divindade.&amp;rdquo; &amp;ldquo;Para que em tudo tenha a preeminência&amp;rdquo; (Cl 2:9; 1:18).
 Antes de começarmos a falar em detalhes acerca deste assunto tão importante que é a humanidade sem pecado do Senhor, é importante que chamemos a atenção para a glória de Sua bendita Pessoa. Ele é o Verbo eterno (Jo 1:1).</description>
@@ -900,85 +909,85 @@ Antes de começarmos a falar em detalhes acerca deste assunto tão importante qu
     
     <item>
       <title>A Igreja do Deus Vivo</title>
-      <link>https://leituracrista.com/livretes/a-igreja-do-deus-vivo/</link>
+      <link>http://localhost:1313/livretes/a-igreja-do-deus-vivo/</link>
       <pubDate>Sun, 25 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-igreja-do-deus-vivo/</guid>
+      <guid>http://localhost:1313/livretes/a-igreja-do-deus-vivo/</guid>
       <description>A IGREJA DO DEUS VIVO (Palestra a Cristãos - La Mirada, Dezembro de 1985) &amp;ldquo;Esse povo que formei para Mim, para que Me desse louvor.&amp;rdquo; (Is 43:21) &amp;ldquo;E todos os do teu povo serão justos, para sempre herdarão a Terra; serão renovos por Mim plantados, obra das Minhas mãos, para que Eu seja glorificado. O mais pequeno virá a ser mil, e o mínimo um povo grandíssimo: Eu, o Senhor, a seu tempo o farei prontamente.</description>
     </item>
     
     <item>
       <title>Unidade</title>
-      <link>https://leituracrista.com/livros/unidade/</link>
+      <link>http://localhost:1313/livros/unidade/</link>
       <pubDate>Thu, 22 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/unidade/</guid>
+      <guid>http://localhost:1313/livros/unidade/</guid>
       <description>INTRODUÇÃO As iniciais CHM se tornaram conhecidas em todo o mundo. São de Charles Henry Mackintosh, nascido em Glenmalure Barracks, Condado de Wicklow, em 1820. Seu pai era capitão de um regimento de Highland, sua mãe filha de Lady Weldon, de família há muito estabelecida na Irlanda. Mackintosh experimentou uma grande mudança espiritual aos dezoito anos de idade, depois de ler “Operations of the Spirit of God” (“Operações do Espírito de Deus”) de J.</description>
     </item>
     
     <item>
       <title>A Ceia do Senhor</title>
-      <link>https://leituracrista.com/livretes/a-ceia-do-senhor/</link>
+      <link>http://localhost:1313/livretes/a-ceia-do-senhor/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-ceia-do-senhor/</guid>
+      <guid>http://localhost:1313/livretes/a-ceia-do-senhor/</guid>
       <description>Notas do Editor Desde que foi escrito por Charles H. Mackintosh (1820-1896), este artigo sobre a Ceia do Senhor tem sido de grande auxílio a milhares de cristãos em todo o mundo. Particularmente no Brasil, foi um dos instrumentos usados por Deus para ajudar a despertar a consciência de vários irmãos, hoje reunidos somente ao nome do Senhor, para a verdade, hoje tão menosprezada, da unidade do corpo de Cristo e da expressão dessa unidade no “um só pão”.</description>
     </item>
     
     <item>
       <title>As Duas Naturezas no Crente</title>
-      <link>https://leituracrista.com/livretes/as-02-naturezas-do-crente/</link>
+      <link>http://localhost:1313/livretes/as-02-naturezas-do-crente/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/as-02-naturezas-do-crente/</guid>
+      <guid>http://localhost:1313/livretes/as-02-naturezas-do-crente/</guid>
       <description>As Duas Naturezas no Crente Gordon H. Hayhoe
 Este breve artigo foi escrito com o desejo de auxiliar as almas ansiosas, pois o Senhor quer que conheçamos e desfrutemos de nossa completa salvação. Romanos 8:23 nos mostra que devemos esperar pela redenção de nosso corpo que se dará por ocasião da vinda do Senhor, mas podemos nos regozijar no conhecimento, que agora temos, de que Deus removeu nossos pecados por meio do precioso sangue de Cristo, e também naquilo que Ele fez com respeito à natureza caída que trazemos em nós, também chamada de &amp;ldquo;velho homem&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Cobertura para a Cabeça</title>
-      <link>https://leituracrista.com/livretes/cobertura-para-a-cabeca/</link>
+      <link>http://localhost:1313/livretes/cobertura-para-a-cabeca/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/cobertura-para-a-cabeca/</guid>
+      <guid>http://localhost:1313/livretes/cobertura-para-a-cabeca/</guid>
       <description>COBERTURA PARA A CABEÇA (1co 11:3-16) (1 Co 11:3-16)
 INTRODUÇÃO O adversário de Deus e do homem – Satanás – tem sido por demais bem sucedido nos últimos cem anos em obscurecer a distinção dada por Deus entre o masculino e o feminino. A distinção de seus diferentes papéis, da aparência exterior e de um comportamento decente para o homem e a mulher na esfera Cristã está quase que totalmente perdida.</description>
     </item>
     
     <item>
       <title>Cristo Nossa Vida</title>
-      <link>https://leituracrista.com/livretes/cristo-nossa-vida/</link>
+      <link>http://localhost:1313/livretes/cristo-nossa-vida/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/cristo-nossa-vida/</guid>
+      <guid>http://localhost:1313/livretes/cristo-nossa-vida/</guid>
       <description>CRISTO, NOSSA VIDA Quando o Senhor Jesus veio ao mundo, trevas cobriam a Terra, e as pessoas estavam em densa escuridão; sim, a noite de morte prevalecia por todo o globo terrestre. Era, usando a linguagem de Jó ao falar da morte, uma terra de escuridão e sombra de morte; &amp;ldquo;terra escuríssima, como a própria escuridão; terra da sombra da morte e sem ordem alguma, e onde a luz é como a escuridão&amp;rdquo; (Jó 10:21-22).</description>
     </item>
     
     <item>
       <title>Cristo Nosso Pastor</title>
-      <link>https://leituracrista.com/livretes/cristo-nosso-pastor/</link>
+      <link>http://localhost:1313/livretes/cristo-nosso-pastor/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/cristo-nosso-pastor/</guid>
+      <guid>http://localhost:1313/livretes/cristo-nosso-pastor/</guid>
       <description>CRISTO NOSSO PASTOR Cabe aqui perguntarmos se esta relação nosso bendito Senhor tem com o Seu povo ocupa o seu devido lugar em nossas almas. É bem verdade que trata-se de algo encontrado com muito maior frequência nas Escrituras do Antigo Testamento, mas seria uma grande perda supormos que se trate de algo relacionado apenas com os judeus. Na verdade, João (capítulo 10) expressamente proíbe que cheguemos a tal conclusão, pois o Senhor claramente afirma: &amp;ldquo;Ainda tenho outras ovelhas que não são deste aprisco; também me convém agregar estas, e elas ouvirão a minha voz, e haverá um rebanho&amp;rdquo; (e não &amp;ldquo;um aprisco&amp;rdquo;) &amp;ldquo;e um Pastor&amp;rdquo; (v.</description>
     </item>
     
     <item>
       <title>Cristo Nosso Redentor</title>
-      <link>https://leituracrista.com/livretes/cristo-nosso-redentor/</link>
+      <link>http://localhost:1313/livretes/cristo-nosso-redentor/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/cristo-nosso-redentor/</guid>
+      <guid>http://localhost:1313/livretes/cristo-nosso-redentor/</guid>
       <description>CRISTO NOSSO REDENTOR Edward Dennet
 É somente pela reflexão acerca de cada aspecto em que Cristo nos é apresentado nas Escrituras, que somos capacitados a compreender, em qualquer medida, o que Ele é por nós e para nós, bem como a plenitude da verdade de nossa salvação. Já contemplamos Cristo como nosso Salvador, e a alguns pode parecer como se este título incluísse também o que Ele é como nosso Redentor; mas iremos descobrir, à medida que delineamos o assunto, que somos guiados a contemplar novos aspectos, tanto de Sua obra como de nossa condição.</description>
     </item>
     
     <item>
       <title>Cristo Para Meus Pecados, Cristo Para Meus Cuidados</title>
-      <link>https://leituracrista.com/livretes/cristo-para-meus-pecados-cristo-para-meus-cuidados/</link>
+      <link>http://localhost:1313/livretes/cristo-para-meus-pecados-cristo-para-meus-cuidados/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/cristo-para-meus-pecados-cristo-para-meus-cuidados/</guid>
+      <guid>http://localhost:1313/livretes/cristo-para-meus-pecados-cristo-para-meus-cuidados/</guid>
       <description>Evangelho de João, Capítulo 4 João 4
 É algo maravilhoso pensar em quão real era a intimidade com que o Senhor conduzia o Seu relacionamento com as pessoas neste mundo - Seus modos, e Suas maneiras para com elas - se considerarmos Quem é Ele. Isto verdadeiramente altera todos os nossos pensamentos acerca de Deus.
 Ele visitou os homens antes do dia do juízo, e nós O encontramos dando, e não julgando - tratando com os homens de um modo bem diferente do esperado.</description>
@@ -986,65 +995,65 @@ Ele visitou os homens antes do dia do juízo, e nós O encontramos dando, e não
     
     <item>
       <title>Cristo, o Centro</title>
-      <link>https://leituracrista.com/livretes/cristo-o-centro-por-que-nos-reunimos-somente-ao-seu-nome/</link>
+      <link>http://localhost:1313/livretes/cristo-o-centro-por-que-nos-reunimos-somente-ao-seu-nome/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/cristo-o-centro-por-que-nos-reunimos-somente-ao-seu-nome/</guid>
+      <guid>http://localhost:1313/livretes/cristo-o-centro-por-que-nos-reunimos-somente-ao-seu-nome/</guid>
       <description>Cristo, o Centro Por Que Nos Reunimos Somente ao Seu Nome? Esta é uma pergunta feita com freqüência àqueles que se reúnem ao nome do Senhor Jesus. Muitos têm expressado o desejo de que fosse escrito um tratado claro sobre tão importante assunto e, por conseguinte, apresento afetuosamente as considerações abaixo a todos os amados filhos de Deus. A primeira razão de nos reunirmos somente ao Seu nome é:</description>
     </item>
     
     <item>
       <title>Dois dias nas Escrituras</title>
-      <link>https://leituracrista.com/livretes/dois-dias-nas-escrituras/</link>
+      <link>http://localhost:1313/livretes/dois-dias-nas-escrituras/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/dois-dias-nas-escrituras/</guid>
+      <guid>http://localhost:1313/livretes/dois-dias-nas-escrituras/</guid>
       <description>DOIS DIAS NAS ESCRITURAS O Senhor prometeu, &amp;ldquo;Na casa de Meu Pai há muitas moradas; se não fosse assim, Eu vo-lo teria dito. Vou preparar-vos lugar. E quando Eu for, e vos preparar lugar, virei outra vez, e vos levarei para Mim mesmo, para que onde Eu estiver estejais vós também&amp;rdquo; (João 14:2-3). Ele também declarou: &amp;ldquo;Certamente cede venho&amp;rdquo; (Apocalipse 22:20). A esperança apropriada ao cristão é aguardar o Senhor vindo a qualquer memento (1 Tessalonicenses 1:9-10).</description>
     </item>
     
     <item>
       <title>Escolhas</title>
-      <link>https://leituracrista.com/livretes/escolhas/</link>
+      <link>http://localhost:1313/livretes/escolhas/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/escolhas/</guid>
+      <guid>http://localhost:1313/livretes/escolhas/</guid>
       <description>ESCOLHAS De um certo modo, este é um título meio enganador, mas expressa o que a maioria das pessoas considera como sendo uma descrição de suas vidas. As pessoas têm a tendência de sentir que a vida é uma longa sucessão de escolhas difíceis. Certamente a vida está cheia de pontos de decisão, encruzilhadas, desvios do caminho. Todavia, o que as Escrituras nos ensinam, como seguidores de Cristo, é que não existe realmente qualquer escolha para nós em qualquer uma das encruzilhadas desta vida.</description>
     </item>
     
     <item>
       <title>Espere</title>
-      <link>https://leituracrista.com/livretes/espere/</link>
+      <link>http://localhost:1313/livretes/espere/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/espere/</guid>
+      <guid>http://localhost:1313/livretes/espere/</guid>
       <description>ESPERE! Gostaria de falar a respeito de algo que, creio eu, se puder ser aprendido enquanto somos jovens, será para nós de grande auxílio. Sei, porém, que esta característica é também muito necessária para os anos mais avançados de nossa vida. Vamos ler 1 Samuel, capítulo 10, versículos 6 ao 8, que é onde o povo escolhe um rei. Tendo Saul sido escolhido para ser o rei, Samuel se dirige a ele e diz: &amp;ldquo;E o Espírito do Senhor se apoderará de ti, e profetizarás com eles, e te mudarás em outro homem.</description>
     </item>
     
     <item>
       <title>Homem e Mulher – Os Papeis Distintos na Casa de Deus</title>
-      <link>https://leituracrista.com/livretes/homem-e-mulher-os-papeis-distintos-na-casa-de-deus/</link>
+      <link>http://localhost:1313/livretes/homem-e-mulher-os-papeis-distintos-na-casa-de-deus/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/homem-e-mulher-os-papeis-distintos-na-casa-de-deus/</guid>
+      <guid>http://localhost:1313/livretes/homem-e-mulher-os-papeis-distintos-na-casa-de-deus/</guid>
       <description>Traduzido de &amp;ldquo;The SEARCH for a Scripturally Gathered Assembly - A profile of a Scriptural Assembly&amp;rdquo;
 OS PAPEIS DISTINTOS NA CASA DE DEUS Uma característica notável que identificará uma assembleia biblicamente reunida é que os papéis estabelecidos na Palavra de Deus para os irmãos e as irmãs serão colocados em prática. Apesar de isso ser uma prática comum na Igreja, as Escrituras não indicam que exista uma única posição na casa de Deus para homens e mulheres.</description>
     </item>
     
     <item>
       <title>Jônatas - Faltou Uma Coisa</title>
-      <link>https://leituracrista.com/livretes/jonatas-faltou-uma-coisa/</link>
+      <link>http://localhost:1313/livretes/jonatas-faltou-uma-coisa/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/jonatas-faltou-uma-coisa/</guid>
+      <guid>http://localhost:1313/livretes/jonatas-faltou-uma-coisa/</guid>
       <description>JÔNATAS - FALTOU UMA COISA Há algum tempo, durante uma reunião de estudo da Palavra, minha atenção foi despertada para as tristes circunstâncias da morte de Jônatas no Monte Gilboa. Israel fugiu diante do inimigo, e foi vencido. Saul foi morto, e seus três filhos foram mortos juntamente com ele. Foi a completa derrota do reino de Saul. Que triste cena - o corpo de Saul e os corpos de seus três filhos pregados no muro de Bete-Sã!</description>
     </item>
     
     <item>
       <title>Longe Do Arraial Fora Do Arraial</title>
-      <link>https://leituracrista.com/livretes/fora-do-arraial-longe-do-arraial/</link>
+      <link>http://localhost:1313/livretes/fora-do-arraial-longe-do-arraial/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/fora-do-arraial-longe-do-arraial/</guid>
+      <guid>http://localhost:1313/livretes/fora-do-arraial-longe-do-arraial/</guid>
       <description>Revisão: Luiz Amalfi
 Titulo Original: Outside The Camp
 FORA DO ARRAIAL, LONGE DO ARRAIAL &amp;ldquo;Saiamos pois a Ele fora do arraial levando o Seu vitupério&amp;rdquo; Hebreus 13:13. Poderíamos fazer várias perguntas em relação a este versículo da Bíblia. A quem foi dirigido este apelo? Por que foi dirigido? Pode ser aplicado a nós? E, se for para nós, qual é o seu motivo e significado? Busquemos a resposta a estas perguntas no temor do Senhor e para proveito de nossas almas.</description>
@@ -1052,59 +1061,59 @@ FORA DO ARRAIAL, LONGE DO ARRAIAL &amp;ldquo;Saiamos pois a Ele fora do arraial 
     
     <item>
       <title>Línguas e outros dons de Sinais</title>
-      <link>https://leituracrista.com/linguas-e-outros-dons-de-sinais-seu-lugar----g.-h.-hayhoe/</link>
+      <link>http://localhost:1313/linguas-e-outros-dons-de-sinais-seu-lugar----g.-h.-hayhoe/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/linguas-e-outros-dons-de-sinais-seu-lugar----g.-h.-hayhoe/</guid>
+      <guid>http://localhost:1313/linguas-e-outros-dons-de-sinais-seu-lugar----g.-h.-hayhoe/</guid>
       <description>Revisão: Luiz Amalfi
 LÍNGUAS E OUTROS DONS DE SINAIS Seu Lugar Nas Escrituras &amp;ldquo;Está escrito na lei: Por gente doutras línguas, e por outros lábios, falarei a este povo; e ainda assim Me não ouvirão, diz o Senhor. De sorte que as línguas são um sinal, não para os fiéis, mas para os infiéis; e a profecia não é sinal para os infiéis, mas para os fiéis&amp;rdquo; (1 Coríntios 14:21-22).</description>
     </item>
     
     <item>
       <title>Nunca!</title>
-      <link>https://leituracrista.com/livretes/nunca/</link>
+      <link>http://localhost:1313/livretes/nunca/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/nunca/</guid>
+      <guid>http://localhost:1313/livretes/nunca/</guid>
       <description>NUNCA! Será que alguma vez você se deu conta, querido leitor, de que a mesma palavra que concede o mais doce consolo ao verdadeiro crente, extingue completamente qualquer raio de esperança para o incrédulo, e não lhe deixa coisa alguma além de trevas e total desespero? Esta palavra é a mesma que aparece no início deste artigo.
 Para tornar isso mais claro, deixe-nos fazer duas perguntas que, provindas dos lábios do Senhor Jesus Cristo, são ambas respondidas por esta mesma palavra.</description>
     </item>
     
     <item>
       <title>O Amigo e as Coisas que Nunca Mudam</title>
-      <link>https://leituracrista.com/livretes/o-amigo-e-as-coisas-que-nunca-mudam/</link>
+      <link>http://localhost:1313/livretes/o-amigo-e-as-coisas-que-nunca-mudam/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-amigo-e-as-coisas-que-nunca-mudam/</guid>
+      <guid>http://localhost:1313/livretes/o-amigo-e-as-coisas-que-nunca-mudam/</guid>
       <description>“The Friend And The Things That Never Change”; palestra a cristãos em La Mirada, CA, 29:12:85.
 O AMIGO E AS COISAS QUE NUNCA MUDAM &amp;ldquo;O Seu falar é muitíssimo suave; sim, Ele é totalmente desejável. Tal é o meu Amado, e tal o meu Amigo, ó filhas de Jerusalém.&amp;rdquo; (Cânticos 5:16) &amp;ldquo;Tu, Senhor, no princípio fundaste a Terra, e os céus são obra das Tuas mãos: eles perecerão, mas Tu permanecerás; e todos eles, como roupa, envelhecerão, e como um manto os enrolarás, e como um vestido se mudarão, mas Tu és o mesmo, e os Teus anos não acabarão.</description>
     </item>
     
     <item>
       <title>O Apocalipse e o Reino - Cronologia dos Eventos Proféticos</title>
-      <link>https://leituracrista.com/livretes/o-apocalipse-e-o-reino-cronologia-dos-eventos-profeticos/</link>
+      <link>http://localhost:1313/livretes/o-apocalipse-e-o-reino-cronologia-dos-eventos-profeticos/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-apocalipse-e-o-reino-cronologia-dos-eventos-profeticos/</guid>
+      <guid>http://localhost:1313/livretes/o-apocalipse-e-o-reino-cronologia-dos-eventos-profeticos/</guid>
       <description>O APOCALIPSE E O REINO - CRONOLOGIA DOS EVENTOS PROFÉTICOS A esperança da Igreja é a vinda do Senhor. Como crentes, não esperamos que os eventos proféticos se concretizem enquanto estamos aqui na Terra. Nosso lar está no céu, e aguardamos pelo Salvador para nossa libertação corporal deste presente mundo mau que despenca para a perdição. Nossa esperança se concretizará quando escutarmos o brado de vitória e formos levados para o encontro com nosso Senhor nos ares, a fim de estarmos para sempre com Ele na casa do Pai.</description>
     </item>
     
     <item>
       <title>O Caminho de Deus e Como Encontrá-Lo</title>
-      <link>https://leituracrista.com/livretes/o-caminho-de-deus-e-como-o-encontra-lo/</link>
+      <link>http://localhost:1313/livretes/o-caminho-de-deus-e-como-o-encontra-lo/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-caminho-de-deus-e-como-o-encontra-lo/</guid>
+      <guid>http://localhost:1313/livretes/o-caminho-de-deus-e-como-o-encontra-lo/</guid>
       <description>Título Original: God&amp;rsquo;s Way and how to Find It
 O CAMINHO DE DEUS E COMO ENCONTRÁ-LO (Leia Jó28 e Lucas 11:34-36) &amp;ldquo;Essa vereda a ignora a ave de rapina, e não a viram os olhos da gralha. Nunca a pisaram filhos de animais altivos, nem o feroz leão passou por ela&amp;rdquo; (Jó 28:7-8) Que indizível misericórdia, para alguém que realmente deseja andar com Deus, saber que há um caminho onde andar!</description>
     </item>
     
     <item>
       <title>O que respondi Volume 10</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-10/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-10/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-10/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-10/</guid>
       <description>O que respondi&amp;hellip;
 aos que me perguntaram sobre a Bíblia
 — Volume 10 —
@@ -1124,10 +1133,10 @@ Ilustração de capa: Billy Frank Alexander</description>
     
     <item>
       <title>Um Só Corpo na Prática</title>
-      <link>https://leituracrista.com/livros/um-so-corpo-na-pratica/</link>
+      <link>http://localhost:1313/livros/um-so-corpo-na-pratica/</link>
       <pubDate>Mon, 19 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/um-so-corpo-na-pratica/</guid>
+      <guid>http://localhost:1313/livros/um-so-corpo-na-pratica/</guid>
       <description>&amp;ldquo;The One Body in Practice&amp;rdquo;, por Bruce Anstey
 Edição em inglês publicada por: Christian Truth Publishing
 Prefácio A maior parte deste volume foi escrita na mesma época de “A Ordem de Deus”, um livro sobre a assembleia que publiquei em 1993. Nos últimos anos acrescentei vários parágrafos a esta obra até atingir o tamanho atual. Por estar ciente de que alguns tópicos abordados neste livro certamente iriam causar certo constrangimento em algumas pessoas, decidi esperar no Senhor antes de torná-lo público.</description>
@@ -1135,10 +1144,10 @@ Prefácio A maior parte deste volume foi escrita na mesma época de “A Ordem d
     
     <item>
       <title>Qual o Teu Destino</title>
-      <link>https://leituracrista.com/livros/qual-seu-destino/</link>
+      <link>http://localhost:1313/livros/qual-seu-destino/</link>
       <pubDate>Fri, 09 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/qual-seu-destino/</guid>
+      <guid>http://localhost:1313/livros/qual-seu-destino/</guid>
       <description>Título do original inglês: Whither Bound? — Diversos Autores — Editado originalmente por A. C. Groth. Publicado também em outros países, no todo ou em parte, em inglês, alemão, árabe, chinês, espanhol, francês, italiano, russo, tamil, telugú e várias outras línguas.
 Publicado no Brasil em versão impressa por VERDADES VIVAS
 Primeira Edição — 1980
@@ -1149,29 +1158,29 @@ VERDADES VIVAS é uma Associação sem fins lucrativos, com o objetivo de divulg
     
     <item>
       <title>Princípios Fundamentais Sobre os quais A Igreja é Edificada</title>
-      <link>https://leituracrista.com/livros/principios-fundamentais-sobre-os-quais-a-igreja-e-edificada/</link>
+      <link>http://localhost:1313/livros/principios-fundamentais-sobre-os-quais-a-igreja-e-edificada/</link>
       <pubDate>Wed, 07 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/principios-fundamentais-sobre-os-quais-a-igreja-e-edificada/</guid>
+      <guid>http://localhost:1313/livros/principios-fundamentais-sobre-os-quais-a-igreja-e-edificada/</guid>
       <description>Atos 2:37-47 Atos 2:37-47
 Na Palavra de Deus encontramos o pensamento de Deus com referência à igreja de Deus. Lemos em Atos 20 que a igreja é muito querida ao coração de Deus, pois Ele pagou por ela com o sangue do Seu único Filho. Ele zela por essa igreja para que ela possa seguir adiante e permanecer em todos os seus privilégios que lhe foram garantidos na Palavra de Deus pelo Espírito Santo enviado do céu.</description>
     </item>
     
     <item>
       <title>Porque Nos Reunimos Assim</title>
-      <link>https://leituracrista.com/livros/por-que-nos-reunimos/</link>
+      <link>http://localhost:1313/livros/por-que-nos-reunimos/</link>
       <pubDate>Tue, 06 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/por-que-nos-reunimos/</guid>
+      <guid>http://localhost:1313/livros/por-que-nos-reunimos/</guid>
       <description>Palestra proferida por: J. R. Gill em uma conferência em Chicago, Estados Unidos, no ano de 1926. Tenho o desejo, amados amigos cristãos, de tratar de um certo assunto que já conquistou a atenção de alguns de nós em uma ou duas reuniões recentemente, e gostaria de pedira compreensão de alguém aqui que porventura já nos tenha ouvido tratar do mesmo assunto. Há aqui outras pessoas para as quais o assunto é novo e creio ter a mente do Senhor ao voltar a tratar disso.</description>
     </item>
     
     <item>
       <title>O que respondi Volume 07</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-7/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-7/</link>
       <pubDate>Fri, 02 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-7/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-7/</guid>
       <description>O que respondi… aos que me perguntaram sobre a Bíblia
 — Volume 7 —
 por
@@ -1188,10 +1197,10 @@ Ilustração de capa: Billy Frank Alexander</description>
     
     <item>
       <title>O que respondi Volume 08</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-8/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-8/</link>
       <pubDate>Fri, 02 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-8/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-8/</guid>
       <description>O que respondi&amp;hellip; aos que me perguntaram sobre a Bíblia
 — Volume 8 —
 por
@@ -1208,10 +1217,10 @@ Ilustração de capa: Billy Frank Alexander</description>
     
     <item>
       <title>O que respondi Volume 09</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-9/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-9/</link>
       <pubDate>Fri, 02 Jun 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-9/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-9/</guid>
       <description>O que respondi&amp;hellip; aos que me perguntaram sobre a Bíblia
 — Volume 9 —
 por
@@ -1228,19 +1237,19 @@ Ilustração de capa: Billy Frank Alexander</description>
     
     <item>
       <title>Luz para as Almas Ansiosas</title>
-      <link>https://leituracrista.com/luz-para-as-almas-ansiosas---g-cutting/</link>
+      <link>http://localhost:1313/luz-para-as-almas-ansiosas---g-cutting/</link>
       <pubDate>Fri, 26 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/luz-para-as-almas-ansiosas---g-cutting/</guid>
+      <guid>http://localhost:1313/luz-para-as-almas-ansiosas---g-cutting/</guid>
       <description>Introdução Se houve alguma coisa que pesou mais sobre o coração do autor ao escrever estas páginas, foi o pensamento de que a maioria dos que professam fé em Cristo praticam bem pouco essa fé. Em nossa preocupação com a idéia de levar paz às pessoas, existe um perigo especial que precisamos observar e orar para nos preservarmos dele e, ou seja, intrometer-nos (embora involuntariamente) entre Deus e os exercícios espirituais do indivíduo.</description>
     </item>
     
     <item>
       <title>O que respondi Volume 03</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-3/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-3/</link>
       <pubDate>Fri, 26 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-3/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-3/</guid>
       <description>O que respondi&amp;hellip; aos que me perguntaram sobre a Bíblia
 — Volume 3 —
 por
@@ -1257,10 +1266,10 @@ Ilustração de capa: Billy Frank Alexander</description>
     
     <item>
       <title>O que respondi Volume 04</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-4/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-4/</link>
       <pubDate>Fri, 26 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-4/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-4/</guid>
       <description>O que respondi&amp;hellip; aos que me perguntaram sobre a Bíblia
 — Volume 4 —
 por
@@ -1277,10 +1286,10 @@ contato@mariopersona.com.br
     
     <item>
       <title>O que respondi Volume 05</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-5/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-5/</link>
       <pubDate>Fri, 26 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-5/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-5/</guid>
       <description>O que respondi&amp;hellip; aos que me perguntaram sobre a Bíblia
 — Volume 5 —
 por
@@ -1298,10 +1307,10 @@ Ilustração de capa: Billy Frank Alexander</description>
     
     <item>
       <title>O que respondi Volume 06</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-6/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-6/</link>
       <pubDate>Fri, 26 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-6/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-6/</guid>
       <description>O que respondi&amp;hellip; aos que me perguntaram sobre a Bíblia
 — Volume 6 —
 por
@@ -1318,10 +1327,10 @@ Ilustração de capa: Billy Frank Alexander</description>
     
     <item>
       <title>O que respondi Volume 01</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-1/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-1/</link>
       <pubDate>Thu, 25 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-1/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-1/</guid>
       <description>O que respondi&amp;hellip; aos que me perguntaram sobre a Bíblia
 — Volume 1 —
 por
@@ -1339,10 +1348,10 @@ As citações são da Bíblia nas das versões ACF - Almeida Corrigida Fiel, ARC
     
     <item>
       <title>O que respondi Volume 02</title>
-      <link>https://leituracrista.com/o-que-respondi-volume-2/</link>
+      <link>http://localhost:1313/o-que-respondi-volume-2/</link>
       <pubDate>Thu, 25 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/o-que-respondi-volume-2/</guid>
+      <guid>http://localhost:1313/o-que-respondi-volume-2/</guid>
       <description>O que respondi&amp;hellip; aos que me perguntaram sobre a Bíblia
 — Volume 2 —
 por
@@ -1359,20 +1368,20 @@ Ilustração de capa: Billy Frank Alexander</description>
     
     <item>
       <title>Cristo, a Sabedoria de Deus para o Caminho do Crente</title>
-      <link>https://leituracrista.com/livretes/cristo-a-sabedoria-de-deus-para-o-caminho-do-crente/</link>
+      <link>http://localhost:1313/livretes/cristo-a-sabedoria-de-deus-para-o-caminho-do-crente/</link>
       <pubDate>Fri, 19 May 2017 23:21:28 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livretes/cristo-a-sabedoria-de-deus-para-o-caminho-do-crente/</guid>
+      <guid>http://localhost:1313/livretes/cristo-a-sabedoria-de-deus-para-o-caminho-do-crente/</guid>
       <description>Palestra a cristãos proferida por H. E. Hayhoe em Janeiro de 1950 Costumo dizer que a fé e a salvação andam juntas; que a obediência e a felicidade estão conectadas, e que felicidade é um estado de espírito e não uma questão de circunstâncias. Espero apresentar a vocês Cristo como a Sabedoria de Deus para o caminho do crente. Será este o assunto de que nos ocuparemos.
 Oh, quão delicioso é vermos nossos irmãos contentes em Cristo!</description>
     </item>
     
     <item>
       <title>A Verdadeira Igreja O Corpo e A Esposa de Cristo</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-verdadeira-igreja-o-corpo-e-a-esposa-de-cristo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-verdadeira-igreja-o-corpo-e-a-esposa-de-cristo/</link>
       <pubDate>Fri, 19 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-verdadeira-igreja-o-corpo-e-a-esposa-de-cristo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-verdadeira-igreja-o-corpo-e-a-esposa-de-cristo/</guid>
       <description>Amados irmãos, abram suas Bíblias, e confiram na Palavra de Deus.
 O que quer dizer a palavra “igreja”? O termo grego significa simplesmente uma “congregação”, “assembléia” ou “concorrência”. Atos 7:38, 19:39,41
 Emprega-se no Novo Testamento particularmente para designar o corpo de crentes em Cristo Jesus (veja Mateus 16:18; 18:17; Atos 2:47; 8:1; Ef 1:22,23; Colossenses 1:18,) .
@@ -1382,20 +1391,20 @@ Tem uma só, que se chama “a igreja de Deus” ( Atos 20:28; 1 Cor.</descripti
     
     <item>
       <title>A Vitória de José</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-vitoria-de-jose/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-vitoria-de-jose/</link>
       <pubDate>Fri, 19 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-vitoria-de-jose/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-vitoria-de-jose/</guid>
       <description>Gênesis 39 Gênesis 39
 Quando José era jovem, conseguiu uma vitória que mudou toda a sua vida. Ele havia sido vendido como escravo para o Egito, mas o Senhor estava com ele e o fazia prosperar. Quando José foi feito mordomo-mor sobre tudo o que possuía Potifar, capitão da guarda de Faraó, Deus o abençoava e ajudava em tudo o que José fazia. Então José teve que tomar uma decisão que iria mudar sua vida.</description>
     </item>
     
     <item>
       <title>Carater de Família e Religião de Família</title>
-      <link>https://leituracrista.com/livretes/carater-de-familia-e-religiao-de-familia/</link>
+      <link>http://localhost:1313/livretes/carater-de-familia-e-religiao-de-familia/</link>
       <pubDate>Fri, 19 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/carater-de-familia-e-religiao-de-familia/</guid>
+      <guid>http://localhost:1313/livretes/carater-de-familia-e-religiao-de-familia/</guid>
       <description>CARÁTER de FAMÍLIA e RELIGIÃO de FAMÍLIA
 Caráter de Família Gênesis 11:28
 Como sabemos, houve o dia da visitação à casa de Terá. A família de Sem havia se corrompido bastante e nos dias de Terá, o sexto ou sétimo depois de Sem, eles estavam servindo a falsos deuses. Mas o poder do Espírito e a chamada do Deus da glória visitou os ouvidos e o coração de Abrão, filho de Terá, e o separou daquela corrupção.</description>
@@ -1403,10 +1412,10 @@ Como sabemos, houve o dia da visitação à casa de Terá. A família de Sem hav
     
     <item>
       <title>O que a Bíblia Diz Sobre Romance e Namoro</title>
-      <link>https://leituracrista.com/livros/o-que-a-biblia-diz-sobre-romance-e-namoro/</link>
+      <link>http://localhost:1313/livros/o-que-a-biblia-diz-sobre-romance-e-namoro/</link>
       <pubDate>Fri, 19 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/o-que-a-biblia-diz-sobre-romance-e-namoro/</guid>
+      <guid>http://localhost:1313/livros/o-que-a-biblia-diz-sobre-romance-e-namoro/</guid>
       <description>O Que a Bíblia Diz Sobre Romance e Namoro
 Título do original em Inglês: “Romance, Courtship and Dating: Biblical Principles for Young Christians”, por Douglas Nicolet.
 Trabalho originalmente disponibilizado na forma do blog: http://romance-namoro.blogspot.com.br/
@@ -1416,10 +1425,10 @@ Prefácio Uma das questões mais confusas para os jovens cristãos de hoje em di
     
     <item>
       <title>O Evangelho em 3 minutos – Mateus</title>
-      <link>https://leituracrista.com/livros/o-evangelho-em-03-minutos-mateus/</link>
+      <link>http://localhost:1313/livros/o-evangelho-em-03-minutos-mateus/</link>
       <pubDate>Tue, 16 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/o-evangelho-em-03-minutos-mateus/</guid>
+      <guid>http://localhost:1313/livros/o-evangelho-em-03-minutos-mateus/</guid>
       <description>O Evangelho em 3 Minutos - Mateus
 http://www.mariopersona.com.br
 contato@mariopersona.com.br
@@ -1428,19 +1437,19 @@ As citações são da Bíblia nas da versão NVI - Nova Versão Internacional em
     
     <item>
       <title>Vida Através da Morte</title>
-      <link>https://leituracrista.com/livros/vida-atraves-da-morte/</link>
+      <link>http://localhost:1313/livros/vida-atraves-da-morte/</link>
       <pubDate>Mon, 15 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/vida-atraves-da-morte/</guid>
+      <guid>http://localhost:1313/livros/vida-atraves-da-morte/</guid>
       <description>INTRODUÇÃO - A &amp;ldquo;CARTA MAGNA&amp;rdquo; DA HUMANIDADE O AUTOR destas notas gostaria muito de recomendar ao leitor um estudo minucioso desta epístola, em oração, como preparação para todo o conhecimento das Escrituras. Lembro-me bem do benefício que obtive por haver, durante quase dois anos, deixado de lado todas as outras leituras e estudado esta epístola junto com mais algumas pessoas. Isso foi há cerca de quarenta anos, quando ainda jovem.</description>
     </item>
     
     <item>
       <title>O Evangelho em 3 Minutos - LUCAS</title>
-      <link>https://leituracrista.com/livros/o-evangelho-em-03-minutos-lucas/</link>
+      <link>http://localhost:1313/livros/o-evangelho-em-03-minutos-lucas/</link>
       <pubDate>Sun, 14 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/o-evangelho-em-03-minutos-lucas/</guid>
+      <guid>http://localhost:1313/livros/o-evangelho-em-03-minutos-lucas/</guid>
       <description>Uma mensagem urgente para quem tem pressa.
 por Mario Persona
 Smashwords Edition ISBN:
@@ -1455,10 +1464,10 @@ As citações são da Bíblia nas da versão NVI - Nova Versão Internacional em
     
     <item>
       <title>O Evangelho em 3 minutos – JOÃO</title>
-      <link>https://leituracrista.com/livros/o-evangelho-em-03-minutos-joao/</link>
+      <link>http://localhost:1313/livros/o-evangelho-em-03-minutos-joao/</link>
       <pubDate>Sat, 13 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/o-evangelho-em-03-minutos-joao/</guid>
+      <guid>http://localhost:1313/livros/o-evangelho-em-03-minutos-joao/</guid>
       <description>Uma mensagem urgente para quem tem pressa.
 por Mario Persona
 Smashwords Edition ISBN:
@@ -1473,10 +1482,10 @@ As citações são da Bíblia nas da versão NVI - Nova Versão Internacional em
     
     <item>
       <title>Acontecimentos Proféticos</title>
-      <link>https://leituracrista.com/livros/acontecimentos-profeticos/</link>
+      <link>http://localhost:1313/livros/acontecimentos-profeticos/</link>
       <pubDate>Fri, 12 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/acontecimentos-profeticos/</guid>
+      <guid>http://localhost:1313/livros/acontecimentos-profeticos/</guid>
       <description>Um Esboço Cronológico da Profecia, do Arrebatamento ao Estado Eterno Título do original em Inglês: &amp;ldquo;Outline of Prophetic Events Chronologically Arranged From the Rapture to the Eternal State&amp;rdquo;, por Bruce Anstey, Vancouver, Canadá.
 Primeira Edição em Inglês - 1987
 Segunda Edição em Inglês - 1991 (Edição Revista e Ampliada)
@@ -1486,10 +1495,10 @@ Colaboraram na Revisão: Lineu A. Binotti, Elaine W. Binotti, Paulo R.</descript
     
     <item>
       <title>A Obra do Evangelho</title>
-      <link>https://leituracrista.com/livros/a-obra-do-evangelho/</link>
+      <link>http://localhost:1313/livros/a-obra-do-evangelho/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/a-obra-do-evangelho/</guid>
+      <guid>http://localhost:1313/livros/a-obra-do-evangelho/</guid>
       <description>Como o Senhor me guiou
 Primeira Edição em Português: 1994
 CAPÍTULO 1 Nada Para Ler&amp;hellip;
@@ -1499,19 +1508,19 @@ Quando criança tive pouquíssimas oportunidades, mas uma grande sede por livros
     
     <item>
       <title>A Ordem de Deus</title>
-      <link>https://leituracrista.com/livros/a-ordem-de-deus/</link>
+      <link>http://localhost:1313/livros/a-ordem-de-deus/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/a-ordem-de-deus/</guid>
+      <guid>http://localhost:1313/livros/a-ordem-de-deus/</guid>
       <description>Apresentação Há alguns anos li o livro &amp;ldquo;God&amp;rsquo;s Order&amp;rdquo;, escrito por Bruce Anstey, um irmão canadense com o qual tenho comunhão por estarmos congregados somente ao nome do Senhor Jesus, ele no Canadá e eu no Brasil. O que chamou minha atenção foi que o autor conseguia colocar em ordem os principais tópicos que todo cristão sincero deveria buscar nas Escrituras para saber se está congregado segundo a ordem estabelecida por Deus, ou se apenas segue tradições criadas por homens.</description>
     </item>
     
     <item>
       <title>A Total Suficiência de Cristo</title>
-      <link>https://leituracrista.com/livros/a-total-suficiencia-de-cristo/</link>
+      <link>http://localhost:1313/livros/a-total-suficiencia-de-cristo/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/a-total-suficiencia-de-cristo/</guid>
+      <guid>http://localhost:1313/livros/a-total-suficiencia-de-cristo/</guid>
       <description>Traduzido de &amp;ldquo;The All-sufficiency of Christ”
 Primeira Parte A obra de Cristo como o único lugar de descanso para a consciência
 A partir do momento em que a alma é levada a sentir a realidade de sua condição diante de Deus – a profundidade de sua ruína, culpa e miséria – sua completa e irremediável ruína, não poderá haver descanso até que o Espírito Santo revele ao coração um Cristo pleno e todo-suficiente.</description>
@@ -1519,10 +1528,10 @@ A partir do momento em que a alma é levada a sentir a realidade de sua condiç�
     
     <item>
       <title>A Vinda do Senhor</title>
-      <link>https://leituracrista.com/livros/a-vinda-do-senhor/</link>
+      <link>http://localhost:1313/livros/a-vinda-do-senhor/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/a-vinda-do-senhor/</guid>
+      <guid>http://localhost:1313/livros/a-vinda-do-senhor/</guid>
       <description>Comentários Sobre a Vinda Do Senhor
 INTRODUÇÃO O leitor atento do Novo Testamento encontrará em suas páginas três fatos solenes e significativos colocados diante de si. O primeiro, que o Filho de Deus veio a este mundo e Se foi; o segundo, que o Espírito Santo desceu à terra e permanece aqui; e, o terceiro, que o Senhor Jesus voltará.
 Estes são os três grandes temas descortinados nas Escrituras do Novo Testamento, e vamos descobrir que cada um deles tem uma dupla aplicação: uma diz respeito ao mundo e outra à Igreja.</description>
@@ -1530,10 +1539,10 @@ Estes são os três grandes temas descortinados nas Escrituras do Novo Testament
     
     <item>
       <title>Ao Seu Nome</title>
-      <link>https://leituracrista.com/livros/ao-seu-nome/</link>
+      <link>http://localhost:1313/livros/ao-seu-nome/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/ao-seu-nome/</guid>
+      <guid>http://localhost:1313/livros/ao-seu-nome/</guid>
       <description>Título Original: QUESTIONS YOUNG PEOPLE ASK REGARDING THE GROUND OF GATHERING FOR CHRISTIANS GOOD QUESTIONS THAT DESERVE GOOD ANSWERS VOLUMES 1 AND 2
 Publicado originalmente por: Christian Truth Publishing Canadá
 APRESENTAÇÃO Originalmente algumas destas perguntas e respostas foram apresentadas pelo autor aos jovens em uma conferência em Denver, Colorado, em Setembro de 2009. Em razão do pouco tempo disponível na ocasião, não foi possível na ocasião responder a todas as perguntas contidas aqui de maneira mais detalhada.</description>
@@ -1541,20 +1550,20 @@ APRESENTAÇÃO Originalmente algumas destas perguntas e respostas foram apresent
     
     <item>
       <title>Cartas a um Novo Convertido</title>
-      <link>https://leituracrista.com/livros/cartas-a-um-novo-convertido/</link>
+      <link>http://localhost:1313/livros/cartas-a-um-novo-convertido/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/cartas-a-um-novo-convertido/</guid>
+      <guid>http://localhost:1313/livros/cartas-a-um-novo-convertido/</guid>
       <description>As citações são da Bíblia nas das versões ACF — Almeida Corrigida Fiel, ARC — Almeida Revista e Corrigida, ARA— Almeida Revista e Atualizada, JND — John Nelson Darby ou eventualmente uma tradução livre baseada nestas versões.
 Trechos deste livro podem ser reproduzidos, copiados e distribuídos desde que o texto não seja alterado e seja feita a devida referência ao autor Prefácio da Primeira Edição em Inglês Estas cartas a um novo convertido estão sendo reimpressas, sem alteração, da revista Christian’s Friend (Amigo do Cristão).</description>
     </item>
     
     <item>
       <title>Cartas aos Evangelistas</title>
-      <link>https://leituracrista.com/livros/cartas-aos-evangelistas/</link>
+      <link>http://localhost:1313/livros/cartas-aos-evangelistas/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/cartas-aos-evangelistas/</guid>
+      <guid>http://localhost:1313/livros/cartas-aos-evangelistas/</guid>
       <description>Título original: PAPERS ON EVANGELIZATION
 “Não podemos ficar ociosos. O tempo se abrevia! A eternidade se aproxima a passos largos! O Mestre é por demais digno de nosso empenho! As almas são por demais preciosas! A estação propícia ao trabalho logo terminará! Estejamos, portanto, em nome do Senhor, despertos e ativos.”
 C. H. Mackintosh nos motiva à ação, em dependência e oração, na seara de Deus, já branca para a colheita nestes momentos finais da Sua graça.</description>
@@ -1562,10 +1571,10 @@ C. H. Mackintosh nos motiva à ação, em dependência e oração, na seara de D
     
     <item>
       <title>Estudo do Livro de Levítico</title>
-      <link>https://leituracrista.com/livros/estudo-do-livro-de-levitico/</link>
+      <link>http://localhost:1313/livros/estudo-do-livro-de-levitico/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/estudo-do-livro-de-levitico/</guid>
+      <guid>http://localhost:1313/livros/estudo-do-livro-de-levitico/</guid>
       <description>Levítico 1:1-17 (1:1-17)
 Vamos mostrar uma visão ampla de alguns livros no Antigo e no Novo Testamento.
 Gênesis - os começos, as origens, a semente no jardim.
@@ -1576,209 +1585,200 @@ Atos - A saída.</description>
     
     <item>
       <title>Minha Decisão</title>
-      <link>https://leituracrista.com/livros/minha-decisao/</link>
+      <link>http://localhost:1313/livros/minha-decisao/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livros/minha-decisao/</guid>
+      <guid>http://localhost:1313/livros/minha-decisao/</guid>
       <description>Breve Biografia de Edward Dennett
 Esclarecimento As cartas a seguir, publicadas com a permissão do amigo a quem se dirigem, não foram enviadas até terem sido impressas. Quando o amoroso protesto dele chegou às minhas mãos eu quis responder imediatamente, mas considerando que recebi muitas cartas semelhantes e consultas pessoais, publiquei minhas respostas, primeiro, para explicar o passo que tomei; em segundo lugar, para esclarecer qualquer equívoco, e em terceiro lugar, a fim de retirar publicamente de circulação meu panfleto contra os chamados “irmãos”*, aos quais me refiro nas cartas.</description>
     </item>
     
     <item>
       <title>O Caminho de Deus para o descanso, poder e consagração</title>
-      <link>https://leituracrista.com/livretes/o-caminho-de-deus-para-o-descanso-poder-e-consagracao/</link>
+      <link>http://localhost:1313/livretes/o-caminho-de-deus-para-o-descanso-poder-e-consagracao/</link>
       <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/livretes/o-caminho-de-deus-para-o-descanso-poder-e-consagracao/</guid>
+      <guid>http://localhost:1313/livretes/o-caminho-de-deus-para-o-descanso-poder-e-consagracao/</guid>
       <description>Primeira parte A triste verdade é que a maioria dos cristãos não é feliz; e se esses cristãos pudessem, confessariam que têm estado tristemente desapontados com sua vida cristã. Quando se converteram, tinham diante de si uma perspectiva cheia de promessas: parecia-lhes a aurora de um dia sem nuvens, cheio de gozo e paz. No entanto, mal haviam iniciado sua jornada, e nuvens de todo tipo já escureciam o céu, e, exceto talvez por alguns poucos raios de sol aqui e ali, a situação continuou mais ou menos inalterada.</description>
     </item>
     
     <item>
       <title>A Igreja e a Tribulação</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-igreja-e-a-tribulacao/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-igreja-e-a-tribulacao/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-igreja-e-a-tribulacao/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-igreja-e-a-tribulacao/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Mentira</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-mentira/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-mentira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-mentira/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-mentira/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Mesa do Senhor</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-mesa-do-senhor/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-mesa-do-senhor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-mesa-do-senhor/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-mesa-do-senhor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Mesa do Senhor</title>
-      <link>https://leituracrista.com/livretes/a-morte-o-estado-intermediario-a-ressurreicao-e-o-destino-final/</link>
+      <link>http://localhost:1313/livretes/a-morte-o-estado-intermediario-a-ressurreicao-e-o-destino-final/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-morte-o-estado-intermediario-a-ressurreicao-e-o-destino-final/</guid>
+      <guid>http://localhost:1313/livretes/a-morte-o-estado-intermediario-a-ressurreicao-e-o-destino-final/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Mulher - Seu Lugar nas Escrituras</title>
-      <link>https://leituracrista.com/livretes/a-mulher-seu-lugar-nas-escrituras/</link>
+      <link>http://localhost:1313/livretes/a-mulher-seu-lugar-nas-escrituras/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-mulher-seu-lugar-nas-escrituras/</guid>
+      <guid>http://localhost:1313/livretes/a-mulher-seu-lugar-nas-escrituras/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Nossa Esperança</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-nossa-esperanca/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-nossa-esperanca/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-nossa-esperanca/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-nossa-esperanca/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A OPINIÃO PÚBLICA</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-opiniao-publica/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-opiniao-publica/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-opiniao-publica/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-opiniao-publica/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Oferta Cristã e o Dízimo</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-oferta-crist%C3%A3-e-o-dizimo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-oferta-crist%C3%A3-e-o-dizimo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-oferta-crist%C3%A3-e-o-dizimo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-oferta-crist%C3%A3-e-o-dizimo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Oração e as Reuniões de Oração</title>
-      <link>https://leituracrista.com/livretes/a-ora%C3%A7%C3%A3o-e-as-reuni%C3%B5es-de-ora%C3%A7%C3%A3o/</link>
+      <link>http://localhost:1313/livretes/a-ora%C3%A7%C3%A3o-e-as-reuni%C3%B5es-de-ora%C3%A7%C3%A3o/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-ora%C3%A7%C3%A3o-e-as-reuni%C3%B5es-de-ora%C3%A7%C3%A3o/</guid>
+      <guid>http://localhost:1313/livretes/a-ora%C3%A7%C3%A3o-e-as-reuni%C3%B5es-de-ora%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Oração e o Mundo Invisivel</title>
-      <link>https://leituracrista.com/livretes/a-oracao-e-o-mundo-invisivel/</link>
+      <link>http://localhost:1313/livretes/a-oracao-e-o-mundo-invisivel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-oracao-e-o-mundo-invisivel/</guid>
+      <guid>http://localhost:1313/livretes/a-oracao-e-o-mundo-invisivel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A PORTEIRA</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-porteira/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-porteira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-porteira/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-porteira/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Presença e o Poder do Espírito de Deus</title>
-      <link>https://leituracrista.com/livretes/a-presenca-e-o-poder-do-espirito-de-deus/</link>
+      <link>http://localhost:1313/livretes/a-presenca-e-o-poder-do-espirito-de-deus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-presenca-e-o-poder-do-espirito-de-deus/</guid>
+      <guid>http://localhost:1313/livretes/a-presenca-e-o-poder-do-espirito-de-deus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A SALVAÇÃO É PARA SEMPRE</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-salvacao-e-para-sempre/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-salvacao-e-para-sempre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-salvacao-e-para-sempre/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-salvacao-e-para-sempre/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A VINDA DE CRISTO</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-vinda-de-cristo/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-vinda-de-cristo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-vinda-de-cristo/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-vinda-de-cristo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A VINHA DE NABOTE</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-vinha-de-nabote/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-vinha-de-nabote/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-vinha-de-nabote/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-vinha-de-nabote/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A fonte</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-fonte/</link>
+      <link>http://localhost:1313/folhetos/doutrinarios/a-fonte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-fonte/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/a-fonte/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ACONTECIMENTOS PROFETICOS</title>
-      <link>https://leituracrista.com/livros/acontecimentos-profeticos/</link>
+      <link>http://localhost:1313/livros/acontecimentos-profeticos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livros/acontecimentos-profeticos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BREVE HISTÓRIA DA HUMANIDADE</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/breve-historia-da-humanidade/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/folhetos/doutrinarios/breve-historia-da-humanidade/</guid>
+      <guid>http://localhost:1313/livros/acontecimentos-profeticos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chapter a Day</title>
-      <link>https://leituracrista.com/livros/chapter-a-day/</link>
+      <link>http://localhost:1313/livros/chapter-a-day/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livros/chapter-a-day/</guid>
+      <guid>http://localhost:1313/livros/chapter-a-day/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Definições Doutrinais</title>
-      <link>https://leituracrista.com/livros/definicoes-doutrinais/</link>
+      <link>http://localhost:1313/livros/definicoes-doutrinais/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livros/definicoes-doutrinais/</guid>
+      <guid>http://localhost:1313/livros/definicoes-doutrinais/</guid>
       <description></description>
     </item>
     
     <item>
       <title>O Evangelho em 3 Minutos - Lucas</title>
-      <link>https://leituracrista.com/livros/o-evangelho-em-03-minutos-lucas/</link>
+      <link>http://localhost:1313/livros/o-evangelho-em-03-minutos-lucas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livros/o-evangelho-em-03-minutos-lucas/</guid>
+      <guid>http://localhost:1313/livros/o-evangelho-em-03-minutos-lucas/</guid>
       <description></description>
     </item>
     

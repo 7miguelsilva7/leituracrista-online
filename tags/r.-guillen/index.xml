@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R. Guillen on Leitura Cristã</title>
-    <link>https://leituracrista.com/tags/r.-guillen/</link>
+    <link>http://localhost:1313/tags/r.-guillen/</link>
     <description>Recent content in R. Guillen on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://leituracrista.com/tags/r.-guillen/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/r.-guillen/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A Autoridade Divina Delegada a Assembleia</title>
-      <link>https://leituracrista.com/livretes/a-autoridade-divina-delegada-a-assembleia/</link>
+      <link>http://localhost:1313/livretes/a-autoridade-divina-delegada-a-assembleia/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/livretes/a-autoridade-divina-delegada-a-assembleia/</guid>
+      <guid>http://localhost:1313/livretes/a-autoridade-divina-delegada-a-assembleia/</guid>
       <description>A Autoridade Divina Delegada a Assembleia “Em verdade vos digo que tudo o que ligardes na terra será ligado no céu, e tudo o que desligardes na terra será desligado no céu”. Mateus 18:18
 Não há nenhuma dúvida que o assunto da autoridade da Assembleia local, para ligar e desligar em nome do Senhor Jesus Cristo, representa o poder mais alto e extraordinário que lhe foi concedido e confiado. Tal autoridade foi delegada e garantida pelo próprio Senhor Jesus Cristo para ser exercida em Seu nome e em Seu lugar.</description>
     </item>

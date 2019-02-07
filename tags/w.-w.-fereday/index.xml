@@ -2,19 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>W. W. Fereday on Leitura Cristã</title>
-    <link>https://leituracrista.com/tags/w.-w.-fereday/</link>
+    <link>http://localhost:1313/tags/w.-w.-fereday/</link>
     <description>Recent content in W. W. Fereday on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 02 Nov 2018 17:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://leituracrista.com/tags/w.-w.-fereday/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/w.-w.-fereday/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>BREVE HISTÓRIA DA HUMANIDADE</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/breve-historia-da-humanidade/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/folhetos/doutrinarios/breve-historia-da-humanidade/</link>
+      <pubDate>Fri, 02 Nov 2018 17:00:00 +0900</pubDate>
       
-      <guid>https://leituracrista.com/folhetos/doutrinarios/breve-historia-da-humanidade/</guid>
+      <guid>http://localhost:1313/folhetos/doutrinarios/breve-historia-da-humanidade/</guid>
       <description></description>
     </item>
     
