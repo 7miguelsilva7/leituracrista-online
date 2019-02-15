@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leituracrista.com/livretes/cobertura-para-a-cabeca/</loc>
+    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/peregrinos/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
   </url>
@@ -458,11 +463,6 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/livretes/cobertura-para-a-cabeca/</loc>
-    <lastmod>2017-06-19T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/livretes/cristo-nossa-vida/</loc>
     <lastmod>2017-06-19T17:00:00+09:00</lastmod>
   </url>
@@ -864,10 +864,6 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/livretes/cobertura-para-a-cabeca/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/tags/d.-rule/</loc>
     <lastmod>2017-07-14T17:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -1082,13 +1078,13 @@
   
   <url>
     <loc>https://leituracrista.com/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://leituracrista.com/categories/livretes/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1141,7 +1137,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/robert-boulard/</loc>
-    <lastmod>2017-06-19T17:00:00+09:00</lastmod>
+    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
