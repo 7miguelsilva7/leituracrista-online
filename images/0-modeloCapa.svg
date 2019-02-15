@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="0-modeloCapa.svg"
+   viewBox="0 0 116.5966 164.64464"
+   height="164.64464"
+   width="116.5966"
+   id="svg2"
+   version="1.1"
+   inkscape:export-filename="/opt/lampp/htdocs/leituracrista/themes/hugo_theme_robust/static/images/salmo22.png"
+   inkscape:export-xdpi="100.28872"
+   inkscape:export-ydpi="100.28872"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg2"
+     inkscape:window-maximized="1"
+     inkscape:window-y="24"
+     inkscape:window-x="0"
+     inkscape:cy="79.592306"
+     inkscape:cx="-5.7069409"
+     inkscape:zoom="2.8284271"
+     showgrid="false"
+     id="namedview4"
+     inkscape:window-height="680"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="g3729"
+     transform="matrix(1.021245,0,0,0.96139171,-1.2385455,3.1783241)">
+    <image
+       sodipodi:absref="/opt/lampp/htdocs/leituracrista/themes/hugo_theme_robust/static/images/salmos22.jpeg"
+       xlink:href="salmos22.jpeg"
+       y="-3.3059616"
+       x="1.21278"
+       id="image22"
+       preserveAspectRatio="none"
+       height="171.25656"
+       width="114.17104" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:15.34292698px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.69216216px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="10.260587"
+     y="36.991226"
+     id="text35"
+     transform="scale(0.85171243,1.1741052)"><tspan
+       sodipodi:role="line"
+       x="10.260587"
+       y="36.991226"
+       id="tspan41"
+       style="font-weight:bold;fill:#ffffff;stroke-width:0.69216216px">Pensamentos</tspan><tspan
+       sodipodi:role="line"
+       x="10.260587"
+       y="56.169884"
+       style="font-weight:bold;fill:#ffffff;stroke-width:0.69216216px"
+       id="tspan3740">sobre</tspan><tspan
+       sodipodi:role="line"
+       x="10.260587"
+       y="75.348541"
+       style="font-weight:bold;fill:#ffffff;stroke-width:0.69216216px"
+       id="tspan3742">o </tspan><tspan
+       sodipodi:role="line"
+       x="10.260587"
+       y="94.527199"
+       style="font-weight:bold;fill:#ffffff;stroke-width:0.69216216px"
+       id="tspan3744">Salmo 22</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:11.41376019px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.51490653px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+     x="58.87788"
+     y="146.58588"
+     id="text45"><tspan
+       sodipodi:role="line"
+       id="tspan43"
+       x="58.877876"
+       y="146.58588"
+       style="stroke-width:0.51490653px;fill:#ffffff;fill-opacity:1;font-weight:bold">W. W. Fereday</tspan></text>
+</svg>

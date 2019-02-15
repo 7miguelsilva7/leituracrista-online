@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Parte 2 - Pensamentos sonbre o Salmo 22</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> Pensamentos sobre o Salmo 22</a></li><li><a href="pensamentos_sobre_o_salmo_22/README.html"><strong aria-hidden="true">2.</strong> Pensamentos sobre o Salmo 22</a></li><li><ol class="section"><li><a href="pensamentos_sobre_o_salmo_22/parte_1.html"><strong aria-hidden="true">2.1.</strong> Parte 1</a></li><li><a href="pensamentos_sobre_o_salmo_22/parte_2.html" class="active"><strong aria-hidden="true">2.2.</strong> Parte 2</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Pensamentos sonbre o Salmo 22</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="pensamentos_sobre_o_salmo_22/parte_2.html#parte-2-parte-2" id="parte-2-parte-2"><h3>Parte 2 {#parte-2}</h3></a>
+<p>O sagrado Sofredor e abandonado é ouvido das pontas do boi selvagem: &quot;Salva-me da boca do leão: pois Tu me ouvistes das pontas dos bois selvagens&quot; <a href="https://www.bibliaonline.com.br/acf/sl/22/21">v. 21</a>. E assim o trabalho está sendo concluído, a redenção é realizada, Satanás é derrotado, o aguilhão da morte é julgado e nada pode mantê-lo no túmulo, Deus levanta O Abençoado dentre os mortos; então imediatamente aquele poderoso conquistador começou a dispensar os despojos da vitória: &quot;Eu declararei o Teu nome a meus irmãos; no meio da congregação Eu louvarei a Ti&quot;. Isso foi literalmente cumprido quando Jesus disse a Maria depois que Ele se levantou: &quot;Não me toques; porque ainda não subi para meu Pai, mas vai para meus irmãos e diz-lhes que eu subo para meu Pai e vosso Pai; e ao meu Deus e vosso Deus. &quot; <a href="https://www.bibliaonline.com.br/acf/jo/20/17">João 20:17</a> Erguido das profundezas da morte e ressuscitado, foi Sua grande alegria trazer Seu povo para um novo relacionamento com Ele mesmo, e declarar o nome do Pai de uma maneira que nunca havia sido declarada antes. A unidade da família abençoada é expressa naquelas palavras: &quot;Meu Pai e vosso Pai ... Meu Deus e vosso Deus. &quot;Ele não se envergonha de nos chamar irmãos, dizendo:&quot; Eu declararei o teu nome aos meus irmãos, no meio da igreja cantarei louvores a Ti.&quot; <a href="http://bibliaonline.com.br/acf/hb/2/12">Hb 2:12</a></p>
+<p>Não há algo inconcebivelmente precioso no pensamento de que este foi o primeiro ato depois que Ele ressuscitou dos mortos - para declarar o nome do Pai a Seus irmãos, e para torná-los familiarizados com o fato de seu novo lugar diante de Deus em associação familiar consigo mesmo? Até então Seus discípulos tinham sido membros de uma nação que havia sido trazida para a proximidade exterior a Deus e que eram individualmente o povo de Deus. Agora eles são trazidos para a unidade familiar comparada com o próprio Senhor ressuscitado. Se nos lembrássemos disso sempre que estivéssemos reunidos para celebrar Seu louvor, quão elevado e santo seria, e quão doce seria o fluir daquilo que Deus se deleita em aceitar dos corações agradecidos.</p>
+<p>Mas, não é o propósito de nosso salmo introduzir-nos em todas as glórias pertencentes à Igreja, e no chamado e privilégios dela. De fato, a Igreja não é o objeto do salmo; simplesmente declara no <a href="https://www.bibliaonline.com.br/acf/sl/22/22">versículo 22</a>, Cristo falando profeticamente de Si mesmo, que Ele declararia o nome do Pai a seus irmãos, e cantaria louvores no meio da congregação, a qual é interpretada como a Igreja (<a href="http://bibliaonline.com.br/acf/hb/2/12">Hb 2:12</a>). Então, ele passa com o que o salmo está ocupado, isto é, a restauração e a bênção de Israel, e a bênção da nação e da terra no período milenar ainda por vir, quando &quot;o Senhor reinará sobre toda a terra:</p>
+<p>naquele dia um será o Senhor, e um será o seu nome. <a href="https://www.bibliaonline.com.br/acf/zc/14/9">Zc 14</a><a href="https://www.bibliaonline.com.br/acf/zc/14/9">: 9</a>Então se dirá: &quot;Temei o Senhor, louvai-o, pois todos vós sois descendentes de Jacó, glorifica-o, e teme-o, todos vós, a descendência de Israel.&quot; <a href="https://www.bibliaonline.com.br/acf/sl/22/23">Salmo 22:23</a>. Isso, evidentemente, nos leva à &quot;era por vir&quot; - não à eternidade, pois as nacionalidades cessam ali, mas na &quot;era por vir&quot;, quando Cristo levará os co-herdeiros à glória e retornará com eles para julgar. o Israel vivo e restaurado e os salvos das nações, quando Satanás for amarrado, e &quot;o conhecimento do Senhor cobrirá a terra como as águas cobrem o mar&quot;.</p>
+<p>É isso que o nosso salmo aponta, do <a href="https://www.bibliaonline.com.br/acf/sl/22/23-31">verso 23</a> ao fim. E quão interessante é saber que esta cena presente e arruinada pelo pecado será tão aliviada e revigorada sob o justo domínio do legítimo Rei. Deus não somente trará as tribos de Israel, agora dispersas, do norte e do sul, do oriente e do ocidente (<a href="https://www.bibliaonline.com.br/acf/is/43/5,6">Is 43</a><a href="https://www.bibliaonline.com.br/acf/is/43/5,6">: 5, 6</a>) e as estabelecerá em sua própria terra, e fará de Jerusalém a alegria de toda a terra. mas também abençoará as nações salvas e as fará servir e adorar o Rei - o Senhor dos Exércitos que reina no Monte Sião. &quot;Todos os confins do mundo se lembrarão e se converterão ao Senhor; e todas as tribos das nações adorarão diante de ti. Porque o reino é do Senhor; e ele é o governador entre as nações.&quot; E então &quot;O meu louvor será de ti na grande congregação; pagarei os meus votos perante os que o temem.&quot; Aqui, ele não se refere à Igreja, como no <a href="https://www.bibliaonline.com.br/acf/sl/22/23">versículo 22</a>, mas às grandes reuniões milenares, quando o centro das reuniões da nação e de Israel será &quot;Sião, a cidade do grande Rei&quot;, e o próprio Rei, objeto de adoração universal. . Tempo abençoado! Abençoada libertação do poder de Satanás!</p>
+<p>Então, ondas de bênção sairão do grande centro até alcançarem os limites máximos dos vastos domínios do Rei. Seu reino será de mar a mar, e do rio até os confins da terra, e a maré da bênção lavará até aos termos. Estas não serão ondas de mal desmoralizante, mas de maravilhosa e enobrecedora bênção, que resultará no reconhecimento da supremacia e dignidade daquele que está reinando.</p>
+<p>Benditos são os propósitos de Deus! Ele não irá parar até que tudo seja encontrado no abençoado reconhecimento do outrora humilde Senhor Jesus, pois é o mistério de Sua vontade que Ele tão graciosamente nos comunicou: &quot;Que na dispensação da plenitude dos tempos de tornar a congregar todas as coisas em Cristo, tanto as que estão no céu, e que estão na terra. <a href="http://bibliaonline.com.br/acf/ef/1/10">Ef 1:10</a>Deus propôs que Seu querido Filho, o outrora rejeitado e expulso Jesus, deveria ser o grande centro de glória celestial e terrena, para que toda nação da terra O adorasse (<a href="http://bibliaonline.com.br/acf/zc/14/16">Zc 14:16</a>), e que os anjos da Deus deveria estar subindo e descendo sobre Ele (<a href="http://bibliaonline.com.br/acf/jo/1/51">Jo 1:51</a>). Assim, Deus honrará Aquele que o honrou até a morte!</p>
+<p>Mas, ao contemplar essa vasta cena de glória vindoura, é bom lembrarmos que é o fruto da morte da cruz que o Filho abençoado de Deus suportou. Tudo é baseado e flui dessa morte e da expiação feita por ele. Não pode haver bênção para a raça caída e uma criação marcada pelo pecado à parte da cruz. Ela teve que ser suportada primeiro, pelo próprio Filho de Deus, com o cumprimento do julgamento e do abandono. E então as bênçãos infinitas e universais podem fluir sem impedimento; sim, toda a cena exultará em bênção sob o cetro justo do Rei dos reis.</p>
+<p>Assim, esse maravilhoso salmo nos apresenta não apenas a base das bênçãos - o abandono e a ira sobre Cristo na cruz, mas também espalha diante de nós toda a cena da futura bênção e glória milenar, o precioso fruto dessa Cruz. suportado por Ele. Então, não somente os céus o adorarão e o louvarão, mas tudo sob o sol se curvará diante dEle sendo Ele próprio Senhor de tudo.</p>
+<p>O Senhor Jesus Cristo, o outrora rejeitado, mas agora entronizado, é digno de todo louvor!</p>
+<p>&quot;Ouça! o som de Regozijo</p>
+<p>Alto como poderoso trovão a soar</p>
+<p>Ou a plenitude das águas em seu bramido</p>
+<p>Quando se quebram na praia do mar!</p>
+<p>Aleluia! pois o senhor</p>
+<p>Deus onipotente reinará:</p>
+<p>Aleluia! assim como ecoou</p>
+<p>deixe a palavra por toda a terra ecoar&quot;.</p>
+<p>Edward Acomb</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="pensamentos_sobre_o_salmo_22/parte_1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="pensamentos_sobre_o_salmo_22/parte_1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Parte 1 - Pensamentos sonbre o Salmo 22</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> Pensamentos sobre o Salmo 22</a></li><li><a href="pensamentos_sobre_o_salmo_22/README.html"><strong aria-hidden="true">2.</strong> Pensamentos sobre o Salmo 22</a></li><li><ol class="section"><li><a href="pensamentos_sobre_o_salmo_22/parte_1.html" class="active"><strong aria-hidden="true">2.1.</strong> Parte 1</a></li><li><a href="pensamentos_sobre_o_salmo_22/parte_2.html"><strong aria-hidden="true">2.2.</strong> Parte 2</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Pensamentos sonbre o Salmo 22</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="pensamentos_sobre_o_salmo_22/parte_1.html#parte-1-parte-1" id="parte-1-parte-1"><h3>Parte 1 {#parte-1}</h3></a>
+<p><a href="https://www.bibliaonline.com.br/acf/sl/22">Salmo 22</a></p>
+<p>Existem pelo menos cinco maneiras de ver essa cena. Em primeiro lugar, vemos a expressão da culpa humana na crucificação do Senhor Jesus Cristo. Do ponto de vista do homem, vemos que é apenas o desdobramento do coração humano - terrível e desesperada maldade!</p>
+<p>Vendo a cruz dessa maneira, vemos o verdadeiro estado de nós mesmos naturalmente. Diz-me o que eu sou como parte daquela velha criação que falhou em apreciar o Santo Filho de Deus quando Ele desceu aqui em perfeita graça e amor. O homem mostrou seu desprezo do Cristo de Deus, colocando-o na cruz como um malfeitor. Oh! Quão terrível é essa revelação do homem - essa expressão do estado de seu coração. É aqui que vemos que não apenas o fruto da árvore é corrupto, mas a própria árvore. O homem é essa árvore; uma árvore corrupta não pode dar bons frutos.</p>
+<p>Quando os representantes da família humana levantaram o Filho de Deus sobre a cruz, dizendo: &quot;Não queremos que este reine sobre nós&quot;, o julgamento do homem foi concluído, e o veredicto do céu foi devolvido - &quot;todo o mundo permanece culpado diante de Deus &quot;. Ele agora vê a primeira criação de Adão como algo totalmente arruinado, sob condenação. O Senhor em vista da cruz havia decidido isso quando Ele disse: &quot;Agora é o julgamento deste mundo&quot; <a href="https://www.bibliaonline.com.br/acf/jo/12/31">João 12:31</a>.</p>
+<p>Em segundo lugar, podemos ver a cruz como a expressão do ódio e do aparente triunfo de Satanás. Foi lá que ele feriu o calcanhar da semente da mulher, mas seu aparente triunfo voltou-se sobre sua própria cabeça para derrota eterna. O julgamento da primeira raça de Adão foi expresso ali e o fundamento da derrota de Satanás (e seu banimento dos domínios de Deus para sempre) também foi encontrado lá. Cristo havia dito em vista da cruz, a cena de Seu conflito com a morte, e Aquele que tinha o poder da morte: &quot;Agora o príncipe deste mundo será expulso&quot; <a href="https://www.bibliaonline.com.br/acf/jo/12/31">João 12:31</a>. A cabeça da serpente foi ferida mesmo no momento de seu aparente triunfo. Bendito seja Deus, todos os poderes das trevas foram frustrados; cada inimigo de Deus e homem foi conquistado quando aquele Santo deu a sua testa para os espinhos, suas mãos para os pregos, e inclinou a cabeça e morreu! No terceiro dia Ele aparece em ressurreição - a prova de ter vencido a todos. Todo louvor seja ao Seu nome inigualável!</p>
+<p>Em terceiro lugar, em Cristo indo para a cruz, vemos Seu perfeito amor e obediência expressos ao Pai. Isso é dito nas duas escrituras seguintes: &quot;Já não falarei muito convosco, porque se aproxima o príncipe deste mundo, e nada tem em mim; Mas é para que o mundo saiba que eu amo o Pai, e que faço como o Pai me mandou. Levanta-te, pois, vamos daqui. &quot;<a href="https://www.bibliaonline.com.br/acf/jo/14/30-31">João 14:30, 31</a>.&quot; Por isso, entrando no mundo, diz: Sacrifício e oferta não quiseste, Mas corpo me preparaste; em holocaustos e sacrifícios pelo pecado Tu não tens prazer. Então disse eu: Eis aqui venho (no principio do livro está escrito de mim) para fazer a tua vontade, ó Deus. ”<a href="https://www.bibliaonline.com.br/acf/hb/10/5-7">Hb. 10: 5-7</a>. Desde a manjedoura até a cruz, vemos no bendito Senhor Jesus uma demonstração contínua de amor e obediência perfeitos ao Pai. Ele era em vida toda uma &quot;oferta de comida&quot; (<a href="http://bibliaonline.com.br/acf/lv/2/">Lv 2</a>), e na morte - aquela morte vista como a expressão de Seu amor e obediência a Deus - um holocausto perfeito, &quot;uma oferta ... de cheiro suave ao Senhor &quot;(<a href="https://www.bibliaonline.com.br/acf/lv/1">Lv. 1</a>). Perfumado com incenso era esse sacrifício, e apreciado por Deus o Pai com uma apreciação infinita. A cruz, vista desta maneira, foi o ponto culminante do amor e obediência de Cristo a Deus. Ele não poderia ir mais longe no caminho da auto-entrega - Ele alcançou o ponto mais baixo possível - a menor profundidade possível! E tudo isso foi como uma questão de amor e obediência, para que o mundo soubesse que Ele amava o Pai e que o coração do Pai poderia ser satisfeito e se agradar por tal expressão de amor e obediência no homem. O primeiro Adão falhou em amor e obediência; aqui foi uma recompensa por tudo isso, no último Adão. Deus está satisfeito. &quot;Por isso também Deus o exaltou soberanamente, e lhe deu um nome que é sobre todo nome; para que ao nome de Jesus se dobre todo joelho dos que estão nos céus, e na terra, e debaixo da terra; e que toda língua confesse que Jesus Cristo é o Senhor, para a glória de Deus Pai &quot;. <a href="https://www.bibliaonline.com.br/acf/fp/2/9-11">Fp</a><a href="https://www.bibliaonline.com.br/acf/fp/2/9-11"></a><a href="https://www.bibliaonline.com.br/acf/fp/2/9-11">2:9-11</a>. Esta é a gloriosa resposta de Deus ao amor e obediência do Seu querido Filho. Ele desceu ao mais profundo; agora ele é elevado para a maior altura possível. Que nossos corações possam exclamar: Ele é digno! Ele é digno!</p>
+<p>Em quarto lugar, vemos a cruz como a expressão infinita do amor de Deus para um mundo culpado. Como está escrito: &quot;Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo o que nele crê não pereça, mas tenha a vida eterna.&quot; <a href="https://www.bibliaonline.com.br/acf/jo/3/16">João 3:16</a>. Aqui Deus dá a conhecer a um mundo culpado o fato de que Ele o ama. Ele mostra-lhes o seu coração! Preciosa mostra de Deus! O bendito fazendo conhecer o amor do seu coração! Não foi solicitado, e não foi merecido, ainda que seu coração seja visto mostrando-se - fluindo no dom de Seu Filho. O homem indigno é o objeto para o qual este amor é mostrado e para o qual fluiu em toda a sua plenitude poderosa.</p>
+<p>A criação pode mostrar o Seu poder e sabedoria, e a Providência, o Seu beneficio para com as Suas criaturas, mas é no dom do Seu Filho unigênito que aprendemos a plenitude do Seu amor para com o homem culpado, perdido e desfeito. Deus, de pé na altura elevada de Seu trono, viu o homem em sua ruína e miséria, e o amou. Seu querido Filho foi entregue para expressar esse amor, tão infinito e tão ilimitado. O deleite de Deus desde toda a eternidade foi abandonado como prova desse amor. O Pai daria aquele companheiro de peito para que os pobres pecadores pudessem saber que Ele os amava. Oh! Quão esmagadora é a ideia de tudo isso - essa demonstração de amor puro, infinito e imerecido por parte de um Deus ofendido. Que saibamos o seu poder abençoado atuando em nossas almas; pode nos constranger a nos entregar sem reservas àquele que nos amou até a morte!</p>
+<p>A quinta maneira pela qual podemos ver a cruz é como o lugar onde a grande questão do pecado foi estabelecida entre Deus e Cristo, o substituto do pecador. É vendo a cruz naquela luz que somos trazidos de volta ao <a href="https://www.bibliaonline.com.br/acf/sl/22">Salmo 22</a>, onde vemos o abençoado Senhor nas circunstâncias de um portador do pecado. Quão solenes são as palavras iniciais: &quot;Deus Meu, Deus meu, por que me desamparaste? Por que estás tão longe de Me ajudar e das palavras do Meu rugido? Meu Deus, clamo de dia, mas tu não ouves; de noite, e não tenho sossego. &quot;Poderia alguma coisa ser mais solene? Desde a eternidade até este momento, não havia nem um pouco de distância entre Deus e Seu amado Filho, mas aqui tudo foi mudado. Foi: &quot;Por que me desamparaste?&quot;e,&quot; Tu não me ouves. &quot;Por que esta mudança? O filho tinha vacilado? A alegria do Pai em Seu Filho diminuiu? de modo nenhum. O que então? O pecado estava em questão. Cristo tomou o lugar do pecador; pecados e iniquidades foram colocados sobre ele; Ele deve ser tratado como o pecador (substitucional), e até que Deus fosse glorificado com respeito ao pecado, não poderia haver comunhão entre Ele e o Santo Sofredor.</p>
+<p>Que nenhum por um momento suponha que o deleite de Deus em Seu Filho tenha diminuído no menor grau; isso nunca poderia acontecer. Mas antes, enquanto o pecado estava em Seu Filho, a própria santidade de Sua natureza exigia uma suspensão da comunhão e uma distância entre eles. É aqui que aprendemos a verdadeira natureza e os desertos do pecado - o que é em si mesmo e o que era necessário para julgá-lo.</p>
+<p>Quando falamos em distância entre Deus e o bendito Senhor na cruz, não era que houvesse algo nele para causar essa distância. Não, ele era enfaticamente &quot;o Santo e o Justo&quot;. Ele não conhecia pecado pessoalmente. Foi o pecado que foi imputado a Ele, e as iniquidades foram colocadas sobre Ele, o que causou a distância. Ele tomou voluntariamente o lugar da infinita distância moral que pertencia ao pecador, e ficou sujeito à ira e julgamento de Deus.</p>
+<p>Esse é o assunto do <a href="https://www.bibliaonline.com.br/acf/sl/22">Salmo 22</a> - não que o homem não seja visto nele, mas Deus é mencionado em todo lugar - tudo é recebido como Dele. Os touros podem assombrá-lo, e os cães podem envolvê-lo, mas ele recebe a morte nas mãos de Deus: &quot;E tu me trouxeste ao pó da morte.&quot; O homem fez o seu pior com o Cordeiro de Deus, mas quanto à expiação, o homem não estava na cena exceto como um espectador sem poder para compreender o que estava acontecendo. Nessas três horas de escuridão, ninguém a não ser Deus e Aquele que sofreu pode dizer o que foi suportado.</p>
+<p>Era isso que o Abençoado estava contemplando enquanto se prostrava no jardim do Getsêmani. Ele estava antecipando o que Ele aqui está sofrendo.. Lá, a sombra escura da cruz e os contornos daquela taça passaram diante Dele, que O trouxeram em profunda agonia de alma; aqui, no entanto, Ele está sobrecarregado nos horrores do julgamento e da ira encontrados naquela amarga taça. Sozinho, a uma distância infinita de Deus, e envolto em trevas impenetráveis, experimentou as desgraças indescritíveis do poço mais baixo, sua escuridão, sua profundidade. A ira de Deus caiu sobre ele. Ele foi afligido com todas as Suas ondas. A ira feroz de um Deus que odeia o pecado passou por ele. Seus terrores o cortaram. (<a href="http://bibliaonline.com.br/acf/sl/88/">Sl 88</a>) Foi então que se cumpriram aquelas palavras que diziam: &quot;Um abismo chama outro abismo, ao ruído das tuas catadupas; todas as tuas ondas e as tuas vagas têm passado sobre mim.&quot;. <a href="https://www.bibliaonline.com.br/acf/sl/42/7">Salmo 42: 7</a>. Tal era a santidade de Deus, e tal era o ódio de Deus pelo pecado, que nada menos que isso podia pôr de lado e abrir caminho para a bênção da salvação fluir para longe e para perto. Reivindicações infinitas precisavam de um sacrifício infinito para enfrentá-las. Isso foi feito quando o humilde Senhor Jesus Cristo se colocou no altar da oferta pelo pecado do Calvário. Lá o pecado foi perfeitamente expiado e posto de lado; a maldição de uma lei quebrada foi suportada; a justiça de Deus foi satisfeita; o trono, majestade e glória de Deus foram todos vindicados. Lá Deus foi infinitamente glorificado em relação ao pecado, a necessidade do homem perfeitamente satisfeita e o fundamento estabelecido para o justo realizar todos os propósitos de Deus.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="pensamentos_sobre_o_salmo_22/README.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="pensamentos_sobre_o_salmo_22/parte_2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="pensamentos_sobre_o_salmo_22/README.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="pensamentos_sobre_o_salmo_22/parte_2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    </body>
+</html>

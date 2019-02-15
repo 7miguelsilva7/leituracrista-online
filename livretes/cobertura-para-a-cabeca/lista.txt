@@ -1,0 +1,8 @@
+assets
+cobertura_para_a_cabeca.md
+COBERTURA PARA A CABECA ROBERT BOULARD ROBERT BOULARD.odt
+comandoEmPastas.sh
+lista.txt
+perguntas_frequentes_sobre_o_uso_de_coberturas_par
+README.md
+SUMMARY.md

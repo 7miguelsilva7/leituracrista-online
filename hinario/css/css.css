@@ -1,0 +1,166 @@
+body {
+    font-size: 20px;
+
+}    
+
+input[type="checkbox"], input[type="checkbox"] + label {
+    cursor: pointer;
+}  
+
+.naoSelecionavel {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  /* border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1; */
+  cursor: pointer;
+}
+/* 
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: yellow;
+  color: white;
+  background: yellow;
+
+}
+
+.btn.focus {
+  background-color: yellow;
+  cursor: pointer;
+} */
+
+#button{
+
+background-color: green;
+cursor: pointer;
+}
+
+/* p {
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+}
+
+p {
+  -webkit-margin-before: 4pt;
+  -webkit-margin-after: 4pt;
+} */
+
+a{
+cursor: pointer;
+padding: 5px;
+color: blue;
+text-decoration: none;
+}
+
+a:hover{
+color: red;
+}
+
+a:focus {
+  background-color: yellow;
+  cursor: pointer;
+}
+a:active {
+  background: yellow;
+  cursor: pointer;
+}
+
+.cursos{
+margin-top: 0px;
+}
+
+.cursos .curso{
+padding: 5px;
+}
+
+.footer-indice {
+position:fixed;		/*importante: fixa a div */
+bottom:0;		/*importante: posiciona no rodapé */
+width:100%;
+left: 0px;
+background:#CC3;
+margin:0;
+padding:3px 0;
+text-align:center;
+font-size: 18px;
+border-top:3px dashed #FFF
+}
+
+.footer-ABC {
+position:fixed;		/*importante: fixa a div */
+bottom:0;		/*importante: posiciona no rodapé */
+width:100%;
+left: 0px;
+background:#CC3;
+margin:0;
+padding:3px 0;
+text-align:center;
+font-size: 18px;
+border-top:3px dashed #FFF
+}
+
+.footer-A {
+position:fixed;		/*importante: fixa a div */
+bottom:0;		/*importante: posiciona no rodapé */
+width:100%;
+left: 0px;
+background:#CC3;
+margin:0;
+padding:3px 0;
+text-align:center;
+font-size: 18px;
+border-top:3px dashed #FFF
+}
+
+.footer-numero {
+position:fixed;		/*importante: fixa a div */
+bottom:0;		/*importante: posiciona no rodapé */
+width:100%;
+right: 0px;
+z-index:2000;		/*importante: coloca a div acima de tudo */
+background:#CC3;
+margin:0;
+padding:3px 0;
+text-align:center;
+font-size: 20px;
+border-top:3px dashed #FFF
+}
+
+.div-em-colunas {
+    -webkit-column-count:2; /* Chrome, Safari, Opera */
+    -moz-column-count:2;    /* Firefox */
+    column-count:2;         /* padrão */
+}
