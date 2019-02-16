@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/livretes/pensamentos-sobre-o-salmo-22/</loc>
+    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/peregrinos/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
   </url>
@@ -912,6 +917,12 @@
   <url>
     <loc>https://leituracrista.com/tags/echoes-of-grace/</loc>
     <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/tags/edward-acomb/</loc>
+    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

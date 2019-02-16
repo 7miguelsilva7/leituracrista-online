@@ -1,0 +1,8 @@
+assets
+comandoEmPastas.sh
+lista.txt
+parte_1.md
+parte_2.md
+pensamentos sobre o Salmo 22.odt
+README.md
+SUMMARY.md
