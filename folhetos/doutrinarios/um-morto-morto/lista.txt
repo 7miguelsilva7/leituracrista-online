@@ -1,0 +1,6 @@
+assets
+comandoEmPastas.sh
+lista.txt
+README.md
+SUMMARY.md
+um morto morto.odt
