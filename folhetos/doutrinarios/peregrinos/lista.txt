@@ -1,0 +1,6 @@
+assets
+comandoEmPastas.sh
+lista.txt
+peregrinos estrangeiros.odt
+README.md
+SUMMARY.md
