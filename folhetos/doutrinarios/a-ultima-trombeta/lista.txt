@@ -1,0 +1,7 @@
+assets
+A ULTIMA TROMBETA F G PATTERSON F. G. PATTERSON.odt
+a_ultima_trombeta.md
+comandoEmPastas.sh
+lista.txt
+README.md
+SUMMARY.md

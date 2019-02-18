@@ -1,0 +1,6 @@
+assets
+comandoEmPastas.sh
+lista.txt
+o servo cingido.odt
+README.md
+SUMMARY.md

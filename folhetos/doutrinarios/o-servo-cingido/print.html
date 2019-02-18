@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O Servo Cingido</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> o servo cingido</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Servo Cingido</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#o-servo-cingido" id="o-servo-cingido"><h1>O Servo Cingido</h1></a>
+<p><a href="http://bibliaonline.com.br/acf/jo/13">João 13</a></p>
+<p>Que página é esta que agora está diante de nós, cheia da mais rica graça do bendito Senhor e, ao mesmo tempo, cheia de instruções que o povo de Deus em sua jornada no deserto encontra e prova ser indispensável. Para sempre seja adorado o Deus de toda a graça, que não só tem atendido a nossa necessidade como pecadores, no sacrifício de Seu Filho, mas que também no mesmo Abençoado atende a necessidade de Seu amado povo ao atravessar uma cena de corrupção onde a tentação e julgamento abundam. E que requintada graça da parte do Senhor Jesus nos dar, no ato de lavar os pés de seus discípulos, um sinal de Seu imutável amor, quando Ele estaria longe na glória, e nós partimos para testificar Dele no mundo, bem como um exemplo de Seus ministérios para nós na presença de Deus, como Ele disse: &quot;Porque eu vivo, vós também vivereis&quot;. Que prova de que Ele pensa e cuida de nós, em todo o nosso caminho de prova através deste mundo! Ele está agora no alto para nós, o Servo cingido pela glória.</p>
+<p>Na cruz, o trabalho que efetuou nossa limpeza, foi feito para sempre; o sacrifício foi oferecido &quot;uma vez&quot; para nunca mais ser repetido. E aqueles a quem o sangue é aplicado são &quot;aperfeiçoados para sempre&quot; de acordo com seu valor infinito; nunca é dito sobre o sangue ser aplicado novamente.</p>
+<p>Mas a obra do bendito Senhor, na presença de Deus por nós, não cessará até que Ele nos leve a Si mesmo. Embora qualquer parte da Igreja esteja aqui no lugar do testemunho, Sua obra continuará para eles no alto, como o &quot;ministro do santuário e do verdadeiro tabernáculo, o qual o Senhor fundou, e não o homem&quot; (<a href="http://bibliaonline.com.br/acf/hb/8/2">Hb 8: 2</a>). Se o Senhor se sentou para sempre, tocando sua obra sacrificial (<a href="http://bibliaonline.com.br/acf/hb/10/12">Hb 10:12</a>), Ele não cessou Seus ministérios para nós como nosso Sumo Sacerdote e como nosso Advogado, o que foi cingido para nos manter limpos e em santa comunhão com Deus Seu Pai e Ele mesmo. Como este fato torna O Senhor bendito em nossos corações! Como a alma se curva na presença de tal amor que nunca se cansa de servir, e nos leva a adorar Aquele que tem em virtude de Seu poderoso sacrifício, e a habitação do bendito Espírito de Deus, nos ligou a Si mesmo e carregou Ele mesmo com todos os nossos assuntos, e prometeu Sua própria palavra para nos trazer a Si mesmo em glória acima.</p>
+<p>O que temos neste capítulo é o que temos em vista da partida do Senhor do mundo para o Pai. Assim como o Senhor &quot;sabia que era chegada a sua hora de partir deste mundo para o Pai, tendo amado os seus que estavam no mundo, amou-os até o fim&quot;. Jesus, sabendo que o Pai entregou todas as coisas em Suas mãos, e que Ele veio de Deus e iria para Deus; Ele se levanta da ceia e põe de lado as suas vestes; e tomou uma toalha e cingiu-se. Depois disso, Ele derramou água em uma bacia e começou a lavar os pés dos discípulos e a enxugá-los com a toalha com a qual Ele estava cingido. &quot;<a href="http://bibliaonline.com.br/acf/jo/13/1-5">João 13: 1-5</a>. Pelas palavras &quot;chegou a hora de passar deste mundo para o Pai&quot;, aprendemos que o Senhor aqui contempla Sua obra expiatória na cruz como concluída; como em <a href="http://bibliaonline.com.br/acf/jo/17">João 17</a>: &quot;Eu terminei a obra que me deste para fazer&quot;; e que agora Ele tem Seus serviços na presença de Deus para o Seu povo diante Dele, mantendo-os limpos da contaminação do mundo - vivendo para mantê-los limpos - amando-os até o fim.</p>
+<p>Quão maravilhosamente abençoado é tudo isso! Para quem percebeu muito ou pouco de sua própria fraqueza e fracasso? No entanto, para poder voltar-se àquele amor que é imutável e encontrar naquele coração o que sustém o nosso, mesmo no tempo do fracasso consciente, é o que deve curvar a alma diante daquele que nos amou, na santa adoração.</p>
+<p>A ignorância de Pedro é feita como o meio de realçar a eficácia da dupla obra de Cristo: Sua obra na cruz e Sua obra como Aquele que ascendeu. Primeiro: &quot;Aquele que está lavado não necessita de lavar senão os pés, pois no mais todo está limpo.&quot; &quot;no mais todo está limpo&quot; faz referência à purificação pelo sangue de todo pecado; e aquele que é assim purificado, não precisa ser purificado novamente, mas, em virtude dessa purificação, está diante de Deus no pleno valor daquele sangue que levou todo pecado pertencente ao crente ao mar do esquecimento de Deus. Nada pode afetar essa limpeza; o crente é uma vez purificado e purificado para sempre. Ele é &quot;aceito no amado&quot;. Isto é divinamente precioso, conferindo paz perfeita ao coração e consciência de cada um que repousa pela fé sobre a obra de Cristo. A fé se apropria para a alma e sua profunda necessidade, de toda a perfeição intrínseca e eterna do sacrifício oferecido pelo Senhor Jesus uma vez por todas e eternamente aceito. Está na presença de um Deus santo em paz imperturbável, na consciência abençoada de não haver nada contra ele - nenhuma mancha, nenhuma nuvem acima, nenhuma ira no coração de Deus, nenhum medo nisso! E qual é o segredo disso tudo? Está tudo limpo, de acordo com a estimativa de Deus do precioso sangue de Seu querido Filho.</p>
+<p>&quot;Todo o mais está limpo; Tu disseste isto, Senhor;</p>
+<p>Acaso alguma dúvida? Tua, seguramente, é uma palavra fiel</p>
+<p>E o teu trabalho acabado.&quot;</p>
+<p>Esta limpeza foi efetuada pelo &quot;sangue da cruz&quot;; e como esse sangue foi derramado &quot;uma vez&quot;, a aplicação dele é &quot;de uma vez por todas&quot;. Caso contrário, se for para ser aplicado novamente, o precioso sangue do Filho de Deus não seria mais do que o sangue de touros e bodes, o que em si mesmo seria uma blasfêmia. Mas como a aplicação é &quot;uma vez&quot;, aqueles a quem ela é aplicada são aperfeiçoados para sempre, por causa de sua eficácia eterna; eles estão limpos em tudo, de acordo com as palavras de Cristo.</p>
+<p>Em segundo lugar, há a lavagem dos pés, e isso pode acontecer continuamente. Como no caso dos antigos sacerdotes, foram lavados uma vez, quando consagrados ao sacerdócio; e quanto a sua posição como sacerdotes, isso nunca se repetiu; mas diariamente eles tinham que lavar os pés na pia antes de entrar nos serviços do tabernáculo. E assim com o cristão; apesar de limpo, limpando toda a sua posição e aceitação, ele precisa da aplicação da &quot;água da proteção&quot; para mantê-lo livre de contaminação, permitindo-lhe prosseguir no serviço do Senhor em comunhão com Ele. Daí as palavras do Senhor para Pedro, quando ele disse: &quot;Nunca me lavarás os pés&quot; - &quot;Se eu não te lavar, não tens parte comigo&quot;. É muito importante notar que o Senhor não disse: &quot;Não tens parte em mim nem eu em ti&quot;, mas &quot;não tens parte comigo&quot;. Ou seja, não pode haver comunhão com o Senhor no caminho do serviço se essa lavagem diária dos pés for negligenciada. É verdade que somos purificados pelo sangue e que nenhuma acusação pode ser colocada contra nós e, ao mesmo tempo, podemos saber muito pouco sobre o que é ter parte &quot;com&quot; Cristo. Para isso, precisamos conhecer os serviços abençoados de Cristo nos céus, abrindo nossos corações para a aplicação purificadora da &quot;palavra&quot;, e assim retendo a energia sacerdotal em nossas almas, indo em comunhão com Cristo tendo parte com Ele.</p>
+<p>Então, novamente, o abençoado Senhor não apenas nos deu a entender que Ele estava indo embora para exercer este amor santo e inquebrantável em nosso favor, mas Ele nos mostraria que Ele nos colocaria consigo mesmo neste serviço, como Ele disse &quot;Se eu, então, seu Senhor e Mestre, lavou seus pés, vocês também devem lavar os pés uns dos outros. Pois eu vos dei um exemplo: que façais como vos fiz a vós.</p>
+<p>Ora, isso não é apenas uma expressão de humildade, mas sim o exercício do amor santo que nunca pode permitir qualquer mal. O bendito Senhor o exerce acima; e quando algum de Seu povo falha, Ele aplica a água da Palavra pelo Espírito, como mostrado no ato de lavar os pés dos discípulos, e nesta escritura: &quot;Cristo ... amou a igreja, e se entregou por ela Para a santificar, purificando-a com a lavagem da água, pela palavra&quot;(<a href="http://bibliaonline.com.br/acf/ef/5/25,26">Ef 5:25, 26</a>). A comunhão é suspensa quando a contaminação é contraída e restaurada quando é purificada. Mas o Senhor deseja que nós, em comunhão com Ele mesmo, lavemos os pés “uns aos outros” - exercendo o mesmo amor santo e humilde sobre o outro; e este não é um serviço vil a participar. Mas é meramente humildade? É a humildade do tipo mais puro, mas algo mais. É a santa fidelidade daquele amor, que está em plena comunhão com Cristo, a respeito de um irmão errante, um que é contaminado. E, oh, que serviço a se dedicar! Precisamos, de fato, comer a &quot;oferta pelo pecado no lugar santo&quot;. Somente aqueles que são espirituais - aqueles em plena comunhão com o Mestre - podem restaurar um irmão errante. Ai! quantas vezes somos incapazes de lavar os pés uns dos outros! Em vez de purificá-los, muitas vezes os tornamos mais contaminados por nossa incapacidade espiritual de lavá-los. Quantas vezes nós, por nossa própria falta de auto-julgamento, nos privamos do privilégio de lavar &quot;os pés uns dos outros&quot;. Nós passamos por cima de um irmão ou do nosso próprio fracasso? Isso não é amor nem para nós nem para ele. Isso não é lavar os pés nem abrir nossos próprios corações e consciências para a aplicação daquela palavra que Cristo usa para os lavar. Seu amor não pode suportar a ideia de impureza repousando sobre o menor de seu povo. Seu coração não permitirá essa distância de Si mesmo, necessariamente causado pelo fracasso. Ele deve usar a vara para efetuar o Seu propósito. Este é frequentemente um trabalho terrível para aquele sobre quem é colocado. O amor sagrado golpeia; e depois cura a ferida. A mão que mergulha a espada do Espírito na consciência, para torná-lo sensível ao pecado permitido, é aquela que aplica o bálsamo à ferida quando o arrependimento é realizado e a confissão é feita. Podemos tratar o fracasso com leviandade, mas Ele não pode. E porque? Porque Ele nos ama, e porque custou Seu precioso derramamento de sangue para guardá-lo.</p>
+<p>O que devemos fazer então? Andemos no espírito de auto-julgamento, de oração e de vigilância, permitindo que a Palavra de nosso Deus tenha pleno poder em nossos próprios corações e consciências; andando diante daquele que julga retamente; submetendo-se à sua vontade graciosa; adorando-o por seu amor constante; permanecendo em comunhão com Ele; tendo parte integral com ele; obedecendo suas ordenanças; e assim ser espiritualmente capacitado para lavar os pés um do outro, o resultado do exercício do amor santo.</p>
+<p>Edward Acomb</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+
+    </body>
+</html>
