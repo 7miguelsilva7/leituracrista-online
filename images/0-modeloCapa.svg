@@ -7,7 +7,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="0-modeloCapa.svg"
@@ -16,7 +15,7 @@
    width="116.5966"
    id="svg2"
    version="1.1"
-   inkscape:export-filename="/opt/lampp/htdocs/leituracrista/themes/hugo_theme_robust/static/images/salmo22.png"
+   inkscape:export-filename="/opt/lampp/htdocs/leituracrista/themes/hugo_theme_robust/static/images/peregrinos.png"
    inkscape:export-xdpi="100.28872"
    inkscape:export-ydpi="100.28872"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
@@ -39,8 +38,8 @@
      inkscape:window-maximized="1"
      inkscape:window-y="24"
      inkscape:window-x="0"
-     inkscape:cy="79.592306"
-     inkscape:cx="-5.7069409"
+     inkscape:cy="86.851884"
+     inkscape:cx="-25.912505"
      inkscape:zoom="2.8284271"
      showgrid="false"
      id="namedview4"
@@ -58,55 +57,44 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0" />
-  <g
-     id="g3729"
-     transform="matrix(1.021245,0,0,0.96139171,-1.2385455,3.1783241)">
-    <image
-       sodipodi:absref="/opt/lampp/htdocs/leituracrista/themes/hugo_theme_robust/static/images/salmos22.jpeg"
-       xlink:href="salmos22.jpeg"
-       y="-3.3059616"
-       x="1.21278"
-       id="image22"
-       preserveAspectRatio="none"
-       height="171.25656"
-       width="114.17104" />
-  </g>
+  <rect
+     style="opacity:1;fill:#808000;fill-opacity:1;stroke:none;stroke-width:4.07200003;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:0.5"
+     id="rect15"
+     width="116.59661"
+     height="164.64464"
+     x="9.8533626e-09"
+     y="1.5638051e-08" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:15.34292698px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.69216216px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="10.260587"
+     x="13.586888"
      y="36.991226"
      id="text35"
      transform="scale(0.85171243,1.1741052)"><tspan
        sodipodi:role="line"
-       x="10.260587"
+       x="13.586888"
        y="36.991226"
-       id="tspan41"
-       style="font-weight:bold;fill:#ffffff;stroke-width:0.69216216px">Pensamentos</tspan><tspan
+       style="font-weight:bold;fill:#ffffff;stroke-width:0.69216216px"
+       id="tspan3744">Peregrinos</tspan><tspan
        sodipodi:role="line"
-       x="10.260587"
+       x="13.586888"
        y="56.169884"
        style="font-weight:bold;fill:#ffffff;stroke-width:0.69216216px"
-       id="tspan3740">sobre</tspan><tspan
+       id="tspan26">e</tspan><tspan
        sodipodi:role="line"
-       x="10.260587"
+       x="13.586888"
        y="75.348541"
        style="font-weight:bold;fill:#ffffff;stroke-width:0.69216216px"
-       id="tspan3742">o </tspan><tspan
-       sodipodi:role="line"
-       x="10.260587"
-       y="94.527199"
-       style="font-weight:bold;fill:#ffffff;stroke-width:0.69216216px"
-       id="tspan3744">Salmo 22</tspan></text>
+       id="tspan28">Estrangeiros</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:11.41376019px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.51490653px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-     x="58.87788"
+     style="font-style:normal;font-weight:normal;font-size:11.41376019px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.51490653px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="58.228638"
      y="146.58588"
      id="text45"><tspan
        sodipodi:role="line"
        id="tspan43"
-       x="58.877876"
+       x="58.228638"
        y="146.58588"
-       style="stroke-width:0.51490653px;fill:#ffffff;fill-opacity:1;font-weight:bold">W. W. Fereday</tspan></text>
+       style="font-weight:bold;fill:#ffffff;fill-opacity:1;stroke-width:0.51490653px;font-size:8px">Miguel Silva</tspan></text>
 </svg>
