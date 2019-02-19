@@ -23,7 +23,7 @@ ls --format single-column >lista.txt
 # Loop para execução do comando
 for subpastas in `cat lista.txt`
   do
-  cd $basedir/$subpastas/     
+  cd $basedir/$subpastas/
 # vai entrar um por um nos diretórios do arquivo 
 # gerado acima, adentrar a pasta em negrito,
 # no caso edit_dir, que está dentro de cada
@@ -32,6 +32,7 @@ for subpastas in `cat lista.txt`
 ###### Digite seus comando aqui ########
  
 sed -i 's/{#.*}//g' *.md
+sed -i "s/<\/body>/<script type\=\"text\/javascript\" src\=\"\/\/s7\.addthis\.com\/js\/300\/addthis\_widget\.js\#pubid\=ra\-59d4445a35d0aa43\"><\/script>/" *.html
 
 ########################################
                                                                            
