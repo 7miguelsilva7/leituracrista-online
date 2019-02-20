@@ -1,3 +1,5 @@
+a_mulher_fora_do_seu_lugar.html
+A MULHER SEU LUGAR NAS ESCRITURAS A. J. POLLOCK.odt
 assets
 ayu-highlight.css
 book.css
@@ -6,20 +8,24 @@ books.png
 clipboard.min.js
 comandoEmPastas.sh
 custom.js
+debora.html
 elasticlunr.min.js
+eva.html
 face.png
 favicon.png
 _FontAwesome
 highlight.css
 highlight.js
 index.html
+instrucoes_biblicas_decisivas.html
 lista.txt
 mark.min.js
-parte_1.html
-parte_2.html
-pensamentos sobre o Salmo 22.odt
+mulheres_do_novo_testamento.html
+o_divino_tipo_e_arruinado.html
+o_lugar_da_mulher_no_ministerio.html
 print.html
 README.html
+sara.html
 searcher.js
 searchindex.js
 tomorrow-night.css

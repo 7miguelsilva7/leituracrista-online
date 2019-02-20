@@ -17,7 +17,8 @@ lista.txt
 mark.min.js
 parte_1.html
 parte_2.html
-pensamentos sobre o Salmo 22.odt
+pensamentos_sobre_o_salmo_22
+Pensamentos sobre o Salmo 22.odt
 print.html
 README.html
 searcher.js

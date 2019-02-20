@@ -1,4 +1,7 @@
+a_morte.html
+A MORTE O ESTADO INTERMEDIARIO A RESSURREI BRUCE ANSTEY.odt
 assets
+a_vitoria_de_cristo_sobre_a_morte.html
 ayu-highlight.css
 book.css
 book.js
@@ -15,11 +18,11 @@ highlight.js
 index.html
 lista.txt
 mark.min.js
-parte_1.html
-parte_2.html
-pensamentos sobre o Salmo 22.odt
+o_estado_intermediario.html
 print.html
+razoes_para_a_morte_do_crente.html
 README.html
+ressurreicao.html
 searcher.js
 searchindex.js
 tomorrow-night.css
