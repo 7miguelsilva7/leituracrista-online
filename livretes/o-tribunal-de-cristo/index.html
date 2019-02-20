@@ -70,6 +70,7 @@
           }
           
           </style>
+
     <link rel="shortcut icon" type="image/png" href="/images/books.png"/>
 
     
@@ -197,16 +198,89 @@ ga('send', 'pageview');
       </br>
        
       
-        <form method="get" action="http://www.google.com/search">
-         
-          <input type="search"  name="q" size="25" maxlength="255" value="" placeholder="Busca no site" />
-          
-          <input type="hidden" name="sitesearch" value="leituracrista.com" checked />
-          </form>
+        
       
 
+      <style>
+        .modal .modal-dialog
+        {
+            width: 800px;
+            max-width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         
+        .modal-open .modal, a:focus
+        {
+            outline: none !important;
+        }
+    </style>
+                
+                            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+                                <span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-xl"> Buscar no Site</span>
+                            </a>
+                       
 
         
+        <div id="modalSearch" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Busca no Site Leitura Cristã</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <script>
+                            (function ()
+                            {
+                                var cx = '018336800249189575721:eucetv-x97w';
+                                var gcse = document.createElement('script');
+                                gcse.type = 'text/javascript';
+                                gcse.async = true;
+                                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                    '//cse.google.com/cse.js?cx=' + cx;
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                        <gcse:search></gcse:search>
+
+                        
+                        <style type="text/css">
+                            .reset-box-sizing, .reset-box-sizing *, .reset-box-sizing *:before, .reset-box-sizing *:after, .gsc-inline-block
+                            {
+                                -webkit-box-sizing: content-box;
+                                -moz-box-sizing: content-box;
+                                box-sizing: content-box;
+                            }
+                            input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button
+                            {
+                                box-sizing: content-box;
+                                line-height: normal;
+                            }
+                        </style>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
       </div>
     </header>
 
