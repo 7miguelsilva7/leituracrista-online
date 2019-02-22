@@ -1,0 +1,21 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+DEUS ESTA EM TODAS AS CIRCUNSTANCIAS C H M C. H. MACKINTOSH.odt
+deus_esta_em_todas_as_circunstancias.html
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css
