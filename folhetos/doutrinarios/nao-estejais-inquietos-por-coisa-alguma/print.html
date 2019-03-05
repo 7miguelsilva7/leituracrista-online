@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>NÃO ESTEJAIS INQUIETOS POR COISA ALGUMA</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="nao_estejais_inquietos_por_coisa_alguma.html"><strong aria-hidden="true">1.</strong> “NÃO ESTEJAIS INQUIETOS POR COISA ALGUMA&quot;</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">NÃO ESTEJAIS INQUIETOS POR COISA ALGUMA</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#nÃo-estejais-inquietos-por-coisa-alguma" id="nÃo-estejais-inquietos-por-coisa-alguma"><h1>“NÃO ESTEJAIS INQUIETOS POR COISA ALGUMA&quot;</h1></a>
+<p>H. Smith, &quot;Seven Exortations&quot;, Pág. 10.</p>
+<p><a href="http://bibliaonline.com.br/acf/fp/4/6">Filipenses 4:6</a></p>
+<p>A exortação do apóstolo aqui tem em vista as circunstâncias desta vida. Ele não desconhece que, em um mundo de tristezas e enfermidades, de necessidades e preocupações, haverá tribulações para se enfrentar e fardos para se carregar; mas, não deveríamos torturar nosso pobre coração com coisas assim. O próprio apóstolo escreve de uma prisão, e havia sofrido necessidades, havia tido um companheiro e colaborador doente à beira da morte; mas nessas circunstâncias tão tristes ele foi elevado acima de todo cuidado e ansiedade, e por isso podia dizer a outros: &quot;Não estejais inquietos por coisa alguma&quot;.</p>
+<p>Talvez tenhamos que enfrentar tribulações em nossa família, tribulações em nosso serviço, tribulações entre o povo do Senhor; tribulações provenientes de doenças, tristezas por passarmos necessidade, pesares pelo que ocorre aos santos, coisas estas que nos oprimem como um grande fardo. Como disse alguém, &quot;Com que frequência um fardo acaba tomando conta da mente de uma pessoa até que, quando esta tenta em vão lançá-lo fora, ele acaba voltando para preocupá-la&quot;.</p>
+<p>Como é então que podemos encontrar alívio? Como é possível não estarmos inquietos com coisa alguma? É para nossa bênção que o apóstolo revela o modo de sermos libertos, não necessariamente da tribulação em si, mas do fardo da tribulação, de modo que este não mais sobrecarregue o espírito com preocupação e ansiedade. Ele diz: &quot;Antes as vossas petições sejam em tudo conhecidas diante de Deus pela oração e súplicas, com ação de graças&quot; (<a href="http://bibliaonline.com.br/acf/fp/4/6">Fp 4:6</a>). É só assim que encontraremos alívio. &quot;Em tudo&quot;, não importa que tribulação possa ser, pequena ou grande, leve-a ao conhecimento de Deus em oração; e diga a Ele exatamente o que você deseja, &quot;as vossas petições sejam em tudo conhecidas diante de Deus&quot;. As petições podem não ser para nosso bem, podem não estar de acordo com o pensamento de Deus; podem ser até tolices, mas devemos levá-las ao conhecimento de Deus.</p>
+<p>Qual será o resultado? Irá Ele atender os pedidos? Irá Ele afastar a tribulação? Talvez Ele veja que atender o pedido, ou remover a tribulação não seria para o nosso bem. Naquilo que diz respeito à tribulação, Ele irá agir em perfeita sabedoria para o nosso bem, em conformidade com Seu perfeito amor. Mas há algo que Deus certamente fará: Ele aliviará nosso coração do fardo da tribulação. Se derramarmos nossa alma diante dEle, Ele derramará a Sua paz em nossa alma - aquela paz de Deus que excede todo o entendimento.</p>
+<p>Há muito tempo Ana descobriu isso, quando, em sua amarga tribulação, pôde dizer: &quot;Tenho derramado a minha alma perante o Senhor&quot;. Como resultado, lemos que &quot;o seu semblante já não era triste&quot; (<a href="http://bibliaonline.com.br/acf/1sm/1/15-18">1 Samuel 1:15-18</a>). Contudo, naquele momento, suas circunstâncias continuavam exatamente as mesmas. É verdade que depois o Senhor mudou as suas circunstâncias, mas primeiro Ele mostrou que tinha o poder de mudar Ana. Da dor de coração e amargura de alma ela foi levada a uma grande paz - a paz de Deus que excede todo o entendimento - por ter levado seus pedidos ao conhecimento de Deus.</p>
+<p>H. Smith, &quot;Seven Exortations&quot;, Pág. 10.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

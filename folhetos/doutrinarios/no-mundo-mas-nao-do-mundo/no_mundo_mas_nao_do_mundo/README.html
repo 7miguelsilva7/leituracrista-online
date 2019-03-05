@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>NO MUNDO MAS NÃO DO MUNDO - NO MUNDO MAS NÃO DO MUNDO</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="no_mundo_mas_nao_do_mundo/README.html" class="active"><strong aria-hidden="true">1.</strong> NO MUNDO MAS NÃO DO MUNDO</a></li><li><ol class="section"><li><a href="no_mundo_mas_nao_do_mundo/separacao_versus_isolamento.html"><strong aria-hidden="true">1.1.</strong> SEPARAÇÃO versus ISOLAMENTO</a></li><li><a href="no_mundo_mas_nao_do_mundo/transformado.html"><strong aria-hidden="true">1.2.</strong> TRANSFORMADO</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">NO MUNDO MAS NÃO DO MUNDO</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="no_mundo_mas_nao_do_mundo/README.html#no-mundo-mas-nÃo-do-mundo" id="no-mundo-mas-nÃo-do-mundo"><h1>NO MUNDO MAS NÃO DO MUNDO</h1></a>
+<p>Tradução: MARCIO ROGÉRIO DE FREITAS</p>
+<p>W. J. Prost</p>
+<p>Em Sua oração ao Pai em <a href="http://bibliaonline.com.br/acf/jo/17">João 17</a>, pouco antes de ir para a cruz, o Senhor Jesus fez várias referências a Ele mesmo no que diz respeito ao mundo. Duas delas são muito significativas para o cristão hoje. Primeiro, lemos: &quot;Eu não estou mais no mundo; mas eles estão no mundo&quot; (<a href="http://bibliaonline.com.br/acf/jo/17/11">v. 11</a>). Em segundo lugar, Ele diz: &quot;porque não são do mundo, assim como eu não sou do mundo&quot; (<a href="http://bibliaonline.com.br/acf/jo/17/14">v. 14</a>). Nestas duas afirmações pairam algumas considerações muito importantes para nós, a nossa relação com o mundo ao nosso redor.</p>
+<p>Até a crucificação do Senhor Jesus, o mundo estava sob julgamento, pois Deus estava colocando o homem caído em diversas provas para ver se havia algo de bom nele. Não que Deus precisasse de uma prova disso para que Senhor Jesus pudesse dizer: &quot;pois bem sabia o que havia no homem&quot; (<a href="http://bibliaonline.com.br/acf/jo/2/25">João 2:25</a>). No entanto, Deus estava provando ao homem que, mesmo sob as melhores circunstâncias, ele era um completo fracasso.</p>
+<p>Quando este mundo crucificou o Filho de Deus, o julgamento do homem acabou e Deus pronunciou Seu julgamento sobre o mundo. Daquele ponto em diante, até o julgamento ser consumado, aqueles que honram ao Senhor e vivem para Ele neste mundo, devem seguir um Cristo rejeitado - aquele que foi expulso. É claro que, desde o início da história do homem, a rejeição foi o pagamento das pessoas que procuraram ser fiel a Deus, uma vez que Cristo foi rejeitado, Satanás tornou-se o deus e príncipe deste mundo, e sendo assim, as linhas de batalha foram claramente desenhadas.</p>
+<p>É maravilhoso observar que o Senhor Jesus nos associa a Ele em tudo isso, pois &quot;não são do mundo&quot; assim como Ele &quot;não é do mundo&quot;. Se ele foi jogado fora, nós também seremos se formos fiéis a Ele. É em Seus passos que andamos. Sendo assim, somos chamados para um caminho de separação do mundo, pois &quot;Se alguém ama o mundo, o amor do Pai não está nele&quot; (<a href="http://bibliaonline.com.br/acf/1jo/2/15">1 João 2:15</a>). O amor e os propósitos de Deus convergem em Seu Filho amado e Ele nos ama como ama Seu Filho amado. Se quisermos desfrutar desse amor e termos comunhão com o Pai, nosso coração deve estar em sintonia com o Dele. Isso somente pode ser verdadeiro se nós compartilharmos o mesmo objeto, o Senhor Jesus Cristo. Cristo e o mundo não podem existir no mesmo coração, ao mesmo tempo, o amor do Pai não pode coexistir com o amor do mundo. É um ou outro.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="no_mundo_mas_nao_do_mundo/separacao_versus_isolamento.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="no_mundo_mas_nao_do_mundo/separacao_versus_isolamento.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

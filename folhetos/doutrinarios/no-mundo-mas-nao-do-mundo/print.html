@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>NO MUNDO MAS NÃO DO MUNDO</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="no_mundo_mas_nao_do_mundo/README.html"><strong aria-hidden="true">1.</strong> NO MUNDO MAS NÃO DO MUNDO</a></li><li><ol class="section"><li><a href="no_mundo_mas_nao_do_mundo/separacao_versus_isolamento.html"><strong aria-hidden="true">1.1.</strong> SEPARAÇÃO versus ISOLAMENTO</a></li><li><a href="no_mundo_mas_nao_do_mundo/transformado.html"><strong aria-hidden="true">1.2.</strong> TRANSFORMADO</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">NO MUNDO MAS NÃO DO MUNDO</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#no-mundo-mas-nÃo-do-mundo" id="no-mundo-mas-nÃo-do-mundo"><h1>NO MUNDO MAS NÃO DO MUNDO</h1></a>
+<p>Tradução: MARCIO ROGÉRIO DE FREITAS</p>
+<p>W. J. Prost</p>
+<p>Em Sua oração ao Pai em <a href="http://bibliaonline.com.br/acf/jo/17">João 17</a>, pouco antes de ir para a cruz, o Senhor Jesus fez várias referências a Ele mesmo no que diz respeito ao mundo. Duas delas são muito significativas para o cristão hoje. Primeiro, lemos: &quot;Eu não estou mais no mundo; mas eles estão no mundo&quot; (<a href="http://bibliaonline.com.br/acf/jo/17/11">v. 11</a>). Em segundo lugar, Ele diz: &quot;porque não são do mundo, assim como eu não sou do mundo&quot; (<a href="http://bibliaonline.com.br/acf/jo/17/14">v. 14</a>). Nestas duas afirmações pairam algumas considerações muito importantes para nós, a nossa relação com o mundo ao nosso redor.</p>
+<p>Até a crucificação do Senhor Jesus, o mundo estava sob julgamento, pois Deus estava colocando o homem caído em diversas provas para ver se havia algo de bom nele. Não que Deus precisasse de uma prova disso para que Senhor Jesus pudesse dizer: &quot;pois bem sabia o que havia no homem&quot; (<a href="http://bibliaonline.com.br/acf/jo/2/25">João 2:25</a>). No entanto, Deus estava provando ao homem que, mesmo sob as melhores circunstâncias, ele era um completo fracasso.</p>
+<p>Quando este mundo crucificou o Filho de Deus, o julgamento do homem acabou e Deus pronunciou Seu julgamento sobre o mundo. Daquele ponto em diante, até o julgamento ser consumado, aqueles que honram ao Senhor e vivem para Ele neste mundo, devem seguir um Cristo rejeitado - aquele que foi expulso. É claro que, desde o início da história do homem, a rejeição foi o pagamento das pessoas que procuraram ser fiel a Deus, uma vez que Cristo foi rejeitado, Satanás tornou-se o deus e príncipe deste mundo, e sendo assim, as linhas de batalha foram claramente desenhadas.</p>
+<p>É maravilhoso observar que o Senhor Jesus nos associa a Ele em tudo isso, pois &quot;não são do mundo&quot; assim como Ele &quot;não é do mundo&quot;. Se ele foi jogado fora, nós também seremos se formos fiéis a Ele. É em Seus passos que andamos. Sendo assim, somos chamados para um caminho de separação do mundo, pois &quot;Se alguém ama o mundo, o amor do Pai não está nele&quot; (<a href="http://bibliaonline.com.br/acf/1jo/2/15">1 João 2:15</a>). O amor e os propósitos de Deus convergem em Seu Filho amado e Ele nos ama como ama Seu Filho amado. Se quisermos desfrutar desse amor e termos comunhão com o Pai, nosso coração deve estar em sintonia com o Dele. Isso somente pode ser verdadeiro se nós compartilharmos o mesmo objeto, o Senhor Jesus Cristo. Cristo e o mundo não podem existir no mesmo coração, ao mesmo tempo, o amor do Pai não pode coexistir com o amor do mundo. É um ou outro.</p>
+<a class="header" href="print.html#separaÇÃo-versus-isolamento" id="separaÇÃo-versus-isolamento"><h2>SEPARAÇÃO versus ISOLAMENTO</h2></a>
+<p>No entanto, deve haver equilíbrio em nosso caminho cristão para tudo isso, como em muitas outras áreas da nossa vida cristã. Se somos chamados para fora do mundo, não somos chamados ao isolamento. Mesmo não sendo do mundo, estamos no mundo e somos chamados para sermos um testemunho nele. A incumbência dada aos crentes é encontrada em <a href="http://bibliaonline.com.br/acf/lc/24/47">Lucas 24:47</a>: &quot;que em seu nome se pregasse o arrependimento para remissão dos pecados, a todas as nações, começando por Jerusalém&quot;. Isso não pode ser feito em um caminho de isolamento, deve haver contato com este mundo e devemos ser acessíveis a ele. A questão é saber como isso pode ser feito da maneira correta.</p>
+<p>Alguns queridos irmãos (e muitos, sem dúvida, com um sincero desejo de levar o evangelho a este mundo) sucumbiram à noção errada de que devem descer ao nível deste mundo para alcançar as almas. Em vez de &quot;transformai-vos pela renovação da vossa mente, para que experimenteis qual seja a boa, agradável, e perfeita vontade de Deus&quot; (<a href="http://bibliaonline.com.br/acf/rm/12/2">Romanos 12:2</a>). O efeito da total discordância disto é visto na chamada teologia do pacto, que ensina que é responsabilidade dos cristãos endireitar este mundo e torná-lo pronto para o reino de Cristo. Assim, encontramos atualmente muitos crentes na política e outras formas de ajudar este mundo, usando as suas energias nessa direção.</p>
+<p>Desnecessário dizer que, aqueles que trabalham com este mundo descem a seus princípios, assim, sendo seu testemunho diluído, seu discernimento espiritual também sofre. Tais crentes não somente estão no mundo, mas praticamente são do mundo. Claro, há graus de mundanismo e alguns têm muito mais do mundo do que outros. Dessa forma, outros crentes que têm pouco interesse em melhorar este mundo acham que é suficiente levar uma vida boa, moralmente correta e ao mesmo tempo aproveitar ao máximo tudo o que este mundo tem para oferecer. A questão é: “Qual o mal nisso?&quot; Este é um nível bastante baixo para um crente, pois o que é do mundo não pode ser de Deus.</p>
+<p>Outros crentes, horrorizados com o aumento generalizado da violência e da corrupção (e novamente com a melhor das intenções), assumiram um caminho de isolamento, procurando proteger a si mesmos e suas famílias de tudo neste mundo. Esta forma de lidar com o assunto não é nova, eremitas cristãos, ordens monásticas e outras formas de isolamento extremo estão conosco há mais de 1500 anos. Mas como alguém mais acertadamente disse: &quot;A mera vida monástica, não importa quão rígida, não fecha a mundanidade, mas sim, a desliga. Você pode colocar um homem atrás de paredes de pedra e nunca deixá-lo ver o mundo justo de Deus, você pode privá-lo dos luxos da vida, quase de suas necessidades e ainda tê-lo como bem mundano como sempre. Se o Pai é excluído, há mundanismo. Não é suficiente fechar uma parte do terreno com muros para torná-lo um jardim. A menos que seja cultivado com o bem, ele vai produzir mais ervas daninha do que nunca&quot;.</p>
+<p>Tais crentes não são do mundo, mas na prática eles não estão no mundo e seu testemunho é fraco ou inexistente. Da mesma forma, o mundo pode continuar a florescer em seus corações, apenas de uma forma diferente. A soberba da vida, um dos personagens do mundo que desejam evitar, pode muito bem continuar a prosperar.</p>
+<a class="header" href="print.html#transformado" id="transformado"><h2>TRANSFORMADO</h2></a>
+<p>Então qual é a solução? Como podemos alcançar o equilíbrio adequado? Gostaria de sugerir que podemos ir a um dos extremos sugeridos - mundanismo ou isolamento - sem muito exercício diante do Senhor. Eu posso ir pelas minhas próprias pernas para ambos os extremos e sem discernimento espiritual a todos. Minhas próprias concupiscências me controlarão em um e um espírito lícito no outro. No entanto, para equilibrar isso no caminho certo, eu devo ser &quot;transformado pela renovação da minha mente&quot; (<a href="http://bibliaonline.com.br/acf/rm/12/2">Romanos 12:2</a>) e &quot;o amor do Pai&quot; (<a href="http://bibliaonline.com.br/acf/1jo/2/15">1 João 2:15</a>) deve estar em mim. Quando meu coração é atraído para Cristo e a alegria do Seu amor encher meu coração, estou ocupado com o mesmo objeto que o Pai tem diante de Si. O amor do Pai forçará para fora de mim o amor do mundo.</p>
+<p>Então serei separado deste mundo, porém mais no coração do que na localização. Não me associarei com o mundo em seus prazeres, ambições e política, mas viverei e morarei nele em vez de me conformar a ele, não serei somente um testemunho vivo, mas também um testemunho para o mundo do caráter de Deus como Salvador. Minha mente terá sido renovada, serei transformado, não conformado.</p>
+<p>Isso não quer dizer que eu vou ser caracterizado por um ascetismo* miserável. Em vez disso, eu serei grato pela graciosa provisão de Deus para mim, lembrando que o meu lugar é estar entre aqueles que &quot;usam deste mundo, como se dele não usassem em absoluto, porque a aparência deste mundo passa&quot; (<a href="http://bibliaonline.com.br/acf/1co/7/31">1 Coríntios 7 : 31</a>). Reconhecerei que ao andar por este mundo, vou me contaminar ao longo do tempo e assim aproveito &quot;a lavagem da água, pela palavra&quot; (<a href="http://bibliaonline.com.br/acf/ef/5/26">Efésios 5:26</a>), aplicada pelo próprio Senhor ou por outro irmão.</p>
+<p>Acima de tudo, buscarei a orientação contínua do Senhor, em um espírito de dependência Dele. O Espírito de Deus é capaz de me conduzir, me guiar e me mostrar como estar no mundo, mas não ser dele. Isso requer constante dependência do Senhor, pois &quot;não é do homem o seu caminho; nem é do homem que caminha o dirigir os seus passos&quot; (<a href="http://bibliaonline.com.br/acf/jr/10/23">Jeremias 10:23</a>). Temos o exemplo perfeito em nosso bendito Senhor que, voluntariamente, tomou o seu lugar entre nós como o perfeito, o homem dependente, andando no poder do Espírito de Deus. Sabemos que, por vezes, Ele passou a noite em oração, não somente para si mesmo, mas como um exemplo para nós. É um privilégio &quot;seguir seus passos&quot; (<a href="http://bibliaonline.com.br/acf/1pe/2/21">1 Pedro 2:21</a>).</p>
+<p>*Nota do tradutor: Ascetismo - abstenção de prazeres e até do conforto material.</p>
+<p>W. J. Prost</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

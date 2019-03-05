@@ -1,0 +1,21 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+notas_sobre_o_salmo_22.html
+NOTAS SOBRE O SALMO 2.odt
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css
