@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/aliancas/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/as-cartas-as-7-igrejas/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/as-verdades-absolutas-de-deus/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/considerando-meu-irmao/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/deus-esta-em-todas-as-circunstancias/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/peregrinos/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/folhetos/doutrinarios/adoracao-crista/</loc>
     <lastmod>2019-02-18T00:00:00+00:00</lastmod>
   </url>
@@ -14,11 +44,6 @@
   
   <url>
     <loc>https://leituracrista.com/folhetos/doutrinarios/a-ultima-trombeta/</loc>
-    <lastmod>2019-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/peregrinos/</loc>
     <lastmod>2019-02-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -74,31 +99,6 @@
   
   <url>
     <loc>https://leituracrista.com/folhetos/doutrinarios/a-ultima-trombeta/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/aliancas/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/as-cartas-as-7-igrejas/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/as-verdades-absolutas-de-deus/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/considerando-meu-irmao/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/deus-esta-em-todas-as-circunstancias/</loc>
     <lastmod>2017-07-21T17:00:00+09:00</lastmod>
   </url>
   
@@ -473,11 +473,6 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/livretes/as-02-naturezas-do-crente/</loc>
-    <lastmod>2017-06-19T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/livretes/cristo-nossa-vida/</loc>
     <lastmod>2017-06-19T17:00:00+09:00</lastmod>
   </url>
@@ -847,7 +842,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/c.-h.-mackintosh/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -873,8 +868,20 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/tags/christian-truth-for-the-household-of-faith/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/tags/clarence-lunden/</loc>
     <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/tags/concise-bible-dictionary/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -908,7 +915,7 @@
   
   <url>
     <loc>https://leituracrista.com/categories/doutrinarios/</loc>
-    <lastmod>2019-02-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1051,7 +1058,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/j.-k./</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1099,7 +1106,7 @@
   
   <url>
     <loc>https://leituracrista.com/</loc>
-    <lastmod>2019-02-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1123,13 +1130,13 @@
   
   <url>
     <loc>https://leituracrista.com/tags/miguel-silva/</loc>
-    <lastmod>2019-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://leituracrista.com/tags/morrish-bible-dictionary/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
