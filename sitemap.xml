@@ -103,36 +103,6 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/eu-sou-do-senhor/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/jesus-nao-poderia-pecar/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/jugo-desigual/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/medo-de-perder-a-salvacao/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/missionarios/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/musica-instrumental-nas-reunioes/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/folhetos/doutrinarios/naama-o-leproso/</loc>
     <lastmod>2017-07-21T17:00:00+09:00</lastmod>
   </url>
@@ -293,6 +263,11 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/eu-sou-do-senhor/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/livretes/mefibosete-a-bondade-de-deus/</loc>
     <lastmod>2017-07-19T17:00:00+09:00</lastmod>
   </url>
@@ -430,6 +405,11 @@
   <url>
     <loc>https://leituracrista.com/livretes/voce-parte-o-pao/</loc>
     <lastmod>2017-07-14T17:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/jesus-nao-poderia-pecar/</loc>
+    <lastmod>2017-07-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -728,6 +708,26 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/jugo-desigual/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/medo-de-perder-a-salvacao/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/missionarios/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/musica-instrumental-nas-reunioes/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/tags/.-g.-bellet/</loc>
     <lastmod>2017-05-19T17:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -896,6 +896,12 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/tags/desconhecido/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/tags/desconhecidos/</loc>
     <lastmod>2017-07-21T17:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -927,7 +933,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/e.-j.-checkley/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1241,7 +1247,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/william-macdonald/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2017-07-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,21 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+jesus_nao_poderia_pecar.html
+JESUS NAO PODERIA PECAR WILLIAM MACDONALD WILLIAM MACDONALD.odt
+lista.txt
+mark.min.js
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css
