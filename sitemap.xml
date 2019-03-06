@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/nao-vos-comove-isto/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/o-chamado-de-deus/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/o-cantico-dos-canticos-do-noivo/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/o-falso-messias/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/o-fariseu-o-publicano-e-um-homem-em-cristo/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/o-fim-de-uma-jornada/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/o-mundo-invisivel-iremos-nos-conhecer-no-ceu/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/os-desapontamentos-da-vida/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/folhetos/doutrinarios/aliancas/</loc>
     <lastmod>2019-02-22T00:00:00+00:00</lastmod>
   </url>
@@ -133,52 +173,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/nao-repouses-a-tua-mao/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/nao-vos-comove-isto/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/o-chamado-de-deus/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/o-cantico-dos-canticos-do-noivo/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/folhetos/doutrinarios/o-espirito-de-graca/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/o-falso-messias/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/o-fariseu-o-publicano-e-um-homem-em-cristo/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/o-fim-de-uma-jornada/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/o-mundo-invisivel-iremos-nos-conhecer-no-ceu/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/folhetos/doutrinarios/os-desapontamentos-da-vida/</loc>
     <lastmod>2017-07-21T17:00:00+09:00</lastmod>
   </url>
   
@@ -708,6 +703,11 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/nao-repouses-a-tua-mao/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/folhetos/doutrinarios/jugo-desigual/</loc>
     <lastmod>2017-03-05T00:00:00+00:00</lastmod>
   </url>
@@ -835,6 +835,12 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/tags/c.-e.-lunden/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/tags/c.-h.-brown/</loc>
     <lastmod>2017-07-14T17:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -875,7 +881,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/clarence-lunden/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2017-07-14T17:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -921,7 +927,7 @@
   
   <url>
     <loc>https://leituracrista.com/categories/doutrinarios/</loc>
-    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -939,7 +945,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/echoes-of-grace/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1053,7 +1059,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/j.-g.-bellet/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1070,13 +1076,13 @@
   
   <url>
     <loc>https://leituracrista.com/tags/j.-n.-darby/</loc>
-    <lastmod>2019-02-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://leituracrista.com/tags/j.-r.-gill/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1106,13 +1112,13 @@
   
   <url>
     <loc>https://leituracrista.com/tags/laura-anna-bartner-snow/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://leituracrista.com/</loc>
-    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1159,7 +1165,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/r.-erisman/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1224,7 +1230,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/w.-scott/</loc>
-    <lastmod>2017-07-21T17:00:00+09:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

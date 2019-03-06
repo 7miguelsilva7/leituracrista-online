@@ -1,0 +1,21 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+O CANTICO DOS CANTICOS DO NOIVO C E LUNDEN CLARENCE LUNDEN.odt
+o_cantico_dos_canticos_do_noivo.html
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css

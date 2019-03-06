@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>MARIA MADALENA - NÃO VOS COMOVE ISTO?</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="nao_vos_comove_isto/README.html"><strong aria-hidden="true">1.</strong> NÃO VOS COMOVE ISTO?</a></li><li><ol class="section"><li><a href="nao_vos_comove_isto/tres_cruzes.html"><strong aria-hidden="true">1.1.</strong> TRÊS CRUZES</a></li><li><a href="nao_vos_comove_isto/era_desprezado.html"><strong aria-hidden="true">1.2.</strong> ERA DESPREZADO</a></li><li><a href="nao_vos_comove_isto/maria_madalena.html" class="active"><strong aria-hidden="true">1.3.</strong> MARIA MADALENA</a></li><li><a href="nao_vos_comove_isto/um_sepulcro_vazio.html"><strong aria-hidden="true">1.4.</strong> UM SEPULCRO VAZIO</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">NÃO VOS COMOVE ISTO?</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="nao_vos_comove_isto/maria_madalena.html#maria-madalena" id="maria-madalena"><h2>MARIA MADALENA</h2></a>
+<p>Junto com Maria, a mãe do Senhor, estava outra Maria, Maria Madalena. Não se sabe muito desta Maria, exceto que o Senhor, no começo de Seu ministério, havia expulsado dela sete demônios (<a href="http://bibliaonline.com.br/acf/lc/8/2">Lucas 8:2</a>). Por este ato de bondade e compaixão, o coração de Maria havia sido grandemente atraído a Ele. Ela, com frequência, servia a Ele quando estava na Galiléia (<a href="http://bibliaonline.com.br/acf/mc/15/41">Marcos 15:41</a>).</p>
+<p>E agora desce uma cortina de escuridão sobre a cena toda. Já não é permitido ao homem seguir dando vazão à sua ira contra o amado Ser celestial. Aqueles que estavam nas proximidades não podiam enxergar com seus olhos, mas podiam escutar com seus ouvidos. Penetrando a escuridão, ouviu-se um brado de gelar o coração: &quot;Deus Meu, Deus Meu, por que Me desamparaste?&quot; (<a href="http://bibliaonline.com.br/acf/mt/27/46">Mateus 27:46</a>). E depois, &quot;Está consumado&quot; (<a href="http://bibliaonline.com.br/acf/jo/19/30">João 19:30</a>). A obra da salvação havia sido completada pela morte do imaculado e incontaminado Filho de Deus, o Cordeiro escolhido pelo próprio Deus.</p>
+<p>Desde aquele momento, e até hoje, as palavras da lamentação de Jeremias trazem um significado particular: &quot;Não vos comove isto a todos vós que passais pelo caminho?&quot; (<a href="http://bibliaonline.com.br/acf/lm/1/12">Lamentações 1:12</a>). Muitos daqueles que participaram da cena da crucificação diriam que aquilo nada significou para eles. Continuaram seu caminho para seus lares e voltaram às suas atividades habituais. O mesmo não aconteceu com Maria Madalena. Ela aguardou por perto para ver onde Ele seria colocado (<a href="http://bibliaonline.com.br/acf/mc/15/47">Marcos 15:47</a>). Já se delineava em sua mente um plano de como ela poderia mostrar mais um ato de bondade para com Aquele que havia mostrado tanta bondade para com ela. Ela esperou pacientemente por uma chance, e quando o Sabbath já havia passado, bem cedo de manhã ela dirigiu-se ao sepulcro com suas especiarias aromáticas a fim de ungir o corpo de Jesus (<a href="http://bibliaonline.com.br/acf/mc/16/1-2">Marcos 16:1-2</a>).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="nao_vos_comove_isto/era_desprezado.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="nao_vos_comove_isto/um_sepulcro_vazio.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="nao_vos_comove_isto/era_desprezado.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="nao_vos_comove_isto/um_sepulcro_vazio.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>
