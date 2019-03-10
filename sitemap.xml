@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leituracrista.com/folhetos/doutrinarios/nao-deixemos-de-congregar-nos-como-e-costume-de-alguns/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/folhetos/doutrinarios/nao-vos-comove-isto/</loc>
     <lastmod>2019-03-06T00:00:00+00:00</lastmod>
   </url>
@@ -932,7 +937,7 @@
   
   <url>
     <loc>https://leituracrista.com/categories/doutrinarios/</loc>
-    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -987,6 +992,12 @@
   <url>
     <loc>https://leituracrista.com/tags/f.-g.-patterson/</loc>
     <lastmod>2019-02-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/tags/f%C3%A1bio-sandes/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1123,7 +1134,7 @@
   
   <url>
     <loc>https://leituracrista.com/</loc>
-    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
