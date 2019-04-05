@@ -1,0 +1,25 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+declarado_filho_de_deus.html
+eis-me_aqui.html
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+nosso_perfeito_sacrificio.html
+print.html
+quem_e_jesus.html
+QUEM E JESUS K HESLOP K. HESLOP.odt
+searcher.js
+searchindex.js
+tomorrow-night.css
+um_menino_um_filho.html

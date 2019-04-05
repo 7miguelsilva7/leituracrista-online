@@ -1,0 +1,21 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+para_que_servem_os_milagres.html
+PARA QUE SERVEM OS MILAGRES W FEREDAY W. FEREDAY.odt
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css

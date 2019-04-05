@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>QUEM É JESUS?</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="quem_e_jesus.html"><strong aria-hidden="true">1.</strong> QUEM É JESUS?</a></li><li><a href="um_menino_um_filho.html"><strong aria-hidden="true">2.</strong> UM MENINO... UM FILHO</a></li><li><a href="declarado_filho_de_deus.html"><strong aria-hidden="true">3.</strong> DECLARADO FILHO DE DEUS</a></li><li><a href="eis-me_aqui.html"><strong aria-hidden="true">4.</strong> EIS-ME AQUI</a></li><li><a href="nosso_perfeito_sacrificio.html"><strong aria-hidden="true">5.</strong> NOSSO PERFEITO SACRIFÍCIO</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">QUEM É JESUS?</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#quem-É-jesus" id="quem-É-jesus"><h1>QUEM É JESUS?</h1></a>
+<p>O mundo hoje está cheio de confusão e engano acerca de Jesus; quem Ele é, o que fez, e o que ensinou. Parte disso se deve à ignorância, mas muito é resultado da obra de Satanás para manter os homens afastados de Deus. Apesar de ser Jesus o fundamento da fé cristã, nem sempre temos uma compreensão clara de Quem Ele é! Dizer que Jesus é Deus santo, e perfeito Homem é verdade, mas parece ser uma contradição. Nossa mente finita tem dificuldades para compreender o conceito de um Deus divino. Mas em Jesus vemos tanto a divindade como a perfeita humanidade.</p>
+<a class="header" href="print.html#um-menino-um-filho" id="um-menino-um-filho"><h1>UM MENINO... UM FILHO</h1></a>
+<p>Em <a href="http://bibliaonline.com.br/acf/is/9/6">Isaías 9:6</a> lemos estas maravilhosas palavras proféticas: &quot;Porque um menino nos nasceu, um Filho se nos deu, e o principado está sobre os Seus ombros, e se chamará o Seu nome: Maravilhoso, Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz.&quot; Neste versículo são mencionadas tanto Sua humanidade como Sua divindade; &quot;Porque um menino nos nasceu&quot;, mostra Sua humanidade; &quot;um Filho se nos deu&quot; mostra Sua divindade. Voltando <a href="http://bibliaonline.com.br/acf/is/7/14">ao sétimo capítulo, versículo 14, Isaías</a> escreveu: &quot;Eis que a virgem conceberá, e dará à luz um filho, e chamará o Seu nome Emanuel&quot; (que significa Deus conosco).</p>
+<p>Indo ao Novo Testamento podemos continuar com a história de Sua vinda no evangelho de <a href="http://bibliaonline.com.br/acf/lc/1/31">Lucas, capítulo 1. No versículo 31</a> o anjo diz a Maria: &quot;E eis que em teu ventre conceberás e darás à luz um filho, e pôr-Ihe-ás o nome de Jesus&quot;. Maria concebeu e deu à luz um filho, o que fez dEle um Homem completo. &quot;E, respondendo o anjo, disselhe: Descerá sobre ti o Espírito Santo, e a virtude do Altíssimo to cobrirá com a Sua sombra; por isso também o Santo, que de ti há de nascer, será chamado Filho de Deus&quot; (<a href="http://bibliaonline.com.br/acf/lc/1/35">Lucas 1:35</a>).</p>
+<p>É importante reconhecer que embora Jesus tenha Se tornado um Homem, Ele é sempre Deus. Deus é eterno, não tendo nem começo e nem fim. Jesus confirmou isto quando respondeu à jactância dos judeus que se declaravam filhos de Abraão.</p>
+<p>Quando ele afirmou, &quot;Antes que Abraão existisse, Eu sou&quot; (<a href="http://bibliaonline.com.br/acf/jo/8/58">João 8:58</a>), eles tentaram apedrejá-Lo pois reconheceram em Sua afirmação uma confirmação de Sua eterna divindade.</p>
+<a class="header" href="print.html#declarado-filho-de-deus" id="declarado-filho-de-deus"><h1>DECLARADO FILHO DE DEUS</h1></a>
+<p>Paulo escreveu aos cristãos romanos: &quot;Acerca de Seu Filho, que nasceu da descendência de Davi segundo a carne, declarado Filho de Deus em poder, segundo o Espírito de santificação, pela ressurreição dentre os mortos&quot; (<a href="http://bibliaonline.com.br/acf/rm/1/3,4">Romanos 1:3,4</a>). Aqui, bem no começo de sua carta aos crentes em Roma, Paulo confirma tanto a humanidade como a divindade de Jesus Cristo. Jesus &quot;nasceu da descendência de Davi segundo a carne&quot;.</p>
+<p>Isso aconteceu há quase dois mil anos quando Cristo nasceu de uma virgem em um estábulo em Belém. Mas repare que as Escrituras são cuidadosas aqui em fazer uma distinção. Embora Se tenha tornado um Homem, ele foi &quot;declarado Filho de Deus&quot;. Nada aqui sugere que Ele tenha Se tornado Filho de Deus. Como Filho de Deus Ele é o EU SOU, Aquele que sempre existiu.</p>
+<p>João começou seu evangelho com a declaração de que &quot;no princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio com Deus... e o Verbo Se fez carne, e habitou entre nós... cheio de graça e de verdade&quot; (<a href="http://bibliaonline.com.br/acf/jo/1/1-14">João 1:1-14</a>).</p>
+<p>Quanto cuidado da parte de Deus em registrar um testemunho da divindade de Seu amado Filho. Em Hebreus, no primeiro capítulo, lemos que Deus nos falou &quot;pelo Filho, a Quem constituiu herdeiro de tudo, por Quem fez também o mundo. O Qual, sendo o resplendor da Sua glória, e a expressa imagem da Sua pessoa, e sustentando todas as coisas pela palavra do Seu poder, havendo feito por Si mesmo a purificação dos nossos pecados, assentou-Se à destra da majestade nas alturas&quot; (<a href="http://bibliaonline.com.br/acf/hb/1/1-3">Hebreus 1:1-3</a>). Jesus Cristo é a própria essência de Deus. Verdadeiramente, em Cristo &quot;habita corporalmente toda a plenitude da divindade&quot; (<a href="http://bibliaonline.com.br/acf/cl/2/9">Cl 2:9</a>).</p>
+<a class="header" href="print.html#eis-me-aqui" id="eis-me-aqui"><h1>EIS-ME AQUI</h1></a>
+<p>Todavia jamais teríamos conhecido o infinito amor de Deus se Cristo não tivesse tomado sobre Si o corpo de um Homem. Isaías escreveu, profeticamente: &quot;Depois disto ouvi a voz do Senhor, que dizia: A quem enviarei, e quem há de ir por nós? Então disse eu: Eis-me aqui, envia-me a mim&quot; (<a href="http://bibliaonline.com.br/acf/is/6/8">Isaías 6:8</a>). Lemos as palavras de Jesus Cristo em Hebreus 10:&quot;Eis aqui venho, para fazer, ó Deus, a Tua vontade&quot;. &quot;Porque Deus enviou o Seu Filho ao Mundo, não para que condenasse o mundo, mas para que o mundo fosse salvo por Ele&quot; (<a href="http://bibliaonline.com.br/acf/jo/3/17">João 3:17</a>). &quot;Cristo Jesus... tomando a forma de servo, fazendo-Se semelhante aos homens; e, achado na forma de homem, humilhou-Se a Si mesmo, sendo obediente até à morte, e morte de cruz&quot; (<a href="http://bibliaonline.com.br/acf/fp/2/7-8">Fp 2:7-8</a>). Cristo deixou o esplendor do céu, tomou sobre Si a forma de um servo e foi obediente até à morte. Assim Deus declara, das alturas do céu, &quot;Este é o Meu Filho amado, em Quem Me comprazo&quot; (<a href="http://bibliaonline.com.br/acf/mt/3/17">Mateus 3:17</a>). Cristo cumpriu perfeitamente a vontade de Seu Pai. Ao olhar adiante, para a cruz, estando ainda no jardim no Monte das Oliveiras, Sua oração a Seu Pai foi completa submissão: &quot;...não se faça a Minha vontade, mas a Tua&quot; (<a href="http://bibliaonline.com.br/acf/lc/22/42">Lucas 22:42</a>). &quot;Todavia, ao Senhor agradou moê-Lo, fazendo-O enfermar... Ele verá o fruto do trabalho da Sua alma, e ficará satisfeito&quot; (<a href="http://bibliaonline.com.br/acf/is/53/10-11">Isaías 53:10-11</a>).</p>
+<a class="header" href="print.html#nosso-perfeito-sacrifÍcio" id="nosso-perfeito-sacrifÍcio"><h1>NOSSO PERFEITO SACRIFÍCIO</h1></a>
+<p>Encontramos em Jesus Cristo nosso perfeito sacrifício. O israelita era instruído na lei de Moisés a levar um cordeiro que fosse limpo e sem mancha para oferecer como sacrifício pelo pecado. Aqueles sacrifícios &quot;nunca podem tirar pecados&quot; (<a href="http://bibliaonline.com.br/acf/hb/10/11">Hebreus 10:11</a>), todavia precisavam ser oferecidos continuamente. Abraão, falando profeticamente, disse a Isaque que Deus iria prover para Si um cordeiro para o holocausto. O apóstolo João registra as palavras de João Batista quando viu o cumprimento daquela profecia: &quot;E, vendo passar a Jesus, disse: Eis aqui o Cordeiro de Deus&quot; (<a href="http://bibliaonline.com.br/acf/jo/1/36">João 1:36</a>). Mais tarde, João viu na cruz o seu Mestre e Senhor crucificado, e o soldado com uma lança furando o Seu lado, e o sangue que saiu. Sua reação foi proclamar &quot;E aquele que o viu testificou, e o seu testemunho é verdadeiro; e sabe que é verdade o que diz, para que também vós o creiais&quot; (<a href="http://bibliaonline.com.br/acf/jo/19/35">João 19:35</a>). Anos mais tarde, ao escrever suas epístolas ele, sem dúvida alguma, se lembrou daquela cena, e escreveu: &quot;O sangue de Jesus Cristo, Seu Filho, nos purifica de todo o pecado&quot; (<a href="http://bibliaonline.com.br/acf/1jo/1/7">1 João 1:7</a>). &quot;Portanto, agora nenhuma condenação há para os que estão em Cristo Jesus&quot; (<a href="http://bibliaonline.com.br/acf/rm/8/1">Romanos 8:1</a>).</p>
+<p>Além de Deus haver deixado registrado a perfeita humanidade sem pecado de Seu amado Filho para que todos pudessem ler, Ele declarou ser Cristo Seu Filho, ressuscitando-O dentre os mortos. As autoridades haviam procurado manter Jesus no sepulcro colocando uma enorme pedra em sua entrada, selando-a, e colocando guardas. Mesmo assim o poder de Deus foi demonstrado ao manifestar publicamente Seu Filho como ressuscitado dentre os mortos. Cristo ressuscitou triunfante, rompendo as cadeias da morte e do inferno. Regozijemo-nos e louvemos a Ele, como fez o escritor deste hino:</p>
+<p>Morte Ele assim provou, a sepultura,</p>
+<p>Três dias O guardou, Cristo, O Senhor!</p>
+<p>Morto Ele não ficou!</p>
+<p>Triunfante, Cristo ressurgiu!</p>
+<p>A vitória sobre a morte ali ganhou</p>
+<p>E no céu, vitorioso, Cristo entrou.</p>
+<p>Ressurgiu! Ressurgiu! Aleluia! Ressurgiu!</p>
+<p>&quot;Quem é que condena? Pois é Cristo Quem morreu, ou antes Quem ressuscitou dentre os mortos, o Qual está à direita de Deus, e também intercede por nós&quot; (<a href="http://bibliaonline.com.br/acf/rm/8/34">Romanos 8:34</a>). Jesus Cristo, o Filho de Deus, que me amou e Se deu a Si mesmo por mim, está agora sentado no céu intercedendo por nós diante de Seu Pai.</p>
+<p>Traduzido de 'Who is Jesus?'</p>
+<p>K. Heslop</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>
