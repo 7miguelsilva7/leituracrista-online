@@ -1,0 +1,25 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+esfera_celestial_e_esfera_terrenal.html
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+linguas_e_outros_dons_de_sinais.html
+LINGUAS E OUTROS DONS DE SINAIS SEU LUGAR G. H. HAYHOE.odt
+lista.txt
+mark.min.js
+nao_devemos_ir_alem_da_palavra_de_deus.html
+o_que_a_palavra_diz.html
+o_que_dizer_de_1_corintios_acerca_do_dom_de_lingua.html
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css

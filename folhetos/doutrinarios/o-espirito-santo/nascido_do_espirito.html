@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>NASCIDO DO ESPÍRITO - O Espírito Santo</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="prefacio.html"><strong aria-hidden="true">1.</strong> PREFÁCIO</a></li><li><a href="o_espirito_santo_-_sua_pessoa,_sua_vinda_e_sua_obr.html"><strong aria-hidden="true">2.</strong> O ESPIRITO SANTO - Sua Pessoa, Sua Vinda e Sua Obra</a></li><li><a href="nascido_do_espirito.html" class="active"><strong aria-hidden="true">3.</strong> NASCIDO DO ESPÍRITO</a></li><li><a href="o_batismo_com_o_espirito_santo.html"><strong aria-hidden="true">4.</strong> O BATISMO COM O ESPÍRITO SANTO</a></li><li><a href="a_uncao_do_espirito.html"><strong aria-hidden="true">5.</strong> A UNÇÃO DO ESPÍRITO</a></li><li><a href="o_selo_do_espirito.html"><strong aria-hidden="true">6.</strong> O SELO DO ESPÍRITO</a></li><li><a href="o_penhor_do_espirito.html"><strong aria-hidden="true">7.</strong> O PENHOR DO ESPÍRITO</a></li><li><a href="cheios_do_espirito.html"><strong aria-hidden="true">8.</strong> CHEIOS DO ESPÍRITO</a></li><li><a href="os_dons_do_espirito.html"><strong aria-hidden="true">9.</strong> OS DONS DO ESPÍRITO</a></li><li><a href="conclusao.html"><strong aria-hidden="true">10.</strong> CONCLUSÃO</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Espírito Santo</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="nascido_do_espirito.html#nascido-do-espÍrito" id="nascido-do-espÍrito"><h1>NASCIDO DO ESPÍRITO</h1></a>
+<p>Foi sempre pelo Espírito que a vida foi dada a todo aquele que pertence à família de fé. (<a href="http://bibliaonline.com.br/acf/ez/11/19">Ezequiel 11:19</a>; <a href="http://bibliaonline.com.br/acf/ez/36/26-27">36:26,27</a>; <a href="http://bibliaonline.com.br/acf/jo/3/5">João 3:5</a>; <a href="http://bibliaonline.com.br/acf/jo/6/63">6:63</a>.) Agora todo crente tem &quot;vida em abundância&quot;. (<a href="http://bibliaonline.com.br/acf/jo/10/10">João 10:10</a>.) Trata-se de vida em Cristo ressuscitado (<a href="http://bibliaonline.com.br/acf/jo/20/22">João 20:22</a>), de forma que possuímos uma vida sobre a qual o pecado não tem domínio (<a href="http://bibliaonline.com.br/acf/rm/6/14">Romanos 6:14</a>), sobre a qual a morte não tem nenhum direito (<a href="http://bibliaonline.com.br/acf/1co/3/22">1 Coríntios 3:22</a>), e sobre a qual Satanás não tem qualquer poder (<a href="http://bibliaonline.com.br/acf/1jo/5/18">1 João 5:18</a>). Essa vida será manifestada na vinda de nosso Senhor Jesus Cristo, conforme <a href="http://bibliaonline.com.br/acf/1ts/4/15-17">1 Tessalonicenses 4:15-17</a>.</p>
+<p>Os santos do Antigo Testamento possuíam vida pelo Espírito, mas não aquela vida à qual as Escrituras se referem como &quot;vida abundante&quot;. A vinda do Espírito Santo e Sua habitação em nós deram-nos o conhecimento de filiação, que significa um parentesco consciente que nos capacita a dizer: &quot;Aba, Pai&quot;. (<a href="http://bibliaonline.com.br/acf/gl/4/6">Gálatas 4:6</a>.) Uma vez de posse desta vida, temos comunhão de pensamento em unidade de vida, por termos vida no Filho que nos revelou o Pai. O Espírito testifica dEle e da Sua obra a fim de que, por meio da fé, tomemos posse do gozoso conhecimento do parentesco que hoje temos.</p>
+<p>Somos nascidos de Deus (<a href="http://bibliaonline.com.br/acf/1jo/5/1">1 João 5:1</a>), participantes da natureza divina (<a href="http://bibliaonline.com.br/acf/2pe/1/4">2 Pedro 1:4</a>; <a href="http://bibliaonline.com.br/acf/ef/4/24">Efésios 4:24</a>), e habitados pelo Espírito Santo. (<a href="http://bibliaonline.com.br/acf/1co/6/19">1 Coríntios 6:19</a>.)</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="o_espirito_santo_-_sua_pessoa,_sua_vinda_e_sua_obr.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="o_batismo_com_o_espirito_santo.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="o_espirito_santo_-_sua_pessoa,_sua_vinda_e_sua_obr.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="o_batismo_com_o_espirito_santo.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

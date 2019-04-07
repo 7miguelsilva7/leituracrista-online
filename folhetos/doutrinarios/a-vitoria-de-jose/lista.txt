@@ -1,0 +1,25 @@
+a_batalha.html
+a_estrategia.html
+assets
+a_vitoria_de_jose.html
+A VITORIA DE JOSE.odt
+a_vitoria_-_verdades_biblicas.html
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+conserve-se_puro.html
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css
