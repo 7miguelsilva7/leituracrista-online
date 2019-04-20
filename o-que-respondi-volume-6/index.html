@@ -235,6 +235,16 @@ ga('send', 'pageview');
             outline: none !important;
         }
     </style>
+
+
+    <script>
+    $(function() {
+   $(document).on('click', 'input[type=text][id=example1]', function() {
+     this.select();
+   });
+ });
+    </script>
+
                 
                             <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
                                 <span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-xl"> Encontre aqui!</span>
@@ -255,7 +265,7 @@ ga('send', 'pageview');
                         <h4 class="modal-title">Busca em leituracrista.com</h4>
                         <form method="get" target="_blank" action="http://www.google.com/search">
          
-                          <input type="search"  name="q" size="25" maxlength="255" value="" placeholder="Busca no site" />
+                          <input type="search" onclick="this.select();"  name="q" size="25" maxlength="255" value="" placeholder="Busca no site" />
                           
                           <input type="hidden" name="sitesearch" value="leituracrista.com" checked />
                         </form>
@@ -263,7 +273,7 @@ ga('send', 'pageview');
                       </br><h4 class="modal-title">Busca em respondi.com.br</h4>
                         <form method="get" target="_blank" action="http://www.google.com/search">
          
-                          <input type="search"  name="q" size="25" maxlength="255" value="" placeholder="Busca em Respondi" />
+                          <input type="search" onclick="this.select();"  name="q" size="25" maxlength="255" value="" placeholder="Busca em Respondi" />
                           
                           <input type="hidden" name="sitesearch" value="respondi.com.br" checked />
                         </form>
@@ -271,7 +281,7 @@ ga('send', 'pageview');
                       </br><h4 class="modal-title">Busca em 3minutos.net</h4>
                         <form method="get" target="_blank" action="http://www.google.com/search">
          
-                          <input type="search"  name="q" size="25" maxlength="255" value="" placeholder="Busca em 3minutos" />
+                          <input type="search" onclick="this.select();"  name="q" size="25" maxlength="255" value="" placeholder="Busca em 3minutos" />
                           
                           <input type="hidden" name="sitesearch" value="3minutos.net" checked />
                         </form>
