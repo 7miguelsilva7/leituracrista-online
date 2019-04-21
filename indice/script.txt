@@ -1,58 +1,14 @@
 <html>
 
 <head>
-
-
 <title>Índice Respondi.com.br Por Mario Persona</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-    
 </head>
 
 <body>
-
-<!-- Go to www.addthis.com/dashboard to customize your tools --> 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
-
-<script>
-// resolve erro de redirecionamento a partir do facebook
-$(document).ready(function() {
-var url = location.href;
-if(url.indexOf("&fbclid=")==-1) {
-} else {
-var url_atual = window.location.href;
-var str = url_atual;
-var match = str.split('&fbclid=');
-window.location.replace(match[0]);
-}
-});
-//FIM de resolve erro de redirecionamento a partir do facebook
-</script>
-
-
-<script>
-// resolve erro de redirecionamento a partir do facebook
-$(document).ready(function() {
-var url = location.href;
-if(url.indexOf("?fbclid=")==-1) {
-} else {
-var url_atual = window.location.href;
-var str = url_atual;
-var match = str.split('?fbclid=');
-window.location.replace(match[0]);
-}
-});
-//FIM de resolve erro de redirecionamento a partir do facebook
-</script>
-
-
-
-
-
-
 <center>
      <form method="GET">
      <p align="center">
@@ -64,36 +20,18 @@ window.location.replace(match[0]);
      <font size="2">
 
 <div id="fb-root"></div>
-
-<script>
-
-(function(d, s, id) {
+<script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+}(document, 'script', 'facebook-jssdk'));</script>
 
-</script>
-
-<!-- 
 <div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F%2F&amp;src=sdkpreparse">Compartilhar</a></div>
-Go to www.addthis.com/dashboard to customize your tools --> 
-</p>
-</br>
-</p>
-</br>
 
-<script>
-$(function(){
-  var regex = new RegExp('[\?]', 'g');
-  // repare a flag "g" de global, para substituir todas as ocorrências
-  $('input').bind('input', function(){
-    $(this).val($(this).val().replace(regex, ''));
-  });
-})
-</script>
+</p>
+
 
      <input type="text" placeholder="Digite sua pergunta" autofocus name="query" size="16" style="font-size: 11 pt; color: #000000; font-family: Verdana; font-variant: small-; border: 1 solid #000000">
      </font></font> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
@@ -111,7 +49,7 @@ $(function(){
 </center>
 <center>
 <div align="center" style="width: 100%; height: 100%"> 
-  <table width="80%">
+  <table width="100%">
     <tr> 
       <!--<td width="100%"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">-->
       <td width="100%" style="font-size: 14px; color: #000000; font-family: Verdana; font-variant: small-; border: 1 solid #000000">
