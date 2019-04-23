@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="5909.292"
+   height="2000"
+   viewBox="0 0 5909.292 2000"
+   sodipodi:docname="cadEmail.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="936"
+     id="namedview4"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.0834386"
+     inkscape:cx="2778.665"
+     inkscape:cy="928.1863"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <rect
+     style="opacity:1;fill:#f49236;fill-opacity:1;stroke:none;stroke-width:4.23725891;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:0.5"
+     id="rect12"
+     width="5909.292"
+     height="1999.9999"
+     x="0"
+     y="4.6185278e-14"
+     ry="417.78711"
+     inkscape:export-xdpi="50"
+     inkscape:export-ydpi="50" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:22.16666603px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="685.36426"
+     y="837.46851"
+     id="text18"><tspan
+       sodipodi:role="line"
+       id="tspan16"
+       x="685.36426"
+       y="857.08081" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:772.9364624px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#666666;fill-opacity:1;stroke:none;stroke-width:34.8693161px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+     x="1935.9961"
+     y="32.493542"
+     id="text22"
+     transform="scale(1.0287211,0.97208077)"
+     inkscape:export-xdpi="50"
+     inkscape:export-ydpi="50"><tspan
+       sodipodi:role="line"
+       id="tspan20"
+       x="1935.9961"
+       y="716.36115"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Impact;-inkscape-font-specification:Impact;stroke-width:34.8693161px;fill:#666666;" /><tspan
+       sodipodi:role="line"
+       x="1935.9961"
+       y="1772.4371"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Impact;-inkscape-font-specification:Impact;stroke-width:34.8693161px;fill:#666666;"
+       id="tspan24">SEU EMAIL</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:772.9364624px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:34.8693161px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+     x="1940.9423"
+     y="-850.3255"
+     id="text22-0"
+     transform="scale(1.0287211,0.97208077)"
+     inkscape:export-xdpi="50"
+     inkscape:export-ydpi="50"><tspan
+       sodipodi:role="line"
+       id="tspan20-3"
+       x="1940.9423"
+       y="-166.45789"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Impact;-inkscape-font-specification:Impact;stroke-width:34.8693161px;fill:#ffffff;fill-opacity:1;" /><tspan
+       sodipodi:role="line"
+       x="1940.9423"
+       y="889.61804"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Impact;-inkscape-font-specification:Impact;stroke-width:34.8693161px;fill:#ffffff;fill-opacity:1;"
+       id="tspan24-7">CADASTRE</tspan></text>
+  <image
+     sodipodi:absref="/opt/lampp/htdocs/leituracrista/img/feeed.png"
+     xlink:href="feeed.png"
+     width="2000"
+     height="2000"
+     preserveAspectRatio="none"
+     id="image78"
+     x="3913.292"
+     y="0" />
+</svg>
