@@ -9,15 +9,13 @@
     
 
     
-         document.write('<a id="mobile" onclick="linkToMysword()"  ><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
+         //document.write('<a id="mobile" onclick="linkToMysword()"  ><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
 
      }else{
          var share = window.location.href;
          var title = document.title;
-
-
         
-        document.write('<a id="mobile" onclick="linkToMysword()"  ><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
+        //document.write('<a id="mobile" onclick="linkToMysword()"  ><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
      }
 
 document.write('<a  target="_self" href="https:leituracrista.com/"><img style="width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
