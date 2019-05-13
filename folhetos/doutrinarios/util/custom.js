@@ -1,9 +1,9 @@
-function linkToMysword() {
-   //adicionar target blank
-    var str = document.body.innerHTML;
-    var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_");
-    document.body.innerHTML = res;
-}
+// function linkToMysword() {
+//    //adicionar target blank
+//     var str = document.body.innerHTML;
+//     var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_");
+//     document.body.innerHTML = res;
+// }
 
 
  if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -14,15 +14,116 @@ function linkToMysword() {
     
 
     
-         document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
+        document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
 
      }else{
          var share = window.location.href;
          var title = document.title;
 
 
+
         
-        document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
+       document.write('<a id="desktop" onclick="linkToMysword()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:80px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
+       document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:160px;color:#f00;font-weight:bold;"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
+
      }
 
 document.write('<a  target="_self" href="https:leituracrista.com/"><img style="width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
+
+function linkToMysword() {
+sessionStorage.setItem("ref", 1);
+location.replace(location.href)
+alert('Referências em MySword')
+}
+
+function linkToBol() {
+  sessionStorage.setItem("ref", 0);
+  location.replace(location.href)
+  alert('Referências em Bíblia Online')
+
+  }
+
+var session = sessionStorage.ref;
+
+if ( session == 1 )
+{
+  var str = document.getElementById("content").innerHTML;
+  var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_") 
+  || (/bibliaonline.com.br\/acf\/1co\//g, "mysword.info\/b?r\=1Co_")
+  || (/bibliaonline.com.br\/acf\/1cr\//g, "mysword.info\/b?r\=1Ch_")
+  || (/bibliaonline.com.br\/acf\/1pe\//g, "mysword.info\/b?r\=1Pe_")
+  || (/bibliaonline.com.br\/acf\/1rs\//g, "mysword.info\/b?r\=1Ki_")
+  || (/bibliaonline.com.br\/acf\/1sm\//g, "mysword.info\/b?r\=1Sa_")
+  || (/bibliaonline.com.br\/acf\/1co\//g, "mysword.info\/b?r\=1Co_")
+  || (/bibliaonline.com.br\/acf\/1cr\//g, "mysword.info\/b?r\=1Ch_")
+  || (/bibliaonline.com.br\/acf\/1jo\//g, "mysword.info\/b?r\=1Jo_")
+  || (/bibliaonline.com.br\/acf\/1pe\//g, "mysword.info\/b?r\=1Pe_")
+  || (/bibliaonline.com.br\/acf\/1rs\//g, "mysword.info\/b?r\=1Ki_")
+  || (/bibliaonline.com.br\/acf\/1sm\//g, "mysword.info\/b?r\=1Sa_")
+  || (/bibliaonline.com.br\/acf\/1ts\//g, "mysword.info\/b?r\=1Th_")
+  || (/bibliaonline.com.br\/acf\/1tm\//g, "mysword.info\/b?r\=1Ti_")
+  || (/bibliaonline.com.br\/acf\/2cr\//g, "mysword.info\/b?r\=2Cr_")
+  || (/bibliaonline.com.br\/acf\/2co\//g, "mysword.info\/b?r\=2Co_")
+  || (/bibliaonline.com.br\/acf\/2jo\//g, "mysword.info\/b?r\=2Jo_")
+  || (/bibliaonline.com.br\/acf\/2pe\//g, "mysword.info\/b?r\=2Pe_")
+  || (/bibliaonline.com.br\/acf\/2rs\//g, "mysword.info\/b?r\=2Ki_")
+  || (/bibliaonline.com.br\/acf\/2sm\//g, "mysword.info\/b?r\=2Sa_")
+  || (/bibliaonline.com.br\/acf\/2ts\//g, "mysword.info\/b?r\=2Th_")
+  || (/bibliaonline.com.br\/acf\/2tm\//g, "mysword.info\/b?r\=2Ti_")
+  || (/bibliaonline.com.br\/acf\/3jo\//g, "mysword.info\/b?r\=3Jo_")
+  || (/bibliaonline.com.br\/acf\/ag\//g, "mysword.info\/b?r\=Hag_")
+  || (/bibliaonline.com.br\/acf\/am\//g, "mysword.info\/b?r\=Amo_")
+  || (/bibliaonline.com.br\/acf\/ap\//g, "mysword.info\/b?r\=Rev_")
+  || (/bibliaonline.com.br\/acf\/atos\//g, "mysword.info\/b?r\=Act_")
+  || (/bibliaonline.com.br\/acf\/at\//g, "mysword.info\/b?r\=Act_")
+  || (/bibliaonline.com.br\/acf\/cl\//g, "mysword.info\/b?r\=col_")
+  || (/bibliaonline.com.br\/acf\/ct\//g, "mysword.info\/b?r\=son_")
+  || (/bibliaonline.com.br\/acf\/dn\//g, "mysword.info\/b?r\=Dan_")
+  || (/bibliaonline.com.br\/acf\/dt\//g, "mysword.info\/b?r\=Deu_")
+  || (/bibliaonline.com.br\/acf\/ec\//g, "mysword.info\/b?r\=Ecc_")
+  || (/bibliaonline.com.br\/acf\/ed\//g, "mysword.info\/b?r\=Ezr_")
+  || (/bibliaonline.com.br\/acf\/ef\//g, "mysword.info\/b?r\=Eph_")
+  || (/bibliaonline.com.br\/acf\/et\//g, "mysword.info\/b?r\=Est_")
+  || (/bibliaonline.com.br\/acf\/ex\//g, "mysword.info\/b?r\=Exo_")
+  || (/bibliaonline.com.br\/acf\/ez\//g, "mysword.info\/b?r\=Eze_")
+  || (/bibliaonline.com.br\/acf\/fp\//g, "mysword.info\/b?r\=Php_")
+  || (/bibliaonline.com.br\/acf\/fm\//g, "mysword.info\/b?r\=Phm_")
+  || (/bibliaonline.com.br\/acf\/gl\//g, "mysword.info\/b?r\=Gal_")
+  || (/bibliaonline.com.br\/acf\/gn\//g, "mysword.info\/b?r\=Gen_")
+  || (/bibliaonline.com.br\/acf\/hb\//g, "mysword.info\/b?r\=Heb_")
+  || (/bibliaonline.com.br\/acf\/hc\//g, "mysword.info\/b?r\=Hab_")
+  || (/bibliaonline.com.br\/acf\/is\//g, "mysword.info\/b?r\=Isa_")
+  || (/bibliaonline.com.br\/acf\/jd\//g, "mysword.info\/b?r\=Jud_")
+  || (/bibliaonline.com.br\/acf\/jl\//g, "mysword.info\/b?r\=Joe_")
+  || (/bibliaonline.com.br\/acf\/jn\//g, "mysword.info\/b?r\=Jon_")
+  || (/bibliaonline.com.br\/acf\/jo\//g, "mysword.info\/b?r\=Joh_")
+  || (/bibliaonline.com.br\/acf\/jó\//g, "mysword.info\/b?r\=Job_")
+  || (/bibliaonline.com.br\/acf\/j%C3%B3\//g, "mysword.info\/b?r\=Job_")
+  || (/bibliaonline.com.br\/acf\/jr\//g, "mysword.info\/b?r\=Jer_")
+  || (/bibliaonline.com.br\/acf\/js\//g, "mysword.info\/b?r\=Jos_")
+  || (/bibliaonline.com.br\/acf\/jz\//g, "mysword.info\/b?r\=Jdg_")
+  || (/bibliaonline.com.br\/acf\/lc\//g, "mysword.info\/b?r\=Luk_")
+  || (/bibliaonline.com.br\/acf\/lm\//g, "mysword.info\/b?r\=Lam_")
+  || (/bibliaonline.com.br\/acf\/lv\//g, "mysword.info\/b?r\=Lev_")
+  || (/bibliaonline.com.br\/acf\/mc\//g, "mysword.info\/b?r\=Mar_")
+  || (/bibliaonline.com.br\/acf\/ml\//g, "mysword.info\/b?r\=Mal_")
+  || (/bibliaonline.com.br\/acf\/mq\//g, "mysword.info\/b?r\=Mic_")
+  || (/bibliaonline.com.br\/acf\/mt\//g, "mysword.info\/b?r\=Mat_")
+  || (/bibliaonline.com.br\/acf\/na\//g, "mysword.info\/b?r\=Nah_")
+  || (/bibliaonline.com.br\/acf\/ne\//g, "mysword.info\/b?r\=Neh_")
+  || (/bibliaonline.com.br\/acf\/nm\//g, "mysword.info\/b?r\=Num_")
+  || (/bibliaonline.com.br\/acf\/ob\//g, "mysword.info\/b?r\=Oba_")
+  || (/bibliaonline.com.br\/acf\/os\//g, "mysword.info\/b?r\=Hos_")
+  || (/bibliaonline.com.br\/acf\/pv\//g, "mysword.info\/b?r\=Pro_")
+  || (/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_")
+  || (/bibliaonline.com.br\/acf\/rt\//g, "mysword.info\/b?r\=Rut_")
+  || (/bibliaonline.com.br\/acf\/sf\//g, "mysword.info\/b?r\=Zep_")
+  || (/bibliaonline.com.br\/acf\/sl\//g, "mysword.info\/b?r\=Psa_")
+  || (/bibliaonline.com.br\/acf\/tg\//g, "mysword.info\/b?r\=Jas_")
+  || (/bibliaonline.com.br\/acf\/tt\//g, "mysword.info\/b?r\=Tit_")
+  || (/bibliaonline.com.br\/acf\/zc\//g, "mysword.info\/b?r\=Zec_");
+  document.getElementById("content").innerHTML = res; 
+
+}else{
+}
+
