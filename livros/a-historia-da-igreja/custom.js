@@ -15,6 +15,7 @@
 
     
         document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:60px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
+        document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:160px;color:#f00;font-weight:bold;"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
 
      }else{
          var share = window.location.href;
@@ -28,7 +29,7 @@
 
      }
 
-document.write('<a  target="_self" href="https:leituracrista.com/"><img style="width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
+document.write('<a  target="_self" href="https:leituracrista.com"><img style="width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
 
 function linkToMysword() {
 sessionStorage.setItem("ref", 1);
@@ -132,10 +133,8 @@ if ( session == 1 )
   .replace(/\/8\//g,"8")
   .replace(/\/9\//g,"9")
   .replace(/\/0\//g,"0")
-  .replace(/\//g,"")  
   ;
   document.getElementById("content").innerHTML = res; 
 
 }else{
 }
-
