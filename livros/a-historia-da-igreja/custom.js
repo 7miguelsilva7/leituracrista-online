@@ -29,7 +29,8 @@
 
      }
 
-document.write('<a  target="_self" href="https:leituracrista.com"><img style="width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
+     document.write('<a  target="_self" onclick="home()" href="https:leituracrista.com"><img style="width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
+    //  document.write('<a  target="_self" onclick="home()" href="https:leituracrista.com"><img style="width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
 
 function linkToMysword() {
 sessionStorage.setItem("ref", 1);
@@ -137,4 +138,9 @@ if ( session == 1 )
   document.getElementById("content").innerHTML = res; 
 
 }else{
+}
+
+function home()
+{
+  location.replace('https://leituracrista.com.br')
 }
