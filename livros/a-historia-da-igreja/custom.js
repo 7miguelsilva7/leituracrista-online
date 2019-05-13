@@ -142,5 +142,5 @@ if ( session == 1 )
 
 function home()
 {
-  location.replace('https://leituracrista.com.br')
+  location.replace('https://leituracrista.com')
 }
