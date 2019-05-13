@@ -121,7 +121,19 @@ if ( session == 1 )
   .replace(/bibliaonline.com.br\/acf\/sl\//g, "mysword.info\/b?r\=Psa_")
   .replace(/bibliaonline.com.br\/acf\/tg\//g, "mysword.info\/b?r\=Jas_")
   .replace(/bibliaonline.com.br\/acf\/tt\//g, "mysword.info\/b?r\=Tit_")
-  .replace(/bibliaonline.com.br\/acf\/zc\//g, "mysword.info\/b?r\=Zec_");
+  .replace(/bibliaonline.com.br\/acf\/zc\//g, "mysword.info\/b?r\=Zec_")
+  .replace(/\/1\//g,"1")
+  .replace(/\/2\//g,"2")
+  .replace(/\/3\//g,"3")
+  .replace(/\/4\//g,"4")
+  .replace(/\/5\//g,"5")
+  .replace(/\/6\//g,"6")
+  .replace(/\/7\//g,"7")
+  .replace(/\/8\//g,"8")
+  .replace(/\/9\//g,"9")
+  .replace(/\/0\//g,"0")
+  .replace(/\//g,"")  
+  ;
   document.getElementById("content").innerHTML = res; 
 
 }else{
