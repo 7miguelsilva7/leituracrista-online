@@ -32,7 +32,8 @@ for subpastas in `cat lista.txt`
 ###### Digite seus comando aqui ########
  
 sed -i 's/{#.*}//g' *.md
-sed -i "s/<\/body>/<script type\=\"text\/javascript\" src\=\"\/\/s7\.addthis\.com\/js\/300\/addthis\_widget\.js\#pubid\=ra\-59d4445a35d0aa43\"><\/script>/" *.html
+sed -i 's/searchindex//g' *.html
+#sed -i "s/<\/body>/<script type\=\"text\/javascript\" src\=\"\/\/s7\.addthis\.com\/js\/300\/addthis\_widget\.js\#pubid\=ra\-59d4445a35d0aa43\"><\/script>/" *.html
 
 ########################################
                                                                            
