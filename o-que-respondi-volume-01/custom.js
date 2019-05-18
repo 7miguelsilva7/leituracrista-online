@@ -27,13 +27,13 @@
 
 function linkToMysword() {
 sessionStorage.setItem("ref", 1);
-location.replace(location.href)
+window.location.reload()
 alert('Referências em MySword')
 }
 
 function linkToBol() {
   sessionStorage.setItem("ref", 0);
-  location.replace(location.href)
+  window.location.reload()
   alert('Referências em Bíblia Online')
 
   }
@@ -138,8 +138,8 @@ function home()
   location.replace('https://leituracrista.com')
 }
 
-// Elimina botão de busca
+// Elimina botão de busca e chamada de indexsearch.js
 var str2 = document.getElementById("search-toggle").innerHTML;
-var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "");
+var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "").replace(/searchindex.js/g, "");
 document.getElementById("search-toggle").innerHTML = res2; 
 // fim de Elimina botão de busca
