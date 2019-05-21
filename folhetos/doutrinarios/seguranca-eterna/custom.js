@@ -144,8 +144,28 @@ function home()
   location.replace('https://leituracrista.com')
 }
 
+
 // Elimina botão de busca e chamada de indexsearch.js
 var str2 = document.getElementById("search-toggle").innerHTML;
 var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "").replace(/searchindex.js/g, "");
 document.getElementById("search-toggle").innerHTML = res2; 
 // fim de Elimina botão de busca
+
+//Adiciona funçaõ abre div pelos links
+var str3 = document.getElementById("content").innerHTML;
+var res3 = str3.replace(/<a/g, "<a  target='divBol' onclick\='myFunction()'");
+document.getElementById("content").innerHTML = res3; 
+// fim //Adiciona funçaõ abre div pelos links
+
+
+document.write('<link rel="stylesheet" type="text/css" href="divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe id="divBol" name="divBol" style="height: 100%; width: 95%" src="https://www.bibliaonline.com.br/acf/jo/3/16"></iframe> </div></div><script  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>');
+
+
+function myFunction() {
+var x = document.getElementById("myDIV");
+if (x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
+}
