@@ -24,8 +24,25 @@
          var share = window.location.href;
          var title = document.title;
         
-      //  document.write('<a id="desktop" onclick="linkToMysword()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:90px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
-      //  document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:160px;color:#f00;font-weight:bold;"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
+      //Adiciona função abre divBol pelos links
+var str3 = document.getElementById("content").innerHTML;
+var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia");
+document.getElementById("content").innerHTML = res3; 
+// fim //Adiciona função abre divBol pelos links
+
+
+document.write('<link rel="stylesheet" type="text/css" href="divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe name="divBol" style="height: 100%; width: 95%" src=""></iframe> </div></div>');
+
+{/* <script  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> */}
+
+function myFunction() {
+var x = document.getElementById("myDIV");
+if (x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
+}
 
      }
 
@@ -151,25 +168,7 @@ var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "").replace(/searchind
 document.getElementById("search-toggle").innerHTML = res2; 
 // fim de Elimina botão de busca
 
-//Adiciona funçaõ abre div pelos links
-var str3 = document.getElementById("content").innerHTML;
-var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia");
-document.getElementById("content").innerHTML = res3; 
-// fim //Adiciona funçaõ abre div pelos links
 
-
-document.write('<link rel="stylesheet" type="text/css" href="divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe name="divBol" style="height: 100%; width: 95%" src=""></iframe> </div></div>');
-
-{/* <script  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> */}
-
-function myFunction() {
-var x = document.getElementById("myDIV");
-if (x.style.display === "none") {
-  x.style.display = "block";
-} else {
-  x.style.display = "none";
-}
-}
 
 
 
