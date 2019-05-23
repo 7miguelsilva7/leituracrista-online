@@ -164,7 +164,9 @@ function home()
 
 // Elimina botão de busca e chamada de indexsearch.js
 var str2 = document.getElementById("search-toggle").innerHTML;
-var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "").replace(/searchindex.js/g, "");
+var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "")
+.replace(/searchindex.js/g, "")
+.replace(/\_/g, "");
 document.getElementById("search-toggle").innerHTML = res2; 
 // fim de Elimina botão de busca
 
