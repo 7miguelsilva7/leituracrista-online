@@ -180,9 +180,6 @@ document.getElementById("content").innerHTML = res4;
 // fim de Elimina underline do texto
 
 
-<strong>
-
-
 
 
 
