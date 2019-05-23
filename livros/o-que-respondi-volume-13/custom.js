@@ -166,9 +166,17 @@ function home()
 var str2 = document.getElementById("search-toggle").innerHTML;
 var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "")
 .replace(/searchindex.js/g, "")
-.replace(/_/g, "");
 document.getElementById("search-toggle").innerHTML = res2; 
 // fim de Elimina botão de busca
+
+// Elimina underline do texto
+var str4 = document.getElementById("content").innerHTML;
+var res4 = str4
+.replace(/”_/g, "\" ")
+.replace(/“_/g, "\"")
+document.getElementById("content").innerHTML = res4; 
+// fim de Elimina underline do texto
+
 
 
 
