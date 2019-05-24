@@ -1,0 +1,21 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+CRISTO NOSSA VIDA_ EDWARD DENNETT.odt
+cristo,_nossa_vida.html
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css

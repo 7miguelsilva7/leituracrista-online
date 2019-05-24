@@ -1,0 +1,25 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+como.html
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+onde.html
+por_que.html
+print.html
+quando.html
+README.html
+searcher.js
+searchindex.js
+tomorrow-night.css
+VOCE PARTE O PAO E. H. CHATER E. H. CHATER.odt

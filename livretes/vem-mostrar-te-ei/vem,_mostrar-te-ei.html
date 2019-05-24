@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>&quot;VEM, MOSTRAR-TE-EI&quot; - Vem, Mostrar-Te-Ei</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="vem,_mostrar-te-ei.html" class="active"><strong aria-hidden="true">1.</strong> &quot;VEM, MOSTRAR-TE-EI&quot;</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Vem, Mostrar-Te-Ei</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="vem,_mostrar-te-ei.html#vem-mostrar-te-ei" id="vem-mostrar-te-ei"><h2>&quot;VEM, MOSTRAR-TE-EI&quot;</h2></a>
+<p>&quot;Vem, mostrar-te-ei a esposa, a mulher do Cordeiro&quot; (<a href="http://bibliaonline.com.br/acf/ap/21/9">Apocalipse 21:9</a>). Logo vem a pergunta Quem é a esposa, a mulher do Cordeiro? Em <a href="http://bibliaonline.com.br/acf/ap/22/17">Apocalipse 22:17</a> são mencionados dois - &quot;o Espírito e a esposa&quot;. Sem dúvida, tanto o servo de Abraão como Rebeca aguardavam pelo fim da jornada que empreendiam juntos. O servo é um tipo do Espírito Santo que ocupa o lugar de Servo para a glória do Filho do Homem. &quot;Não falará de Si mesmo, mas dirá tudo o que tiver ouvido&quot; (<a href="http://bibliaonline.com.br/acf/jo/16/13">João 16:13</a>). O Espírito Santo tem, em Seu coração, um interesse permanente pela Igreja, pois é o interesse e a glória de Cristo. Ele foi enviado do céu para reunir esta noiva - um grupo de pessoas - e levá-la para se casar com Cristo.</p>
+<p>Veja o final de <a href="http://bibliaonline.com.br/acf/ef/5">Efésios 5</a>. Ele estava falando do relacionamento entre marido e mulher, e então diz: &quot;Por isso deixará o homem seu pai e sua mãe, e se unirá a sua mulher;e serão dois nu ma carne. Grande é este mistério; digo-o, porém, a respeito de Cristo e da Igreja&quot;. Nos propósitos eternos de Deus, Cristo e a Igreja foram um desde o princípio. E quando Ele começou a revelar Seu propósito, o primeiro tipo foi de Cristo e a Igreja. Adão e Eva e o modo como foram formados.</p>
+<p>No livro de Apocalipse, o ministério tem a ver em grande parte com os anjos, pois ao longo de todo o livro há uma certa atmosfera reservada, e não um clima de intimidade. Por exemplo, &quot;pelo Seu anjo as enviou, e as notificou a João Seu servo&quot; (<a href="http://bibliaonline.com.br/acf/ap/1/1">Apocalipse 1:1</a>). Foi o bendito Senhor que recebeu de Deus a revelação. Em <a href="http://bibliaonline.com.br/acf/ap/21/9">Apocalipse 21:9</a> diz: &quot;E veio a mim um dos sete anjos que tinham as sete taças cheias das últimas sete pragas, e falou comigo, dizendo: Vem, mostrar-te-ei a esposa, a mulher do Cordeiro&quot;. E imediatamente o transporta em espírito a um grande e alto monte, pois a vocação da Igreja está muito acima da terra; é celestial. O modo como a noiva correspondeu à sua vocação celestial já é um outro assunto. Sua resposta à sua vocação tem sido um triste e desalentador fracasso. Seu lugar e sua responsabilidade na Terra eram para representar o Senhor como o noivo celestial (<a href="http://bibliaonline.com.br/acf/mt/25">Mateus 25</a>). Todavia o fracasso dela tem sido completo. Nada poderia ser mais triste ou lamentável.</p>
+<p>Lemos em <a href="http://bibliaonline.com.br/acf/ap/17/1">Apocalipse 17:1</a>: &quot;Vem, mostrar-te-ei&quot;, não a grande prostituta, mas &quot;a condenação da grande prostituta&quot;. Trata-se da igreja professa em seu lugar de responsabilidade de levar a luz divina neste mundo - de representar Cristo. A Igreja afundou ao nível do mundo. Por isso é dito: &quot;Mostrar-te-ei a condenação da grande prostituta&quot;.</p>
+<p>Sempre que escutamos falar de Babilônia em Apocalipse (onze vezes) é dito que ela é grande. Se tivesse sido fiel, a Igreja nunca teria sido grande na Terra. &quot;Se a Mim Me perseguiram, também vos perseguirão a vós&quot; (<a href="http://bibliaonline.com.br/acf/jo/15/20">João 15:20</a>). O fracasso dela foi completo e cabal. A grande prostituta está sentada sobre muitas águas e governa as massas do povo. O cristianismo tornou-se popular no mundo, mas um cristianismo popular é um cristianismo caído. É algo impuro - uma mistura do que divino com o que é terreno.</p>
+<p>&quot;E levou-me em espírito a um deserto&quot; (<a href="http://bibliaonline.com.br/acf/ap/17/3">Apocalipse 17:3</a>). A primeira coisa que notamos é o &quot;deserto&quot; em contraste com o &quot;grande e alto monte&quot; (<a href="http://bibliaonline.com.br/acf/ap/21/10">Apocalipse 21:10</a>). A verdade de Cristo e da Igreja, o Cordeiro e Sua noiva, só pode ser aprendida quando se está, em espírito, fora.</p>
+<p>&quot;E me transportou, em espírito, até a uma grande e elevada montanha, e me mostrou a santa cidade&quot; (<a href="http://bibliaonline.com.br/acf/ap/21/10">Apocalipse 21:10</a> - Almeida Atualizada). A omissão da palavra &quot;grande&quot; cidade aqui é importante. Todas as vezes que se faz referência à Babilônia, sempre é no sentido de &quot;grande&quot;, mas a primeira característica dada da noiva, a esposa do Cordeiro, não é a sua grandeza, mas sua santidade.</p>
+<p>&quot;E me mostrou e santa cidade&quot; - acho isto muito precioso. Santidade é o que a nova natureza almeja, seja individual ou coletivamente. Santidade é a atmosfera na qual a natureza divina se sente em casa e onde ela respira livremente. Quando em outra atmosfera, ela não respira livremente, pois aquela atmosfera é sufocante para a nova natureza.</p>
+<p>&quot;A santa cidade, Jerusalém, que descia do céu, da parte de Deus&quot; (<a href="http://bibliaonline.com.br/acf/ap/21/10">Apocalipse 21:10</a> - Almeida Atualizada). &quot;De Deus&quot; é a fonte;a cidade é de Deus e provém de Deus. &quot;Do céu&quot; é o caráter. A cidade é divina e celestial. Veja <a href="http://bibliaonline.com.br/acf/2co/5/1">2 Coríntios 5:1</a>: &quot;Uma casa não feita por mãos, eterna, nos céus&quot;. Encontramos neste versículo a origem ou fonte destes corpos glorificados. Deus é a fonte, e eles são celestiais em sua natureza.</p>
+<p>Leia <a href="http://bibliaonline.com.br/acf/1co/15/47">1 Coríntios 15:47</a>: &quot;O primeiro homem, da Terra, é terreno; o segundo homem, o Senhor, é do céu&quot;. Estas são as origens dos dois homens - um é da terra e outro do céu. Então, nos <a href="http://bibliaonline.com.br/acf/1co/15/48,49">versículos 48 e 49</a> temos, &quot;qual o terreno, tais são também os terrestres; e, qual o celestial, tais também os celestiais. E, assim como trouxemos a imagem do terreno, assim traremos também a imagem do celestial&quot;. Finalmente Ele nos diz como alcançaremos a imagem do celestial, tanto os que dormirem como os que não dormirem. Os <a href="http://bibliaonline.com.br/acf/1co/15/51,52">versículos 51 e 52</a> declaram: &quot;Eis aqui vos digo um mistério: Na verdade, nem todos dormiremos, mas todos seremos transformados; num momento, num abrir e fechar de olhos, ante a última trombeta; porque a trombeta soará, e os mortos ressuscitarão incorruptíveis, e nós seremos transformados&quot;. É assim que ficaremos conformes a este segundo Homem.</p>
+<p>Adão não foi feito para o céu, nem o céu para o homem. Deus preparou a Terra para o homem e o colocou nela; ali tudo correspondia à sua natureza. Se Deus o tivesse levado para o céu, este não estaria de acordo com a sua natureza, pois ele não havia sido feito para o céu. O homem perdeu sua herança terrena, mas agora ele recebeu uma herança melhor, pois a redenção concede isto a ele. A redenção não apenas restaura um homem quando perdido, mas o introduz em uma bênção infinitamente mais plena, assim como os céus são infinitamente mais elevados do que a Terra.</p>
+<p>Em <a href="http://bibliaonline.com.br/acf/ap/21/1-8">Apocalipse 21:1-8</a> temos a eternidade: &quot;E eu, João, via santa cidade, a nova Jerusalém, que de Deus descia do céu, adereçada como uma esposa ataviada para o seu marido&quot;. Trata-se da nova Jerusalém, não da velha. Aqui não se trata da Jerusalém restaurada na Terra, embora saibamos quão maravilhosa será a Jerusalém na Terra.</p>
+<p>As bodas acontecem mais de mil anos antes, mas a beleza da noiva continua a mesma. &quot;E ouviu uma grande voz do céu, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará&quot; (<a href="http://bibliaonline.com.br/acf/ap/21/3">Apocalipse 21:3</a>). O fato é que Deus armou o Seu tabernáculo entre os homens e isto faz com que até o céu pareça surpreso: &quot;Eis&quot;, diz aqui. A eterna habitação de Deus será entre os homens, pois o Cordeiro de Deus tira o pecado do mundo.</p>
+<p>A noiva, a esposa do Cordeiro, coloca diante de nós uma relação que tem como característica e afeição. Elas &quot;saíram ao encontro do esposo&quot; (<a href="http://bibliaonline.com.br/acf/mt/25/1">Mateus 25:1</a>). &quot;Adereçada como uma esposa ataviada para o seu marido&quot; (<a href="http://bibliaonline.com.br/acf/ap/21/2">Apocalipse 21:2</a>). Qual é a característica das afeições do casamento? Oh, são as mais doces e cheias de frescor! No relacionamento humano, talvez elas não durem por muito tempo, mas no relacionamento celestial será para sempre. Não acho que serão as mais profundas, mas serão as mais cheias de frescor.</p>
+<p>A noiva, a esposa do Cordeiro, é este grupo de santos que o Espírito de Deus tem reunido desde que desceu do céu em Pentecostes, unindo-os em um só corpo e a Cristo na glória. Não é algo individual; nenhum santo é individualmente a noiva. Não existe um santo sobre a Terra que não faça parte da noiva, a esposa do Cordeiro. (&quot;Santo&quot; é uma relação individual, assim como &quot;pai&quot; e &quot;filhos&quot;).</p>
+<p>Temos uma ilustração da beleza do casamento no <a href="http://bibliaonline.com.br/acf/sl/45">Salmos 45</a>. Trata-se da Jerusalém terrenal, como tipo (até onde pode ser) da celestial. O Salmos se refere a Jerusalém e às cidades de Judá. O <a href="http://bibliaonline.com.br/acf/sl/45/6">versículo 6</a> se aplica ao Senhor Jesus conforme O vemos apresentado em <a href="http://bibliaonline.com.br/acf/hb/1/8">Hebreus 1:8</a>.</p>
+<p>É importante vermos que o Senhor tomará duas esposas: a terrenal ou judia, e a celestial. Ele entrará em um relacionamento com a celestial antes de fazê-lo com a terrenal, e será um diferente tipo de relacionamento. Antes de Ele Se estabelecer com Israel em uma relação matrimonial, terá que limpar o caminho por meio de juízo - &quot;Cinge a Tua espada à coxa, ó Valente, com a Tua glória e a Tua majestade. E neste Teu esplendor cavalga prosperamente, por causa da verdade, da mansidão e da justiça; e a Tua destra Te ensinará coisas terríveis&quot; (<a href="http://bibliaonline.com.br/acf/sl/45/3-4">Salmos 45:3-4</a>).</p>
+<p>Após os juízos Jerusalém se torna o centro de um sistema relacionado a Ele e à Sua noiva. Isto é facilmente entendido de João 3:26: &quot;E foram ter com João, e disseram-lhe: Rabi, Aquele que estava contigo além do Jordão, do qual tu deste testemunho, ei-Lo batizando, e todos vão ter com Ele&quot;. Eles estavam com ciúmes da reputação de seu mestre. João ocupava uma posição maravilhosa entre o povo. Milhares tinham ido após ele para serem batizados. Agora o vemos perdendo seu lugar.</p>
+<p>&quot;João respondeu, e disse: O homem não pode receber coisa alguma, se não lhe for dada do céu. Vós mesmos me sois testemunhas de que disse: Eu não sou o Cristo, mas sou enviado adiante dEle. Aquele que tem a esposa é o Esposo; mas o amigo do Esposo, que Lhe assiste e O ouve, alegra-se muito com a voz do Esposo. Assim, pois, já este meu gozo está cumprido. É necessário que Ele cresça e que eu diminua&quot; (<a href="http://bibliaonline.com.br/acf/jo/3/27-30">João 3:27-30</a>). Nada ainda havia sido dado conhecer sobre Cristo e a Igreja. Estava tudo oculto em Deus. No presente momento Israel está divorciada por sua infidelidade; isto é, por haver se tornado idólatra. O Senhor a irá tomar novamente.</p>
+<p>As Jerusaléns, tanto a celestial como a terrenal, serão visivelmente ligadas. O céu e a Terra naquele dia não estarão separados, absolutamente, mas visível ou fisicamente ligados. Vemos isto em <a href="http://bibliaonline.com.br/acf/ap/21/24">Apocalipse 21:24</a>: &quot;E os reis da Terra trarão para ela a sua glória e honra&quot;. Haverá uma abóbada de glória, mas eles não serão capazes de ver o que há do lado de dentro. No monte da transfiguração os discípulos podiam enxergar aqueles dois homens entrarem na nuvem, mas não podiam ver o que havia dentro dela. Eles podiam ver a nuvem e sabiam que eles estavam ali, e conheciam a voz do Pai saindo dela. Aquilo é uma antevisão das duas Jerusaléns. Que imensa mudança do que se vê hoje. Uma série de terríveis juízos prepara o caminho, e a justiça fará o que a graça não fez.</p>
+<p>A santa cidade, descendo de Deus vinda do céu, simboliza sua origem divina e celestial. A noiva, a esposa do Cordeiro, é simplesmente um grupo de pessoas redimidas, unidas ao Senhor naquele caráter de relacionamento existente entre um homem e sua esposa. A Igreja não está casada agora. Israel estava casada; é por isso que é chamada de adúltera. Ela está posta de lado. A Igreja está apenas noiva.</p>
+<p>Em <a href="http://bibliaonline.com.br/acf/ap/17/2">Apocalipse 17:2</a> vemos: &quot;se embebedaram com o vinho da sua prostituição&quot;. Trata-se do efeito entorpecedor da união da igreja com o mundo. Uma pessoa intoxicada não pode ver coisa alguma claramente. Quando ficamos intoxicados com o espírito deste mundo, não podemos ver coisa alguma claramente. Jeová divorciou-Se de Israel, mas voltará a Se casar com ela. Ele nunca irá Se divorciar da Igreja. Quando Ele trata com a Igreja como Sua testemunha, Ele deixa a falsa de lado para sempre. Antes do juízo Ele tira a verdadeira para fora da massa da profissão cristã.</p>
+<p>Os judeus permanecerão nesta Terra. Creio que a distinção que existe entre judeu e gentio irá cessar na eternidade, pois no início de <a href="http://bibliaonline.com.br/acf/ap/21">Apocalipse 21</a> lemos: &quot;Eis aqui o tabernáculo de Deus com os homens&quot;. Durante o milênio os Judeus terão sua identidade como tal, mas não encontro qualquer coisa nas Escrituras que indique que o Judeu entrará na eternidade como Judeu. Basicamente, os novos céus e a nova Terra em <a href="http://bibliaonline.com.br/acf/is/65">Isaías 65</a> não prosseguem pela eternidade; eles são dispensacionais. Leia os <a href="http://bibliaonline.com.br/acf/is/65/17-25">versículos 17-25</a>. Está evidente que eles não vão além do tempo, e o &quot;novo&quot; ali é no sentido moral - não há mais choro ou clamor, ou qualquer coisa do tipo.</p>
+<p>Em <a href="http://bibliaonline.com.br/acf/is/66/22">Isaías 66:22</a> lemos: &quot;Porque, como os novos céus, e a nova Terra, que hei de fazer, estarão diante da minha face, diz o Senhor, assim também há de estar a vossa posteridade e o vosso nome&quot;. Isto parece deixar claro. Então, no <a href="http://bibliaonline.com.br/acf/is/66/23">versículo 23</a>, &quot;E será que desde uma lua nova até à outra, e desde um sábado até ao outro, virá toda a carne a adorar perante Mim, diz o Senhor. E sairão, e verão os cadáveres dos homens que prevaricaram contra Mim; porque o seu verme nunca morrerá, nem o seu fogo se apagará; e serão um horror a toda a carne&quot;. Pode-se ver que aqui fala do para sempre no sentido do tempo, e encontramos nas Escrituras com maior freqüência o para sempre do tempo do que o para sempre da eternidade, de modo que é o contexto o que deve decidir de qual se trata. No final, o tabernáculo de Deus estará com os homens, e as coisas dispensacionais terão se acabado para sempre.</p>
+<p>Entendo isto da seguinte maneira. Primeiro, havia um povo que falava uma só língua. Os homens quiseram obter independência de Deus e começaram a trabalhar na construção de uma torre que alcançasse o céu a fim de não serem dispersos. Mas Deus desceu e confundiu suas línguas. Mais tarde Deus levantou outro povo ao chamar um novo rebanho que tinha Abraão como líder. Neste ponto encontramos dois povos sobre a Terra: o Judeu e o gentio. A Terra seguiu seu curso por cerca de dois mil anos. Então veio Cristo, e um terceiro povo, a Igreja de Deus, passou a existir. Estes três povos têm seguido por cerca de dois mil anos. Logo Ele levará a Igreja para o lugar ao qual ela pertence - para o céu. Então Deus passará a ter novamente o Judeu e o gentio sobre a Terra, e assim seguirão até o fim do milênio. Na eternidade, que se segue, voltamos a ter um povo outra vez.</p>
+<p>Deus irá habitar com os homens por toda a eternidade nos novos céus e na nova Terra. Durante o milênio Ele habitará imediatamente sobre eles, mas não com eles. Ele terá o Seu templo, e isto será algo dispensacional. Continuarão a existir nações e morte para o pecador, pois ainda continuará a haver desobediência. De sábado a sábado eles sairão e verão as carcaças daqueles que transgrediram, e isto lhes servirá de aviso. O milênio será uma época maravilhosa, mas não vemos ali perfeição, pelo menos não aquela na qual Deus possa ter completa satisfação. Se você ler Sofonias 3:14 até o fim, verá uma figura da Jerusalém dos judeus em um tempo vindouro. Trata-se de algo dispensacional, não de perfeição.</p>
+<p>A noiva e Israel continuarão a ser dois povos separados. Não digo que Israel continue além dos mil anos ou que a dispensação continue ao longo da eternidade. Pelo que sei, no que concerne a Israel não encontramos nada que seja realmente eterno. Sempre existirá um povo terrenal e um celestial.</p>
+<p>Em <a href="http://bibliaonline.com.br/acf/ap/5/9">Apocalipse 5:9</a> vemos os redimidos celestiais, e é este o grupo que canta - &quot;Digno és de tomar o livro, e de abrir os seus selos; porque foste morto, e com o Teu sangue compraste para Deus homens de toda a tribo, e língua, e povo, e nação.&quot;</p>
+<p>Vemos, em seguida, um círculo ao redor deste - os anjos - e eles dizem: &quot;Digno é o Cordeiro, que foi morto, de receber o poder, e riquezas, e sabedoria, e força, e honra, e glória, e ações de graças&quot;.</p>
+<p>A seguir temos: &quot;E ouvi a toda a criatura que está no céu, e na terra e debaixo da terra, e que está no mar e a todas as coisas que neles há dizer:Ao que está assentado sobre o trono, e ao Cordeiro, sejam dadas ações de graças, e honra, e glória, e poder para todo o sempre&quot;. Toda a criação (céu e Terra) é introduzida na bênção.</p>
+<p>Gostaria de dizer algo sobre <a href="http://bibliaonline.com.br/acf/ap/7">Apocalipse 7</a>. Temos ali detalhes sobre os povos celestial e terrenal que existirão no milênio. Ali é mostrado o número completo de todas as tribos dos filhos de Israel e um grupo inumerável de gentios: os pequeninos irmãos e as ovelhas de <a href="http://bibliaonline.com.br/acf/mt/25">Mateus 25</a>. Nós os vemos já estabelecidos em bênção em <a href="http://bibliaonline.com.br/acf/ap/7">Apocalipse 7</a>, que é um parêntese entre dois grupos de juízos.</p>
+<p>Repare nos <a href="http://bibliaonline.com.br/acf/ap/7/10-13">versículos 10-13</a>: &quot;E [Os da multidão] clamavam com grande voz, dizendo: Salvação ao nosso Deus, que está assentado no trono, e ao Cordeiro. E todos os anjos estavam ao redor do trono, e dos anciãos, e dos quatro animais; e prostraram-se diante do trono sobre seus rostos, e adoraram a Deus, dizendo: Amém. Louvor, e glória, e sabedoria, e ação de graças, e honra, e poder, e força ao nosso Deus, para todo o sempre. Amém. E um dos anciãos me falou, dizendo:Estes que estão vestidos de vestes brancas, quem são, e de onde vieram?&quot; Neste versículo ele chama a atenção para algo ao fazer uma pergunta.</p>
+<p>&quot;E eu disse-lhe: Senhor, tu sabes. E ele disse-me: Estes são os que vieram da grande tribulação e lavaram as suas vestes e as branquearam no sangue do Cordeiro. Por isso estão diante do trono de Deus, e O servem de dia e de noite no Seu templo; e Aquele que está assentado sobre o trono os cobrirá com a Sua sombra&quot;, ou seja, Ele estenderá Sua habitação sobre eles. Vemos isto em Isaías e outras passagens. Trata-se daquela abóbada celestial sobre Jerusalém e daquele trono celestial de autoridade, e sob ele a Jerusalém terrenal.</p>
+<p>Lemos no <a href="http://bibliaonline.com.br/acf/ap/7/16">versículo 16</a>, &quot;Nunca mais terão fome, nunca mais terão sede; nem sol nem calma alguma cairá sobre eles&quot;, isto é, nunca mais sofrerão perseguição, nem o Sol (poder supremo) será outra vez opressor. &quot;Porque o Cordeiro que está no meio do trono os apascentará, e lhes servirá de guia para as fontes das águas da vida; e Deus limpará de seus olhos toda a lágrima.&quot; Este cenário é o milênio; é dispensacional, não eterno.</p>
+<p>Na transfiguração sobre o monte, o Senhor nos dá uma figura do milênio. Os santos celestiais e terrenais estarão separados como eles estavam no monte. Naqueles três discípulos vemos os santos terrenais que nunca passaram pela morte. Temos então o Senhor glorificado e os dois homens glorificados que aparecem em glória e falam com Ele. Temos até o assunto da conversa.</p>
+<p>Os dois homens são figuras: Moisés tipifica os santos glorificados que passaram pela morte, enquanto Elias representa os santos que nunca passaram pela morte. Ambos estão na mesma glória, do mesmo modo como acontecerá quando o Senhor vier e os vivos e os mortos forem igualmente introduzidos na mesma glória. Eles estão na mesma condição de imortalidade. Uns têm seus corpos ressuscitados da corrupção, e os outros são transformados para nunca mais estarem sujeitos à morte.</p>
+<p>W. Potter</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

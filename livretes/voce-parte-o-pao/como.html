@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>COMO? - Você Parte o Pão - Por Que, Quando, Onde e Como?</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> VOCE PARTE O PAO E. H. CHATER E. H. CHATER</a></li><li><a href="por_que.html"><strong aria-hidden="true">2.</strong> POR QUE?</a></li><li><a href="quando.html"><strong aria-hidden="true">3.</strong> QUANDO?</a></li><li><a href="onde.html"><strong aria-hidden="true">4.</strong> ONDE?</a></li><li><a href="como.html" class="active"><strong aria-hidden="true">5.</strong> COMO?</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Você Parte o Pão - Por Que, Quando, Onde e Como?</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="como.html#como" id="como"><h2>COMO?</h2></a>
+<p>&quot;Porque eu recebi do Senhor o que também vos ensinei: que o Senhor Jesus, na noite em que foi traído, tomou o pão; e, tendo dado graças, o partiu e disse: Tomai, comei: isto é o Meu corpo que é partido por vós; fazei isto em memória de Mim. Semelhantemente também, depois de cear, tomou o cálice, dizendo: Este cálice é o Novo Testamento no Meu sangue: fazei isto, todas as vezes que beberdes, em memória de Mim. Porque todas as vezes que comerdes este pão e beberdes este cálice anunciais a morte do Senhor, até que venha.&quot; (<a href="http://bibliaonline.com.br/acf/1co/11/23-26">1 Coríntios 11:23-26</a>).</p>
+<p>&quot;Falo como a entendidos, julgai vós mesmos o que digo. Porventura o cálice de bênção que abençoamos, não é a comunhão do sangue de Cristo? O pão que partimos não é porventura a comunhão do corpo de Cristo? Porque nós, sendo muitos, somos um só pão e um só corpo: porque todos participamos do mesmo pão.&quot; (<a href="http://bibliaonline.com.br/acf/1co/10/15-17">1 Coríntios 10:15-17</a>).</p>
+<p>Havendo citado estas passagens das Escrituras, permita-me que o auxilie um pouco em dirigir o seu coração mais além, amado irmão em Cristo, para a simplicidade de tudo isto; para que nosso Senhor possa sentir gozo em observar a nossa amável sujeição à Sua bendita vontade, e para que você possa se regozijar por estar fazendo com que Ele Se alegre.</p>
+<p>A primeira questão é: Por que devemos tomar a Ceia do Senhor? Em memória do Senhor Jesus, para que nossos corações possam trazê-Lo à memória. O partimento do pão nos fala do Seu corpo entregue por nós sobre o madeiro; o beber do cálice nos fala de Seu precioso sangue derramado por nós. Ao participarmos destes símbolos do Seu amor, anunciamos a morte do Senhor. Na presença de Deus, e dos anjos santos, e também circundados pelos poderes invisíveis das trevas e da maldade - Satanás e seus anjos - e por um mundo de pecadores culpados e perdidos, anunciamos o maravilhoso fato de que o Senhor da glória, Jesus, o Cristo de Deus, foi até à cruz do Calvário, sofreu, morreu e Seu sangue foi derramado. Nós anunciamos o mais esplêndido acontecimento já ocorrido na história do universo: como o Seu Criador Onipotente, como Homem (sem pecado), sofreu toda aquela terrível vergonha e dor, a fim de que Deus fosse glorificado; a fim de que o poder de Satanás fosse anulado, e a questão do pecado fosse resolvida de uma vez por todas.</p>
+<p>Mas Deus O ressuscitou dentre os mortos, e Lhe deu glória, mostrando assim a todos a Sua estima pela oferta única e perfeita. Já está sentado, o poderoso e vitorioso Senhor, à direita da majestade nos céus, aguardando o glorioso momento, quando descerá nos ares para chamar os Seus amados para o Seu lar (<a href="http://bibliaonline.com.br/acf/1ts/4/15-18">1 Tessalonicenses 4:15-18</a>). Os cristãos estarão, então, cumprindo as Suas palavras, fazendo isto em memória dEle, e anunciando, assim, a Sua morte até que venha.</p>
+<p>&quot;Se alguém Me ama, guardará a Minha palavra...&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/23">João 14:23</a>).</p>
+<p>&quot;Quem Me não ama não guarda as Minhas palavras.&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/24">João 14:24</a>).</p>
+<p>A questão seguinte é: quando devemos tomar a Ceia do Senhor? A este respeito o Senhor não deixou qualquer mandamento específico, mas indicou claramente em Sua Palavra o que pensa a respeito disto, e o crente espiritual, cuja consciência está sendo exercitada, não demorará muito para discernir corretamente.</p>
+<p>É bem evidente que todo coração verdadeiramente leal irá dizer: &quot;Eu gostaria de lembrá-Lo com freqüência&quot;.</p>
+<p>Vejamos o que as Escrituras nos esclarecem a respeito disto. Em <a href="http://bibliaonline.com.br/acf/atos/2/42">Atos 2:42</a> lemos que três mil cristãos, que acabavam de ser acrescentados, &quot;perseveravam na doutrina dos apóstolos, e na comunhão, e no partir do pão&quot; (&quot;partir do pão&quot; era o termo normalmente empregado para uma refeição comum e algumas vezes é empregado com este sentido, enquanto em outras passagens diz respeito à Ceia do Senhor - veja <a href="http://bibliaonline.com.br/acf/lc/24/30-35">Lucas 24:30-35</a>; <a href="http://bibliaonline.com.br/acf/atos/20/11">Atos 20:11</a>; <a href="http://bibliaonline.com.br/acf/atos/27/35,36">27:35,36</a>, e nas orações&quot;. Esta passagem mostra claramente como eles compreenderam as palavras do Senhor, e que o partir do pão não era ocasional, mas algo praticado com freqüência.) Encontramos também em <a href="http://bibliaonline.com.br/acf/atos/20/7">Atos 20:7</a> que, &quot;E no primeiro dia da semana, ajuntando-se os discípulos para partir o pão, Paulo, que havia de partir no dia seguinte, falava com eles&quot;.</p>
+<p>O primeiro dia da semana, ou o dia do Senhor, é o dia que se segue ao Sábado (<a href="http://bibliaonline.com.br/acf/mt/28/1">Mateus 28:1</a>; <a href="http://bibliaonline.com.br/acf/ap/1/10">Apocalipse 1:10</a>); é o dia no qual nosso Senhor ressuscitou dentre os mortos. E aprendemos deste versículo que era costume dos primeiros discípulos se reunirem neste dia para partir o pão em memória do Senhor. Este é o objetivo que os motivava a estarem reunidos. Paulo estava ali, e falou a eles; mas eles não estavam reunidos para ouvir Paulo pregar, mas para recordar o Senhor Jesus em Sua morte.</p>
+<p>Alguns poderão pensar, ao lerem estas linhas, que não há nada que demonstre que os discípulos se reuniam todo primeiro dia da semana. Mas permita-me lembrá-lo, querido leitor, que anunciamos a morte do Senhor até que venha, e, assim, ao nos reunirmos no primeiro dia da semana, poderá ser a última vez que o estaremos fazendo. A volta de Cristo se encontra tão evidente nas Escrituras, que o Seu povo deve permanecer sempre em uma atitude de espera por Ele (<a href="http://bibliaonline.com.br/acf/lc/12/35-36">Lucas 12:35-36</a>; <a href="http://bibliaonline.com.br/acf/1ts/1/9-10">1 Tessalonicenses 1:9-10</a>). Então você nunca mais passará um dia do Senhor neste mundo, mas se, enquanto aqui, procurar em sua Bíblia, irá encontrar em <a href="http://bibliaonline.com.br/acf/atos/20/7">Atos 20:7</a> que &quot;no primeiro dia da semana ajuntando-se os discípulos para partir o pão...&quot;.</p>
+<p>Além do mais, encontramos em <a href="http://bibliaonline.com.br/acf/jo/20/19,26">João 20:19,26</a>, que em duas semanas sucessivas, no primeiro dia da semana, Jesus Se colocou no meio dos discípulos reunidos, e disse, &quot;Paz seja convosco...&quot;</p>
+<p>Também em <a href="http://bibliaonline.com.br/acf/1co/11/25-26">1 Coríntios 11:25-26</a>, lemos, &quot;Fazei isto, todas as vezes que beberdes, em memória de mim. Porque todas as vezes que comerdes este pão e beberdes este cálice anunciais a morte do Senhor, até que venha&quot;.</p>
+<p>De um modo geral, a importância da Ceia do Senhor tem sido perdida de vista, sendo tratada como algo secundário. O púlpito é com freqüência colocado em inigualável proeminência, e a bendita memória do Senhor é passada para uma posição inferior, como algo deixado para depois do culto, uma vez por mês, ou até mesmo com menor freqüência. Que Deus, em Sua graça, possa guiar todo cristão que ler estas linhas para que busque Sua bendita Palavra e a obedeça, ao invés de ser guiado pelas tradições dos homens.</p>
+<p>Aprendemos das passagens acima que a vontade do Senhor era que Seus santos partissem o pão ao menos no primeiro dia de cada semana, ou mesmo, se possível, com mais frequência, e assim perseverassem.</p>
+<p>Nossa terceira questão é: Onde devemos tomar a Ceia do Senhor? Em <a href="http://bibliaonline.com.br/acf/mt/18/20">Mateus 18:20</a> lemos, &quot;Porque onde estiverem dois ou três reunidos em Meu nome (ou para o Meu nome), aí estou Eu no meio deles&quot;. Prezado leitor, pondere nestas palavras. Existe nelas um significado muito mais profundo do que você possa imaginar.</p>
+<p>Cristo partiu deste mundo e o Seu desejo era que, durante a Sua ausência, Seus santos se reunissem, juntos, para o Seu nome. Atente para estas palavras, &quot;em Meu nome&quot;, (ou &quot;para o Meu nome&quot;). Ali, e ali somente, o Senhor prometeu estar no meio. Onde? &quot;Onde dois ou três (ou duzentos ou trezentos, se for o caso) estiverem reunidos em Meu nome.&quot;. Isto exclui todo tipo de associações voluntariamente criadas e tudo aquilo que é feito sobre o fundamento de ser independente de outros cristãos. Cristo não prometeu estar no meio de tais grupos. O homem criou seitas, partidos, sistemas e um sem número de organizações; existe hoje uma perfeita Babel de nomes espalhados pela cristandade.</p>
+<p>Em meio à toda confusão reinante, o nosso recurso continua sendo Deus e a Palavra de Sua graça; e a promessa permanece tão firme hoje como nos dias em que nosso Senhor a deu. Sua presença é no meio de dois ou três reunidos ao Seu nome. Em, ou ao, Meu nome, e em nenhum outro nome - o nome do Santo de Deus. Estarem reunidos como membros de uma igreja estabelecida por homens, ou em um sistema ou sociedade religiosa, por mais bem intencionados que sejam, não é a mesma coisa que estarem reunidos ao nome de Cristo. Porém alguns podem argumentar: - &quot;Mas temos a presença do Senhor conosco&quot;! É claro que sim, mas como indivíduos. Isto vale para todo cristão, e muitos têm uma percepção mais clara disto quando se reúnem em qualquer lugar onde a Palavra de Deus seja pregada e onde Ele seja louvado. Mas a presença de Cristo no meio é algo completamente distinto disso, e a menos que você esteja dentre aqueles reunidos ao Seu nome (<a href="http://bibliaonline.com.br/acf/mt/18/20">Mateus 18:20</a>), você nunca terá desfrutado da realidade desta preciosa verdade. Para o amado povo de Deus não há nada que possa ser comparado a isto em todo este mundo. Está você reunido ao nome de Cristo somente?</p>
+<p>Permita-me acrescentar que a principal atividade, daqueles reunidos ao Seu nome, deveria ser a lembrança de Cristo em Sua morte. Os dois ou três, vinte ou trinta, duzentos ou trezentos, se for o caso, assim reunidos, se encontram sobre o fundamento daquilo que é a assembléia ou igreja de Deus. E em todas as ocasiões quando estiverem assim reunidos, Cristo estará ali. Isto é válido para todas as assembléias de cristãos assim reunidos nas diversas partes do mundo. Embora milhares de quilômetros possam separar as diferentes assembléias de irmãos assim reunidos, cada uma delas tendo a responsabilidade de representar o todo, ainda assim todas fazem parte da única Igreja de Deus sobre a Terra. Todos os santos fazem parte da Igreja de Deus; enquanto que todos os santos reunidos ao nome de Cristo estão sobre o fundamento da Igreja de Deus.</p>
+<p>Cristo morreu a fim de reunir em um corpo os filhos de Deus que estavam dispersos (<a href="http://bibliaonline.com.br/acf/jo/11/49-52">João 11:49-52</a>). &quot;Quem comigo não ajunta espalha.&quot; (<a href="http://bibliaonline.com.br/acf/mt/12/30">Mateus 12:30</a>). O lobo é o que arrebata e dispersa as ovelhas (<a href="http://bibliaonline.com.br/acf/jo/10/12">João 10:12</a>). Querido leitor, você está disperso nas muitas seitas ou reunido ao nome do Senhor?</p>
+<p>Apesar do completo fracasso e obstinação do homem, e da confusão geral semeada pela cristandade, a imutável Palavra de Deus continua afirmando que &quot;Há um só corpo e um só Espírito&quot; (<a href="http://bibliaonline.com.br/acf/ef/4/4">Efésios 4:4</a>), e que a responsabilidade que o cristão tem de guardar a unidade do Espírito no vínculo da paz nunca irá cessar enquanto ele estiver neste mundo (<a href="http://bibliaonline.com.br/acf/ef/4/3">Efésios 4:3</a>). Todos os cristãos são um com Cristo, e uns com os outros, &quot;chamados em um corpo&quot; (<a href="http://bibliaonline.com.br/acf/cl/3/15">Col 3:15</a>). Pertencer ou freqüentar uma seita é ser sectário. Ser benevolente, ou ter um grande coração (ou ser inter-denominacional, como se costuma dizer), aceitando tudo e todos e frequentando todo e qualquer lugar onde cristãos se reúnem, é ser todo-sectário. Estar reunido somente ao nome de Cristo, reconhecendo de uma forma prática que há um só corpo e um só Espírito, perseverando na doutrina dos apóstolos, e na comunhão, e no partir do pão e em orações, é ser não-sectário.</p>
+<p>Qual destes você é - sectário, todo-sectário ou não-sectário?</p>
+<p>Finalmente, como devemos tomar a Ceia do Senhor?</p>
+<p>Deixemos que a Palavra de Deus nos responda: &quot;Porque eu recebi do Senhor o que também vos ensinei: que o Senhor Jesus, na noite em que foi traído, tomou o pão; e, tendo dado graças, o partiu e disse: Tomai, comei: isto é o Meu corpo que é partido por vós; fazei isto em memória de Mim. Semelhantemente também, depois de cear, tomou o cálice, dizendo: Este cálice é o Novo Testamento no Meu sangue: fazei isto, todas as vezes que beberdes, em memória de Mim. Porque todas as vezes que comerdes este pão e beberdes este cálice anunciais a morte do Senhor, até que venha&quot;.</p>
+<p>Se você examinar cuidadosamente esta passagem em <a href="http://bibliaonline.com.br/acf/1co/11/23-26">1 Coríntios 11:23-26</a>, irá notar que nela não existe qualquer pensamento (e nem tampouco em qualquer parte do Novo Testamento) de que deveria haver um homem presidindo a ceia. Não há ali nenhum papa, cardeal, arcebispo, bispo, ancião, padre, pastor, reverendo, ministro ou diácono dirigindo a celebração. Trata-se da mesa do Senhor e da ceia do Senhor. Foi o próprio Senhor. Quem ocupou o lugar de destaque à mesa quando instituiu a ceia, e a mesa continua sendo dEle. Qualquer tipo de direção humana, seja qual for a forma que é exercida, e mesmo que seja com a melhor das intenções, é uma usurpação da autoridade de Cristo. O Senhor guia os Seus discípulos para preparem a Sua mesa, e os convida como convidados de honra para participarem da Sua ceia, em Sua memória. Ele está ali para Se encontrar com os Seus discípulos, sentados ao redor da Sua mesa, tendo o Espírito Santo, que habita na assembléia, para dirigi-los em adoração, louvor e gratidão ao Pai e ao Filho (<a href="http://bibliaonline.com.br/acf/jo/4/23">João 4:23</a>; <a href="http://bibliaonline.com.br/acf/hb/10/19-22">Hebreus 10:19-22</a>; <a href="http://bibliaonline.com.br/acf/hb/13/15">13:15</a>; <a href="http://bibliaonline.com.br/acf/1pe/2/5">1 Pd 2:5</a>). Ele é Todo-Suficiente, e guiará quem Ele escolher, para dar graças e partir o pão, o qual é passado de mão em mão para que cada um tire dele um pedaço e coma. Da mesma forma é feito com o cálice, para que cada um tome do vinho. Se os corações estiverem sujeitos ao Espírito Santo, Ele os guiará e manterá tudo em ordem para a glória de Deus. Deus não é autor de confusão (ou inquietação), mas de paz, como em todas as igrejas dos santos (<a href="http://bibliaonline.com.br/acf/1co/12/7-11">1 Coríntios 12:7-11</a>; <a href="http://bibliaonline.com.br/acf/1co/14/23-40">14:23-40</a>).</p>
+<p>&quot;Falo como a entendidos&quot;, diz o apóstolo Paulo, &quot;julgai vós mesmos o que digo. Porventura o cálice de bênção, que abençoamos não é a comunhão do sangue de Cristo? O pão que partimos não é porventura a comunhão do corpo de Cristo? Porque nós, sendo muitos, somos um só pão e um só corpo: porque todos participamos do mesmo pão&quot;. (<a href="http://bibliaonline.com.br/acf/1co/10/15-17">1 Coríntios 10:15-17</a>).</p>
+<p>Ele se dirige aos cristãos como pessoas entendidas, que têm discernimento, exortando-os a julgarem o que ele diz, e os versículos que se seguem mostram claramente como devemos tomar a Ceia do Senhor. Tudo ali se encontra no plural, e não existe qualquer idéia de um homem ministrando para outros, como é comum vermos em muitos lugares. O cálice que (nós) abençoamos, o pão que (nós) partimos; pois nós, sendo muitos, somos um só pão, um só corpo. A maneira que Deus estabeleceu é que, tanto o pão como o vinho, sejam passados de um para o outro. Fazendo assim, estamos todos demonstrando nosso comum interesse na morte de Cristo.</p>
+<p>É ainda importante ressaltar que o apóstolo estava em Filipos, quando escrevia aos Coríntios, e ao falar do cálice e do pão, ele diz: &quot;O cálice que (nós) abençoamos, o pão que (nós) partimos&quot;, e não que &quot;vós&quot; abençoais ou que &quot;vós&quot; partis, como se a assembléia em Corinto fosse independente da que estava em Filipos. E ele continua dizendo, &quot;Porque nós, sendo muitos, somos um só pão, um só corpo&quot;, mostrando da maneira mais clara possível a unidade dos santos de Deus em todo lugar. Cristo é &quot;a cabeça do corpo, da igreja&quot; (<a href="http://bibliaonline.com.br/acf/cl/1/18">Colossenses 1:18</a>). &quot;Porque, assim como o corpo é um, e tem muitos membros, e todos os membros, sendo muitos, são um só corpo assim é Cristo também. Por isso todos nós fomos batizados em um Espírito formando um corpo...&quot; (<a href="http://bibliaonline.com.br/acf/1co/12/12-13">1 Coríntios 12:12-13</a>).</p>
+<p>Nos dias do apóstolo Paulo o Senhor tinha uma mesa estabelecida e todos os santos de Deus, em todos os lugares, eram um, e recordavam o Senhor como participantes daquela mesa. O homem tem estabelecido muitas mesas desde então, mas o fracasso do homem, agindo segundo a sua própria vontade, de modo algum altera a Palavra de Deus. Cada filho de Deus tem a responsabilidade de procurar onde se encontra a mesa do Senhor em meio à toda a confusão existente, para nela recordar a Sua morte.</p>
+<p>O cristão, ao desfrutar desse bendito privilégio, não deve se esquecer de julgar a si mesmo. Participar dos símbolos (pão e vinho), que trazem à memória o amor de Cristo, sem exercer um julgamento próprio, é comer e beber indignamente, falhando em discernir o corpo e sangue do Senhor (<a href="http://bibliaonline.com.br/acf/1co/11/27-29">1 Coríntios 11:27-29</a>). Isto como certeza trará sobre nós juízo no tempo presente, assim como acontecia com os Coríntios, para não sermos condenados (ou julgados) com o mundo (<a href="http://bibliaonline.com.br/acf/1co/11/30-32">1 Coríntios 11:30-32</a>). &quot;Examine-se o homem a si mesmo e assim coma deste pão e beba deste cálice&quot; (<a href="http://bibliaonline.com.br/acf/1co/11/28">1 Coríntios 11:28</a>).</p>
+<p>Muitos detalhes poderiam ser acrescentados no que diz respeito a esta verdade tão importante, mas o que foi apresentado será suficiente para o objetivo proposto. Que o Senhor, em Sua graça, possa guiá-lo, querido leitor cristão, para que, a exemplo dos varões de Beréia, você medite a respeito do que foi escrito, &quot;examinando cada dia nas Escrituras se estas coisas eram assim&quot; (<a href="http://bibliaonline.com.br/acf/atos/17/10-11">Atos 17:10-11</a>). E, uma vez que você tenha certeza deste assunto, procure colocá-lo em prática, para a glória de Deus, custe o que custar.</p>
+<p>&quot;Se os teus olhos forem bons, todo o teu corpo terá luz&quot; (<a href="http://bibliaonline.com.br/acf/mt/6/22">Mateus 6:22</a>).</p>
+<p>E. H. Chater</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="onde.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="onde.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

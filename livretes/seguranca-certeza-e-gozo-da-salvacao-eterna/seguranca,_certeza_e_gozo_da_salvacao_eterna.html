@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Segurança, Certeza e Gozo da Salvação Eterna - Segurança Certeza e Gozo da Salvação Eterna</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="seguranca,_certeza_e_gozo_da_salvacao_eterna.html" class="active"><strong aria-hidden="true">1.</strong> Segurança, Certeza e Gozo da Salvação Eterna</a></li><li><a href="caminho_da_salvacao.html"><strong aria-hidden="true">2.</strong> CAMINHO DA SALVAÇÃO</a></li><li><a href="o_conhecimento_da_salvacao.html"><strong aria-hidden="true">3.</strong> O CONHECIMENTO DA SALVAÇÃO</a></li><li><a href="o_gozo_da_salvacao.html"><strong aria-hidden="true">4.</strong> O GOZO DA SALVAÇÃO</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Segurança Certeza e Gozo da Salvação Eterna</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="seguranca,_certeza_e_gozo_da_salvacao_eterna.html#segurança-certeza-e-gozo-da-salvação-eterna" id="segurança-certeza-e-gozo-da-salvação-eterna"><h2>Segurança, Certeza e Gozo da Salvação Eterna</h2></a>
+<p>Quando estamos numa estação ferroviária ouvimos, com certa freqüência, a seguinte pergunta: &quot;Em que classe você está viajando?&quot; Você, leitor, com toda a certeza está de viagem - de viagem para a eternidade - e pode ser que neste momento esteja muito próximo da estação final: a Morte. Permita-me, então, que lhe pergunte: &quot;Nesta jornada pela vida, em que classe você está viajando?&quot;</p>
+<p>Neste caso podemos pensar em três diferentes classes, e vou explicar quais são a fim de que você possa responder à minha pergunta como que diante de Deus; sim, diante dAquele a Quem certamente todos nós temos que prestar contas.</p>
+<p>Na primeira classe viajam, por assim dizer, os que estão salvos e sabem disso.</p>
+<p>Na segunda classe viajam aqueles que não têm certeza da sua salvação, mas que, no entanto, desejam tê-la.</p>
+<p>Na terceira classe viajam aqueles que não estão salvos e nem tampouco se interessam pelo assunto.</p>
+<p>Volto a perguntar: &quot;Em qual destas classes você está viajando?&quot; Oh, como é importante que você possa responder claramente a esta pergunta!</p>
+<p>Há pouco tempo atrás, numa viagem que fiz de trem, no momento em que o trem se preparava para partir da estação, vi chegar um homem que se precipitou ofegante para dentro do vagão onde eu me encontrava.</p>
+<p>&quot;Ganhei quatro horas&quot;! Ao ouvir estas palavras não pude deixar de pensar comigo mesmo: &quot;Se para ganhar quatro horas valeu a pena fazer tão grande esforço, quanto mais para ganhar a eternidade!&quot; E, contudo, existem milhares de pessoas, que embora sejam bastante prudentes em tudo o que se refere aos seus interesses mundanos, parecem não ter um mínimo de bom senso quando alguém lhes fala de seus interesses eternos!</p>
+<p>Apesar do infinito amor de Deus para com os pecadores, manifestado na morte de Jesus Cristo na cruz; apesar do Seu declarado ódio ao pecado; da evidente brevidade da vida humana; dos terrores do julgamento depois da morte; da terrível perspectiva de sofrer insuportáveis remorsos ao achar-se no inferno, separado para sempre de Deus; apesar de tudo isso, muitos correm para o seu triste fim tão descuidados como se não existisse nem Deus, nem morte, nem julgamento, nem céu, nem inferno! Que Deus tenha misericórdia de você, leitor, se você for uma dessas pessoas, e que neste momento Ele abra os seus olhos para que você reconheça o perigo que é continuar despreocupadamente no caminho que conduz à perdição eterna.</p>
+<p>Caro leitor, quer você acredite ou não, a sua situação é muito crítica. Não deixe, portanto, de enfrentar o quanto antes a questão da Eternidade e do destino que você terá nela, pois qualquer demora poderá ser fatal. Lembre-se de que o costume de deixar para amanhã o que se pode fazer hoje é sempre prejudicial e neste caso poderá ter conseqüências desastrosas. Quão verdadeiro é o ditado: &quot;A estrada do mais tarde conduz à cidade do nunca&quot;! Rogo, pois, encarecidamente, querido leitor, que não continue a viajar em um caminho tão enganoso e perigoso, pois está escrito na Bíblia Sagrada: &quot;Eis aqui agora o dia da salvação&quot; (<a href="http://bibliaonline.com.br/acf/2co/6/2">2 Coríntios 6:2</a>).</p>
+<p>Talvez você diga: - Não sou indiferente aos interesses da minha alma; longe de mim tal pensamento, mas a minha maior inquietação exprime-se por outra palavra: incerteza. Por esta razão encontro-me entre os passageiros da segunda classe de que falou.</p>
+<p>Pois bem, amigo leitor, tanto a indiferença como a incerteza são filhas da mesma mãe: a incredulidade. A indiferença provém da incredulidade no que diz respeito ao pecado e às suas conseqüências presentes e eternas. A incerteza, com sua conseqüente inquietação, provém da incredulidade acerca do infalível remédio que Deus oferece a você. Ora, estas páginas são dirigidas especialmente àqueles que, como você, desejam ter a completa e incontestável certeza da salvação.</p>
+<p>Até certo ponto posso compreender bem a inquietação de sua alma e estou convencido de que quanto mais sinceramente interessado você estiver neste assunto, maior será a sua avidez para ter a certeza de que está real e verdadeiramente salvo da ira divina dirigida contra o pecado. &quot;Pois que aproveita ao homem ganhar o mundo inteiro, se perder a sua alma?&quot; (<a href="http://bibliaonline.com.br/acf/mt/16/26">Mateus 16:26</a>), disse o Senhor Jesus.</p>
+<p>Suponhamos que o filho de um pai amoroso encontra-se viajando de navio. Chega, entretanto, a notícia de haver naufragado, numa costa estrangeira, o navio em que ele se encontrava. Quem poderá descrever a angústia que a incerteza produz no ânimo daquele pai enquanto não se certificar, por um testemunho fidedigno, de que o seu filho está salvo? Suponhamos ainda uma outra hipótese. Numa noite escura e tempestuosa você está seguindo por um caminho desconhecido. Ao chegar a uma encruzilhada você encontra alguém e lhe pergunta qual é o caminho que conduz ao povoado aonde deseja chegar, e ele, indicando um dos caminhos, responde: &quot;Parece-me que é aquele, mas não tenho certeza; espero não estar enganado&quot;. Você ficaria satisfeito com uma resposta tão vaga e indecisa? Decerto que não. Você precisaria ter certeza, do contrário cada passo que desse naquela direção só aumentaria a sua inquietação. Por isso, não admira que tenha existido homens que, sentindo-se pecadores expostos à ira divina, não conseguiram mais dormir, e nem mesmo comer, enquanto a questão da salvação de suas almas não estivesse resolvida. Podemos sentir muito pela perda de nossos bens, ou talvez até mesmo pela perda de nossa saúde, mas o mais penoso de tudo seria a perda de nossa alma.</p>
+<p>Pois bem, amigo leitor, há três coisas que, com o auxílio do Espírito Santo, desejo mostrar a você, as quais, na própria linguagem das Sagradas Escrituras são as seguintes:</p>
+<p>​1. O caminho da salvação (<a href="http://bibliaonline.com.br/acf/atos/16/17">Atos 16:17</a>).</p>
+<p>​2. O conhecimento da salvação (<a href="http://bibliaonline.com.br/acf/lc/1/77">Lucas 1:77</a>)</p>
+<p>​3. A alegria da salvação (<a href="http://bibliaonline.com.br/acf/sl/51/12">Salmo 51:12</a>).</p>
+<p>Estas três coisas, embora intimamente ligadas, baseiam-se, todavia, cada uma delas, em verdades diferentes, de modo que é muito possível uma pessoa saber qual é o caminho da salvação, sem contudo ter o conhecimento de estar pessoalmente salva; ou mesmo conhecer que está salva, sem possuir contudo a alegria que deve acompanhar esse conhecimento. Falaremos, pois, em primeiro lugar do</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="caminho_da_salvacao.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="caminho_da_salvacao.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

@@ -1,0 +1,26 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+o_perdao.html
+padrao_de_deus.html
+print.html
+searcher.js
+searchindex.js
+se_voce_deseja_ter_poder_sobre_seus_pecados.html
+tais_mulheres_devem_ser_apedrejadas.html
+todos_culpados.html
+tomorrow-night.css
+um_deus_justo_e_salvador.html
+UM DEUS JUSTO E SALVADOR J. N. DARBY J. N. DARBY.odt

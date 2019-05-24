@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Uma Variedade de Reuniões</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> UMA VARIEDADE DE REUNIOES</a></li><li><a href="reunioes_de_assembleia/README.html"><strong aria-hidden="true">2.</strong> REUNIÕES DE ASSEMBLEIA</a></li><li><ol class="section"><li><a href="reunioes_de_assembleia/partimento_do_pao.html"><strong aria-hidden="true">2.1.</strong> PARTIMENTO DO PÃO</a></li><li><a href="reunioes_de_assembleia/reuniao_de_oracao.html"><strong aria-hidden="true">2.2.</strong> REUNIÃO DE ORAÇÃO</a></li><li><a href="reunioes_de_assembleia/reuniao_aberta.html"><strong aria-hidden="true">2.3.</strong> REUNIÃO ABERTA</a></li><li><a href="reunioes_de_assembleia/reuniao_para_acoes_de_disciplina.html"><strong aria-hidden="true">2.4.</strong> REUNIÃO PARA AÇÕES DE DISCIPLINA</a></li><li><a href="reunioes_de_assembleia/reunioes_da_assembleia.html"><strong aria-hidden="true">2.5.</strong> REUNIÕES DA ASSEMBLEIA</a></li><li><a href="reunioes_de_assembleia/reuniao_de_leitura.html"><strong aria-hidden="true">2.6.</strong> REUNIÃO DE LEITURA</a></li><li><a href="reunioes_de_assembleia/pregacao_para_crentes.html"><strong aria-hidden="true">2.7.</strong> PREGAÇÃO PARA CRENTES</a></li><li><a href="reunioes_de_assembleia/pregacao_do_evangelho.html"><strong aria-hidden="true">2.8.</strong> PREGAÇÃO DO EVANGELHO</a></li><li><a href="reunioes_de_assembleia/reuniao_para_relatar_um_trabalho_missionario.html"><strong aria-hidden="true">2.9.</strong> REUNIÃO PARA RELATAR UM TRABALHO MISSIONÁRIO</a></li><li><a href="reunioes_de_assembleia/reuniao_de_irmaos_ou_reuniao_de_cuidados.html"><strong aria-hidden="true">2.10.</strong> REUNIÃO DE IRMÃOS (ou REUNIÃO DE CUIDADOS)</a></li><li><a href="reunioes_de_assembleia/reuniao_de_comunhao_ou_festa_de_amor.html"><strong aria-hidden="true">2.11.</strong> REUNIÃO DE COMUNHÃO (ou Festa de Amor)</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Uma Variedade de Reuniões</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#uma-variedade-de-reuniões" id="uma-variedade-de-reuniões"><h2>Uma Variedade de Reuniões</h2></a>
+<p>Uma assembleia baseada nas Escrituras terá uma variedade de reuniões como na igreja primitiva. A exortação nas escrituras é de não abandonarmos nossa congregação (<a href="http://bibliaonline.com.br/acf/hb/10/25">Hebreus 10:25</a>). Procurando no livro de Atos e nas Epístolas, vemos que a igreja primitiva perseverava numa variedade de reuniões (<a href="http://bibliaonline.com.br/acf/atos/2/42">Atos 2:42</a>). Uma assembleia baseada nas escrituras hoje, sob condições normais, terá um menu repleto de reuniões também. Essas reuniões se enquadram em duas categorias: Reuniões de Assembleia e Reuniões da Assembleia.</p>
+<p>Reuniões de Assembleia são reuniões onde o Senhor está no centro, no sentido coletivo (<a href="http://bibliaonline.com.br/acf/mt/18/20">Mateus 18:20</a>), conduzindo e guiando os procedimentos pelo Espírito Santo – podendo ser em adoração, orações, ministério ou para as decisões administrativas necessárias. Nessas reuniões nada é pré-arranjado como quem vai fazer o quê; tudo é deixado ao Senhor para dirigir em Espírito de santa espontaneidade.</p>
+<p>Reuniões da Assembleia, por outro lado, são ocasiões onde os santos se reúnem para ministério, para comunhão e encorajamento, onde a responsabilidade é dada a um irmão que tenha algum dom para pregar ou ministrar a Palavra para conduzir a reunião. Ele é responsável para com o Senhor e a assembleia para pregar e ensinar de acordo com as escrituras e usar o tempo para proveito espiritual e encorajamento dos santos então reunidos. Não é que essas reuniões sejam menos importantes, mas o caráter delas é diferente.</p>
+<a class="header" href="print.html#reuniÕes-de-assembleia" id="reuniÕes-de-assembleia"><h1>REUNIÕES DE ASSEMBLEIA</h1></a>
+<a class="header" href="print.html#partimento-do-pÃo" id="partimento-do-pÃo"><h2>PARTIMENTO DO PÃO</h2></a>
+<p>Esta reunião é referida como sendo a principal reunião de assembleia. Também é chamada de A Ceia do Senhor (<a href="http://bibliaonline.com.br/acf/1co/11/20">1 Coríntios 11:20</a>).</p>
+<p>nos evangelhos a Ceia foi instituída (<a href="http://bibliaonline.com.br/acf/lc/22/19-20">Lucas 22:19-20</a>)</p>
+<p>em Atos foi celebrada (<a href="http://bibliaonline.com.br/acf/atos/2/42">Atos 2:42</a>; <a href="http://bibliaonline.com.br/acf/atos/20/6-7">20:6-7</a>)</p>
+<p>nas Epístolas aos Coríntios foi exposta (<a href="http://bibliaonline.com.br/acf/1co/10/16-17">1 Coríntios 10:16-17</a>; <a href="http://bibliaonline.com.br/acf/1co/11/23-26">11:23-26</a>)</p>
+<p>O propósito da Ceia do Senhor é simplesmente relembrar a Sua morte como ele pediu – “fazei isso em memória de mim” (Luc. 22:19). Nós não vamos à Ceia do Senhor para relembramos nossos pecados; nós vamos para nos lembrarmos dEle. Isto não é um mandamento, mas adquire a força de um mandamento num coração que O ama. A afeição por Cristo fará com que o crente responda a esse pedido. O partimento do pão não é chamado de reunião de adoração, mas a recordação do sofrimento do Senhor na Sua morte não pode, senão, invocar adoração dos corações dos santos reunidos para participar da ceia. Quando o Senhor a instituiu, eles fizeram três coisas:</p>
+<p>eles agradeceram (<a href="http://bibliaonline.com.br/acf/mt/26/26-27">Mateus 26:26-27</a>)</p>
+<p>eles fizeram referência às escrituras (<a href="http://bibliaonline.com.br/acf/sl/11/3-118">Salmos 113-118</a> – <a href="http://bibliaonline.com.br/acf/mt/26/29">Mateus 26:29</a> final)</p>
+<p>eles cantaram um hino (<a href="http://bibliaonline.com.br/acf/mt/26/30">Mateus 26:30</a>)</p>
+<p>Disto aprendemos que ler passagens pertinentes nas Escrituras, cantar hinos e dar graças têm seu lugar no partimento do pão.</p>
+<p>Aprendemos de <a href="http://bibliaonline.com.br/acf/atos/20/6-7">Atos 20:6-7</a> e <a href="http://bibliaonline.com.br/acf/1co/16/2">1 Coríntios 16:2</a> que era hábito dos discípulos na igreja primitiva se reunirem no primeiro dia da semana para partir o pão e fazer a coleta – <a href="http://bibliaonline.com.br/acf/hb/13/15-16">Hebreus 13:15-16</a> liga o sacrifício de louvor com o sacrifício material e assim sugere à mente espiritual que eles devem ser feitos juntos na ceia como parte da adoração.</p>
+<p>Cristãos se reunindo no “primeiro dia da semana” não era algo feito apenas em Corinto e Trôade; era o que os discípulos do Senhor faziam universalmente. Isto indica o tempo específico quando a Igreja deveria partir o pão. Nota: isto não era feito no primeiro dia do Senhor de todo mês, ou a cada quarto de ano – como é prática em muitos círculos cristãos hoje em dia – mas era um costume semanal no dia da ressurreição. Eles não se reuniam para se encontrarem com o apóstolo Paulo ou para ouvir um sermão, mas para partirem o pão.</p>
+<p>A maneira como a ceia deve ser comida é em um estado de julgamento próprio. O apóstolo Paulo</p>
+<p>disse, “Examine-se, pois, o homem a si mesmo, e assim coma deste pão e beba deste cálice” (<a href="http://bibliaonline.com.br/acf/1co/11/28">1 Coríntios 11:28</a>). Então a ceia é para ser comida de uma maneira santa e reverente. Ele avisa que se nós comermos sem julgar-nos a nós mesmos, poderemos incorrer no julgamento do Senhor em nossas vidas – citando exemplos como enfermidades e até morte (<a href="http://bibliaonline.com.br/acf/1co/11/27-34">1 Coríntios 11:27-34</a>). Se participar da ceia do Senhor dependesse no nosso merecimento pessoal, ninguém na terra participaria desse emblema, porque ninguém merece por si mesmo. Só somos merecedores por causa do que Cristo fez na Sua obra completada na cruz. Ele nos colocou na presença de Deus pelo que Ele realizou na redenção.</p>
+<p>Como em toda reunião de assembleia, o Senhor está no meio para guiar os procedimentos pelo Espírito. Uma assembleia reunida conforme as escrituras não terá um ancião ou homem designado para conduzir o serviço. Reunindo-se e esperando pelo Senhor, Ele guiará um irmão aqui e outro irmão ali para oferecer gratidão e louvor como porta voz da assembleia. Tudo será conduzido espontaneamente, conforme o Espírito dirige.</p>
+<p>Outro aspecto da verdade, subsidiariamente à característica central da recordação estabelecida na Ceia do Senhor é que “o pão que partimos” representa o corpo místico de Cristo (<a href="http://bibliaonline.com.br/acf/rm/12/4-5">Romanos 12:4-5</a>; <a href="http://bibliaonline.com.br/acf/1co/12/12-13">1 Coríntios 12:12-13</a>; <a href="http://bibliaonline.com.br/acf/ef/1/22-23">Efésios 1:22-23</a>; <a href="http://bibliaonline.com.br/acf/cl/1/18">Colossenses 1:18</a>). <a href="http://bibliaonline.com.br/acf/1co/11/23-26">1 Coríntios 11:23-26</a> se refere ao corpo pessoal do Senhor no qual Ele realizou a redenção na cruz. Ao comermos o pão na Ceia neste aspecto, temos comunhão com Ele naquilo que realizou em Seu corpo para a glória de Deus. Mas <a href="http://bibliaonline.com.br/acf/1co/10/15-17">1 Coríntios 10:15-17</a> se refere ao seu corpo místico composto por muitos membros (<a href="http://bibliaonline.com.br/acf/1co/12/12-13">1 Coríntios 12:12-13</a>). Participando do pão neste aspecto expressamos “comunhão” uns com os outros como membros daquele “um corpo”.</p>
+<p>Já que o ato de partir o pão expressa que somos “membros uns dos outros” (<a href="http://bibliaonline.com.br/acf/ef/4/25">Efésios 4:25</a>) em um corpo, somente aqueles que são comprovadamente membros do corpo de Cristo deveriam participar do pão. Portanto, a reunião para partimento do pão numa assembleia baseada nas escrituras não terá uma comunhão aberta, nem terá uma fechada, mas em vez disso, uma comunhão guardada no que se refere a quem pode participar, como mencionado anteriormente. Uma assembleia baseada nas escrituras vai receber à Mesa do Senhor somente aqueles que são sólidos na doutrina e num caminhar piedoso.</p>
+<a class="header" href="print.html#reuniÃo-de-oraÇÃo" id="reuniÃo-de-oraÇÃo"><h2>REUNIÃO DE ORAÇÃO</h2></a>
+<p>Nesta reunião a assembleia local comparece diante do “trono da graça” (<a href="http://bibliaonline.com.br/acf/hb/4/16">Hebreus 4:16</a>), num sentido coletivo – numa oração unida. Podemos orar particularmente em casa e sermos atendidos, se pedirmos de acordo com a vontade de Deus, mas não há nada como as orações feitas na reunião de oração. É uma reunião absolutamente vital para a Igreja expressar sua dependência e suas necessidades ao Senhor desta maneira. Uma assembleia que não tenha uma reunião regular de oração não poderá esperar prosperar espiritualmente. Portanto, o tempo estabelecido para oração coletiva é vital e essencial para todas as assembleias. Das numerosas referências do livro de Atos podemos ver que a igreja primitiva tinha esse tipo de reunião e a Igreja de hoje também deveria ter (<a href="http://bibliaonline.com.br/acf/atos/2/42">Atos 2:42</a>; <a href="http://bibliaonline.com.br/acf/atos/4/23-33">4:23-33</a>; <a href="http://bibliaonline.com.br/acf/atos/12/12-17">12:12-17</a>; <a href="http://bibliaonline.com.br/acf/atos/13/3">13:3</a> etc.).</p>
+<p>A reunião de oração é o momento quando as necessidades e fraquezas são expressadas, e onde as respostas aos pedidos são esperados. Não é o momento para longas e desconexas orações, ou pior ainda, ensinar aos santos enquanto estão de joelhos. O que caracteriza as reuniões de oração nas Escrituras é a assertividade. Eles geralmente tinham algum pedido específico ou necessidade que traziam ao Senhor em oração, e estavam completamente concordes naquilo que pediam, orando “unânimes”. Somos encorajados a nos aproximarmos com confiança ao trono da graça e fazer nossas “petições” (<a href="http://bibliaonline.com.br/acf/hb/4/16">Hebreus 4:16</a>; <a href="http://bibliaonline.com.br/acf/fp/4/6">Filipenses 4:6</a>). Nestas reuniões os irmãos que oram audivelmente agem como porta vozes de todos os que estão presentes naquela ocasião. Eles levam as preocupações daqueles na assembleia à Cabeça da Igreja. Não há necessidade de haver um líder que ore (<a href="http://bibliaonline.com.br/acf/ne/11/17">Neemias 11:17</a>) porque o Espírito Santo preside a reunião e Ele guiará os irmãos para audivelmente expressarem as preocupações da assembleia ao Senhor.</p>
+<p>A reunião de oração pode ser considerada uma “reunião termômetro”, porque a temperatura ou estado geral daqueles numa reunião em particular pode frequentemente ser discernida pelo interesse e comparecimento deles a esta reunião. O tom desta reunião é a manifestação da condição espiritual da assembleia como um todo.</p>
+<a class="header" href="print.html#reuniÃo-aberta" id="reuniÃo-aberta"><h2>REUNIÃO ABERTA</h2></a>
+<p>– Esta é a reunião para o ministério da Palavra de Deus (<a href="http://bibliaonline.com.br/acf/1co/14/26-33">1 Coríntios 14:26-33</a>). Já que o Senhor está no centro e dirigindo pelo Espírito, nesta reunião de assembleia Ele conduzirá dois ou três irmãos a ministrarem algo das Escrituras que será de proveito para a assembleia. As Escrituras dizem “falem dois ou três profetas, e os outros julguem” (<a href="http://bibliaonline.com.br/acf/1co/14/29">1 Coríntios 14:29</a>). Aqueles que atuam como profetas nesta reunião devem falar para “edificação, exortação e consolação” dos demais reunidos naquela particular ocasião (<a href="http://bibliaonline.com.br/acf/1co/14/3">1 Coríntios 14:3</a>).</p>
+<p>Uma vez que a reunião é aberta à condução do Espírito para usar qualquer um (<a href="http://bibliaonline.com.br/acf/1co/12/11">1 Coríntios 12:11</a>), alguns têm confundido esta reunião como se fosse um momento para a carne ter a liberdade nas coisas divinas e então ocupam o tempo sem proveito. Este foi o problema em Corinto. Eles abusaram desta reunião e a tornaram em desordem (<a href="http://bibliaonline.com.br/acf/1co/14/26">1 Coríntios 14:26</a>). Parece que todos tinham algo que queriam mostrar e dizer, edificando ou não a assembleia. Eram tão ansiosos para falar que acabavam tropeçando uns nos outros. Alguns queriam usar seu dom de línguas, mas eles não tinham intérprete para trazer o que foi dito numa linguagem comum àqueles na assembleia. O resultado era que ninguém tinha proveito disso.</p>
+<p>Aquilo precisava ser controlado. Foi o que o apóstolo fez escrevendo a eles. Ele mostra que o ministério nas reuniões é para ser feito de maneira ordenada. “Mas, se a outro, que estiver assentado, for revelada alguma coisa, cale-se o primeiro”(<a href="http://bibliaonline.com.br/acf/1co/14/30">vs. 30</a>). Em outras palavras, era para eles não interromperem um ao outro, mas esperar até que o primeiro que falava tivesse terminado antes do próximo irmão falar. Todas as coisas eram para serem feitas decentemente e em ordem (<a href="http://bibliaonline.com.br/acf/1co/14/40">vs. 40</a>). Ele nos diz que se uma pessoa persiste em falar com pouco ou nenhum proveito, a assembleia tem o recurso na medida em que pode “julgar” o ministério daquela pessoa e fazê-la silenciar (<a href="http://bibliaonline.com.br/acf/1co/14/29">vs. 29</a>).</p>
+<p>Nesta passagem (<a href="http://bibliaonline.com.br/acf/1co/14">1 Coríntios 14</a>) o apóstolo afirma três coisas que são para regular o ministério nas reuniões de assembleia:</p>
+<p>Devemos dar lugar à direção do Espírito, que está implícito na palavra “deixe”(*) – 8 vezes (<a href="http://bibliaonline.com.br/acf/1co/14/26-30">vs. 26-30</a>).</p>
+<p>Os profetas devem ter autocontrole sobre seu próprio espírito (<a href="http://bibliaonline.com.br/acf/1co/14/32">vs. 32</a>).</p>
+<p>A assembleia deve exercitar julgamento administrativo de silêncio naqueles que não estão sujeitos à direção do Espírito, e naqueles que não controlam seus próprios espíritos (<a href="http://bibliaonline.com.br/acf/1co/14/29">vs. 29</a>).</p>
+<p>(*) N. do T.: Na versão em Português a palavra “let” (deixe) é omitida. A seguir há uma sugestão de onde ela se encontraria, numa versão livre dos versículos de <a href="http://bibliaonline.com.br/acf/1co/14/26-30">1 Coríntios 14:26-30</a>: “Que fareis pois, irmãos? Quando vos ajuntais (ou reunis ou congregais), cada um de vós tem salmo, tem doutrina, tem revelação, tem língua, tem interpretação. Faça-se tudo (deixe tudo ser feito) para edificação. E, se alguém falar em língua desconhecida, faça-se isso (deixe que seja) por dois, ou quando muito três, e por sua vez, e haja intérprete (e deixe um interpretar). Mas, se não houver intérprete, esteja calado (deixe calar-se) na igreja, e fale (e deixe-o falar) consigo mesmo, e com Deus. E falem (deixem falar) dois ou três profetas, e os (deixe que) outros julguem. Mas, se a outro, que estiver assentado, for revelada alguma coisa, cale-se o primeiro (deixe que o primeiro se cale).”</p>
+<a class="header" href="print.html#reuniÃo-para-aÇÕes-de-disciplina" id="reuniÃo-para-aÇÕes-de-disciplina"><h2>REUNIÃO PARA AÇÕES DE DISCIPLINA</h2></a>
+<p>Num mundo perfeito não haveria necessidade desta reunião, mas enquanto a Igreja estiver na terra, e nós tivermos a carne em nós, haverá surtos de pecados nos santos, se eles negligenciarem julgarem-se a si mesmos. Consequentemente, haverá necessidade de ações disciplinárias pela assembleia sobre aqueles que não controlam os impulsos da carne nas suas vidas.</p>
+<p>Quando uma assembleia toma uma decisão requerida para silenciar um irmão, ou excomungar alguém (<a href="http://bibliaonline.com.br/acf/mt/18/18-20">Mateus 18:18-20</a>), isto deve ser feito em assembleia quando os santos “estão reunidos” e o Senhor está no centro (<a href="http://bibliaonline.com.br/acf/1co/5/4">1 Coríntios 5:4</a>). Esta ação deve se contra qualquer maneira de pecado que uma pessoa seja acusada. Esta ação não é feita por um grupo de irmãos ou mais velhos, a parte da assembleia, mas pela assembleia quando está reunida (<a href="http://bibliaonline.com.br/acf/atos/15/22">Atos 15:22</a>). Uma reunião para uma ação disciplinaria é normalmente apensa à reunião do partimento do pão porque o partimento do pão é onde a unicidade do corpo e a comunhão à Mesa do Senhor são expressas.</p>
+<p>Uma vez que a pessoa é “colocada fora” do meio da comunhão dos santos na Mesa do Senhor, é apropriado que isso seja apenso à reunião do partimento do pão (<a href="http://bibliaonline.com.br/acf/1co/5/12-13">1 Coríntios 5:12-13</a>).</p>
+<p>Olhando para essas reuniões de assembleias que as Escrituras apresentam e então para a comunhão denominacional na Cristandade, nós vemos que a Igreja hoje nem mesmo tem essas reuniões nos seus serviços – pelo menos com qualquer tipo de regularidade. A maioria das reuniões que vemos hoje é o que é chamado de “culto da família” onde as pessoas se reúnem para ouvir um sermão e adorar ao Senhor. Se a Ceia do Senhor é mantida, ela é usualmente feita uma vez por mês ou uma vez a cada três meses – e é parcamente reconhecível em relação ao que lemos nas Escrituras. Por exemplo, o pão inteiro, que é o emblema do corpo de Cristo, é usualmente substituído por hóstias. Também, se reuniões de oração são feitas no meio da semana, há um líder de oração indicado. Reuniões abertas são desconhecidas, bem como reuniões para ações disciplinárias e excomunhão.</p>
+<a class="header" href="print.html#reuniÕes-da-assembleia" id="reuniÕes-da-assembleia"><h2>REUNIÕES DA ASSEMBLEIA</h2></a>
+<p>As reuniões nesta segunda categoria têm um caráter diferente daquelas as quais nós chamamos de “reuniões de assembléia”. A principal diferença é que estas reuniões são realizadas por responsáveis, irmãos dotados, em vez de ser sob a direta e espontânea direção do Espírito. Isto não quer dizer que o Espírito de Deus não seja necessário ou que não dependa-se dEle nestas reuniões; aqueles que falam deveriam ser “cheios do Espírito” (<a href="http://bibliaonline.com.br/acf/ef/5/18">Efésios 5:18</a>) e “guiados pelo Espírito”(<a href="http://bibliaonline.com.br/acf/rm/8/14">Romanos 8:14</a>).</p>
+<a class="header" href="print.html#reuniÃo-de-leitura" id="reuniÃo-de-leitura"><h2>REUNIÃO DE LEITURA</h2></a>
+<p>O essencial para uma reunião de leitura da Bíblia é mencionado em <a href="http://bibliaonline.com.br/acf/1tm/4/13">1 Timóteo 4:13</a> onde diz: “Persiste em ler, exortar e ensinar, até que eu vá.” O “ler” que Paulo fala aqui não é a leitura pessoal e privada da Escritura ou ministério, mas daquela leitura pública das Escrituras quando os santos estão reunidos. Este era o costume da Igreja primitiva se reunir para ouvir a leitura das Escrituras (<a href="http://bibliaonline.com.br/acf/cl/4/16">Colossenses 4:16</a>; <a href="http://bibliaonline.com.br/acf/1ts/5/27">1 Tessalonicenses 5:27</a>).</p>
+<p>O fato de Paulo ter incluído “exortação” e “ensino” indica que após as Escrituras terem sido lidas em voz alta, havia a oportunidade para qualquer um que tivesse o dom da exortação ou de exposição da verdade, fazer comentários para a ajuda espiritual e compreensão dos santos.</p>
+<p>Isto é essencialmente o que é uma reunião de leitura da Bíblia.</p>
+<p>Isto era feito na Igreja primitiva porque a maioria naquele tempo não tinha uma cópia das Escrituras. Era uma forma de todos ouvirem a palavra de Deus e obterem algum ministério útil. Também, alguns antigamente eram iletrados e não podiam ler mesmo que tivessem uma cópia das Escrituras. Além disso, essas ocasiões promoviam comunhão. “E perseveravam na doutrina dos apóstolos, e na comunhão, e no partir do pão, e nas orações.” (<a href="http://bibliaonline.com.br/acf/atos/2/42">Atos 2:42</a>). A reunião de leitura da Bíblia é ainda um maravilhoso meio de aprender a verdade.</p>
+<p>Paulo encorajava Timóteo a usar tais oportunidades para exercitar seu dom em exortação e ensino. Ele disse que definitivamente Timóteo tinha o dom para isso, e para não negligenciar seu uso. Paulo também o lembrou de que ele tinha o suporte dos irmãos mais velhos (os anciãos) que haviam reconhecido seu dom e haviam dado a ele a destra de comunhão no uso do dom (vs. 14). Não deveríamos encorajar alguém desta maneira a menos que o tal tivesse o dom para ministrar a Palavra. A pessoa pode embaraçar-se a si mesma e haverá pouco proveito espiritual para os santos. Embora a reunião deva ser usada por aqueles aptos a ensinar, se não existir alguém presente com um dom específico para o ensino, os santos ainda podem nutrir-se. Se vários irmãos na reunião expressarem o que eles entendem em conexão com a passagem, em dependência do Senhor, Ele vai dar algo aos santos, porque Deus sempre abençoa a leitura da sua Palavra (<a href="http://bibliaonline.com.br/acf/ap/1/3">Apocalipse 1:3</a>).</p>
+<p>Já que a reunião de leitura hoje em dia é realizada segundo o caráter de uma Reunião de Assembleia, alguns acabaram pensando que ela pudesse estar incluída na primeira categoria – e talvez ela devesse – mas os irmãos do século 19 a realizavam como um tempo para exposição pelos irmãos com dom, onde perguntas e respostas ocupavam grande parte da reunião.</p>
+<a class="header" href="print.html#pregaÇÃo-para-crentes" id="pregaÇÃo-para-crentes"><h2>PREGAÇÃO PARA CRENTES</h2></a>
+<p>Um exemplo desta reunião é encontrada em <a href="http://bibliaonline.com.br/acf/atos/20/7">Atos 20:7</a>. Diz: “E no primeiro dia da semana, ajuntando-se os discípulos para partir o pão, Paulo, que havia de partir no dia seguinte, falava com eles; e prolongou a prática até à meia-noite”. Quando a ocasião surge, e há um irmão presente que tenha dom em ministrar a Palavra de Deus, a assembleia pode tirar proveito da oportunidade e pedir a ele por uma pregação. Ele vai escolher um tema que o Senhor tenha colocado em seu coração que seja de ajuda aos santos no entendimento da verdade, uma vez dirigida aos santos (<a href="http://bibliaonline.com.br/acf/2pe/1/12">2 Pedro 1:12</a>; <a href="http://bibliaonline.com.br/acf/jd/3">Judas 3</a>). Ou então a reunião pode assumir o caráter de exortação e encorajamento. Se o irmão estiver naquela área por algum tempo, e os santos desejarem isso, ele pode fazer uma série de pregações num determinado assunto.</p>
+<a class="header" href="print.html#pregaÇÃo-do-evangelho" id="pregaÇÃo-do-evangelho"><h2>PREGAÇÃO DO EVANGELHO</h2></a>
+<p>Esta é uma reunião que normalmente não é realizada sob a responsabilidade da assembleia, embora possa ter alguma coisa a ver com ela se a reunião ocorrer em sala que pertença à assembleia. Nós relacionaríamos a Escola Dominical com esse tipo de reunião.</p>
+<p>O propósito da reunião de pregação do evangelho é muito obvio – é pregar o evangelho. No livro de Atos vemos o apóstolo Paulo pregando o evangelho aos perdidos; na epístola aos Romanos ele fala anunciando isto aos crentes (<a href="http://bibliaonline.com.br/acf/rm/1/15">Romanos 1:15</a>). Por isso, há lugar para os dois nas Escrituras. Podemos nos perguntar por que anunciar o evangelho aos crentes, mas é importante como ajuda aos santos para se fundamentarem na verdade do evangelho e nas bençãos relacionadas a ela. Quando o evangelho é anunciado aos santos, ele tem um caráter mais expositivo do que de súplica. Este era o propósito de Paulo ao escrever aos Romanos. Uma reunião de evangelho pode ocorrer em quase todos os lugares.</p>
+<p>Em <a href="http://bibliaonline.com.br/acf/atos/10/23-24">Atos 10:23-24</a> foi numa casa.</p>
+<p>Em <a href="http://bibliaonline.com.br/acf/atos/13/14-43">Atos 13:14-43</a> foi numa sinagoga.</p>
+<p>Em <a href="http://bibliaonline.com.br/acf/atos/16/25-34">Atos 16:25-34</a> foi numa prisão.</p>
+<p>Em <a href="http://bibliaonline.com.br/acf/atos/17/22-34">Atos 17:22-34</a> foi ao ar livre.</p>
+<a class="header" href="print.html#reuniÃo-para-relatar-um-trabalho-missionÁrio" id="reuniÃo-para-relatar-um-trabalho-missionÁrio"><h2>REUNIÃO PARA RELATAR UM TRABALHO MISSIONÁRIO</h2></a>
+<p>Um exemplo dessa reunião é encontrado em <a href="http://bibliaonline.com.br/acf/atos/14/27">Atos 14:27</a>. “E, quando chegaram e reuniram a igreja, relataram quão grandes coisas Deus fizera por eles, e como abrira aos gentios a porta da fé.”. Estas reuniões dão aos santos a oportunidade para ouvirem o que o Senhor tem feito em campos estrangeiros. Não é para os obreiros se gabarem do que estão fazendo para o Senhor (<a href="http://bibliaonline.com.br/acf/2rs/10/16">2 Reis 10:16</a>), mas para apresentarem o que Deus está fazendo salvando almas e as reunindo ao nome do Senhor Jesus Cristo.</p>
+<p>Um irmão que trabalha numa terra estrangeira pode passar por um lugar, e a assembleia pode usar a oportunidade de tê-lo relatando sobre o trabalho naquele lugar. Ele pode pôr um mapa ou mostrar algumas fotos do trabalho naquele lugar em particular onde ele e outros tenham estado servindo. O propósito principal desta reunião é encorajar os santos locais a orarem pelo trabalho em vários lugares. Ouvir isso dessa maneira possibilita aos santos orarem mais inteligentemente. Isto também dá a eles a oportunidade prática de terem comunhão com o trabalho de maneira monetária. O resultado dessa reunião é que“... davam grande alegria a todos os irmãos&quot; (<a href="http://bibliaonline.com.br/acf/atos/15/3">Atos 15:3</a>).</p>
+<a class="header" href="print.html#reuniÃo-de-irmÃos-ou-reuniÃo-de-cuidados" id="reuniÃo-de-irmÃos-ou-reuniÃo-de-cuidados"><h2>REUNIÃO DE IRMÃOS (ou REUNIÃO DE CUIDADOS)</h2></a>
+<p>Esta reunião é diferente de todas as outras reuniões no caráter. As reuniões mencionadas anteriormente são para a assembleia como um todo, mas esta reunião não é. É uma reunião privativa para os irmãos mais velhos e irmãos responsáveis relativamente aos cuidados administrativos da assembleia (<a href="http://bibliaonline.com.br/acf/gl/2/2">Gálatas 2:2</a> –“particularmente”).</p>
+<p><a href="http://bibliaonline.com.br/acf/atos/15/6">Atos 15:6</a>; <a href="http://bibliaonline.com.br/acf/atos/20/18">20:18</a>; e <a href="http://bibliaonline.com.br/acf/atos/21/18">21:18</a> indicam que é totalmente aceitável para irmãos responsáveis se reunirem separadamente da assembleia para dirigirem questões administrativas. Essas referências não são exatamente modelos para reuniões de cuidados, mas conselhos apostólicos que incluíam irmãos de diferentes localidades. Mesmo assim, tais referências dão os princípios para tais reuniões. Uma reunião de cuidados, como sabemos, é exclusivamente para irmãos locais.</p>
+<p>Não é uma reunião “dos irmãos” como alguns costumam chamar, mas uma reunião de “cuidado” [ou “de irmãos”, como costumamos chamar no Brasil - N. do T.] porque esta reunião não é necessariamente para todos os irmãos numa assembleia local. As Escrituras dizem: “Congregaram-se, pois, os apóstolos e os anciãos para considerar este assunto” (<a href="http://bibliaonline.com.br/acf/atos/15/6">Atos 15:6</a>). Não são mencionados irmãos jovens, novos convertidos ou irmãs. Aqueles que não estão estáveis na fé poderiam facilmente tropeçar quando vissem “guerras nos portões” (<a href="http://bibliaonline.com.br/acf/ex/13/17-18">Êxodo 13:17-18</a>; <a href="http://bibliaonline.com.br/acf/jz/5/8">Juízes 5:8</a>). Além disso, os jovens na fé não tiveram suas consciências suficientemente esclarecidas nos princípios das Escrituras para serem capazes de formarem um julgamento espiritual acurado e portanto não seriam necessários nesse tipo de reunião. Conforme eles forem amadurecendo poderão participar e aprender como as coisas têm de ser manejadas, observando os irmãos mais velhos e experientes.</p>
+<p>Enquanto os irmãos na reunião de cuidados podem chegar a uma linha de ações em conformidade com as Escrituras, de modo que a assembleia tenha de assimilar a questão que tenham de encarar, eles não fazem nada separadamente da assembleia (<a href="http://bibliaonline.com.br/acf/atos/15/22">Atos 15:22</a>).</p>
+<a class="header" href="print.html#reuniÃo-de-comunhÃo-ou-festa-de-amor" id="reuniÃo-de-comunhÃo-ou-festa-de-amor"><h2>REUNIÃO DE COMUNHÃO (ou Festa de Amor)</h2></a>
+<p>Esta é uma reunião centrada em torno da comunhão. Judas fala dela como “vossas festas de amor” (<a href="http://bibliaonline.com.br/acf/jd/12">Judas 12</a>). Pedro também faz alusão a ela (<a href="http://bibliaonline.com.br/acf/2pe/2/13">2 Pedro 2:13</a>). É um tempo para os santos estarem juntos para refeição em comum para promover a comunhão.</p>
+<p>A Igreja primitiva considerava importante a comunhão e continuou “perseverante” nela (<a href="http://bibliaonline.com.br/acf/atos/2/42">Atos 2:42</a>). A comunhão fortalece nossas ligações em Cristo e nos encoraja no caminho da fé. Deixe-nos notar que comunhão cristã é comunhão em relação ao que temos em comum como cristãos – Cristo. Algumas vezes nos reunimos para esportes e recreação sem referência ao Senhor, e imaginamos que isso seja comunhão cristã. Isto é realmente comunhão natural feita com cristãos, e não há nada de errado com isso, mas a essência da comunhão cristã é ter comunhão sobre as coisas cristãs.</p>
+<p>Os Coríntios fundiram esta reunião com a Ceia do Senhor e ela se tornou em algo que era uma desonra ao Senhor (<a href="http://bibliaonline.com.br/acf/1co/11/20-22">1 Coríntios 11:20-22</a>). Eles também estavam comendo as festas de amor observando distinção de classes na sociedade, o que não era para ser feito na comunhão do povo do Senhor. Então, o apóstolo ofereceu uma correção a essa desordem em suas observações.</p>
+<p>Resumindo, sob condições normais uma assembleia baseada nas escrituras terá uma variedade de reuniões que vão ao encontro das necessidades dos irmãos na assembleia local. Note que não há menção nas Escrituras de reuniões de cura, reuniões de línguas ou reuniões de testemunhos. Estas reuniões são encontradas na Igreja hoje em dia, e podem ser interessantes, mas elas não são encontradas na Palavra de Deus, e portanto não serão encontradas numa assembleia baseada na Escrituras.</p>
+<p>Bruce Anstey</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

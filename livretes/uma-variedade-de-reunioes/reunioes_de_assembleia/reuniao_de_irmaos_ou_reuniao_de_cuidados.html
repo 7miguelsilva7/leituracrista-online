@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>REUNIÃO DE IRMÃOS (ou REUNIÃO DE CUIDADOS) - Uma Variedade de Reuniões</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> UMA VARIEDADE DE REUNIOES</a></li><li><a href="reunioes_de_assembleia/README.html"><strong aria-hidden="true">2.</strong> REUNIÕES DE ASSEMBLEIA</a></li><li><ol class="section"><li><a href="reunioes_de_assembleia/partimento_do_pao.html"><strong aria-hidden="true">2.1.</strong> PARTIMENTO DO PÃO</a></li><li><a href="reunioes_de_assembleia/reuniao_de_oracao.html"><strong aria-hidden="true">2.2.</strong> REUNIÃO DE ORAÇÃO</a></li><li><a href="reunioes_de_assembleia/reuniao_aberta.html"><strong aria-hidden="true">2.3.</strong> REUNIÃO ABERTA</a></li><li><a href="reunioes_de_assembleia/reuniao_para_acoes_de_disciplina.html"><strong aria-hidden="true">2.4.</strong> REUNIÃO PARA AÇÕES DE DISCIPLINA</a></li><li><a href="reunioes_de_assembleia/reunioes_da_assembleia.html"><strong aria-hidden="true">2.5.</strong> REUNIÕES DA ASSEMBLEIA</a></li><li><a href="reunioes_de_assembleia/reuniao_de_leitura.html"><strong aria-hidden="true">2.6.</strong> REUNIÃO DE LEITURA</a></li><li><a href="reunioes_de_assembleia/pregacao_para_crentes.html"><strong aria-hidden="true">2.7.</strong> PREGAÇÃO PARA CRENTES</a></li><li><a href="reunioes_de_assembleia/pregacao_do_evangelho.html"><strong aria-hidden="true">2.8.</strong> PREGAÇÃO DO EVANGELHO</a></li><li><a href="reunioes_de_assembleia/reuniao_para_relatar_um_trabalho_missionario.html"><strong aria-hidden="true">2.9.</strong> REUNIÃO PARA RELATAR UM TRABALHO MISSIONÁRIO</a></li><li><a href="reunioes_de_assembleia/reuniao_de_irmaos_ou_reuniao_de_cuidados.html" class="active"><strong aria-hidden="true">2.10.</strong> REUNIÃO DE IRMÃOS (ou REUNIÃO DE CUIDADOS)</a></li><li><a href="reunioes_de_assembleia/reuniao_de_comunhao_ou_festa_de_amor.html"><strong aria-hidden="true">2.11.</strong> REUNIÃO DE COMUNHÃO (ou Festa de Amor)</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Uma Variedade de Reuniões</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="reunioes_de_assembleia/reuniao_de_irmaos_ou_reuniao_de_cuidados.html#reuniÃo-de-irmÃos-ou-reuniÃo-de-cuidados" id="reuniÃo-de-irmÃos-ou-reuniÃo-de-cuidados"><h2>REUNIÃO DE IRMÃOS (ou REUNIÃO DE CUIDADOS)</h2></a>
+<p>Esta reunião é diferente de todas as outras reuniões no caráter. As reuniões mencionadas anteriormente são para a assembleia como um todo, mas esta reunião não é. É uma reunião privativa para os irmãos mais velhos e irmãos responsáveis relativamente aos cuidados administrativos da assembleia (<a href="http://bibliaonline.com.br/acf/gl/2/2">Gálatas 2:2</a> –“particularmente”).</p>
+<p><a href="http://bibliaonline.com.br/acf/atos/15/6">Atos 15:6</a>; <a href="http://bibliaonline.com.br/acf/atos/20/18">20:18</a>; e <a href="http://bibliaonline.com.br/acf/atos/21/18">21:18</a> indicam que é totalmente aceitável para irmãos responsáveis se reunirem separadamente da assembleia para dirigirem questões administrativas. Essas referências não são exatamente modelos para reuniões de cuidados, mas conselhos apostólicos que incluíam irmãos de diferentes localidades. Mesmo assim, tais referências dão os princípios para tais reuniões. Uma reunião de cuidados, como sabemos, é exclusivamente para irmãos locais.</p>
+<p>Não é uma reunião “dos irmãos” como alguns costumam chamar, mas uma reunião de “cuidado” [ou “de irmãos”, como costumamos chamar no Brasil - N. do T.] porque esta reunião não é necessariamente para todos os irmãos numa assembleia local. As Escrituras dizem: “Congregaram-se, pois, os apóstolos e os anciãos para considerar este assunto” (<a href="http://bibliaonline.com.br/acf/atos/15/6">Atos 15:6</a>). Não são mencionados irmãos jovens, novos convertidos ou irmãs. Aqueles que não estão estáveis na fé poderiam facilmente tropeçar quando vissem “guerras nos portões” (<a href="http://bibliaonline.com.br/acf/ex/13/17-18">Êxodo 13:17-18</a>; <a href="http://bibliaonline.com.br/acf/jz/5/8">Juízes 5:8</a>). Além disso, os jovens na fé não tiveram suas consciências suficientemente esclarecidas nos princípios das Escrituras para serem capazes de formarem um julgamento espiritual acurado e portanto não seriam necessários nesse tipo de reunião. Conforme eles forem amadurecendo poderão participar e aprender como as coisas têm de ser manejadas, observando os irmãos mais velhos e experientes.</p>
+<p>Enquanto os irmãos na reunião de cuidados podem chegar a uma linha de ações em conformidade com as Escrituras, de modo que a assembleia tenha de assimilar a questão que tenham de encarar, eles não fazem nada separadamente da assembleia (<a href="http://bibliaonline.com.br/acf/atos/15/22">Atos 15:22</a>).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="reunioes_de_assembleia/reuniao_para_relatar_um_trabalho_missionario.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="reunioes_de_assembleia/reuniao_de_comunhao_ou_festa_de_amor.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="reunioes_de_assembleia/reuniao_para_relatar_um_trabalho_missionario.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="reunioes_de_assembleia/reuniao_de_comunhao_ou_festa_de_amor.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>VOCE PARTE O PAO E. H. CHATER E. H. CHATER - Você Parte o Pão - Por Que, Quando, Onde e Como?</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html" class="active"><strong aria-hidden="true">1.</strong> VOCE PARTE O PAO E. H. CHATER E. H. CHATER</a></li><li><a href="por_que.html"><strong aria-hidden="true">2.</strong> POR QUE?</a></li><li><a href="quando.html"><strong aria-hidden="true">3.</strong> QUANDO?</a></li><li><a href="onde.html"><strong aria-hidden="true">4.</strong> ONDE?</a></li><li><a href="como.html"><strong aria-hidden="true">5.</strong> COMO?</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Você Parte o Pão - Por Que, Quando, Onde e Como?</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="README.html#você-parte-o-pão---por-que-quando-onde-e-como" id="você-parte-o-pão---por-que-quando-onde-e-como"><h2>Você Parte o Pão - Por Que, Quando, Onde e Como?</h2></a>
+<p>INTRODUÇÃO</p>
+<p>Na noite em que Jesus foi traído, após a ceia pascal, Ele tomou &quot;o pão, e havendo dado graças, partiu-o, e deu-lho (aos Seus discípulos), dizendo: Isto é o Meu corpo, que por vós é dado; fazei isto em memória de Mim. Semelhantemente tomou o cálice, depois da ceia, dizendo: Este cálice é o Novo Testamento no Meu sangue, que é derramado por vós&quot; (<a href="http://bibliaonline.com.br/acf/lc/22/19-20">Lucas 22:19-20</a>).</p>
+<p>Jesus estava para ir à cruz, e ao Pai, deixando os Seus amados discípulos neste mundo. Ele estava indo preparar-lhes um lugar, para depois retornar e recebê-los para Si, para que onde Ele estivesse, eles pudessem também estar. Sabendo que seus corações facilmente se esqueceriam, e ciente da fria influência exercida pelo mundo, Ele lhes deixou, antes de partir, este simples e amável pedido: &quot;Fazei isto em memória de Mim&quot;.</p>
+<p>Havendo Se oferecido, como a verdadeira Páscoa, sobre a cruz, e tendo sido sepultado, Ele ressuscitou de entre os mortos pela glória do Pai, e tomou o lugar que Lhe estava reservado à destra de Deus (<a href="http://bibliaonline.com.br/acf/rm/6/4">Romanos 6:4</a>). Desde então, Ele continua falando com a mesma ênfase aos corações daqueles que são Seus, por intermédio de Seu servo Paulo (<a href="http://bibliaonline.com.br/acf/1co/11/23">1 Coríntios 11:23</a>). Os escritos dos apóstolos são palavras que lhes foram ensinadas pelo Espírito Santo (<a href="http://bibliaonline.com.br/acf/1co/2/13">1 Coríntios 2:13</a>).</p>
+<p>Por quase dezenove séculos, Ele tem aguardado pacientemente em misericórdia e graça a favor do pecador. É por Sua paciência, querido leitor cristão, que você e eu fomos alcançados. Que tamanha responsabilidade temos, então, para com Aquele que é nosso Salvador e que é tudo para nós! Não se trata de algo difícil o que Ele nos pediu, mas simplesmente de lembrarmos daquEle que nos amou, e Se entregou por nós (<a href="http://bibliaonline.com.br/acf/ef/5/25">Efésios 5:25</a>). O Seu sangue precioso fez a paz, e agora Ele Se apresenta aos nossos corações. Como pode algum dos Seus queridos querer privá-Lo deste gozo, ao deixar de lado o Seu amoroso desejo?</p>
+<p>É da máxima importância que cada cristão possa conhecer o desejo do Senhor acerca desta bendita instituição que é a Ceia do Senhor, uma vez que a cristandade em geral tem se distanciado cada vez mais da simplicidade das Escrituras, despojando a Ceia do Senhor e a Mesa do Senhor do seu verdadeiro significado, e levando muitos a ficarem confusos a respeito deste assunto. Os romanistas, com suas missas, e os protestantes, com seus sacramentos, têm ambos distorcido o verdadeiro caráter do lugar que a Ceia e a Mesa do Senhor devem ocupar na Igreja. Os católicos tratam da Ceia como um sacrifício repetido a cada missa, negando assim completamente a perfeição do único sacrifício de Cristo, feito uma vez para sempre. Os protestantes, com freqüência, fazem dela um meio parcial de salvação, além do que, com freqüência, permitem que pessoas não convertidas participem, quando a Palavra de Deus é categórica quanto ao fato de que a participação na Ceia do Senhor é um privilégio unicamente para verdadeiros cristãos. E verdadeiros cristãos são crentes em Jesus, possuem a vida eterna e o Espírito Santo. (<a href="http://bibliaonline.com.br/acf/jo/6/47">João 6:47</a>; <a href="http://bibliaonline.com.br/acf/1co/6/19">1 Coríntios 6:19</a>). A Ceia nunca deveria ser tomada como um meio de se obter bênçãos, mas como uma grata lembrança de nosso Senhor, por aqueles que já receberam bênçãos. Uma verdadeira fé e um andar em fidelidade credenciam aqueles que são membros do corpo de Cristo a terem o seu lugar à Mesa do Senhor. Trata-se de um privilégio de todos os filhos de Deus que não estejam biblicamente desqualificados para tal.</p>
+<p>Existem quatro questões para as quais eu gostaria de chamar a atenção do leitor: Por Que, Quando, Onde e Como devemos tomar a Ceia do Senhor? Primeiramente, vou responder a estas perguntas com trechos das Escrituras, para depois explicá-las mais detalhadamente.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="por_que.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="por_que.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>
