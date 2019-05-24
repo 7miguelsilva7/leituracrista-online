@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Parte 3 - O Amigo e as Coisas que Nunca Mudam</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="o_amigo_e_as_coisas_que_nunca_mudam.html"><strong aria-hidden="true">1.</strong> O Amigo e as Coisas que Nunca Mudam</a></li><li><a href="parte_2.html"><strong aria-hidden="true">2.</strong> Parte 2</a></li><li><a href="parte_3.html" class="active"><strong aria-hidden="true">3.</strong> Parte 3</a></li><li><a href="parte_4.html"><strong aria-hidden="true">4.</strong> Parte 4</a></li><li><a href="parte_5.html"><strong aria-hidden="true">5.</strong> Parte 5</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Amigo e as Coisas que Nunca Mudam</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="parte_3.html#parte-3" id="parte-3"><h2>Parte 3</h2></a>
+<p>[*O autor usa aqui o termo &quot;assembléia&quot; no seu sentido bíblico, ou seja, referindo-se à igreja, como um todo, ou na sua expressão local onde dois ou três estejam reunidos ao nome do Senhor Jesus. Em hipótese nenhuma a referência é feita a alguma denominação religiosa conhecida com &quot;Assembléia&quot;, pois o sistema denominacional é algo estranho às Escrituras.]</p>
+<p>Oh, irmãos, moldemos os padrões daquilo que cremos a partir da Palavra de Deus, e não por aquilo que é normalmente aceito ao nosso redor hoje em dia. Pois é neste precioso Livro que temos a fé que uma vez, não duas vezes, não renovada ou atualizada, mas que uma vez foi dada aos santos. A bendita verdade da vinda do Senhor e todas as coisas preciosas que nos foram ensinadas no Novo Testamento. Como deveríamos nos reunir? Será que deveríamos colocar em prática nossas idéias, ou será que temos instruções na Palavra de Deus de modo que possamos saber que estamos nos reunindo em conformidade com o Seu pensamento? Pode haver por aí muitos bons cristãos que realmente amam o Senhor Jesus e que desejam agradá-Lo. Temos que deixá-los com o Senhor. Mas a responsabilidade, tanto sua quanto minha, tanto individual quanto coletiva como assembléia, é que sigamos em conformidade com a preciosa Palavra. Aprendamos bem isto; fiquemos bem familiarizados com a Palavra de Deus; a fim de nos reunirmos ao precioso nome do Senhor Jesus somente; a fim de nos reunirmos como membros do corpo de Cristo.</p>
+<p>Numa época como aquela, de ruína e abandono, o apóstolo estava bastante preocupado para que houvesse esse tipo de exercício. E digo a cada um de nós, àqueles que já são um pouco mais velhos: Às vezes, nós que envelhecemos, nos esquecemos de que há uma nova geração vindo atrás. Eles vêem coisas que estão sendo feitas e não sabem o por quê. Lembro-me de uma jovem em uma assembléia, reunida ao nome do Senhor Jesus, que acabou saindo e foi partir o pão em algum outro lugar. Um irmão, ao comentar o fato, disse: &quot;Ela sabia muito bem o que estava fazendo&quot;. Porém eu disse ao irmão: &quot;Talvez ela soubesse que os irmãos desaprovariam, mas não estou tão certo de que ela soubesse o por quê&quot;. Devemos saber o por quê para nós mesmos. Precisamos da fé que uma vez foi dada aos santos. Precisamos saber o que é estar reunido de acordo com a Palavra de Deus. Se aprendemos a bendita e preciosa verdade do um só corpo de Cristo e de nos reunirmos como membros desse corpo, quão precioso é aos nossos corações. Vemos no Antigo Testamento que eles só construíram o muro ao redor de Jerusalém depois de construído o Templo. Primeiro foi o Templo, e então eles construíram o muro. O que iria significar a separação se não tivessem o Templo? Mas o Templo veio primeiro, aquele lugar que falava da glória do Senhor e de Sua presença entre o Seu povo; o muro de separação veio depois. Estas coisas são muito importantes!</p>
+<p>Há algo mais que está se introduzindo sorrateiramente em nossos dias, ou seja, o ensino acerca do livre arbítrio. Muitas pessoas não entendem que ao ensinar tal coisa estão, na verdade, supondo que exista algo de bom no homem. Pois se o homem pudesse, por seu livre arbítrio, aceitar a Cristo, então deveria haver algo de bom nele para fazer a boa escolha. É verdade que o homem é responsável e a Bíblia diz que cada um dará conta de si mesmo a Deus. Mas se eu e você fôssemos deixados para fazer nossa própria vontade, jamais teríamos escolhido a Cristo. Deus teve que efetuar uma obra em nós. John Nelson Darby deu, certa vez, um exemplo simples para ilustrar isto: Suponha que eu coloque diante de uma pessoa uma maçã e uma laranja. A pessoa detesta maçãs, e adora laranjas. Eu digo a ela: &quot;Você pode escolher o que quiser&quot;. Dou a ela a liberdade de escolha. Como poderia ela escolher a maçã? Ela odeia maçãs. O que é que poderia levá-la a escolher a maçã? Eu teria que mudar algo dentro dessa pessoa para fazê-la escolher a maçã. E é isso o que Deus faz. &quot;Ninguém pode vir a Mim, se o Pai que Me enviou o não trouxer: e Eu o ressuscitarei no último dia&quot; (<a href="http://bibliaonline.com.br/acf/jo/6/44">João 6:44</a>).</p>
+<p>Precisamos entender a completa ruína do homem; não há nada de bom no homem. Como dizem as Escrituras, &quot;em mim, isto é, na minha carne, não habita bem algum&quot; (<a href="http://bibliaonline.com.br/acf/rm/7/18">Romanos 7:18</a>). É assim que o homem segue em seu obstinado caminho até que Deus intervenha. Foi preciso que Deus efetuasse, no Calvário, uma obra por causa dos meus pecados, e foi preciso que Deus efetuasse uma obra em mim, caso contrário eu nunca teria aceitado o Senhor Jesus Cristo como meu Salvador. Isto não anula, de forma alguma, a responsabilidade. O ser humano é tão responsável diante de Deus quanto um assaltante que, ao roubar sua casa, é responsável pelo que faz. Se você oferece a ele o perdão e ele recusa, isto não significa que por isso ele deixa de ser responsável. Assim Deus Se oferece para perdoar o homem; mas o desejo do homem é tão mau que ele recusa o perdão. Todavia o homem continua responsável e terá que prestar contas a Deus como uma pessoa responsável. Mas tanto eu como você já aprendemos algo da graça de Deus, que nos escolheu e nos salvou! Assim, em todas estas coisas necessitamos ficar atentos e lembrar que se trata da fé que uma vez foi dada aos santos. Conservemos este precioso depósito de verdade que nos foi entregue!</p>
+<p>Vamos abrir agora em <a href="http://bibliaonline.com.br/acf/mt/19/3-6">Mateus 19:3-6</a>: &quot;Então chegaram ao pé dEle os fariseus, tentando-O, e dizendo-Lhe: É lícito ao homem repudiar sua mulher por qualquer motivo? Ele, porém, respondendo, disseLhes: Não tendes lido que Aquele que os fez no princípio macho e fêmea os fez, e disse: Portanto deixará o homem pai e mãe, e se unirá a sua mulher, e serão dois numa só carne? Assim não são mais dois, mas uma só carne. Portanto o que Deus ajuntou não o separe o homem&quot;. E o <a href="http://bibliaonline.com.br/acf/mt/19/9">versículo 9</a>: &quot;Eu vos digo, porém, que qualquer que repudiar sua mulher, não sendo por causa de prostituição, e casar com outra, comete adultério; e o que casar com a repudiada também comete adultério&quot;.</p>
+<p>Creio que estas coisas estão escritas na Palavra de Deus como uma mensagem para nós da importância do matrimônio, e da solenidade da união matrimonial. Nestes dias, quando o matrimônio é tratado com tanta leviandade, existe talvez uma tendência para que até mesmo os cristãos sejam afetados pela atitude leviana que o mundo tem para com o matrimônio. Precisamos voltar ao que Deus falou. O que fez o Senhor Jesus? Ele disse, Se você quer saber a vontade de Deus sobre este assunto você tem que voltar ao princípio, pois o Senhor não muda. Creio que precisamos receber estas coisas hoje. Sabemos que às vezes o relacionamento não é tão feliz quanto deveria ser. Às vezes é tenso. E, certamente, todo esforço deveria ser feito para promover o amor. Costuma-se dizer que para um matrimônio ser feliz o marido precisa ser cem por cento para sua esposa, a esposa cem por cento para o marido e ambos juntos cem por cento para o Senhor. Creio que é por isso que está escrito que &quot;o cordão de três dobras não se quebra tão depressa&quot; (<a href="http://bibliaonline.com.br/acf/ec/4/12">Eclesiastes 4:12</a>).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="parte_2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="parte_4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="parte_2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="parte_4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Sétima parte - O Caminho de Deus para o descanso, poder e consagração</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> O CAMINHO DE DEUS PARA O DESCANSO, PODER , E CONSAGRAÇÃO</a></li><li><a href="segunda_parte.html"><strong aria-hidden="true">2.</strong> Segunda parte</a></li><li><a href="terceira_parte.html"><strong aria-hidden="true">3.</strong> Terceira parte</a></li><li><a href="quarta_parte.html"><strong aria-hidden="true">4.</strong> Quarta parte</a></li><li><a href="quinta_parte.html"><strong aria-hidden="true">5.</strong> Quinta parte</a></li><li><a href="sexta_parte.html"><strong aria-hidden="true">6.</strong> Sexta parte</a></li><li><a href="setima_parte.html" class="active"><strong aria-hidden="true">7.</strong> Sétima parte</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Caminho de Deus para o descanso, poder e consagração</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="setima_parte.html#sétima-parte" id="sétima-parte"><h2>Sétima parte</h2></a>
+<p>Podemos agora expor, de forma distinta, alguns pontos que irão capacitar o leitor a compreender de maneira simples a verdade da consagração. Podemos então dizer que a consagração está em Cristo possuir o total controle sobre os corpos do Seu povo, de modo que possam ser órgãos para a expressão de nada além dEle próprio. Há duas passagens que irão tornar mais claro o que queremos dizer. &quot;Já estou crucificado com Cristo; e vivo, não mais eu, mas Cristo vive em mim; e a vida que agora vivo na carne vivo-a na fé do Filho de Deus, O qual me amou, e Se entregou a Si mesmo por mim&quot; (<a href="http://bibliaonline.com.br/acf/gl/2/20">Gl 2.20</a>). O mesmo apóstolo escreve: “Trazendo sempre por toda a parte a mortificação do Senhor Jesus no nosso corpo, para que a vida de Jesus se manifeste também em nossos corpos” (<a href="http://bibliaonline.com.br/acf/2co/4/10">2 Co 4.10</a>). Em ambas estas passagens encontramos a mesma coisa - que só Cristo é para ser manifestado por meio dos corpos do Seu povo. A diferença está em que, na primeira, o eu é totalmente deixado de lado - “não mais eu, mas Cristo vive em mim”; enquanto que na segunda, são dados os meios pelos quais a “vida de Jesus” esteja assegurada. Isto é, portanto, consagração - Cristo no lugar do eu, Cristo reinando supremo dentro de nós, e usando-nos como os veículos para a exposição de Si próprio em meio às trevas deste mundo.</p>
+<p>Talvez agora seja de ajuda indagarmos como é que esta consagração - o desejo de cada crente verdadeiro - é alcançada. Assinalamos o fato de que aceitamos alegremente, pela graça de Deus, a Cristo como nosso substituto sobre a cruz; que quando somos guiados na verdade da libertação, igualmente O aceitamos, ao invés de a nós mesmos, na presença de Deus; e agora devemos dar um passo mais e aceitá-Lo, ao invés do eu, como nossa vida neste mundo. Assim como o apóstolo, também devemos dizer: &quot;Não mais eu, mas Cristo vive em mim&quot;. Isto irá levar-nos a rejeitar o “eu” em todas as suas formas e manifestações, pois aprendemos que o eu não passa de mal em sua essência. Cristo tornar-se-á então o motivo, objeto e fim de tudo o que falamos e fazemos. Ele próprio, embora sempre O Perfeito, bendito seja o Seu nome, mostrou-nos o caminho que devemos trilhar. Ele nunca falou Suas próprias palavras, e nunca agiu por Si mesmo; Ele não falou a Seu favor, e nem teve Suas ações originadas em Si mesmo - isto é, Ele não originou em Si mesmo suas palavras ou ações (<a href="http://bibliaonline.com.br/acf/jo/5/19">João 5.19</a>; <a href="http://bibliaonline.com.br/acf/jo/14/10">14.10</a>). Tanto uma coisa como outra provinham do Pai; ou, como Ele próprio disse, “O Pai, que está em Mim, é Quem faz as obras” (<a href="http://bibliaonline.com.br/acf/jo/14/10">Jo 14.10</a>). Neste mesmo princípio, Ele, que está em nós, deveria, no poder do Seu Espírito, produzir nossas palavras e ações, a fim de tanto estas como aquelas poderem ser um testemunho para Ele e para Sua glória.</p>
+<p>Mas temos coisas que nos embaraçam - enquanto que Ele não as tinha. Ele era um vaso perfeito e, por esta razão, podia dizer: &quot;Quem Me vê a Mim vê o Pai&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/9">Jo 14.9</a>). Ainda temos a carne em nós, e a carne sempre milita contra o Espírito, e procura atrapalhar o Seu bendito poder na alma. Por isso lemos em uma das passagens já citadas, “Trazendo sempre por toda a parte a mortificação do Senhor Jesus no nosso corpo” (<a href="http://bibliaonline.com.br/acf/2co/4/10">2 Co 4.10</a>); e em <a href="http://bibliaonline.com.br/acf/rm/8/13">Romanos 8.13</a>, “Se pelo Espírito mortificardes as obras do corpo, vivereis”. Isto é, deve haver a aplicação constante da morte sobre tudo o que somos, se é que buscamos ser a inequívoca expressão de Cristo, em qualquer medida que seja; e o poder para isto está no fato de possuirmos o Espírito Santo. Por exemplo, suponha que, sob tentação, eu esteja a ponto de deixar meu temperamento agir, ou de cair em algum tipo de pecado. Ao olhar para fora de mim, para Cristo, e ao lembrar que fui, pela graça, associado a Ele em Sua morte, sou capacitado, por intermédio do Espírito, a recusar a carne, a considerar-me morto para o pecado; e desta maneira Cristo é Quem Se expressa, e Ele vive em mim, e fala por meu intermédio, ao invés de eu mesmo fazê-lo. Por isso temos também a exortação para não entristecermos o Espírito Santo de Deus (<a href="http://bibliaonline.com.br/acf/ef/4/30">Efésios 4.30</a>); pois se, ao permitir que a carne se manifeste, Ele é entristecido, não apenas torno obscura a expressão de Cristo por meu intermédio, mas também perco, ao entristecer o Espírito fazendo- O silenciar, o poder para mortificar os feitos do corpo.</p>
+<p>Portanto, ainda que eu inicie com a aceitação de Cristo para ser Ele minha vida aqui, em lugar de mim mesmo, a consagração só pode ser obtida por um hábito constante - dia após dia, hora após hora - de um juízo próprio na presença de Deus. &quot;Todas estas coisas se manifestam, sendo condenadas, pela luz, porque a luz tudo manifesta&quot; (<a href="http://bibliaonline.com.br/acf/ef/5/13">Ef 5.13</a>) e, “como Ele (Deus) na luz está” (<a href="http://bibliaonline.com.br/acf/1jo/1/7">1 João 1.7</a>), se estou conscientemente ali, detecto instantaneamente tudo o que não está de acordo; e então, se julgo a mim mesmo, confessando minha falha, minha comunhão é restaurada, minha consagração é mantida (leia <a href="http://bibliaonline.com.br/acf/1jo/1">1 João 1</a>). Estando assim tão distante do pensamento comum de que a consagração seja alcançada pelo ato resoluto de renúncia própria de alguém, vemos que ela começa, não aí, mas na aceitação de Cristo ao invés do eu, dando a Ele o Seu devido lugar de preeminência em nós, e que ela é mantida pela incessante rejeição do eu no poder do Espírito Santo. E é a esta consagração que Deus, em Sua infinita misericórdia, guia a alma libertada.</p>
+<p>Todavia deveria ser acrescentado que nossa consagração neste mundo nunca será completa. O próprio Senhor Jesus é o Único perfeitamente consagrado; e é Ele o modelo ao qual devemos estar conformados. Nossa consagração agora é em proporção à nossa conformidade a Ele - nem mais e nem menos do que isto. Trata-se de um entendimento errado das Escrituras falarmos de nosso ser como estando inteiramente consagrado, e é um erro ainda maior, como já foi observado, falar disto como algo que se obtém de repente, por um simples ato de rendição. O Senhor, em sua oração ao Pai, na véspera de Sua crucificação, disse: &quot;E por eles Me santifico a Mim mesmo, para que também eles sejam santificados na verdade&quot; (<a href="http://bibliaonline.com.br/acf/jo/17/19">Jo 17.19</a>). Ele foi sempre o verdadeiro Nazireu, inteiramente separado para Deus, mas agora Ele estava para santificar-Se a Si mesmo, a separar-Se para Deus de uma maneira nova, como o Homem glorificado, e como tal Ele viria a tornar-Se o padrão de nossa santificação - isto é, de nossa santificação prática. É por isso que Ele roga para que eles pudessem ser também santificados na verdade - na verdade daquilo que Ele é como santificado, separado em glória. Consequentemente, esta santificação será, para nós, progressiva - progressiva em proporção ao poder da “verdade” em nossa alma.</p>
+<p>O modo como isto é efetuado nos é explicado pelo apóstolo Paulo. &quot;Todos nós, com cara descoberta (com o rosto sem véu), refletindo como um espelho a glória do Senhor, somos transformados de glória em glória na mesma imagem, como pelo Espírito do Senhor&quot; (<a href="http://bibliaonline.com.br/acf/2co/3/18">2 Co 3.18</a>). Tendo a Cristo em glória diante de nossa alma, assim como Ele está descoberto, revelado a nós, refletindo toda a glória de Deus mostrada em Sua face, todas as perfeições morais, todos os benditos atributos, a essência da excelência espiritual de Deus, concentrada, e expressa nAquele que está glorificado - ocupados assim com Ele como o Objeto de nossa contemplação e prazer, somos, pelo poder do Espírito Santo, gradualmente (e é por isso que é de glória em glória) transformados à imagem dAquele a Quem fitamos. Mas, repetimos, nunca chegaremos aqui à Sua total semelhança; pois é só quando pudermos vê-Lo assim como Ele é que seremos como Ele (<a href="http://bibliaonline.com.br/acf/1jo/3/2">1 João 3.2</a>). É na mesma proporção de nossa semelhança com Ele que será a manifestação de Sua vida por intermédio de nosso corpo. Portanto não poderá haver descanso aqui, no sentido de termos isto como algo já alcançado, assim como não podemos nos considerar como já tendo atingido aqui a santidade perfeita. Deve existir sempre a exigência de santidade através da fé, mas nunca será demais frisar que a santidade da qual as Escrituras falam é a total conformidade a um Cristo glorificado. Esta é a santidade segundo as Escrituras, e podemos alcançar, pela graça de Deus, mais dela a cada dia; mas ela só será nossa em toda a sua plenitude quando virmos nosso bendito Senhor face a face. Ao mesmo tempo, aqueles que entenderam a verdade da redenção, e já entraram no gozo da libertação não terão mais do que um desejo, ou seja, que Cristo, e só Cristo, possa ter o Seu devido lugar de supremacia e, assim, completo domínio sobre suas vidas e seus corações.</p>
+<p>Concluindo, podemos assinalar rapidamente as características do santo consagrado. Primeiro, e mais importante, ele não tem vontade própria. Como o apóstolo, ele diz: Não eu, mas Cristo vive em mim. Estando crucificado com Cristo, a vontade própria, na maneira como se encontra ligada ao velho homem, já saiu de diante de Deus, e consequentemente a tratamos como já julgada e rejeitamos as suas atividades. A vontade de Cristo é nossa única lei; e somos dEle, para o Seu único e absoluto uso. Além disso, o crente consagrado procura somente a exaltação de Cristo. Consideremos outra vez o apóstolo Paulo, quando na prisão, e com a possibilidade do martírio diante de si, e descobriremos que sua intensa expectativa e esperança eram de que em nada fosse confundido ou envergonhado, mas que com toda a confiança, como sempre, e agora também, Cristo fosse engrandecido em seu corpo, fosse pela vida ou pela morte (<a href="http://bibliaonline.com.br/acf/fp/1/20">Filipenses 1.20</a>). O eu desapareceu de sua vista, e a glória de Cristo tomou conta de sua alma.</p>
+<p>Aprendemos com isso que Cristo era o tudo da vida do apóstolo, seu motivo e objetivo - uma evidente característica de consagração. &quot;Para mim&quot;, dizia ele, “o viver é Cristo”. E já que o morrer era ganho, ele não tinha escolha, pelo fato de que Cristo era tudo para ele, e Cristo somente sabia qual a melhor maneira de o apóstolo servi-Lo. E, por fim, sua esperança era de estar com Cristo. Quando Cristo é o objeto de nossas afeições, se Ele enche nosso coração, não podemos fazer nada mais, além de almejarmos estar com Ele. Onde estiver o seu tesouro, aí estará também o seu coração, e o coração sempre deseja ardentemente estar com seu tesouro. Sendo assim, se a morte estiver diante do crente consagrado, ele dirá como Paulo: “Desejo partir, e estar com Cristo, porque isto é ainda muito melhor”; e se a morte não estiver diante dele, o crente estará vivendo naquele poder da bendita esperança do retorno de Cristo, para poder estar com seu Senhor para todo o sempre. Pois é esta a esperança que o próprio Senhor coloca diante da alma; de maneira que, se Ele diz: “Certamente cedo venho”, o coração daquele que é consagrado irá, na linguagem do apóstolo João, responder: “Amém. Ora vem, Senhor Jesus” (<a href="http://bibliaonline.com.br/acf/ap/22/20">Ap 22.20</a>).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="sexta_parte.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="sexta_parte.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

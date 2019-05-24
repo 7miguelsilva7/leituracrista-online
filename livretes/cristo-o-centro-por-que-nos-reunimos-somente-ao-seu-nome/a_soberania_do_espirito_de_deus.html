@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A SOBERANIA DO ESPÍRITO DE DEUS - Cristo, o Centro</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="cristo,_o_centro.html"><strong aria-hidden="true">1.</strong> Cristo, o Centro</a></li><li><a href="o_valor_de_cristo.html"><strong aria-hidden="true">2.</strong> O VALOR DE CRISTO</a></li><li><a href="a_soberania_do_espirito_de_deus.html" class="active"><strong aria-hidden="true">3.</strong> A SOBERANIA DO ESPÍRITO DE DEUS</a></li><li><a href="a_unidade_da_igreja.html"><strong aria-hidden="true">4.</strong> A UNIDADE DA IGREJA</a></li><li><a href="qual_e_a_vontade_de_deus_para_os_crentes_sobre_a_t.html"><strong aria-hidden="true">5.</strong> QUAL É A VONTADE DE DEUS PARA OS CRENTES SOBRE A TERRA?</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Cristo, o Centro</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="a_soberania_do_espirito_de_deus.html#a-soberania-do-espÍrito-de-deus" id="a-soberania-do-espÍrito-de-deus"><h2>A SOBERANIA DO ESPÍRITO DE DEUS</h2></a>
+<p>Esta é a segunda razão pela qual nos reunimos somente ao nome do Senhor Jesus. Antes de Jesus partir deste mundo, quando Se encontrava no meio dos Seus discípulos, Ele disse: &quot;Eu rogarei ao Pai, e Ele vos dará outro Consolador, para que fique convosco para sempre; o Espírito de verdade, que o mundo não pode receber, porque não O vê nem O conhece: mas vós O conheceis, porque habita convosco, e estará em vós&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/16-17">João 14:16-17</a>).</p>
+<p>O Senhor Jesus prometeu solenemente que o Consolador, ou Amparador, nos ensinaria todas as coisas. Jesus disse: &quot;Ele testificará de Mim&quot; (<a href="http://bibliaonline.com.br/acf/jo/15">João 15</a>:.26). Observemos que Jesus não prometeu uma influência, mas a Pessoa divina e real do Espírito Santo; uma Pessoa tão real quanto Jesus. E tão real quanto foi o testemunho que Jesus deu do Pai, assim também o Espírito testifica de Jesus. E além disso, o Espírito Santo nos guiará a toda a verdade. &quot;Ele Me glorificará&quot; (<a href="http://bibliaonline.com.br/acf/jo/16/14">João 16:14</a>). Deus cumpriu esta promessa. Tendo sido Jesus glorificado nas alturas, Deus enviou o Espírito Santo (<a href="http://bibliaonline.com.br/acf/atos/2/4-38">Atos 2:4-38</a>). Então, a partir daquele momento, será em vão procurarmos, em todo o Novo Testamento, qualquer tipo de presidência na Igreja, exceto a direção soberana do Espírito Santo.</p>
+<p>Vemos o Espírito Santo presente com a Igreja em Atos de uma forma tão real quanto foi a presença do bendito Jesus com os discípulos nos Evangelhos. O Pentecostes foi uma admirável manifestação da presença e do poder do Espírito Santo. &quot;E tendo orado, moveu-se o lugar em que estavam reunidos; e todos foram cheios do Espírito Santo, e anunciavam com ousadia a Palavra de Deus&quot; (<a href="http://bibliaonline.com.br/acf/atos/4/31">Atos 4:31</a>). Sim, foi tão real a presença do Espírito Santo que Pedro, no caso de Ananias, disse: &quot;Porque encheu Satanás teu coração, para que mentisses ao Espírito Santo?&quot; (<a href="http://bibliaonline.com.br/acf/atos/5/3">Atos 5:3</a>). E quando o evangelho foi pregado aos gentios, o Espírito Santo desceu sobre eles da mesma forma (<a href="http://bibliaonline.com.br/acf/atos/11/15">Atos 11:15</a>). O mesmo sucedeu em Antioquia (<a href="http://bibliaonline.com.br/acf/atos/13/52">Atos 13:52</a>). E quão clara e definida foi a direção dada pelo Espírito Santo ao apóstolo Paulo e aos seus companheiros quando &quot;foram impedidos pelo Espírito Santo de anunciar a palavra na Ásia&quot; e &quot;intentavam ir para Bitínia, mas o Espírito de Jesus não lho permitiu&quot; (<a href="http://bibliaonline.com.br/acf/atos/16/6-7">Atos 16:6-7</a>). Veja ainda <a href="http://bibliaonline.com.br/acf/atos/19/2">Atos 19:2</a>. Se passarmos agora a <a href="http://bibliaonline.com.br/acf/1co/12">1 Coríntios 12</a>, a presidência do Espírito na igreja se apresenta com a maior evidência: &quot;Ora, há diversidade de dons, mas o Espírito é o mesmo&quot;. &quot;Mas a manifestação do Espírito é dada a cada um, para o que for útil&quot; (<a href="http://bibliaonline.com.br/acf/1co/12/4,7">vs.4, 7</a>). Esta passagem é geralmente aplicada ao mundo, em forte oposição ao versículo das Escrituras que diz: &quot;O Espírito de verdade, que o mundo não pode receber, porque não o vê nem o conhece&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/17">João 14:17</a>). Mas acerca de qualquer variedade de dons que exista na igreja, &quot;um só e o mesmo Espírito opera todas estas coisas, repartindo particularmente a cada um como (Ele) quer&quot; (<a href="http://bibliaonline.com.br/acf/1co/12/11">1 Coríntios 12:11</a>).</p>
+<p>Responda-me agora, qual denominação reconhece desta forma o Espírito de Deus em nossos dias? Não há uma que o faça, pois a partir do momento em que qualquer assembléia de cristãos reconhecer desta forma o Espírito de Deus, nesse momento deixa de ser uma divisão, ou denominação, pois o Espírito Santo não honrará a nenhum nome senão o nome do Senhor Jesus. Vamos então comparar uma assembléia que tem mil e novecentos anos com uma assembléia denominacional de nossos dias, e isto ficará evidente. Todos os cristãos em uma localidade se reuniam juntos ao nome de Jesus; o Espírito lhes dava diversidade de dons, sendo alguns dotados para pregar, outros para ensinar, outros para exortar, e assim sucessivamente com todas as diversas manifestações do Espírito. E Ele, o Espírito, estava realmente no meio deles, repartindo particularmente a cada um como queria. Falavam dois ou três - se algo fosse revelado a outro que estivesse assentado, o primeiro se calava - e esta é a ordem de Deus, conforme lemos em <a href="http://bibliaonline.com.br/acf/1co/14/29-33">1 Coríntios 14:29-33</a>: &quot;E falem dois ou três profetas, e os outros julguem. Mas se a outro, que estiver assentado, for revelada alguma coisa, cale-se o primeiro. Porque todos podereis profetizar, uns depois dos outros; para que todos aprendam, e todos sejam consolados. E os espíritos dos profetas estão sujeitos aos profetas. Porque Deus não é Deus de confusão, senão de paz, como em todas as igrejas dos santos&quot;. Quando a direção soberana do Espírito de Deus era reconhecida, a ordem existente era claramente esta.</p>
+<p>Agora entremos em alguma &quot;igreja&quot; pertencente a alguma denominação de nossos dias. Responda-me: Quando é que se aguarda, ou se permite, que o Espírito Santo reparta particularmente a cada um como Ele quer? Pode não ser intencional, mas a direção do Espírito Santo tem sido posta de lado. Um homem toma o Seu lugar, e seja esse homem guiado ou não pelo Espírito - esteja em feliz comunhão com o Senhor ou não - ele tem que preencher o tempo. O fato de não se reconhecer a presença Pessoal e a direção soberana de Deus, o Espírito Santo, é muito triste. Os diferentes dons não são exercitados e a obra de ministério acaba sendo um encargo de um só homem. Mas o pior de tudo é que o Espírito de Deus não é reconhecido na assembléia, para que a dirija em adoração, e uma ordem humana, ou melhor, toda a sorte de desordem humana, toma lugar. Poderá soar bem chamar a isto de liberdade de consciência; mas onde está a liberdade do Espírito de Deus, para usar aqueles que Ele quer, para a edificação da igreja de Deus? Será este um assunto de pouca importância? Porventura não foi o não reconhecer a direção e a presidência de Deus pelo Seu povo Israel, e o desejo de ter um homem como rei no lugar de Deus, um triste passo no caminho da queda desse povo? E qual é a história dos profetas, senão a de uns poucos homens (em meio de um povo que se esqueceu de Deus) que encontravam e sustentavam esta bendita realidade - a presença de Deus entre eles? Quão solene ensinamento temos no livro de Jeremias: ele se assentou solitário (<a href="http://bibliaonline.com.br/acf/jr/15/17">Jeremias 15:17</a>), porém foi chamado pelo nome do Senhor Deus dos Exércitos. Quão doces são as palavras do Senhor a ele: &quot;Tornem-se eles para ti, mas não voltes tu para eles&quot; (<a href="http://bibliaonline.com.br/acf/jr/15/6-21">Jeremias 15:6-21</a>).</p>
+<p>Tal é, sem dúvida, o solene e bendito lugar, nestes dias, de todos aqueles que têm sido levados a reconhecer a presença real do Espírito Santo na assembléia. Na verdade estes têm constatado que as palavras do Senhor são mais doces que as do homem. Oh! que todos os queridos filhos de Deus, em todas as denominações, venham a conhecer a benção de uma sujeição de coração não fingida à soberana direção do Espírito Santo! Onde quer que isto exista, não em uma forma simplesmente aparente, mas real, o Espírito Santo testifica de Cristo de uma maneira tal que nenhuma sabedoria humana pode sequer imitar! Desde os hinos dados por um, as orações feitas por outros, e a leitura da Palavra, dirigida pelo Espírito Santo, manifestam de tal maneira a direção divina, e dão um tal sentimento da presença de Deus, que somente se pode desfrutar onde o Espírito de Deus é reconhecido desta forma. Portanto, não devo ir aonde não é reconhecido Aquele a Quem o Pai enviou para nos guiar, nos guardar, e habitar conosco até o fim, não importa quem seja que O substitua - Deus está sempre com a razão e o homem está equivocado. Não se trata de uma questão de opinião, mas sim uma questão de reconhecer, ou então usurpar o lugar do Espírito Santo como o Guia soberano e Aquele que preside na assembléia. Tenho encontrado a realidade de Sua própria presença, por isso devo estar separado de toda comunidade onde Ele não seja assim reconhecido. Apresento, a seguir, a terceira razão de nos reunirmos somente ao nome de Cristo:</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="o_valor_de_cristo.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="a_unidade_da_igreja.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="o_valor_de_cristo.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="a_unidade_da_igreja.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

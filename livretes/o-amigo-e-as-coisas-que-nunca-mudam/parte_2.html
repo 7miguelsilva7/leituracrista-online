@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Parte 2 - O Amigo e as Coisas que Nunca Mudam</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="o_amigo_e_as_coisas_que_nunca_mudam.html"><strong aria-hidden="true">1.</strong> O Amigo e as Coisas que Nunca Mudam</a></li><li><a href="parte_2.html" class="active"><strong aria-hidden="true">2.</strong> Parte 2</a></li><li><a href="parte_3.html"><strong aria-hidden="true">3.</strong> Parte 3</a></li><li><a href="parte_4.html"><strong aria-hidden="true">4.</strong> Parte 4</a></li><li><a href="parte_5.html"><strong aria-hidden="true">5.</strong> Parte 5</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Amigo e as Coisas que Nunca Mudam</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="parte_2.html#parte-2" id="parte-2"><h2>Parte 2</h2></a>
+<p>Lemos também aquelas cartas que foram escritas às sete igrejas em <a href="http://bibliaonline.com.br/acf/ap/2">Apocalipse 2 e 3</a>. Ele entristeceu-Se por haverem deixado o primeiro amor. E temos que abaixar nossa cabeça, reconhecendo que isto também é verdade a nosso respeito, não é mesmo? Perdemos aquela afeição inicial pelo Senhor Jesus. Mas na última carta, a que é endereçada aos laodicenses, diz: &quot;Eu repreendo e castigo a todos quantos amo: sê pois zeloso, e arrepende-te&quot; (<a href="http://bibliaonline.com.br/acf/ap/3/19">Apocalipse 3:19</a>). É por isso que é tão precioso sabermos que &quot;Eu, o Senhor, não mudo; por isso vós, ó filhos de Jacó, não sois consumidos&quot; (<a href="http://bibliaonline.com.br/acf/ml/3/6">Malaquias 3:6</a>). Acho que muitos de nós, principalmente quando envelhecemos e olhamos para trás, podemos dizer, com toda a certeza, que se o amor do Senhor dependesse da maneira como agimos como crentes, só poderíamos contar com uma porção bem pequena desse amor. Mas quão precioso é sabermos que, &quot;Tal é o meu Amado, e tal o meu Amigo&quot;, Aquele que nunca muda. &quot;Eu, o Senhor, não mudo; por isso vós, ó filhos de Jacó, não sois consumidos&quot; (<a href="http://bibliaonline.com.br/acf/ml/3/6">Malaquias 3:6</a>).</p>
+<p>Lemos também em <a href="http://bibliaonline.com.br/acf/hb/13">Hebreus 13</a>, onde o Senhor lhes fala de seus guias que lhes falaram a Palavra de Deus, que Ele acrescenta: &quot;a fé dos quais imitai&quot; (<a href="http://bibliaonline.com.br/acf/hb/13/7">Hebreus 13:7</a>). Meu pai costumava dizer, &quot;Lembre-se, ali não diz para imitarmos as suas falhas&quot;. Vemos falhas em nós mesmos, e talvez uns nos outros. E às vezes seguimos alguém que fez algo de errado. Mas nos é dito: &quot;A fé dos quais imitai&quot;. E então passa a falar que há uma Pessoa a Quem podemos seguir em tudo; há Alguém que nunca falha. Portanto, após nos dizer que deveríamos imitar a fé daqueles que procuraram nos instruir nas coisas de Deus, Ele nos indica outra vez este imutável Amigo, &quot;Jesus Cristo é o mesmo ontem, e hoje, e eternamente&quot; (<a href="http://bibliaonline.com.br/acf/hb/13/8">Hebreus 13:8</a>). Quanto encorajamento traz ao nosso coração pensarmos nisto.</p>
+<p>Creio que é muito importante não somente conhecer esta Pessoa bendita, mas entender que Ele colocou em Sua Palavra tudo aquilo que necessitamos para nosso caminho. Estamos vivendo em um mundo de constantes mudanças. Creio que se olhássemos para trás, há cinquenta anos, veríamos que naquela época nenhum de nós poderia ter chegado aqui da mesma maneira como chegamos hoje: alguns vieram de avião, outros de automóvel. Este é um mundo em mutação. Mas lembremo-nos de que os valores morais e espirituais não mudam. Isto é, Deus tem certos padrões que Ele estabeleceu em Sua preciosa Palavra; e conhecermos o imutável Amigo que temos, sabermos que o conselho que Ele nos dá não tem que ser atualizado, é algo que nos concede paz. Qualquer um que trabalhe no mundo de negócios hoje em dia sabe muito bem com que frequência o planejamento e o modo de se fazer as coisas estão sendo alterados. Constantemente são publicados relatórios de novas mudanças. Mas acaso não é maravilhoso podermos pegar um Livro como a Bíblia e sabermos que, embora a última parte dela tenha sido escrita há dois mil anos, continua perfeitamente atual? Ela nos fornece exatamente aquilo de que necessitamos para viver neste ano, e também no próximo, se o Senhor nos deixar aqui um pouco mais. Não precisa ser atualizada. Está adequada para nós.</p>
+<p>Digo àqueles que são jovens, e àqueles que são mais velhos, o quão importante é seguirmos guiados por este bendito Livro. Este maravilhoso Amigo que temos, este imutável Amigo, assinalou um caminho para nós neste mundo; e quando nós o trilhamos, conforme nos diz <a href="http://bibliaonline.com.br/acf/pv/3/17">Provérbios 3:17</a>, &quot;são caminhos de delícias, e todas as suas veredas, paz&quot;. Portanto quero encorajá-los, e quero encorajar também o meu próprio coração, a sermos como aquele pequeno remanescente do qual lemos no último capítulo de Isaías, identificados como aqueles que tremem da Palavra de Deus (<a href="http://bibliaonline.com.br/acf/is/66/2">Isaías 66:2</a>). Eles tinham medo. Quando viajamos, nem sempre estamos acostumados com o lugar por onde passamos, e ficamos observando cuidadosamente os sinais. Temos medo de perder algum sinal, e quando erramos, nem sempre é fácil encontrar o caminho de volta. Às vezes você não vê a placa de sinalização e acaba viajando por quilômetros fora do caminho, simplesmente por não estar atento. Aqueles sinais foram colocados ali para o nosso bem. E Deus escreveu a Sua Palavra para o nosso bem. &quot;O Seu divino poder nos deu tudo o que diz respeito à vida e piedade&quot; (<a href="http://bibliaonline.com.br/acf/2pe/1/3">2 Pd 1:3</a>).</p>
+<p>Não temos que buscar a sabedoria deste mundo nas coisas morais e espirituais. Talvez precisemos de sua instrução nas coisas relacionadas com os meios de transporte, o modo como funcionam os negócios, etc. Mas, moralmente falando, já temos padrões divinos, e creio que cada um de nós entenderá isto. Dirijo-me a vocês, queridos jovens que se encontram aqui hoje: As pessoas estão dizendo a vocês que seus pais estão fora de moda; que eles têm idéias muito restritivas, etc. Mas peço que busquem a Palavra de Deus e sigam por este bendito Livro na formação do caminho para a vida de vocês. Vocês irão descobrir que verdadeiramente há bênção em se andar naquele caminho que Deus traçou em Sua Palavra. E não há nada de importante, em nosso caminho aqui, para o que Ele não tenha deixado uma direção para nós. &quot;Eu sei, ó Senhor, que não é do homem o seu caminho nem do homem que caminha o dirigir os seus passos&quot; (<a href="http://bibliaonline.com.br/acf/jr/10/23">Jeremias 10:23</a>).</p>
+<p>Vamos agora abrir juntos em <a href="http://bibliaonline.com.br/acf/jd/1/1-3">Judas, versículos 1 ao 3</a>: &quot;Judas, servo de Jesus Cristo, e irmão de Tiago, aos chamados, queridos em Deus Pai, e conservados por Jesus Cristo: Misericórdia, e paz, e caridade vos sejam multiplicadas. Amados, procurando eu escrever-vos com toda a diligência acerca da salvação comum, tive por necessidade escrever-vos, e exortar-vos a batalhar pela fé que uma vez foi dada aos santos&quot;. Podemos ver que aqui Deus está colocando diante de nós &quot;a fé que uma vez foi dada aos santos&quot;. Charles Stanley escreveu um livro intitulado &quot;The First Years of Christianity, and What Isaías the Church&quot;. (&quot;Os Primeiros Anos do Cristianismo, e O Que é A Igreja&quot;). Quando ele quis apresentar-nos, como servo do Senhor, o que Deus nos havia mostrado em Sua Palavra com respeito ao que é realmente o Cristianismo, e o que é a Igreja, ele voltou àquilo que Deus havia estabelecido no princípio. Aqui encontramos Judas em uma época de ruínas e apostasia, e ele não diz: &quot;Precisamos adotar algumas idéias novas, pois as coisas estão mudando, e tem havido uma porção de ajustes e pessoas que estão deixando de fazer isso ou aquilo&quot;. Em lugar disso, ele diz que era necessário que ele escrevesse e os exortasse a batalhar &quot;pela fé que uma vez foi dada aos santos&quot;.</p>
+<p>Creio que isso é muito importante para nós em todos os assuntos com que temos que tratar, particularmente aqueles que dizem respeito à assembléia.* Precisamos buscar a Palavra de Deus. A assembléia não age baseada na tradição. Isso acabou acontecendo com Israel, e as tradições dos fariseus tornaram-se tão importantes que às vezes a Palavra de Deus era deixada de lado a fim de eles poderem agir segundo suas próprias tradições. O apóstolo Judas apresenta-lhes aqui a grande importância da &quot;fé que uma vez foi dada aos santos&quot;. Por isso precisamos ler vez após outra as epístolas que foram escritas, as quais nos dão instruções divinas acerca da Pessoa e obra de Cristo, pois é este o fundamento de tudo. Quão importante é que estejamos bem instruídos acerca da Pessoa e Obra do Senhor Jesus Cristo. A assembléia é a coluna e firmeza da verdade. Assim, nestes dias em que coisas pequenas começam a se introduzir sorrateiramente, devemos batalhar sinceramente pela fé que uma vez foi dada aos santos. Existe um amplo segmento da cristandade em nossos dias que está ensinando que nosso bendito e santo Senhor poderia pecar; eles dizem que Ele não pecou, mas que poderia ter pecado! E é espantoso vermos que algumas das figuras consideradas mais importantes na cristandade estão ensinando isso.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="o_amigo_e_as_coisas_que_nunca_mudam.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="parte_3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="o_amigo_e_as_coisas_que_nunca_mudam.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="parte_3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

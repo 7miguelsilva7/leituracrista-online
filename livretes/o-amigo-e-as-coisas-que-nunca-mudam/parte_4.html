@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Parte 4 - O Amigo e as Coisas que Nunca Mudam</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="o_amigo_e_as_coisas_que_nunca_mudam.html"><strong aria-hidden="true">1.</strong> O Amigo e as Coisas que Nunca Mudam</a></li><li><a href="parte_2.html"><strong aria-hidden="true">2.</strong> Parte 2</a></li><li><a href="parte_3.html"><strong aria-hidden="true">3.</strong> Parte 3</a></li><li><a href="parte_4.html" class="active"><strong aria-hidden="true">4.</strong> Parte 4</a></li><li><a href="parte_5.html"><strong aria-hidden="true">5.</strong> Parte 5</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Amigo e as Coisas que Nunca Mudam</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="parte_4.html#parte-4" id="parte-4"><h2>Parte 4</h2></a>
+<p>Foi isto o que Deus planejou e ordenou. Mas na época em que vivemos as pessoas vêem o matrimônio muito levianamente e dizem que tais idéias são antiquadas; dizem que hoje em dia é muito mais fácil simplesmente se divorciar e casar novamente. Isto é algo muito solene. Quando pensamos que o relacionamento matrimonial é uma figura de Cristo e da Igreja; que a mulher em sua posição representa a Igreja, e que o marido em sua posição representa Cristo, o Noivo da Igreja, isto traz à tona a real responsabilidade. E é este o padrão que nos é apresentado nas Escrituras. &quot;Vós, maridos, amai vossas mulheres como também Cristo amou a Igreja, e a Si mesmo Se entregou por ela&quot; (<a href="http://bibliaonline.com.br/acf/ef/5/25">Efésios 5:25</a>).</p>
+<p>Temos assim o que Deus colocou. Mas quando você conversa com as pessoas, descobre que elas têm todos os tipos de opiniões, e que estas mudam. Escutei até mesmo um cristão dizer certa vez: &quot;Ora, eu não poderia continuar vivendo com tal pessoa se ela não me amasse&quot;. Ao invés de reconhecer que há um modo de se superar o problema, até mesmo onde exista falta de amor, tal era a atitude dessa pessoa. Mas não está em conformidade com as Escrituras. As Escrituras dizem que foi assumida uma responsabilidade, e trata-se de uma solene responsabilidade diante de Deus. Estou mencionando isto porque creio que todas estas coisas são o meio onde o inimigo age para tentar e destruir o padrão divino - o padrão que Deus estabeleceu em Sua preciosa Palavra. Sigamos em conformidade com o que Deus colocou em Sua Palavra e haverá bênção em fazermos assim. Quando pensamos na espécie de Igreja que Cristo amou; quão maravilhosa é Sua graça para conosco! Será que nós sempre O amamos como deveríamos? Sempre correspondemos aos Seus direitos sobre nós como deveríamos? E ainda assim, acaso Ele parou de nos amar? Não! Ele é sempre o mesmo. Por isso diz, &quot;Não te deixes vencer do mal, mas vence o mal com o bem&quot; (<a href="http://bibliaonline.com.br/acf/rm/12/21">Romanos 12:21</a>). Portanto isto coloca diante de nós a responsabilidade do matrimônio.</p>
+<p>Agora vamos abrir em <a href="http://bibliaonline.com.br/acf/1co/11/3-5">1 Coríntios 11:3-5</a>: &quot;Mas quero que saibais que Cristo é a cabeça de todo o varão, e o varão é a cabeça da mulher; e Deus a cabeça de Cristo. Todo o homem que ora ou profetiza, tendo a cabeça coberta, desonra a sua própria cabeça. Mas toda a mulher que ora ou profetiza com a cabeça descoberta, desonra a sua própria cabeça, porque é como se estivesse rapada&quot;. Esta é outra coisa que vemos estar mudando na sociedade. Há uma completa inversão na idéia do lugar que Deus quis que o homem ocupasse, e que Ele desejou que a mulher ocupasse. Já foi dito que se eu, como homem, decido que vou ser cabeça, tenho tanto direito a isso quanto minha mulher. Mas se Deus me coloca em uma tal posição, então eu tenho a responsabilidade. E aí está a diferença. As pessoas deixam a Bíblia de lado e perguntam: Que direito tem o homem a mais do que a mulher para ocupar tal lugar? Todavia não foi o homem quem escolheu ocupar esse lugar; foi Deus Quem ordenou assim.</p>
+<p>Por isso digo aos homens: Trata-se de uma tremenda responsabilidade ocupar o lugar que Deus deu ao homem; assumir aquela liderança em amor, bondade e compreensão. Não quer dizer que ele não deva aceitar qualquer conselho vindo de sua esposa. Numa certa ocasião o Senhor disse a Abraão: &quot;Em tudo o que Sara te diz, ouve a sua voz&quot; (<a href="http://bibliaonline.com.br/acf/gn/21/12">Gênesis 21:12</a>). Às vezes é muito importante que escutemos o conselho da companheira que Deus nos deu; pois a companheira não é inferior. Mas Deus sabia que o homem nunca conseguiria ocupar o lugar de liderança sozinho, portanto fez-lhe uma auxiliadora. Não uma que fosse inferior; mas uma que poderia compartilhar com ele em tudo e ajudá-lo a ocupar o lugar que Deus dera a ele. Quão belo é isto. Qualquer homem que já tenha experimentado isso em seu lar está apto a dizer: Sempre que dependo da ajuda que minha esposa me dá, sinto a responsabilidade da liderança em piedade. Vemos que Deus planejou para que fosse assim.</p>
+<p>Do mesmo modo, se a mulher não estiver ocupando seu lugar no lar, o homem não poderá fazê-lo. Ela pode sair e talvez encontrar um lugar no mundo dos negócios, mas o homem é incapaz de ocupar o lugar que ela deixou vago. É por esta razão que <a href="http://bibliaonline.com.br/acf/is/3/12">Isaías 3:12</a> diz: &quot;Os opressores do Meu povo são crianças, e mulheres estão à testa do seu governo. Ah! Povo meu! Os que te guiam te enganam, e destroem o caminho das tuas veredas&quot;. Uma vez que a ordem de Deus seja deixada de lado, o lar desmorona e as crianças crescem para ser exatamente o que diz: &quot;opressores&quot;; pois elas não têm, no lar, a liderança apropriada que Deus planejou que os pais proporcionassem. Assim vemos a maneira como o homem procura mudar as coisas que Deus estabeleceu; mas tanto eu como você devemos voltar aos primeiros princípios que Deus estabeleceu. Permita-me dizer, em amor, aos meninos e meninas: Escutem o que Deus disse e assumam a responsabilidade que Deus deu a vocês como homens, e a responsabilidade que Ele deu à esposa como auxiliadora. Quão belo é quando isto é levado adiante segundo a ordem dada por Deus; que felicidade haverá. Deus não formou Eva a partir da cabeça de Adão, ou de seus pés, mas do seu lado; para ser de apoio e auxílio a ele. Que ordem feliz esta que Deus estabeleceu!</p>
+<p>Estou dizendo estas coisas porque neste mundo que muda a cada dia não percebemos o quanto, do que o mundo faz e diz, que nos afeta a ponto de nos fazer descuidados em seguir as instruções da Palavra de Deus na assembléia. Não nos preocupamos em reconhecer o quão sério é o divórcio e o quanto Deus diz que o detesta (<a href="http://bibliaonline.com.br/acf/ml/2/16">Malaquias 2:16</a>). E enquanto assistimos ao desmoronamento dessa ordem que Deus planejou - toda a felicidade e gozo que Deus planejou quando o marido e a esposa estão em seu relacionamento correto e feliz - o quanto tudo isso é corrompido. Oh, irmãos, temos o Livro de Deus; temos Aquele que não muda!</p>
+<p>Vamos abrir em <a href="http://bibliaonline.com.br/acf/ef/6/1-3">Efésios 6:1-3</a>. &quot;Vós, filhos, sede obedientes a vossos pais no Senhor, porque isto é justo. Honra a teu pai e a tua mãe, que é o primeiro mandamento com promessa; para que te vá bem, e vivas muito tempo sobre a Terra.&quot; Aqui, quando Deus fala de se honrar o pai e a mãe, Ele diz que &quot;é o primeiro mandamento com promessa&quot;. Em outras palavras, Ele volta ao princípio para demonstrar que estabeleceu algo associado com este parentesco. Talvez você já tenha notado que no livro de Provérbios os sete primeiros capítulos giram todos em torno do pai e da mãe instruindo sua família. Leia aqueles capítulos para seu proveito e verá que cada um deles começa com &quot;Filho meu&quot;, ou &quot;guarda o mandamento de teu pai&quot;. Este é o grande plano que Deus tinha para a instrução dos filhos no lar.</p>
+<p>E vemos também que os filhos deveriam honrar o pai e a mãe. Sendo um pouco mais velho do que alguns que estão aqui, posso dizer que nunca vi a bênção de Deus sobre filhos que não honram seu pai e sua mãe. Creio que quando você encontra filhos que honram seu pai e sua mãe, tais filhos entram na posse dessa bênção especial de que Deus fala. Quero dizer a vocês, queridos jovens, que fui um pai muito imperfeito. Talvez outros pais venham a dizer o mesmo, que nem sempre foram os pais que deveriam ter sido; todavia, creio que Deus ainda assim quer que vocês os honrem. Talvez chegue o dia (se o Senhor não voltar antes) quando vocês também serão pais ou mães imperfeitos. Mas é importante que reconheçamos que Deus estabeleceu uma ordem. Portanto quero apenas dizer a todos vocês, crianças e jovens, que nunca falem mal de seus pais. Eles podem não ser perfeitos; eles podem cometer erros; mas vocês devem honrá-los sempre.</p>
+<p>&quot;Honra a teu pai e a tua mãe&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/12">Êxodo 20:12</a>). Ainda que vocês não estejam mais sob a autoridade deles, após vocês terem se casado, ainda assim devem honrá-los. Eles ainda permanecem no lugar que Deus os colocou. Em outras palavras, Deus estabeleceu algo neste mundo, algo que não deve mudar à medida que o tempo muda. Quando os homens alteram todas essas coisas, eles acabam arruinando aquilo que Deus planejou para o homem.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="parte_3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="parte_5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="parte_3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="parte_5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

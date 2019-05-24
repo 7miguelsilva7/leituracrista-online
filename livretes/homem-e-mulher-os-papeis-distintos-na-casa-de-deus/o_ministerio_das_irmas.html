@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O MINISTÉRIO DAS IRMÃS - Homem e Mulher – Os Papeis Distintos na Casa de Deus</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="README.html"><strong aria-hidden="true">1.</strong> HOMEM E MULHER OS PAPEIS DISTINTOS NA CASA BRUCE ANSTEY</a></li><li><a href="o_ministerio_das_irmas.html" class="active"><strong aria-hidden="true">2.</strong> O MINISTÉRIO DAS IRMÃS</a></li><li><a href="cobertura_para_a_cabeca.html"><strong aria-hidden="true">3.</strong> COBERTURA PARA A CABEÇA</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Homem e Mulher – Os Papeis Distintos na Casa de Deus</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="o_ministerio_das_irmas.html#o-ministÉrio-das-irmÃs" id="o-ministÉrio-das-irmÃs"><h2>O MINISTÉRIO DAS IRMÃS</h2></a>
+<p>Embora as irmãs não devam estar envolvidas em ação pública e assuntos administrativos na casa de Deus, há muito que podem fazer. O serviço das mulheres é importante e de grande valor. As coisas que são destinadas a elas para serem feitas na casa de Deus, são principalmente as coisas que os irmãos não poderiam fazer. Elas podem ajudar em situações que seriam inapropriadas para um irmão.</p>
+<p>Em primeiro lugar, a Escritura diz: “Quero, pois, que as que são moças se casem, gerem filhos, governem a casa, e não deem ocasião ao adversário de maldizer” (<a href="http://bibliaonline.com.br/acf/1tm/5/14">1 Timóteo 5:14</a>). Criar uma família para a glória de Deus é um trabalho nobre. Ana é um exemplo do exercício de uma irmã envolvida na criação de um filho piedoso (<a href="http://bibliaonline.com.br/acf/1sm/1/-2">1 Samuel 1-2</a>). Nota: Paulo diz que quer que elas &quot;governem a casa&quot;, não o marido.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/2/3-5">Tito 2: 3-5</a>, diz: &quot;As mulheres idosas, semelhantemente, que sejam sérias no seu viver, como convém a santas, não caluniadoras, não dadas a muito vinho, mestras no bem; para que ensinem as mulheres novas a serem prudentes, a amarem seus maridos, a amarem seus filhos, a serem moderadas, castas, boas donas de casa, sujeitas a seus maridos, a fim de que a palavra de Deus não seja blasfemada.&quot; Este é outro importante trabalho que as irmãs podem fazer e que os irmãos não seriam capazes de fazer com qualquer eficácia e propriedade.</p>
+<p>Se uma irmã não é casada, ou com idade suficiente para ensinar as irmãs mais novas, ela ainda pode ser &quot;serva da igreja” (<a href="http://bibliaonline.com.br/acf/rm/16/1">Romanos 16: 1</a>). Há muitas coisas relacionadas com a vida na assembleia que a irmã pode fazer e que podem ser de grande ajuda para os santos, por exemplo ajudando as mães que estão sobrecarregadas com as crianças, ajudando as irmãs mais velhas que não podem mais se locomover com facilidade, etc. Estas são boas obras. Febe foi conhecida por ser &quot;o amparo de muitos.&quot; Talvez ela tivesse o dom de &quot;ajuda&quot; (<a href="http://bibliaonline.com.br/acf/1co/12/28">1 Coríntios 12:28</a>).</p>
+<p>Filipe tinha quatro filhas que profetizavam (<a href="http://bibliaonline.com.br/acf/atos/21/8-9">Atos 21: 8-9</a>). Isso mostra que há uma necessidade de irmãs, até mesmo irmãs mais jovens, ministrarem ajuda e conforto da Palavra para os outros. Mas perceba, elas não ensinam os irmãos. Isto é visto no fato de que quando Paulo precisava de uma palavra, Deus não usou uma das filhas de Filipe para falar a ele, embora Paulo estivesse bem ali na casa de Filipe. Ele trouxe um irmão que era um profeta para falar com ele (<a href="http://bibliaonline.com.br/acf/atos/21/10-14">Atos 21: 10-14</a>). Isto está de acordo com <a href="http://bibliaonline.com.br/acf/1tm/2/11-12">1 Timóteo 2: 11-12</a>.</p>
+<p>Priscila e Áquila são um casal modelo em relação aos papéis dos irmãos e irmãs na casa de Deus. Eles são mencionados seis vezes nas Escrituras. Três vezes Aquila é mencionado primeiro, e três vezes Priscila é colocada em primeiro lugar. É significativo e instrutivo que ele é mencionado primeiro quando tinha a ver com a responsabilidade pública de ensino (<a href="http://bibliaonline.com.br/acf/atos/18/2,24,28">Atos 18: 2, 24-28</a>; <a href="http://bibliaonline.com.br/acf/1co/16/19">1 Coríntios 16:19</a>.). Quando tinha a ver com as responsabilidades domésticas, ela é mencionada primeiro (<a href="http://bibliaonline.com.br/acf/atos/18/18">Atos 18:18</a>; <a href="http://bibliaonline.com.br/acf/rm/16/3-4">Romanos 16:3-4</a>; <a href="http://bibliaonline.com.br/acf/2tm/4/19">2 Timóteo 4:19</a>.). Há muito que aprender com isso. Por exemplo, ao ensinar Apolo eles &quot;declararam mais precisamente o caminho de Deus&quot;. Priscila deixou seu marido assumir a liderança neste trabalho (<a href="http://bibliaonline.com.br/acf/atos/18/24-28">Atos 18:24-28</a>). Assim, ela caminhou de acordo com a devida ordem da casa de Deus. Outro ponto que vale a pena considerar é que cada vez que eles são mencionados na Bíblia são sempre vistos juntos; eles trabalhavam em equipe no serviço para o Senhor. Isso é louvável. Veja também <a href="http://bibliaonline.com.br/acf/1co/9/5">1 Coríntios 9:5</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="README.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="cobertura_para_a_cabeca.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="README.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="cobertura_para_a_cabeca.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

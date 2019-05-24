@@ -1,0 +1,25 @@
+a_soberania_do_espirito_de_deus.html
+assets
+a_unidade_da_igreja.html
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+cristo,_o_centro.html
+CRISTO, O CENTRO PORQUE NOS REUNIMOS SOM C CHARLES STANLEY.odt
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+o_valor_de_cristo.html
+print.html
+qual_e_a_vontade_de_deus_para_os_crentes_sobre_a_t.html
+searcher.js
+searchindex.js
+tomorrow-night.css

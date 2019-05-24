@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O FOGO QUE NUNCA SE APAGA - Nunca</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="nunca.html"><strong aria-hidden="true">1.</strong> NUNCA!</a></li><li><a href="o_fogo_que_nunca_se_apaga.html" class="active"><strong aria-hidden="true">2.</strong> O FOGO QUE NUNCA SE APAGA</a></li><li><a href="as_ovelhas_que_nunca_perecem.html"><strong aria-hidden="true">3.</strong> AS OVELHAS QUE NUNCA PERECEM</a></li><li><a href="nunca_-_joao_1028.html"><strong aria-hidden="true">4.</strong> &quot;Nunca&quot; - João 10:28</a></li><li><a href="joao_1028.html"><strong aria-hidden="true">5.</strong> João 10:28</a></li><li><a href="quem_sao_as_ovelhas.html"><strong aria-hidden="true">6.</strong> QUEM SÃO AS OVELHAS?</a></li><li><a href="as_ovelhas_-_um_presente_recebido_do_pai.html"><strong aria-hidden="true">7.</strong> AS OVELHAS - UM PRESENTE RECEBIDO DO PAI</a></li><li><a href="serao_todos_ovelhas.html"><strong aria-hidden="true">8.</strong> SERÃO TODOS OVELHAS?</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nunca</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="o_fogo_que_nunca_se_apaga.html#o-fogo-que-nunca-se-apaga" id="o-fogo-que-nunca-se-apaga"><h2>O FOGO QUE NUNCA SE APAGA</h2></a>
+<p>Mas voltemo-nos para a Palavra de Deus a fim de buscar nela a resposta que vem dEle para as questões que foram propostas. <a href="http://bibliaonline.com.br/acf/mc/9/43-48">Marcos 9:43-48</a> vai diretamente à primeira questão e, embora por falta de espaço eu transcreva apenas um destes solenes versículos, gostaria de insistir com você para que lesse, lenta e atentamente, a passagem toda. O <a href="http://bibliaonline.com.br/acf/mc/9/43">versículo 43</a> diz assim: &quot;E, se a tua mão te escandalizar, corta-a: melhor é para ti entrares na vida aleijado do que, tendo duas mãos, ires para o inferno, para o fogo que nunca se apaga&quot;. Agora, peço que preste bastante atenção nisto: não diz apenas que o fogo &quot;não se apaga&quot; (veja os <a href="http://bibliaonline.com.br/acf/mc/9/44,46,48">versículos 44, 46 e 48</a>), mas, como o Senhor repete também no <a href="http://bibliaonline.com.br/acf/mc/9/45">versículo 45</a>, ele &quot;NUNCA se apaga&quot;.</p>
+<p>E ainda assim, bem diante de uma expressão que não deixa a menor dúvida, o pobre e tolo homem (sábio em seu próprio conceito) procura, pela força do argumento humano, apagar aquele 'fogo'. Ele levianamente não leva a sério os solenes avisos do bondoso Salvador, e os toma como sendo vãs ameaças; ou então persuade sua alarmada consciência de que, se existe um inferno, este será apenas de duração limitada, e que, após alguns milhares de anos de punição, ele se acabará. Mas o que Deus disse de alguns que fizeram pouco de Seus benévolos avisos, nos dias de Jeremias, se aplica solenemente a esses pensadores modernos: Eles saberão &quot;se subsistirá a Minha palavra ou a sua&quot; (<a href="http://bibliaonline.com.br/acf/jr/44/28">Jeremias 44:28</a>). Portanto considere bem isto: &quot;NUNCA se apaga&quot; é a imutável palavra do Senhor. Ela permanece registrada, da maneira como saiu dos lábios do justo Juiz e benigno Salvador. Ela permanece, e, assim como Deus é verdadeiro, ela permanecerá para sempre. Nem todas as maquinações e todo o poder de Satanás, nem tampouco todas as lágrimas de lamento do perdido, jamais servirão para apagar aquele fogo - nunca! NUNCA!</p>
+<p>Querido leitor, se você ainda não está salvo, esteja precavido enquanto é tempo, antes que seja tarde demais; antes que você descubra, por si próprio, que quando o Senhor Jesus Cristo avisou os pecadores acerca do fogo que &quot;nunca se apaga&quot;, Ele quis dizer exatamente o que disse! Lembre-se: depois não será possível corrigir o seu erro fatal. Afinal, por que você precisa perecer? Por que você cruelmente rejeita a mão estendida de misericórdia? Cristo continua a esperar à direita do Pai e, enquanto Ele assim espera, qualquer que desejar pode ir a Ele.</p>
+<p>Milhares já se achegaram Ao Seu ferido lado; Boas-vindas ali encontraram, E ninguém foi desprezado.</p>
+<p>Muitos, cobertos pelas mais negras marcas de seus crimes, se achegaram a Ele e foram lavados, em Seu precioso sangue, de toda mancha carmesim. Os mais endurecidos homens tiveram seus corações derretidos e conquistados por Seu poderoso amor. E por que você ainda assim deveria rejeitá-Lo? Suplique a Ele; prostre-se a Seus pés agora mesmo; e, oh!, que boas-vindas o pobre filho pródigo irá receber! Que braços de amor irão abraçá-lo! Seus pecados serão todos perdoados, e serão todos esquecidos também. &quot;Todos os que nEle creem receberão o perdão dos pecados&quot; (<a href="http://bibliaonline.com.br/acf/atos/10/43">Atos 10:43</a>). Rogo a você uma vez mais que tenha cuidado para não tratar levianamente assuntos tão importantes.</p>
+<p>Não resista ao Espírito Santo, Não espere nem mais uma hora; Pois Deus, que já esperou tanto, Pode encerrar a espera agora!</p>
+<p>E então, uma longa eternidade em desespero naquele &quot;fogo que nunca se apaga&quot; será, com certeza, a sua porção. Que Deus possa, em rica misericórdia, salvá-lo de uma perdição aterradora.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="nunca.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="as_ovelhas_que_nunca_perecem.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="nunca.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="as_ovelhas_que_nunca_perecem.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

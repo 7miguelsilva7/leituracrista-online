@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A UNIDADE DA IGREJA - Cristo, o Centro</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="cristo,_o_centro.html"><strong aria-hidden="true">1.</strong> Cristo, o Centro</a></li><li><a href="o_valor_de_cristo.html"><strong aria-hidden="true">2.</strong> O VALOR DE CRISTO</a></li><li><a href="a_soberania_do_espirito_de_deus.html"><strong aria-hidden="true">3.</strong> A SOBERANIA DO ESPÍRITO DE DEUS</a></li><li><a href="a_unidade_da_igreja.html" class="active"><strong aria-hidden="true">4.</strong> A UNIDADE DA IGREJA</a></li><li><a href="qual_e_a_vontade_de_deus_para_os_crentes_sobre_a_t.html"><strong aria-hidden="true">5.</strong> QUAL É A VONTADE DE DEUS PARA OS CRENTES SOBRE A TERRA?</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Cristo, o Centro</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="a_unidade_da_igreja.html#a-unidade-da-igreja" id="a-unidade-da-igreja"><h2>A UNIDADE DA IGREJA</h2></a>
+<p>Ou, mais corretamente, a unidade do um só corpo. Não estou inteirado de que exista alguma passagem nas Escrituras que mencione a expressão &quot;uma só igreja&quot;, mas há &quot;um só corpo&quot; (<a href="http://bibliaonline.com.br/acf/ef/4/4">Efésios 4:4</a>). A palavra traduzida por &quot;igreja&quot; significa simplesmente &quot;assembléia&quot;. A mesma palavra grega é usada no original, em <a href="http://bibliaonline.com.br/acf/atos/19/32,39,41">Atos 19:32,39,41</a>, também para descrever uma multidão de pagãos (N.T.: Do grego &quot;ekklesia&quot;, traduzida para o português, na Versão Almeida Corrigida, como &quot;ajuntamento&quot;). A Igreja de Deus é a assembléia de Deus. (N.T.: Não confundir as expressões &quot;Igreja de Deus&quot; e &quot;assembléia de Deus&quot;, encontradas na Bíblia, com algumas denominações que adotaram para si mesmas estes nomes. A igreja ou assembléia de Deus que é encontrada na Palavra inclui todos os salvos, e não apenas alguns membros de um sistema criado pelo homem. Charles Stanley, o autor deste livreto, viveu de 1821 a 1888, quando ainda não existiam as organizações que arvoram para si próprias os títulos de &quot;Igreja de Deus&quot; ou &quot;Assembléia de Deus&quot;). No seu aspecto local, a igreja ou assembléia de Deus trata-se de todas as pessoas salvas de determinado lugar, que se congregam como tais para adorar a Deus, tendo sido todos os seus pecados tirados para sempre (<a href="http://bibliaonline.com.br/acf/hb/10/17">Hebreus 10:17</a>). Nenhuma outra assembléia pode chamar-se uma igreja ou assembléia de Deus. Nem poderia ainda uma assembléia chamar-se assim verdadeiramente a igreja de Deus, quanto às suas práticas, a menos que tal assembléia reconhecesse verdadeiramente a Deus, o Espírito Santo, para os guiar e guardar em todas as coisas, como faziam as assembléias de Deus nos dias dos apóstolos.</p>
+<p>Tomemos a seguinte ilustração: Suponhamos que o Reino da Inglaterra enviasse um comandante ao exército britânico na Índia, e que, durante algum tempo, todo aquele exército se submetesse ao seu comando. Então poderíamos considerá-lo apropriadamente como sendo o exército do Reino da Inglaterra. Mas se esse exército pusesse de lado aquele comandante e nomeasse outro; ou se esse exército se dividisse em partes separadas, e cada divisão nomeasse o seu próprio comandante, cada soldado continuaria sendo um soldado britânico, mas poderia o exército dividido chamar-se corretamente o exército do Reino? Tendo posto de lado a autoridade do comandante nomeado por sua majestade, não estaria cada divisão se colocado em um estado de insubordinação, e não seria uma falta de lealdade unir-se às fileiras de qualquer uma dessas divisões?</p>
+<p>Agora, apliquemos isto à igreja ou assembléia de Deus. Por algum tempo a autoridade do Espírito Santo enviado do céu foi reconhecida, assim como o exército britânico reconheceu, por um certo tempo, a autoridade do comandante nomeado pelo Reino. Logo, porém, a autoridade soberana do Espírito Santo foi posta de lado e por esta razão nenhuma divisão da igreja professa pode chamar-se a verdadeira assembléia ou igreja de Deus, assim como nenhuma divisão do exército britânico, que deixasse de reconhecer o comandante nomeado por sua Majestade e estabelecesse seu próprio comandante, poderia chamar-se o verdadeiro exército do Reino.</p>
+<p>Estou plenamente de acordo que, tendo a direção do bendito Espírito de Deus sido esquecida por tanto tempo, torna-se muito difícil fazer com que os cristãos de hoje compreendam o que isto significa. Tomemos outra ilustração: É anunciado que um certo estadista presidirá uma reunião pública dos habitantes de um lugar qualquer. A assembléia se reúne, o estadista vem, põe-se em pé no palanque... mas ninguém o reconhece! Ele fala, mas ainda assim ninguém lhe dá ouvidos! O povo envia uma mensagem após outra à casa daquele mesmo estadista, rogando-lhe que compareça à reunião; eles desejam sua influência, porém desconhecem sua presença pessoal, e acabam nomeando algum outro para presidir. Este é um quadro exato das divisões nos dias de hoje.</p>
+<p>Não importa de que maneira tenhamos entristecido o Espírito e O não tenhamos reconhecido. Ainda assim essa preciosa promessa se cumpre: &quot;E Ele (o Pai) vos dará outro Consolador, para que fique convosco para sempre&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/16">João 14:16</a>). Sim, do mesmo modo como o estadista encontrava-se presente; embora o ignorassem, pois continuavam a enviar mensagens à sua casa; assim também o Espírito Santo veio à assembléia de cristãos; está presente no exato momento em que se está fazendo oração, em ignorância, para que Ele venha do céu. Na verdade, há cristãos que, quando oram, parecem mais estar orando apenas por uma influência! Não seria ofensivo falar de Deus, o Pai, como sendo uma influência? Não seria por demais repugnante dizer que a vinda de Deus, o Filho, a este mundo foi somente uma alegoria ou uma influência? E porventura não é Deus, o Espírito Santo, uma Pessoa tão real agora sobre a Terra como foi o Filho quando esteve neste mundo e que agora está no céu? O que um comandante é para um exército, ou um presidente para uma reunião, assim é o Espírito Santo para a assembléia de Deus - mandando, dirigindo, usando aqueles quem Ele quer. Nenhuma assembléia, onde Ele não é assim reconhecido, pode chamar-se a assembléia de Deus; portanto devo me separar de tais assembléias, se quiser ser leal a Deus.</p>
+<p>Mas poderá haver objeções: &quot;Acaso não tem havido fracasso e divisão entre aqueles que professaram reconhecer o Espírito de Deus? É triste termos que admitir isto; mas nada poderia provar com maior clareza a verdade destas declarações com respeito à presença do Espírito. Qual tem sido a causa de toda tristeza e divisão? Deixar de lado a direção soberana do Espírito Santo. Porém, dizer que o fracasso é a razão pela qual alguém não deve reconhecer a direção do Espírito na assembléia, ou referir-se ao fracasso como uma desculpa para permanecer onde o Espírito Santo não é reconhecido, é como alguém dizer que deve, como indivíduo, deixar de andar no Espírito só porque algum cristão, ou ele próprio, fracassou em seu caminho. Acaso não devem nossos pecados e fracassos passados fazer-nos mais vigilantes e sinceros para andar em Espírito? Somente Ele é o salvaguarda do cristão e da Igreja. Bendito Guardião! A fonte de todo o fracasso que a igreja experimentou foi sempre o não reconhecimento da direção do Espírito. Não importa o que possa vir; se ela tão somente confia em seu bendito Guardião, tudo está bem. O mesmo sucede com o cristão; se ele anda segundo a carne, uma pequena dificuldade poderá causar uma queda, mas se anda no Espírito, não importa quão grande possa ser a tentação, tudo estará bem. Portanto, cada fracasso passado na igreja ou assembléia convoca-nos a uma sujeição genuína ao Espírito de Deus. Que pensariam vocês se um homem dissesse: &quot;Tal pessoa, que professava ser um cristão, fracassou e foi encontrada embriagada na rua; portanto, continuarei sendo um bebedor e estarei seguro&quot;? Não é o mesmo que dizer, em princípio, &quot;Os tais filhos de Deus fracassaram em guardar a unidade do Espírito, portanto eu permanecerei agora onde o Espírito não é reconhecido&quot;? Rogo que não julguem esta solene pergunta pelo fracasso do homem, mas sim pela Palavra de Deus.</p>
+<p>&quot;Todas as Minhas coisas são Tuas, e as Tuas coisas são Minhas; e nisso Sou glorificado... para que sejam um como Nós somos um&quot; (<a href="http://bibliaonline.com.br/acf/jo/17/10,22">João 17:10,22</a>). Estas preciosas palavras de Jesus abrangem cada filho de Deus durante esta dispensação. Qual é, então, a glória que o Pai deu a Jesus? &quot;Ressuscitando-O dos mortos, e pondo-O à Sua direita nos céus. Acima de todo o principado, e poder, e potestade, e domínio, e de todo o nome que se nomeia, não só neste século, mas também no vindouro; e sujeitou todas as coisas a Seus pés, e sobre todas as coisas O constituiu como cabeça da igreja, que é o Seu corpo, a plenitude daquEle que cumpre tudo em todos&quot;. (<a href="http://bibliaonline.com.br/acf/ef/1/20-23">Efésios 1:20-23</a>). &quot;E Ele é a cabeça do corpo da igreja: é o princípio e o primogênito dentre os mortos, para que em tudo tenha a preeminência&quot; (<a href="http://bibliaonline.com.br/acf/cl/1/18">Colossenses 1:18</a>). Portanto, a glória que é dada a Jesus, Lhe é dada como sendo o Cristo ressuscitado; e como o Cristo ressuscitado, Ele é o princípio e a Cabeça do corpo. Por isso cada membro desse corpo deve ressuscitar juntamente com Cristo. E assim é, que se alguém está em Cristo, é nova criatura, ou nova criação. Jesus disse: &quot;Eu dei-lhes a glória que a Mim Me deste&quot; (<a href="http://bibliaonline.com.br/acf/jo/17/22">João 17:22</a>). E isto vale para todos os que são dEle. Portanto cada cristão é um com Cristo ressuscitado, na mais elevada glória, como está escrito: &quot;E nos ressuscitou juntamente com Ele e nos fez assentar nos lugares celestiais, em Cristo Jesus&quot; (<a href="http://bibliaonline.com.br/acf/ef/2/6">Efésios 2:6</a>).</p>
+<p>Que diferença enorme deve haver, então, entre um corpo celestial ressuscitado e uma sociedade terrenal! A única sociedade terrenal que Deus teve foi a nação dos israelitas. E ainda durante o tempo da vida de Cristo, a pequena companhia ou rebanho de discípulos era dessa nação. Não foi senão depois da Sua ressurreição e ascensão à glória que o Espírito Santo pôde ser dado para formar a &quot;Igreja, que é o Seu corpo&quot; (<a href="http://bibliaonline.com.br/acf/ef/1/22">Efésios 1:22</a>). Este foi o mistério guardado e escondido desde os séculos: que a sociedade terrenal, ou nação dos israelitas, seria posta de lado durante algum tempo, e que o Espírito Santo tomaria, dentre todas as nações, judeus e gentios, um corpo celestial - e que este corpo se uniria à Cabeça em uma glória ressuscitada e elevada; abençoado com todas as bênçãos espirituais, nos lugares celestiais em Cristo. Onde quer que um filho de Deus esteja (no que diz respeito ao seu corpo aqui na Terra), em espírito ele é tão verdadeiramente um com o Cristo ressuscitado, quanto um membro do corpo humano é unido à pessoa à qual esse membro pertence. Portanto, ser um em Cristo não é uma união mas uma unidade perfeita. Assim como não podemos falar em &quot;união&quot; dos membros do corpo humano, porque todos esses membros constituem uma única pessoa, assim também é o Cristo celestial ressuscitado. &quot;Porque, assim como o corpo é um, e tem muitos membros, e todos os membros, sendo muitos, são um só corpo assim é Cristo também. Pois todos nós fomos batizados em um Espírito formando um corpo, quer judeus, quer gregos, quer servos, quer livres... Ora vós sois o corpo de Cristo, e seus membros em particular&quot; (<a href="http://bibliaonline.com.br/acf/1co/12/12-27">1 Coríntios 12:12-27</a>).</p>
+<p>Certamente o Espírito usa a linguagem mais forte possível, e as figuras mais notáveis, para expressar essa admirável unidade. Compare a passagem acima com a seguinte: &quot;Porque somos membros do Seu corpo&quot; (<a href="http://bibliaonline.com.br/acf/ef/5/30">Efésios 5:30</a>). Não diz que éramos um com Ele durante Sua vida na carne, pois isso teria sido impossível: se Ele não tivesse morrido, teria ficado só (<a href="http://bibliaonline.com.br/acf/jo/12/24">João 12:24</a>). A unidade terrenal de homens pecadores com um Cristo sem pecado, não teria sido possível. Não; Ele tinha que morrer, e morreu pelos pecados de muitos. E havendo passado pela morte por nós, como nosso Substituto - havendo, por meio do derramamento de Seu precioso sangue, pago o nosso resgate, Ele foi levantado de entre os mortos, e isso como nosso fiador justificado (<a href="http://bibliaonline.com.br/acf/is/50/8">Isaías 50:8</a>). E tudo isso por nós! &quot;Ressuscitou para nossa justificação&quot; (<a href="http://bibliaonline.com.br/acf/rm/4/25">Romanos 4:25</a>). E somos, assim, considerados mortos com Ele, justificados com Ele e um com Ele, nesse Seu estado ressuscitado, justificado e sem pecado. De maneira que somos, e não &quot;éramos&quot; um com Ele. Assim como um homem é uma única pessoa, mesmo que tenha muitos membros, assim também é Cristo ressuscitado: embora tendo muitos membros sobre a Terra, todos estão unidos a Cristo e são um com Cristo e em Cristo, a Cabeça no céu. &quot;Somos membros do Seu corpo&quot; (<a href="http://bibliaonline.com.br/acf/ef/5/30">Efésios 5:30</a>). &quot;Há um só corpo&quot; (<a href="http://bibliaonline.com.br/acf/ef/4/4">Efésios 4:4</a>). Que admirável nova criação - uma nova existência; transportados para o reino do Filho do Seu amor - já somos; e não seremos quando morrermos. Ele &quot;nos tirou da potestade das trevas, e nos transportou para o reino do Filho do Seu amor&quot; (<a href="http://bibliaonline.com.br/acf/cl/1/13">Colossenses 1:13</a>). O esquecimento desta realidade atual, da unidade de toda a Igreja de Deus no Cristo ressuscitado na glória celestial, é uma triste causa da existência dos sistemas mundanos e das divisões terrenais que os homens denominam &quot;igrejas&quot;.</p>
+<p>Freqüentemente eu pergunto: &quot;Quando estivermos no céu, serão toleradas as seitas e divisões?&quot; &quot;Oh! Certamente que não!&quot;, é a resposta que ouço. Cristo então será tudo. Mas acaso já não estamos agora ressuscitados e assentados com Ele nos céus? (<a href="http://bibliaonline.com.br/acf/ef/2/6">Efésios 2:6</a>). E não é Cristo tudo agora? (<a href="http://bibliaonline.com.br/acf/cl/3/11">Colossenses 3:11</a>). Na nova criação &quot;não há grego nem judeu, circuncisão nem incircuncisão, bárbaro, cita, servo ou livre&quot;; Oh! não! &quot;Mas Cristo é tudo em todos. &quot;As coisas velhas já passaram; eis que tudo se fez novo. E tudo isto provém de Deus&quot; (<a href="http://bibliaonline.com.br/acf/2co/5/17-18">2 Coríntios 5:17-18</a>). Isso é válido para todo homem em Cristo. Ele é uma nova criatura.</p>
+<p>Portanto, o corpo ressurreto de Cristo é um só corpo, composto de todos os verdadeiros crentes de cada nação; trata-se de uma nova criação de entre os mortos: ressuscitados juntamente e unidos por Deus, o Pai (<a href="http://bibliaonline.com.br/acf/ef/2">Efésios 2</a>). Nunca poderá se separar (<a href="http://bibliaonline.com.br/acf/rm/8/39">Romanos 8:39</a>). Não há nenhuma divisão nesse corpo celestial e nem tampouco pode haver, porque as coisas velhas já passaram. Bendito Jesus! Tua oração é respondida: &quot;Que todos sejam UM&quot; (<a href="http://bibliaonline.com.br/acf/jo/17">João 17</a>). Sim! Todos os que crêem são UM com Cristo nos lugares celestiais.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="a_soberania_do_espirito_de_deus.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="qual_e_a_vontade_de_deus_para_os_crentes_sobre_a_t.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="a_soberania_do_espirito_de_deus.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="qual_e_a_vontade_de_deus_para_os_crentes_sobre_a_t.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

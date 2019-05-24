@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O VALOR DE CRISTO - Cristo, o Centro</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="cristo,_o_centro.html"><strong aria-hidden="true">1.</strong> Cristo, o Centro</a></li><li><a href="o_valor_de_cristo.html" class="active"><strong aria-hidden="true">2.</strong> O VALOR DE CRISTO</a></li><li><a href="a_soberania_do_espirito_de_deus.html"><strong aria-hidden="true">3.</strong> A SOBERANIA DO ESPÍRITO DE DEUS</a></li><li><a href="a_unidade_da_igreja.html"><strong aria-hidden="true">4.</strong> A UNIDADE DA IGREJA</a></li><li><a href="qual_e_a_vontade_de_deus_para_os_crentes_sobre_a_t.html"><strong aria-hidden="true">5.</strong> QUAL É A VONTADE DE DEUS PARA OS CRENTES SOBRE A TERRA?</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Cristo, o Centro</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="o_valor_de_cristo.html#o-valor-de-cristo" id="o-valor-de-cristo"><h2>O VALOR DE CRISTO</h2></a>
+<p>Foi Deus Quem O exaltou e Lhe deu &quot;um nome que é sobre todo o nome, para que ao nome de JESUS se dobre todo o joelho... e toda a língua confesse que Jesus Cristo é o Senhor, para a glória de Deus Pai&quot; (<a href="http://bibliaonline.com.br/acf/fp/2/9-11">Filipenses 2:9-11</a>). Assim, nosso bendito Deus e Pai Se deleitou em honrar Aquele que é &quot;a cabeça do corpo da igreja: é o princípio e o primogênito dentre os mortos, para que em tudo tenha a preeminência&quot; (<a href="http://bibliaonline.com.br/acf/cl/1/18">Colossenses 1:18</a>). Neste nome, tão precioso para todo crente, se reuniam todos os cristãos nos dias dos apóstolos. E quando foram abertas as cortinas do futuro, o que viu João, o servo de Jesus Cristo? Ao ver a Jesus Cristo disse: &quot;E o Seu rosto era como o sol, quando na sua força resplandece. E eu, quando O vi, caí a Seus pés como morto; e Ele pôs sobre mim a Sua destra, dizendo-me: Não temas; Eu Sou o primeiro e o último&quot; (<a href="http://bibliaonline.com.br/acf/ap/1/16-17">Apocalipse 1:16-17</a>). Uma porta se abriu no céu! Que visão! A visão da glória futura do Cordeiro em meio aos milhões e milhões de redimidos - &quot;um Cordeiro, como havendo sido morto&quot; (<a href="http://bibliaonline.com.br/acf/ap/5/6">Apocalipse 5:6</a>).</p>
+<p>&quot;E cantavam um novo cântico&quot; (<a href="http://bibliaonline.com.br/acf/ap/5/9">Apocalipse 5:9</a>). Que privilégio estar ali e ouvir esse volume de indescritível gozo unindo-se a esse cântico! Nenhum dos que foram redimidos para Deus se recusará a cantar: &quot;Digno és&quot;. Hostes angelicais exclamarão em alta voz: &quot;Digno é o Cordeiro, que foi morto, de receber o poder, e riquezas, e sabedoria, e força, e honra, e glória, e ações de graças&quot; (<a href="http://bibliaonline.com.br/acf/ap/5/12">Apocalipse 5:12</a>). Sim, será possível ouvir toda a criação redimida dizendo: &quot;Ao que está assentado sobre o trono, e ao Cordeiro, sejam dadas ações de graças, e honra, e glória, e poder para todo o sempre&quot; (<a href="http://bibliaonline.com.br/acf/ap/5/13-14">Apocalipse 5:13-14</a>). Assim será adorado o nosso adorável Senhor e assim será reconhecido no céu e por toda a criação. É este o conceito que Deus tem do Cristo ressuscitado, que uma vez morreu por nossos pecados - &quot;o Justo pelos injustos, para levar-nos a Deus&quot; (<a href="http://bibliaonline.com.br/acf/1pe/3/18">1 Pd 3:18</a>). E assim será feita a vontade de Deus no céu.</p>
+<p>Se alguma alma preocupada e ansiosa estiver lendo estas linhas, deve notar bem que esta é a glória redentora de Cristo. E quem são esses milhões de milhões de adoradores, redimidos por Seu sangue? Malfeitores moribundos, Maria Madalenas, pecadores da cidade. E será que Jesus é digno de trazer a esses tais para a glória? Sim! O mais Santo, Santo, Santo Deus diz que Ele é digno! E toda a criação exclama: &quot;Amém&quot; Oh! Você, querido leitor, dá crédito a Deus agora? Este Cristo ressuscitado é tão digno que Deus diz: &quot;sejai-vos pois notório... que por Este se vos anuncia a remissão dos pecados. E de tudo o que, pela lei de Moisés, não pudestes ser justificados, por Ele é justificado todo aquele que crê&quot; (<a href="http://bibliaonline.com.br/acf/atos/13/38-39">Atos 13:38-39</a>). Portanto, a salvação é inteiramente por Cristo. Bem aventurados aqueles que podem dizer: &quot;TEMOS a redenção pelo Seu sangue, a remissão dos pecados&quot; (<a href="http://bibliaonline.com.br/acf/ef/1/7">Efésios 1:7</a> Versão Almeida Atualizada).</p>
+<p>Não presumo poder expor, por meio da pena ou da palavra, a gloriosa preeminência de Cristo. Aponto para as Escrituras que tão claramente mostram a dignidade de Cristo. Mas muitos que lerem este livreto perguntarão: &quot;Qual é o cristão verdadeiro que duvida, por um instante que seja, de quão digno é Cristo, ou da grandeza de Seu exaltado nome? Com certeza há uma corda no coração de todo o cristão que vibra em resposta ao nome de Jesus. Porém a pergunta é: &quot;Quanta, ou quão grande, é essa dignidade? Pode haver cem cristãos em um pequeno povoado ou mil em uma cidade - quero dizer, aqueles que realmente têm a redenção pelo sangue de Cristo, cujos pecados são perdoados. Ora, se Jesus é digno do louvor e da adoração unida de toda a criação, se todos os milhões de redimidos no céu se reunirão ao redor de Sua adorável Pessoa, então, não é Ele digno da adoração unida de cem em uma vila e de mil em uma cidade, sobre a Terra? Certamente no céu todo nome e divisão deixará de existir. E por que não também na Terra?</p>
+<p>Portanto, é um grande erro supor que nos separamos de todo nome e divisão porque cremos que somos melhores do que os queridos filhos de Deus que estão nessas divisões. Longe de nós pensar assim. Não! É porque JESUS É DIGNO! Sim, digno do sacrifício de se deixar todo nome ou divisão e se reunir ao Seu nome bendito - à Sua Pessoa bendita somente. Sim, meus caros crentes, Ele é digno de que vocês não reconheçam outro nome a não ser o dEle. Que será que pensam os anjos, sabendo e deleitando-se, como fazem, no nome exaltado de JESUS, quando vêem nossas atitudes sobre a Terra? As divisões neste mundo devem apresentar um obscuro contraste quando comparadas à unidade existente no céu. Em muitos lugares pode-se ver todo o povo redimido de Deus levando vários nomes, e nem ainda dois ou três reunidos unicamente ao nome de Jesus. Mesmo assim, JESUS É DIGNO de que todo crente de uma localidade se congregue somente ao Seu nome.</p>
+<p>Sendo assim, se a vontade de Deus se faz tão evidente no céu, ao estarem todos congregados à Pessoa do Cordeiro, como posso orar: &quot;...seja feita a tua vontade, assim na Terra como no céu&quot; (<a href="http://bibliaonline.com.br/acf/mt/6/10">Mateus 6:10</a>), a menos que esteja pronto a deixar todo nome e divisão sobre a Terra, como se faz no céu? Não seria mais honesto admitir: &quot;Tenho estado na divisão tal e todos os meus amigos estão ali; dispensame, portanto, de fazer a Tua vontade sobre a Terra, como se está fazendo no céu&quot;? Será que é custoso demais reconhecer o senhorio de Cristo para a glória de Deus Pai, e não reconhecer a nenhum outro além de Cristo? Deus dá o mais elevado valor ao nome de JESUS. O homem diz que não importa que nome se leve...! Não é a natureza humana a mesma em todos os lugares? Não há a mesma tendência idólatra onde se reconhece qualquer nome como a cabeça de uma divisão? Ao se exaltar esse nome, o nome de Jesus não é reconhecido, até que, por fim, torna-se de pouca importância o ser cristão, porém uma grande coisa pertencer à denominação tal. Certamente isto é &quot;madeira, feno, palha&quot; (<a href="http://bibliaonline.com.br/acf/1co/3/12">1 Coríntios 3:12</a>) que não vai perdurar no dia vindouro. Nos dias dos apóstolos, &quot;JESUS&quot; era o nome exaltado sobre qualquer outro nome. Exaltar qualquer outro nome, ainda que fosse um Paulo, ou um Cefas, era denunciado pelo Espírito de Deus como carnalidade e cisma. O simples fato de se tolerar outro nome, ou nomes, era virtualmente rebaixar o glorioso Cristo ao nível de um mero homem (<a href="http://bibliaonline.com.br/acf/1co/1/12">1 Coríntios 1:12</a>; <a href="http://bibliaonline.com.br/acf/1co/34-5">3:4-5</a>). (N.T.: Veja também <a href="http://bibliaonline.com.br/acf/mt/17/4-6">Mateus 17:4-6</a>.) Não acontece o mesmo hoje? Jesus é digno da adoração unida dos milhões de redimidos que se reunirão no céu, portanto Ele é digno da adoração unida e do louvor de todos os cristãos agora sobre a Terra. Não importa o que os outros façam, se reconhecem ou não somente a este Nome perante o mundo - se você, querido crente, deseja fazer a vontade de Deus, seu caminho é claro: deixe todo nome e divisão, e congregue-se somente ao nome do Senhor JESUS, o Senhor exaltado do céu.</p>
+<p>A dúvida que pode surgir agora na mente de alguém é quanto ao tipo de presidência na igreja que está realmente de acordo com os pensamentos de Deus. Isto nos conduz à segunda razão:</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="cristo,_o_centro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="a_soberania_do_espirito_de_deus.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="cristo,_o_centro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="a_soberania_do_espirito_de_deus.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

@@ -1,0 +1,23 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+cobertura_para_a_cabeca.html
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+HOMEM E MULHER OS PAPEIS DISTINTOS NA CASA BRUCE ANSTEY.odt
+index.html
+lista.txt
+mark.min.js
+o_ministerio_das_irmas.html
+print.html
+README.html
+searcher.js
+searchindex.js
+tomorrow-night.css

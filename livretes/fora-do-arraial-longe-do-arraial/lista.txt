@@ -1,0 +1,21 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+fora_do_arraial,_longe_do_arraial.html
+highlight.css
+highlight.js
+index.html
+lista.txt
+LONGE DO ARRAIAL FORA DO ARRAIAL AUTOR DES.odt
+mark.min.js
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css

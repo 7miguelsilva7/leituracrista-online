@@ -1,0 +1,25 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+O AMIGO E AS COISAS QUE NUNCA MUDAM GORDON G. H. HAYHOE.odt
+o_amigo_e_as_coisas_que_nunca_mudam.html
+parte_2.html
+parte_3.html
+parte_4.html
+parte_5.html
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css

@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>SÓ FALTOU UMA COISA - Jônatas - Faltou Uma Coisa</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="jonatas_-_faltou_uma_coisa.html"><strong aria-hidden="true">1.</strong> JÔNATAS - FALTOU UMA COISA</a></li><li><a href="o_poderoso_adversario.html"><strong aria-hidden="true">2.</strong> O PODEROSO ADVERSÁRIO</a></li><li><a href="a_um_passo_da_eternidade.html"><strong aria-hidden="true">3.</strong> A UM PASSO DA ETERNIDADE</a></li><li><a href="amar_e_despojar-se.html"><strong aria-hidden="true">4.</strong> AMAR E DESPOJAR-SE</a></li><li><a href="deixando_tudo_por_cristo.html"><strong aria-hidden="true">5.</strong> DEIXANDO TUDO POR CRISTO</a></li><li><a href="as_marcas_de_um_cristao.html"><strong aria-hidden="true">6.</strong> AS MARCAS DE UM CRISTÃO</a></li><li><a href="confessando_a_cristo.html"><strong aria-hidden="true">7.</strong> CONFESSANDO A CRISTO</a></li><li><a href="o_odio_do_mundo.html"><strong aria-hidden="true">8.</strong> O ÓDIO DO MUNDO</a></li><li><a href="falamos_bem_de_jesus.html"><strong aria-hidden="true">9.</strong> FALAMOS BEM DE JESUS?</a></li><li><a href="quando_vem_a_perseguicao.html"><strong aria-hidden="true">10.</strong> QUANDO VEM A PERSEGUIÇÃO</a></li><li><a href="fazer_a_vontade_do_senhor.html"><strong aria-hidden="true">11.</strong> FAZER A VONTADE DO SENHOR</a></li><li><a href="seguir_o_rejeitado.html"><strong aria-hidden="true">12.</strong> SEGUIR O REJEITADO</a></li><li><a href="so_faltou_uma_coisa.html" class="active"><strong aria-hidden="true">13.</strong> SÓ FALTOU UMA COISA</a></li><li><a href="reunidos_a_jesus.html"><strong aria-hidden="true">14.</strong> REUNIDOS A JESUS</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Jônatas - Faltou Uma Coisa</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="so_faltou_uma_coisa.html#sÓ-faltou-uma-coisa" id="sÓ-faltou-uma-coisa"><h2>SÓ FALTOU UMA COISA</h2></a>
+<p>Você já conseguiu se despojar de toda a sua justiça-própria? Será que você está totalmente sujeito a Jesus? Será que Ele é tudo, e você nada? É Ele precioso para a sua alma? Pode você dizer: &quot;Tenho nEle o meu prazer?&quot; Pois estou certo de que pode-se ter muito prazer nEle, à medida que compreendemos a vaidade de tudo o mais, e a inutilidade de tudo aquilo que vem do homem. E será que você já confessou o nome de Jesus em seu círculo social em, digamos, sua própria casa? Você continuou falando bem de Jesus, mesmo tendo que enfrentar todo o ódio e oposição? Assim como Jônatas foi testemunha de Davi - foi o homem de Davi na casa de Saul - têm você sido testemunha de Jesus? Tem sido seu prazer manter comunhão com Jesus e servi-Lo, como Jônatas teve prazer em falar com Davi e servi-lo? Se sua resposta for &quot;sim&quot;, não seria triste descobrir que, apesar de tudo, só faltou uma coisa?</p>
+<p>Você reparou quais foram as últimas palavras de nosso Jônatas? (<a href="http://bibliaonline.com.br/acf/1sm/20/42">1 Samuel 20:42</a>). &quot;Então se levantou Davi, e se foi; e Jônatas entrou na cidade.&quot; (<a href="http://bibliaonline.com.br/acf/1sm/20/43">1 Samuel 20:43</a>). Para onde foi Davi? No <a href="http://bibliaonline.com.br/acf/1sm/22">capítulo 22</a> nós o encontramos na caverna de Adulão. &quot;Então Davi se retirou dali, e se escapou para a caverna de Adulão: e ouviram-no seus irmãos e toda a casa de seu pai, e desceram ali para ele. E ajuntou-se a ele todo o homem que se achava em aperto, e todo o homem endividado, e todo o homem de espírito desgostoso, e ele se fez chefe deles: e eram com ele uns quatrocentos homens.&quot; (<a href="http://bibliaonline.com.br/acf/1sm/22/1-2">1 Samuel 22:1-2</a>). Mas havia um que não estava com ele, e esse era o próprio Jônatas. Talvez você pergunte: &quot;Como podia ser possível que Jônatas, que sabia do reino de Davi que estava para vir, não estivesse com ele?&quot; Bem, vamos ler a última conversa que Jônatas teve com Davi, e não teremos mais dúvidas sobre isto.</p>
+<p>&quot;Então se levantou Jônatas, filho de Saul, e foi para Davi ao bosque, e confortou a sua mão em Deus; e disse-lhe: Não temas, que não te achará a mão de Saul, meu pai; porém tu reinarás sobre Israel, e eu serei contigo o segundo: o que também Saul meu pai, bem sabe. E ambos fizeram aliança perante o Senhor: Davi ficou no bosque, e Jônatas voltou para a sua casa&quot; - a casa, a mesma casa de Saul, o rejeitado por Deus. No entanto, fica evidente que Jônatas bem sabia do reino vindouro de seu amado Davi; tanto quanto sabia da rejeição da casa de Saul; e, ainda assim falhou quando deveria ter saído dela e tomado o seu lugar, o lugar da fé, com o rei que viria, o escolhido de Deus.</p>
+<p>Você sabe, querido leitor, como terminará a presente era? Você sabe que &quot;quando disserem: Há paz e segurança; então lhes sobrevirá repentina destruição&quot;? (<a href="http://bibliaonline.com.br/acf/1ts/5/3">1 Tessalonicenses 5:3</a>); - que &quot;é tempo que comece o julgamento pela casa de Deus&quot;? (<a href="http://bibliaonline.com.br/acf/1pe/4/17">1 Pd 4:17</a>); - que, assim como a casa apóstata de Saul foi eliminada, o mesmo acontecerá com a cristandade apóstata que será vomitada da Sua boca? (<a href="http://bibliaonline.com.br/acf/ap/3/16">Apocalipse 3:16</a>). Acaso você não está vendo que há muitas coisas ao seu redor que refletem um espírito assim? Que dia este de trombetas soando! Ouçam os hebreus o que estamos fazendo! (<a href="http://bibliaonline.com.br/acf/1sm/13/3">1 Samuel 13:3</a>). Nunca antes houve uma época de tantos feitos humanos e de tantas trombetas alardeando esses feitos. &quot;Como dizes: Rico sou, e estou enriquecido, e de nada tenho falta; e não sabes que és um desgraçado, e miserável, e pobre, e cego, e nu.&quot; (<a href="http://bibliaonline.com.br/acf/ap/3/17">Apocalipse 3:17</a>). Esta é a descrição, dada pelo próprio Senhor, do último estado da grande e condenada casa professa (<a href="http://bibliaonline.com.br/acf/ap/3/15-20">Apocalipse 3:15-20</a>). Saul certamente era grande neste mundo, se comparado com o desterrado Davi, mas quão desventurado e miserável foi o seu fim!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="seguir_o_rejeitado.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="reunidos_a_jesus.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="seguir_o_rejeitado.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="reunidos_a_jesus.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

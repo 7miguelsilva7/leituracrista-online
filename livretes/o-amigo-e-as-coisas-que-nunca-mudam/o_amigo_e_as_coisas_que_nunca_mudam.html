@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O Amigo e as Coisas que Nunca Mudam - O Amigo e as Coisas que Nunca Mudam</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="o_amigo_e_as_coisas_que_nunca_mudam.html" class="active"><strong aria-hidden="true">1.</strong> O Amigo e as Coisas que Nunca Mudam</a></li><li><a href="parte_2.html"><strong aria-hidden="true">2.</strong> Parte 2</a></li><li><a href="parte_3.html"><strong aria-hidden="true">3.</strong> Parte 3</a></li><li><a href="parte_4.html"><strong aria-hidden="true">4.</strong> Parte 4</a></li><li><a href="parte_5.html"><strong aria-hidden="true">5.</strong> Parte 5</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Amigo e as Coisas que Nunca Mudam</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="o_amigo_e_as_coisas_que_nunca_mudam.html#o-amigo-e-as-coisas-que-nunca-mudam" id="o-amigo-e-as-coisas-que-nunca-mudam"><h2>O Amigo e as Coisas que Nunca Mudam</h2></a>
+<p>Parte 1</p>
+<p>“The Friend And The Things That Never Change”; palestra a cristãos em La Mirada, CA, 29:12:85.</p>
+<p>&quot;O Seu falar é muitíssimo suave; sim, Ele é totalmente desejável. Tal é o meu Amado, e tal o meu Amigo, ó filhas de Jerusalém.&quot; (<a href="http://bibliaonline.com.br/acf/ct/5/16">Cânticos 5:16</a>) &quot;Tu, Senhor, no princípio fundaste a Terra, e os céus são obra das Tuas mãos: eles perecerão, mas Tu permanecerás; e todos eles, como roupa, envelhecerão, e como um manto os enrolarás, e como um vestido se mudarão, mas Tu és o mesmo, e os Teus anos não acabarão.&quot; (<a href="http://bibliaonline.com.br/acf/hb/1/10-12">Hebreus 1:10-12</a>) &quot;Porque Eu, o Senhor, não mudo; por isso vós, ó filhos de Jacó, não sereis consumidos.&quot; (<a href="http://bibliaonline.com.br/acf/ml/3/6">Malaquias 3:6</a>) &quot;Jesus Cristo é o mesmo ontem, e hoje, e eternamente.&quot; (<a href="http://bibliaonline.com.br/acf/hb/13/8">Hebreus 13:8</a>) Vivemos em um mundo cheio de mudanças. Por todo lado vemos mudanças. Mas porventura não é algo bendito sabermos que existe Um que não muda? Em conexão com o versículo que lemos em Cantares, penso que a qualidade que mais valorizamos em um amigo a quem temos aprendido a amar, a quem admiramos e de quem temos um grande conceito, é o fato de ele não mudar. Se muda, ficamos desapontados, pois gostávamos dele como ele era. Mas alguma coisa acontece e ele muda seu modo de ser. À medida que o tempo passa nós também mudamos nosso modo de ser e nossa condição física também. Vivemos em um mundo em mutação. Mas acaso não é algo imensamente bendito o fato de termos Alguém que não muda?</p>
+<p>Gostaria de falar um pouco sobre este assunto, pois creio que isto nos servirá de sustento em um mundo como este. Com freqüência ficarmos frustrados e despontados à medida que vamos assistindo a constante mudança que ocorre neste mundo. As pessoas dificilmente sabem como agir, pois existe incerteza no emprego, incerteza nos amigos, e tudo o mais parece estar cheio de incertezas. Os bancos vão à falência, o clima se altera; parece até que somos constantemente lembrados de que tudo muda. Mas acaso não é algo muito precioso o fato de podermos estar aqui ocupados com um Amigo que é &quot;totalmente desejável&quot;? Não existe nada nEle que gostaríamos de ver diferente, pois é tão perfeito em tudo - perfeito em amor, perfeito em graça, perfeito em fidelidade. Isso era representado nas ofertas, do Antigo Testamento que traziam a flor de farinha. Quando pensamos em amigos, pensamos geralmente em alguma pessoa que ocupe um lugar de proeminência por possuir alguma virtude. Por esta razão dizemos que tal pessoa é generosa, ou que se interessa pelo próximo, ou que é muito bondosa. Assinalamos alguma característica em que ela se destaca das outras. Mas temos um Amigo que se sobressai em tudo! Ele Se sobressai em amor e em graça; e se você precisar de alguma correção (e às vezes precisamos), Ele sabe exatamente o que necessitamos, e aplica a correção, desejando que saibamos que é a Sua mão que está ali.</p>
+<p>Portanto, quando vemos este mundo mudando com tanta freqüência, quão precioso é lermos no <a href="http://bibliaonline.com.br/acf/sl/102/27">Salmos 102:27</a>, &quot;Mas Tu és o mesmo, e os Teus anos nunca terão fim&quot;. Não importa se somos crianças, jovens ou adultos; todos nós podemos ter este mesmo Amigo. Ele entende nossa infância. Até mesmo na Jerusalém milenar nos é dito que as ruas da cidade estarão cheias de meninos e meninas que nelas brincarão (<a href="http://bibliaonline.com.br/acf/zc/8/5">Zacarias 8:5</a>). Nos é dito também que &quot;quando eu era menino, falava como menino, sentia como menino, discorria como menino&quot; (<a href="http://bibliaonline.com.br/acf/1co/13/11">1 Coríntios 13:11</a>). Nem sempre compreendemos as crianças, ou o que se passa em suas mentes. Mas não é lindo que o Senhor compreenda até mesmo uma criança? Ele nos diz que naquele tempo, tão feliz para esta Terra, quando o Senhor Jesus ocupar o Seu lugar de direito no dia milenar, as crianças vão poder brincar nas ruas, e não haverá acidentes. Tudo estará sob o maravilhoso cuidado do Senhor.</p>
+<p>À medida que crescemos, e nos tornamos jovens, temos novos anseios e desejamos certas coisas. Não é maravilhoso sabermos que é este o tipo de Amigo que temos - Alguém que nos compreende? Ele viu nosso corpo antes mesmo que entrássemos em cena como pessoas vivas. No <a href="http://bibliaonline.com.br/acf/sl/139/16">Salmos 139:16</a> diz: &quot;Os Teus olhos viram o meu corpo ainda informe, e no Teu livro todas estas cousas foram escritas; as quais iam sendo dia a dia formadas, quando nem ainda uma delas havia&quot;. Você não tem nenhum outro Amigo como este, que conhece a sua estrutura física e emocional, e que compreende você perfeitamente. E como é belo - e como toca o coração - aquele versículo que diz, &quot;Tal é o meu Amado, e tal o meu Amigo&quot;? Ele não é Alguém que possa mudar, como costumam fazer os nossos amigos. &quot;Porque Eu, o Senhor, não mudo; por isso vós, ó filhos de Jacó, não sois consumidos&quot; (<a href="http://bibliaonline.com.br/acf/ml/3/6">Malaquias 3:6</a>).</p>
+<p>Estamos mudando continuamente. Quando temos um amigo que muda - um amigo que antes estava sempre conosco e então muda e já não é mais tão chegado - e que talvez nos faça algo desagradável, achamos isso algo difícil de suportar. Mas este Amigo, apesar de todas as nossas mudanças, nos ama do mesmo jeito. Várias vezes já foi dito que as provas do amor do Senhor por nós, que aparecem nas Escrituras, sempre foram dadas nos momentos em que menos esperávamos encontrá-las. No livro de Deuteronômio, após quarenta anos no deserto, murmurando, reclamando e mostrando o que havia em seus corações, quando Israel chegou ao fim daquela jornada, nos é dito que &quot;na verdade ama os povos; todos os Seus santos estão na Tua mão&quot; (<a href="http://bibliaonline.com.br/acf/dt/33/3">Deuteronômio 33:3</a>) Aqueles quarenta anos de murmúrio e reclamações do povo não mudaram este Amigo. Ele os amava e eles estavam em Sua mão. E quando abrimos em Jeremias descobrimos que o povo se afastou tanto que Deus iria fazer com que fossem levados para o cativeiro. Pelo que dizem as Escrituras, parecia não haver remédio para o estado em que se encontravam; e então o profeta Jeremias, com lágrimas nos olhos, os avisa que teriam que ir para o cativeiro. Mas será que isso fez mudar o Amigo que Israel tinha; o Amigo que nós temos? Não. Em <a href="http://bibliaonline.com.br/acf/jr/31/3">Jeremias 31:3</a> diz: &quot;Com amor eterno te amei, também com amável benignidade te atraí&quot;.</p>
+<p>Mais tarde um pequeno remanescente foi levado de volta do cativeiro, e lemos no livro de Malaquias como estavam as coisas então. Eles diziam que era inútil servir a Deus; ofereciam a Ele o animal coxo e o cego - ou seja, não davam a Ele o que havia de melhor; ofereciam o resto, algo que jamais dariam ao governador. Não queriam fazer aquilo que agradava a Deus. Não eram obedientes a Ele. Mas como é que Ele começa a mensagem dirigida a eles; quando fala de suas faltas e defeitos? Oh, ouça a maneira como começa o livro de Malaquias: &quot;Peso da palavra do Senhor contra Israel, pelo ministério de Malaquias. Eu vos amei, diz o Senhor&quot; (<a href="http://bibliaonline.com.br/acf/ml/1/1">Malaquias 1:1</a>).</p>
+<p>Passamos então ao Novo Testamento e lemos de Marta, e do modo como o Senhor teve que falar com Ela; ela estava achando defeito em Maria por esta estar assentada aos pés do Senhor. Poderíamos achar que o Senhor tivesse um pouco mais de afeição por Maria por ela ser mais devotada, e por se assentar aos Seus pés. Mas quando nos fala da afeição do Senhor por elas, nos é dito que &quot;Jesus amava a Marta, e a sua irmã, e a Lázaro&quot; (<a href="http://bibliaonline.com.br/acf/jo/11/5">João 11:5</a>). Sim, o nome de Marta aparece primeiro; aquela que provavelmente teria menos razão para ocupar tal lugar.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="parte_2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="parte_2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

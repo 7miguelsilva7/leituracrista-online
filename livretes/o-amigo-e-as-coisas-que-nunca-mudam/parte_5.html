@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Parte 5 - O Amigo e as Coisas que Nunca Mudam</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="o_amigo_e_as_coisas_que_nunca_mudam.html"><strong aria-hidden="true">1.</strong> O Amigo e as Coisas que Nunca Mudam</a></li><li><a href="parte_2.html"><strong aria-hidden="true">2.</strong> Parte 2</a></li><li><a href="parte_3.html"><strong aria-hidden="true">3.</strong> Parte 3</a></li><li><a href="parte_4.html"><strong aria-hidden="true">4.</strong> Parte 4</a></li><li><a href="parte_5.html" class="active"><strong aria-hidden="true">5.</strong> Parte 5</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Amigo e as Coisas que Nunca Mudam</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="parte_5.html#parte-5" id="parte-5"><h2>Parte 5</h2></a>
+<p><a href="http://bibliaonline.com.br/acf/rm/1/25">Romanos 1:25</a>: &quot;Pois mudaram a verdade de Deus em mentira, e honraram e serviram mais a criatura do que o Criador, que é bendito eternamente. Amém&quot;. Não precisamos ler todos os versículos deste capítulo, pois estou certo de que muitos de nós que leram estes versículos entendem que se trata de uma figura do que se estabeleceu no paganismo quando abandonaram a revelação que Deus havia dado ao homem, e mudaram todas as coisas. Ali diz que &quot;mudaram a verdade de Deus em mentira&quot;. A Bíblia nos mostra que o homem é um ser trino: espírito, alma e corpo. Já foi dito que deveríamos sempre tomar as decisões em nossas vidas nesta ordem. O espírito, que é a parte que temos em nós que é inteligente e consciente de Deus; a alma, que é a lugar dos apetites e desejos; e o corpo que é a parte física.</p>
+<p>Sempre que você tiver que tomar qualquer decisão, como acerca do tipo de trabalho que deve assumir, coloque-se sempre diante do Senhor e consulte a Ele. Então faça o que tem que fazer de modo consciente, como quem vê o futuro, pois pode acontecer de você envolver-se em algo que não lhe faça feliz, ou em um lugar onde você seria incapaz de honrar plenamente o Senhor. Reflita sobre a questão e coloque-se diante do Senhor; ore sobre isso, e busque a Sua Palavra. Você não irá querer colocar-se em algum jugo desigual ou se envolver com algo que desonre o Senhor. Portanto primeiro vem o espírito. Depois a alma. Você diz: &quot;Ora, mas eu gosto disso!&quot; O Senhor Jesus diria: &quot;Deleito-me em fazer a Tua vontade, ó Deus meu&quot; (<a href="http://bibliaonline.com.br/acf/sl/40/8">Salmos 40:8</a>). Você descobrirá que, se estiver no caminho que é da vontade do Senhor, irá gostar dele, pois o Senhor não irá colocá-lo em algo em que não possa se deleitar, se estiver no caminho da Sua vontade. Então, por último, vem a parte física. Os homens invertem a ordem; eles geralmente dizem, corpo, alma e espírito. Tudo em seu pensamento é planejado na direção exatamente oposta ao caminho que Deus queria que fosse.</p>
+<p>No primeiro capítulo de Romanos vemos que Deus abandonou o homem. Ele o abandonou no que dizia respeito ao seu espírito, e, como resultado, o ser humano adorou os ídolos; Ele o abandonou quanto à sua alma, e todos os horríveis desejos se revelaram nas mais variadas formas de concupiscências; e então seus corpos sofreram porque seus corpos ficaram entregues; todo o seu ser foi abandonado porque &quot;mudaram a verdade de Deus em mentira, e honraram e serviram mais a criatura do que o Criador&quot; (<a href="http://bibliaonline.com.br/acf/rm/1/25">Romanos 1:25</a>). É o que está ocorrendo hoje.</p>
+<p>Portanto, quando estivermos tomando decisões, seja no que diz respeito ao lugar onde você vai morar, ou ao companheiro ou companheira que deve escolher, ou ao tipo de profissão que deve exercer; sempre pergunte, antes de qualquer outra coisa: Será que posso honrar o Senhor nisso? Será que posso conceder a Ele o Seu devido lugar? Estarei me envolvendo em algo que não esteja em conformidade com a Sua Palavra? Então, se achar que Ele dirige você nisso, sua alma poderá dizer: Gosto disso porque creio que é onde o Senhor me quer; creio que é a Sua vontade para mim. Então o seu corpo irá levar você até lá. Mas o homem não quis saber do plano de Deus. Ele mudou a verdade de Deus em uma mentira, e adorou e serviu a criatura mais do que o Criador. É o que está se manifestando hoje em dia, conhecido como &quot;humanismo&quot;, para substituir a sabedoria e direção da Palavra de Deus.</p>
+<p>Agora, ao terminar, vamos abrir em alguns versículos: &quot;E dos filhos de Issacar, destros na ciência dos tempos, para saberem o que Israel devia fazer, duzentos de seus chefes, e todos os seus irmãos seguiam a sua palavra.&quot; (<a href="http://bibliaonline.com.br/acf/1cr/12/32">1 Crônicas 12:32</a>).</p>
+<p>&quot;Porque, na verdade, tendo Davi no seu tempo servido conforme a vontade de Deus, dormiu, e foi posto junto de seus pais e viu a corrupção.&quot; (<a href="http://bibliaonline.com.br/acf/atos/13/36">Atos 13:36</a>).</p>
+<p>&quot;Nunca digas: Por que foram os dias passados melhores do que estes? Porque nunca com sabedoria isto perguntarias.&quot; (<a href="http://bibliaonline.com.br/acf/ec/7/10">Eclesiastes 7:10</a>).</p>
+<p>&quot;Ora o Senhor é Espírito; e onde está o Espírito do Senhor aí há liberdade. Mas todos nós, com cara descoberta refletindo como um espelho a glória do Senhor, somos transformados de glória em glória na mesma imagem, como pelo Espírito do Senhor.&quot; (<a href="http://bibliaonline.com.br/acf/2co/3/17-18">2 Coríntios 3:17-18</a>).</p>
+<p>Talvez encontremos aqui a atitude que deveríamos ter em uma época como a nossa. O versículo em Eclesiastes nos diz para não perguntarmos por quê os dias passados eram melhores. Podemos perder um bom tempo dizendo &quot;Gostaria que as coisas fossem como eram há cinco anos atrás, ou dez...&quot; Em lugar disso podemos dizer: &quot;O Senhor vai me dar graça, se buscá-Lo, para encontrar o caminho que agrade a Ele e para viver para agradá-Lo neste ano e no próximo&quot;. Devemos insistir nisto, irmãos; temos que viver nesta geração. E o Senhor é capaz de dar-nos graça para servirmos neste tempo &quot;conforme a vontade de Deus&quot;. Creio que isso é extremamente necessário para nós. Não podemos mudar as condições deste mundo; e podemos não ser capazes de mudar muitas outras coisas que gostaríamos de ver diferentes. Talvez nosso emprego esteja sendo uma provação; talvez a situação no lar não esteja muito fácil; talvez a escola onde você estude seja muito difícil; e talvez possam existir provações na assembléia. Mas quero assegurar-lhe de que este maravilhoso Amigo de Quem falamos no princípio é suficiente para você. &quot;Tal é o meu Amado, e tal o meu Amigo&quot;. Ele pode encher sua vida de paz e gozo em meio a um mundo cheio de inquietação e incerteza, e que muda constantemente. Ele tem um modo de você viver e servir em seu tempo. Gosto desta palavra &quot;servir&quot;; &quot;Porque nenhum de nós vive para si, e nenhum morre para si&quot; (<a href="http://bibliaonline.com.br/acf/rm/14/7">Romanos 14:7</a>). Se você procurar viver para satisfazer o Senhor Jesus, você vai servir no seu tempo; pois outros vão perceber e ver em você uma pessoa que encontrou vitória em uma época quando tudo parece estar se despedaçando.</p>
+<p>Havia uma característica muito interessante naqueles homens de Issacar: Se tivéssemos tempo para ler o capítulo todo, veríamos que ele fala de homens de diferentes tribos que vieram fazer Davi rei. Em cada uma das tribos, exceto uma, é mencionado um certo número de pessoas que vieram. (Espero que estejamos dando ao verdadeiro Davi, o Senhor Jesus, a supremacia em nossa vida.) É algo bem interessante de se ver que apenas de uma das doze tribos não é mencionado quantos eram: da tribo de Issacar. E naquela tribo havia homens que tinham entendimento (duzentos ao todo), para saber o que Israel devia fazer; &quot;e todos os seus irmãos seguiam a sua palavra.&quot; Permitam-me que transmita uma palavra àqueles dentre nós que estão ficando mais velhos. Que o Senhor nos ajude a termos entendimento acerca dos tempos em que vivemos. Creio que os jovens irão nos escutar se sentirem que nós entendemos. Há duas coisas que o coração humano deseja ardentemente: compreensão e amor. Se você fala a alguém e, após alguns minutos, percebe que não entende o que você está dizendo, você se sente frustrado e, talvez, não diga mais nada. Mas se você sente que aquela pessoa ama você e que entende a sua situação, então, talvez, você a escute; talvez ela possa lhe ajudar.</p>
+<p>Que o Senhor possa dar àqueles dentre nós que estão ficando mais velhos mais dessa compreensão e desse amor! Creio que assim poderemos ser um auxílio. Já foi dito várias vezes, nestas reuniões, que nossos queridos jovens estão em uma geração e em uma situação da qual alguns de nós, que somos mais velhos, pouco sabemos a respeito. Mas deveríamos ter compreensão e amor. Aqui, na tribo de Issacar, lemos que esses cabeças do povo tinham este tipo de compreensão, e que &quot;todos os seus irmãos seguiam a sua palavra.&quot; Eles não estavam olhando para trás e dizendo, &quot;Oh, já não é mais como quando eu era jovem...&quot; Eles não estavam indagando o por quê de os dias passados terem sido melhores. Eles estavam procurando encorajar aqueles que viviam no mesmo tempo em que eles estavam vivendo, quando as coisas estavam em um estado de confusão e dificuldade em Israel.</p>
+<p>E qual é o remédio definitivo para nós? Irmãos, é termos nossos olhos postos no Senhor Jesus. Não podemos alterar a situação; mas acaso não é bela a passagem em 2 Coríntios, que diz: &quot;Mas todos nós, com cara descoberta, refletindo como um espelho a glória do Senhor, somos transformados de glória em glória na mesma imagem, como pelo Espírito do Senhor&quot;? O Senhor não muda. O mundo tem mudado; mas por termos, às vezes, alguma parte do mundo se esfregando em nós, precisamos ser transformados mais à Sua imagem. Ele é Aquele que não muda. E como podemos ser transformados assim? Oh, pela ocupação com o Senhor Jesus, esse maravilhoso Salvador, esse maravilhoso Amigo. &quot;Tal é o meu Amado, e tal o meu Amigo!&quot; Se você O conhece como seu Salvador, Ele pode fazer por você o que tem feito por outros.</p>
+<p>Em um mundo onde existe tanta mudança temos a Palavra de Deus que auxilia, que instrui, aquelas coisas firmes que Deus estabeleceu, de modo a podermos seguir em paz, tendo a divina direção que provém da mesma Pessoa cujo nome é &quot;Maravilhoso, Conselheiro, Deus forte, Pai da eternidade, Príncipe da paz&quot; (<a href="http://bibliaonline.com.br/acf/is/9/6">Isaías 9:6</a>). Possamos nos voltar para Ele e ter nossos olhos fixos nEle. O resultado será uma transformação em nós que nos fará um pouco mais como Aquele que não muda.</p>
+<p>Gordon Hayhoe &quot;The Friend And The Things That Never Change&quot;; palestra a cristãos em La Mirada, CA, 29:12:85.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="parte_4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="parte_4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>
