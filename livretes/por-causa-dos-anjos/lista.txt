@@ -1,0 +1,25 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+instrucoes_para_o_homem_e_para_a_mulher.html
+lista.txt
+mark.min.js
+outras_distorcoes.html
+por_causa_dos_anjos.html
+POR CAUSA DOS ANJOS PAUL WILSON PAUL WILSON.odt
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css
+uma_questao_de_ordem.html
+um_exemplo_dado_pela_propria_natureza.html

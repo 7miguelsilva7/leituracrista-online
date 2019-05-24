@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O Décimo Mandamento Mosaico - Os Dez Mandamentos</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="os_dez_mandamentos.html"><strong aria-hidden="true">1.</strong> OS DEZ MANDAMENTOS</a></li><li><a href="o_primeiro_mandamento_mosaico.html"><strong aria-hidden="true">2.</strong> O Primeiro Mandamento Mosaico</a></li><li><a href="o_segundo_mandamento_mosaico.html"><strong aria-hidden="true">3.</strong> O Segundo Mandamento Mosaico</a></li><li><a href="o_terceiro_mandamento_mosaico.html"><strong aria-hidden="true">4.</strong> O Terceiro Mandamento Mosaico</a></li><li><a href="o_quarto_mandamento_mosaico.html"><strong aria-hidden="true">5.</strong> O Quarto Mandamento Mosaico</a></li><li><a href="o_quinto_mandamento_mosaico.html"><strong aria-hidden="true">6.</strong> O Quinto Mandamento Mosaico</a></li><li><a href="o_sexto_mandamento_mosaico.html"><strong aria-hidden="true">7.</strong> O Sexto Mandamento Mosaico</a></li><li><a href="o_setimo_mandamento_mosaico.html"><strong aria-hidden="true">8.</strong> O Sétimo Mandamento Mosaico</a></li><li><a href="o_oitavo_mandamento_mosaico.html"><strong aria-hidden="true">9.</strong> O Oitavo Mandamento Mosaico</a></li><li><a href="o_nono_mandamento_mosaico.html"><strong aria-hidden="true">10.</strong> O Nono Mandamento Mosaico</a></li><li><a href="o_decimo_mandamento_mosaico.html" class="active"><strong aria-hidden="true">11.</strong> O Décimo Mandamento Mosaico</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Os Dez Mandamentos</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="o_decimo_mandamento_mosaico.html#o-décimo-mandamento-mosaico" id="o-décimo-mandamento-mosaico"><h2>O Décimo Mandamento Mosaico</h2></a>
+<p>&quot;Não cobiçarás a casa do teu próximo, não cobiçarás a mulher do teu próximo, nem o seu servo, nem a sua serva, nem o seu boi, nem o seu jumento, nem cousa alguma do teu próximo&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/17">Êxodo 20:17</a>). Agora vamos ler <a href="http://bibliaonline.com.br/acf/hb/13/5">Hebreus 13:5</a>: &quot;Sejam vossos costumes sem avareza, contentando-vos com o que tendes; porque Ele diz: não te deixarei, nem te desampararei&quot;. O décimo mandamento foi o que matou o apóstolo Paulo. Ele parecia ser capaz de atender aos outros nove, mas reconheceu: &quot;eu não conheci o pecado senão pela lei; porque eu não conheceria a concupiscência, se a lei não dissesse: Não cobiçarás... Mas o pecado, tomando ocasião pelo mandamento, me enganou, e por ele me matou&quot; (<a href="http://bibliaonline.com.br/acf/rm/7/7-11">Romanos 7:7-11</a>). Paulo descobriu o que todos nós descobrimos: que cobiçar é tão natural quanto respirar. Porém a verdade revelada do cristianismo condena a cobiça não menos severamente do que o fez a lei de Moisés.</p>
+<p>Quantas tragédias funestas temos visto entre os santos de Deus, que sacrificaram tudo para prosperar neste mundo! A cobiça é egoísmo. &quot;Contentando-vos com o que tendes&quot;. Isto, obviamente, não quer dizer que se você está vivendo hoje em pobreza terá que viver sempre nela; não, não se trata disso. O significado desta exortação é que deveríamos nos sujeitar às nossas circunstâncias, e estarmos contentes nelas até ao tempo quando aprouver a Deus alterá-las. Em outras palavras, não fique o tempo todo a se lamentar porque as coisas não estão como você gostaria que fossem. Não viva gemendo e se queixando; esteja contente. E se aprouver a Deus melhorar suas circunstâncias atuais, dê-Lhe graças por isso.</p>
+<p>&quot;Mas é grande ganho a piedade com contentamento. Porque nada trouxemos para este mundo, e manifesto é que nada podemos levar dele. Tendo, porém, sustento, e com que nos cobrirmos, estejamos com isto contentes. Mas os que querem ser ricos caem em tentação e em laço, e em muitas concupiscências loucas e nocivas, que submergem os homens na perdição e ruína. Porque o amor do dinheiro é a raiz de toda a espécie de males; e nessa cobiça alguns se desviaram da fé, e se traspassaram a si mesmos com muitas dores. Mas tu, oh homem de Deus, foge destas coisas&quot; (<a href="http://bibliaonline.com.br/acf/1tm/6/6-11">1 Timóteo 6:6-11</a>). Quão verídica é a Palavra de Deus! Não temos visto todas estas afirmações das Escrituras confirmadas na vida dos santos? Às vezes nossos jovens acham que devem buscar alcançar o nível de vida que vêem nos outros. O resultado disso é a cobiça de uma coisa após outra. A verdade é que o fato de vivermos na época mais próspera que o mundo jamais conheceu tem contribuído para acelerar o desejo de querermos sempre mais. Quanto mais tivermos, mais vamos querer ter. Não há limite. Mas, quão diferente é o Espírito de Cristo! O de dar, e não o de conseguir. Assim nos ensinou: &quot;Mais bem-aventurada coisa é dar do que receber&quot; (<a href="http://bibliaonline.com.br/acf/atos/20/35">Atos 20:35</a>). Porém não estou dizendo que devemos dar tudo o que temos. Houve apenas um homem, que é mencionado na Bíblia, a quem o Senhor deu esse conselho - o jovem rico de <a href="http://bibliaonline.com.br/acf/lc/18">Lucas 18</a>. E disse isso para que ele se desse conta do câncer que lhe corroía a própria alma - a cobiça. Não, irmão, as possessões terrenais não constituem o segredo da felicidade. A felicidade é um estado de espírito. É o desfrutar da Pessoa e Obra de Cristo que conserva o coração em descanso e paz. Tenho encontrado pessoas, santos de Deus, que nada possuem das coisas deste mundo, e ainda assim irradiam felicidade. Eles têm Cristo.</p>
+<p>Em resumo, no cristianismo não estamos sob a lei, porém sob a graça. Não estamos sob a letra dos dez mandamentos. Estamos sob o seu equivalente moral ensinado nas epístolas, exceto no caso do único mandamento que era cerimonial, ou seja, o shabbat. Não existe nada que tenha o seu equivalente no cristianismo. Os outros nove mandamentos - quanto ao seu conteúdo moral - nós os temos, porém não da forma de &quot;fareis&quot; e &quot;não fareis&quot;, porém como a expressão da nova natureza que temos, como nascidos de Deus. Jamais nos lamentaremos se assim os respeitarmos. Será para nosso bem agora e por toda a eternidade. A justiça da lei será cumprida em nós (<a href="http://bibliaonline.com.br/acf/rm/8/4">Romanos 8:4</a>). Assim o fruto do Espírito será produzido em amor para com Deus e para com todos que são nascidos de Deus. &quot;O amor não faz mal ao próximo. De sorte que o cumprimento da lei é o amor&quot; (<a href="http://bibliaonline.com.br/acf/rm/13/10">Romanos 13:10</a>).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="o_nono_mandamento_mosaico.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="o_nono_mandamento_mosaico.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

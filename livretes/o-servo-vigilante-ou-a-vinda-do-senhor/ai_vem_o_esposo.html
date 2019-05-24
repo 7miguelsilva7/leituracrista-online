@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>&quot;Aí vem o Esposo!&quot; - O Servo Vigilante – ou A vinda do Senhor</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="o_servo_vigilante__ou_a_vinda_do_senhor.html"><strong aria-hidden="true">1.</strong> O Servo Vigilante – ou A vinda do Senhor</a></li><li><a href="os_que_em_jesus_dormem.html"><strong aria-hidden="true">2.</strong> Os que em Jesus dormem</a></li><li><a href="ai_vem_o_esposo.html" class="active"><strong aria-hidden="true">3.</strong> &quot;Aí vem o Esposo!&quot;</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Servo Vigilante – ou A vinda do Senhor</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="ai_vem_o_esposo.html#aí-vem-o-esposo" id="aí-vem-o-esposo"><h2>&quot;Aí vem o Esposo!&quot;</h2></a>
+<p>Abra agora em <a href="http://bibliaonline.com.br/acf/mt/25">Mateus 25</a>. As virgens sábias levam óleo em seus vasos, mas todas elas adormecem e se esquecem que o Noivo estava chegando. Mas o que gostaria de perguntar aqui é: Qual era o objetivo primeiro delas? A afirmação, clara e positiva, é que elas saíram ao encontro do Esposo, mas enquanto Ele tardava, todas elas tosquenejaram e adormeceram - todas elas se esqueceram de Sua vinda, tanto as sábias como as loucas. Mas à meia-noite ouviu-se um clamor, &quot;Aí vem o Esposo!&quot; (<a href="http://bibliaonline.com.br/acf/mt/25/6">Mateus 25:6</a>). O que as levantou de seu sono foi o clamor, &quot;Aí vem o Esposo!&quot; Portanto, o alvo original da Igreja era sair ao encontro dAquele que viria; mas até mesmo os verdadeiros crentes se esqueceram disso. E então, o que os acorda de seu sono é o serem chamados para encontrá-Lo em Sua vinda. E na parábola dos &quot;talentos&quot;, a mesma coisa é apresentada em conexão com o serviço e a responsabilidade. Ele viaja e lhes diz: &quot;Negociai até que eu venha&quot; (<a href="http://bibliaonline.com.br/acf/lc/19/13">Lucas 19:13</a>).</p>
+<p>Outro notável fato acerca desta verdade é que ela é sempre apresentada como uma expectativa atual e operante. Você nunca encontrará o Senhor e nem os apóstolos falando da vinda do Senhor, com a suposição de que ela seria retardada para um tempo além do período de vida daqueles a quem era falado. Poderia ser no cantar do galo, ou pela manhã; mas eles deveriam estar esperando pelo Filho de Deus vindo do céu. Nas parábolas a que nos referimos, as virgens que adormeceram foram as mesmas que acordaram. Os servos aos quais foram confiados os talentos foram os servos que tiveram que prestar contas deles na Sua volta. Sabemos que séculos já se passaram; mas Ele não permitirá que exista qualquer pensamento de atraso. &quot;Porque o Filho do Homem há de vir à hora em que não penseis&quot; (<a href="http://bibliaonline.com.br/acf/mt/24/44">Mateus 24:44</a>). &quot;Bem-aventurados aqueles servos, os quais, quando o Senhor vier, achar vigiando.&quot; (<a href="http://bibliaonline.com.br/acf/lc/12/37">Lucas 12:37</a>).</p>
+<p>Então, qual foi a causa da ruína da Igreja? Foi esta: &quot;O meu Senhor tarde virá&quot; (<a href="http://bibliaonline.com.br/acf/mt/24/48">Mateus 24:48</a>). Não foi por dizer: &quot;Ele não vem&quot;; mas, &quot;Ele tarde virá&quot;. E então o servo começou a espancar seus conservos e a comer e beber com os embriagados, e isto acarreta o seu juízo. Se a esposa ama o Esposo, ela não pode senão desejar vê-Lo. O coração dela está onde Ele está. Quando a Igreja perdeu isto, acomodou-se e passou a desfrutar do lugar onde estava; tornou-se mundana e não se importou mais com a volta do Senhor. Abra agora em <a href="http://bibliaonline.com.br/acf/lc/12">Lucas 12</a>, e você encontrará como é que esse esperar por Cristo caracteriza o cristão, e, por conseguinte, o serviço devotado a Ele enquanto está ausente. &quot;Onde estiver o vosso tesouro, ali estará também o vosso coração.&quot; (<a href="http://bibliaonline.com.br/acf/lc/12/34">Lucas 12:34</a>). Era para eles estarem com seus lombos cingidos e suas candeias acesas (<a href="http://bibliaonline.com.br/acf/lc/12/35">Lucas 12:35</a>). Tal era a característica de um cristão. Eles deviam ser como homens que esperam pelo seu Senhor, para poderem abrir a porta para Ele imediatamente; com suas afeições em ordem e uma profissão integral de Cristo, enquanto aguardassem pela volta de Seu Senhor. Não se trata de meramente ter a doutrina da vinda do Senhor. A bênção está sobre aqueles que estão vigiando, &quot;semelhantes aos homens que esperam o seu Senhor&quot;. &quot;Bem-aventurados aqueles servos, os quais, quando o Senhor vier, achar vigiando.&quot; (<a href="http://bibliaonline.com.br/acf/lc/12/36-37">Lucas 12:36-37</a>). Eles devem estar cingidos; devem ter suas candeias acesas enquanto Ele está ausente, e devem vigiar por Sua volta; e então Ele os fará sentar para cear, e cingindo-Se, virá e os servirá. Agora os servos devem estar cingidos e vigiar; nosso descanso não está aqui. 'Mas', diz o Senhor, 'quando Eu tiver tudo resolvido, vós vos sentareis para cear, e Eu Me cingirei, virei e vos servirei. Farei com que desfruteis do melhor que tenho no céu, e vo-lo ministrarei; tão somente ficai vigiando'.</p>
+<p>Cristo é, para sempre, um servo em graça, bem de acordo com a forma que Ele assumiu. Ele está agora cingido conforme <a href="http://bibliaonline.com.br/acf/jo/13">João 13</a>. Os discípulos naturalmente iriam pensar que, se Ele partisse para o céu em glória, estaria terminado o Seu serviço para com eles; mas o Senhor lhes diz: Vou partir; não posso ficar aqui convosco, mas não vos abandonarei; mas por não poder ficar na terra convosco, vou tornar-vos aptos para estarem comigo no céu. &quot;Se Eu te não lavar, não tens parte Comigo.&quot; (<a href="http://bibliaonline.com.br/acf/jo/13/8">João 13:8</a>). Aqui trata-se de água, e não de sangue, pois &quot;Aquele que está lavado não necessita de lavar senão os pés, pois no mais todo está limpo&quot; (<a href="http://bibliaonline.com.br/acf/jo/13/10">João 13:10</a>). A conversão que traz vida, bem como a salvação, são fatos consumados; mas se nos apega a sujeira do caminho, tanto no que se refere à comunhão, como ao nosso andar, a graça e a intercessão de Cristo como nosso Advogado estão ali para lavar nossos pés e nos tornar aptos, na prática, para estarmos com Deus no mesmo lugar para onde Cristo foi. Há, ou deveria haver, progresso no andar, mas no que concerne à imutável limpeza do novo homem, isto é inquestionável.</p>
+<p>Todavia, se eu não estiver vigilante, acabarei recolhendo a sujeira do caminho. Não posso ter tal coisa no céu, e nem na comunhão com tudo aquilo que lá está, e, na verdade, o que o Senhor diz é: 'Não vos abandonarei por estar subindo para Deus e para a glória, e por isso devo manter-vos em condições adequadas à mesma glória, e, embora já estejam lavados (mas nem todos, pois Judas estava ali), devo manter-vos em ordem, restaurando-vos se porventura cairdes. Mas deveis estar vigilantes enquanto estou ausente.</p>
+<p>Para mim é um conforto saber que todas as virgens acordaram a tempo, e creio que todos os Seus santos acordarão antes que o Senhor venha. A dificuldade que há para o coração que olha ao redor é que há muitos que não aceitam isto. Porém o verdadeiro serviço do Senhor está conectado à vigilância. Este é o estado ao qual estão ligados, tanto as bênçãos, como o banquete no céu.</p>
+<p>Há mais uma coisa - servir enquanto Ele está ausente, e o resultado que advém disto é: &quot;Em verdade vos digo que sobre todos os Seus bens o porá&quot; (<a href="http://bibliaonline.com.br/acf/lc/12/44">Lucas 12:44</a>). Como é dito de Israel, é muito melhor comer da flor da farinha, e isto na casa do Pai; mas se sofremos com Ele, com Ele reinaremos (<a href="http://bibliaonline.com.br/acf/2tm/2/12">2 Timóteo 2:12</a>). Pelo serviço executado em Sua ausência sou habilitado a reinar, do mesmo modo que pela vigilância posso desfrutar do banquete celestial. O Senhor segue, então, fazendo menção daquilo que temos em <a href="http://bibliaonline.com.br/acf/mt/24/48">Mateus 24:48</a>: &quot;O meu Senhor tarde virá&quot;.</p>
+<p>O ponto no qual o Senhor insiste com os discípulos acerca de vigiar e servir é: &quot;Virei outra vez&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/3">João 14:3</a>). Esperai por Mim, como homens que esperam pelo seu Senhor. Esta deveria ser a característica deles como cristãos. Supondo que todas as pessoas desta cidade estivessem realmente vigiando, esperando pelo Senhor vindo do céu, sem que soubessem o momento exato em que Ele viria, você acha que a cidade toda não seria transformada? Certa vez alguém me disse que se todos cressem assim, o mundo não poderia seguir adiante. Na verdade, é o cristão que assim crê que não pode seguir adiante de modo mundano. Se as pessoas estivessem esperando pelo Senhor vindo do céu, todo o seu caráter e modo de vida seriam mudados. Posso ter a doutrina da vinda de Cristo, e não estar realmente esperando por Ele, mas não deveria ser achado amontoando dinheiro quando o Senhor viesse.</p>
+<p>Abra agora em <a href="http://bibliaonline.com.br/acf/fp/3">Filipenses 3</a>. Paulo estava apostando uma corrida. &quot;Esquecendo-me das coisas que atrás ficam, e avançando para as que estão diante de mim.&quot; (<a href="http://bibliaonline.com.br/acf/fp/3/13">Fp 3:13</a>). E como é que ele fala de Cristo no final deste capítulo? &quot;Sede também meus imitadores, irmãos,... mas nossa cidade está nos céus, donde também esperamos o Salvador, o Senhor Jesus Cristo&quot; (<a href="http://bibliaonline.com.br/acf/fp/3/17,20">Fp 3:17,20</a>). A vinda do Senhor afeta todas as verdades do cristianismo. Cristo não está agora exatamente no Seu próprio trono. Ele está sentado agora, conforme <a href="http://bibliaonline.com.br/acf/hb/10">Hebreus 10</a> (e também o <a href="http://bibliaonline.com.br/acf/sl/110">Salmos 110</a>), à destra de Deus, no trono de Seu Pai, conforme Ele próprio diz na promessa feita a Laodicéia (<a href="http://bibliaonline.com.br/acf/ap/3/21">Apocalipse 3:21</a>). Em sua primeira vinda Ele resolveu, para os Seus, a questão do pecado, e estes agora não têm mais consciência de pecados; estão aperfeiçoados para sempre. E para os que esperam por Ele, voltará uma segunda vez sem pecado para salvação. Ele está nos céus aguardando até que Seus inimigos sejam postos por estrado de Seus pés. Por que é que Ele diz &quot;Seus inimigos&quot;? Porque Ele está sentado após haver terminado tudo o que precisava fazer para Seus amigos; isto é, para aqueles que crêem nEle. Acaso os seus pecados, leitor, já foram tirados da vista de Deus? Se ainda não, quando o serão? (<a href="http://bibliaonline.com.br/acf/1pe/2/24">1 Pd 2:24</a>). Que você os deteste cada vez mais, está bem; mas se eles não foram levados sobre a cruz, quando serão? Pode você conseguir que Cristo morra outra vez? Pode você conseguir outro que o faça? Se a obra não está consumada, então nunca mais será consumada. Amados amigos, se a obra não estiver terminada, nunca estará. Mas está consumada, e portanto Ele diz que os adoradores que foram limpos dos pecados &quot;nunca mais teriam consciência de pecado... Porque com uma só oblação aperfeiçoou para sempre os que são santificados&quot; (<a href="http://bibliaonline.com.br/acf/hb/10/2,14">Hebreus 10:2,14</a>). Se agora você ler <a href="http://bibliaonline.com.br/acf/cl/3">Colossenses 3</a>, verá a mesma coisa em seu pleno resultado sendo prometida como nossa esperança. &quot;Quando Cristo que é a nossa vida, Se manifestar, então também vós vos manifestareis com Ele em glória.&quot; (<a href="http://bibliaonline.com.br/acf/cl/3/4">Colossenses 3:4</a>). A primeira promessa que Ele deu aos discípulos ao partir foi que voltaria. 'Não vos inquieteis, vou preparar-vos lugar. Não fiqueis intranqüilos, não posso permanecer convosco, portanto devo levar-vos para estar Comigo lá em cima; e a primeira coisa é, &quot;Virei outra vez e vos levarei para Mim mesmo&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/3">João 14:3</a>). Não se trata da morte de um de cada vez, mas da ressurreição dos mortos, e da transformação dos que estiverem vivos; de Sua real vinda para recebê- los, ressuscitados ou transformados, para que estejam junto com Ele onde Ele está; para sermos como Ele é e estarmos com Ele em glória. E, mais uma vez, quando de Sua partida para ausentar-Se de Seus discípulos que foram deixados aqui, qual foi a última coisa que viram? Eles O viram subir diante de seus olhos, e os anjos que lhes disseram: &quot;Por que estais olhando para o céu? Esse Jesus... há de vir assim como para o céu O vistes ir&quot; (<a href="http://bibliaonline.com.br/acf/atos/1/11">Atos 1:11</a>). Sua vinda é parte integrante de todo o contexto da vida cristã.</p>
+<p>Quais são as últimas palavras das Escrituras? &quot;Certamente cedo venho. Amém. Ora vem, Senhor Jesus&quot; (<a href="http://bibliaonline.com.br/acf/ap/22/20">Apocalipse 22:20</a>). E o mesmo você encontra no inicio do mesmo livro, com um caráter de aviso e ameaça: &quot;Jesus Cristo, que é a fiel testemunha, o Primogênito dos mortos, e o Príncipe dos reis da Terra... Eis que vem com as nuvens e todo o olho O verá.&quot; (<a href="http://bibliaonline.com.br/acf/ap/1/5,7">Apocalipse 1:5,7</a>). &quot;Eu, Jesus, enviei o Meu anjo... Eu sou... a resplandecente estrela da manhã.&quot; (<a href="http://bibliaonline.com.br/acf/ap/22/16">Apocalipse 22:16</a>). Agora entendo o que vêem os santos que vigiam, e só eles. Não há estrela para ser vista quando o sol está no céu; eles vêem a estrela da manhã enquanto é ainda madrugada, pois a noite é passada e o dia já vem. Aqui Ele chama a Si próprio &quot;a raiz e a geração de Davi, a resplandecente estrela da manhã. E o Espírito e a esposa dizem: Vem&quot; (<a href="http://bibliaonline.com.br/acf/ap/22/16-17">Apocalipse 22:16-17</a>). Se a esposa entendeu o que é ser esposa de Cristo, ela deve desejar estar com o Esposo; não existe um amor autêntico a Cristo a menos que ela deseje estar com Ele. Abraão disse a respeito de sua esposa: &quot;É minha irmã&quot; (<a href="http://bibliaonline.com.br/acf/gn/12/19">Gênesis 12:19</a>), e então os egípcios - o mundo - a levaram para sua casa. Devo apenas acrescentar que você????? tem expresso aqui todo o círculo das afeições da Igreja. &quot;O Espírito e a esposa dizem: Vem. E quem ouve, diga: Vem.&quot; Isto é, o cristão que ouviu a palavra da sua salvação se junta a esse clamor. Então aqueles que estão sedentos por água viva são convidados a vir. Embora ainda não tendo o Esposo em glória, Os santos da Igreja podem dizer que têm a água viva, e podem assim chamar, &quot;Quem tem sede, venha&quot;, e então dirigir o chamado num caráter universal: &quot;Quem quiser, tome de graça da água da vida&quot;. Isto eles têm, embora ainda não tenham o Esposo. Vejo, então, que na Palavra de Deus os pensamentos, sentimentos, conduta, obras e afeições dos cristãos estão identificados com a vinda de Cristo. Tome tudo isso e você verá que está tudo identificado com a vinda de Cristo. Veja a primeira epístola da João, <a href="http://bibliaonline.com.br/acf/jo/3/1-2">capítulo 3:1-2</a>: &quot;Vede quão grande amor nos tem concedido o Pai... Amados, agora somos filhos de Deus, e ainda não é manifestado o que havemos de ser. Mas sabemos que, quando Ele Se manifestar, seremos semelhantes a Ele; porque assim como é O veremos&quot;. Amados, somos predestinados para ser &quot;conformes à imagem de Seu Filho&quot; (<a href="http://bibliaonline.com.br/acf/rm/8/29">Romanos 8:29</a>). É isto o que Deus tem proposto para nós.</p>
+<p>Quando é que seremos conformes à Cristo em glória? Quando Ele vier. Não é quando uma pessoa morre, e seu espírito vai estar com Cristo; pois então ele será como Cristo quando Este estava na sepultura; e não quero ser como Cristo quando Ele estava na sepultura. Mas se morrer, serei como Cristo neste aspecto, mas não é isso o que desejo, embora seja algo bendito. Quero ser como Ele em glória. Quando será isto? Quando Ele vier, irá transformar nossos corpos mortais, e conformá-los ao Seu precioso corpo; portanto aqui pode ser que não aparentemos o que vamos ser, mas quando Ele vier seremos como Ele.</p>
+<p>Anote agora as conseqüências práticas que vêm sobre o homem que em sua fé tem sido instruído nos propósitos de Deus. &quot;E qualquer que nEle tem esta esperança purifica-se a si mesmo, como também Ele é puro.&quot; (<a href="http://bibliaonline.com.br/acf/1jo/3/3">1 João 3:3</a>). Sei que serei perfeitamente como Cristo na glória, no entanto quero ser o mais parecido possível com Ele enquanto aqui. Vocês vêem aqui mais uma vez que as Sagradas Escrituras são explícitas em ensinar que também a santidade é sempre mencionada ao fato de sermos conformados a Cristo na glória. Meu padrão deve ser possuir essa conformidade com Cristo em glória, e nada mais. Há uma passagem já mencionada: &quot;Para confortar os vossos corações, para que sejais irrepreensíveis em santidade diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo com todos os Seus santos&quot; (<a href="http://bibliaonline.com.br/acf/1ts/3/13">1 Tessalonicenses 3:13</a>). A perfeição do cristão é ser como Ele, quando Ele vier. O que também encontro, com respeito aos cristãos em <a href="http://bibliaonline.com.br/acf/1co/15/43">1 Coríntios 15:43</a>: &quot;Semeia-se em ignomínia, ressuscitará em glória&quot;. Temos a bendita certeza que acompanha a verdadeira e segura esperança da primeira ressurreição e de seus resultados.</p>
+<p>Seremos perfeitamente como Cristo quando formos levantados dentre os mortos. Daremos contas de nós mesmos, mas isso quando formos como a Pessoa a Quem devemos dar contas. A plena eficácia de Sua primeira vinda tem estado perdida, e por esta razão as pessoas não se sentem confortáveis quando pensam em Sua segunda vinda. Todavia para o santo, &quot;Cristo as primícias, depois os que são de Cristo na Sua vinda&quot; (<a href="http://bibliaonline.com.br/acf/1co/15/23">1 Coríntios 15:23</a>). Seria Cristo &quot;as primícias&quot; do ímpio? Certamente que não. Assim como a ressurreição de Cristo foi o testemunho público da aprovação, por Deus, de Cristo e Sua obra, a ressurreição dos santos será um testemunho da aprovação de Deus dos que estão em Cristo. Como encontramos em <a href="http://bibliaonline.com.br/acf/lc/20/35-36">Lucas 20:35-36</a>: &quot;mas os que forem havidos por dignos de alcançar o mundo vindouro, e a ressurreição dos mortos, nem hão de casar, nem ser dados em casamento; porque já não podem mais morrer; pois são iguais aos anjos, e são filhos de Deus, sendo filhos da ressurreição&quot; (<a href="http://bibliaonline.com.br/acf/lc/20/35-36">Lucas 20:35-36</a>). Será que alguém poderia me mostrar uma só passagem acerca de uma ressurreição geral? Não existe um tal pensamento nas Escrituras. Costuma-se citar <a href="http://bibliaonline.com.br/acf/mt/25">Mateus 25</a> a este respeito, dizendo-se que os bodes e as ovelhas representam as duas classes de pessoas; mas então Ele terá vindo em Sua glória a este mundo. Ali Ele não está sentado no grande trono branco: diante do qual o céu e a Terra fogem. Nesta passagem Ele vem e senta-Se em Seu trono. Quando Ele vier, e sentar-Se ali, congregará todos os gentios - as nações - para julgá-las. É o julgamento dos vivos. Há ali três tipos de pessoas, e não dois; e não há nada de ressurreição. Você encontra as &quot;ovelhas&quot;, os &quot;bodes&quot;, e os &quot;irmãos&quot; (<a href="http://bibliaonline.com.br/acf/mt/25/40">Mateus 25:40</a>). Isso está tão longe de se tratar de uma ressurreição geral, que nem existe uma referência à ressurreição; trata-se de um assunto bem diferente. Além do mais, a questão ali é sobre como eles trataram Seus irmãos, e as prerrogativas de um julgamento assim não se aplicariam a noventa e nove por cento das pessoas julgadas, caso se tratasse de um julgamento geral. Aqueles que estiveram de posse do testemunho do reino antes que Ele viesse julgar os vivos, serão tratadas em conformidade com a maneira como receberam os mensageiros de Deus, mas serão só essas pessoas que entrarão naquele julgamento.</p>
+<p>E agora o ponto que volto a tratar é este: A vinda do Senhor influencia e conforma a vida do cristão na sua totalidade. Você não pode separar coisa alguma de todo o curso da vida do cristão da vinda do Senhor Jesus; e não só da primeira, como também da segunda vinda. Ele já veio uma vez e, para os que O esperam, virá uma segunda vez para salvação. É verdade que Ele vem e habita em nós; mas estamos nos referindo às passagens que falam da vinda real. Tanto faz se você trata da santidade, ou do serviço; da conversão ou do ministério, ou ainda de uma pessoa que já morreu; tudo está conectado à vinda de Cristo. Ele avisa para que sejamos achados vigiando. Eu poderia citar outras passagens, mas já citei um número suficiente para mostrar que a vinda do Senhor está ligada a tudo na vida cristã. Quando O virmos como Ele é, então, e só então, seremos como Ele é, em conformidade com o propósito de Deus. E agora pergunto: Você está esperando pelo Filho de Deus vindo do céu? O fato de Ele haver carregado os pecados de muitos é a única base de esperança para qualquer pecador; isto é, a obra terminada que nos capacita, pela fé, a olhar para Ele quando selados pelo Espírito Santo. Então, pergunto, o que estou esperando? Estou esperando pelo Filho de Deus vindo do céu. Será que você pode dizer: &quot;Estou aguardando Cristo&quot;? Não sei quando Ele virá. &quot;Bem-aventurados aqueles servos, os quais, quando o Senhor vier, achar vigiando!&quot; (<a href="http://bibliaonline.com.br/acf/lc/12/37">Lucas 12:37</a>). Não pergunto a você se você entende a respeito da vinda do Senhor. Foi para esperar por Ele que eles se converteram. O que acordou as virgens foi: &quot;Aí vem o Esposo!&quot; (<a href="http://bibliaonline.com.br/acf/mt/25/6">Mateus 25:6</a>). Será que você está verdadeiramente esperando pelo Filho de Deus vindo do céu? Você gostaria que Ele viesse hoje à noite? Pedro explica a razão da demora. Ele diz que é a Sua longanimidade para salvação, não querendo que alguns se percam (<a href="http://bibliaonline.com.br/acf/2pe/3/9">2 Pd 3:9</a>). O que você pensaria se soubesse que Ele vem hoje à noite? Será que seria exatamente o que sua alma estaria desejando? Há pessoas que pensam que o evangelho pararia de ser pregado se ficássemos esperando o Filho de Deus vindo do céu. Será que ao aceitar o testemunho de Deus de que viria o dilúvio, Noé parou de pregar? Longe disso, foi exatamente o que estimulou a sua pregação. Que o Senhor possa fazer com que estejamos prontos, para que, quando Ele vier, nos encontre esperando por Ele.</p>
+<p>J.N.Darby</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="os_que_em_jesus_dormem.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="os_que_em_jesus_dormem.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O Servo Vigilante – ou A vinda do Senhor - O Servo Vigilante – ou A vinda do Senhor</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="o_servo_vigilante__ou_a_vinda_do_senhor.html" class="active"><strong aria-hidden="true">1.</strong> O Servo Vigilante – ou A vinda do Senhor</a></li><li><a href="os_que_em_jesus_dormem.html"><strong aria-hidden="true">2.</strong> Os que em Jesus dormem</a></li><li><a href="ai_vem_o_esposo.html"><strong aria-hidden="true">3.</strong> &quot;Aí vem o Esposo!&quot;</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Servo Vigilante – ou A vinda do Senhor</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="o_servo_vigilante__ou_a_vinda_do_senhor.html#o-servo-vigilante--ou-a-vinda-do-senhor" id="o-servo-vigilante--ou-a-vinda-do-senhor"><h2>O Servo Vigilante – ou A vinda do Senhor</h2></a>
+<p>O que caracteriza a vida cristã</p>
+<p>Proponho tratar de um assunto que sinto ser de profunda importância - a vinda do Senhor Jesus; e abordá-lo, não para prová-lo como doutrina, mas para demonstrar que, no princípio, esta era uma parte substancial do próprio cristianismo. A base está na primeira vinda de Cristo e em Sua morte expiatória; mas quando olhamos além do fundamento, então vemos que a vinda do Senhor Jesus não se trata meramente uma partícula de conhecimento, mas de uma parte substancial da fé da Igreja de Deus, da qual depende o estado moral dos santos, e até mesmo o da própria igreja. Ao ler as passagens que vou citar, você verá que elas se conectam e se mesclam com cada parte do cristianismo, caracterizando-o e conectando-o com cada pensamento e sentimento do cristão. Uma pessoa não poderia ler as Escrituras com uma mente sem preconceitos e ainda não enxergar isto.</p>
+<p>Tome, por exemplo, a conversão. As pessoas perguntam: O que tem isto a ver com a vinda do Senhor? Faz parte daquilo para que eles foram convertidos, ou seja, &quot;para... esperar dos céus a Seu Filho&quot;. Essa espera pelo Filho de Deus vindo do céu caracterizava a conversão dos tessalonicenses; eles foram convertidos para servir a Deus, certamente, mas também &quot;para esperar dos céus a Seu Filho&quot; (<a href="http://bibliaonline.com.br/acf/1ts/1/10">1 Tessalonicenses 1:10</a>).</p>
+<p>A posição do cristão quanto à vinda do Senhor é que ele está esperando por Cristo vindo conforme a Sua promessa. As pessoas dizem que Ele vem por ocasião da morte. Eu pergunto: Acaso você considera a morte igual a Cristo? Se fosse este o caso, Ele já teria vindo centenas de vezes. No entanto lemos acerca de apenas duas vindas (<a href="http://bibliaonline.com.br/acf/hb/9/28">Hebreus 9:28</a>).</p>
+<p>Posso dizer a você o que acontecerá quando Cristo vier? A ressurreição! Isto é algo bem diferente da morte. A vinda de Cristo deverá ser, para o santo, o fim da morte - exatamente o oposto da morte. Creio que ninguém poderá encontrar, nas Escrituras, um mínimo sinal da idéia de que Cristo venha na morte. Ao invés da vinda de Cristo ser morte, é ressurreição; na morte somos nós que vamos para Cristo, não é Cristo Quem vem a nós. É algo bendito &quot;partir, e estar com Cristo&quot; (<a href="http://bibliaonline.com.br/acf/fp/1/23">Fp 1:23</a>); &quot;deixar este corpo, para habitar com o Senhor&quot; (<a href="http://bibliaonline.com.br/acf/2co/5/8">2 Coríntios 5:8</a>). Todavia devo demonstrar que esta idéia da vinda de Cristo se mescla com a vida cristã e caracteriza cada parte dela. Primeiro a vemos na conversão, como já foi dito. Eles haviam sido convertidos para esperar pelo Filho de Deus vindo do céu. Vou abrir em outras passagens que dá respaldo a isto, mas devo primeiro seguir pelo livro de Tessalonicenses. No segundo capítulo da primeira epístola, no final, o apóstolo fala do que se tratava o seu conforto e gozo no serviço. Ele havia sido privado do convívio com os tessalonicenses por causa da perseguição, e ao escrever-lhes fala de seu conforto em pensar neles. Mas como o faz? &quot;Porque, qual é a nossa esperança, ou gozo, ou coroa de glória? Porventura não o sois vós também diante de nosso Senhor Jesus Cristo em Sua vinda?&quot; (<a href="http://bibliaonline.com.br/acf/1ts/2/19">1 Tessalonicenses 2:19</a>). Ele não pode falar-lhes de seu gozo e interesse neles sem mencionar a vinda do Senhor Jesus. E mais uma vez, no tocante à santidade, &quot;E o Senhor vos aumente, e faça abundar em amor uns para com os outros, e para com todos, como também abundamos para convosco; para confortar os vossos corações, para que sejais irrepreensíveis em santidade diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo com todos os Seus santos&quot; (<a href="http://bibliaonline.com.br/acf/1ts/3/12-13">1 Tessalonicenses 3:12-13</a>).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="os_que_em_jesus_dormem.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="os_que_em_jesus_dormem.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

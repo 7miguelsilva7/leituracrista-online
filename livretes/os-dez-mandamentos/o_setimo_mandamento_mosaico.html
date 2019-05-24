@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O Sétimo Mandamento Mosaico - Os Dez Mandamentos</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="os_dez_mandamentos.html"><strong aria-hidden="true">1.</strong> OS DEZ MANDAMENTOS</a></li><li><a href="o_primeiro_mandamento_mosaico.html"><strong aria-hidden="true">2.</strong> O Primeiro Mandamento Mosaico</a></li><li><a href="o_segundo_mandamento_mosaico.html"><strong aria-hidden="true">3.</strong> O Segundo Mandamento Mosaico</a></li><li><a href="o_terceiro_mandamento_mosaico.html"><strong aria-hidden="true">4.</strong> O Terceiro Mandamento Mosaico</a></li><li><a href="o_quarto_mandamento_mosaico.html"><strong aria-hidden="true">5.</strong> O Quarto Mandamento Mosaico</a></li><li><a href="o_quinto_mandamento_mosaico.html"><strong aria-hidden="true">6.</strong> O Quinto Mandamento Mosaico</a></li><li><a href="o_sexto_mandamento_mosaico.html"><strong aria-hidden="true">7.</strong> O Sexto Mandamento Mosaico</a></li><li><a href="o_setimo_mandamento_mosaico.html" class="active"><strong aria-hidden="true">8.</strong> O Sétimo Mandamento Mosaico</a></li><li><a href="o_oitavo_mandamento_mosaico.html"><strong aria-hidden="true">9.</strong> O Oitavo Mandamento Mosaico</a></li><li><a href="o_nono_mandamento_mosaico.html"><strong aria-hidden="true">10.</strong> O Nono Mandamento Mosaico</a></li><li><a href="o_decimo_mandamento_mosaico.html"><strong aria-hidden="true">11.</strong> O Décimo Mandamento Mosaico</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Os Dez Mandamentos</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="o_setimo_mandamento_mosaico.html#o-sétimo-mandamento-mosaico" id="o-sétimo-mandamento-mosaico"><h2>O Sétimo Mandamento Mosaico</h2></a>
+<p>O próximo na seqüência é o bem conhecido sétimo mandamento: &quot;Não adulterarás&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/14">Êxodo 20:14</a>). Lemos em <a href="http://bibliaonline.com.br/acf/hb/13/4">Hebreus 13:4</a>: &quot;Venerado seja entre todos o matrimônio e o leito sem mácula; porém aos que se dão à prostituição e aos adúlteros Deus os julgará&quot;. Logo em <a href="http://bibliaonline.com.br/acf/1co/6/9-11">1 Coríntios 6:9-11</a>: &quot;Não sabeis que os injustos não hão de herdar o reino de Deus? Não erreis: nem os devassos, nem os idólatras, nem os adúlteros, nem os efeminados, nem os sodomitas, nem os ladrões, nem os avarentos, nem os bêbedos, nem os maldizentes, nem os roubadores herdarão o reino de Deus. E é o que alguns têm sido, mas haveis sido lavados, mas haveis sido santificados, mas haveis sido justificados em nome do Senhor Jesus e pelo Espírito do nosso Deus&quot;. Antes de sua conversão a Deus, alguns daqueles santos de Corinto, aos quais Paulo estava escrevendo, haviam violado o divino código moral. Mas não é maravilhoso que Deus tenha encontrado, por meio do sacrifício de Seu amado Filho no Calvário, um modo de limpar o mais vil de toda mancha do pecado, e fazer dele um filho de Deus? Somos santificados - separados para Deus - justificados, considerados como se nunca houvéssemos sido culpados. Eu gosto de recordar a definição dada por uma menina para o termo &quot;justificado&quot;. Quando sua professora lhe perguntou qual o significado da palavra, ela respondeu usando algumas partes da própria palavra: &quot;Significa que sou JUSTa como se nunca tivesse peCADO.&quot; Ela estava certa. É assim que Deus nos vê. Repare que no <a href="http://bibliaonline.com.br/acf/1co/6/11">versículo 11</a> toda a Trindade Se ocupa nesta questão: &quot;mas haveis sido justificados em nome do Senhor Jesus e pelo Espírito do nosso Deus&quot;. Não obstante, jamais consideremos levianamente a gravidade da imoralidade diante dos olhos de Deus. Ele não mudou nem um pouco Sua atitude desde a Sua solene declaração feita no Sinai. Escutemos hoje Sua admoestação: &quot;aos que se dão à prostituição e aos adúlteros Deus os julgará&quot;.</p>
+<p>Estamos vivendo os últimos dias, muito próximo do fim da presente dispensação da graça de Deus. Existe um abandono universal das normas de moralidade. Alguns de nós que somos mais velhos temos presenciado uma mudança tremenda durante nossa vida. Talvez alguns daqueles que são mais jovens abriguem a idéia de que a atual falta de moralidade sempre existiu tal como é no dia de hoje. Não é assim. Não digo que esses pecados não se cometiam; sim, foram cometidos, mas antigamente havia uma medida de censura pública contra os tais, e aqueles que os cometiam eram considerados como pessoas que caíam em desgraça. Mas agora, se aceitarmos &quot;Hollywood&quot; como norma, tais violações do código moral são quase consideradas como insígnias de honra. Esses heróis e heroínas de Hollywood não perdem sua aceitação nos círculos sociais por causa de sua conduta. Mas, queridos jovens, lembrem-se enquanto vocês viverem, de que as normas de Deus nestes assuntos não se modificam nem um pouco sequer. Ele é o Deus três vezes Santo, que não deixa o pecado impune.</p>
+<p>Irmãos, que não baixemos os marcos delimitadores nestes assuntos. Mantenhamos as normas exatamente como Deus as estabeleceu e nunca erraremos. Quanto mais tempo permanecermos neste mundo, mais difícil será para nos mantermos fiéis aos desígnios de Deus neste assunto tão solene. Deus continua a falar com toda a autoridade e dignidade de Quem conhece o fim desde o princípio. Sua admoestação é: &quot;Foge destas coisas&quot; (<a href="http://bibliaonline.com.br/acf/1tm/6/11">1 Timóteo 6:11</a>).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="o_sexto_mandamento_mosaico.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="o_oitavo_mandamento_mosaico.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="o_sexto_mandamento_mosaico.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="o_oitavo_mandamento_mosaico.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

@@ -1,0 +1,26 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+capitulo_primeiro_-_a_fe,_o_amor_e_a_esperanca.html
+capitulo_quarto_-_o_mesmo_senhor.html
+capitulo_quinto_-_conservados_irrepreensiveis.html
+capitulo_segundo_-_as_dificuldades.html
+capitulo_terceiro_-_com_todos_os_seus_santos.html
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+o_mesmo_senhor_descera_do_ceu.html
+O MESMO SENHOR DESCERA DO CEU J. N. DARBY J. N. DARBY.odt
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css

@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Os Dez Mandamentos</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="os_dez_mandamentos.html"><strong aria-hidden="true">1.</strong> OS DEZ MANDAMENTOS</a></li><li><a href="o_primeiro_mandamento_mosaico.html"><strong aria-hidden="true">2.</strong> O Primeiro Mandamento Mosaico</a></li><li><a href="o_segundo_mandamento_mosaico.html"><strong aria-hidden="true">3.</strong> O Segundo Mandamento Mosaico</a></li><li><a href="o_terceiro_mandamento_mosaico.html"><strong aria-hidden="true">4.</strong> O Terceiro Mandamento Mosaico</a></li><li><a href="o_quarto_mandamento_mosaico.html"><strong aria-hidden="true">5.</strong> O Quarto Mandamento Mosaico</a></li><li><a href="o_quinto_mandamento_mosaico.html"><strong aria-hidden="true">6.</strong> O Quinto Mandamento Mosaico</a></li><li><a href="o_sexto_mandamento_mosaico.html"><strong aria-hidden="true">7.</strong> O Sexto Mandamento Mosaico</a></li><li><a href="o_setimo_mandamento_mosaico.html"><strong aria-hidden="true">8.</strong> O Sétimo Mandamento Mosaico</a></li><li><a href="o_oitavo_mandamento_mosaico.html"><strong aria-hidden="true">9.</strong> O Oitavo Mandamento Mosaico</a></li><li><a href="o_nono_mandamento_mosaico.html"><strong aria-hidden="true">10.</strong> O Nono Mandamento Mosaico</a></li><li><a href="o_decimo_mandamento_mosaico.html"><strong aria-hidden="true">11.</strong> O Décimo Mandamento Mosaico</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Os Dez Mandamentos</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#os-dez-mandamentos" id="os-dez-mandamentos"><h2>OS DEZ MANDAMENTOS</h2></a>
+<p>Seu conteúdo moral e sua aplicação para o cristão</p>
+<p>Tenho o propósito de considerar aqui o assunto dos dez mandamentos e sua aplicação moral para o cristão. Mas antes vamos ler algumas passagens das Escrituras: &quot;Sabendo que o homem não é justificado pelas obras da lei, mas pela fé em Jesus Cristo... Porque eu pela lei estou morto para a lei, para viver para Deus... Todos aqueles pois que são das obras da lei estão debaixo da maldição; porque escrito está: Maldito todo aquele que não permanecer em todas as coisas que estão escritas no livro da lei, para fazê-las. E é evidente que pela lei ninguém será justificado diante de Deus, porque o justo vivera da fé. Ora a lei não é da fé; mas o homem, que fizer estas coisas, por elas viverá... Porque o pecado não terá domínio sobre vós, pois não estais debaixo da lei, mas debaixo da graça.&quot; (<a href="http://bibliaonline.com.br/acf/gl/2/16,19">Gálatas 2:16,19</a>; <a href="http://bibliaonline.com.br/acf/gl/3/10-12">3:10-12</a>; <a href="http://bibliaonline.com.br/acf/rm/6/14">Romanos 6:14</a>).</p>
+<p>A razão pela qual lemos estes versículos é a seguinte: ao considerar o assunto dos dez mandamentos, é possível que alguns pensem que vou aplicá-los de uma maneira legalista como se nós, nesta dispensação da graça de Deus, estivéssemos sob a lei. Não! Nós estamos sob a graça; a pura graça soberana; não há nada legalista nela.</p>
+<p>Lemos no [capítulo 20] (http://bibliaonline.com.br/acf/ex/20) de Êxodo a augusta lei de Deus, as &quot;dez palavras&quot; (<a href="http://bibliaonline.com.br/acf/ex/34/28">Êxodo 34:28</a> - Almeida Versão Atualizada) dadas aos filhos de Israel, por meio de Moisés, no monte Sinai. Nosso propósito é identificar a que correspondem essas &quot;dez palavras&quot; no Novo Testamento. Dos dez mandamentos, oito são negativos e dois positivos; nove de caráter moral e um cerimonial. A natureza de Deus é imutável e, como conseqüência, vemos que os nove mandamentos que são essencialmente de caráter moral têm seu correspondente no cristianismo. Vamos procurar identificá-los.</p>
+<a class="header" href="print.html#o-primeiro-mandamento-mosaico" id="o-primeiro-mandamento-mosaico"><h2>O Primeiro Mandamento Mosaico</h2></a>
+<p>O primeiro mandamento se encontra em <a href="http://bibliaonline.com.br/acf/ex/20/3">Êxodo 20:3</a>: &quot;Não terás outros deuses diante de Mim&quot;. Este encabeça a lista e é fundamental. Era um elemento essencial da dispensação judaica, e a revelação cristã conserva esta verdade inviolada. Lemos em <a href="http://bibliaonline.com.br/acf/1co/8">1 Coríntios 8</a>, no final do <a href="http://bibliaonline.com.br/acf/1co/8/4">versículo 4</a>, que &quot;não há outro Deus, senão um só&quot;. Quão clara e inequívoca é esta afirmação! Vamos ler o <a href="http://bibliaonline.com.br/acf/1co/8/6">versículo 6</a>: &quot;Todavia para nós há um só Deus, o Pai, de Quem é tudo e para Quem nós vivemos; e um só Senhor, Jesus Cristo, pelo Qual são todas as coisas, e nós por Ele.&quot; Quando um &quot;testemunha de Jeová&quot; vier à sua porta para desafiá-lo quanto à fé que você professa de Cristo como sendo Deus, leia para ele <a href="http://bibliaonline.com.br/acf/1co/8/4-6">1 Coríntios 8:4-6</a>. Confessamos a um só Deus, mas aprouve Àquele um só Deus revelar-Se em três Pessoas. Filipe rogou ao Senhor Jesus: &quot;Senhor, mostra-nos o Pai&quot;. Quão maravilhosa foi a resposta do nosso Senhor! &quot;Quem Me vê a Mim vê o Pai... estou no Pai, e o Pai em Mim&quot; (<a href="http://bibliaonline.com.br/acf/jo/14/8-11">João 14:8-11</a>).</p>
+<p>Vamos ler agora a primeira epístola de <a href="http://bibliaonline.com.br/acf/jo/5/20">João, capítulo 5, versículo 20</a>. &quot;Sabemos que já o Filho de Deus é vindo, e nos deu entendimento para conhecermos o que é verdadeiro; e no que é verdadeiro estamos, isto é, em Seu Filho Jesus Cristo. Este é o verdadeiro Deus e a vida eterna&quot;. Oh! quão preciso! Estas declarações são tão resplandecentes como um cristal; JESUS É DEUS. Sim, no cristianismo conhecemos a um só Deus. Às vezes Ele é manifestado como o Pai, às vezes como o Filho, e às vezes como o Espírito (compare com <a href="http://bibliaonline.com.br/acf/atos/5/3-4">Atos 5:3-4</a>). Assim, no cristianismo, nos achamos de pleno acordo com o primeiro mandamento de Moisés: &quot;Não terás outros deuses diante de Mim&quot;.</p>
+<a class="header" href="print.html#o-segundo-mandamento-mosaico" id="o-segundo-mandamento-mosaico"><h2>O Segundo Mandamento Mosaico</h2></a>
+<p>Voltando agora a <a href="http://bibliaonline.com.br/acf/ex/20">Êxodo 20</a>, lemos o segundo mandamento: &quot;Não farás para ti imagem de escultura, nem alguma semelhança do que há em cima nos céus, nem em baixo na Terra, nem nas águas debaixo da Terra. Não te encurvarás a elas nem as servirás: porque Eu, o Senhor teu Deus, sou Deus zeloso, que visito a maldade dos pais nos filhos até a terceira e quarta geração daqueles que Me aborrecem. E faço misericórdia em milhares aos que Me amam e guardam os Meus mandamentos&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/4-6">Êxodo 20:4-6</a>). &quot;Não farás para ti imagem&quot;. Vamos agora ler <a href="http://bibliaonline.com.br/acf/1co/10/14">1 Coríntios 10:14</a>: &quot;portanto, meus amados, fugi da idolatria&quot;. Também o <a href="http://bibliaonline.com.br/acf/1co/10/7">versículo 7</a>: &quot;Não vos façais pois idólatras, como alguns deles, conforme está escrito: O povo assentou-se a comer e a beber, e levantou-se para folgar&quot;.</p>
+<p>Estamos vivendo numa época que se prepara para a chegada &quot;do homem do pecado&quot; (<a href="http://bibliaonline.com.br/acf/2ts/2/3">2 Tessalonicenses 2:3</a>). O mundo está prestes a mergulhar na mais temível idolatria, como jamais se conheceu. Os próprios judeus se entregarão a uma idolatria sete vezes pior do que a que antes cometiam (<a href="http://bibliaonline.com.br/acf/mt/12/43-45">Mateus 12:43-45</a>). As demais nações do mundo seguirão o mesmo caminho e esta tendência já se vê hoje em dia. Você já notou o rápido aumento na comercialização de figuras e estatuetas nas mais diferentes lojas? Entre elas você encontrará réplicas exatas de ídolos pagãos. Percebe-se que tudo isso está promovendo a preparação de condições ideais para a adoração de ídolos e a da imagem da besta (<a href="http://bibliaonline.com.br/acf/ap/13">Apocalipse 13</a>). Quando o homem não se importa com Deus (<a href="http://bibliaonline.com.br/acf/rm/1/28">Romanos 1:28</a>), com o verdadeiro conhecimento de Deus, como é revelado na Sua Palavra, logo cai na idolatria. Esta tem sido a história do homem. Por detrás do aparentemente inocente ídolo de barro ou madeira estão a presença e o sinistro poder de um demônio. Trata-se, verdadeiramente, de adoração a demônios. Compare <a href="http://bibliaonline.com.br/acf/1co/10/20">1 Coríntios 10:20</a> e veja também <a href="http://bibliaonline.com.br/acf/ap/9/20">Apocalipse 9:20</a>. Encontramos, assim, no <a href="http://bibliaonline.com.br/acf/1co/10">capítulo 10 de 1</a><a href="http://bibliaonline.com.br/acf/1co/10">Coríntios</a> uma solene admoestação para que nós, cristãos, fujamos de qualquer coisa que possa ter a aparência de idolatria. Ajoelhar-se diante de imagens não tem nenhum lugar no cristianismo. Isto que afirmamos está de pleno acordo com o segundo mandamento.</p>
+<a class="header" href="print.html#o-terceiro-mandamento-mosaico" id="o-terceiro-mandamento-mosaico"><h2>O Terceiro Mandamento Mosaico</h2></a>
+<p>Voltemos a ler <a href="http://bibliaonline.com.br/acf/ex/20/7">Êxodo, capítulo 20, e desta vez o versículo 7</a>: &quot;Não tomarás o Nome do Senhor teu Deus em vão: porque o Senhor não terá por inocente o que tomar o Seu nome em vão&quot;. Vamos ler <a href="../../../../../../../http://bibliaonline.com.br/acf/tg/5/12">Tiago 5:12</a>: &quot;Mas, sobretudo, meus irmãos, não jureis, nem pelo céu, nem pela Terra nem façais qualquer outro juramento; mas que a vossa palavra seja sim, sim, e não, não; para que não caiais em condenação&quot;. Quão plenamente isto comprova o terceiro mandamento mosaico! Não creio que entre meus leitores esteja alguém que tome deliberadamente o nome do Senhor em vão; mas notemos que Tiago trata deste assunto como mais do que uma mera proibição, exortando-nos a que &quot;a vossa palavra seja sim, sim, e não, não; para que não caiais em condenação&quot;. Com isto diante de nós, qual de nós pode dar-se por inocente? Para poder alcançar plenamente a vitória no assunto de obediência à Palavra de Deus, devemos fazer da oração de Davi o nosso rogo diário: &quot;Sejam agradáveis as palavras da minha boca e a meditação de meu coração perante a Tua face, Senhor. Rocha minha e Libertador meu!&quot; (<a href="http://bibliaonline.com.br/acf/sl/19/14">Salmos 19:14</a>).</p>
+<p>Penso especialmente naqueles que são jovens e na formação de seu vocabulário. Convém, enquanto jovem, eliminar totalmente do vocabulário toda palavra agressiva, rude ou profana. Nunca permita que tais palavras sejam ouvidas em sua boca. Devemos conservar o nosso falar limpo e puro, no lar, na escola, no trabalho, para que o mesmo possa ser aprovado perante o tribunal de Cristo.</p>
+<a class="header" href="print.html#o-quarto-mandamento-mosaico" id="o-quarto-mandamento-mosaico"><h2>O Quarto Mandamento Mosaico</h2></a>
+<p>&quot;Lembra-te do dia do sábado, para o santificar&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/8">Êxodo 20:8</a>). Tenho que confessar que não pude encontrar coisa alguma que pudesse ser o correspondente a este mandamento no cristianismo. Não existe. Lembremo-nos de que a palavra &quot;shabbat&quot;, que significa &quot;repouso&quot;, é usada pela primeira vez em ex 16:23, com relação ao recolhimento do maná pelos filhos de Israel. Não era para ser recolhido no sábado, o sétimo dia. Este dia foi designado como um dia de descanso. Mas quando entramos na dispensação cristã, ou economia cristã, se preferir, não encontramos nenhuma instrução para que se observe tal dia. Há apenas uma menção ao &quot;shabbat&quot; em todo o conjunto de epístolas do Novo Testamento: &quot;Portanto ninguém vos julgue pelo comer, ou pelo beber ou por causa dos dias de festa, ou da lua nova, ou dos sábados&quot; (<a href="http://bibliaonline.com.br/acf/cl/2/16">Colossenses 2:16</a>). Mas preste atenção para a declaração qualificativa do <a href="http://bibliaonline.com.br/acf/cl/2/17">versículo 17</a>: &quot;Que são sombras das coisas futuras, mas o corpo é de Cristo&quot;. Evidentemente, a única razão de se ter mencionado o sábado foi para mostrar que ele não faz parte da revelação cristã. Pelo contrário, mostra que foi somente uma sombra do que havia de vir. Porém quanto ao nosso dia de repouso, sabemos que <a href="http://bibliaonline.com.br/acf/hb/4/9">Hebreus 4:9</a> diz: &quot;Portanto resta ainda um repouso para o povo de Deus&quot;. Não podemos dizer que o &quot;shabbat&quot; (o descanso) foi trocado pelo domingo. O &quot;shabbat&quot; sempre foi o sétimo dia da semana; o domingo é o primeiro dia da semana e, assim sendo, nunca poderia ser o &quot;shabbat&quot;. Nós cristãos esperamos nosso dia de repouso que será quando o Senhor nos levar à casa de Seu Pai, para que descansemos em Seu amor. O descanso está no final de uma jornada.</p>
+<p>&quot;Mas&quot; - perguntará alguém - &quot;não seria o domingo, o primeiro dia da semana, o nosso repouso?&quot;. Deveremos responder - &quot;Não!&quot;. Então qual é o lugar que o domingo deve ocupar em nossas vidas? Porventura a própria expressão, &quot;o dia do Senhor&quot;, não responde a esta pergunta? Este dia pertence ao Senhor e devemos empregá-lo para Ele. É o dia em que nos reunimos para partir o pão. O termo &quot;o dia do Senhor&quot; aparece no original apenas uma vez na Bíblia, em <a href="http://bibliaonline.com.br/acf/ap/1/10">Apocalipse 1:10</a>, e pode ser traduzido do grego por &quot;dia dominical&quot;. Poderíamos traduzir o versículo da seguinte forma: &quot;Eu fui arrebatado em espírito no dia dominical&quot;. Encontramos também a mesma palavra grega no texto relativo à ceia do Senhor, ou, como deveria ser chamada, a ceia dominical. Acaso não é significativo que o único uso desta palavra grega &quot;dominical&quot; no Novo Testamento esteja conectado à ceia e ao dia? Portanto celebra-se a ceia do Senhor no dia do Senhor.</p>
+<p>O dia do Senhor se distingue definitivamente dos demais dias por várias passagens bíblicas. Nosso Senhor Jesus ressuscitou de entre os mortos no primeiro dia da semana; Ele apareceu aos Seus discípulos neste dia; tornou a aparecer a eles no segundo dia do Senhor depois de Sua ressurreição. Notamos que o Espírito Santo desceu no dia de Pentecostes, que era também o primeiro dia da semana. Os discípulos se reuniram para partir o pão no primeiro dia da semana. O apóstolo exortou aos coríntios que cada um separasse sua oferta para os santos pobres no primeiro dia da semana (<a href="http://bibliaonline.com.br/acf/1co/16/2">1 Coríntios 16:2</a>). Todas estas passagens demonstram que no cristianismo o primeiro dia da semana remove totalmente o &quot;shabbat&quot; judaico. Quão impróprio seria que a igreja de Deus celebrasse como seu dia aquele durante o qual seu Senhor e Salvador esteve sob o poder da morte e do sepulcro! Mas quão glorioso é nos reunirmos no primeiro dia da semana, o dia de Sua vitória sobre o sepulcro! Quão doce e precioso é dar-Lhe este primeiro dia da semana, o Seu dia!</p>
+<p>Gostaria de dizer algo aos que são jovens. Me entristeço ao ver que muitos estão empregando o dia dominical para as habituais tarefas cotidianas. Talvez você me diga que não pensaria em sair de casa no dia do Senhor para cortar a grama do jardim, ou, talvez, para lavar roupa neste dia. Mas vamos dar uma olhada dentro de casa. Você talvez seja um estudante, e isto é perfeitamente correto e faz parte de sua vida. E espero que esteja indo bem com suas tarefas escolares. Mas - preste atenção - será que suas tarefas escolares são tão importantes ao ponto de impedi-lo de dispor apropriadamente o dia do Senhor a Ele, a Quem o dia pertence? Talvez você responda: - Se eu não estudar no dia do Senhor, não conseguirei tirar a nota que preciso. Talvez não, mas ainda assim, o que é mais importante para você, uma boa nota ou a aprovação do Senhor? Procuremos, pela graça de Deus, dar ao Senhor o Seu dia.</p>
+<p>Talvez algum jovem me pergunte: - Bem, como então hei de empregar o dia do Senhor? Eu sei como alguns de nossos queridos jovens irmãos e irmãs empregam o tempo disponível no dia do Senhor. Aproveitam várias oportunidades para evangelizar, em visitas a hospitais e outras instituições para distribuir folhetos e falar às pessoas individualmente acerca do Senhor ou em pregações ao ar livre. Outros fazem isto em visitas aos doentes e aos encarcerados. Há ainda alguns que dedicam uma parte do dia do Senhor para escrever cartas de encorajamento a seus amigos cristãos, ou talvez a seus parentes e amigos inconversos, enquanto outros se ocupam em empacotar literatura cristã para ser enviada pelo correio àqueles que possam ter suas almas auxiliadas por algum folheto ou livreto. Não; não há nenhum sábado, nenhum dia de repouso para os cristãos, senão um dia em que podemos estar livres para servirmos ao Senhor. Que o Senhor nos dê uma consciência terna, para que esse dia seja verdadeiramente o dia que pertence a Ele.</p>
+<a class="header" href="print.html#o-quinto-mandamento-mosaico" id="o-quinto-mandamento-mosaico"><h2>O Quinto Mandamento Mosaico</h2></a>
+<p>&quot;Honra a teu pai e a tua mãe, para que se prolonguem os teus dias na terra que o Senhor teu Deus te dá&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/12">Êxodo 20:12</a>). Comparando este mandamento com <a href="http://bibliaonline.com.br/acf/ef/6/2-3">Efésios 6:2-3</a>, vemos que ele é citado palavra por palavra. No cristianismo não se espera menos dos filhos do que era exigido pela lei. Quão bendito é vermos os filhos de pais cristãos procurando colocar em prática este pedido da Palavra de Deus, conforme é dado aqui na epístola aos Efésios. Eles jamais terão ocasião de se lamentar por terem procurado dar a seus pais esta posição de respeito. Deus não lhes será devedor pois colherão a Sua benção em suas próprias vidas.</p>
+<a class="header" href="print.html#o-sexto-mandamento-mosaico" id="o-sexto-mandamento-mosaico"><h2>O Sexto Mandamento Mosaico</h2></a>
+<p>&quot;Não matarás&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/13">Êxodo 20:13</a>). Lemos agora em <a href="http://bibliaonline.com.br/acf/1pe/4/15">1 Pedro 4:15</a>: &quot;Que nenhum de vós padeça como homicida&quot;. A norma divina quanto a tirar a vida de outro ser humano não é menos estrita sob a revelação cristã do que o foi sob o judaísmo. Não se pode tolerar o homicídio na dispensação cristã.</p>
+<a class="header" href="print.html#o-sétimo-mandamento-mosaico" id="o-sétimo-mandamento-mosaico"><h2>O Sétimo Mandamento Mosaico</h2></a>
+<p>O próximo na seqüência é o bem conhecido sétimo mandamento: &quot;Não adulterarás&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/14">Êxodo 20:14</a>). Lemos em <a href="http://bibliaonline.com.br/acf/hb/13/4">Hebreus 13:4</a>: &quot;Venerado seja entre todos o matrimônio e o leito sem mácula; porém aos que se dão à prostituição e aos adúlteros Deus os julgará&quot;. Logo em <a href="http://bibliaonline.com.br/acf/1co/6/9-11">1 Coríntios 6:9-11</a>: &quot;Não sabeis que os injustos não hão de herdar o reino de Deus? Não erreis: nem os devassos, nem os idólatras, nem os adúlteros, nem os efeminados, nem os sodomitas, nem os ladrões, nem os avarentos, nem os bêbedos, nem os maldizentes, nem os roubadores herdarão o reino de Deus. E é o que alguns têm sido, mas haveis sido lavados, mas haveis sido santificados, mas haveis sido justificados em nome do Senhor Jesus e pelo Espírito do nosso Deus&quot;. Antes de sua conversão a Deus, alguns daqueles santos de Corinto, aos quais Paulo estava escrevendo, haviam violado o divino código moral. Mas não é maravilhoso que Deus tenha encontrado, por meio do sacrifício de Seu amado Filho no Calvário, um modo de limpar o mais vil de toda mancha do pecado, e fazer dele um filho de Deus? Somos santificados - separados para Deus - justificados, considerados como se nunca houvéssemos sido culpados. Eu gosto de recordar a definição dada por uma menina para o termo &quot;justificado&quot;. Quando sua professora lhe perguntou qual o significado da palavra, ela respondeu usando algumas partes da própria palavra: &quot;Significa que sou JUSTa como se nunca tivesse peCADO.&quot; Ela estava certa. É assim que Deus nos vê. Repare que no <a href="http://bibliaonline.com.br/acf/1co/6/11">versículo 11</a> toda a Trindade Se ocupa nesta questão: &quot;mas haveis sido justificados em nome do Senhor Jesus e pelo Espírito do nosso Deus&quot;. Não obstante, jamais consideremos levianamente a gravidade da imoralidade diante dos olhos de Deus. Ele não mudou nem um pouco Sua atitude desde a Sua solene declaração feita no Sinai. Escutemos hoje Sua admoestação: &quot;aos que se dão à prostituição e aos adúlteros Deus os julgará&quot;.</p>
+<p>Estamos vivendo os últimos dias, muito próximo do fim da presente dispensação da graça de Deus. Existe um abandono universal das normas de moralidade. Alguns de nós que somos mais velhos temos presenciado uma mudança tremenda durante nossa vida. Talvez alguns daqueles que são mais jovens abriguem a idéia de que a atual falta de moralidade sempre existiu tal como é no dia de hoje. Não é assim. Não digo que esses pecados não se cometiam; sim, foram cometidos, mas antigamente havia uma medida de censura pública contra os tais, e aqueles que os cometiam eram considerados como pessoas que caíam em desgraça. Mas agora, se aceitarmos &quot;Hollywood&quot; como norma, tais violações do código moral são quase consideradas como insígnias de honra. Esses heróis e heroínas de Hollywood não perdem sua aceitação nos círculos sociais por causa de sua conduta. Mas, queridos jovens, lembrem-se enquanto vocês viverem, de que as normas de Deus nestes assuntos não se modificam nem um pouco sequer. Ele é o Deus três vezes Santo, que não deixa o pecado impune.</p>
+<p>Irmãos, que não baixemos os marcos delimitadores nestes assuntos. Mantenhamos as normas exatamente como Deus as estabeleceu e nunca erraremos. Quanto mais tempo permanecermos neste mundo, mais difícil será para nos mantermos fiéis aos desígnios de Deus neste assunto tão solene. Deus continua a falar com toda a autoridade e dignidade de Quem conhece o fim desde o princípio. Sua admoestação é: &quot;Foge destas coisas&quot; (<a href="http://bibliaonline.com.br/acf/1tm/6/11">1 Timóteo 6:11</a>).</p>
+<a class="header" href="print.html#o-oitavo-mandamento-mosaico" id="o-oitavo-mandamento-mosaico"><h2>O Oitavo Mandamento Mosaico</h2></a>
+<p>&quot;Não furtarás&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/15">Êxodo 20:15</a>). Vamos ler agora <a href="http://bibliaonline.com.br/acf/ef/4/28">Efésios 4:28</a>: &quot;Aquele que furtava, não furte mais; antes trabalhe, fazendo com as mãos o que é bom, para que tenha que repartir com o que tiver necessidade&quot;. O roubar se condena tanto na dispensação cristã como na judaica. A igreja em Éfeso havia recebido a verdade mais elevada que Deus jamais havia entregado a assembléia alguma. Deve ter havido uma condição tal que os qualificava para que fossem os depositários de tão maravilhosa verdade. Mas ainda assim, após os assentar nos lugares celestiais em Cristo Jesus, Deus tem que descer o teor da epístola ao nível humilhante da carne que havia neles, e passar a falar-lhes a respeito do ato de roubar. Tal é o homem!</p>
+<p>A lei só fez a proibição: &quot;Não furtarás&quot;. Mas o cristianismo sobrepuja a isso e insiste que devemos trabalhar, fazendo o que é bom, para podermos dar ao que padece necessidade. Quão formoso! Porém note-se, é o fazer o que é bom. Ganhar o pão com o trabalho não é por si só fazer o que é bom. Será que você está fazendo o que é bom, isto é, aquilo que tem a aprovação de Deus? Conhecíamos um irmão em Cristo, que agora já está com o Senhor, que antes de se converter era balconista em um bar. Ganhava seu pão cotidiano honestamente com seu trabalho. Mas depois de entregar-se ao Senhor, se deu conta de que não fazia o que era bom; buscou outro emprego e o achou. Não roubemos, é o lado negativo. Para que tenhamos o que dar, façamos o que é bom; este é o lado positivo no cristianismo. Você sabe que a Palavra de Deus fala dos santos pobres e que não há nada que possa ser considerado biblicamente incoerente nestas duas palavras: &quot;santos&quot; e &quot;pobres&quot;. Então tenhamo-las presentes em nossa memória para assim cumprirmos a vontade de Deus.</p>
+<a class="header" href="print.html#o-nono-mandamento-mosaico" id="o-nono-mandamento-mosaico"><h2>O Nono Mandamento Mosaico</h2></a>
+<p>&quot;Não dirás falso testemunho contra o teu próximo&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/16">Êxodo 20:16</a>). O que equivale a isto encontra-se em <a href="http://bibliaonline.com.br/acf/ef/4/25">Efésios 4:25</a>: &quot;Pelo que deixai a mentira, e falai a verdade cada um com o seu próximo&quot;. Notemos também em <a href="http://bibliaonline.com.br/acf/rm/13/9-10">Romanos 13:9-10</a>: &quot;Não darás falso testemunho... O amor não faz mal ao próximo. De sorte que o cumprimento da lei é o amor&quot;. A demanda cristã neste assunto é igual à da lei, porém sobrepuja em muito as exigências da lei, e manifesta o amor ao próximo.</p>
+<a class="header" href="print.html#o-décimo-mandamento-mosaico" id="o-décimo-mandamento-mosaico"><h2>O Décimo Mandamento Mosaico</h2></a>
+<p>&quot;Não cobiçarás a casa do teu próximo, não cobiçarás a mulher do teu próximo, nem o seu servo, nem a sua serva, nem o seu boi, nem o seu jumento, nem cousa alguma do teu próximo&quot; (<a href="http://bibliaonline.com.br/acf/ex/20/17">Êxodo 20:17</a>). Agora vamos ler <a href="http://bibliaonline.com.br/acf/hb/13/5">Hebreus 13:5</a>: &quot;Sejam vossos costumes sem avareza, contentando-vos com o que tendes; porque Ele diz: não te deixarei, nem te desampararei&quot;. O décimo mandamento foi o que matou o apóstolo Paulo. Ele parecia ser capaz de atender aos outros nove, mas reconheceu: &quot;eu não conheci o pecado senão pela lei; porque eu não conheceria a concupiscência, se a lei não dissesse: Não cobiçarás... Mas o pecado, tomando ocasião pelo mandamento, me enganou, e por ele me matou&quot; (<a href="http://bibliaonline.com.br/acf/rm/7/7-11">Romanos 7:7-11</a>). Paulo descobriu o que todos nós descobrimos: que cobiçar é tão natural quanto respirar. Porém a verdade revelada do cristianismo condena a cobiça não menos severamente do que o fez a lei de Moisés.</p>
+<p>Quantas tragédias funestas temos visto entre os santos de Deus, que sacrificaram tudo para prosperar neste mundo! A cobiça é egoísmo. &quot;Contentando-vos com o que tendes&quot;. Isto, obviamente, não quer dizer que se você está vivendo hoje em pobreza terá que viver sempre nela; não, não se trata disso. O significado desta exortação é que deveríamos nos sujeitar às nossas circunstâncias, e estarmos contentes nelas até ao tempo quando aprouver a Deus alterá-las. Em outras palavras, não fique o tempo todo a se lamentar porque as coisas não estão como você gostaria que fossem. Não viva gemendo e se queixando; esteja contente. E se aprouver a Deus melhorar suas circunstâncias atuais, dê-Lhe graças por isso.</p>
+<p>&quot;Mas é grande ganho a piedade com contentamento. Porque nada trouxemos para este mundo, e manifesto é que nada podemos levar dele. Tendo, porém, sustento, e com que nos cobrirmos, estejamos com isto contentes. Mas os que querem ser ricos caem em tentação e em laço, e em muitas concupiscências loucas e nocivas, que submergem os homens na perdição e ruína. Porque o amor do dinheiro é a raiz de toda a espécie de males; e nessa cobiça alguns se desviaram da fé, e se traspassaram a si mesmos com muitas dores. Mas tu, oh homem de Deus, foge destas coisas&quot; (<a href="http://bibliaonline.com.br/acf/1tm/6/6-11">1 Timóteo 6:6-11</a>). Quão verídica é a Palavra de Deus! Não temos visto todas estas afirmações das Escrituras confirmadas na vida dos santos? Às vezes nossos jovens acham que devem buscar alcançar o nível de vida que vêem nos outros. O resultado disso é a cobiça de uma coisa após outra. A verdade é que o fato de vivermos na época mais próspera que o mundo jamais conheceu tem contribuído para acelerar o desejo de querermos sempre mais. Quanto mais tivermos, mais vamos querer ter. Não há limite. Mas, quão diferente é o Espírito de Cristo! O de dar, e não o de conseguir. Assim nos ensinou: &quot;Mais bem-aventurada coisa é dar do que receber&quot; (<a href="http://bibliaonline.com.br/acf/atos/20/35">Atos 20:35</a>). Porém não estou dizendo que devemos dar tudo o que temos. Houve apenas um homem, que é mencionado na Bíblia, a quem o Senhor deu esse conselho - o jovem rico de <a href="http://bibliaonline.com.br/acf/lc/18">Lucas 18</a>. E disse isso para que ele se desse conta do câncer que lhe corroía a própria alma - a cobiça. Não, irmão, as possessões terrenais não constituem o segredo da felicidade. A felicidade é um estado de espírito. É o desfrutar da Pessoa e Obra de Cristo que conserva o coração em descanso e paz. Tenho encontrado pessoas, santos de Deus, que nada possuem das coisas deste mundo, e ainda assim irradiam felicidade. Eles têm Cristo.</p>
+<p>Em resumo, no cristianismo não estamos sob a lei, porém sob a graça. Não estamos sob a letra dos dez mandamentos. Estamos sob o seu equivalente moral ensinado nas epístolas, exceto no caso do único mandamento que era cerimonial, ou seja, o shabbat. Não existe nada que tenha o seu equivalente no cristianismo. Os outros nove mandamentos - quanto ao seu conteúdo moral - nós os temos, porém não da forma de &quot;fareis&quot; e &quot;não fareis&quot;, porém como a expressão da nova natureza que temos, como nascidos de Deus. Jamais nos lamentaremos se assim os respeitarmos. Será para nosso bem agora e por toda a eternidade. A justiça da lei será cumprida em nós (<a href="http://bibliaonline.com.br/acf/rm/8/4">Romanos 8:4</a>). Assim o fruto do Espírito será produzido em amor para com Deus e para com todos que são nascidos de Deus. &quot;O amor não faz mal ao próximo. De sorte que o cumprimento da lei é o amor&quot; (<a href="http://bibliaonline.com.br/acf/rm/13/10">Romanos 13:10</a>).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>
