@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>PRIMEIRO CAPÍTULO - O Livro de Ester</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="livro_de_ester.html"><strong aria-hidden="true">1.</strong> LIVRO DE ESTER</a></li><li><a href="primeiro_capitulo.html" class="active"><strong aria-hidden="true">2.</strong> PRIMEIRO CAPÍTULO</a></li><li><a href="segundo_capitulo.html"><strong aria-hidden="true">3.</strong> SEGUNDO CAPÍTULO</a></li><li><a href="terceiro_capitulo.html"><strong aria-hidden="true">4.</strong> TERCEIRO CAPÍTULO</a></li><li><a href="quarto_capitulo.html"><strong aria-hidden="true">5.</strong> QUARTO CAPÍTULO</a></li><li><a href="quinto_capitulo.html"><strong aria-hidden="true">6.</strong> QUINTO CAPÍTULO</a></li><li><a href="sexto_capitulo.html"><strong aria-hidden="true">7.</strong> SEXTO CAPÍTULO</a></li><li><a href="setimo_capitulo.html"><strong aria-hidden="true">8.</strong> SÉTIMO CAPÍTULO</a></li><li><a href="oitavo_capitulo.html"><strong aria-hidden="true">9.</strong> OITAVO CAPÍTULO</a></li><li><a href="nono_capitulo.html"><strong aria-hidden="true">10.</strong> NONO CAPÍTULO</a></li><li><a href="decimo_capitulo.html"><strong aria-hidden="true">11.</strong> DÉCIMO CAPÍTULO</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Livro de Ester</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="primeiro_capitulo.html#primeiro-capÍtulo" id="primeiro-capÍtulo"><h2>PRIMEIRO CAPÍTULO</h2></a>
+<p><a href="http://bibliaonline.com.br/acf/et/1">Ester 1</a></p>
+<p>Mergulhamos, de relance, em uma extraordinária festa promovida pelo rei Assuero, o qual, eu presumo, seja aquele que é conhecido na história secular como Xerxes. Não é assunto de grande importância se foi Xerxes ou Artaxerxes, ou mesmo algum outro que tenha sido sugerido como a solução para esta questão. Devemos nos lembrar que o título de Assuero era um título genérico, assim como era Faraó no Egito, e Abimeleque entre os Filisteus; isto é, havia muitos Faraós e muitos Abimeleques. Assim também entre os persas houve muitos que levaram o nome de Assuero. De qual Assuero se trata é uma dúvida, mas trata-se de assunto sem importância; se fosse importante, Deus no-lo teria dito. No entanto, eu presumo que era realmente Xerxes, em parte por causa do caráter do homem — um homem de pródigos recursos, ilimitada riqueza, imensa luxúria e vaidade — um homem, também, da mais extrema arbitrariedade e caprichos de caráter.</p>
+<p>Iremos ver isto em sua conduta para com sua esposa e também para com o povo judeu. Veremos, igualmente, a história de uma extraordinária faceta do reino deste caprichoso monarca; pois se houve um único rei persa do qual se possa dizer que tratou com dureza o povo judeu, esse rei foi Xerxes. Dario foi um grande admirador de Ciro e, consequentemente, um grande amigo dos judeus. Xerxes não era amigo de ninguém além de si mesmo. Ele era simplesmente um homem que viveu para agradar a si próprio — para gratificar os seus desejos e paixões em conformidade com os abundantes meios que a providência de Deus colocou em suas mãos, mas que ele desperdiçou em sua própria luxúria, como, oh!, faz a maioria dos homens.</p>
+<p>Bem, ele nos é mostrado aqui naquela época do império persa quando este era constituído, não de 120 províncias apenas, como era o caso quando Dario, o Medo, e Ciro, o Persa, reinaram. Encontramos, no livro de Daniel, que havia sete províncias que foram mais tardes anexadas por meio de conquistas. Xerxes reinou em uma época, portanto, quando o império persa estava no auge de sua glória e de seus recursos, e ele tinha toda a pompa e esplendor do império ao redor de si — todos os príncipes e sátrapas de seu vasto império.</p>
+<p>É sob tais circunstâncias que ele chama por Vasti, a qual se recusa a vir. Isso foi uma provocação para aquele monarca arbitrário e cheio de caprichos. Vasti havia desobedecido ao rei. Ela se recusou, fazendo jus ao desejo de recato que caracterizava as mulheres persas. Ela se recusou a cumprir os desejos do rei. Ele desejava apresentar sua formosura a todo o mundo e ela se recusou. Como consequência o rei buscou aconselhamento com seus nobres, e um deles arriscou-se a dar um conselho de sérias consequências, a saber, a demissão de Vasti. Este é, na verdade, o primeiro grande passo na providência de Deus que é colocado diante de nós neste livro, e dele decorrem todos os extraordinários desdobramentos. Isto, por si só, já é de grande interesse, mas há ainda mais.</p>
+<p>O livro não é apenas um livro da providência — da secreta providência de Deus — quando Ele não podia associar o Seu nome em prol de Seu povo — dos judeus em sua condição pobre e dispersa no meio dos gentios; mas, indo mais além, trata-se de um tipo, ou figura, dos grandes Atos de Deus que ainda estão para acontecer, pois qual é o assunto principal com que o livro é aberto? Este: a eminente esposa gentia do grande rei é dispensada, e uma judia ocupa o seu lugar. Não posso duvidar de que trata-se do que irá acontecer após o gentio haver demonstrado ser desobediente, e ter falhado em exibir a beleza que deveria ser o testemunho de Deus diante do mundo. Em resumo, é o que está acontecendo agora, isto é, nesta época atual, quando é o gentio que ocupa, sobre a terra, uma certa posição diante de Deus.</p>
+<p>Como se sabe, o judeu não é agora o testemunho de Deus, e sim o gentio. Mas o gentio falhou completamente. De acordo com a linguagem usada em <a href="http://bibliaonline.com.br/acf/rm/11">Romanos 11</a>, os ramos da oliveira selvagem — o gentio — serão quebrados, e o judeu será novamente enxertado nela. Bem, Vasti é a esposa gentia que é colocada de lado por sua desobediência e por haver falhado em exibir sua beleza diante do mundo. E era isto que a cristandade deveria ter feito. O gentio, volto a dizer, será quebrado e dispensado, e o judeu será trazido à cena. Isto é representado pelo chamado de Ester. Ela torna-se o objeto das afeições do grande rei, e Vasti é descartada para nunca mais ser restaurada. Mas eu faço este comentário meramente para mostrar a conexão que tem este livro, na forma de tipo ou figura, com o grande curso dos conselhos de Deus nas Escrituras.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="livro_de_ester.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="segundo_capitulo.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="livro_de_ester.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="segundo_capitulo.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

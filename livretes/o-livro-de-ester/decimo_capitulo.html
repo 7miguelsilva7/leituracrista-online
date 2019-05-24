@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>DÉCIMO CAPÍTULO - O Livro de Ester</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="livro_de_ester.html"><strong aria-hidden="true">1.</strong> LIVRO DE ESTER</a></li><li><a href="primeiro_capitulo.html"><strong aria-hidden="true">2.</strong> PRIMEIRO CAPÍTULO</a></li><li><a href="segundo_capitulo.html"><strong aria-hidden="true">3.</strong> SEGUNDO CAPÍTULO</a></li><li><a href="terceiro_capitulo.html"><strong aria-hidden="true">4.</strong> TERCEIRO CAPÍTULO</a></li><li><a href="quarto_capitulo.html"><strong aria-hidden="true">5.</strong> QUARTO CAPÍTULO</a></li><li><a href="quinto_capitulo.html"><strong aria-hidden="true">6.</strong> QUINTO CAPÍTULO</a></li><li><a href="sexto_capitulo.html"><strong aria-hidden="true">7.</strong> SEXTO CAPÍTULO</a></li><li><a href="setimo_capitulo.html"><strong aria-hidden="true">8.</strong> SÉTIMO CAPÍTULO</a></li><li><a href="oitavo_capitulo.html"><strong aria-hidden="true">9.</strong> OITAVO CAPÍTULO</a></li><li><a href="nono_capitulo.html"><strong aria-hidden="true">10.</strong> NONO CAPÍTULO</a></li><li><a href="decimo_capitulo.html" class="active"><strong aria-hidden="true">11.</strong> DÉCIMO CAPÍTULO</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Livro de Ester</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="decimo_capitulo.html#dÉcimo-capÍtulo" id="dÉcimo-capÍtulo"><h2>DÉCIMO CAPÍTULO</h2></a>
+<p><a href="http://bibliaonline.com.br/acf/et/10">Ester 10</a></p>
+<p>O livro termina, neste capítulo, com um relato da grandeza do domínio do rei, e também de Mardoqueu, seu ministro. “Porque o judeu Mardoqueu foi o segundo depois do rei Assuero, e grande para com os judeus, e agradável para com a multidão de seus irmãos, procurando o bem do seu povo, e trabalhando pela prosperidade de toda a sua nação” (<a href="http://bibliaonline.com.br/acf/et/10/3">v. 3</a>). Dessa maneira tão digna termina este livro tão maravilhoso. O judeu, liberto de todos os perigos, é introduzido na maior proximidade do grande rei, e apesar de ter sido, ele próprio, a vítima de toda a aversão do gentio, tem agora autoridade sobre todos para executar vingança sobre todos os que buscassem matar a semente de Abraão.</p>
+<p>Que o Senhor possa nos fazer deleitar nos caminhos de Deus! Que possamos ler Sua Palavra e obter, por Sua Palavra, toda a sabedoria e discernimento espiritual! Este livro não deixará de ser menos proveitoso a nós pelo fato de o compreendermos. Aplicá-lo a nós mesmos (como Igreja) só irá nos enganar. Vemos neste livro o lugar do povo de Deus da antiguidade, quando o orgulhoso gentio for deposto por causa de sua desobediência e o judeu for trazido à cena em toda a amabilidade que Deus pode derramar sobre ele; colocado no lugar que lhe pertence diante do mundo. É esta a perspectiva que este livro traça diante de nós. E não somente esta, mas sua mais linda característica, creio eu, você pode ver que é plenamente mantida do começo ao fim — que tudo isso foi dado durante o dia de nuvens — dia de trevas, da dispersão e do não-reconhecimento do judeu. Por isso o nome de Deus está totalmente ausente no livro. Trata-se do poder secreto de Deus trabalhando em meio às circunstâncias que parecem ser desalentadores. Mas que conforto nos traz! Nós, também, desfrutamos da mesma providência de Deus — ainda que esta não esteja trabalhando para o mesmo fim; pois não é o objetivo de Deus nos dar a vingança sobre o inimigo; não é de nos exaltar à grandeza terrenal. Mas temos a ver com o mesmo Deus; graças a Deus, com Ele somente! Ele não nos rejeita. Ele nos colocou em uma relação de parentesco Consigo mesmo que nunca mais poderá ser perdida — um parentesco que depende de Cristo e que é selado pelo Espírito Santo. Consequentemente, Ele nunca impede que O chamemos “nosso Deus e Pai”; tampouco Ele jamais Se recusa a nos considerar como filhos do Seu amor.</p>
+<p>Portanto você pode ver que o livro não se aplica, em nenhum detalhe, a nós, quanto ao que Ester significa; mas podemos, certamente e com toda razão, receber todo o conforto da poderosa mão de Deus. Onde os homens não conseguem ver mais do que as circunstâncias que se desenvolvem ao nosso redor, nós sabemos que “todas as coisas contribuem juntamente para o bem daqueles que amam a Deus, daqueles que são chamados por seu decreto” (<a href="http://bibliaonline.com.br/acf/rm/8/28">Romanos 8:28</a>). Talvez não vejamos a maneira, mas conhecemos o Deus, vemos o Deus, podemos nos aproximar do Deus que controla todas as coisas a nosso favor. Em resumo, portanto, a providência de Deus é uma verdade universal, até que venha o dia em que as tratativas de Deus serão públicas e manifestas, e Seu nome estará sobre o Seu povo. Entrementes podemos contar com isso para Israel. Sabemos que agora eles estão dispersos — que agora encontram-se em uma condição completamente irregular, mas chegará o dia quando Deus irá colocar o gentio de lado, e tratar com Israel, e nossos corações podem se regozijar com isso. Não será uma perda para nós, sermos deixados de lado, se o motivo for tratar de Israel. Sim, na verdade não será mesmo uma perda para nós. Estaremos com o Senhor Jesus nas alturas, e será só depois que isto acontecer que Deus julgará o gentio e chamará de volta o judeu.</p>
+<p>William Kelly</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="nono_capitulo.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="nono_capitulo.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>LIVRO DE ESTER - O Livro de Ester</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="livro_de_ester.html" class="active"><strong aria-hidden="true">1.</strong> LIVRO DE ESTER</a></li><li><a href="primeiro_capitulo.html"><strong aria-hidden="true">2.</strong> PRIMEIRO CAPÍTULO</a></li><li><a href="segundo_capitulo.html"><strong aria-hidden="true">3.</strong> SEGUNDO CAPÍTULO</a></li><li><a href="terceiro_capitulo.html"><strong aria-hidden="true">4.</strong> TERCEIRO CAPÍTULO</a></li><li><a href="quarto_capitulo.html"><strong aria-hidden="true">5.</strong> QUARTO CAPÍTULO</a></li><li><a href="quinto_capitulo.html"><strong aria-hidden="true">6.</strong> QUINTO CAPÍTULO</a></li><li><a href="sexto_capitulo.html"><strong aria-hidden="true">7.</strong> SEXTO CAPÍTULO</a></li><li><a href="setimo_capitulo.html"><strong aria-hidden="true">8.</strong> SÉTIMO CAPÍTULO</a></li><li><a href="oitavo_capitulo.html"><strong aria-hidden="true">9.</strong> OITAVO CAPÍTULO</a></li><li><a href="nono_capitulo.html"><strong aria-hidden="true">10.</strong> NONO CAPÍTULO</a></li><li><a href="decimo_capitulo.html"><strong aria-hidden="true">11.</strong> DÉCIMO CAPÍTULO</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Livro de Ester</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="livro_de_ester.html#livro-de-ester" id="livro-de-ester"><h2>LIVRO DE ESTER</h2></a>
+<p>INTRODUÇÃO</p>
+<p>O livro de Ester é uma das poucas porções das Escrituras que nos chamam a atenção pela ausência do nome de Deus. Isto tem, com frequência, surpreendido a muitos: os próprios judeus não eram capazes de compreender o por quê, e há hoje muitos cristãos que não diferem muito deles. E isto chegou ao ponto de se ter tornado um hábito para alguns, especialmente nestes últimos tempos, tratarem o livro de Ester com uma certa medida de descrédito, como se a ausência do nome do Senhor fosse algo suspeito — como se o livro não fosse de Deus pelo fato de o nome de Deus não ser encontrado nele. Espero mostrar que o fato do nome de Deus não ser encontrado faz parte da excelência do livro, pois há ocasiões em que Deus encobre Sua glória. Não há ocasião em que Ele não opere, mas Ele nem sempre permite que Seu nome seja escutado, ou que Seus caminhos sejam vistos. Quero mostrar que é precisamente este o caráter que o livro exigia — que o nome de Deus não fosse encontrado ali. Por conseguinte, ao invés de despertar uma discussão quanto à participação de Ester no volume sagrado, isto irá mostrar a perfeição dos caminhos de Deus, até mesmo neste fato tão excepcional que é a ausência de Seu nome em todo um livro.</p>
+<p>Devemos entender, então, o que Deus tem em vista. E a resposta é esta: Ele está falando aqui de Seu povo na antiguidade, vivendo em circunstâncias tais que Ele não poderia ter o Seu nome associado a eles, uma vez que ocupavam uma posição completamente irregular. Na verdade, no livro de Ester eles não ocupam posição alguma. Não poderíamos dizer o mesmo acerca daqueles judeus que saíram de Babilônia aproveitando a permissão que lhes havia dado Ciro, o Persa, em cumprimento ao que fora predito pelos profetas. É verdade que, mesmo no que diz respeito àquele remanescente, Deus não os chama de “meu povo”. Ao permitir que Nabucodonosor devastasse a terra da casa de Davi e das tribos que haviam continuado fiéis à sua aliança, Deus tirou deles, por um breve período, o título que tinham, e aquele título ainda não lhes foi devolvido. Está, no entanto, bem guardado. Ele tem a intenção de restaurá-los à terra de sua herança; mas o título de posse encontra-se, momentaneamente, desaparecido. Não está perdido, mas reservado; guardado em segredo, para eles, pelo próprio Deus. Quando chegar o dia de Israel ser levado de volta à sua terra, Deus irá gradualmente introduzi-los na posição e no relacionamento que lhes são próprios, e então virão os dias de céu sobre a terra.</p>
+<p>Mas isto estava longe de acontecer, mesmo com o remanescente que voltou a Jerusalém. Lá, como sabemos, o livro de Esdras os mostra juntos, com a atenção voltada para o altar de Deus, e construindo Sua casa; e o Livro de Neemias os apresenta assinalando sua posição distinta. Muito embora tivessem perdido seu título, ainda assim eles não haviam perdido o seu Deus. Se Deus não os chamava de Seu povo, eles, ao menos, O chamavam de seu Deus. A fé se agarrava naquilo que Deus era para eles, mesmo quando Deus não podia chamá-los de Sua possessão. Portanto, eles realmente construíram os muros da Jerusalém para que o povo de Deus pudesse ter, ainda que em fraqueza, o sentimento de sua separação para Deus. Isso caracterizou todos os aspectos da vida deles. Enquanto Esdras enfoca a vida religiosa, Neemias trata da vida do povo integralmente consagrada a Jeová.</p>
+<p>Porém o Livro de Ester traz à tona uma visão bem diferente. O que aconteceu aos judeus que não subiram a Jerusalém? O que aconteceu àqueles que estavam surdos à permissão, ou não deram valor à liberdade para subirem à terra onde Deus tinha posto os Seus olhos, e onde Ele ainda deseja exaltar o Seu nome — Seu Filho o Messias — bem como o povo da Sua escolha, que ainda está para ser manifestadamente reconhecido por Ele? O Livro de Ester é a resposta a esta pergunta, e nos mostra que quando Deus não podia reconhecê-los de nenhuma maneira — e no lugar onde eles igualmente não O estivessem reconhecendo publicamente —, quando não havia nenhum sinal da parte de Deus, nem da parte do povo — onde o nome de Deus, portanto, encontrava-se então inteiramente envolto em segredo, não sendo mencionado uma única vez sequer através de todo o livro — ainda onde exista isso tudo, pode-se ver a mão e a obra de Deus agindo secretamente a favor de Seu povo, mesmo nas condições mais irregulares em que pudessem se encontrar. Esta é a natureza do livro, e isto, creio, é a solução para a dificuldade quanto ao fato de o nome de Deus não ser mencionado ali. Iremos ver farta confirmação do que estou mencionando, quando olharmos mais adiante neste livro. Apenas dou, até aqui, uma pequena amostra de seu caráter a fim de podermos dar a ele a maior atenção, à medida que os vários incidentes vão se desenrolando diante de nós.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="primeiro_capitulo.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="primeiro_capitulo.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

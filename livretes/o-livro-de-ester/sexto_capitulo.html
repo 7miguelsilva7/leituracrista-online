@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>SEXTO CAPÍTULO - O Livro de Ester</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="livro_de_ester.html"><strong aria-hidden="true">1.</strong> LIVRO DE ESTER</a></li><li><a href="primeiro_capitulo.html"><strong aria-hidden="true">2.</strong> PRIMEIRO CAPÍTULO</a></li><li><a href="segundo_capitulo.html"><strong aria-hidden="true">3.</strong> SEGUNDO CAPÍTULO</a></li><li><a href="terceiro_capitulo.html"><strong aria-hidden="true">4.</strong> TERCEIRO CAPÍTULO</a></li><li><a href="quarto_capitulo.html"><strong aria-hidden="true">5.</strong> QUARTO CAPÍTULO</a></li><li><a href="quinto_capitulo.html"><strong aria-hidden="true">6.</strong> QUINTO CAPÍTULO</a></li><li><a href="sexto_capitulo.html" class="active"><strong aria-hidden="true">7.</strong> SEXTO CAPÍTULO</a></li><li><a href="setimo_capitulo.html"><strong aria-hidden="true">8.</strong> SÉTIMO CAPÍTULO</a></li><li><a href="oitavo_capitulo.html"><strong aria-hidden="true">9.</strong> OITAVO CAPÍTULO</a></li><li><a href="nono_capitulo.html"><strong aria-hidden="true">10.</strong> NONO CAPÍTULO</a></li><li><a href="decimo_capitulo.html"><strong aria-hidden="true">11.</strong> DÉCIMO CAPÍTULO</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Livro de Ester</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="sexto_capitulo.html#sexto-capÍtulo" id="sexto-capÍtulo"><h2>SEXTO CAPÍTULO</h2></a>
+<p><a href="http://bibliaonline.com.br/acf/et/6">Ester 6</a></p>
+<p>Mas, naquela noite, o Deus invisível estava trabalhando. O rei não podia dormir, caso contrário teria havido uma amarga comemoração para Ester antes da festa com o rei. “Naquela mesma noite fugiu o sono do rei” (<a href="http://bibliaonline.com.br/acf/et/6/1">v. 1</a>). Ele mandou trazer o livro de registros do reino. A providência de Deus estava trabalhando. Foi encontrado escrito que Mardoqueu havia denunciado a traição dos guardas, e o rei pergunta, “Que honra e galardão se deu por isto a Mardoqueu?” “Cousa nenhuma se lhe fez” (<a href="http://bibliaonline.com.br/acf/et/6/3">v. 3</a>), disseram os servos. Naquele exato momento Hamã entra na corte. Ele queria ver o rei, para pedir a vida de Mardoqueu. Ele nem imaginava o que estava no coração do rei. Ele é levado rapidamente à presença do rei, a pedido deste, e o rei, cheio daquilo que estava em seu coração, foi providencialmente guiado a perguntar o que deveria fazer por alguém a quem desejasse honrar. “Que se fará ao homem de cuja honra o rei se agrada?” (<a href="http://bibliaonline.com.br/acf/et/6/6">v. 6</a>).</p>
+<p>Hamã não havia pensado em ninguém mais além de si próprio. Assim ele foi pego em sua própria armadilha. Ele pediu sem medir quantidades. Ele sugeriu ao rei a mais alta honra — honra mais elevada do que jamais havia sido dada a alguém antes. “O homem de cuja honra o rei se agrada, traga o vestido real de que o rei se costuma vestir, monte também o cavalo em que o rei costuma andar montado, e ponha-se-lhe a coroa real na sua cabeça; e entregue-se o vestido e o cavalo, à mão dum dos príncipes do rei, dos maiores senhores, e vistam dele aquele homem de cuja honra se agrada; e levem-no a cavalo pelas ruas da cidade, e apregoe-se diante dele: Assim se fará ao homem de cuja honra o rei se agrada!” (<a href="http://bibliaonline.com.br/acf/et/6/7-9">vv. 7-9</a>). E assim o rei repentinamente diz a Hamã, “Apressa-te, toma o vestido e o cavalo, como disseste, e faze assim para com o judeu Mardoqueu, que está assentado à porta do rei; e cousa nenhuma deixes cair de tudo quanto disseste” (<a href="http://bibliaonline.com.br/acf/et/6/10">v. 10</a>).</p>
+<p>Oh! que queda! Que horror dos horrores deve ter enchido o coração desse homem ímpio, pois aquele que ele mais odiava dentre todos os homens vivos, era o próprio a quem ele mesmo, como principal nobre do império, deveria conceder essa honra, de acordo com sua própria sugestão! Entretanto era impossível mudar a palavra do rei. “E Hamã tomou o vestido e o cavalo, e vestiu a Mardoqueu, e o levou a cavalo pelas ruas da cidade, e apregoou diante dele: Assim se fará ao homem de cuja honra o rei se agrada!” (<a href="http://bibliaonline.com.br/acf/et/6/11">v. 11</a>). Foi muito diferente a maneira como Hamã voltou para sua mulher e amigos naquele dia. “Hamã se retirou correndo a sua casa, anojado, e coberta a cabeça. E contou Hamã a Zeres, sua mulher, e a todos os seus amigos, tudo quanto lhe tinha sucedido. Então os seus sábios, e Zeres, sua mulher lhe disseram: Se Mardoqueu, diante de quem já começaste a cair, é da semente dos judeus, não prevalecerás contra ele, antes certamente cairás perante ele” (<a href="http://bibliaonline.com.br/acf/et/6/12,13">vv. 12,13</a>). É esse o secreto sentimento do gentio para com o judeu. Tudo parece estar muito bem para o gentio, enquanto o judeu estiver afastado da presença de Deus, mas quando chegar o dia da exaltação do judeu, a grandiosidade do gentio deve então desaparecer da face da terra. O judeu é o escolhido para ser senhor aqui na terra. O judeu será a cabeça, — o gentio, a cauda.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="quinto_capitulo.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="setimo_capitulo.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="quinto_capitulo.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="setimo_capitulo.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

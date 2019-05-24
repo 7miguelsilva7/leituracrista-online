@@ -1,0 +1,25 @@
+assets
+ayu-highlight.css
+book.css
+book.js
+capitulo_1_-_linguas_forca_espiritual,_forca_satan
+capitulo_2_-_o_moderno_movimento_de_linguas
+capitulo_3_-_nao_creiais_a_todo_espirito
+capitulo_4_-_ultimas_palavras_de_advertencia
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+O FALAR EM LINGUAS E O MOVIMENTO CARISMATI G. STEIDL, W. MISSEN.odt
+print.html
+README.html
+searcher.js
+searchindex.js
+tomorrow-night.css

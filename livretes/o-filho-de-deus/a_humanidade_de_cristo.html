@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A Humanidade de Cristo - O Filho de Deus</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="o_filho_de_deus.html"><strong aria-hidden="true">1.</strong> O FILHO DE DEUS</a></li><li><a href="a_deidade_de_cristo.html"><strong aria-hidden="true">2.</strong> A Deidade de Cristo</a></li><li><a href="a_encarnacao.html"><strong aria-hidden="true">3.</strong> A Encarnação</a></li><li><a href="a_humanidade_de_cristo.html" class="active"><strong aria-hidden="true">4.</strong> A Humanidade de Cristo</a></li><li><a href="conclusao.html"><strong aria-hidden="true">5.</strong> CONCLUSÃO</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Filho de Deus</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="a_humanidade_de_cristo.html#a-humanidade-de-cristo" id="a-humanidade-de-cristo"><h2>A Humanidade de Cristo</h2></a>
+<p>O mistério inescrutável da encarnação de Filho do Deus nos leva a contemplar a perfeição da Humanidade que Ele assumiu. Com relação a este grande tema, podemos perguntar primeiro: “Em que consiste a humanidade?”</p>
+<p>O apóstolo Paulo ao expressar o seu desejo final aos santos Tessalonicenses escreve como se segue: “E o mesmo Deus de paz vos santifique em tudo; e todo o vosso espírito, e alma, e corpo, sejam plenamente conservados irrepreensíveis para a vinda de nosso Senhor Jesus Cristo” (<a href="http://bibliaonline.com.br/acf/1ts/5/23">1 Tessalonicenses 5: 23</a>). Aqui o apóstolo deseja a santificação de todo o homem, e não nos deixa em dúvida quanto ao que ele quer dizer com um homem completo: pois ele não está contente em desejar que os santos possam ser santificados “em tudo”, mas definitivamente define as partes componentes de um homem – espírito, alma, e corpo.</p>
+<p>À luz dessa passagem a conclusão pareceria ser irresistível de que, segundo a Escritura, espírito, alma e corpo, compõem um homem e, como J.N. Darby disse: “Um homem não é homem sem corpo, alma, e espírito”.1</p>
+<p>A passagem acima mencionada concorda com o relato que temos em Gênese sobre a criação do homem. Lá lemos que “Jeová Elohim formou o homem, do pó da terra, e soprou em suas narinas o fôlego da vida, e o homem foi feito alma vivente” (<a href="http://bibliaonline.com.br/acf/gn/2/7">Gênesis 2:7</a>). Isso não nos ensina que quanto à parte material do homem – o corpo – foi formado do pó da terra? E então, o corpo tendo sido formado, Deus comunicou vida soprando em suas narinas o fôlego da vida. Isso seguramente é o espiritual, ou o imaterial, a parte do homem que ele recebeu diretamente de Deus.</p>
+<p>“O pregador” falando da morte também se refere às duas partes do homem – a material e a espiritual – quando diz: “E o pó volte à terra, como era, e o espírito volte a Deus que o deu” (<a href="http://bibliaonline.com.br/acf/ec/12/7">Eclesiastes 12:7</a>). Mais uma vez Eliú se refere ao material e ao espiritual falando de Deus, diz: “Se ele pusesse o seu coração contra o homem, e recolhesse para si o seu espírito e o seu fôlego, toda a carne juntamente expiraria, e o homem voltaria para o pó” (<a href="http://bibliaonline.com.br/acf/j%C3%B3/34/14,15">Jó 34:14, 15</a>). Esta Escritura nos dá mais luz já que o espírito está ligado com o pensamento do fôlego, sugerindo que a fôlego da vida, em <a href="http://bibliaonline.com.br/acf/gn/2/7">Gêneses 2:7</a>, é o espírito de um homem.</p>
+<p>Assim pela comunicação do seu espírito diretamente de Deus, o homem foi feito uma alma vivente, o corpo formando a parte material, e o espírito e alma a parte espiritual de um homem.2</p>
+<p>Além disso está claro que o espírito é a parte mais elevada de um homem pela qual ele é colocado na responsabilidade para com Deus, e sendo assim, não podemos dizer que o espírito de 1 É tão verdadeiro que um homem é composto de espírito, alma e corpo, que não podemos nos lembrar de um exemplo na Escritura onde o termo “homem” – significando um ser humano – é aplicado àqueles que passaram pela morte no estado intermediário. Lemos de fato sobre “o espírito de homens justos aperfeiçoados”, e muitas vezes, de corpos de homens mortos, mas de nenhum corpo sem o espírito e a alma, ou do espírito e da alma sem o corpo sendo designado pelo termo “homem”. <a href="http://bibliaonline.com.br/acf/2rs/13/21">2 Reis 13:21</a>, e <a href="../../../../../../../http://bibliaonline.com.br/acf/lc/7/12">Lucas 7:12</a> podem parecer serem exceções mas realmente não são. Na passagem em Reis a palavra original para “homem” não é a palavra “Adão” que significa “ser humano,” mas a palavra “ish” que significa um homem em contraste com uma mulher, e é evidentemente usada para indicar o sexo do corpo. Na passagem em Lucas é a única ocasião na qual a palavra grega é traduzida como “homem”. Nos outros doze exemplos do uso da palavra ela é traduzida pela palavra “morte”, isso significa simplesmente alguém que está morto.</p>
+<p>2 Nós não precisamos nos confundir tentando desenhar uma linha definida e segura entre o “espírito” e a “alma”. Juntas elas são a parte imaterial de um homem e, embora durante algum tempo, elas possam estar separadas do corpo na morte, contudo não estão separadas uma da outra, não mais do que as junções e medulas do corpo, ou os pensamentos e intenções do coração. Contudo tal é o caráter pesquisador da Palavra de Deus, que se pode distinguir entre as coisas tão intimamente conectadas que não podem ser separadas, (<a href="http://bibliaonline.com.br/acf/hb/4/12">Hebreus 4:12</a>).</p>
+<p>um homem é a parte distintiva e mais importante de um homem, aquela que é a mais necessária para constituí-lo um homem em oposição à criação dos animais? (Ver <a href="http://bibliaonline.com.br/acf/ec/3/21">Eclesiastes 3:21</a>).</p>
+<p>Se então o Filho se tornou Homem seguramente se tornou um Homem verdadeiro, espírito, alma e corpo, pois, como a Escritura diz: “Por isso convinha que em tudo fosse semelhante aos irmãos” (<a href="http://bibliaonline.com.br/acf/hb/2/17">Hebreus 2:17</a>). Mas em um tema tão santo não nos deixam tirar as nossas próprias conclusões, pois na Escritura encontramos cada componente do homem atribuído ao Filho como Homem. Vamos citar algumas dessa Escritura: Quanto ao corpo, do Senhor pode-se dizer: “Derramando ela este ungüento sobre o meu corpo” – <a href="http://bibliaonline.com.br/acf/mt/26/12">Mateus 26:12</a>. “Mas Ele falava do templo do Seu corpo” – <a href="http://bibliaonline.com.br/acf/jo/2/21">João 2:21</a>.</p>
+<p>“Sacrifício e oferta não quiseste, mas corpo me preparaste” – <a href="http://bibliaonline.com.br/acf/hb/10/5">Hebreus 10:5</a>. “Tendo sido santificado pela oblação do corpo de Jesus Cristo” – <a href="http://bibliaonline.com.br/acf/hb/10/10">Hebreus 10:10</a>. “Levando Ele mesmo em Seu corpo os nossos pecados” – <a href="http://bibliaonline.com.br/acf/1pe/2/24">1 Pedro 2:24</a>. Quanto ao espírito (pneuma) lemos: “E o menino crescia e se fortalecia no espírito” – <a href="http://bibliaonline.com.br/acf/lc/2/40">Lucas 2:40</a>. “E Jesus, conhecendo logo em Seu espírito” – <a href="http://bibliaonline.com.br/acf/mc/2/8">Marcos 2:8</a>. “E suspirando profundamente em Seu espírito” – <a href="http://bibliaonline.com.br/acf/mc/8/12">Marcos 8:12</a>.</p>
+<p>“Naquela mesma hora se alegrou Jesus no espírito” – <a href="http://bibliaonline.com.br/acf/lc/10/21">Lucas 10:21</a>. “Moveu-se muito em espírito” – <a href="http://bibliaonline.com.br/acf/jo/11/33">João 11:33</a>.</p>
+<p>“Tendo Jesus dito isso, turbou-se em espírito” – <a href="http://bibliaonline.com.br/acf/jo/13/21">João 13:21</a>. “E inclinando a cabeça, entregou o espírito” – <a href="http://bibliaonline.com.br/acf/jo/19/30">João 19: 30</a>. “Pai, nas Tuas mãos entrego o Meu espírito” – <a href="http://bibliaonline.com.br/acf/lc/23/46">Luc 23:46</a>. Quanto à alma (psuche): “A minha alma está cheia da tristeza” – <a href="http://bibliaonline.com.br/acf/mt/26/38">Mateus 26:38</a>. “Agora a minha alma está perturbada” – <a href="http://bibliaonline.com.br/acf/jo/12/27">João 12:27</a>. “Pois não deixaste a minha alma no Hades” – <a href="http://bibliaonline.com.br/acf/atos/2/27">Atos 2:27</a>. “A Sua alma não foi deixada no Hades” – <a href="http://bibliaonline.com.br/acf/atos/2/31">Atos 2:31</a>.</p>
+<p>Essas então são umas poucas Escrituras que falam diretamente do espírito, da alma e do corpo, com relação à Humanidade de nosso Senhor. Há, contudo, outras Escrituras que envolvem o corpo, o espírito e a alma, sem usar essas palavras, às quais podemos nos referir resumidamente: Quanto ao Seu espírito – a parte mais elevada do homem, pela qual ele é constituído um ser inteligente na responsabilidade para com Deus – lemos que na infância, Ele foi “cheio de sabedoria,” e novamente que “crescia em sabedoria” (<a href="http://bibliaonline.com.br/acf/lc/2/40,52">Lucas 2:40, 52</a>). A sabedoria certamente se refere ao espírito inteligente de um homem. Sabemos também, que “Nele habitou corporalmente toda a plenitude da Divindade”; mas aqui estava algo muito diferente, pois quem poderia conectar o “aumento” com “a plenitude da Divindade”? Isso seguramente é espírito com as características que são próprias ao espírito de um homem. Mais uma vez, em Seu caminho por este mundo, quão constantemente o Senhor é encontrado em oração; além disso, na última ceia Ele pode dizer: “desejei muito comer esta páscoa”; no jardim Ele é visto na agonia do conflito, mas se submete à vontade do Pai. Mais uma vez perguntamos: Não estão a oração, o desejo, o conflito e a submissão conectados ao espírito, e são características do espírito de um homem com relação ao seu Deus?</p>
+<p>Quanto à Sua alma – com a qual conectamos as emoções e os afetos – lemos do Senhor sendo movido pela compaixão, chorando por causa de Jerusalém, chorando na sepultura, muitas vezes movido pela indignação e considerando os Seus opositores hipócritas com a raiva. Mais uma vez perguntamos, não são a compaixão, o choro, a indignação e a irritação expressa sensações profundas de uma alma humana?</p>
+<p>Quanto ao Seu corpo santo – concebido no ventre da virgem. Quando nasceu o bebê foi colocado na manjedoura, circuncidado ao oitavo dia; alimentado nos seios de uma mãe humana (<a href="http://bibliaonline.com.br/acf/lc/11/27">Lucas 11:27</a>); carregado nos braços de Simeão. Ele cresceu fisicamente da infância a juventude, e da juventude à maturidade. Lemos sobre o Senhor comendo e bebendo, tanto antes como depois da ressurreição. Ele tem fome no deserto, e sede na cruz. Ele está cansado no poço, e dorme no barco.</p>
+<p>Nascer e crescer, comer e beber, ter fome e sede, estar cansado e com sono, estão essencialmente conectados com o corpo humano e, estando presentes com relação ao corpo do Senhor, comprova quão verdadeiro foi o corpo que Ele tomou, e quão realmente marcado por tudo o que é característico do corpo humano, à parte do pecado.</p>
+<p>Qual, podemos perguntar, é a força clara dessas Escrituras que, diretamente ou indiretamente, se referem ao espírito, alma, e corpo, com relação à humanidade de nosso Senhor? Qual é a impressão que elas pretendem transmitir à nossa mente? Qual é a verdade que elas ensinam? Não é que a humanidade perfeita de Cristo compreendeu todos os três – espírito, alma e corpo – cada uma possuindo todas as características que são próprias a um Homem perfeito em um mundo caído. “Por isso convinha que em tudo fosse semelhante aos irmãos” (<a href="http://bibliaonline.com.br/acf/hb/2/17">Hebreus 2:17</a>).</p>
+<p>Ademais julgamos que a Escritura distingue entre “personalidade” – o “Eu” consciente – e o espírito, a alma e o corpo já que nem definitivamente, e muito menos exclusivamente, identifica a personalidade em algum dos três. Lemos que “o espírito do profeta está sujeito ao profeta” (<a href="http://bibliaonline.com.br/acf/1co/14/32">1 Coríntios 14:32</a>). Temos o verso no Velho Testamento que diz: “Aquele que governa o seu espírito” (<a href="http://bibliaonline.com.br/acf/pv/16/32">Provérbios 16:32</a>). Em conexão com a alma, David disse: “humilhava a minha alma” (<a href="http://bibliaonline.com.br/acf/sl/35/13">Salmos 35:13</a>); “ Levanto a minha alma” (<a href="http://bibliaonline.com.br/acf/sl/86/4">Salmos 86:4</a>). Salomão fala de um homem que destrói a sua alma e violenta a sua alma (<a href="http://bibliaonline.com.br/acf/pv/6/32">Provérbios 6:32</a> e <a href="http://bibliaonline.com.br/acf/pv/8/36">Provérbios 8:36</a>). Em relação ao corpo Paulo pode dizer: “subjugo o meu corpo” (<a href="http://bibliaonline.com.br/acf/1co/9/27">l Co 9:27</a>). Essas e muitas outras Escrituras de um caráter parecido, poderiam mostrar que no homem há a união do material e do espiritual sob uma única personalidade, como alguém disse: “Dia após dia, hora após hora, minuto após minuto observamos que todos dentro de si, têm uma autoridade central, dirigindo e controlando, por um lado, os movimentos e as operações, de uma estrutura animal, e por outro as faculdades e esforços de um espírito inteligente, ambos os quais encontram nessa autoridade ou pessoa central o seu ponto de unidade. Quanto isso pode ser desconhecido”. A isso podemos acrescentar que se a morte sobrevier o “Eu” está identificado com aquilo que é imaterial – o espírito e a alma – quando ainda no corpo, seja agora ou no estado de ressurreição, o “Eu” está certamente identificado com o espírito, a alma e o corpo.</p>
+<p>Não é essa distinção entre a personalidade e o espírito, a alma e o corpo igualmente vista nas declarações de nosso Senhor como Homem, (como citado anteriormente), embora na Humanidade de Cristo, vamos sempre nos lembrar que a Pessoa era Divina – o Filho invariável e inalterável quanto à Sua Pessoa. Embora aqui novamente, precisamos estar em nossa guarda, para que pela fragilidade da língua humana possa ser argumentado que uma humanidade impessoal seja sugerida. Embora em Pessoa sempre o Filho, ainda asssim Ele pessoalmente entrou na Humanidade – espírito, alma, e corpo, e tão realmente que, como alguém disse: “não houve Nele nenhuma falta de tudo o que pertenceu à humanidade perfeita – que foi tudo e sentiu tudo o que o homem podia ser e sentir – feito em todas as coisas como os seus irmãos”. “Ele foi feito de uma mulher, participou da carne e do sangue – foi verdadeiramente a semente da mulher, e dela recebeu a natureza de um homem que O colocou em relação a Deus e as coisas aqui como um Homem responsável na terra”...</p>
+<p>“Em se tornando Homem Ele entrou na realidade do lugar que tomou como Homem”... “O Senhor entrou em todas as condições da vida humana, seus sensíveis sentimentos e afeições, todas as coisas dependentes da condição e organização do homem à parte do pecado”.</p>
+<p>Tão perto, de fato, Ele se chegou ao Seu povo que Simeão pode tomar em seus braços Aquele que “tinha medido as águas na palma da Sua mão”, e o apóstolo querido pode inclinar-se no seio Daquele que vive no seio do Pai. Aqui nos encontramos na presença Daquele que supera a compreensão da nossa mente, e ainda inspira o louvor e a adoração do nosso coração.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="a_encarnacao.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="conclusao.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="a_encarnacao.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="conclusao.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

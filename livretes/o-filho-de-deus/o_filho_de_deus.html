@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>O FILHO DE DEUS - O Filho de Deus</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="o_filho_de_deus.html" class="active"><strong aria-hidden="true">1.</strong> O FILHO DE DEUS</a></li><li><a href="a_deidade_de_cristo.html"><strong aria-hidden="true">2.</strong> A Deidade de Cristo</a></li><li><a href="a_encarnacao.html"><strong aria-hidden="true">3.</strong> A Encarnação</a></li><li><a href="a_humanidade_de_cristo.html"><strong aria-hidden="true">4.</strong> A Humanidade de Cristo</a></li><li><a href="conclusao.html"><strong aria-hidden="true">5.</strong> CONCLUSÃO</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">O Filho de Deus</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="o_filho_de_deus.html#o-filho-de-deus" id="o-filho-de-deus"><h2>O FILHO DE DEUS</h2></a>
+<p>Sua Deidade, Encarnação, e Humanidade</p>
+<p>INTRODUÇÃO</p>
+<p>Desde o advento do Filho do Deus no mundo que as Suas mãos tinham feito, a Sua Pessoa foi objeto de incessante ataque pelo Seu inimigo mortal o diabo. Além disso, na carne com sua imutável inimizade contra Deus, o diabo sempre encontrou um instrumento pronto para empreende a sua guerra contra Aquele que foi manifestado para destruir as obras do diabo.</p>
+<p>Por outro lado, durante o longo período de ausência de Cristo, o Espírito Santo tem sido a testemunha permanente da glória do Filho. Guiando os crentes em toda a verdade, e mostrando a eles as coisas de Cristo, Ele os modelou em vasos preparados para expressar a graça e a perfeição de Cristo.</p>
+<p>E assim como “o dia declina” e “vão se estendendo as sombras da tarde”, como os ataques se tornam mais persistentes, e a batalha se torna mais feroz, assim também se torna mais imperativo que todo santo autêntico dê um testemunho claro e inequívoco da glória do Filho de Deus. O amor não estará contente com nenhum som incerto quanto Àquele a quem devemos toda a bênção hoje e eternamente. O amor estará muito zeloso de qualquer menosprezo lançado sobre a fama Daquele de quem todo crente pode dizer “o Filho de Deus, que me amou e se entregou por mim”.</p>
+<p>A discussão sobre um tema tão santo todos desaprovariam. Os nossos instintos espirituais nos advertem que discutir sobre a Sua Pessoa é perder o contato com Ele. Quem poderia discutir a Pessoa de Cristo na presença de Cristo?</p>
+<p>Por isso que possamos também todos nós sentir o perigo de sermos atraídos para a controvérsia sobre um tema tão santo, muito embora seja em honesta diligência para encontrar e expor o erro. A história, passada e presente, não nos advertem que muitas vezes aqueles que se levantam para combater uma heresia caem em uma heresia oposta? A palavra é “diligentemente batalhar pela fé”, embora de vez em quando possa parecer como se tivéssemos interpretado essa Escritura como uma exortação para combater diligentemente o erro. Estamos longe de dizer que nunca devemos combater o errado; mas vamos nos lembrar que em assim fazendo estamos ocupados com o que a mente do homem propôs, e por isso estamos em perigo de pensar que podemos descobrir a mente do homem pelo poder da nossa própria mente. No combate pela fé estamos ocupados com o que o Deus revelou, e a própria grandeza da verdade nos lança sobre Deus; e, lançados sobre Ele, podemos contar com o Seu suporte.</p>
+<p>Por isso, enquanto sentimos o perigo da discussão ou controvérsia devemos também sentir a constante necessidade de combater pela fé.</p>
+<p>Ao contendermos pela verdade devemos nos voltar inevitavelmente à Escritura da verdade, nos lembrando que está escrito: “Não recebemos o espírito do mundo, mas o Espírito que provém de Deus, para que pudéssemos conhecer o que nos é dado gratuitamente por Deus” (<a href="http://bibliaonline.com.br/acf/1co/2/12">1 Coríntios 2: </a><a href="http://bibliaonline.com.br/acf/1co/2/12">12</a>). Através da frouxidão da afeição podemos não conseguir aproveitar do que é revelado; ou através da atividade da nossa mente podemos ir além do que está escrito. Podemos então tomar conhecimento, buscando com apressada afeição, e com a mente controlada pelo Espírito entrar mais plenamente em tudo o que foi revelado acerca da Pessoa do Filho sem ir além daquilo que está escrito. Contemplar a glória do Filho, a maravilha da encarnação, ou perfeição da Sua humanidade, é entrar em uma região onde a especulação humana, e as nossas próprias conjeturas, não devem ter lugar. Na presença da Sua glória o próprio Serafim dobra as suas asas sobre a sua face, os profetas enrolam seu manto sobre a sua face, e Moisés, o homem de Deus, tira os seus sapatos dos pés. E embora neste dia da graça vejamos a glória do Senhor “com o rosto descoberto”, faça com que isso seja com “os pés descalços” para que nos aproximemos dos mistérios santos que envolvem a Sua Pessoa.</p>
+<p>Entre os muitos privilégios dados ao povo do Senhor nenhum pode ser maior do que o de manter a glória do Filho em meio às sombras que se estendem pela aproximação da apostasia. Possamos nós ser achados como administradores fiéis dos mistérios de Deus, e fortalecidos nessa graça que sozinha nos capacitará a eliminar a nós mesmos, tornando tudo de Cristo, e “O COROANDO COMO O SENHOR DE TUDO”.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="a_deidade_de_cristo.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="a_deidade_de_cristo.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>
