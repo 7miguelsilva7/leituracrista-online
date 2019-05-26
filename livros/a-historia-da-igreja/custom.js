@@ -119,6 +119,7 @@ if ( session == 1 )
   .replace(/bibliaonline.com.br\/acf\/j%C3%B3\//g, "mysword.info\/b?r\=Job_")
   .replace(/bibliaonline.com.br\/acf\/J%C3%B3\//g, "mysword.info\/b?r\=Job_")
   .replace(/bibliaonline.com.br\/acf\/J%C3%93\//g, "mysword.info\/b?r\=Job_")
+  .replace(/([0-9])\/\">/g, "$1\">")  
   .replace(/bibliaonline.com.br\/acf\/jr\//g, "mysword.info\/b?r\=Jer_")
   .replace(/bibliaonline.com.br\/acf\/js\//g, "mysword.info\/b?r\=Jos_")
   .replace(/bibliaonline.com.br\/acf\/jz\//g, "mysword.info\/b?r\=Jdg_")
@@ -178,8 +179,6 @@ var res4 = str4
 .replace(/“_/g, "\"")
 .replace(/<strong>/g, " <strong> ")
 .replace(/<\/strong>/g, " <\/strong> ")
-.replace(/([0-9])\/\">/g, "$1\">")  
-
 document.getElementById("content").innerHTML = res4; 
 // fim de Elimina underline do texto
 
