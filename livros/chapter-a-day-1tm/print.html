@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter a Day - 1 Timóteo</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="389.html"><strong aria-hidden="true">1.</strong> #389</a></li><li><a href="1_timoteo_1,_vers_1-11.html"><strong aria-hidden="true">2.</strong> 1 TIMÓTEO 1, Vers. 1-11</a></li><li><a href="390.html"><strong aria-hidden="true">3.</strong> #390</a></li><li><a href="1_timoteo_1,_vers_12-20.html"><strong aria-hidden="true">4.</strong> 1 TIMÓTEO 1, Vers. 12-20</a></li><li><a href="391.html"><strong aria-hidden="true">5.</strong> #391</a></li><li><a href="1_timoteo_2.html"><strong aria-hidden="true">6.</strong> 1 TIMÓTEO 2</a></li><li><a href="392.html"><strong aria-hidden="true">7.</strong> #392</a></li><li><a href="1_timoteo_3.html"><strong aria-hidden="true">8.</strong> 1 TIMÓTEO 3</a></li><li><a href="393.html"><strong aria-hidden="true">9.</strong> #393</a></li><li><a href="1_timoteo_4.html"><strong aria-hidden="true">10.</strong> 1 TIMÓTEO 4</a></li><li><a href="394.html"><strong aria-hidden="true">11.</strong> #394</a></li><li><a href="1_timoteo_5.html"><strong aria-hidden="true">12.</strong> 1 TIMÓTEO 5</a></li><li><a href="395.html"><strong aria-hidden="true">13.</strong> #395</a></li><li><a href="1_timoteo_6.html"><strong aria-hidden="true">14.</strong> 1 TIMÓTEO 6</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Chapter a Day - 1 Timóteo</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#a389" id="a389"><h2>#389</h2></a>
+<p>Os conflitos não são para nos fazer alcançar nossos privilégios, para nos manter sempre no gozo deles.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf1tm11-111-timÓteo-1-vers-1-11a" id="a-hrefhttpbibliaonlinecombracf1tm11-111-timÓteo-1-vers-1-11a"><h2><a href="http://bibliaonline.com.br/acf/1tm/1/1-11">1 TIMÓTEO 1, Vers. 1-11</a></h2></a>
+<p>Vamos ler apenas a primeira Epístola a Timóteo para nos mantermos na sequência de nossos passos na vida do crente. Efésios nos ensinou nossa vocação celestial, e a luta que irá resultar de seguirmos o Senhor nesta posição celestial, enquanto ainda estamos na terra. Primeira Timóteo foi escrita quando tudo estava em ordem nas assembléias, e por isso nos diz (<a href="http://bibliaonline.com.br/acf/1tm/1/3">vers. 3</a>) que não há lugar para opiniões pessoais; para nenhuma outra doutrina. É triste admitir, mas hoje vemos centenas de denominações, todas reivindicando ter o respaldo da Palavra de Deus para a doutrina que professam. <a href="http://bibliaonline.com.br/acf/jo/7/17">João 7:17</a> diz que se alguém quiser mesmo conhecer a vontade de Deus, Deus a revelará a essa pessoa. O problema é que deixamos nossa vontade própria agir. Até Jesus disse, &quot;não se faça a minha vontade, mas a tua&quot;, quando estava orando a Seu Pai. <a href="http://bibliaonline.com.br/acf/lc/22/42">Lc 22:42</a>.</p>
+<p>Efésios e 1 Timóteo nos mostram a única igreja de Deus (a igreja de Deus é formada por todos os crentes no Senhor Jesus Cristo sobre a Terra), em sua condição perfeita como o próprio Deus a vê.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/1/3-4">1Tm 1:3-4</a> Paulo encoraja Timóteo a permanecer em Éfeso, pois aqueles que estavam em Éfeso haviam recebido uma maravilhosa revelação da verdade (Epístola aos Efésios). Timóteo é aconselhado a ser fiel em permanecer pela verdade e em admoestar aqueles que viessem a se opor a ela. Não havia lugar para nenhuma opinião pessoal!</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/1/4">1Tm 1:4</a> Nosso coração pode ser tomado por &quot;fábulas&quot; ao invés da verdade, se não formos cuidadosos.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/1/7">1Tm 1:7</a> Uma forma dos crentes se desviarem da verdade de Deus é voltarem à lei. É fácil fazer isso, pois é algo que nos dá algum crédito, mas o Senhor Jesus é quem deve ter todo o crédito.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/1/7-11">1Tm 1:7-11</a> A lei nunca teve o propósito de trazer salvação, mas de mostrar o quão culpado o homem era perante um Deus santo.</p>
+<a class="header" href="print.html#a390" id="a390"><h2>#390</h2></a>
+<p>Nosso conflito tem dois objetivos... 1) Nos fazer desfrutar de nossos privilégios... 2) Ajudar-nos a libertar o povo de Deus que foi colocado sob o poder de Satanás por meio de sua própria infidelidade.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf1tm112-201-timÓteo-1-vers-12-20a" id="a-hrefhttpbibliaonlinecombracf1tm112-201-timÓteo-1-vers-12-20a"><h2><a href="http://bibliaonline.com.br/acf/1tm/1/12-20">1 TIMÓTEO 1, Vers. 12-20</a></h2></a>
+<p>Paulo certamente assume um lugar de humilhação. Ele entende que é só pela graça do Senhor que havia recebido poder para entrar naquela obra. Três coisas que ele havia sido antes de ser salvo. Ele fez o que fez em ignorância e incredulidade.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/1/14-15">1Tm 1:14-15</a> No <a href="http://bibliaonline.com.br/acf/1tm/1/13">versículo 13</a> ele havia recebido &quot;misericórdia&quot; (isso aconteceu quando ainda não estava salvo) mas aqui lemos de &quot;graça&quot;, &quot;fé&quot; e &quot;amor&quot; quando ele fora salvo. &quot;Misericórdia&quot; é para nós quando ainda estávamos mortos, &quot;graça&quot; para quando estamos vivos em Cristo. Ele era o principal dos pecadores. (Paulo, antes de sua conversão, fora um homem de excelente moral - veja <a href="http://bibliaonline.com.br/acf/fp/3/6">Fp 3:6</a>), mas ele havia odiado a Cristo, o que o tornara o pior dos pecadores.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/1/16">1Tm 1:16</a> Paulo, um exemplo da graça de Deus para todos os demais.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/1/18-20">1Tm 1:18-20</a> &quot;Este mandamento&quot; refere-se ao <a href="http://bibliaonline.com.br/acf/1tm/1/3">versículo 3</a>. E Timóteo é encorajado a guardar a fé e uma boa consciência - o que todos necessitamos.</p>
+<a class="header" href="print.html#a391" id="a391"><h2>#391</h2></a>
+<p>A purificação vem pelo peneirar.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf1tm21-timÓteo-2a" id="a-hrefhttpbibliaonlinecombracf1tm21-timÓteo-2a"><h2><a href="http://bibliaonline.com.br/acf/1tm/2">1 TIMÓTEO 2</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/1tm/2/1-2">1Tm 2:1-2</a> Lembre-se destes versículos numa época como hoje. Devemos orar pelos &quot;reis&quot; (aqueles que estão em posição de autoridade em todos os países), para o povo que se encontra em todo lugar. O propósito de nossa oração é que o povo de Deus possa viver em toda piedade e honestidade.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/2/4">1Tm 2:4</a> Deus deseja, não apenas que os homens possam ser salvos, mas chegarem ao conhecimento da verdade. Possamos nós, que somos crentes, obedecer Sua Palavra para podermos alcançar tal conhecimento. Seu desejo é que todos os crentes possam crescer no conhecimento da verdade; é quase como ser salvo de uma nova maneira. Não negligencie a segunda parte destas duas.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/2/5">1Tm 2:5</a> Apesar do que os outros possam ensinar, é algo falso e sem valor orar a Maria ou aos santos - pois só existe um Mediador entre Deus e os homens.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/2/8">1Tm 2:8</a> Podemos orar em qualquer lugar, &quot;mãos santas&quot; devem nos lembrar de que nossa vida deve ser limpa e pura se desejamos que Deus responda nossas orações. Não deve haver ira ou dúvida em nosso coração.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/2/9">1Tm 2:9</a> A vestimenta adequada às mulheres não é descrita, mas é dito que seja modesto. Lembremo-nos disto, pois há uma falta de modéstia nas vestes femininas entre os incrédulos. O enfeite também deve ser um de boas obras, não de aparência exterior.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/2/12">1Tm 2:12</a> Estas são as instruções de Deus, e não as ideias de Paulo. Uma mulher não deve ensinar um homem, nem estar em um emprego onde seja patrão do homem. Isto se aplica às coisas comuns da vida tanto quanto às coisas espirituais.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/2/15">1Tm 2:15</a><a href="http://bibliaonline.com.br/acf/gn/3/16">Gênesis 3:16</a> mostra a tristeza que caiu sobre Eva e seus descendentes por causa do seu pecado. A mulher crente deve se lembrar do pecado de Eva, e portar-se em piedade e agradecer a Deus por esta promessa.</p>
+<a class="header" href="print.html#a392" id="a392"><h2>#392</h2></a>
+<p>Deus parece achar mais difícil esvaziar um vaso do que enchê-lo.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf1tm31-timÓteo-3a" id="a-hrefhttpbibliaonlinecombracf1tm31-timÓteo-3a"><h2><a href="http://bibliaonline.com.br/acf/1tm/3">1 TIMÓTEO 3</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/1tm/3/1">1Tm 3:1</a> &quot;O episcopado&quot; significava ser um pastor ou superintendente entre o povo de Deus. Hoje não se trata de uma posição oficial porque não existem apóstolos ou seus delegados para os escolher. Em segundo lugar, devemos lembrar que esses homens eram anciãos apenas na assembléia local. E, em terceiro lugar, havia sempre mais de um em cada local (ou assembléia). Por que alguém almejaria tal ofício? Certamente não por alguma honra para si, mas por amar o povo de Deus, e desejar ser de auxílio para ele.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/3/2-7">1Tm 3:2-7</a> Timóteo é lembrado de que se uma pessoa fosse um presbítero entre o povo de Deus, sua vida devia ser sem ofença.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/3/8-13">1Tm 3:8-13</a> Embora essa posição oficial já não exista mais, possamos cada um de nós ter o desejo de encorajar outros crentes. Havia também homens que cuidavam das necessidades materiais daqueles que estavam na assembléia. Eles tinham que ser honestos e fiéis na distribuição do que era oferecido ao Senhor, para os necessitados. (Um exemplo do <a href="http://bibliaonline.com.br/acf/1tm/3/13">vers. 13</a> é Estêvão - <a href="http://bibliaonline.com.br/acf/atos/6/5">Atos 6:5</a>).</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/3/15">1Tm 3:15</a> A assembléia é: - primeiro, a casa de Deus. Deus habita nela - <a href="http://bibliaonline.com.br/acf/ef/2/22">Ef 2:22</a>. Segundo - a igreja do Deus vivo. É dEle! E Ele vive! Não acrescentemos a isso coisa alguma, como nomes de homens que estão mortos, nem o nome de alguma doutrina. Terceiro - é a coluna e firmeza da verdade.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/3/16">1Tm 3:16</a> O segredo da piedade é Cristo. Sigamos Seu perfeito exemplo... disso resultará verdadeira piedade.</p>
+<a class="header" href="print.html#a393" id="a393"><h2>#393</h2></a>
+<p>O coração é, pelas provas, separado para Deus por graça.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf1tm41-timÓteo-4a" id="a-hrefhttpbibliaonlinecombracf1tm41-timÓteo-4a"><h2><a href="http://bibliaonline.com.br/acf/1tm/4">1 TIMÓTEO 4</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/1tm/4/1">1Tm 4:1</a> Sabemos que estamos nos &quot;últimos tempos&quot; porque aqueles que uma vez professaram a fé, e foram considerados Cristãos, estão abandonando a fé. Ouvimos de homens nos púlpitos hoje que afirmam ser homens Cristãos, mas que negam a fé. Provavelmente o maior perigo entre os crentes hoje é abandonar a autoridade absoluta da Palavra de Deus.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/4/3">1Tm 4:3</a> Estejamos alertas contra qualquer ensino que não esteja de acordo com a Palavra de Deus, mesmo que pareça ser muito piedoso e religioso.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/4/6">1Tm 4:6</a> Três vezes, daqui até o final do capítulo, é mencionada a &quot;doutrina&quot;. Para sermos capazes de detectar falsa doutrina (a palavra quer dizer &quot;o que é ensinado&quot;) precisamos estar bem familiarizados com a &quot;sã doutrina&quot;. Quanto mais você viver a verdade que você conhece, mais você será capaz de detectar o erro.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/4/8">1Tm 4:8</a> O exercício físico é proveitoso somente para um breve tempo. Mas a piedade é proveitosa em para todas as coisas, aqui e para a eternidade. Sem dúvida Paulo fazia muito exercício físico em seu interminável trabalho para o Senhor e para o Seu povo!</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/4/10">1Tm 4:10</a> No versículo a palavra &quot;Salvador&quot; não significa Salvador dos pecados, mas sim &quot;Preservador&quot; ou Aquele que dá e mantém a vida.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/4/12">1Tm 4:12</a> Timóteo é instruído a se comportar de modo não ser desprezado... isto ocorreria se a sua conduta estivesse em conformidade com aquilo que ele estava ensinando.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/4/13-16">1Tm 4:13-16</a> Sejamos diligentes em lermos e meditarmos; primeiro para nossa própria necessidade e depois para ajudarmos os outros.</p>
+<a class="header" href="print.html#a394" id="a394"><h2>#394</h2></a>
+<p>Todo o conhecimento de Deus deve fluir de revelação, pois o homem por sua própria sabedoria não conhece a Deus. <a href="http://bibliaonline.com.br/acf/1co/1/21">1 Co 1:21</a>.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf1tm51-timÓteo-5a" id="a-hrefhttpbibliaonlinecombracf1tm51-timÓteo-5a"><h2><a href="http://bibliaonline.com.br/acf/1tm/5">1 TIMÓTEO 5</a></h2></a>
+<p>A Bíblia não é apenas um livro de doutrinas, mas está cheia da mais prática instrução. Seria uma maldade pensar em fingir sermos sãos em doutrina e descuidados em nosso comportamento.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/5/1">1Tm 5:1</a> Timóteo era um jovem, e devia se lembrar disso em suas atitudes para com os outros. Aqueles que são jovens devem agradecer ao Senhor pelos crentes mais velhos. E aqueles que são mais velhos devem se lembrar de que os jovens serão encorajados se puderem ver um exemplo piedoso na vida das pessoas mais velhas.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/5/3-16">1Tm 5:3-16</a> A responsabilidade da assembléia para com as viúvas. Alguns deles estavam em necessidade, e deviam ser auxiliados financeiramente pela assembléia. Algumas, depois de perderem o marido, não reconheciam que Deus tinha algo para ensinar-lhes. Se agissem como no <a href="http://bibliaonline.com.br/acf/1tm/5/13">versículo 13</a>, seria uma triste evidência de que lhes faltava dependência no Senhor.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/5/14">1Tm 5:14</a> Lembremo-nos de que em nossos dias de tanta imoralidade e rebelião contra Deus, este ainda é o propósito do matrimônio.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/5/22">1Tm 5:22</a> Não devemos fazer muito alvoroço por um novo convertido. Devemos agir com cautela.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/5/24">1Tm 5:24</a> Todas as vidas serão revisadas. Alguns crentes viveram vidas abertamente ímpias, e outros vidas aparentemente corretas, mas Deus irá revelar tudo. Assim como acontece com crentes... as coisas boas que fazem podem não ser conhecidas de outros agora. Mas elas serão reveladas mais tarde pelo Senhor.</p>
+<a class="header" href="print.html#a395" id="a395"><h2>#395</h2></a>
+<p>Podemos chorar com Ele agora... mas nos regozijaremos com Ele para sempre.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf1tm61-timÓteo-6a" id="a-hrefhttpbibliaonlinecombracf1tm61-timÓteo-6a"><h2><a href="http://bibliaonline.com.br/acf/1tm/6">1 TIMÓTEO 6</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/1tm/6/1">1Tm 6:1</a> Nosso comportamento para com nosso empregador deve ser tal que ele venha a querer escutar o evangelho. Se professamos conhecer o Senhor e não obedecemos a nosso patrão, ele zombará do nome de Deus por nossa causa.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/6/2">1Tm 6:2</a> E se trabalhamos para um empregador crente, sejamos igualmente fiéis em nosso trabalho. O Senhor toma nota dessas coisas!</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/6/6">1Tm 6:6</a> O que significa &quot;grande ganho&quot; para você? Deus nos diz o que deve significar.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/6/8">1Tm 6:8</a> Outra vez &quot;contente&quot;. Algo tão raro nos dias de hoje; as pessoas fazem greves porque não estão contentes.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/6/9-10">1Tm 6:9-10</a> Palavras necessárias para nós hoje. Os crentes possuem riquezas que lhes não podem ser tiradas.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/6/11-12">1Tm 6:11-12</a> Timóteo é instruído a &quot;fugir&quot;, a &quot;seguir&quot; e a &quot;lutar&quot;. Ele deve fugir do espírito de cobiça que é natural a todos nós. Ele deve seguir as maravilhosas qualidades apresentadas aqui. Ele deve combater o bom combate da fé. Timóteo havia aprendido o quão rico era nas coisas espirituais; ele deveria se apegar a essas coisas.</p>
+<p><a href="http://bibliaonline.com.br/acf/1tm/6/13-16">1Tm 6:13-16</a> Nós que conhecemos o Senhor Jesus devemos nos lembrar da majestade que Lhe pertence. Que grande tolice deixarmos de representar Alguém assim, para sermos levados pelas honras passageiras da riqueza deste mundo.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

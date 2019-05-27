@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter a Day - 2 Pedro</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="349.html"><strong aria-hidden="true">1.</strong> #349</a></li><li><a href="2_pedro_1,_vers_1-8.html"><strong aria-hidden="true">2.</strong> 2 PEDRO 1, Vers. 1-8</a></li><li><a href="350.html"><strong aria-hidden="true">3.</strong> #350</a></li><li><a href="2_pedro_1,_vers_9-21.html"><strong aria-hidden="true">4.</strong> 2 PEDRO 1, Vers. 9-21</a></li><li><a href="351.html"><strong aria-hidden="true">5.</strong> #351</a></li><li><a href="2_pedro_2.html"><strong aria-hidden="true">6.</strong> 2 PEDRO 2</a></li><li><a href="352.html"><strong aria-hidden="true">7.</strong> #352</a></li><li><a href="2_pedro_3.html"><strong aria-hidden="true">8.</strong> 2 PEDRO 3</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Chapter a Day - 2 Pedro</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#a349" id="a349"><h2>#349</h2></a>
+<p>A única descrição biográfica que Jesus deu de Si próprio foi, &quot;Sou manso e humilde de coração&quot; (<a href="http://bibliaonline.com.br/acf/mt/11/29">Mt 11:29</a>).</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf2pe11-82-pedro-1-vers-1-8a" id="a-hrefhttpbibliaonlinecombracf2pe11-82-pedro-1-vers-1-8a"><h2><a href="http://bibliaonline.com.br/acf/2pe/1/1-8">2 PEDRO 1, Vers. 1-8</a></h2></a>
+<p>A segunda carta alerta principalmente contra aqueles que tentam fazer os verdadeiros crentes se desviarem de seguir ao Senhor. Hoje há muitos assim.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/1/1-4">2 Pd 1:1-4</a> Isso é o que todo crente tem em Cristo. Leia cuidadosamente.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/1/5">2 Pd 1:5</a> Nossa parte. Nossa responsabilidade (não para obtermos as bênçãos, mas porque as temos). O versículo 5 diz &quot;e além disso&quot; no sentido de &quot;pelo mesmo motivo que temos as bênçãos&quot; dos versículos <a href="http://bibliaonline.com.br/acf/2pe/1/3,4">3 e 4</a>, agora devemos viver nelas. Se não alimentamos a velha vida (a velha natureza) ela fica fraca. O amor (caridade) será uma parte importante de nossa vida.</p>
+<a class="header" href="print.html#a350" id="a350"><h2>#350</h2></a>
+<p>É o espírito, não a mente que guia uma pessoa para o lugar onde Jesus está. A manifestação celestial é tão grande que todas as outras influências se desvanecem. Lucas <a href="http://bibliaonline.com.br/acf/lc/2/8-16">2:8-16</a>.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf2pe19-212-pedro-1-vers-9-21a" id="a-hrefhttpbibliaonlinecombracf2pe19-212-pedro-1-vers-9-21a"><h2><a href="http://bibliaonline.com.br/acf/2pe/1/9-21">2 PEDRO 1, Vers. 9-21</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/2pe/1/9">2 Pd 1:9</a> Mas se estas coisas não fazem parte de nossa vida, então não podemos enxergar muito longe nas coisas de Deus. Olhamos para as coisas ao nosso redor.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/1/11">2 Pd 1:11</a> Se formos crentes obedientes, então vamos ser felizes e estaremos aguardando para entrar no céu.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/1/12-15">2 Pd 1:12-15</a> Pedro se alegrava em poder lembrá-los dessas coisas, mesmo que eles não as conhecessem. E precisamos ser lembrados disso vez após outra. Nos esquecemos logo.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/1/17-18">2 Pd 1:17-18</a> A transfiguração do Senhor em <a href="http://bibliaonline.com.br/acf/mt/17">Mt 17</a>.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/1/19">2 Pd 1:19</a> A transfiguração tornou as profecias do Antigo Testamento mais certas para os crentes. A estrela da manhã aparece antes que o dia amanheça. Nas Escrituras, o nascer do sol é o Senhor Jesus vindo em glória no princípio do milênio. Mas a estrela da manhã é o Senhor Jesus vindo para os crentes antes do milênio.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/1/20-21">2 Pd 1:20-21</a> Não podemos tomar apenas uma parte das Escrituras - devemos juntar tudo para obter o significado completo. Nenhuma profecia é explicada por si só. Mas não se esqueça de que toda profecia tem a ver com este mundo.</p>
+<a class="header" href="print.html#a351" id="a351"><h2>#351</h2></a>
+<p>A manifestação celestial, e não a mente, foi o que moveu os sábios. <a href="http://bibliaonline.com.br/acf/mt/2/1-11">Mt 2:1-11</a></p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf2pe22-pedro-2a" id="a-hrefhttpbibliaonlinecombracf2pe22-pedro-2a"><h2><a href="http://bibliaonline.com.br/acf/2pe/2">2 PEDRO 2</a></h2></a>
+<p>Agora vêm os avisos contra os falsos mestres.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/2/1">2 Pd 2:1</a> &quot;O Senhor que os resgatou&quot; não significa que eles sejam pessoas salvas, embora possam parecer que sejam, mas significa que o Senhor pagou o preço na cruz de modo que eles poderiam ser salvos se cressem. Meio confuso? <a href="http://bibliaonline.com.br/acf/mt/13/44,45">Mt 13:44 e 45</a> pode ajudar. O Senhor Jesus &quot;comprou&quot; o mundo a fim de poder &quot;redimir&quot; algumas das pessoas que havia no mundo. Muitas pessoas seriam enganadas pelos falsos mestres.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/2/3">2 Pd 2:3</a> Mas o castigo iria alcançá-los!</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/2/4-10">2 Pd 2:4-10</a> Exemplos de coisas similares no passado. Os anjos que pecaram continuam hoje acorrentados e aguardando pelo juízo. No dilúvio, os ímpios não foram poupados. Depois veio Sodoma e Gomorra. Pode ter parecido na ocasião que aquelas cidades permaneceriam para sempre, mas o juízo veio.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/2/9">2 Pd 2:9</a> O Senhor sabe como livrar os Seus! Não precisamos nos preocupar.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/2/12-22">2 Pd 2:12-22</a> Descrição dos homens em posições religiosas e de poder nos dias de hoje.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/2/20">2 Pd 2:20</a> Eles não têm desculpa. Pois aqui nos diz que escutaram a verdade por si próprios, e a rejeitaram. Teria sido muito melhor se nunca a tivessem escutado.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/2/22">2 Pd 2:22</a> O cão e a porca, animais impuros, mostram que essas pessoas não estão salvas.</p>
+<a class="header" href="print.html#a352" id="a352"><h2>#352</h2></a>
+<p>Não é por um homem ser letrado que ele é capaz de entrar nos pensamentos de Deus. Seja ele ignorante ou letrado, só existe uma maneira... para o olho enxergar o que se refere a Cristo. Onde quer que Cristo esteja firmemente fixado diante da alma, Ele Se torna a luz para a inteligência espiritual.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracf2pe32-pedro-3a" id="a-hrefhttpbibliaonlinecombracf2pe32-pedro-3a"><h2><a href="http://bibliaonline.com.br/acf/2pe/3">2 PEDRO 3</a></h2></a>
+<p>O capítulo de hoje é diferente. Essas pessoas estão olhando ao redor e achando que por tudo continuar parecendo estável e certo, vai ficar assim para sempre. E as pessoas hoje em dia estão dizendo e pensando o mesmo.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/3/1-2">2 Pd 3:1-2</a> Doces sussurros de ternura para nós.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/3/3-4">2 Pd 3:3-4</a> Os zombadores que não eram salvos, por tudo parecer estável, diziam que o Senhor nunca voltaria para mudar todas as coisas.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/3/5-7">2 Pd 3:5-7</a> Deus lembra a eles (e a nós) que se esqueciam do dilúvio!</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/3/8">2 Pd 3:8</a> Coisas pequenas e grandes são iguais para o Senhor. Um dia é como mil anos para Ele.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/3/9">2 Pd 3:9</a> O Senhor não está desatento para a Sua promessa de voltar. Ele aguarda pois não quer que alguém pereça.</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/3/10">2 Pd 3:10</a> Isto refere-se a vinda do Senhor para tirar os incrédulos. (Exatamente o contrário da primeira vinda).</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/3/11-18">2 Pd 3:11-18</a> Considerando que todas essas coisas passarão, que pessoas santas devemos ser!</p>
+<p><a href="http://bibliaonline.com.br/acf/2pe/3/17-18">2 Pd 3:17-18</a> Precisamos ser muito cuidadosos quanto a quem escutamos. Para crescermos em graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>
