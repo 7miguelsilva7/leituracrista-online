@@ -1,0 +1,26 @@
+1009.html
+1010.html
+1011.html
+ageu_1.html
+ageu_2,_vers_10-23.html
+ageu_2,_vers_1-9.html
+assets
+ayu-highlight.css
+book.css
+book.js
+chapter a day ageu.odt
+clipboard.min.js
+comandoEmPastas.sh
+custom.js
+elasticlunr.min.js
+favicon.png
+_FontAwesome
+highlight.css
+highlight.js
+index.html
+lista.txt
+mark.min.js
+print.html
+searcher.js
+searchindex.js
+tomorrow-night.css
