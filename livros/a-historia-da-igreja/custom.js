@@ -225,8 +225,13 @@ console.log(localStorage.getItem(bookName[0]));
 
 function loadLastPage()
 {
-  // alert('está funcionando')
-  location.replace(localStorage.getItem(bookName[0]))
+  if(localStorage.getItem(bookName[0]))[
+    
+// alert('está funcionando')
+location.replace(localStorage.getItem(bookName[0]))
+
+  ]
+  
 }
 
 
