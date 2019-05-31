@@ -193,11 +193,11 @@ document.getElementById("content").innerHTML = res4;
 {/* <div class="dropup" id="translaters"><div class="dropdown-menu" id="google_translate_element"></div> */}
 
 // Adicionar google translate
-document.write('<script>    function googleTranslateElementInit() {        new google.translate.TranslateElement(            {pageLanguage: \'pt\'},            \'google_translate_element\'        );    }</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>')
+// document.write('<script>    function googleTranslateElementInit() {        new google.translate.TranslateElement(            {pageLanguage: \'pt\'},            \'google_translate_element\'        );    }</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>')
 
-$("#google_translate_element").click(function(e){
-  e.stopPropagation();
-});
+// $("#google_translate_element").click(function(e){
+//   e.stopPropagation();
+// });
 
 
 
