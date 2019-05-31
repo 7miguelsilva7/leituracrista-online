@@ -199,6 +199,7 @@ var bookName = (document.getElementsByClassName("menu-title"))
 function salvePositionNext()
 {
   var locationBook = (document.getElementsByClassName("nav-chapters next"));
+  var locationBook = (document.getElementsByClassName("mobile-nav-chapters next"));
   localStorage.setItem(bookName[0], locationBook[0])
   // alert(locationBook[0]);
 }
@@ -206,6 +207,7 @@ function salvePositionNext()
 function salvePositionPrevious()
 {
   var locationBook = (document.getElementsByClassName("nav-chapters previous"));
+  var locationBook = (document.getElementsByClassName("mobile-nav-chapters previous"));
   localStorage.setItem(bookName[0], locationBook[0])
   // alert(locationBook[0]);
 }
