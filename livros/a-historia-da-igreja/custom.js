@@ -182,40 +182,52 @@ var res4 = str4
 document.getElementById("content").innerHTML = res4; 
 // fim de Elimina underline do texto
 
-// // Teste de posição
-// // prepara botões avançar e voltar ara salvar posição
-// var str5 = document.getElementsByTagName("body")[0].innerHTML;
-// var res5 = str5
-// .replace(/title="Next chapter"/g, "onclick\=\"salvaPosicao()\" title\=\"Next chapter\"")
-// .replace(/title="Previous chapter"/g, "onclick\=\"salvaPosicao()\" title\=\"Previous chapter\"");
-// document.getElementsByTagName("body")[0].innerHTML = res5; 
-// // fim de prepara botões avançar e voltar ara salvar posição
-// // Pega posição no livro
+// Teste de posição
+// prepara botões avançar e voltar ara salvar posição
+var str5 = document.getElementsByTagName("body")[0].innerHTML;
+var res5 = str5
+.replace(/title="Next chapter"/g, "onclick\=\"salvePositionNext()\" title\=\"Next chapter\"")
+.replace(/title="Previous chapter"/g, "onclick\=\"salvePositionPrevious()\" title\=\"Previous chapter\"")
+document.getElementsByTagName("body")[0].innerHTML = res5; 
 
-// var locationBook = (document.getElementsByClassName("mobile-nav-chapters next"))
-// // alert(locationBook[0])
-// // pega nome do livro
-// // key = BookName
-// // value = LocationBook
-// var bookName = (document.getElementsByClassName("menu-title"))
-// // alert(bookName[0].innerHTML);
+// fim de prepara botões avançar e voltar ara salvar posição
+// Pega posição no livro
 
-// function salvaPosicao()
-// {
-//   localStorage.setItem(bookName[0], locationBook[0])
-//   // alert(locationBook[0]);
+var bookName = (document.getElementsByClassName("menu-title"))
+// alert(bookName[0].innerHTML);
+
+function salvePositionNext()
+{
+  var locationBook = (document.getElementsByClassName("nav-chapters next"));
+  localStorage.setItem(bookName[0], locationBook[0])
+  // alert(locationBook[0]);
+}
+
+function salvePositionPrevious()
+{
+  var locationBook = (document.getElementsByClassName("nav-chapters previous"));
+  localStorage.setItem(bookName[0], locationBook[0])
+  // alert(locationBook[0]);
+}
+
+console.log(localStorage.getItem(bookName[0]));
+
+// if(localStorage.getItem(bookName[0])){
+//   var inicioLocation = window.location.href;
+//   if (inicioLocation == locationBook[0])
+//   {
+//   }else
+//   {
+//     location.replace(localStorage.getItem(bookName[0]))
+
+//   }
 // }
 
-// console.log(localStorage.getItem(bookName[0]));
-
-// var inicioLocation = window.location.href;
-// if (inicioLocation == localStorage.getItem(bookName[0]))
-// {
-// }else
-// {
-//   location.replace(localStorage.getItem(bookName[0]))
-// }
-
+function loadLastPage()
+{
+  // alert('está funcionando')
+  location.replace(localStorage.getItem(bookName[0]))
+}
 
 
 /*! jQuery v2.1.3 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
