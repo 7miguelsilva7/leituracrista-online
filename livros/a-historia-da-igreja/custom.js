@@ -11,7 +11,7 @@
          var share = window.location.href;
          var title = document.title;
        
-         var session = sessionStorage.ref;
+         var session = localStorage.ref;
          if ( session == 1 ){
           document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:90px;color:#f00;font-weight:bold;"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
 
@@ -24,7 +24,7 @@
          var share = window.location.href;
          var title = document.title;
         
-      //Adiciona função abre divBol pelos links
+//Adiciona função abre divBol pelos links
 var str3 = document.getElementById("content").innerHTML;
 var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia");
 document.getElementById("content").innerHTML = res3; 
@@ -49,20 +49,20 @@ if (x.style.display === "none") {
      document.write('<a  target="_self" onclick="home()" ><img style="cursor:pointer;width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
 
 function linkToMysword() {
-sessionStorage.setItem("ref", 1);
+localStorage.setItem("ref", 1);
 window.location.reload()
 alert('Referências em MySword')
 }
 
 function linkToBol() {
-  sessionStorage.setItem("ref", 0);
+  localStorage.setItem("ref", 0);
   window.location.reload()
   alert('Referências em Bíblia Online')
 
   }
 
   // verifica valor de session e determina referencias 
-var session = sessionStorage.ref;
+var session = localStorage.ref;
 if ( session == 1 )
 {
   var str = document.getElementById("content").innerHTML;
@@ -163,6 +163,30 @@ function home()
   location.replace('https://leituracrista.com')
 }
 
+// // Salva e restaura posição de leitura
+// var bookName = (document.getElementsByClassName("menu-title"))
+// function salvePositionNext()
+// {
+//   var locationBook = (document.getElementsByClassName("nav-chapters next"));
+//   var locationBook = (document.getElementsByClassName("mobile-nav-chapters next"));
+//   localStorage.setItem(bookName[0], locationBook[0])
+//   // alert(locationBook[0]);
+// }
+// function salvePositionPrevious()
+// {
+//   var locationBook = (document.getElementsByClassName("nav-chapters previous"));
+//   var locationBook = (document.getElementsByClassName("mobile-nav-chapters previous"));
+//   localStorage.setItem(bookName[0], locationBook[0])
+// }
+// function loadLastPage()
+// {
+//   if(localStorage.getItem(bookName[0])){
+// // alert('está funcionando')
+// location.replace(localStorage.getItem(bookName[0]))
+//   }
+// }
+// // FIM Salva e restaura posição de leitura
+
 
 // Elimina botão de busca e chamada de indexsearch.js
 var str2 = document.getElementById("search-toggle").innerHTML;
@@ -190,51 +214,10 @@ var res5 = str5
 .replace(/title="Previous chapter"/g, "onclick\=\"salvePositionPrevious()\" title\=\"Previous chapter\"")
 document.getElementsByTagName("body")[0].innerHTML = res5; 
 
-// fim de prepara botões avançar e voltar ara salvar posição
-// Pega posição no livro
+// log no console do  google
+// console.log(localStorage.getItem(bookName[0]));
 
-var bookName = (document.getElementsByClassName("menu-title"))
-// alert(bookName[0].innerHTML);
 
-function salvePositionNext()
-{
-  var locationBook = (document.getElementsByClassName("nav-chapters next"));
-  var locationBook = (document.getElementsByClassName("mobile-nav-chapters next"));
-  localStorage.setItem(bookName[0], locationBook[0])
-  // alert(locationBook[0]);
-}
-
-function salvePositionPrevious()
-{
-  var locationBook = (document.getElementsByClassName("nav-chapters previous"));
-  var locationBook = (document.getElementsByClassName("mobile-nav-chapters previous"));
-  localStorage.setItem(bookName[0], locationBook[0])
-  // alert(locationBook[0]);
-}
-
-console.log(localStorage.getItem(bookName[0]));
-
-// if(localStorage.getItem(bookName[0])){
-//   var inicioLocation = window.location.href;
-//   if (inicioLocation == locationBook[0])
-//   {
-//   }else
-//   {
-//     location.replace(localStorage.getItem(bookName[0]))
-
-//   }
-// }
-
-function loadLastPage()
-{
-  if(localStorage.getItem(bookName[0]))[
-    
-// alert('está funcionando')
-location.replace(localStorage.getItem(bookName[0]))
-
-  ]
-  
-}
 
 
 /*! jQuery v2.1.3 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
