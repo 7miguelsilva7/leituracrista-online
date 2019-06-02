@@ -205,13 +205,13 @@ function savePositionPrevious()
   var locationBook = (document.getElementsByClassName("mobile-nav-chapters previous"));
   localStorage.setItem(bookName[0], locationBook[0])
 }
-function loadLastPage()
-{
-  if(bookName[0] == document.getElementsByClassName("menu-title")[0]){
-// alert('está funcionando')
-  location.replace(localStorage.getItem(bookName[0]))
-  }
-  }
+// function loadLastPage()
+// {
+//   if(bookName[0] == document.getElementsByClassName("menu-title")[0]){
+// // alert('está funcionando')
+//   location.replace(localStorage.getItem(bookName[0]))
+//   }
+//   }
 // FIM Salva e restaura posição de leitura
 
 // log no console do  google
