@@ -247,7 +247,10 @@ function loadLastPage()
   location.replace(localStorage.getItem(bookNameKey[0].innerHTML)) 
   
   }
-  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+    var target = $('#scroll');
+    target.css('overflow-y', 'hidden');
+    $(window).scrollTop(localStorage.getItem(positionScrollKey));
+    target.css('overflow-y', 'auto');
 
 }
 
