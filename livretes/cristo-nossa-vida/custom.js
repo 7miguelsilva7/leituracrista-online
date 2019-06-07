@@ -232,7 +232,7 @@ function savePositionPrevious()
 //# sourceMappingURL=jquery.min.map
 
 var aScroll = 'scroll-'
-var positionScrollKey = window.location.href;
+var positionScrollKey = aScroll.concat(bookNameKey[0].innerHTML);
 
 function onscrolling(){
 positionScrollValue = $(window).scrollTop();
