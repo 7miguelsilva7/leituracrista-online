@@ -232,7 +232,7 @@ function savePositionPrevious()
 //# sourceMappingURL=jquery.min.map
 
 var aScroll = 'scroll-'
-var positionScrollKey = aScroll.concat(bookNameKey[0].innerHTML);
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
 
 function onscrolling(){
 positionScrollValue = $(window).scrollTop();
@@ -248,15 +248,17 @@ function loadLastPage()
   location.replace(localStorage.getItem(bookNameKey[0].innerHTML)) 
   
   }
-  if(localStorage.hasOwnProperty(positionScrollKey)){
-    var target = $('#scroll');
-    target.css('overflow-y', 'hidden');
-    $(window).scrollTop(localStorage.getItem(positionScrollKey));
-    target.css('overflow-y', 'auto');
 }
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
 }
 
 // log no console do  google
-console.log(bookNameKey[0].innerHTML)
-console.log(localStorage.getItem(bookNameKey[0].innerHTML))
+// console.log(bookNameKey[0].innerHTML)
+// console.log(localStorage.getItem(bookNameKey[0].innerHTML))
+console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
