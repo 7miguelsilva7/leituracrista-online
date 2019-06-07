@@ -260,3 +260,4 @@ function loadLastPage()
 console.log(bookNameKey[0].innerHTML)
 console.log(localStorage.getItem(bookNameKey[0].innerHTML))
 console.log(localStorage.getItem(positionScrollKey));
+console.log(positionScrollKey)
