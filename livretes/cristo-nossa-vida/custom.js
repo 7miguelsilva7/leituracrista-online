@@ -232,7 +232,7 @@ function savePositionPrevious()
 //# sourceMappingURL=jquery.min.map
 
 var aScroll = 'scroll-'
-var positionScrollKey = aScroll.concat(bookNameKey[0].innerHTML);
+var positionScrollKey = window.location.href;
 
 function onscrolling(){
 positionScrollValue = $(window).scrollTop();
@@ -248,11 +248,12 @@ function loadLastPage()
   location.replace(localStorage.getItem(bookNameKey[0].innerHTML)) 
   
   }
+  if(localStorage.hasOwnProperty(positionScrollKey)){
     var target = $('#scroll');
     target.css('overflow-y', 'hidden');
     $(window).scrollTop(localStorage.getItem(positionScrollKey));
     target.css('overflow-y', 'auto');
-
+}
 }
 
 // log no console do  google
