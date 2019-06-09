@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leituracrista.com/livros/mateus-darby/</loc>
+    <lastmod>2019-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/livros/chapter-a-day-at/</loc>
     <lastmod>2019-06-08T00:00:00+00:00</lastmod>
   </url>
@@ -1019,7 +1024,7 @@
   
   <url>
     <loc>https://leituracrista.com/categories/coment%C3%A1rios/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1226,7 +1231,7 @@
   
   <url>
     <loc>https://leituracrista.com/tags/j.-n.-darby/</loc>
-    <lastmod>2019-05-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1268,7 +1273,7 @@
   
   <url>
     <loc>https://leituracrista.com/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1280,7 +1285,7 @@
   
   <url>
     <loc>https://leituracrista.com/categories/livros/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
