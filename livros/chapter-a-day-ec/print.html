@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter a Day - Eclesiastes</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body onscroll="onscrolling()" class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="671.html"><strong aria-hidden="true">1.</strong> #671</a></li><li><a href="eclesiastes_1.html"><strong aria-hidden="true">2.</strong> ECLESIASTES 1</a></li><li><a href="672.html"><strong aria-hidden="true">3.</strong> #672</a></li><li><a href="eclesiastes_2.html"><strong aria-hidden="true">4.</strong> ECLESIASTES 2</a></li><li><a href="673.html"><strong aria-hidden="true">5.</strong> #673</a></li><li><a href="eclesiastes_3.html"><strong aria-hidden="true">6.</strong> ECLESIASTES 3</a></li><li><a href="674.html"><strong aria-hidden="true">7.</strong> #674</a></li><li><a href="eclesiastes_4.html"><strong aria-hidden="true">8.</strong> ECLESIASTES 4</a></li><li><a href="675.html"><strong aria-hidden="true">9.</strong> #675</a></li><li><a href="eclesiastes_5.html"><strong aria-hidden="true">10.</strong> ECLESIASTES 5</a></li><li><a href="676.html"><strong aria-hidden="true">11.</strong> #676</a></li><li><a href="eclesiastes_6.html"><strong aria-hidden="true">12.</strong> ECLESIASTES 6</a></li><li><a href="677.html"><strong aria-hidden="true">13.</strong> #677</a></li><li><a href="eclesiastes_7.html"><strong aria-hidden="true">14.</strong> ECLESIASTES 7</a></li><li><a href="678.html"><strong aria-hidden="true">15.</strong> #678</a></li><li><a href="679.html"><strong aria-hidden="true">16.</strong> #679</a></li><li><a href="eclesiastes_9.html"><strong aria-hidden="true">17.</strong> ECLESIASTES 9</a></li><li><a href="680.html"><strong aria-hidden="true">18.</strong> #680</a></li><li><a href="eclesiastes_10.html"><strong aria-hidden="true">19.</strong> ECLESIASTES 10</a></li><li><a href="681.html"><strong aria-hidden="true">20.</strong> #681</a></li><li><a href="eclesiastes_11.html"><strong aria-hidden="true">21.</strong> ECLESIASTES 11</a></li><li><a href="682.html"><strong aria-hidden="true">22.</strong> #682</a></li><li><a href="eclesiastes_12.html"><strong aria-hidden="true">23.</strong> ECLESIASTES 12</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Chapter a Day - Eclesiastes</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#a671" id="a671"><h2>#671</h2></a>
+<p>Uma falta de apreço pela maravilha de uma salvação completa em Cristo abre a porta para todo tipo de desequilíbrio, e produz frustração e fracasso contínuos.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec1eclesiastes-1a" id="a-hrefhttpbibliaonlinecombracfec1eclesiastes-1a"><h2><a href="http://bibliaonline.com.br/acf/ec/1">ECLESIASTES 1</a></h2></a>
+<p>Este Livro é totalmente diferente. Trata-se da experiência de um homem que é muito sábio e então decide experimentar de tudo o que há na Terra. (As palavras que ele usa são &quot;debaixo do sol&quot; e ele as usa cerca de 28 vezes neste Livro). Ele quer descobrir se alguma coisa irá fazê-lo feliz. O escritor é o Rei Salomão e não existe nada que lhe falte para poder encontrar a resposta. Portanto ele tenta. Às vezes ele chega perto da verdade, mas outras vezes está muito longe dela. (<a href="http://bibliaonline.com.br/acf/ec/3/18-22">3:18-22</a>, <a href="http://bibliaonline.com.br/acf/ec/7/16,17">7:16, 17</a>). Mas o ensinamento divino está nos últimos dois versículos do livro. Eles dão a resposta às indagações de <a href="http://bibliaonline.com.br/acf/ec/1/13">1:13</a> e <a href="http://bibliaonline.com.br/acf/ec/2/3">2:3</a>. Prazer, ser &quot;bom&quot;, aprendizado, riquezas, etc, etc, não podem trazer a felicidade. Por que? Porque o mal é tudo o que há neste mundo. Lembre-se de que Salomão não conhecia nada sobre o Senhor Jesus. Ele estava buscando por satisfação aqui neste mundo, mas nós temos encontrado gozo e paz em um Homem celestial. É importante entender também que o quanto mais uma pessoa tenta encontrar a felicidade aqui, mais infeliz ela se torna.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/1/1">Ec 1:1</a> Neste livro a palavra &quot;Deus&quot; é usada porque trata-se da experiência do homem na Terra diante de Deus, sem conhecê-Lo como Senhor.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/1/4-11">Ec 1:4-11</a> Trabalho, trabalho, trabalho, que nunca termina... que nunca satisfaz... e assim segue toda a criação nesta Terra. Gênesis <a href="http://bibliaonline.com.br/acf/gn/3/17-19">3:17-19</a> nos diz o por quê disto ser assim.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/1/12-18">Ec 1:12-18</a> Algo para pensar, para qualquer um que esteja buscando &quot;abundantemente a sabedoria e o conhecimento&quot; sobre tudo o que há no mundo. O homem que tinha mais conhecimento que qualquer outro homem sobre a Terra (exceto Cristo, evidentemente) nos diz no <a href="http://bibliaonline.com.br/acf/ec/1/14">versículo 14</a> o que descobriu.</p>
+<a class="header" href="print.html#a672" id="a672"><h2>#672</h2></a>
+<p>É preciso lembrar de um princípio fundamental na vida espiritual - que Deus só revela verdades espirituais para atender necessidades espirituais.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec2eclesiastes-2a" id="a-hrefhttpbibliaonlinecombracfec2eclesiastes-2a"><h2><a href="http://bibliaonline.com.br/acf/ec/2">ECLESIASTES 2</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/2/1-3">Ec 2:1-3</a> Se o muito conhecimento não poderá satisfazer o coração, será que a diversão, o prazer e o entretenimento trarão contentamento? Não.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/2/4-11">Ec 2:4-11</a> Bem, então, que tal um bom e duro trabalho para tornar o mundo um lugar melhor, mais limpo e belo para se viver? Que tal acumular &quot;bens&quot;? O <a href="http://bibliaonline.com.br/acf/ec/2/11">versículo 11</a> repete o mesmo triste final.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/2/12-19">Ec 2:12-19</a> Se tudo o que ele havia descoberto sobre a vida era verdade, que diferença faria para um homem ser ele sábio ou tolo? O &quot;evento&quot; comum a todos é a morte que encerra tudo aqui na Terra, portanto por que trabalhar tanto só para deixar tudo para os outros? (Sem as boas novas da salvação de Deus, que vida vazia!)</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/2/20-21">Ec 2:20-21</a> Salomão deixou tudo para seu filho Roboão que não herdou a sabedoria de seu pai. (Será que estamos aprendendo com Salomão?)</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/2/22-26">Ec 2:22-26</a> Como dizem alguns, &quot;vamos comer, beber, e nos divertir, porque amanhã morreremos!&quot; Que terrível modo de vida.</p>
+<a class="header" href="print.html#a673" id="a673"><h2>#673</h2></a>
+<p>Seja o que for que enfraqueça sua razão, debilite a brandura de sua consciência, obscureça seu senso de Deus, ou o prive do sabor pelas coisas espirituais - isto é pecado para você.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec3eclesiastes-3a" id="a-hrefhttpbibliaonlinecombracfec3eclesiastes-3a"><h2><a href="http://bibliaonline.com.br/acf/ec/3">ECLESIASTES 3</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/3/1-8">Ec 3:1-8</a> Lembre-se de que isto não é Cristianismo, mas sim o que Salomão vê na vida diária.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/3/9-15">Ec 3:9-15</a> Tudo segue adiante, sem que o homem possa mudar coisa alguma nem tampouco predizer o futuro. Tudo está nas mãos de Deus, mas até o conhecimento disto não traz contentamento.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/3/16-22">Ec 3:16-22</a> Sem a revelação da verdade de Deus, estes versículos são a única conclusão a que um homem pode chegar - sem qualquer diferença real entre o homem e o animal. É daí que o ensino da evolução vem, pois a evolução nega a verdade da Palavra de Deus de que Ele criou o mundo.</p>
+<a class="header" href="print.html#a674" id="a674"><h2>#674</h2></a>
+<p>O entusiasmo é mais fácil que a obediência.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec4eclesiastes-4a" id="a-hrefhttpbibliaonlinecombracfec4eclesiastes-4a"><h2><a href="http://bibliaonline.com.br/acf/ec/4">ECLESIASTES 4</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/4/1-16">Ec 4:1-16</a> Se os últimos poucos versículos do <a href="http://bibliaonline.com.br/acf/ec/3">capítulo 3</a> forem verdade, é melhor estar morto do que vivo, e é melhor ainda nunca ter nascido! Mas quando se está vivo, é melhor ter um pouco dos bens deste mundo e tranquilidade, do que ter muito e aflição.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/4/7-12">Ec 4:7-12</a> É melhor ter companhia do que viver só.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/4/13-16">Ec 4:13-16</a> Salomão fracassou no final de sua vida como rei, e aqui ele preocupa-se em saber se o seu filho irá dar ouvidos aos avisos. (Por favor, não se esqueça de que estes capítulos são as descobertas e raciocínios do homem, não os pensamentos de Deus).</p>
+<a class="header" href="print.html#a675" id="a675"><h2>#675</h2></a>
+<p>É isto apropriado para um seguidor de Cristo? Está isto de acordo com a glória e o caráter de Seu reino? Irá isto agradar o desagradar a meu Senhor e Salvador? Estas são perguntas de amor!</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec5eclesiastes-5a" id="a-hrefhttpbibliaonlinecombracfec5eclesiastes-5a"><h2><a href="http://bibliaonline.com.br/acf/ec/5">ECLESIASTES 5</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/5/1-8">Ec 5:1-8</a> Que aviso para cuidarmos de nosso falar e de nossas ações! Deus está ouvindo e observando! (<a href="http://bibliaonline.com.br/acf/mt/14/7-10">Mt 14:7-10</a> é um exemplo da primeira parte do <a href="http://bibliaonline.com.br/acf/ec/5/6">versículo 6</a>).</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/5/9-17">Ec 5:9-17</a> O apóstolo Paulo faz uso deste ensinamento em <a href="http://bibliaonline.com.br/acf/1tm/6/7-10">1Tm 6:7-10</a>. Mas Paulo tinha a verdade de Deus para mostrar o lado alegre do assunto, enquanto Salomão dá apenas o lado triste, do ponto de vista do homem.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/5/18-20">Ec 5:18-20</a> Não é pecado ser rico em bens neste mundo, mas estes bens não irão realmente satisfazer o coração. É o desejo de ser rico (veja <a href="http://bibliaonline.com.br/acf/1tm/6/9-10">1Tm 6:9-10</a>) que traz tristeza e frustração à vida.</p>
+<a class="header" href="print.html#a676" id="a676"><h2>#676</h2></a>
+<p>Que sua aparência e ações sejam uma grande propaganda de que o Espírito de Deus mora dentro de você.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec6eclesiastes-6a" id="a-hrefhttpbibliaonlinecombracfec6eclesiastes-6a"><h2><a href="http://bibliaonline.com.br/acf/ec/6">ECLESIASTES 6</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/6/1-5">Ec 6:1-5</a> Que tolice é tentar conseguir muito dinheiro, bens e fama neste mundo, só para descobrir que isso não traz felicidade.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/6/6">Ec 6:6</a> Ainda que uma pessoa vivesse 2000 anos, ela nunca veria nada que valesse a pena.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/6/7-12">Ec 6:7-12</a> Muitas perguntas mas nenhuma resposta! Só a verdade de Deus dá as respostas certas. (Estamos buscando Suas respostas em Sua Palavra todos os dias? Nós as encontramos no Novo Testamento).</p>
+<p>Podemos resumir os seis primeiros capítulos como uma mostra da vaidade ou vazio de todas as coisas no mundo; os últimos seis capítulos como uma mostra de que a verdadeira sabedoria é o único caminho que vale a pena trilhar neste mundo. (Mas aqui não nos diz como encontrá-lo).</p>
+<a class="header" href="print.html#a677" id="a677"><h2>#677</h2></a>
+<p>Lembre-se: o fato de você ter muita informação não significa que você tenha sabedoria.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec7eclesiastes-7a" id="a-hrefhttpbibliaonlinecombracfec7eclesiastes-7a"><h2><a href="http://bibliaonline.com.br/acf/ec/7">ECLESIASTES 7</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/7/1-6">Ec 7:1-6</a> Coisas diferentes são aqui comparadas. Repare as coisas melhores. Aqueles que não se preocupam com as coisas sérias são chamados de tolos.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/7/7-14">Ec 7:7-14</a> Um espírito paciente e cuidadoso é o que deve ser visto em nossa vida.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/7/16-18">Ec 7:16-18</a> O homem diz que a moderação em todas as coisas é a melhor política. (Esta não é a sabedoria de Deus, como temos visto neste livro de Eclesiastes).</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/7/19-28">Ec 7:19-28</a> Conclusões corretas, mas nada que dê qualquer esperança. (O &quot;homem&quot; do <a href="http://bibliaonline.com.br/acf/ec/7/28">versículo 28</a> poderia nos falar de Cristo, mas até Sua vida justa não poderia salvar o homem, mas só serve para condená-lo ainda mais. É só através da morte de Cristo que alguém pode obter o que precisa, mas essa boa nova está na revelação do evangelho de Deus, não naquilo que o homem possa observar na Terra). (Neste nosso &quot;dia da graça&quot;, um crente pode ter muito mais dificuldades que um incrédulo, assim como aconteceu com o Senhor Jesus).</p>
+<a class="header" href="print.html#a678" id="a678"><h2>#678</h2></a>
+<p>Não há atalhos nos caminhos de Deus.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/8/1-7">Ec 8:1-7</a> Aqueles que estão em posição de autoridade devem ser respeitados e obedecidos, do contrário não haveria governo, o qual é ordenado por Deus (<a href="http://bibliaonline.com.br/acf/rm/13/1-3">Rm 13:1-3</a>).</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/8/8">Ec 8:8</a> Ninguém pode fazer com que seu espírito permaneça em si, ou que saia de si, usando apenas do falar. Isto é um claro testemunho da divindade de Cristo, pois Ele ordenou a Seu espírito que saísse de Seu corpo (<a href="http://bibliaonline.com.br/acf/mt/27/50">Mt 27:50</a>).</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/8/9-14">Ec 8:9-14</a> Pessoas inocentes são castigadas às vezes e os culpados escapam com suas más obras. Existe justiça? Sim, existe, mas o homem pecador não consegue colocá-la em prática. Somente Cristo pode, e Ele o fará, durante o tempo futuro do milênio.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/8/15-17">Ec 8:15-17</a> &quot;Por que preocupar-se com o dia de amanhã e seus problemas? O homem não pode prever mesmo o futuro - só Deus o conhece. Divirta-se enquanto pode.&quot; - Não é isto o que muitos neste mundo estão dizendo?</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/8/17">Ec 8:17</a> Leia 1 Coríntios <a href="http://bibliaonline.com.br/acf/1co/1/21">1:21</a> e veja o que Deus nos deu em Cristo.</p>
+<a class="header" href="print.html#a679" id="a679"><h2>#679</h2></a>
+<p>É sempre mais humilde sermos guiados pela Sua Palavra do que por nossos pensamentos e sentimentos.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec9eclesiastes-9a" id="a-hrefhttpbibliaonlinecombracfec9eclesiastes-9a"><h2><a href="http://bibliaonline.com.br/acf/ec/9">ECLESIASTES 9</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/9/1-12">Ec 9:1-12</a> A morte chega para toda a humanidade. Se a verdade de Deus não for conhecida, o final do <a href="http://bibliaonline.com.br/acf/ec/9/11">versículo 11</a> é tudo o que o homem consegue enxergar - que tudo é questão de oportunidade e sorte. Mas Deus está no controle e existe um juízo futuro mesmo para aqueles que não sabem disso (<a href="http://bibliaonline.com.br/acf/ec/9/12">vers. 12</a> - lembremo-nos de Hebreus <a href="http://bibliaonline.com.br/acf/hb/9/27">9:27</a>).</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/9/13-18">Ec 9:13-18</a> &quot;Uma pequena cidade&quot; - (este mundo); &quot;um grande rei&quot; - (Satanás); &quot;um sábio pobre&quot; - (Cristo em Sua obra na cruz). O final do <a href="http://bibliaonline.com.br/acf/ec/9/16">versículo 16</a> é a verdade acerca da humanidade de um modo geral.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/9/17">Ec 9:17</a> é verdadeiro acerca dos crentes que dão ouvidos a Cristo, não a Satanás.</p>
+<a class="header" href="print.html#a680" id="a680"><h2>#680</h2></a>
+<p>A cruz de Cristo prova todos os corações.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec10eclesiastes-10a" id="a-hrefhttpbibliaonlinecombracfec10eclesiastes-10a"><h2><a href="http://bibliaonline.com.br/acf/ec/10">ECLESIASTES 10</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/10/1-15">Ec 10:1-15</a> A sobriedade e quietude de espírito, o desejo de ocupar uma posição sem importância, o saber como falar de modo simples e gracioso - estes são ensinamentos que dão a uma pessoa uma vida pacífica neste mundo, mas que não irão salvar sua alma.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/10/16-20">Ec 10:16-20</a> Mais observações a respeito da vida - os jovens não são bons líderes, o dinheiro tem um grande poder sobre as pessoas, cuidado com o que fala em particular.</p>
+<a class="header" href="print.html#a681" id="a681"><h2>#681</h2></a>
+<p>Seu senso de pecado será sempre proporcional à sua proximidade de Cristo.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec11eclesiastes-11a" id="a-hrefhttpbibliaonlinecombracfec11eclesiastes-11a"><h2><a href="http://bibliaonline.com.br/acf/ec/11">ECLESIASTES 11</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/11/1-6">Ec 11:1-6</a> Pensamentos mais avançados - compartilhe o que você tem; as coisas tomam seu curso natural conforme Deus determina; o homem não pode controlar as consequências de seus atos. Estas observações levaram Salomão aos versos seguintes.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/11/7-10">Ec 11:7-10</a> Uma conclusão séria no final do <a href="http://bibliaonline.com.br/acf/ec/11/9">versículo 9</a>. A palavra &quot;jovem&quot; no <a href="http://bibliaonline.com.br/acf/ec/11/10">versículo 10</a> significa &quot;na flor da juventude&quot;. Que palavra deveria ser esta para cada um de nós! Aquela que é considerada a melhor época da vida não passa de vaidade, vazia e sem sentido. (Você desfruta o fato de ter Cristo como seu Salvador? Ele dá sentido à sua vida).</p>
+<a class="header" href="print.html#a682" id="a682"><h2>#682</h2></a>
+<p>Nós só mostramos o que realmente somos quando estamos longe de casa.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfec12eclesiastes-12a" id="a-hrefhttpbibliaonlinecombracfec12eclesiastes-12a"><h2><a href="http://bibliaonline.com.br/acf/ec/12">ECLESIASTES 12</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ec/12/1-7">Ec 12:1-7</a> Não há época melhor para se pensar em Deus e na eternidade do que quando se é jovem. À medida que envelhecemos, a vida se torna mais difícil com mais responsabilidades. Veja se você pode identificar os diferentes membros do corpo aqui - <a href="http://bibliaonline.com.br/acf/ec/12/3">versículo 3</a>, braços, pernas, dentes. O corpo volta ao pó (<a href="http://bibliaonline.com.br/acf/gn/3/19">Gn 3:19</a>) após a morte. O final do <a href="http://bibliaonline.com.br/acf/ec/12/7">versículo 7</a> não nos diz o que Deus faz com o espírito do homem. É preciso que procuremos em outra parte da Palavra de Deus para descobrir.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/12/8">Ec 12:8</a> Nenhuma mudança na conclusão de Salomão. Será que aprendemos isso também?</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/12/9-12">Ec 12:9-12</a> Encontramos estes provérbios que Deus guardou para nós no livro de Provérbios, que apresenta a sabedoria celestial para a vida na Terra, mas não a salvação.</p>
+<p><a href="http://bibliaonline.com.br/acf/ec/12/13-14">Ec 12:13-14</a> A conclusão de Salomão para tudo o que ele viu na Terra nos é mostrada neste livro de Eclesiastes. Há muita sabedoria e auxílio; (mas quando nascemos de novo recebemos uma vida celestial, e aprendemos acerca dela nas epístolas de Paulo).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+        <script type="text/javascript" src="book.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

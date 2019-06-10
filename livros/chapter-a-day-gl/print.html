@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter a Day - Gálatas</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body onscroll="onscrolling()" class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="267.html"><strong aria-hidden="true">1.</strong> #267</a></li><li><a href="galatas_1.html"><strong aria-hidden="true">2.</strong> GÁLATAS 1</a></li><li><a href="268.html"><strong aria-hidden="true">3.</strong> #268</a></li><li><a href="galatas_2.html"><strong aria-hidden="true">4.</strong> GÁLATAS 2</a></li><li><a href="269.html"><strong aria-hidden="true">5.</strong> #269</a></li><li><a href="galatas_3.html"><strong aria-hidden="true">6.</strong> GÁLATAS 3</a></li><li><a href="270.html"><strong aria-hidden="true">7.</strong> #270</a></li><li><a href="galatas_4.html"><strong aria-hidden="true">8.</strong> GÁLATAS 4</a></li><li><a href="271.html"><strong aria-hidden="true">9.</strong> #271</a></li><li><a href="galatas_5.html"><strong aria-hidden="true">10.</strong> GÁLATAS 5</a></li><li><a href="272.html"><strong aria-hidden="true">11.</strong> #272</a></li><li><a href="galatas_6.html"><strong aria-hidden="true">12.</strong> GÁLATAS 6</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Chapter a Day - Gálatas</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#a267" id="a267"><h2>#267</h2></a>
+<p>Uma Bíblia que está caindo aos pedaços geralmente pertence a alguém que não está!</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfgl1gÁlatas-1a" id="a-hrefhttpbibliaonlinecombracfgl1gÁlatas-1a"><h2><a href="http://bibliaonline.com.br/acf/gl/1">GÁLATAS 1</a></h2></a>
+<p>Aqui há mais sinais de perigo ao longo de nosso caminho por este mundo... (o deserto do crente). 1 Coríntios foi uma série de avisos contra os perigos morais e doutrinários. Gálatas é sobre os perigos espirituais (ou religiosos). Ambos os livros têm um versículo (sinal de perigo) que é o mesmo - <a href="http://bibliaonline.com.br/acf/1co/5/6">1 Co 5:6</a> e <a href="http://bibliaonline.com.br/acf/gl/5/9">Gl 5:9</a>. Leia <a href="http://bibliaonline.com.br/acf/fp/3/6">Fp 3:6</a> e <a href="http://bibliaonline.com.br/acf/1tm/1/15">1Tm 1:15</a> para ver como Paulo tinha sido antes de ser salvo. Exteriormente e moralmente, Paulo tinha sido irrepreensível, mas espiritualmente ele estava pecando, pois estava pecando contra Cristo. Todo erro religioso ou doutrinário é contra Cristo. O apóstolo Paulo estava tão contrariado com o erro religioso no qual os crentes da Galácia haviam caído, que não diz nenhuma palavra favorável a eles, mas vai direto ao assunto que tanto o aborrecia.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/1/1">Gl 1:1</a> Paulo demonstra sua autoridade como apóstolo, que não lhe fora dada por homens, mas por Jesus Cristo.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/1/6-9">Gl 1:6-9</a> Ele avisa do &quot;outro evangelho&quot;, pois alguns mestres já haviam se introduzido com falsas doutrinas. Até mesmo se um anjo apresentasse qualquer outra doutrina além daquela que Paulo estava apresentando, seria maldito. A má doutrina que estava sendo ensinada era que os crentes precisavam guardar a lei para se manterem salvos. E hoje há muitos que tentam fazer isto. Carregam suas Bíblias e podem citar vários versículos mas irão tentar nos colocar sob a lei.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/1/11-20">Gl 1:11-20</a> Paulo não recebeu o evangelho de outros crentes, ou mesmo dos outros apóstolos, mas do próprio Senhor. Ele nos diz isso para que recebamos os avisos como vindos do Senhor.</p>
+<a class="header" href="print.html#a268" id="a268"><h2>#268</h2></a>
+<p>Para eu poder ligar a Palavra de Deus ao Espírito de Deus, preciso ter meus olhos fixos em Cristo.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfgl2gÁlatas-2a" id="a-hrefhttpbibliaonlinecombracfgl2gÁlatas-2a"><h2><a href="http://bibliaonline.com.br/acf/gl/2">GÁLATAS 2</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/gl/2/4">Gl 2:4</a> Duas palavras importantes para se entender a Epístola. &quot;Liberdade&quot; e &quot;Servidão&quot; - a liberdade do evangelho de nosso Senhor Jesus, e a servidão da lei.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/2/9">Gl 2:9</a> Paulo explica que o Senhor havia enviado a ele especificamente para pregar aos &quot;incircuncisos&quot; (os Gentios ou pagãos). Pedro foi enviado aos &quot;circuncisos&quot;, (os Judeus). Satanás quer dividir estes dois grupos, mas o Espírito de Deus uniu ambos em um.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/2/11-12">Gl 2:11-12</a> A princípio Pedro se relacionava tanto com Judeus como com Gentios, mas depois se separou dos Gentios, e nisso havia o perigo de uma triste divisão. Paulo o corrige rigidamente por isso.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/2/16">Gl 2:16</a> Ele segue adiante para mostrar que não somos salvos por procurarmos guardar a lei, mas pela fé em Cristo. Por Sua morte e por Sua vida por nós agora no céu.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/2/19-20">Gl 2:19-20</a> Paulo está morto para a lei, portanto ele pode seguir dizendo que &quot;e vivo, não mais eu&quot;. É assim que Deus nos livra para sempre da servidão da lei. Estamos mortos para ela, por meio da morte de Cristo. Isto não significa que não ligamos para ela, pois o crente deve viver uma vida piedosa.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/2/21">Gl 2:21</a> O terrível erro de se ensinar que a justiça vem pela guarda da lei.</p>
+<a class="header" href="print.html#a269" id="a269"><h2>#269</h2></a>
+<p>Incredulidade para com a verdade é natural... questioná-la não é difícil... mas a Palavra de Deus permanece tão clara e certa como sempre foi.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfgl3gÁlatas-3a" id="a-hrefhttpbibliaonlinecombracfgl3gÁlatas-3a"><h2><a href="http://bibliaonline.com.br/acf/gl/3">GÁLATAS 3</a></h2></a>
+<p>&quot;Ó insensatos Gálatas...&quot; Era uma insensatez eles darem ouvidos a mestres que queriam colocá-los sob a lei.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/3/3">Gl 3:3</a> &quot;Tendo começado no Espírito...&quot; ou seja, vocês foram salvos pelo Espírito por meio da obra de Cristo - &quot;acabeis agora pela carne?&quot; Ou seja, vocês estão tentando viver a vida cristã em conformidade com a lei?</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/3/10">Gl 3:10</a> Se você estiver tentando guardar a lei, ela só poderá amaldiçoá-lo, pois ela continuamente revela que você é culpado, por mais que você tente. Se você deseja ter algo que não é seu, é culpado de transgredir todos os mandamentos! (<a href="http://bibliaonline.com.br/acf/tg/2/10">Tg 2:10</a>).</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/3/13">Gl 3:13</a> Que boas novas! Somos libertos - não por nossos próprios esforços, mas pela morte de Cristo que levou aquela maldição sobre Si.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/3/21">Gl 3:21</a> A lei exigia obediência e justiça, e prometia vida se obedecessem, e morte se pecassem. Ela não podia dar vida pois todos pecaram.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/3/22">Gl 3:22</a> A lei é como um espelho que mostra o quão sujos somos.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/3/24">Gl 3:24</a> &quot;Justificados pela fé&quot;. O que a lei não podia fazer, Cristo fez, pois Ele levou o castigo que nós merecíamos como transgressores da lei.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/3/25">Gl 3:25</a> Não estamos mais sob esse aio, a lei. Não estamos mais sob a servidão, mas desfrutamos de liberdade. Não a liberdade de fazermos o que nossa velha natureza quiser, mas a liberdade de viver para agradar o Senhor. Temos uma vida que é capaz disto - (2 Pd <a href="http://bibliaonline.com.br/acf/2pe/1/3">1:3</a>) e que se alegra em fazê-lo.</p>
+<a class="header" href="print.html#a270" id="a270"><h2>#270</h2></a>
+<p>Deus registra o passado e revela o futuro em Sua Palavra, para me afetar no presente.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfgl4gÁlatas-4a" id="a-hrefhttpbibliaonlinecombracfgl4gÁlatas-4a"><h2><a href="http://bibliaonline.com.br/acf/gl/4">GÁLATAS 4</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/gl/4/3">Gl 4:3</a> A escravidão para com as coisas deste mundo nas quais antes estávamos cativos.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/4/5">Gl 4:5</a> Que contraste! Aqui somos redimidos, somos adotados na própria família de Deus e somos filhos. Um servo está escravizado, mas um filho é livre.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/4/6">Gl 4:6</a> Sob o controle da lei, não poderíamos chamar Deus de &quot;Pai&quot;. Mas como filhos livres, desfrutamos deste relacionamento.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/4/7">Gl 4:7</a> Não somos apenas filhos, mas herdeiros de Deus. Não é de admirar que Satanás quer estragar tudo isso levando-nos de volta para o jugo da lei.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/4/9">Gl 4:9</a> Paulo se maravilha de que eles pudessem ser enganados e retornarem à escravidão da lei. Muitos crentes hoje fazem o mesmo.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/4/21">Gl 4:21</a> Em outras palavras, &quot;vocês não sabem que a lei só pode condenar vocês e amaldiçoar vocês e declarar a sentença de morte?&quot;</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/4/22-31">Gl 4:22-31</a> A histórias de Abraão e de seus filhos Ismael e Isaque. Ismael deve ser expulso para que Isaque possa ser desfrutado como o único filho. Ismael é uma figura de nossa velha posição sob a lei, e Isaque é o filho da promessa, uma figura de nossa posição em graça.</p>
+<a class="header" href="print.html#a271" id="a271"><h2>#271</h2></a>
+<p>Nunca haverá uma época, até que o Senhor venha, em que possa faltar luz na Palavra de Deus para guiar o crente.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfgl5gÁlatas-5a" id="a-hrefhttpbibliaonlinecombracfgl5gÁlatas-5a"><h2><a href="http://bibliaonline.com.br/acf/gl/5">GÁLATAS 5</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/gl/5/1">Gl 5:1</a> Ainda numa linguagem das mais fortes, Paulo insiste com eles para que permanecessem na liberdade com que Cristo lhes havia tornado livres. Satanás é tão astuto que desviou a muitos de darem ouvidos ao evangelho da liberdade para escutarem aquilo que coloca os homens sob a servidão.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/5/4">Gl 5:4</a> Se alguém professa ser salvo por graça, e então volta a guardar a lei, Paulo diz que tal pessoa caiu da graça. Tenhamos cuidado.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/5/10">Gl 5:10</a> Paulo expressa confiança de que os Gálatas não seriam enganados por esses mestres da lei, e diz que tais mestres seriam tidos por responsáveis.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/5/13">Gl 5:13</a> Somos libertados da escravidão do pecado e levados à liberdade, mas não para agirmos em vontade própria e levianamente. Pense no que custou ao Senhor Jesus para nos dar essa nova vida!</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/5/16-17">Gl 5:16-17</a> O viver no Espírito é nosso poder para evitar que façamos nossa própria vontade.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/5/19-23">Gl 5:19-23</a> As obras da carne e o fruto do Espírito colocados em contraste. Certamente devemos estar mostrando o fruto do Espírito em nossa vida.</p>
+<a class="header" href="print.html#a272" id="a272"><h2>#272</h2></a>
+<p>A Bíblia não foi escrita para informar cientistas, mas não há nenhuma descoberta da ciência que possa aniquilar a verdade que ela contém.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfgl6gÁlatas-6a" id="a-hrefhttpbibliaonlinecombracfgl6gÁlatas-6a"><h2><a href="http://bibliaonline.com.br/acf/gl/6">GÁLATAS 6</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/gl/6/1">Gl 6:1</a> Se um crente descuidado cometesse alguma falta, era responsabilidade daqueles que eram espirituais ajudá-lo, lembrando-se de que qualquer um deles poderia ter cometido a mesma falta.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/6/2">Gl 6:2</a> Se realmente queremos ter uma lei para nossa época, aqui está uma: &quot;Levai as cargas uns dos outros&quot;. O Senhor Jesus fez isto quando esteve aqui - pois é isso o que quer dizer &quot;a lei de Cristo.&quot;</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/6/7-8">Gl 6:7-8</a> O que semeamos, certamente ceifaremos, mesmo como crente, com todos os nossos pecados perdoados e em nosso caminho rumo ao céu! Veja <a href="http://bibliaonline.com.br/acf/2tm/2/12">2Tm 2:12, 13</a>.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/6/9">Gl 6:9</a> Portanto, sirvamos, semeemos e esperemos. Pois o Senhor percebe tudo o que é feito para Ele em obediência à Sua Palavra e Ele retribuirá mais tarde.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/6/10">Gl 6:10</a> Talvez nos esquecemos disto.</p>
+<p><a href="http://bibliaonline.com.br/acf/gl/6/14">Gl 6:14</a> O mundo deu ao nosso Salvador uma cruz. E Paulo diz que a cruz permanece entre ele e o mundo que continua a odiar o Senhor. &quot;Estou crucificado&quot;, diz Paulo - em outras palavras, o mundo não me quer porque pertenço Àquele que eles desprezaram. E o mundo está crucificado para mim, diz Paulo, &quot;pois não quero a amizade daqueles que crucificaram meu Salvador&quot;.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+        <script type="text/javascript" src="book.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

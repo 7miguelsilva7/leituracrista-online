@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>RUTE 1, vers. 1-5 - Chapter a Day - Rute</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body onscroll="onscrolling()" class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="427.html"><strong aria-hidden="true">1.</strong> #427</a></li><li><a href="rute_1,_vers_1-5.html" class="active"><strong aria-hidden="true">2.</strong> RUTE 1, vers. 1-5</a></li><li><a href="428.html"><strong aria-hidden="true">3.</strong> #428</a></li><li><a href="rute_1,_vers_6-22.html"><strong aria-hidden="true">4.</strong> RUTE 1, Vers. 6-22</a></li><li><a href="429.html"><strong aria-hidden="true">5.</strong> #429</a></li><li><a href="rute_2.html"><strong aria-hidden="true">6.</strong> RUTE 2</a></li><li><a href="430.html"><strong aria-hidden="true">7.</strong> #430</a></li><li><a href="rute_3.html"><strong aria-hidden="true">8.</strong> RUTE 3</a></li><li><a href="431.html"><strong aria-hidden="true">9.</strong> #431</a></li><li><a href="rute_4.html"><strong aria-hidden="true">10.</strong> RUTE 4</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Chapter a Day - Rute</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="rute_1,_vers_1-5.html#a-hrefhttpbibliaonlinecombracfrt11-5rute-1-vers-1-5a" id="a-hrefhttpbibliaonlinecombracfrt11-5rute-1-vers-1-5a"><h2><a href="http://bibliaonline.com.br/acf/rt/1/1-5">RUTE 1, vers. 1-5</a></h2></a>
+<p>Não faz muito tempo estávamos lendo o Livro de Juízes. Mencionamos que foi uma época de grandes trevas para Israel. Eles tinham acabado de entrar na terra prometida. Por não terem expulsado os povos que ali habitavam, logo acabaram se misturando com eles. Esses inimigos logo venceram os Israelitas. Em seu pensamento, procure encaixar o Livro de Rute na parte mais antiga do Livro de Juízes, pois foi nessa época que ele aconteceu. A história que vamos começar hoje é como um brilhante raio de sol que ilumina de repente um dia muito escuro e cheio de nuvens. Uma jovem mulher, uma estrangeira, age com fé, e desfruta da mais rica bênção que uma pessoa do Antigo Testamento poderia ter... tornar-se um ancestral de nosso Salvador, o Senhor Jesus!</p>
+<p>Através do homem, o que há de pior acaba saindo do que há de melhor... a primeira adoração acabou levando ao primeiro homicídio - <a href="http://bibliaonline.com.br/acf/gn/4">Gênesis 4</a>. Mas por meio de Cristo o que há de melhor acaba saindo do que há de pior... &quot;onde abundou o pecado, superabundou a graça&quot; Romanos <a href="http://bibliaonline.com.br/acf/rm/5/20">5:20</a>. Este livro é um lindo exemplo disso.</p>
+<p><a href="http://bibliaonline.com.br/acf/rt/1/1">Rt 1:1</a> Um homem - um Israelita - encontra-se diante de uma decisão a ser tomada... ficar em Israel onde começou uma grave fome... ou ir a algum outro lugar. Ele poderia ter aprendido de Deuteronômio <a href="http://bibliaonline.com.br/acf/dt/8/7-20">8:7-20</a> que Deus estava dizendo a Seu povo que havia desobediência. Se tivesse permanecido, e obedecido a Deus, isso seria uma prova de confiança nEle. Ele desobedece e vai para Moabe. Um lugar ímpio, certamente. Ele escolheu o pior. Ele provavelmente pensou... &quot;Devo cuidar de minha vida, minha esposa, meus dois filhos&quot;.</p>
+<p><a href="http://bibliaonline.com.br/acf/rt/1/2-5">Rt 1:2-5</a> Que desastre cai sobre essa família. O pai morre primeiro. Se a esposa, Noemi, tivesse discernimento da ação de Deus ao tirar seu marido, ela teria voltado a Israel imediatamente. Mas não, ela ficou onde estava. Depois disso, seus dois filhos se casam com moças Moabitas, o que era totalmente proibido (leia Neemias <a href="http://bibliaonline.com.br/acf/ne/13/1">13:1</a>). Ela não os impede. Um filho morre. Ela continua esquecida da Palavra de Deus. Outro filho morre. Finalmente ela é tocada. Ela dá ouvidos. Após dez anos, resta apenas uma pessoa de uma família que tinha quatro membros. - <a href="http://bibliaonline.com.br/acf/gl/6/7">Gl 6:7</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="427.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="428.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="427.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="428.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+        <script type="text/javascript" src="book.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

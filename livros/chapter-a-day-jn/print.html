@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter a Day - Jonas</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body onscroll="onscrolling()" class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="815.html"><strong aria-hidden="true">1.</strong> #815</a></li><li><a href="jonas_1.html"><strong aria-hidden="true">2.</strong> JONAS 1</a></li><li><a href="816.html"><strong aria-hidden="true">3.</strong> #816</a></li><li><a href="jonas_2.html"><strong aria-hidden="true">4.</strong> JONAS 2</a></li><li><a href="817.html"><strong aria-hidden="true">5.</strong> #817</a></li><li><a href="jonas_3.html"><strong aria-hidden="true">6.</strong> JONAS 3</a></li><li><a href="818.html"><strong aria-hidden="true">7.</strong> #818</a></li><li><a href="jonas_4.html"><strong aria-hidden="true">8.</strong> JONAS 4</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Chapter a Day - Jonas</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#a815" id="a815"><h2>#815</h2></a>
+<p>A única medida real e prática de meu apreço pela bondade e misericórdia de Deus para comigo está na medida em que eu, por minha vez, estou preparado para demonstrar bondade e misericórdia para com outros.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfjn1jonas-1a" id="a-hrefhttpbibliaonlinecombracfjn1jonas-1a"><h2><a href="http://bibliaonline.com.br/acf/jn/1">JONAS 1</a></h2></a>
+<p>Hoje iniciamos um livro dos mais interessantes. Todos neste livros brilham, exceto Jonas! Amamos esta história desde pequenos por ser ela tão fácil de entender... um peixe que engole um homem... depois nada até a praia e cospe o homem! São e salvo.</p>
+<p>Mas quando ficamos mais velhos, olhamos para a história e aprendemos que ela é tão imensa em seu significado que podemos enxergar Cristo indo até a morte e voltando à vida. O próprio Jonas foi o primeiro profeta Hebreu enviado aos Gentios com uma mensagem. E, indo mais além, Jonas é uma figura da nação Judaica, completa e desesperadamente perdida, enquanto Nínive é uma figura de todo o mundo escutando a mensagem de Deus através de um Judeu!</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/1/1-3">Jn 1:1-3</a> Ele é instruído pelo Senhor a ir à grande cidade Gentia de Nínive, e dizer ao povo que Deus viu toda a sua maldade, e que a cidade seria destruída em 40 dias.</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/1/4-17">Jn 1:4-17</a> Mas Jonas foge do Senhor. Você já fez o mesmo? Você já sentiu necessidade de falar a alguém sobre sua alma e acabou não falando? Será que Deus deixou Jonas fazer o que queria? Sim. Ele deixou que Jonas fosse até o fim, permitindo até que os homens o jogassem no mar.</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/1/15">Jn 1:15</a> Só existe uma maneira da salvação vir a uma pessoa... por meio da morte (<a href="http://bibliaonline.com.br/acf/rm/3/25">Rm 3:25</a>).</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/1/17">Jn 1:17</a> Mas! Que bondade do Senhor!</p>
+<p>A oração é mencionada em todos os capítulos - <a href="http://bibliaonline.com.br/acf/jn/1/14">1:14</a>, <a href="http://bibliaonline.com.br/acf/jn/2/1">2:1</a>, <a href="http://bibliaonline.com.br/acf/jn/3/8">3:8</a>, <a href="http://bibliaonline.com.br/acf/jn/4/2">4:2</a>.</p>
+<a class="header" href="print.html#a816" id="a816"><h2>#816</h2></a>
+<p>O Senhor opera onde há simplicidade e devoção.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfjn2jonas-2a" id="a-hrefhttpbibliaonlinecombracfjn2jonas-2a"><h2><a href="http://bibliaonline.com.br/acf/jn/2">JONAS 2</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/jn/2/1">Jn 2:1</a> Repare o quanto demorou até Jonas começar a orar. Deus com freqüência nos deixa seguir um longo caminho na direção de fazermos o que queremos. Mas quando chegamos ao fim, descobrimos que as coisas não estão funcionando como esperávamos! Então nos lembramos dEle e começamos a orar. No <a href="http://bibliaonline.com.br/acf/jn/2/1">vers. 1</a>, Jonas ora para viver. No <a href="http://bibliaonline.com.br/acf/jn/4/8">4:8</a> ele ora para morrer!</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/2/2-9">Jn 2:2-9</a> Veja quantos Salmos diferentes você pode identificar pelas citações de Jonas.</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/2/10">Jn 2:10</a> Que bondade do Senhor!</p>
+<a class="header" href="print.html#a817" id="a817"><h2>#817</h2></a>
+<p>Comunhão = consciência de um interesse comum.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfjn3jonas-3a" id="a-hrefhttpbibliaonlinecombracfjn3jonas-3a"><h2><a href="http://bibliaonline.com.br/acf/jn/3">JONAS 3</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/jn/3/1-4">Jn 3:1-4</a> Pela segunda vez, o Senhor manda Jonas ir e entregar a mensagem a Nínive. Desta vez ele vai.</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/3/5-9">Jn 3:5-9</a> O povo escuta a mensagem de aviso de Jonas. Com certeza, deve ter sido um estranho sermão. Só oito palavras. Repare que não diz que as pessoas tenham acreditado em Jonas. É importante lembrar isto quando falamos do Senhor Jesus Cristo àqueles que não são salvos. É a mensagem de Deus. Que bondade do Senhor!</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/3/8">Jn 3:8</a> Ao povo de Nínive foi dito que fizessem duas coisas... (1) Orassem a Deus e (2) se desviassem de suas maldades. Ambas as coisas são necessárias em nossa vida.</p>
+<a class="header" href="print.html#a818" id="a818"><h2>#818</h2></a>
+<p>Preciso aprender a aprender.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfjn4jonas-4a" id="a-hrefhttpbibliaonlinecombracfjn4jonas-4a"><h2><a href="http://bibliaonline.com.br/acf/jn/4">JONAS 4</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/jn/4/1">Jn 4:1</a> Por que você acha que Jonas estava bravo?</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/4/2-4">Jn 4:2-4</a> Porque ele pensava em si mesmo, antes de pensar nos outros e no Senhor. Ele diz porque fugiu, pois sabia que o Senhor era gracioso, e que Ele não executaria a ameaça de destruição! Jonas preferia ver todos os de Nínive mortos do que suas palavras não serem cumpridas!</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/4/5-7">Jn 4:5-7</a> No <a href="http://bibliaonline.com.br/acf/jn/4/6">vers. 6</a> diz que o SENHOR Deus enviou uma bênção, mas no <a href="http://bibliaonline.com.br/acf/jn/4/7">vers. 7</a> diz que DEUS enviou o verme destrutivo. Sua graça dá a primeira coisa, Sua justiça a segunda.</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/4/5-11">Jn 4:5-11</a> Assim o Senhor faz um milagre acontecer. Acaso Jonas fez algo para a árvore crescer? Ele ficou feliz quando algo de bom cruzou o seu caminho, mas irado quando aconteceu algo de mal. Com frequência Os crentes são assim. E isto é o que podemos aprender desta história. O Senhor sempre tem uma lição para aprendermos em todas as coisas que nos acontecem.</p>
+<p><a href="http://bibliaonline.com.br/acf/jn/4/11">Jn 4:11</a> Vir a conhecer o Senhor melhor é aprender o quão gracioso e bondoso Ele é para cada um de nós que colocou sua confiança no Senhor Jesus Cristo.</p>
+<p>Jonas foi um sinal para os Gentios (Nínive); leia Lucas <a href="http://bibliaonline.com.br/acf/lc/11/30">11:30</a>; e um sinal para os Judeus - <a href="http://bibliaonline.com.br/acf/mt/12/39">Mt 12:39</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+        <script type="text/javascript" src="book.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

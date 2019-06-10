@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter a Day - Tito</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body onscroll="onscrolling()" class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="424.html"><strong aria-hidden="true">1.</strong> #424</a></li><li><a href="tito_1.html"><strong aria-hidden="true">2.</strong> TITO 1</a></li><li><a href="425.html"><strong aria-hidden="true">3.</strong> #425</a></li><li><a href="tito_2.html"><strong aria-hidden="true">4.</strong> TITO 2</a></li><li><a href="426.html"><strong aria-hidden="true">5.</strong> #426</a></li><li><a href="tito_3.html"><strong aria-hidden="true">6.</strong> TITO 3</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Chapter a Day - Tito</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#a424" id="a424"><h2>#424</h2></a>
+<p>A armadura devia ser vestida antes da batalha, não na hora dela.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracftt1tito-1a" id="a-hrefhttpbibliaonlinecombracftt1tito-1a"><h2><a href="http://bibliaonline.com.br/acf/tt/1">TITO 1</a></h2></a>
+<p>Temos alguns lampejos do que Paulo pensava de Tito em 2 Coríntios <a href="http://bibliaonline.com.br/acf/2co/8/16,17,23">8:16, 17 e 23</a>; e <a href="http://bibliaonline.com.br/acf/2co/7/13">7:13</a>.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/1/1">Tt 1:1</a> Tito recebe instruções de Paulo de como transmitir ordem e um comportamento adequado às assembléias que estavam na Ilha de Creta. Nas cartas de Paulo a Timóteo a &quot;doutrina&quot; é mencionada com mais frequência, mas nesta carta a Tito, Paulo insiste no comportamento.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/1/2">Tt 1:2</a> Lembremo-nos de que o Cristianismo não é um aperfeiçoamento da religião Judaica. É algo totalmente novo, e aqui nos é dito que isso estava no coração de Deus antes do princípio do mundo.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/1/3">Tt 1:3</a> Os pensamentos de Deus, da eternidade passada, são revelados agora pela Sua Palavra. Os ensinos de Paulo são em conformidade com o mandamento de Deus nosso Salvador.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/1/5">Tt 1:5</a> O propósito de Tito ao ser deixado em Creta, e o propósito desta carta. Ele devia indicar anciãos em cada assembléia. Nos versículos seguintes temos instruções quanto a quais poderiam ser anciãos adequados, e usando dessa comissão que lhe foi dada, Tito tinha a autoridade do apóstolo Paulo para designá-los. Hoje, temos as Escrituras para nos mostrar quais são as qualificações próprias de um homem que poderia ser considerado pronto para agir como um ancião ou pastor, mas hoje não temos autoridade apostólica para designá-los. Não existem anciãos oficiais hoje conforme o pensamento de Deus em Sua Palavra.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/1/9">Tt 1:9</a> A &quot;sã doutrina&quot; (boas instruções) resulta em um comportamento adequado para a glória de Deus.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/1/10-11">Tt 1:10-11</a> Vez após outra vemos falsos mestres tentanto colocar os Cristãos sob a lei. Suas bocas devem serão caladas.</p>
+<a class="header" href="print.html#a425" id="a425"><h2>#425</h2></a>
+<p>É sempre a verdade mais elevada que é abandonada primeiro.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracftt2tito-2a" id="a-hrefhttpbibliaonlinecombracftt2tito-2a"><h2><a href="http://bibliaonline.com.br/acf/tt/2">TITO 2</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/tt/2/2-10">Tt 2:2-10</a> Temos instruções para o comportamento de homens idosos, mulheres idosas, mulheres jovens, homens jovens e servos.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/2/4-5">Tt 2:4-5</a> A conduta que iria agradar ao Senhor e que estaria em conformidade com o ensino são, vista nas jovens. E eram as mulheres idosas que deveriam instruí-las a isso. Precisamos dessas piedosas instruções nos dias de hoje, pois somos inclinados a sermos influenciados pelo comportamento descuidado generalizado de nossos dias.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/2/6-8">Tt 2:6-8</a> Aqui vemos o que é os jovens rapazes.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/2/9-10">Tt 2:9-10</a> Este era o privilégio dos servos (escravos). Os crentes não devem ser rebeldes ou ambiciosos (nem fazer greves).</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/2/12">Tt 2:12</a> Devemos nos desviar das coisas más e vivermos de maneira sóbria (pessoalmente) e justa (para com os outros), e piedosa (diante de Deus).</p>
+<a class="header" href="print.html#a426" id="a426"><h2>#426</h2></a>
+<p>A liberdade vontade própria nada mais é do que a escravidão do diabo.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracftt3tito-3a" id="a-hrefhttpbibliaonlinecombracftt3tito-3a"><h2><a href="http://bibliaonline.com.br/acf/tt/3">TITO 3</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/tt/3/1-2">Tt 3:1-2</a> Comportamento que está sendo negligenciado hoje. Não importa como os outros possam agir, e não importa quão injustas as autoridades podem ser, devemos ser obedientes às leis de nosso país, pois o governo é escolhido por Deus. (<a href="http://bibliaonline.com.br/acf/rm/13/1">Rm 13:1</a>). Não devemos falar mal do governo ou de qualquer pessoa. Um comportamento dócil e humilde não é algo que exista na natureza do crente, mas lembre-se de que temos uma nova natureza, e é assim que ela se comporta.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/3/3">Tt 3:3</a> Nós éramos exatamente assim antes do Senhor nos salvar.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/3/4">Tt 3:4</a> Nos mostra a fonte da salvação.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/3/5">Tt 3:5</a> Nos mostra o caminho da salvação.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/3/6">Tt 3:6</a> Nos mostra a evidência da salvação.</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/3/5-7">Tt 3:5-7</a> Eles não eram instruídos a orar para que o Espírito Santo viesse ao mundo... pois Ele já tinha chegado. Assim aqui estamos salvos, lavados, renovados pelo Espírito Santo, justificados e feitos herdeiros. Que salvação completa!</p>
+<p><a href="http://bibliaonline.com.br/acf/tt/3/8">Tt 3:8</a> Como consequência de tudo isso, sejamos cuidadosos em manter as boas obras.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+        <script type="text/javascript" src="book.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

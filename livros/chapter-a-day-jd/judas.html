@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>JUDAS - Chapter a Day - Judas</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body onscroll="onscrolling()" class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="503.html"><strong aria-hidden="true">1.</strong> #503</a></li><li><a href="judas,_vers_1-13.html"><strong aria-hidden="true">2.</strong> JUDAS, vers. 1-13</a></li><li><a href="504.html"><strong aria-hidden="true">3.</strong> #504</a></li><li><a href="judas,_vers_14-25.html"><strong aria-hidden="true">4.</strong> JUDAS, vers. 14-25</a></li><li><a href="683.html"><strong aria-hidden="true">5.</strong> #683</a></li><li><a href="judas.html" class="active"><strong aria-hidden="true">6.</strong> JUDAS</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Chapter a Day - Judas</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="judas.html#a-hrefhttpbibliaonlinecombracfjd1judasa" id="a-hrefhttpbibliaonlinecombracfjd1judasa"><h2><a href="http://bibliaonline.com.br/acf/jd/1">JUDAS</a></h2></a>
+<p>Judas nos fala de como serão as condições neste mundo um pouco antes da vinda do Senhor. Trata-se de um aviso para nós para &quot;batalhar pela fé que uma vez foi dada aos santos&quot; - <a href="http://bibliaonline.com.br/acf/jd/1/3">vers. 3</a> - &quot;uma vez&quot; significa &quot;de uma vez por todas&quot;, (algo que não se repetirá). Deus deu tudo que era necessário para nos manter nesta vida. Mas somos provados. Aqui Deus aponta para os perigos. Quando uma pessoa escuta a verdade e, sem aceitá-la, afasta-se dela, acaba ficando em uma condição muito séria. Ele ouviu e rejeitou. Isto se chama &quot;apostasia&quot;. Hoje estamos vivendo em uma época muito difícil e perigosa. O Cristianismo está desaparecendo rapidamente e isto nos mostra o quão importante é este Livro de Judas para nós hoje.</p>
+<p><a href="http://bibliaonline.com.br/acf/jd/1/1,21">Jd 1 e 21</a> &quot;Conservados&quot; e &quot;guardados&quot; são palavras que têm a mesma raiz. A primeira é o que Deus faz, e a segunda, o que devemos fazer. Com frequência oramos para que o Senhor possa nos guardar! O que o <a href="http://bibliaonline.com.br/acf/jd/1/21">versículo 21</a> está lhe dizendo?</p>
+<p><a href="http://bibliaonline.com.br/acf/Jd/1/5/">Jd 5</a> Três exemplos disto (1) Apesar dos Israelitas terem sido todos tirados do Egito por Deus nos dias de Moisés, alguns não creram em Deus e foram destruídos.</p>
+<p><a href="http://bibliaonline.com.br/acf/Jd/1/6/">Jd 6</a> (2) Alguns anjos desobedeceram, e hoje estão em cadeias aguardando seu juízo.</p>
+<p><a href="http://bibliaonline.com.br/acf/Jd/1/7/">Jd 7</a> (3) Sodoma e Gomorra, grandes cidades, foram ambas destruídas por terem se voltado para a imoralidade.</p>
+<p><a href="http://bibliaonline.com.br/acf/Jd/1/8-10">Jd 8-10</a> O povo ímpio deste mundo estava se infiltrando entre os crentes. O mal começa de forma muito sutil. Podemos ver hoje toda a sujeira que aparece no noticiário... deixando de lado todo o respeito pelas autoridades e insultando a verdade de Deus.</p>
+<p><a href="http://bibliaonline.com.br/acf/Jd/1/11/">Jd 11</a> Aqui estão as três formas como as pessoas se desviam; (1) &quot;o caminho de Caim&quot;. Esta é uma figura da velha natureza, a vontade de uma pessoa com ódio tanto de Deus como dos crentes. (2) &quot;O engano do prêmio de Balaão&quot;. Esta é uma figura do mal religioso. Ser religioso por causa do ganho. (3) &quot;A contradição de Coré&quot;; uma figura da rebelião contra Deus e Sua Palavra - Veja <a href="http://bibliaonline.com.br/acf/nm/16">Números 16</a>.</p>
+<p><a href="http://bibliaonline.com.br/acf/Jd/1/12-13">Jd 12-13</a> Exatamente como as pessoas em nosso país nos dias de hoje.</p>
+<p><a href="http://bibliaonline.com.br/acf/Jd/1/14-15">Jd 14-15</a> Versículos marcantes. Enoque viveu cerca de 1.600 anos antes que Moisés escrevesse o Livro de Gênesis (<a href="http://bibliaonline.com.br/acf/gn/5/21-24">Gn 5:21-24</a>), e avisa contra aquelas pessoas ímpias que nos cercam hoje e nos fala de do terrível fim que terão.</p>
+<p><a href="http://bibliaonline.com.br/acf/Jd/1/17-23">Jd 17-23</a> Vivemos em dias de libertinagem, nós os crentes estamos cercados por &quot;escarnecedores&quot; da verdade. Nos é dito que devemos nos edificar sobre a nossa santíssima fé (Leia estas palavras cuidadosamente) orando, conservando-nos no amor de Deus, esperando na misericórdia de nosso Senhor Jesus Cristo para a vida eterna. Como precisamos destas admoestações!</p>
+<p><a href="http://bibliaonline.com.br/acf/Jd/1/24-25">Jd 24-25</a> Que destino doce, tocante e seguro. Ele pode nos guardar (presente) e nos apresentar sem culpa diante de Deus (futuro).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="683.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="683.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+        <script type="text/javascript" src="book.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>

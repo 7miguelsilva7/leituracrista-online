@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter a Day - Neemias</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_FontAwesome/css/font-awesome.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="book.css">
+        
+
+        
+
+    </head>
+    <body onscroll="onscrolling()" class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="995.html"><strong aria-hidden="true">1.</strong> #995</a></li><li><a href="neemias_1.html"><strong aria-hidden="true">2.</strong> NEEMIAS 1</a></li><li><a href="996.html"><strong aria-hidden="true">3.</strong> #996</a></li><li><a href="neemias_2.html"><strong aria-hidden="true">4.</strong> NEEMIAS 2</a></li><li><a href="997.html"><strong aria-hidden="true">5.</strong> #997</a></li><li><a href="neemias_3,_vers_1-13.html"><strong aria-hidden="true">6.</strong> NEEMIAS 3, Vers. 1-13</a></li><li><a href="998.html"><strong aria-hidden="true">7.</strong> #998</a></li><li><a href="neemias_3,_vers_14-32.html"><strong aria-hidden="true">8.</strong> NEEMIAS 3, Vers. 14-32</a></li><li><a href="999.html"><strong aria-hidden="true">9.</strong> #999</a></li><li><a href="neemias_4.html"><strong aria-hidden="true">10.</strong> NEEMIAS 4</a></li><li><a href="1000.html"><strong aria-hidden="true">11.</strong> #1000</a></li><li><a href="neemias_5.html"><strong aria-hidden="true">12.</strong> NEEMIAS 5</a></li><li><a href="1001.html"><strong aria-hidden="true">13.</strong> #1001</a></li><li><a href="neemias_6.html"><strong aria-hidden="true">14.</strong> NEEMIAS 6 </a></li><li><a href="1002.html"><strong aria-hidden="true">15.</strong> #1002</a></li><li><a href="neemias_7.html"><strong aria-hidden="true">16.</strong> NEEMIAS 7</a></li><li><a href="1003.html"><strong aria-hidden="true">17.</strong> #1003</a></li><li><a href="neemias_8.html"><strong aria-hidden="true">18.</strong> NEEMIAS 8</a></li><li><a href="1004.html"><strong aria-hidden="true">19.</strong> #1004</a></li><li><a href="neemias_9.html"><strong aria-hidden="true">20.</strong> NEEMIAS 9</a></li><li><a href="1005.html"><strong aria-hidden="true">21.</strong> #1005</a></li><li><a href="neemias_10.html"><strong aria-hidden="true">22.</strong> NEEMIAS 10</a></li><li><a href="1006.html"><strong aria-hidden="true">23.</strong> #1006</a></li><li><a href="neemias_11.html"><strong aria-hidden="true">24.</strong> NEEMIAS 11</a></li><li><a href="1007.html"><strong aria-hidden="true">25.</strong> #1007</a></li><li><a href="neemias_12.html"><strong aria-hidden="true">26.</strong> NEEMIAS 12</a></li><li><a href="1008.html"><strong aria-hidden="true">27.</strong> #1008</a></li><li><a href="neemias_13.html"><strong aria-hidden="true">28.</strong> NEEMIAS 13</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Chapter a Day - Neemias</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="print.html#a995" id="a995"><h2>#995</h2></a>
+<p>Nós, como Cristãos, somos exortados a vivermos à margem da cultura. Isto é, não somos, e nem podemos ser, parte da corrente cultural, por causa do bendito fato de que nossas mentes foram renovadas em Cristo.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne1neemias-1a" id="a-hrefhttpbibliaonlinecombracfne1neemias-1a"><h2><a href="http://bibliaonline.com.br/acf/ne/1">NEEMIAS 1</a></h2></a>
+<p>O segundo dos 5 livros que descreve a época após um pequeno grupo de cerca de 50.000 ou menos (Judá e Benjamim) ter voltado a Jerusalém. Esdras nos contou da reconstrução do templo, hoje começamos a ler sobre a reconstrução do muro ao redor de Jerusalém. Do mesmo modo como eles precisavam de um muro para protegê-los das artimanhas e violência do inimigo, precisamos nos manter separados, (não isolados) do mundo. 2 Tm <a href="http://bibliaonline.com.br/acf/2tm/2/20-21">2:20-21</a> e <a href="http://bibliaonline.com.br/acf/2co/6/14">2 Co 6:14</a>. Este livro se passa cerca de 12 anos após o tempo de Esdras. Nos dá a última visão histórica do povo de Deus no Antigo Testamento. Cremos que estamos vivendo nos últimos dias do povo de Deus neste &quot;tempo da graça&quot;. Possamos ser sensíveis ao que Deus está nos dizendo hoje. Mas provavelmente a maior lição para aprendermos hoje é que Neemias (significa Conforto de Jeová), por meio de seu livro, mostra que ele entendia perfeitamente as condições de ruína do povo de Deus.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/1/1">Ne 1:1</a> Susã estava na terra de seu cativeiro. Fica onde hoje é o Irã. Neemias vivia num palácio, e mesmo assim vemos que ele deixou aquele palácio e sofreu muitos problemas por amar o povo de Deus.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/1/2-3">Ne 1:2-3</a> Neemias inquiriu sobre seus irmãos, os Judeus que haviam voltado à sua terra, e descobre que estão passando por dificuldades.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/1/4-11">Ne 1:4-11</a> Nesta oração, Neemias mostra o seu profundo amor por seu povo, e sua grande dor por seus problemas.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/1/6">Ne 1:6</a> Ele admite que esses problemas ocorreram por causa do pecado e da desobediência, mas não culpa outros por isso, porém diz... &quot;eu e a casa de meu pai temos pecado&quot;. Neemias está ciente da triste ruína de seu próprio povo, os Judeus, e ele está também ciente da fidelidade do Senhor, a Quem se volta em oração.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/1/11">Ne 1:11</a> Neemias tinha uma posição de grande honra ali, mas ele chorou e orou porque o povo do Senhor estava em grande tristeza e tribulação. Repare que ele coloca o grande rei simplesmente como &quot;este homem&quot; diante de Deus.</p>
+<a class="header" href="print.html#a996" id="a996"><h2>#996</h2></a>
+<p>Um garotinho disse: &quot;Eu sei porque as flores crescem. Elas querem sair logo da terra suja&quot;. (<a href="http://bibliaonline.com.br/acf/rm/12/9">Rm 12:9</a>)</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne2neemias-2a" id="a-hrefhttpbibliaonlinecombracfne2neemias-2a"><h2><a href="http://bibliaonline.com.br/acf/ne/2">NEEMIAS 2</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ne/2/2">Ne 2:2</a> O rei repara que Neemias parece triste, e pergunta a razão. Aparecer triste na presença do rei podia significar a morte.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/2/4-5">Ne 2:4-5</a> Entre a pergunta e a resposta, houve uma rápida oração silenciosa ao Senhor. Que excelente hábito para qualquer um de nós!</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/2/5-8">Ne 2:5-8</a> O rei escuta seu pedido e este é prontamente atendido.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/2/10">Ne 2:10</a> Sinais de problemas no horizonte. Dois homens, Sambalate e Tobias, ouvem acerca da visita de Neemias e ficam irados. (Sambalate era de Moabe - Tobias era de Amom. O ímpio princípio de seus povos é contado em Gênesis <a href="http://bibliaonline.com.br/acf/gn/19/32-38">19:32-38</a>).</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/2/12-18">Ne 2:12-18</a> Neemias faz uma volta de inspeção e descobre que as condições são muito ruins. Mas no <a href="http://bibliaonline.com.br/acf/ne/2/18">versículo 18</a>, ele fala com confiança da mão de Deus. Nós também estamos vivendo em um dia de indiferença semelhante, mas podemos também contr com o Senhor para que esteja conosco, e podemos também sair a edificar (encorajar) uns aos outros.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/2/19">Ne 2:19</a> Aqueles 2 inimigos mais uma vez, e mais um se junta a eles para rirem e zombarem.</p>
+<a class="header" href="print.html#a997" id="a997"><h2>#997</h2></a>
+<p>A menos que exista em nós aquilo que está acima de nós, logo acabaremos sucumbindo àquilo que está ao redor de nós. (<a href="http://bibliaonline.com.br/acf/cl/3/1-3">Cl 3:1-3</a>).</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne31-13neemias-3-vers-1-13a" id="a-hrefhttpbibliaonlinecombracfne31-13neemias-3-vers-1-13a"><h2><a href="http://bibliaonline.com.br/acf/ne/3/1-13">NEEMIAS 3, Vers. 1-13</a></h2></a>
+<p>A construção do muro ao redor da cidade de Jerusalém. Era para manter a salvo os que estavam dentro da cidade e separá-los de seus inimigos do lado de fora. Devemos amar aqueles que continuam fora, perdidos e culpados, mas não devemos nos misturar a eles.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/3/1">Ne 3:1</a> Esiasibe, o sumo sacerdote, constrói algo. Mas leia <a href="http://bibliaonline.com.br/acf/ne/13/4,28">13:4 e 28</a>. Ele estava ligado aos inimigos. Depois veja os versículos <a href="http://bibliaonline.com.br/acf/ne/3/20,21">20 e 21</a> de nosso capítulo; ele não construiu em frente à sua casa. Esses homens construíram a porta das ovelhas - a primeira porta mencionada, pois é como ovelhas perdidas que somos encontrados e redimidos e levados para dentro.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/3/3">Ne 3:3</a> A primeira porta. (Agora somos salvos, e cada um é uma de Suas ovelhas, podendo ser &quot;pescadores de homens&quot;, para ganhar outros para o Senhor).</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/3/5">Ne 3:5</a> Como eles trabalhavam.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/3/6">Ne 3:6</a> A &quot;velha porta&quot;. (Hoje quando tudo o que é velho é considerado fora de moda, é bom lembrar que a verdade de Deus nunca fica fora de moda).</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/3/12">Ne 3:12</a> (Talvez algumas filhas não gostem muito quando seus pais constroem um muro que impede seu contato com as diversões e os amigos mundanos). Essas fiéis filhas ajudaram seu pai a construir o muro!</p>
+<a class="header" href="print.html#a998" id="a998"><h2>#998</h2></a>
+<p>O pior de todos os castigos é Ele deixar que sigamos nossos próprios caminhos.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne314-32neemias-3-vers-14-32a" id="a-hrefhttpbibliaonlinecombracfne314-32neemias-3-vers-14-32a"><h2><a href="http://bibliaonline.com.br/acf/ne/3/14-32">NEEMIAS 3, Vers. 14-32</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ne/3/14">Ne 3:14</a> A porta do esterco! (Paulo disse &quot;Tenho também por perda todas as coisas... e as considero como escória [esterco], para que possa ganhar a Cristo&quot;. Tudo o que parece tão valioso não passa de esterco e coisas sem valor, comparadas a Cristo). Malquias coloca ferrolhos e fechaduras naquela porta.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/3/23">Ne 3:23</a> Aqui dois homens repararam &quot;defronte da sua casa&quot;. (Uma coisa é dizer a alguém que deve ser fiel e se separar, mas outra é aplicar isso à nossa própria família.)</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/3/30">Ne 3:30</a> &quot;Defronte de sua câmara&quot;. Este é o caso mais pessoal de todos... (Não contar aos outros o que fazemos, nem mesmo dessa feita à sua própria casa ou família, mas somente sua câmara - bem onde vivia).</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/3/32">Ne 3:32</a> De volta onde começamos. O muro está completo, e agora o povo de Deus está dentro e o inimigo fora.</p>
+<a class="header" href="print.html#a999" id="a999"><h2>#999</h2></a>
+<p>Se a membrana deste mundo desceu sobre nossa visão espiritual, escondendo Cristo de nós, só Ele poderá removê-la.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne4neemias-4a" id="a-hrefhttpbibliaonlinecombracfne4neemias-4a"><h2><a href="http://bibliaonline.com.br/acf/ne/4">NEEMIAS 4</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ne/4/1-6">Ne 4:1-6</a> Os mesmos dois inimigos estavam muito irados; eles zombavam do trabalho. Mas Neemias diz, &quot;construímos o muro&quot;. Não deixe que a zombaria ou a ira faça você parar de viver para a glória de Deus. Podem existir até outros cristãos que irão zombar de você e lhe dizer que você está muito separado - mas apenas siga adiante construindo seu muro.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/4/14">Ne 4:14</a> Neemias encoraja os trabalhadores e diz, &quot;lembrem-se do Senhor...&quot;</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/4/16-23">Ne 4:16-23</a> Daquele dia em diante, havia vigília e prontidão em defender essa obra do Senhor. Em Efésios <a href="http://bibliaonline.com.br/acf/ef/6">capítulo 6</a>, lemos de toda a armadura de Deus, e precisamos de toda ela, pois há muitos inimigos poderosos e vigilantes.</p>
+<a class="header" href="print.html#a1000" id="a1000"><h2>#1000</h2></a>
+<p>A aliança com o mundo nos impede de vencer o mundo.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne5neemias-5a" id="a-hrefhttpbibliaonlinecombracfne5neemias-5a"><h2><a href="http://bibliaonline.com.br/acf/ne/5">NEEMIAS 5</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ne/5/1-5">Ne 5:1-5</a> Problemas entre esses menos obreiros. A avareza é um pecado terrível.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/5/6-13">Ne 5:6-13</a> Neemias fica irado com isso, e fala de modo severo, prometendo a eles restaurar e corrigir o que tinha sido tomado erroneamente. Suas palavras de repreensão fizeram efeito, e os culpados prometem devolver tudo.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/5/14-16">Ne 5:14-16</a> O próprio Neemias dá um bom exemplo de fidelidade e desprendimento. Se quisermos encorajar outros para agradar ao Senhor, não teremos muito sucesso se nós próprios não estivermos vivendo como deveríamos. Neemias diz, &quot;por causa do temor de Deus&quot;.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/5/17-19">Ne 5:17-19</a> Neemias se preocupava com seu povo e até com os pagãos! O egoísmo é algo odioso ao Senhor. Se realmente amamos o povo de Deus, temos muitas oportunidades de mostrar isso.</p>
+<a class="header" href="print.html#a1001" id="a1001"><h2>#1001</h2></a>
+<p>A Palavra de Deus não será simples se não houver sujeição a Ele.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne6neemias-6a" id="a-hrefhttpbibliaonlinecombracfne6neemias-6a"><h2><a href="http://bibliaonline.com.br/acf/ne/6">NEEMIAS 6</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ne/6/1-4">Ne 6:1-4</a> Os mesmos inimigos não desistiram de seu ódio, mas desta vez tentam um outro método. Eles sugerem a Neemias, &quot;vem, e congreguemo-nos juntamente...&quot; Como isso soava inofensivo. Neemias disse &quot;não&quot; quatro vezes. Hoje o &quot;Movimento Ecumênico&quot; é um grande esforço para tentar unir todos os grupos religiosos para formar uma grande igreja. Temos uma figura disso aqui. Possamos também responder &quot;não&quot;.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/6/5-8">Ne 6:5-8</a> O inimigo tenta outra vez, com falsas acusações, e diz, &quot;vem, pois, agora, e consultemos juntamente&quot;. Outra vez Neemias se recusa a ser enganado.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/6/9">Ne 6:9</a> Ele se volta a Deus em busca de forças.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/6/10-14">Ne 6:10-14</a> Novas tentativas de impedir este servo de Deus. Neemias leva tudo ao Senhor e segue mansamente com seu trabalho.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/6/15">Ne 6:15</a> A obra está terminada. O muro e todas as suas portas estavam agora completados.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/6/17-19">Ne 6:17-19</a> Ao invés de zombar ou ameaçar, o inimigo tenta fazer amizade com alguns que estão dentro do muro. Vemos até casamentos acontecerem entre aqueles inimigos fora e o povo de Deus dentro, pois Mesulão era um dos edificadores do muro.</p>
+<a class="header" href="print.html#a1002" id="a1002"><h2>#1002</h2></a>
+<p>Onde há discernimento espiritual, as coisas se tornam simples e claras como o dia. O segredo do Senhor está com aqueles que O temem.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne7neemias-7a" id="a-hrefhttpbibliaonlinecombracfne7neemias-7a"><h2><a href="http://bibliaonline.com.br/acf/ne/7">NEEMIAS 7</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ne/7/2">Ne 7:2</a> Hanani recebeu a responsabilidade sobre Jerusalém. Não diz que ele era rico ou sábio, ou habilidoso. Mas que era fiel e temia a Deus.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/7/3">Ne 7:3</a> Vigilância - as portas não podiam ser abertas até o sol estar quente. Isto significava ter luz em abundância, de modo que nenhum inimigo poderia entrar fingindo ser um verdadeiro cidadão. Se aquele muro havia sido construído para abrigar o povo de Deus, e para mantê-lo em separação, então era preciso que existisse fidelidade em manter fora dele aqueles que não tinham um coração para o Senhor.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/7/5-66">Ne 7:5-66</a> Uma longa lista de nomes daqueles que moravam na cidade, somando 42.360. Deus sabia o nome de cada um deles.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/7/64">Ne 7:64</a> Há alguns cujos nomes não foram encontrados. Mas em Filipenses <a href="http://bibliaonline.com.br/acf/fp/4/3">4:3</a> encontramos aqueles que tinham seus nomes no &quot;livro da vida&quot;!</p>
+<a class="header" href="print.html#a1003" id="a1003"><h2>#1003</h2></a>
+<p>Quanto mais perto de Deus um homem caminha pela graça, mais brando ele se torna para com a falta dos outros.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne8neemias-8a" id="a-hrefhttpbibliaonlinecombracfne8neemias-8a"><h2><a href="http://bibliaonline.com.br/acf/ne/8">NEEMIAS 8</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ne/8/1-8">Ne 8:1-8</a> Os homens e mulheres se reuniram na porta das águas e escutaram, da manhã ao meio-dia, enquanto Esdras lia para eles a Palavra de Deus. Como é importante atender ao chamado do Senhor, sair da confusão religiosa que é representada por Babilônia, e então, ouvir a Sua Palavra.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/8/8">Ne 8:8</a> Era muito importante ler as escrituras com clareza, e explicar-lhes para que elas pudessem ser compreendidas. Isso traz alegria, veja o <a href="http://bibliaonline.com.br/acf/ne/8/11">vers. 11</a>.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/8/9-12">Ne 8:9-12</a> O próprio Senhor Se alegrou quando viu o Seu povo reunido outra vez ao centro que Ele estabeleceu.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/8/13-18">Ne 8:13-18</a> Eles guardaram a &quot;festa dos tabernáculos&quot; (uma figura do milênio vindouro). Façamos nós também da leitura da Palavra do Senhor nosso costume diário.</p>
+<a class="header" href="print.html#a1004" id="a1004"><h2>#1004</h2></a>
+<p>A submissão à vontade divina é o travesseiro mais macio no qual podemos descansar.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne9neemias-9a" id="a-hrefhttpbibliaonlinecombracfne9neemias-9a"><h2><a href="http://bibliaonline.com.br/acf/ne/9">NEEMIAS 9</a></h2></a>
+<p>Uma mudança ocorre, da satisfação ao jejum! Havia satisfação porque guardavam a festa que falava de bênção futura. Nós também podemos nos alegrar ao olharmos adiante para o dia quando o próprio Senhor virá e nos levará para casa. Mas quando pensamos no quanto falhamos, é bom nos humilharmos. Que figura essa de uma verdadeira confissão!</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/9/2-3">Ne 9:2-3</a> Passos importantes - separação de todos os estrangeiros - confissão de seus pecados - leitura do livro da lei, e adoração ao Senhor. Haveria mais adoração se nos lembrássemos dessas outras coisas tão importantes.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/9/4-38">Ne 9:4-38</a> Um maravilhoso registro das fiéis atitudes de Deus desde os dias de Abraão.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/9/16-17">Ne 9:16-17</a> A culpa e infidelidade deles são lembradas - bem como a bondade de Deus.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/9/18-19">Ne 9:18-19</a> O fracasso de Israel e a fidelidade de Deus. (Apesar de falharmos tanto, o Senhor tem sido tão fiel para conosco. Somos gratos por Sua fidelidade).</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/9/33">Ne 9:33</a> Que maravilhosa confissão! Estejamos sempre prontos para admitir totalmente nossa própria falha.</p>
+<a class="header" href="print.html#a1005" id="a1005"><h2>#1005</h2></a>
+<p>Satanás consegue introduzir todo o seu poder numa alma no momento que nela surja uma sombra de desconfiança de Deus.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne10neemias-10a" id="a-hrefhttpbibliaonlinecombracfne10neemias-10a"><h2><a href="http://bibliaonline.com.br/acf/ne/10">NEEMIAS 10</a></h2></a>
+<p>Os nomes daqueles que selaram o concerto - começando com Neemias. Além de todos aqueles que assinaram o concerto, no <a href="http://bibliaonline.com.br/acf/ne/10/28">versículo 28</a> lemos &quot;e o restante do povo...&quot; Sua vida é, ou um auxílio, ou um obstáculo, para todos os outros crentes.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/10/32-39">Ne 10:32-39</a> Encontramos uma feliz prontidão em levar ao Senhor tudo o que poderia ser usado em Seu serviço.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/10/34">Ne 10:34</a> O que era a &quot;oferta da lenha&quot;? Nenhuma oferta queimada no fogo jamais poderia ser feita se não tivessem lenha. Talvez o Israelita que trazia algumas braçadas de lenha ao sacerdote, achasse que seu trabalho não tinha valor. Mas o Senhor chamou isso de &quot;oferta de lenha&quot;, e deu valor a ela. Veja com quantas vezes a expressão &quot;casa de Deus&quot; ou &quot;casa do Senhor&quot; é usada.</p>
+<a class="header" href="print.html#a1006" id="a1006"><h2>#1006</h2></a>
+<p>A liberdade da vontade não passa de escravidão ao diabo.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne11neemias-11a" id="a-hrefhttpbibliaonlinecombracfne11neemias-11a"><h2><a href="http://bibliaonline.com.br/acf/ne/11">NEEMIAS 11</a></h2></a>
+<p>O povo foi assentado em diferentes lugares da terra. Encontramos vários nomes, pois Deus tem um interesse individual em cada um dos Seus.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/11/2">Ne 11:2</a> Ligue este versículo ao Salmo <a href="http://bibliaonline.com.br/acf/sl/137/5,6">137:5,6</a>.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/11/19">Ne 11:19</a> Os porteiros. Algumas pessoas que achavam que deviam estar dentro eram mantidas fora. Por isso homens fiéis eram escolhidos para essa tarefa.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/11/22">Ne 11:22</a> Cantores. Que alegria deve dar ao coração de Deus quando Ele olha e vê o Seu povo cantando de tanta alegria no coração.</p>
+<a class="header" href="print.html#a1007" id="a1007"><h2>#1007</h2></a>
+<p>A diferença entre a Bíblia e todos os outros livros é esta: Para entender a Bíblia você precisa conhecer o Autor.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne12neemias-12a" id="a-hrefhttpbibliaonlinecombracfne12neemias-12a"><h2><a href="http://bibliaonline.com.br/acf/ne/12">NEEMIAS 12</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ne/12/24-25">Ne 12:24-25</a> Por três vezes neste capítulo os cantores e porteiros são mencionados. Cantores, para louvar ao Senhor. Porteiros, para guardar as portas. Repare no <a href="http://bibliaonline.com.br/acf/ne/12/25">vers. 25</a> - porteiros fazendo a guarda junto aos batentes das portas. Era bem ali que esses homens fiéis ficavam.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/12/29">Ne 12:29</a> Repare onde os cantores moravam. Eles queriam ficar perto de Jerusalém.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/12/36">Ne 12:36</a> Repare quem está guiando seus irmãos... Esdras, o fiel escriba.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/12/43">Ne 12:43</a> Que maravilhoso cântico, e que louvor. &quot;Deus os alegrara com grande alegria&quot;.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/12/45">Ne 12:45</a> &quot;Conforme o mandado de Davi&quot;, eles voltaram às origens.</p>
+<a class="header" href="print.html#a1008" id="a1008"><h2>#1008</h2></a>
+<p>Nosso Livro de estudos é a Palavra de Deus, nosso Mestre é o Espírito Santo e nossa sala de aula é a vida. Nosso Senhor pode nos ensinar em casa, ou na assembléia, ou na vida diária. Mas a meta é sempre a mesma - justiça! - conformidade a Cristo.</p>
+<a class="header" href="print.html#a-hrefhttpbibliaonlinecombracfne13neemias-13a" id="a-hrefhttpbibliaonlinecombracfne13neemias-13a"><h2><a href="http://bibliaonline.com.br/acf/ne/13">NEEMIAS 13</a></h2></a>
+<p><a href="http://bibliaonline.com.br/acf/ne/13/1-3">Ne 13:1-3</a> Quando a Palavra do Senhor foi lida, descobriu-se que nenhum Amonita ou Moabita deveria jamais entrar na congregação do Senhor. Assim que escutaram isso, agiram, e se separaram de todo &quot;elemento misto&quot;. Não foi a primeira vez que fizeram essa separação. Cerca de 11 anos antes, no capítulo <a href="http://bibliaonline.com.br/acf/ne/9/2">9:2</a>, eles tinham entendido que tinham se misturado com o mundo ao redor. (Uma das mais bem-sucedidas armadilhas de Satanás é nos levar de volta à amizade com incrédulos). Já mencionamos várias vezes a parede de separação neste livro. Que possamos entender o que isso significa para nós hoje.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/13/4-9">Ne 13:4-9</a> É difícil de acreditar que isso iria acontecer. Eliasibe tinha sido o primeiro a edificar quando o muro foi iniciado no <a href="http://bibliaonline.com.br/acf/ne/3">capítulo 3</a>. Ele, um sacerdote, já tinha cedido aquela sala para Tobias; um daqueles ativos inimigos! Neemias ficou tão irado que jogou fora tudo o que pertencia a Tobias e limpou aquela sala e a restaurou ao seu uso adequado. Graças a Deus por homens fiéis!</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/13/17">Ne 13:17</a> Neemias fala aos nobres, pois eles não se importavam pelo Sábado.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/13/21">Ne 13:21</a> Agora ele fala aos mercadores pois eles também falhavam em honrar o Sábado.</p>
+<p><a href="http://bibliaonline.com.br/acf/ne/13/25">Ne 13:25</a> Mais uma vez ele fala a alguns dentre os Judeus, que haviam tomado esposas, e lhes recorda que essa foi exatamente uma das coisas que levaram o rei Salomão a fracassar de modo tão horrível. Será que Neemias tinha o direito de reprovar tanto? Tinha. Ele estava lutando por aquilo que era certo aos olhos do Senhor. Lembremo-nos de que a Palavra de Deus nos é dada para ser lida e obedecida. Leia <a href="http://bibliaonline.com.br/acf/jd/1/3">Judas 3</a>. Por quatro vezes Neemias orou, &quot;Lembra-Te de mim, Deus meu...&quot; e foram suas últimas palavras.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                window.print();
+            })
+        </script>
+        
+
+        
+
+        
+        <script src="searchindex.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" ></script>
+        
+        <script type="text/javascript" src="book.js"></script>
+        
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
+</html>
