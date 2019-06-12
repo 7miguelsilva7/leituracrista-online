@@ -1,8 +1,8 @@
 #!/bin/bash
-for file in ./*.png; do
-Novo="$(echo "$file" | sed 's:.png:.jpeg:')"
+for file in ./*.jpeg; do
+Novo="$(echo "$file" | sed 's:.jpeg:.jpeg:')"
 echo "$Novo"
-convert -quality 1 "$file" "$Novo"
+convert "$file" -resize 30% "$file"
 done
 
 
