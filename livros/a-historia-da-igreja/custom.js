@@ -5,6 +5,9 @@
 //     document.body.innerHTML = res;
 // }
 
+document.write('<link href="style.css" rel="stylesheet">')
+document.write('<link rel="manifest" href="manifest.webmanifest">')
+
 document.write('<style>#scroll {overflow-y: auto;}</style>')
 
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -18,11 +21,8 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
     }else{
      document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;right:90px;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
-
     }
 
-    document.write('<link href="style.css" rel="stylesheet">')
-    document.write('<link rel="manifest" href="manifest.webmanifest">')
 
 }else{
     var share = window.location.href;
