@@ -284,3 +284,4 @@ var manifest = {
   "start_url": indexLocation2
 };
 
+manifest
