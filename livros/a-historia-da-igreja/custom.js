@@ -265,23 +265,22 @@ console.log(localStorage.getItem(positionScrollKey));
 
 
 // manifest
-var indexLocation1 = '/livros/'+bookNameKey[0].innerHTML;
-indexLocation2 = indexLocation1.replace(/ /g, "-").toLowerCase();
+// var indexLocation1 = '/livros/'+bookNameKey[0].innerHTML;
+// indexLocation2 = indexLocation1.replace(/ /g, "-").toLowerCase();
 
-var manifest = {
-  "background_color": "purple",
-  "description": "Leitura Cristã com referências bíblicas linkadas",
-  "display": "fullscreen",
-  "icons": [
-    {
-      "src": "icon/index.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ],
-  "name": bookNameKey[0].innerHTML,
-  "short_name": bookNameKey[0].innerHTML,
-  "start_url": indexLocation2
-};
+// var manifest = {
+//   "background_color": "purple",
+//   "description": "Leitura Cristã com referências bíblicas linkadas",
+//   "display": "fullscreen",
+//   "icons": [
+//     {
+//       "src": "icon/index.png",
+//       "sizes": "192x192",
+//       "type": "image/png"
+//     }
+//   ],
+//   "name": bookNameKey[0].innerHTML,
+//   "short_name": bookNameKey[0].innerHTML,
+//   "start_url": indexLocation2
+// };
 
-document.write(manifest);
