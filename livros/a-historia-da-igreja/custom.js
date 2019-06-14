@@ -262,3 +262,26 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 // console.log(localStorage.getItem(bookNameKey[0].innerHTML))
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
+
+
+// manifest
+var indexLocation1 = bookNameKey;
+indexLocation2 = indexLocation1.replace(" ", "-").toLowerCase();
+
+var manifest = {
+  "background_color": "purple",
+  "description": "Leitura Cristã com referências bíblicas linkadas",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/index.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": bookNameKey,
+  "short_name": bookNameKey,
+  "start_url": /livros/indexLocation2
+};
+
+manifest;
