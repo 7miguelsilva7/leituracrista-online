@@ -13,9 +13,10 @@
         
         <script>
         var bokname = (document.getElementsByClassName("menu-title"));
-        bokname2 = indexLocation1[0].innerHTML;
+        bokname2 = bokname[0].innerHTML;
         manifestLocation = bokname2.replace(/ /g, "-").toLowerCase();
         document.write('<link rel="manifest" href="/manifest/'+manifestLocation+'-manifest.webmanifest">')
+
         </script>
         
         
