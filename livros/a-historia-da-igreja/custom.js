@@ -265,8 +265,8 @@ console.log(localStorage.getItem(positionScrollKey));
 
 
 // manifest
-var indexLocation1 = bookNameKey;
-indexLocation2 = indexLocation1.replace(" ", "-").toLowerCase();
+var indexLocation1 = '/livros/'+bookNameKey[0].innerHTML;
+indexLocation2 = indexLocation1.replace(/ /g, "-").toLowerCase();
 
 var manifest = {
   "background_color": "purple",
@@ -279,9 +279,9 @@ var manifest = {
       "type": "image/png"
     }
   ],
-  "name": bookNameKey,
-  "short_name": bookNameKey,
-  "start_url": /livros/indexLocation2
+  "name": bookNameKey[0].innerHTML,
+  "short_name": bookNameKey[0].innerHTML,
+  "start_url": indexLocation2
 };
 
 manifest;
