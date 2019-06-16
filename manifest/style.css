@@ -5,13 +5,13 @@ html {
 
 body {
   height: inherit;
-  margin: 0;
+  margin: -5;
 }
-/* 
+
 img {
   display: block;
   width: 100%;
-} */
+}
 
 .add-button {
   position: absolute;
