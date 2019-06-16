@@ -283,6 +283,7 @@ console.log(localStorage.getItem(positionScrollKey));
 //   "short_name": bookNameKey[0].innerHTML,
 //   "start_url": indexLocation2
 // };
+// Code to handle install prompt on desktop
 
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
