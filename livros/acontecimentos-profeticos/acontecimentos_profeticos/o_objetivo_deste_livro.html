@@ -29,10 +29,15 @@
         <link rel="stylesheet" href="book.css">
         
 
-        
+        <script>
+            function test(){
+            var livro=(document.getElementsByClassName("menu-title"));
+            var linkManifest='<link rel="manifest" href="/manifest/'+livro[0].innerHTML+'-manifest.webmanifest">';
+            document.write(linkManifest);}
+            </script>
 
     </head>
-    <body onscroll="onscrolling()" class="light">
+    <body onload="test()" onscroll="onscrolling()" class="light">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script type="text/javascript">
             try {
