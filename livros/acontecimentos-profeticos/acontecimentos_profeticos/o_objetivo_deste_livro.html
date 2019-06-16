@@ -11,6 +11,13 @@
 
         <!-- Adiciona Save Some Screen  -->
         <link href="/manifest/style.css" rel="stylesheet">
+
+                <script>
+                var livro=(document.getElementsByClassName("menu-title")[0].innerHTML);
+                var linkManifest='<link rel="manifest" href="/manifest/'+livro+'-manifest.webmanifest">';
+                document.write(linkManifest.toLowerCase().replace(/ /g,"-"));
+                console.log((linkManifest).toLowerCase().replace(/ /g,"-"));
+                </script>
         
 
         <base href="../">
