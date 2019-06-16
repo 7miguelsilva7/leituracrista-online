@@ -9,16 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
+        
+
         <link href="/manifest/style.css" rel="stylesheet">
-
-        <script>
-            function test(){
-        var livro=(document.getElementsByClassName("menu-title"));
-        var linkManifest='<link rel="manifest" href="/manifest/'+livro[0].innerHTML+'-manifest.webmanifest">';
-        document.write(linkManifest);}
-        </script>
-
-        <base href="../">
+        <link rel="manifest" href="/manifest/acontecimentos-profeticos-manifest.webmanifest">
+ ../">
 
         
         
@@ -44,7 +39,7 @@
         
 
     </head>
-    <body onload="test()" onscroll="onscrolling()" class="light">
+    <body onscroll="onscrolling()" class="light">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script type="text/javascript">
             try {
