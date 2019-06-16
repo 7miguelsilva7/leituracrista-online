@@ -11,9 +11,8 @@
 
         <link href="/manifest/style.css" rel="stylesheet">
         <script>
-        var livro='acontecimentos-profeticos';
-        var linkManifest='<link rel="manifest" href="/manifest/'+livro+'-manifest.webmanifest">';
-        linkManifest;
+        livro=bookNameKey[0].innerHTML
+        document.write('<link rel="manifest" href="/manifest/'+livro+'-manifest.webmanifest">')
         </script>
 
         <base href="../">
