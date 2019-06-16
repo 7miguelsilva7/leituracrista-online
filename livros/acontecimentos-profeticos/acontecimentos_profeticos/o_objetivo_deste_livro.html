@@ -211,8 +211,8 @@
                 <script>
                 var livro=(document.getElementsByClassName("menu-title")[0].innerHTML);
                 var linkManifest='<link rel="manifest" href="/manifest/'+livro+'-manifest.webmanifest">';
-                document.write(linkManifest);
-                console.log(linkManifest)
+                document.write(linkManifest).toLowerCase();
+                console.log((linkManifest).toLowerCase());
                 </script>
 
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d4445a35d0aa43"></script>
