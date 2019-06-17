@@ -1,7 +1,7 @@
 #!/bin/bash
  
 #livretes ############################################################################################################################
-
+sed -i "s/<\/body>/<script type\=\"text\/javascript\" src\=\"\/\/s7\.addthis\.com\/js\/300\/addthis\_widget\.js\#pubid\=ra\-59d4445a35d0aa43\"><\/script>/" *.html
 # Diretório a partir do qual estão todas as pastas
 
 (
@@ -29,11 +29,13 @@ for subpastas in `cat lista.txt`
 # no caso edit_dir, que está dentro de cada
 # um dos diretórios e concomitantemente...
 
-###### Digite seus comando aqui ########
- 
+###### Digite seus comandos aqui ########
 sed -i 's/{#.*}//g' *.md
 sed -i "s/<\/body>/<script type\=\"text\/javascript\" src\=\"\/\/s7\.addthis\.com\/js\/300\/addthis\_widget\.js\#pubid\=ra\-59d4445a35d0aa43\"><\/script>/" *.html
 
+sed -i "s/<\/body>/<script type\=\"text\/javascript\" src\=\"\/\/s7\.addthis\.com\/js\/300\/addthis\_widget\.js\#pubid\=ra\-59d4445a35d0aa43\"><\/script>/" *.html
+sed -i 's/<body class\=\"light\">/<body onscroll\=\"onscrolling\(\)\" class\=\"light\">/g' *.html
+sed -i 's/<body /<body onload\=\"loadLastPage\(\)\" /g' index.html
 ########################################
                                                                            
 # ...executar o comando desejado, no caso, phredPhrap
