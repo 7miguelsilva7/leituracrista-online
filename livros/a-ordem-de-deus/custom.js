@@ -262,3 +262,10 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 // console.log(localStorage.getItem(bookNameKey[0].innerHTML))
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
+
+    var str6 = document.getElementsByTagName("head").innerHTML;
+    var res6 = str6
+    .replace(/<meta name="theme-color" content="#ffffff" \/>/g, '<meta name="theme-color" content="#ffffff" />\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="/manifest/a-ordem-de-deus-manifest.webmanifest"></link>')
+    document.getElementsByTagName("head").innerHTML = res6;
+
+    
