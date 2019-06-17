@@ -255,6 +255,12 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
   target.css('overflow-y', 'hidden');
   $(window).scrollTop(localStorage.getItem(positionScrollKey));
   target.css('overflow-y', 'auto');
+
+  var str6 = document.getElementsByTagName("head")[0].innerHTML;
+  var res6 = str6
+  .replace(/<meta name="theme-color" content="#ffffff" \/>/g, '<meta name="theme-color" content="#ffffff" />\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="/manifest/a-ordem-de-deus-manifest.webmanifest"></link>')
+  document.getElementsByTagName("head")[0].innerHTML = res6;
+
 }
 
 // log no console do  google
@@ -263,9 +269,6 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
 
-    var str6 = document.getElementsByTagName("head")[0].innerHTML;
-    var res6 = str6
-    .replace(/<meta name="theme-color" content="#ffffff" \/>/g, '<meta name="theme-color" content="#ffffff" />\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="/manifest/a-ordem-de-deus-manifest.webmanifest"></link>')
-    document.getElementsByTagName("head")[0].innerHTML = res6;
+    
 
     
