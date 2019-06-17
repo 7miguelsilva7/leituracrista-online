@@ -9,7 +9,7 @@ self.addEventListener('install', function(e) {
        '/hinario/img/numero.png',
        '/hinario/img/indice.png',
        '/hinario/img/numero.png',
-       '/hinario/css/css.css'
+       '/hinario/css/icon.png'
      ]);
    })
  );
