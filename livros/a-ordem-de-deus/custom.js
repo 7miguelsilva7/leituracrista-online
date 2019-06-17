@@ -265,7 +265,7 @@ console.log(localStorage.getItem(positionScrollKey));
 
     var str6 = document.getElementsByTagName("head")[0].innerHTML;
     var res6 = str6
-    .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="/manifest/'+toLowerCase(bookNameKey[0].innerHTML).replace(/ /g,'-')+'-manifest.webmanifest"></link>')
+    .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="/manifest/'+bookNameKey[0].innerHTML.replace(/ /g,'-').toLowerCase+'-manifest.webmanifest"></link>')
     document.getElementsByTagName("head")[0].innerHTML = res6;
     teste=document.getElementsByTagName("head")[0].innerHTML = res6;
     console.log(teste)
