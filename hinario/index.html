@@ -6944,7 +6944,7 @@ border-top:3px dashed #FFF
             var texto = $(this).attr('data-cad');
             
             $(".bloco").each(function(){
-              var resultado = $(this).text().toUpperCase().indexOf(' '+texto.toUpperCase());
+              var resultado = $(this).text().indexOf(' '+texto);
               
               if(resultado < 0) {
                 $(this).fadeOut();
