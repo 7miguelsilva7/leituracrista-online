@@ -2,14 +2,13 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
-       '/hinario/',
-       '/hinario/index.html',
-       '/hinario/index.js',
-       '/hinario/style.css',
-       '/hinario/img/numero.png',
-       '/hinario/img/indice.png',
-       '/hinario/img/numero.png',
-       '/hinario/css/icon.png'
+       'index.html',
+       'index.js',
+       'style.css',
+       'img/numero.png',
+       'img/indice.png',
+       'img/numero.png',
+       'css/icon.png'
      ]);
    })
  );
