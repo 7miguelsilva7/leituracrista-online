@@ -7,7 +7,7 @@ self.addEventListener('install', function(e) {
        'style.css',
        'img/numero.png',
        'img/indice.png',
-       'img/numero.png',
+       'img/numero.png'
       ]);
    })
  );
