@@ -8,8 +8,7 @@ self.addEventListener('install', function(e) {
        'img/numero.png',
        'img/indice.png',
        'img/numero.png',
-       'css/icon.png'
-     ]);
+      ]);
    })
  );
 });
