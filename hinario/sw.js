@@ -1,23 +1,35 @@
-self.addEventListener('install', function(e) {
- e.waitUntil(
-   caches.open('video-store').then(function(cache) {
-     return cache.addAll([
-       'index.html',
-       'index.js',
-       'style.css',
-       'img/numero.png',
-       'img/indice.png',
-       'img/numero.png'
-      ]);
-   })
- );
+var CACHE_NAME = 'my-site-cache-v1';
+var urlsToCache = [
+  '/hinario/',
+  '/hinario/index.html',
+  '/hinario/index.js',
+  '/hinario/style.css',
+  '/hinario/img/numero.png',
+  '/hinario/img/indice.png',
+  '/hinario/img/numero.png'
+];
+
+self.addEventListener('install', function(event) {
+  // Perform install steps
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function(cache) {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+      })
+  );
 });
 
-self.addEventListener('fetch', function(e) {
-  console.log(e.request.url);
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
-    })
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function(response) {
+        // Cache hit - return response
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      }
+    )
   );
 });
