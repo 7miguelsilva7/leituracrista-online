@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'my-siteHinario-cache-v1';
 var urlsToCache = [
   '/hinario/',
   '/hinario/index.html',
