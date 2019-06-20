@@ -1,7 +1,8 @@
 let CURRENT_CACHES = {
   offline: 'offline-v1'
 };
-const OFFLINE_URL = ['index.html', 
+const OFFLINE_URL = [
+       '/hinario/index.html', 
        '/hinario/style.css',
        '/hinario/img/numero.png',
        '/hinario/img/indice.png',
