@@ -15,7 +15,7 @@ setInterval(function() {
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/hianrio/teste/sw.js')
+           .register('/hinario/teste/sw.js')
            .then(function() { console.log('Service Worker Registered'); });
 }
 
