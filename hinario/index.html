@@ -178,10 +178,16 @@ border-top:3px dashed #FFF
         <meta charset="utf-8">
 
         <link href="style.css" rel="stylesheet">
-        <script src="index.js" defer></script>
+        <!-- <script src="index.js" defer></script> -->
         <link rel="manifest" href="manifest.webmanifest">
 
-
+        <script>
+          if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                     .register('/hinario/sw.js')
+                     .then(function() { console.log("Service Worker Registered"); });
+          }
+          </script>
 
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
