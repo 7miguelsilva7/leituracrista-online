@@ -182,11 +182,10 @@ border-top:3px dashed #FFF
         <link rel="manifest" href="manifest.webmanifest">
 
         <script>
-          if('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                     .register('/hinario/sw.js')
-                     .then(function() { console.log("Service Worker Registered"); });
-          }
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/hinario/sw.js');
+        }
+          
           </script>
 
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

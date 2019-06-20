@@ -1,32 +1,59 @@
-const version = "0.6.14";
-const cacheName = `Hinario-${version}`;
-self.addEventListener('install', e => {
-  e.waitUntil(
-    caches.open(cacheName).then(cache => {
-      return cache.addAll([
-  '/hinario/',
-  '/hinario/index.html',
-  '/hinario/index.js',
-  '/hinario/style.css',
-  '/hinario/img/numero.png',
-  '/hinario/img/indice.png',
-  '/hinario/img/numero.png'
-      ])
-          .then(() => self.skipWaiting());
+let CURRENT_CACHES = {
+  offline: 'offline-v1'
+};
+const OFFLINE_URL = ['index.html', 
+       '/hinario/style.css',
+       '/hinario/img/numero.png',
+       '/hinario/img/indice.png',
+       '/hinario/img/numero.png'
+
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
+      return caches.open(CURRENT_CACHES.offline).then(function(cache) {
+        return cache.put(OFFLINE_URL, response);
+      });
     })
   );
+
+function createCacheBustedRequest(url) {
+  let request = new Request(url, {cache: 'reload'});
+  if ('cache' in request) {
+    return request;
+  }
+  let bustedUrl = new URL(url, self.location.href);
+  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
+  return new Request(bustedUrl);
+}
 });
 
 self.addEventListener('activate', event => {
-  event.waitUntil(self.clients.claim());
+  let expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
+    return CURRENT_CACHES[key];
+  });
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (expectedCacheNames.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
 });
 
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.open(cacheName)
-      .then(cache => cache.match(event.request, {ignoreSearch: true}))
-      .then(response => {
-      return response || fetch(event.request);
-    })
-  );
+  if (event.request.mode === 'navigate' ||
+      (event.request.method === 'GET' &&
+       event.request.headers.get('accept').includes('text/html'))) {
+    event.respondWith(
+      fetch(event.request).catch(error => {
+        return caches.match(OFFLINE_URL);
+      })
+    );
+  }
 });
