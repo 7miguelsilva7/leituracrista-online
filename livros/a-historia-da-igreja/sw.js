@@ -2,7 +2,7 @@ let CURRENT_CACHES = {
   offline: 'offline-v1'
 };
 const OFFLINE_URL = 
-       '/historia-da-igreja/index.html'
+       '/livros/historia-da-igreja/index.html'
 
 ;
 
