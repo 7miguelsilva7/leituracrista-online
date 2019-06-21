@@ -143,7 +143,7 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/bibliaonline.com.br\/acf\/tg\//g, "mysword.info\/b?r\=Jas_")
 .replace(/bibliaonline.com.br\/acf\/tt\//g, "mysword.info\/b?r\=Tit_")
 .replace(/bibliaonline.com.br\/acf\/zc\//g, "mysword.info\/b?r\=Zec_")
-.replace(/1\//g,"1\:")
+.replace(/mysword.info\/b\?r\\(.*.)_1\//g,"/mysword.info\/b\?r$1_1\:")
 .replace(/2\//g,"2\:")
 .replace(/3\//g,"3\:")
 .replace(/4\//g,"4\:")
