@@ -170,6 +170,7 @@ location.replace('https://leituracrista.com')
 var str2 = document.getElementById("search-toggle").innerHTML;
 var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "")
 .replace(/searchindex.js/g, "")
+
 document.getElementById("search-toggle").innerHTML = res2; 
 // fim de Elimina botão de busca
 
@@ -180,7 +181,17 @@ var res4 = str4
 .replace(/“_/g, "\"")
 .replace(/<strong>/g, " <strong> ")
 .replace(/<\/strong>/g, " <\/strong> ")
-.replace(/([0-9])\/">/g, "$1\">")  
+.replace(/([0-9])\/">/g, "$1\">") 
+.replace(/1\//g,"1\:")
+.replace(/2\//g,"2\:")
+.replace(/3\//g,"3\:")
+.replace(/4\//g,"4\:")
+.replace(/5\//g,"5\:")
+.replace(/6\//g,"6\:")
+.replace(/7\//g,"7\:")
+.replace(/8\//g,"8\:")
+.replace(/9\//g,"9\:")
+.replace(/0\//g,"0\:") 
 document.getElementById("content").innerHTML = res4; 
 
 
