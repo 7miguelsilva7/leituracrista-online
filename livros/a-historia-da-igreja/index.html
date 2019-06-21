@@ -15,6 +15,13 @@
 	    <link href="/manifest/style.css" rel="stylesheet">
 	    <link rel="manifest" href="/manifest/a-historia-da-igreja-manifest.webmanifest">
 
+<script>
+
+// Testando install serviceWorker          
+if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+</script>
 
         <link rel="stylesheet" href="book.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">

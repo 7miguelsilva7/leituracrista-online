@@ -271,7 +271,3 @@ console.log(localStorage.getItem(positionScrollKey));
     console.log(teste)
 
 
-// Testando install serviceWorker          
-if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
-        }
