@@ -153,6 +153,10 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/8\//g,"8\:")
 .replace(/9\//g,"9\:")
 .replace(/0\//g,"0\:")
+
+.replace(/capitulo_[0-9]:/g,"capitulo_$1/")
+
+
 ;
 document.getElementById("content").innerHTML = res; 
 
