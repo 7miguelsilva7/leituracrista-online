@@ -281,5 +281,3 @@ console.log(localStorage.getItem(positionScrollKey));
     document.getElementsByTagName("head")[0].innerHTML = res6;
     teste=document.getElementsByTagName("head")[0].innerHTML = res6;
     console.log(teste)
-
-
