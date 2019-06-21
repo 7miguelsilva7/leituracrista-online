@@ -143,19 +143,26 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/bibliaonline.com.br\/acf\/tg\//g, "mysword.info\/b?r\=Jas_")
 .replace(/bibliaonline.com.br\/acf\/tt\//g, "mysword.info\/b?r\=Tit_")
 .replace(/bibliaonline.com.br\/acf\/zc\//g, "mysword.info\/b?r\=Zec_")
+
 .replace(/mysword.info\/b\?r\\(.*.)_1\//g,"/mysword.info\/b\?r$1_1\:")
-.replace(/2\//g,"2\:")
-.replace(/3\//g,"3\:")
-.replace(/4\//g,"4\:")
-.replace(/5\//g,"5\:")
-.replace(/6\//g,"6\:")
-.replace(/7\//g,"7\:")
-.replace(/8\//g,"8\:")
-.replace(/9\//g,"9\:")
-.replace(/0\//g,"0\:")
-
-.replace(/capitulo_([0-9]):/g,"capitulo_$1/")
-
+.replace(/mysword.info\/b\?r\\(.*.)_2\//g,"/mysword.info\/b\?r$1_2\:")
+.replace(/mysword.info\/b\?r\\(.*.)_3\//g,"/mysword.info\/b\?r$1_3\:")
+.replace(/mysword.info\/b\?r\\(.*.)_4\//g,"/mysword.info\/b\?r$1_4\:")
+.replace(/mysword.info\/b\?r\\(.*.)_5\//g,"/mysword.info\/b\?r$1_5\:")
+.replace(/mysword.info\/b\?r\\(.*.)_6\//g,"/mysword.info\/b\?r$1_6\:")
+.replace(/mysword.info\/b\?r\\(.*.)_7\//g,"/mysword.info\/b\?r$1_7\:")
+.replace(/mysword.info\/b\?r\\(.*.)_8\//g,"/mysword.info\/b\?r$1_8\:")
+.replace(/mysword.info\/b\?r\\(.*.)_9\//g,"/mysword.info\/b\?r$1_9\:")
+.replace(/mysword.info\/b\?r\\(.*.)_0\//g,"/mysword.info\/b\?r$1_0\:")
+// .replace(/2\//g,"2\:")
+// .replace(/3\//g,"3\:")
+// .replace(/4\//g,"4\:")
+// .replace(/5\//g,"5\:")
+// .replace(/6\//g,"6\:")
+// .replace(/7\//g,"7\:")
+// .replace(/8\//g,"8\:")
+// .replace(/9\//g,"9\:")
+// .replace(/0\//g,"0\:")
 
 ;
 document.getElementById("content").innerHTML = res; 
