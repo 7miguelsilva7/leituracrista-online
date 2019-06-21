@@ -270,4 +270,8 @@ console.log(localStorage.getItem(positionScrollKey));
     teste=document.getElementsByTagName("head")[0].innerHTML = res6;
     console.log(teste)
 
-    
+
+// Testando install serviceWorker          
+if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }

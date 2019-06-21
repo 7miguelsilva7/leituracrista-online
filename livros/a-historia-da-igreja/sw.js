@@ -1,25 +1,56 @@
-self.addEventListener('install', function(e) {
- e.waitUntil(
-   caches.open('video-store').then(function(cache) {
-     return cache.addAll([
-       '/pwa-examples/a2hs/',
-       '/pwa-examples/a2hs/index.html',
-       '/pwa-examples/a2hs/index.js',
-       '/pwa-examples/a2hs/style.css',
-       '/pwa-examples/a2hs/images/fox1.jpg',
-       '/pwa-examples/a2hs/images/fox2.jpg',
-       '/pwa-examples/a2hs/images/fox3.jpg',
-       '/pwa-examples/a2hs/images/fox4.jpg'
-     ]);
-   })
- );
-});
+let CURRENT_CACHES = {
+  offline: 'offline-v1'
+};
+const OFFLINE_URL = 
+       '/historia-da-igreja/index.html'
 
-self.addEventListener('fetch', function(e) {
-  console.log(e.request.url);
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
+;
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
+      return caches.open(CURRENT_CACHES.offline).then(function(cache) {
+        return cache.put(OFFLINE_URL, response);
+      });
     })
   );
+
+function createCacheBustedRequest(url) {
+  let request = new Request(url, {cache: 'reload'});
+  if ('cache' in request) {
+    return request;
+  }
+  let bustedUrl = new URL(url, self.location.href);
+  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
+  return new Request(bustedUrl);
+}
+});
+
+self.addEventListener('activate', event => {
+  let expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
+    return CURRENT_CACHES[key];
+  });
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (expectedCacheNames.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
+
+self.addEventListener('fetch', event => {
+  if (event.request.mode === 'navigate' ||
+      (event.request.method === 'GET' &&
+       event.request.headers.get('accept').includes('text/html'))) {
+    event.respondWith(
+      fetch(event.request).catch(error => {
+        return caches.match(OFFLINE_URL);
+      })
+    );
+  }
 });
