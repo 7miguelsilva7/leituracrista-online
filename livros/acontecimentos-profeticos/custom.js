@@ -144,6 +144,8 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/bibliaonline.com.br\/acf\/tt\//g, "mysword.info\/b?r\=Tit_")
 .replace(/bibliaonline.com.br\/acf\/zc\//g, "mysword.info\/b?r\=Zec_")
 .replace(/([0-9])\/">/g, "$1\">")
+
+.replace(/1\//g,"1\:")
 .replace(/2\//g,"2\:")
 .replace(/3\//g,"3\:")
 .replace(/4\//g,"4\:")
@@ -153,7 +155,6 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/8\//g,"8\:")
 .replace(/9\//g,"9\:")
 .replace(/0\//g,"0\:")
-
 ;
 document.getElementById("content").innerHTML = res; 
 
@@ -264,10 +265,11 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
 
-// Adicionando ao HEAD
     var str6 = document.getElementsByTagName("head")[0].innerHTML;
     var res6 = str6
-    .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>\n<script>if (\'serviceWorker\' in navigator) {navigator.serviceWorker.register(\'sw.js\');}</script>')
+    .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>')
     document.getElementsByTagName("head")[0].innerHTML = res6;
     teste=document.getElementsByTagName("head")[0].innerHTML = res6;
     console.log(teste)
+
+    
