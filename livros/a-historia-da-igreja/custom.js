@@ -1,3 +1,9 @@
+// function linkToMysword() {
+//    //adicionar target blank
+//     var str = document.body.innerHTML;
+//     var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_");
+//     document.body.innerHTML = res;
+// }
 
 document.write('<style>#scroll {overflow-y: auto;}</style>')
 
@@ -137,16 +143,27 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/bibliaonline.com.br\/acf\/tg\//g, "mysword.info\/b?r\=Jas_")
 .replace(/bibliaonline.com.br\/acf\/tt\//g, "mysword.info\/b?r\=Tit_")
 .replace(/bibliaonline.com.br\/acf\/zc\//g, "mysword.info\/b?r\=Zec_")
-.replace(/1\//g,"1\:")
-.replace(/2\//g,"2\:")
-.replace(/3\//g,"3\:")
-.replace(/4\//g,"4\:")
-.replace(/5\//g,"5\:")
-.replace(/6\//g,"6\:")
-.replace(/7\//g,"7\:")
-.replace(/8\//g,"8\:")
-.replace(/9\//g,"9\:")
-.replace(/0\//g,"0\:")
+
+.replace(/mysword.info\/b\?r\\(.*.)1\//g,"/mysword.info\/b\?r$1\1\:")
+.replace(/mysword.info\/b\?r\\(.*.)2\//g,"/mysword.info\/b\?r$1\2\:")
+.replace(/mysword.info\/b\?r\\(.*.)3\//g,"/mysword.info\/b\?r$1\3\:")
+.replace(/mysword.info\/b\?r\\(.*.)4\//g,"/mysword.info\/b\?r$1\4\:")
+.replace(/mysword.info\/b\?r\\(.*.)5\//g,"/mysword.info\/b\?r$1\5\:")
+.replace(/mysword.info\/b\?r\\(.*.)6\//g,"/mysword.info\/b\?r$1\6\:")
+.replace(/mysword.info\/b\?r\\(.*.)7\//g,"/mysword.info\/b\?r$1\7\:")
+.replace(/mysword.info\/b\?r\\(.*.)8\//g,"/mysword.info\/b\?r$1\8\:")
+.replace(/mysword.info\/b\?r\\(.*.)9\//g,"/mysword.info\/b\?r$1\9\:")
+.replace(/mysword.info\/b\?r\\(.*.)0\//g,"/mysword.info\/b\?r$1\0\:")
+// .replace(/2\//g,"2\:")
+// .replace(/3\//g,"3\:")
+// .replace(/4\//g,"4\:")
+// .replace(/5\//g,"5\:")
+// .replace(/6\//g,"6\:")
+// .replace(/7\//g,"7\:")
+// .replace(/8\//g,"8\:")
+// .replace(/9\//g,"9\:")
+// .replace(/0\//g,"0\:")
+
 ;
 document.getElementById("content").innerHTML = res; 
 
@@ -257,9 +274,10 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
 
-    // var str6 = document.getElementsByTagName("head")[0].innerHTML;
-    // var res6 = str6
-    // .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>')
-    // document.getElementsByTagName("head")[0].innerHTML = res6;
-    // teste=document.getElementsByTagName("head")[0].innerHTML = res6;
-    // console.log(teste)
+// Adicionando ao HEAD
+    var str6 = document.getElementsByTagName("head")[0].innerHTML;
+    var res6 = str6
+    .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>\n<script>if (\'serviceWorker\' in navigator) {navigator.serviceWorker.register(\'sw.js\');}</script>')
+    document.getElementsByTagName("head")[0].innerHTML = res6;
+    teste=document.getElementsByTagName("head")[0].innerHTML = res6;
+    console.log(teste)
