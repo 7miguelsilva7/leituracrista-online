@@ -1,4 +1,11 @@
 
+ var str6 = document.getElementsByTagName("head")[0].innerHTML;
+    var res6 = str6
+    .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>')
+    document.getElementsByTagName("head")[0].innerHTML = res6;
+    teste=document.getElementsByTagName("head")[0].innerHTML = res6;
+    console.log(teste)
+
 document.write('<style>#scroll {overflow-y: auto;}</style>')
 
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -257,9 +264,4 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
 
-    // var str6 = document.getElementsByTagName("head")[0].innerHTML;
-    // var res6 = str6
-    // .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>')
-    // document.getElementsByTagName("head")[0].innerHTML = res6;
-    // teste=document.getElementsByTagName("head")[0].innerHTML = res6;
-    // console.log(teste)
+   
