@@ -33,7 +33,12 @@
         
         <link rel="stylesheet" href="book.css">
         
-
+        <script>
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/sw.js');
+          }
+            
+        </script>
         
         
     </head>
