@@ -1,7 +1,7 @@
 
  var str6 = document.getElementsByTagName("head")[0].innerHTML;
     var res6 = str6
-    .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>')
+    .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>\n<script>if (\'serviceWorker\' in navigator) {navigator.serviceWorker.register(\'https://leituracrista.com/sw.js\');}</script>')
     document.getElementsByTagName("head")[0].innerHTML = res6;
     teste=document.getElementsByTagName("head")[0].innerHTML = res6;
     console.log(teste)
