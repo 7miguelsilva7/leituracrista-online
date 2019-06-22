@@ -1,7 +1,7 @@
 {
   "background_color": "purple",
   "description": "Hinário",
-  "display": "minimal-ui",
+  "display": "standalone",
   "icons": [
     {
       "src": "/hinario/img/icon.png",
