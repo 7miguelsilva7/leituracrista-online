@@ -291,4 +291,4 @@ console.log(localStorage.getItem(positionScrollKey));
 // console.log(resChapter)
 
 var locationBook = (document.getElementsByClassName("nav-chapters next"));
-alert(locationBook)
+alert(locationBook[0])
