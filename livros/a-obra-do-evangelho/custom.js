@@ -207,7 +207,7 @@ var res5 = str5
 .replace(/8\:/g,"8\/")
 .replace(/9\:/g,"9\/")
 .replace(/0\:/g,"0\/")
-document.getElementsByTagName("nav-chapters previous")[0].innerHTML = res5;
+document.getElementsByTagName("nav-chapters previous").innerHTML = res5;
 
 var str5 = document.getElementsByClassName("nav-chapters next");
 var res5 = str5
@@ -221,7 +221,7 @@ var res5 = str5
 .replace(/8\:/g,"8\/")
 .replace(/9\:/g,"9\/")
 .replace(/0\:/g,"0\/")
-document.getElementsByTagName("nav-chapters next")[0].innerHTML = res5;
+document.getElementsByTagName("nav-chapters next").innerHTML = res5;
 
 
 // Salva e restaura posição de leitura
