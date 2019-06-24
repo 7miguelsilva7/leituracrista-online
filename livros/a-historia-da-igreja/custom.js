@@ -149,6 +149,8 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/8\//g,"8\:")
 .replace(/9\//g,"9\:")
 .replace(/0\//g,"0\:")
+.replace(/capitulo_([0-9])\:/g,"capitulo_$1\/")
+.replace(/capitulo_([0-9]{2})\:/g,"capitulo_$1\/")
 ;
 document.getElementById("content").innerHTML = res; 
 
@@ -169,7 +171,7 @@ var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "")
 document.getElementById("search-toggle").innerHTML = res2; 
 // fim de Elimina botão de busca
 
-// Elimina underline do texto
+// Elimina underline do texto e convert barra em 2 pontos
 var str4 = document.getElementById("content").innerHTML;
 var res4 = str4
 .replace(/”_/g, "\" ")
@@ -177,16 +179,7 @@ var res4 = str4
 .replace(/<strong>/g, " <strong> ")
 .replace(/<\/strong>/g, " <\/strong> ")
 .replace(/([0-9])\/">/g, "$1\">") 
-.replace(/1\//g,"1\:")
-.replace(/2\//g,"2\:")
-.replace(/3\//g,"3\:")
-.replace(/4\//g,"4\:")
-.replace(/5\//g,"5\:")
-.replace(/6\//g,"6\:")
-.replace(/7\//g,"7\:")
-.replace(/8\//g,"8\:")
-.replace(/9\//g,"9\:")
-.replace(/0\//g,"0\:") 
+
 document.getElementById("content").innerHTML = res4; 
 
 
@@ -270,7 +263,7 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
 
-   var str6 = document.getElementsByTagName("head")[0].innerHTML;
+var str6 = document.getElementsByTagName("head")[0].innerHTML;
     var res6 = str6
     .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>')
     document.getElementsByTagName("head")[0].innerHTML = res6;

@@ -151,15 +151,6 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/0\//g,"0\:")
 .replace(/capitulo_([0-9])\:/g,"capitulo_$1\/")
 .replace(/capitulo_([0-9]{2})\:/g,"capitulo_$1\/")
-// .replace(/capitulo_2\:/g,"capitulo_2\/")
-// .replace(/capitulo_3\:/g,"capitulo_3\/")
-// .replace(/capitulo_4\:/g,"capitulo_4\/")
-// .replace(/capitulo_5\:/g,"capitulo_5\/")
-// .replace(/capitulo_6\:/g,"capitulo_6\/")
-// .replace(/capitulo_7\:/g,"capitulo_7\/")
-// .replace(/capitulo_8\:/g,"capitulo_8\/")
-// .replace(/capitulo_9\:/g,"capitulo_9\/")
-// .replace(/capitulo_0\:/g,"capitulo_0\/")
 ;
 document.getElementById("content").innerHTML = res; 
 
