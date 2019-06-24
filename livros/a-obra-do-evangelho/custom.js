@@ -281,6 +281,3 @@ console.log(localStorage.getItem(positionScrollKey));
 // .replace(/0\:/g,"0\/")
 // ;
 // console.log(resChapter)
-
-var locationBook = (document.getElementsByClassName("nav-chapters next")[0]);
-alert(locationBook)
