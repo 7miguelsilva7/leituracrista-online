@@ -195,8 +195,8 @@ var res4 = str4
 document.getElementById("content").innerHTML = res4; 
 
 // resolver link de paginação
-var str5 = document.getElementsByClassName("nav-chapters previous");
-var res5 = str5
+var str7 = document.getElementsByClassName("nav-chapters previous");
+var res7 = str7
 .replace(/1\:/g,"1\/")
 .replace(/2\:/g,"2\/")
 .replace(/3\:/g,"3\/")
@@ -207,10 +207,10 @@ var res5 = str5
 .replace(/8\:/g,"8\/")
 .replace(/9\:/g,"9\/")
 .replace(/0\:/g,"0\/")
-document.getElementsByTagName("nav-chapters previous").innerHTML = res5;
+document.getElementsByClassName("nav-chapters previous").innerHTML = res7;
 
-var str5 = document.getElementsByClassName("nav-chapters next");
-var res5 = str5
+var str8 = document.getElementsByClassName("nav-chapters next");
+var res8 = str8
 .replace(/1\:/g,"1\/")
 .replace(/2\:/g,"2\/")
 .replace(/3\:/g,"3\/")
@@ -221,7 +221,7 @@ var res5 = str5
 .replace(/8\:/g,"8\/")
 .replace(/9\:/g,"9\/")
 .replace(/0\:/g,"0\/")
-document.getElementsByTagName("nav-chapters next").innerHTML = res5;
+document.getElementsByClassName("nav-chapters next").innerHTML = res8;
 
 
 // Salva e restaura posição de leitura
