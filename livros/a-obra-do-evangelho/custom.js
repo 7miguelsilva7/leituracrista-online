@@ -174,7 +174,7 @@ var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "")
 document.getElementById("search-toggle").innerHTML = res2; 
 // fim de Elimina botão de busca
 
-// Elimina underline do texto
+// Elimina underline do texto e convert barra em 2 pontos
 var str4 = document.getElementById("content").innerHTML;
 var res4 = str4
 .replace(/”_/g, "\" ")
@@ -182,17 +182,6 @@ var res4 = str4
 .replace(/<strong>/g, " <strong> ")
 .replace(/<\/strong>/g, " <\/strong> ")
 .replace(/([0-9])\/">/g, "$1\">") 
-.replace(/1\//g,"1\:")
-.replace(/2\//g,"2\:")
-.replace(/3\//g,"3\:")
-.replace(/4\//g,"4\:")
-.replace(/5\//g,"5\:")
-.replace(/6\//g,"6\:")
-.replace(/7\//g,"7\:")
-.replace(/8\//g,"8\:")
-.replace(/9\//g,"9\:")
-.replace(/0\//g,"0\:")
-.replace(/capitulo_1\:/g,"capitulo_1\/")
 
 document.getElementById("content").innerHTML = res4; 
 
