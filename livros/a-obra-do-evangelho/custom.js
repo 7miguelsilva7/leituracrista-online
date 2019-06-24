@@ -287,6 +287,5 @@ var resChapeter = strChapeter
 .replace(/8\:/g,"8\/")
 .replace(/9\:/g,"9\/")
 .replace(/0\:/g,"0\/")
-(document.getElementsByClassName("nav-chapters next")[0].innerHTML) = resChapeter;
-teste=(document.getElementsByClassName("nav-chapters next")[0].innerHTML) = resChapeter;
-console.log(teste)
+;
+console.log(resChapeter)
