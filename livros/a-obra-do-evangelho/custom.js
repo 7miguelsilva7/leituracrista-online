@@ -195,7 +195,7 @@ var res4 = str4
 document.getElementById("content").innerHTML = res4; 
 
 // resolver link de paginação
-var str7 = document.getElementsByClassName("nav-chapters previous");
+var str7 = document.getElementsByClassName("nav-chapters previous").innerHTML;
 var res7 = str7
 .replace(/1\:/g,"1\/")
 .replace(/2\:/g,"2\/")
@@ -209,7 +209,7 @@ var res7 = str7
 .replace(/0\:/g,"0\/")
 document.getElementsByClassName("nav-chapters previous").innerHTML = res7;
 
-var str8 = document.getElementsByClassName("nav-chapters next");
+var str8 = document.getElementsByClassName("nav-chapters next").innerHTML;
 var res8 = str8
 .replace(/1\:/g,"1\/")
 .replace(/2\:/g,"2\/")
