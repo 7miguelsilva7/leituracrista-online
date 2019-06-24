@@ -194,35 +194,6 @@ var res4 = str4
 .replace(/0\//g,"0\:") 
 document.getElementById("content").innerHTML = res4; 
 
-// resolver link de paginação
-var str7 = document.getElementsByClassName("nav-chapters previous").innerHTML;
-var res7 = str7
-.replace(/1\:/g,"1\/")
-.replace(/2\:/g,"2\/")
-.replace(/3\:/g,"3\/")
-.replace(/4\:/g,"4\/")
-.replace(/5\:/g,"5\/")
-.replace(/6\:/g,"6\/")
-.replace(/7\:/g,"7\/")
-.replace(/8\:/g,"8\/")
-.replace(/9\:/g,"9\/")
-.replace(/0\:/g,"0\/")
-document.getElementsByClassName("nav-chapters previous").innerHTML = res7;
-
-var str8 = document.getElementsByClassName("nav-chapters next").innerHTML;
-var res8 = str8
-.replace(/1\:/g,"1\/")
-.replace(/2\:/g,"2\/")
-.replace(/3\:/g,"3\/")
-.replace(/4\:/g,"4\/")
-.replace(/5\:/g,"5\/")
-.replace(/6\:/g,"6\/")
-.replace(/7\:/g,"7\/")
-.replace(/8\:/g,"8\/")
-.replace(/9\:/g,"9\/")
-.replace(/0\:/g,"0\/")
-document.getElementsByClassName("nav-chapters next").innerHTML = res8;
-
 
 // Salva e restaura posição de leitura
 // prepara botões avançar e voltar ara salvar posição
