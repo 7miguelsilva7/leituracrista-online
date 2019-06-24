@@ -154,7 +154,16 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/8\//g,"8\:")
 .replace(/9\//g,"9\:")
 .replace(/0\//g,"0\:")
-.replace(/capitulo_1\:/g,"capitulo_1\/")
+.replace(/capitulo_((0-9){1,2})\:/g,"capitulo_$1\/")
+// .replace(/capitulo_2\:/g,"capitulo_2\/")
+// .replace(/capitulo_3\:/g,"capitulo_3\/")
+// .replace(/capitulo_4\:/g,"capitulo_4\/")
+// .replace(/capitulo_5\:/g,"capitulo_5\/")
+// .replace(/capitulo_6\:/g,"capitulo_6\/")
+// .replace(/capitulo_7\:/g,"capitulo_7\/")
+// .replace(/capitulo_8\:/g,"capitulo_8\/")
+// .replace(/capitulo_9\:/g,"capitulo_9\/")
+// .replace(/capitulo_0\:/g,"capitulo_0\/")
 ;
 document.getElementById("content").innerHTML = res; 
 
@@ -266,18 +275,3 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 // console.log(localStorage.getItem(bookNameKey[0].innerHTML))
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
-
-// var strChapter = document.getElementsByClassName("nav-chapters next");
-// var resChapter = (strChapter[0])
-// .replace(/1\:/g,"1\/")
-// .replace(/2\:/g,"2\/")
-// .replace(/3\:/g,"3\/")
-// .replace(/4\:/g,"4\/")
-// .replace(/5\:/g,"5\/")
-// .replace(/6\:/g,"6\/")
-// .replace(/7\:/g,"7\/")
-// .replace(/8\:/g,"8\/")
-// .replace(/9\:/g,"9\/")
-// .replace(/0\:/g,"0\/")
-// ;
-// console.log(resChapter)
