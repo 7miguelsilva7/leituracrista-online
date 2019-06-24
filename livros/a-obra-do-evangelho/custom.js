@@ -191,7 +191,9 @@ var res4 = str4
 .replace(/7\//g,"7\:")
 .replace(/8\//g,"8\:")
 .replace(/9\//g,"9\:")
-.replace(/0\//g,"0\:") 
+.replace(/0\//g,"0\:")
+.replace(/capitulo_1\:/g,"capitulo_1\/")
+
 document.getElementById("content").innerHTML = res4; 
 
 
