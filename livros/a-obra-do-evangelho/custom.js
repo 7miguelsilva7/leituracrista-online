@@ -276,7 +276,7 @@ console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
 
 var strChapeter = document.getElementsByClassName("nav-chapters next");
-var resChapeter = strChapeter
+var resChapeter = strChapeter[0]
 .replace(/1\:/g,"1\/")
 .replace(/2\:/g,"2\/")
 .replace(/3\:/g,"3\/")
