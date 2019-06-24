@@ -221,14 +221,17 @@ function savePositionNext()
 {
   var locationBook = (document.getElementsByClassName("nav-chapters next"));
   var locationBook = (document.getElementsByClassName("mobile-nav-chapters next"));
-  localStorage.setItem(bookNameKey[0].innerHTML, locationBook[0])
+  localStorage.setItem(bookNameKey[0].innerHTML, locationBook[0]
+    .replace(/1\:/g,"1\/").replace(/2\:/g,"2\/").replace(/3\:/g,"3\/").replace(/4\:/g,"4\/").replace(/5\:/g,"5\/").replace(/6\:/g,"6\/").replace(/7\:/g,"7\/").replace(/8\:/g,"8\/").replace(/9\:/g,"9\/").replace(/0\:/g,"0\/")
+    )
   // alert(locationBook[0]);
 }
 function savePositionPrevious()
 {
   var locationBook = (document.getElementsByClassName("nav-chapters previous"));
   var locationBook = (document.getElementsByClassName("mobile-nav-chapters previous"));
-  localStorage.setItem(bookNameKey[0].innerHTML, locationBook[0])
+  localStorage.setItem(bookNameKey[0].innerHTML, locationBook[0].replace(/1\:/g,"1\/").replace(/2\:/g,"2\/").replace(/3\:/g,"3\/").replace(/4\:/g,"4\/").replace(/5\:/g,"5\/").replace(/6\:/g,"6\/").replace(/7\:/g,"7\/").replace(/8\:/g,"8\/").replace(/9\:/g,"9\/").replace(/0\:/g,"0\/")
+    )
 }
 
 
@@ -275,3 +278,4 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
 
+   
