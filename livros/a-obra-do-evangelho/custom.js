@@ -275,7 +275,7 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
 
-var strChapeter = document.getElementsByClassName("nav-chapters next")[1].innerHTML;
+var strChapeter = document.getElementsByClassName("nav-chapters next").innerHTML;
 var resChapeter = strChapeter
 .replace(/1\:/g,"1\/")
 .replace(/2\:/g,"2\/")
@@ -287,6 +287,6 @@ var resChapeter = strChapeter
 .replace(/8\:/g,"8\/")
 .replace(/9\:/g,"9\/")
 .replace(/0\:/g,"0\/")
-document.getElementsByClassName("nav-chapters next")[1].innerHTML = resChapeter;
-teste=document.getElementsByClassName("nav-chapters next")[1].innerHTML = resChapeter;
+document.getElementsByClassName("nav-chapters next").innerHTML = resChapeter;
+teste=document.getElementsByClassName("nav-chapters next").innerHTML = resChapeter;
 console.log(teste)
