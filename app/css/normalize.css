@@ -29,7 +29,9 @@ header,
 nav,
 section {
   display: block;
-  font-size: 1.05em;
+  font-size: 1.02em;
+  margin-left: 0;
+  margin-right: 0;
 
 }
 
