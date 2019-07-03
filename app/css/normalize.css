@@ -29,6 +29,8 @@ header,
 nav,
 section {
   display: block;
+  font-size: 1.07em;
+
 }
 
 /**
