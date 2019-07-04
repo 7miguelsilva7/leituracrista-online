@@ -1,7 +1,7 @@
 {
   "name": "Leitura Cristã APP",
-  "short_name": "LCA",
-  "description": "Leitura offline de literatura cristã",
+  "short_name": "Leitura Cristã APP",
+  "description": "Literatura Cristã Offline ",
   "icons": [
       {
         "src": "images/touch/android-launchericon-48-48.png",
@@ -35,8 +35,7 @@
         "sizes": "512x512"
       } 
       ],
-  "start_url": "index.html",
-  "scope": "./",
+  "start_url": "/app/index.html",
   "display": "standalone",
   "background_color": "purple",
   "theme_color": "purple"
