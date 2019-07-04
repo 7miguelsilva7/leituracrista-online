@@ -1,4 +1,3 @@
-
 var cache_name = 'leituraCristaApp';
 var cached_urls = [
   '/app/',
@@ -10,9 +9,6 @@ var cached_urls = [
   '/app/js/custom.js',
   '/app/ao-seu-nome',
   '/app/a-obra-do-evangelho',
-
-
-
 'acontecimentos-profeticos',
 'a-mulher-seu-lugar-nas-escrituras',
 'a-obra-do-evangelho',
@@ -26,8 +22,6 @@ var cached_urls = [
 'luz-para-as-almas-ansiosas',
 'o-caminho-de-deus-para-o-descanso-poder-e-consagracao',
 'os-desapontamentos-da-vida',
-
-
 ];
 
 self.addEventListener('install', function(event) {
