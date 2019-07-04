@@ -11,7 +11,7 @@ var cached_urls = [
 #   '/app/ao-seu-nome',
 #   '/app/a-obra-do-evangelho',
 
-'',
+source /opt/lampp/htdocs/leituracrista/app/leituracrista/livros.txt
   
 ];
 
