@@ -7,10 +7,18 @@ var cached_urls = [
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
-  '/app/ao-seu-nome',
-  '/app/a-obra-do-evangelho',
-
-  
+'/app/acontecimentos-profeticos',
+'/app/a-mulher-seu-lugar-nas-escrituras',
+'/app/a-obra-do-evangelho',
+'/app/a-oracao-e-as-reunioes-de-oracao',
+'/app/a-ordem-de-deus',
+'/app/ao-seu-nome',
+'/app/a-total-suficiencia-de-cristo',
+'/app/a-vinda-do-senhor',
+'/app/cartas-aos-evangelistas',
+'/app/luz-para-as-almas-ansiosas',
+'/app/o-caminho-de-deus-para-o-descanso-poder-e-consagracao',
+'/app/os-desapontamentos-da-vida',
 ];
 
 self.addEventListener('install', function(event) {
