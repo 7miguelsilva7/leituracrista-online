@@ -2,7 +2,7 @@ var cache_name = 'leituraCristaApp';
 var cached_urls = [
   '/app/',
   '/app/css/main.css',
-  '/app/images',
+  
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
@@ -19,9 +19,9 @@ var cached_urls = [
 '/app/cartas-aos-evangelistas',
 '/app/categories',
 '/app/css',
-'/app/favicon.ico',
-'/app/humans.txt',
-'/app/images',
+
+
+
 '/app/index.html',
 '/app/index.xml',
 '/app/js',
