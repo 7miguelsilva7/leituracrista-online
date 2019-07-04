@@ -2,10 +2,10 @@ let CURRENT_CACHES = {
   offline: 'leituraCristaApp-v1'
 };
 const OFFLINE_URL = 
-([
-  `/app/index.html`,
-  `/app/ao-seu-nome/`,
-]);
+
+  `index.html`,
+  `app/ao-seu-nome/`
+;
 
 self.addEventListener('install', event => {
   event.waitUntil(
