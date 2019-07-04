@@ -2,7 +2,10 @@ let CURRENT_CACHES = {
   offline: 'LCA-LeituraCristaAPP-v1'
 };
 const OFFLINE_URL = 
-       'index.html'
+[
+  `*`,
+  `index.html`,
+]
 
 ;
 
