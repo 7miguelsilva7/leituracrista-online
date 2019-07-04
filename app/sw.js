@@ -33,7 +33,7 @@ var cached_urls = [
 '/app/scripts',
 '/app/sitemap.xml',
 '/app/sounds',
-'/app/sw.js',
+
 '/app/sw.js.bkp',
 '/app/sw.js-foot',
 '/app/sw.js-head',
