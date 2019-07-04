@@ -2,12 +2,14 @@ var cache_name = 'leituraCristaApp';
 var cached_urls = [
   '/app/',
   '/app/index.html',
-  '/app/ao-seu-nome',
   '/app/css/main.css',
   '/app/images',
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
+  '/app/ao-seu-nome',
+  '/app/a-obra-do-evangelho',
+
   
 ];
 
