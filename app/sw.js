@@ -15,7 +15,7 @@ var cached_urls = [
 '/app/ao-seu-nome',
 '/app/a-total-suficiencia-de-cristo',
 '/app/a-vinda-do-senhor',
-'/app/book',
+
 '/app/cartas-aos-evangelistas',
 '/app/categories',
 '/app/css',
