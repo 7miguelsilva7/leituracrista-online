@@ -1,24 +1,44 @@
 var cache_name = 'leituraCristaApp';
 var cached_urls = [
   '/app/',
-  '/app/index.html',
   '/app/css/main.css',
   '/app/images',
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
-'/app/acontecimentos-profeticos',
-'/app/a-mulher-seu-lugar-nas-escrituras',
-'/app/a-obra-do-evangelho',
-'/app/a-oracao-e-as-reunioes-de-oracao',
-'/app/a-ordem-de-deus',
-'/app/ao-seu-nome',
-'/app/a-total-suficiencia-de-cristo',
-'/app/a-vinda-do-senhor',
-'/app/cartas-aos-evangelistas',
-'/app/luz-para-as-almas-ansiosas',
-'/app/o-caminho-de-deus-para-o-descanso-poder-e-consagracao',
-'/app/os-desapontamentos-da-vida',
+404.html
+acontecimentos-profeticos
+a-mulher---seu-lugar-nas-escrituras
+a-obra-do-evangelho
+a-oracao-e-as-reunioes-de-oracao
+a-ordem-de-deus
+ao-seu-nome
+a-total-suficiencia-de-cristo
+a-vinda-do-senhor
+book
+cartas-aos-evangelistas
+categories
+css
+favicon.ico
+humans.txt
+images
+index.html
+index.xml
+js
+luz-para-as-almas-ansiosas
+manifest.json
+o-caminho-de-deus-para-o-descanso-poder-e-consagracao
+os-desapontamentos-da-vida
+robots.txt
+scripts
+sitemap.xml
+sounds
+sw.js
+sw.js.bkp
+sw.js-foot
+sw.js-head
+sw.js-livros
+tags
 ];
 
 self.addEventListener('install', function(event) {
