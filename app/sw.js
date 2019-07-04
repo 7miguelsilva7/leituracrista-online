@@ -13,19 +13,19 @@ var cached_urls = [
 
 
 
-acontecimentos-profeticos.md/.md
-a-mulher-seu-lugar-nas-escrituras.md/.md
-a-obra-do-evangelho.md/.md
-a-oracao-e-as-reunioes-de-oracao.md/.md
-a-ordem-de-deus.md/.md
-ao-seu-nome.md/.md
-ao-seu-nome.md~/.md
-a-total-suficiencia-de-cristo.md/.md
-a-vinda-do-senhor.md/.md
-cartas-aos-evangelistas.md/.md
-luz-para-as-almas-ansiosas.md/.md
-o-caminho-de-deus-para-o-descanso-poder-e-consagracao.md/.md
-os-desapontamentos-da-vida.md/.md
+acontecimentos-profeticos
+a-mulher-seu-lugar-nas-escrituras
+a-obra-do-evangelho
+a-oracao-e-as-reunioes-de-oracao
+a-ordem-de-deus
+ao-seu-nome
+ao-seu-nome~
+a-total-suficiencia-de-cristo
+a-vinda-do-senhor
+cartas-aos-evangelistas
+luz-para-as-almas-ansiosas
+o-caminho-de-deus-para-o-descanso-poder-e-consagracao
+os-desapontamentos-da-vida
 
 
 ];
