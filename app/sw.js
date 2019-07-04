@@ -24,13 +24,12 @@ self.addEventListener('install', e => {
     caches.open(cacheName).then(cache => {
       return cache.addAll([
         `/`,
+        `./*`,
         `/index.html`,
-        `/styles/main.css`,
         `/scripts/main.min.js`,
         `/scripts/comlink.global.js`,
         `/scripts/messagechanneladapter.global.js`,
         `/scripts/pwacompat.min.js`,
-        `/sounds/airhorn.mp3`
       ])
           .then(() => self.skipWaiting());
     })

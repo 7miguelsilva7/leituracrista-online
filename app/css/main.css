@@ -4,11 +4,12 @@ section.article {
 }
 
 section.article article {
-  text-align:justify;
-  margin: 0 30px;
+  margin: 0 15px;
   flex-grow: 1;
   order: 1;
   width: 100%;
+  text-align:justify;
+  font-size: 1.05em;
 }
 
 section.article aside {
