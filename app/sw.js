@@ -26,19 +26,19 @@ var cached_urls = [
 '/app/index.xml',
 '/app/js',
 '/app/luz-para-as-almas-ansiosas',
-'/app/manifest.json',
+
 '/app/o-caminho-de-deus-para-o-descanso-poder-e-consagracao',
 '/app/os-desapontamentos-da-vida',
-'/app/robots.txt',
-'/app/scripts',
-'/app/sitemap.xml',
-'/app/sounds',
 
-'/app/sw.js.bkp',
-'/app/sw.js-foot',
-'/app/sw.js-head',
-'/app/sw.js-livros',
-'/app/tags',
+
+'/app/sitemap.xml',
+
+
+
+
+
+
+
 ];
 
 self.addEventListener('install', function(event) {
