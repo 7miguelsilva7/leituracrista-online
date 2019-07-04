@@ -3,7 +3,7 @@ let CURRENT_CACHES = {
 };
 const OFFLINE_URL = 
 
-  `index.html`,
+  `index.html`
 ;
 
 self.addEventListener('install', event => {
