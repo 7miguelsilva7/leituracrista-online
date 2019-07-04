@@ -1,7 +1,8 @@
 var cache_name = 'leituraCristaApp';
 var cached_urls = [
-  '/app/index.html',
   '/app/',
+  '/app/index.html',
+  '/app/ao-seu-nome',
 ];
 
 self.addEventListener('install', function(event) {
