@@ -17,8 +17,8 @@
  *
  */
 
-const version = "0.6.14";
-const cacheName = `airhorner-${version}`;
+const version = "0.1";
+const cacheName = `LCA-LeituraCristaAPP-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
