@@ -25,11 +25,11 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         `./*`,
-        `/index.html`,
-        `/scripts/main.min.js`,
-        `/scripts/comlink.global.js`,
-        `/scripts/messagechanneladapter.global.js`,
-        `/scripts/pwacompat.min.js`,
+        `index.html`,
+        `scripts/main.min.js`,
+        `scripts/comlink.global.js`,
+        `scripts/messagechanneladapter.global.js`,
+        `scripts/pwacompat.min.js`,
       ])
           .then(() => self.skipWaiting());
     })
