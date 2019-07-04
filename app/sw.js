@@ -7,8 +7,6 @@ var cached_urls = [
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
-  '/app/ao-seu-nome',
-  '/app/a-obra-do-evangelho',
 '/app/acontecimentos-profeticos',
 '/app/a-mulher-seu-lugar-nas-escrituras',
 '/app/a-obra-do-evangelho',
