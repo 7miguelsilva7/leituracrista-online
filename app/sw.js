@@ -35,7 +35,7 @@ self.addEventListener('activate', function(event) {
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.map(function(cacheName) {
-          if (cacheName.startsWith('pages-cache-') && staticCacheName !== cacheName) {
+          if (cacheName.startsWith('leituraCristaApp') && staticCacheName !== cacheName) {
             return caches.delete(cacheName);
           }
         })
