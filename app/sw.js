@@ -9,7 +9,25 @@ var cached_urls = [
   '/app/css/typo.css',
   '/app/js/custom.js',
   '/app/ao-seu-nome',
-  '/app/a-obra-do-evangelho',  
+  '/app/a-obra-do-evangelho',
+
+
+
+acontecimentos-profeticos.md
+a-mulher-seu-lugar-nas-escrituras.md
+a-obra-do-evangelho.md
+a-oracao-e-as-reunioes-de-oracao.md
+a-ordem-de-deus.md
+ao-seu-nome.md
+ao-seu-nome.md~
+a-total-suficiencia-de-cristo.md
+a-vinda-do-senhor.md
+cartas-aos-evangelistas.md
+luz-para-as-almas-ansiosas.md
+o-caminho-de-deus-para-o-descanso-poder-e-consagracao.md
+os-desapontamentos-da-vida.md
+
+
 ];
 
 self.addEventListener('install', function(event) {
