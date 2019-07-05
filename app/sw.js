@@ -26,7 +26,6 @@ var cached_urls = [
 '/app/luz-para-as-almas-ansiosas/',
 '/app/o-caminho-de-deus-para-o-descanso-poder-e-consagracao/',
 '/app/os-desapontamentos-da-vida/',
-'/app/scripts/',
 '/app/sounds/',
 '/app/tags/',
 ];
