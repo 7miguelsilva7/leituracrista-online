@@ -9,11 +9,7 @@ var cached_urls = [
   '/app/css/typo.css',
   '/app/js/custom.js',
   '/app/404.html',
-'/app/content/',
 '/app//opt/lampp/htdocs/leituracrista/app/leituracrista/public/',
-'/app/public/',
-'/app/sw/',
-'/app/themes/',
 ];
 
 self.addEventListener('install', function(event) {
