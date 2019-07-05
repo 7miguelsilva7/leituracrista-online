@@ -1,8 +1,11 @@
 var cache_name = 'leituraCristaApp';
 var cached_urls = [
   '/app/',
+  '/app/index.html',
+  '/app/index.xml',
+  '/app/sitemap.xml',
   '/app/css/main.css',
-  '/app/images',
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
+  '/app/404.html',

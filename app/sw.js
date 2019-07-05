@@ -1,44 +1,19 @@
 var cache_name = 'leituraCristaApp';
 var cached_urls = [
   '/app/',
+  '/app/index.html',
+  '/app/index.xml',
+  '/app/sitemap.xml',
   '/app/css/main.css',
-  
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
-'/app/404.html',
-'/app/acontecimentos-profeticos',
-'/app/a-mulher---seu-lugar-nas-escrituras',
-'/app/a-obra-do-evangelho',
-'/app/a-oracao-e-as-reunioes-de-oracao',
-'/app/a-ordem-de-deus',
-'/app/ao-seu-nome',
-'/app/a-total-suficiencia-de-cristo',
-'/app/a-vinda-do-senhor',
-
-'/app/cartas-aos-evangelistas',
-'/app/categories',
-'/app/css',
-
-
-
-'/app/index.html',
-'/app/index.xml',
-'/app/js',
-'/app/luz-para-as-almas-ansiosas',
-
-'/app/o-caminho-de-deus-para-o-descanso-poder-e-consagracao',
-'/app/os-desapontamentos-da-vida',
-
-
-'/app/sitemap.xml',
-
-
-
-
-
-
-
+  '/app/404.html',
+'/app/content/',
+'/app//opt/lampp/htdocs/leituracrista/app/leituracrista/public/',
+'/app/public/',
+'/app/sw/',
+'/app/themes/',
 ];
 
 self.addEventListener('install', function(event) {
