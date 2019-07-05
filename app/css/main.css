@@ -4,7 +4,7 @@ section.article {
 }
 
 section.article article {
-  margin: 0 20px;
+  margin: 0 15px;
   flex-grow: 1;
   order: 1;
   width: 100%;
@@ -29,6 +29,14 @@ section.article aside ul {
   margin: 0;
   padding: 0;
 }
+
+/* adicionado por mim */
+.tableOfContent  ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* adicionado por mim */
 
 section.article aside ul.nav {
   padding-bottom: 5px;
