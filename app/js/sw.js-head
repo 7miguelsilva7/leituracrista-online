@@ -1,5 +1,5 @@
-var cache_name = 'leituraCristaApp';
-var cached_urls = [
+var CACHE_NAME = 'test-cache-v4';
+var urlsToCache = [
   '/app/',
   '/app/index.html',
   '/app/index.xml',

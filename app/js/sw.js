@@ -1,5 +1,5 @@
-var cache_name = 'leituraCristaApp';
-var cached_urls = [
+var CACHE_NAME = 'test-cache-v4';
+var urlsToCache = [
   '/app/',
   '/app/index.html',
   '/app/index.xml',
@@ -23,51 +23,44 @@ var cached_urls = [
 '/app/os-desapontamentos-da-vida/index.html',
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open(cache_name)
-    .then(function(cache) {
-      return cache.addAll(cached_urls);
-    })
+    caches.open(CACHE_NAME)
+      .then(function (cache) {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+      })
   );
+  return self.skipWaiting();
 });
 
-let staticCacheName = true;
 self.addEventListener('activate', function(event) {
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.map(function(cacheName) {
-          if (cacheName.startsWith('leituraCristaApp') && staticCacheName !== cacheName) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
+    caches.keys().then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+        if (key !== CACHE_NAME) {
+          return caches.delete(key);
+        }
+      }));
+    }) 
   );
 });
 
 self.addEventListener('fetch', function(event) {
-    console.log('Fetch event for ', event.request.url);
-    event.respondWith(
-      caches.match(event.request).then(function(response) {
-        if (response) {
-          console.log('Found ', event.request.url, ' in cache');
-          return response;
-        }
-        console.log('Network request for ', event.request.url);
-        return fetch(event.request).then(function(response) {
-          if (response.status === 404) {
-            return caches.match('404.html');
-          }
-          return caches.open(cached_urls).then(function(cache) {
-           cache.put(event.request.url, response.clone());
+  event.respondWith(
+    caches.open(CACHE_NAME).then(function(cache){
+      return cache.match(event.request)
+        .then(function(response) {
+          if (response) {
+          console.log('SERVED FROM CACHE');
             return response;
+          }
+          return fetch(event.request).then(function(response){
+              console.log('Response from network is:', response);
+              return response;
           });
-        });
-      }).catch(function(error) {
-        console.log('Error, ', error);
-        return caches.match('offline.html');
-      })
-    );
-  });
+        }
+      )
+    })
+  );
+});
