@@ -28,7 +28,7 @@ document.getElementsByTagName("body")[0].innerHTML = res3;
 // fim //Adiciona função abre divBol pelos links
 
 
-document.write('<link rel="stylesheet" type="text/css" href="divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe name="divBol" style="height: 100%; width: 95%" src=""></iframe> </div></div>');
+document.write('<link rel="stylesheet" type="text/css" href="../divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe name="divBol" style="height: 100%; width: 95%" src=""></iframe> </div></div>');
 
 {/* <script  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> */}
 
