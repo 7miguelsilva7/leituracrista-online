@@ -1,0 +1,13 @@
+ self.addEventListener('install', function(e) {
+        e.waitUntil(
+           caches.open('default-cache').then(function(cache) {
+              return cache.addAll([
+  '/app/',
+  '/app/index.html',
+  '/app/index.xml',
+  '/app/sitemap.xml',
+  '/app/css/main.css',
+  '/app/css/normalize.css',
+  '/app/css/typo.css',
+  '/app/js/custom.js',
+  '/app/404.html',
