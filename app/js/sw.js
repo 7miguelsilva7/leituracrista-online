@@ -32,6 +32,7 @@ self.addEventListener('install', function(event) {
   );
 });
 
+let staticCacheName = true;
 self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
