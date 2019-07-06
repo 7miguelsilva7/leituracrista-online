@@ -3,7 +3,8 @@
 var cacheName = 'leituraCristaApp-V1';
 
 var filesToCache = [
-  '/app/', //index.html
+  '/app/',
+  '/app/index.html', 
   '/app/index.xml',
   '/app/sitemap.xml',
   '/app/css/main.css',
