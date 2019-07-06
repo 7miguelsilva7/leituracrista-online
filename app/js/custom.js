@@ -22,9 +22,9 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     var title = document.title;
    
 //Adiciona função abre divBol pelos links
-var str3 = document.getElementsByTagName("body").innerHTML;
+var str3 = document.getElementsByTagName("body")[0].innerHTML;
 var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia");
-document.getElementsByTagName("body").innerHTML = res3; 
+document.getElementsByTagName("body")[0].innerHTML = res3; 
 // fim //Adiciona função abre divBol pelos links
 
 
