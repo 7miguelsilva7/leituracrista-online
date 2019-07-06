@@ -1,6 +1,6 @@
 // sw.js
 
-var cacheName = 'leituraCristaApp-V1';
+var cacheName = 'leituraCristaAPP-V1';
 
 var filesToCache = [
   '/app/',
