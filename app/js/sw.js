@@ -1,7 +1,5 @@
- self.addEventListener('install', function(e) {
-        e.waitUntil(
-           caches.open('default-cache').then(function(cache) {
-              return cache.addAll([
+var cache_name = 'leituraCristaApp';
+var cached_urls = [
   '/app/',
   '/app/index.html',
   '/app/index.xml',
@@ -23,20 +21,42 @@
 '/app/luz-para-as-almas-ansiosas/index.html',
 '/app/o-caminho-de-deus-para-o-descanso-poder-e-consagracao/index.html',
 '/app/os-desapontamentos-da-vida/index.html',
- ])
-        }).then(function() {
-            return self.skipWaiting();
-        }));
-    });
+];
 
-    self.addEventListener('activate', function(e) {
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open(cache_name)
+    .then(function(cache) {
+      return cache.addAll(cached_urls);
+    })
+  );
+});
+
+self.addEventListener('activate', function(e) {
         e.waitUntil(self.clients.claim());
     });
 
-    self.addEventListener('fetch', function(e) {
-        e.respondWith(
-            caches.match(e.request).then(function(response) {
-                return response || fetch(e.request);
-            })
-        );
-    });
+self.addEventListener('fetch', function(event) {
+    console.log('Fetch event for ', event.request.url);
+    event.respondWith(
+      caches.match(event.request).then(function(response) {
+        if (response) {
+          console.log('Found ', event.request.url, ' in cache');
+          return response;
+        }
+        console.log('Network request for ', event.request.url);
+        return fetch(event.request).then(function(response) {
+          if (response.status === 404) {
+            return caches.match('404.html');
+          }
+          return caches.open(cached_urls).then(function(cache) {
+           cache.put(event.request.url, response.clone());
+            return response;
+          });
+        });
+      }).catch(function(error) {
+        console.log('Error, ', error);
+        return caches.match('/app/index.html');
+      })
+    );
+  });
