@@ -6,3 +6,5 @@ var cached_urls = [
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
+
+  

@@ -5,7 +5,9 @@ var cached_urls = [
   '/app/css/main.css',
   '/app/css/normalize.css',
   '/app/css/typo.css',
-  '/app/js/custom.js','/app/acontecimentos-profeticos/index.html',
+  '/app/js/custom.js',
+
+  '/app/acontecimentos-profeticos/index.html',
 '/app/a-mulher---seu-lugar-nas-escrituras/index.html',
 '/app/a-obra-do-evangelho/index.html',
 '/app/a-oracao-e-as-reunioes-de-oracao/index.html',
