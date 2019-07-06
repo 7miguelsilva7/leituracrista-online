@@ -21,9 +21,14 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     var share = window.location.href;
     var title = document.title;
    
+//Adiciona função abre divBol pelos links
+var str3 = document.getElementsByTagName("body").innerHTML;
+var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia");
+document.getElementsByTagName("body").innerHTML = res3; 
+// fim //Adiciona função abre divBol pelos links
 
 
-// document.write('<link rel="stylesheet" type="text/css" href="divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe name="divBol" style="height: 100%; width: 95%" src=""></iframe> </div></div>');
+document.write('<link rel="stylesheet" type="text/css" href="divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe name="divBol" style="height: 100%; width: 95%" src=""></iframe> </div></div>');
 
 {/* <script  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> */}
 
@@ -38,7 +43,7 @@ x.style.display = "none";
 
 }
 
-// document.write('<a  target="_self" onclick="home()" ><img style="cursor:pointer;width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
+document.write('<a  target="_self" onclick="home()" ><img style="cursor:pointer;width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
 
 function linkToMysword() {
 localStorage.setItem("ref", 1);
@@ -57,7 +62,7 @@ alert('Referências em Bíblia Online')
 var session = localStorage.ref;
 if ( session == 1 )
 {
-var str = document.getElementById("content").innerHTML;
+var str = document.getElementsByTagName("body").innerHTML;
 var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_") 
 .replace(/bibliaonline.com.br\/acf\/1co\//g, "mysword.info\/b?r\=1Co_")
 .replace(/bibliaonline.com.br\/acf\/1cr\//g, "mysword.info\/b?r\=1Ch_")
@@ -147,7 +152,7 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/capitulo_([0-9])\:/g,"capitulo_$1\/")
 .replace(/capitulo_([0-9]{2})\:/g,"capitulo_$1\/")
 ;
-document.getElementById("content").innerHTML = res; 
+document.getElementsByTagName("body").innerHTML = res; 
 
 }else{
 }
@@ -158,7 +163,7 @@ location.replace('https://leituracrista.com')
 }
 
 
-// Elimina botão de busca e chamada de indexsearch.js
+// // Elimina botão de busca e chamada de indexsearch.js
 // var str2 = document.getElementById("search-toggle").innerHTML;
 // var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "")
 // .replace(/searchindex.js/g, "")
@@ -167,7 +172,7 @@ location.replace('https://leituracrista.com')
 // fim de Elimina botão de busca
 
 // Elimina underline do texto e convert barra em 2 pontos
-// var str4 = document.getElementById("content").innerHTML;
+// var str4 = document.getElementsByTagName("body").innerHTML;
 // var res4 = str4
 // .replace(/”_/g, "\" ")
 // .replace(/“_/g, "\"")
@@ -175,7 +180,7 @@ location.replace('https://leituracrista.com')
 // .replace(/<\/strong>/g, " <\/strong> ")
 // .replace(/([0-9])\/">/g, "$1\">") 
 
-// document.getElementById("content").innerHTML = res4; 
+// document.getElementsByTagName("body").innerHTML = res4; 
 
 
 // Salva e restaura posição de leitura
