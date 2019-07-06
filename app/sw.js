@@ -21,6 +21,7 @@ var cached_urls = [
 '/app/luz-para-as-almas-ansiosas/index.html',
 '/app/o-caminho-de-deus-para-o-descanso-poder-e-consagracao/index.html',
 '/app/os-desapontamentos-da-vida/index.html',
+
 ];
 
 self.addEventListener('install', function(event) {
