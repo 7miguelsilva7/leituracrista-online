@@ -62,7 +62,7 @@ alert('Referências em Bíblia Online')
 var session = localStorage.ref;
 if ( session == 1 )
 {
-var str = document.getElementsByTagName("body").innerHTML;
+var str = document.getElementsByTagName("body")[0].innerHTML;
 var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_") 
 .replace(/bibliaonline.com.br\/acf\/1co\//g, "mysword.info\/b?r\=1Co_")
 .replace(/bibliaonline.com.br\/acf\/1cr\//g, "mysword.info\/b?r\=1Ch_")
@@ -152,7 +152,7 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/capitulo_([0-9])\:/g,"capitulo_$1\/")
 .replace(/capitulo_([0-9]{2})\:/g,"capitulo_$1\/")
 ;
-document.getElementsByTagName("body").innerHTML = res; 
+document.getElementsByTagName("body")[0].innerHTML = res; 
 
 }else{
 }
@@ -172,7 +172,7 @@ location.replace('https://leituracrista.com')
 // fim de Elimina botão de busca
 
 // Elimina underline do texto e convert barra em 2 pontos
-// var str4 = document.getElementsByTagName("body").innerHTML;
+// var str4 = document.getElementsByTagName("body")[0].innerHTML;
 // var res4 = str4
 // .replace(/”_/g, "\" ")
 // .replace(/“_/g, "\"")
@@ -180,7 +180,7 @@ location.replace('https://leituracrista.com')
 // .replace(/<\/strong>/g, " <\/strong> ")
 // .replace(/([0-9])\/">/g, "$1\">") 
 
-// document.getElementsByTagName("body").innerHTML = res4; 
+// document.getElementsByTagName("body")[0].innerHTML = res4; 
 
 
 // Salva e restaura posição de leitura
