@@ -65,9 +65,9 @@
   
   </title>
   <link rel="canonical" href="http://www.leituracrista.com/app/">
-  <link rel="stylesheet" href="http://www.leituracrista.com/app/css/normalize.css?t=1562431290">
-  <link rel="stylesheet" href="http://www.leituracrista.com/app/css/typo.css?t=1562431290">
-  <link rel="stylesheet" href="http://www.leituracrista.com/app/css/main.css?t=1562431290">
+  <link rel="stylesheet" href="http://www.leituracrista.com/app/css/normalize.css?t=1562432395">
+  <link rel="stylesheet" href="http://www.leituracrista.com/app/css/typo.css?t=1562432395">
+  <link rel="stylesheet" href="http://www.leituracrista.com/app/css/main.css?t=1562432395">
   <link rel="shortcut icon" href="favicon.ico">
   
     <link href="http://www.leituracrista.com/app/index.xml" rel="alternate" type="application/rss+xml" title="Leitura Cristã" />
@@ -134,17 +134,15 @@
 </a>
 
 <script>
-  if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
-    
-      .then(function(registration) {
-            console.log('Service Worker Registered');
-      });
-
-    navigator.serviceWorker.ready.then(function(registration) {
-       console.log('Service Worker Ready');
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').then(function (registration) {
+            console.log('Service worker successfully registered on scope', registration.scope);
+        }).catch(function (error) {
+            console.log('Service worker failed to register', error);
+        });
     });
-  }
+}
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

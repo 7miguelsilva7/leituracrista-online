@@ -1,7 +1,9 @@
-var cache_name = 'leituraCristaApp';
-var cached_urls = [
-  '/app/',
-  '/app/index.html',
+// sw.js
+
+var cacheName = 'leituraCristaApp-V1';
+
+var filesToCache = [
+  '/app/', //index.html
   '/app/index.xml',
   '/app/sitemap.xml',
   '/app/css/main.css',
