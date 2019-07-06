@@ -21,11 +21,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     var share = window.location.href;
     var title = document.title;
    
-//Adiciona função abre divBol pelos links
-// var str3 = document.getElementById("content").innerHTML;
-// var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia");
-// document.getElementById("content").innerHTML = res3; 
-// fim //Adiciona função abre divBol pelos links
 
 
 // document.write('<link rel="stylesheet" type="text/css" href="divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe name="divBol" style="height: 100%; width: 95%" src=""></iframe> </div></div>');
