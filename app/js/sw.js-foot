@@ -9,9 +9,19 @@ self.addEventListener('install', function(event) {
   );
 });
 
-self.addEventListener('activate', function(e) {
-        e.waitUntil(self.clients.claim());
-    });
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (cacheName.startsWith('leituraCristaApp') && staticCacheName !== cacheName) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
 
 self.addEventListener('fetch', function(event) {
     console.log('Fetch event for ', event.request.url);
