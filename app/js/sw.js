@@ -8,8 +8,7 @@ var cached_urls = [
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
-  '/app/404.html',
-'/app/acontecimentos-profeticos/index.html',
+  '/app/404.html','/app/acontecimentos-profeticos/index.html',
 '/app/a-mulher---seu-lugar-nas-escrituras/index.html',
 '/app/a-obra-do-evangelho/index.html',
 '/app/a-oracao-e-as-reunioes-de-oracao/index.html',
@@ -37,7 +36,7 @@ self.addEventListener('activate', function(event) {
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.map(function(cacheName) {
-          if (cacheName.startsWith('page-posts') && staticCacheName !== cacheName) {
+          if (cacheName.startsWith('leituraCristaApp') && staticCacheName !== cacheName) {
             return caches.delete(cacheName);
           }
         })
