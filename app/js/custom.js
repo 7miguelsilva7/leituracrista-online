@@ -22,9 +22,9 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     var title = document.title;
    
 //Adiciona função abre divBol pelos links
-var str3 = document.getElementById("content").innerHTML;
-var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia");
-document.getElementById("content").innerHTML = res3; 
+// var str3 = document.getElementById("content").innerHTML;
+// var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia");
+// document.getElementById("content").innerHTML = res3; 
 // fim //Adiciona função abre divBol pelos links
 
 
@@ -172,15 +172,15 @@ document.getElementById("search-toggle").innerHTML = res2;
 // fim de Elimina botão de busca
 
 // Elimina underline do texto e convert barra em 2 pontos
-var str4 = document.getElementById("content").innerHTML;
-var res4 = str4
-.replace(/”_/g, "\" ")
-.replace(/“_/g, "\"")
-.replace(/<strong>/g, " <strong> ")
-.replace(/<\/strong>/g, " <\/strong> ")
-.replace(/([0-9])\/">/g, "$1\">") 
+// var str4 = document.getElementById("content").innerHTML;
+// var res4 = str4
+// .replace(/”_/g, "\" ")
+// .replace(/“_/g, "\"")
+// .replace(/<strong>/g, " <strong> ")
+// .replace(/<\/strong>/g, " <\/strong> ")
+// .replace(/([0-9])\/">/g, "$1\">") 
 
-document.getElementById("content").innerHTML = res4; 
+// document.getElementById("content").innerHTML = res4; 
 
 
 // Salva e restaura posição de leitura
