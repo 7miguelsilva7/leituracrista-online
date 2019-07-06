@@ -28,7 +28,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 // fim //Adiciona função abre divBol pelos links
 
 
-document.write('<link rel="stylesheet" type="text/css" href="divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe name="divBol" style="height: 100%; width: 95%" src=""></iframe> </div></div>');
+// document.write('<link rel="stylesheet" type="text/css" href="divBol.css"><div id="myDIV" class="divBol" style="height:100%; width:100%; display:none;"><a class="btn naoSelecionavel"  onclick="myFunction()"><B  style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></a><div style="height: 100%; width: 100%"><iframe name="divBol" style="height: 100%; width: 95%" src=""></iframe> </div></div>');
 
 {/* <script  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> */}
 
@@ -164,11 +164,11 @@ location.replace('https://leituracrista.com')
 
 
 // Elimina botão de busca e chamada de indexsearch.js
-var str2 = document.getElementById("search-toggle").innerHTML;
-var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "")
-.replace(/searchindex.js/g, "")
+// var str2 = document.getElementById("search-toggle").innerHTML;
+// var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "")
+// .replace(/searchindex.js/g, "")
 
-document.getElementById("search-toggle").innerHTML = res2; 
+// document.getElementById("search-toggle").innerHTML = res2; 
 // fim de Elimina botão de busca
 
 // Elimina underline do texto e convert barra em 2 pontos
