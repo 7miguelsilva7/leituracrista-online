@@ -46,18 +46,7 @@ x.style.display = "none";
 
 // document.write('<a  target="_self" onclick="home()" ><img style="cursor:pointer;width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
 
-function linkToMysword() {
-localStorage.setItem("ref", 1);
-window.location.reload()
-alert('Referências em MySword')
-}
 
-function linkToBol() {
-localStorage.setItem("ref", 0);
-window.location.reload()
-alert('Referências em Bíblia Online')
-
-}
 
 // verifica valor de session e determina referencias em bol ou MySword
 var session = localStorage.ref;
