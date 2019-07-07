@@ -10,10 +10,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
   
     var session = localStorage.refBible;
     if ( session == 1 ){
-     document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;color:#f00;font-weight:bold;align-items: center;"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
+     document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;color:#f00;font-weight:bold;left:50%;right:50%"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
 
     }else{
-     document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;align-items: center;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
+     document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;left:50%;right:50%;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
     }
 
 
