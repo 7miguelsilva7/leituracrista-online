@@ -8,7 +8,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     var share = window.location.href;
     var title = document.title;
   
-    var session = localStorage.ref;
+    var session = localStorage.refBible;
     if ( session == 1 ){
     //  document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;color:#f00;font-weight:bold;align-items: center;"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
 
@@ -49,7 +49,7 @@ x.style.display = "none";
 
 
 // verifica valor de session e determina referencias em bol ou MySword
-var session = localStorage.ref;
+var session = localStorage.refBible;
 if ( session == 1 )
 {
 var str = document.getElementsByTagName("body")[0].innerHTML;
@@ -260,3 +260,5 @@ var str6 = document.getElementsByTagName("head")[0].innerHTML;
     document.getElementsByTagName("head")[0].innerHTML = res6;
     teste=document.getElementsByTagName("head")[0].innerHTML = res6;
     console.log(teste)
+
+    console.log(localStorage.refBible)
