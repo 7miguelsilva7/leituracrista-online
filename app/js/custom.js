@@ -10,10 +10,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
   
     var session = localStorage.refBible;
     if ( session == 1 ){
-    //  document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;color:#f00;font-weight:bold;align-items: center;"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
+     document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;color:#f00;font-weight:bold;align-items: center;"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
 
     }else{
-    //  document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;align-items: center;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
+     document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;align-items: center;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
     }
 
 
@@ -46,7 +46,18 @@ x.style.display = "none";
 
 // document.write('<a  target="_self" onclick="home()" ><img style="cursor:pointer;width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
 
+function linkToMysword() {
+localStorage.setItem("refBible", 1);
+window.location.reload()
+alert('Referências em MySword')
+}
 
+function linkToBol() {
+localStorage.setItem("refBible", 0);
+window.location.reload()
+alert('Referências em Bíblia Online')
+
+}
 
 // verifica valor de session e determina referencias em bol ou MySword
 var session = localStorage.refBible;
@@ -260,5 +271,3 @@ var str6 = document.getElementsByTagName("head")[0].innerHTML;
     document.getElementsByTagName("head")[0].innerHTML = res6;
     teste=document.getElementsByTagName("head")[0].innerHTML = res6;
     console.log(teste)
-
-    console.log(localStorage.refBible)
