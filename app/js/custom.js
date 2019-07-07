@@ -8,12 +8,12 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     var share = window.location.href;
     var title = document.title;
   
-    var session = localStorage.refBible;
+    var session = localStorage.ref;
     if ( session == 1 ){
-     document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:30px;height:30px;;display:scroll;position:fixed;bottom:8px;color:#f00;font-weight:bold;left:50%;right:50%"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
+     document.write('<a id="desktop" onclick="linkToBol()"  ><img style="cursor:pointer;width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;color:#f00;font-weight:bold;align-items: center;"  src="https://www.bibliaonline.com.br/apple-touch-icon.png"/></a>');
 
     }else{
-     document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:30px;height:30px;;display:scroll;position:fixed;bottom:8px;left:50%;right:50%;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
+     document.write('<a id="mobile" onclick="linkToMysword()"  href="#"><img style="width:40px;height:40px;;display:scroll;position:fixed;bottom:8px;align-items: center;color:#f00;font-weight:bold;"  src="https://www.mysword.info/images/mysword2.png?v=2"/></a>');
     }
 
 
@@ -23,8 +23,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
    
 //Adiciona função abre divBol pelos links
 var str3 = document.getElementsByTagName("body")[0].innerHTML;
-var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia").raplace(/http:/g, "https:")
-;
+var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia").replace(/<a href\=\"https\:\/\/biblia/g, "<a target=\"divBol\"  onclick\='myFunction()'  href\=\"https\:\/\/biblia");
 document.getElementsByTagName("body")[0].innerHTML = res3; 
 // fim //Adiciona função abre divBol pelos links
 
@@ -47,20 +46,20 @@ x.style.display = "none";
 // document.write('<a  target="_self" onclick="home()" ><img style="cursor:pointer;width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
 
 function linkToMysword() {
-localStorage.setItem("refBible", 1);
+localStorage.setItem("ref", 1);
 window.location.reload()
 alert('Referências em MySword')
 }
 
 function linkToBol() {
-localStorage.setItem("refBible", 0);
+localStorage.setItem("ref", 0);
 window.location.reload()
 alert('Referências em Bíblia Online')
 
 }
 
-// verifica valor de session e determina referencias em bol ou MySword
-var session = localStorage.refBible;
+// verifica valor de session e determina referencias 
+var session = localStorage.ref;
 if ( session == 1 )
 {
 var str = document.getElementsByTagName("body")[0].innerHTML;
@@ -152,7 +151,6 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/0\//g,"0\:")
 .replace(/capitulo_([0-9])\:/g,"capitulo_$1\/")
 .replace(/capitulo_([0-9]{2})\:/g,"capitulo_$1\/")
-.raplace(/http:/g, "https:")
 ;
 document.getElementsByTagName("body")[0].innerHTML = res; 
 
