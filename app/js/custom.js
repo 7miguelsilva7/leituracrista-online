@@ -151,6 +151,7 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/0\//g,"0\:")
 .replace(/capitulo_([0-9])\:/g,"capitulo_$1\/")
 .replace(/capitulo_([0-9]{2})\:/g,"capitulo_$1\/")
+.replace(/https\:\/\/mysword/g,"http\:\/\/mysword")
 ;
 document.getElementsByTagName("body")[0].innerHTML = res; 
 
@@ -190,7 +191,6 @@ location.replace('https://leituracrista.com')
     .replace(/title="Next chapter"/g, "onclick\=\"savePositionNext()\" title\=\"Next chapter\"")
     .replace(/title="Previous chapter"/g, "onclick\=\"savePositionPrevious()\" title\=\"Previous chapter\"")
     .replace(/src\=\"custom.js\"><\/script>/g, 'src="custom.js"></script>\n<script src="book.js" type="text/javascript" charset="utf-8"></script>')
-    .replace(/https\:\/\/mysword/g,"http\:\/\/mysword")
     document.getElementsByTagName("body")[0].innerHTML = res5;
 
     // Create var bookNameKey
