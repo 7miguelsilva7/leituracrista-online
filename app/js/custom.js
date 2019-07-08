@@ -63,7 +63,7 @@ alert('Referências em Bíblia Online')
 // Resolve problema de Mysword
 var bookNow = window.location.href
 function updatePage(){
-window.location.replace(bookNow)
+location.replace(bookNow)
 }
 
 var session = localStorage.ref;
