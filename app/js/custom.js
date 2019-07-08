@@ -161,7 +161,7 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/https\:\/\/www.mysword/g,"https\:\/\/mysword")
 .replace(/http\:\/\/www.mysword/g,"https\:\/\/mysword")
 .replace(/http\:/g,"https\:")
-.replace(/href\=/g,"onclick\=\"updatePage()\" href\=")
+// .replace(/href\=/g,"onclick\=\"updatePage()\" href\=")
 ;
 document.getElementsByTagName("body")[0].innerHTML = res; 
 
