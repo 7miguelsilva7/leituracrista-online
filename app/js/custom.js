@@ -155,7 +155,7 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/https\:\/\/www.mysword/g,"https\:\/\/mysword")
 .replace(/http\:\/\/www.mysword/g,"https\:\/\/mysword")
 .replace(/http\:/g,"https\:")
-.replace(/href\=\"(.*.)\">/g,"onclick=\"window.open('$1')\">")
+.replace(/href\=/g,"onclick=\"window.open(window.location.href);$(window).scrollTop(localStorage.getItem(positionScrollKey));\" href\=")
 
 ;
 document.getElementsByTagName("body")[0].innerHTML = res; 
