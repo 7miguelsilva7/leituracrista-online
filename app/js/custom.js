@@ -156,7 +156,7 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/http\:\/\/www.mysword/g,"https\:\/\/mysword")
 .replace(/http\:/g,"https\:")
 // resolver problema de link offline
-.replace(/href="https\:\/\/mysword(.*.)">/g,"onclick\=\"window.open(\"https\:\/\/mysword$1\",\"solveProblemOffline\");window.close();\" >")
+.replace(/href="https\:\/\/mysword(.*.)">/g,'onclick\=\"window.open(\"https\:\/\/mysword$1\",\"solveProblemOffline\");window.close(\'solveProblemOffline\');\">')
 
 ;
 document.getElementsByTagName("body")[0].innerHTML = res; 
