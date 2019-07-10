@@ -6,6 +6,8 @@ var cached_urls = [
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
+  '/app/closeWindow.html',
+
 
   '/app/acontecimentos-profeticos/index.html',
 '/app/a-mulher---seu-lugar-nas-escrituras/index.html',
