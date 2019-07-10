@@ -63,7 +63,7 @@ alert('Referências em Bíblia Online')
 var session = localStorage.ref;
 if ( session == 1 )
 {
-var str = document.getElementsByClassName("article")[0].innerHTML;
+var str = document.getElementsByTagName("body")[0].innerHTML;
 var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_") 
 .replace(/bibliaonline.com.br\/acf\/1co\//g, "mysword.info\/b?r\=1Co_")
 .replace(/bibliaonline.com.br\/acf\/1cr\//g, "mysword.info\/b?r\=1Ch_")
@@ -157,11 +157,11 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/http\:/g,"https\:")
 // resolver problema de link offline
 // resolver problema de link offline
-.replace(/href="http/g, "onclick=\"window.open('http")
-.replace(/">/g,"')\">")
-.replace(/onclick/g,"href='../closeWindow.html' target='closeWindow' onclick")
+// .replace(/href="http/g, "onclick=\"window.open('http")
+// .replace(/">/g,"')\">")
+// .replace(/onclick/g,"href='../closeWindow.html' target='closeWindow' onclick")
 ;
-document.getElementsByClassName("article")[0].innerHTML = res; 
+document.getElementsByTagName("body")[0].innerHTML = res; 
 
 }else{
 }
