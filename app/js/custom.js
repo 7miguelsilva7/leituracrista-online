@@ -160,6 +160,8 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/href="http/g, "onclick=\"window.open('http")
 .replace(/">/g,"')\">")
 .replace(/onclick/g,"href='../closeWindow.html' target='closeWindow' onclick")
+.replace(/id\=\"(.*.)\'\)/g, "id\=\"$1")
+
 ;
 document.getElementsByClassName("content")[0].innerHTML = res; 
 
@@ -278,9 +280,4 @@ var str6 = document.getElementsByTagName("head")[0].innerHTML;
     document.getElementsByTagName("head")[0].innerHTML = res6;
     // teste=document.getElementsByTagName("head")[0].innerHTML = res6;
     // console.log(teste)
-
-    var str7 = document.getElementsById("TableOfContents")[0].innerHTML;
-    var res7 = str7
-    .replace(/')\">/g,"\">")
-    document.getElementsById("TableOfContents")[0].innerHTML = res7;
     
