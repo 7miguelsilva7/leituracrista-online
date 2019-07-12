@@ -1,6 +1,8 @@
 section.article {
   display: flex;
   width: 100%;
+
+  /* adicinado por mim */
   overflow-wrap: break-word;
   word-wrap: break-word;
   
@@ -9,6 +11,8 @@ section.article {
   word-break: break-all;
   /* Instead use this non-standard one: */
   word-break: break-word;}
+    /*Fim adicinado por mim */
+
 
 section.article article {
   margin: 0 20px;
