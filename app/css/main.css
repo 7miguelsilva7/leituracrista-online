@@ -43,3 +43,7 @@ section.article aside ul.nav {
   margin-bottom: 5px;
   border-bottom: 1px solid #aaa;
 }
+
+.break-word {
+  word-wrap: break-word;
+  }
