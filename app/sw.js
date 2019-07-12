@@ -10,6 +10,7 @@ var cached_urls = [
 
 
   '/app/acontecimentos-profeticos/index.html',
+'/app/a-historia-da-greja/index.html',
 '/app/a-história-da-igreja/index.html',
 '/app/a-mulher---seu-lugar-nas-escrituras/index.html',
 '/app/a-obra-do-evangelho/index.html',
