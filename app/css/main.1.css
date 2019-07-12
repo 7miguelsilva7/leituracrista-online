@@ -30,14 +30,16 @@ section.article aside ul {
   padding: 0;
 }
 
+/* adicionado por mim */
+.tableOfContent  ul  {
+  list-style-type: none;
+}
+/* adicionado por mim */
+
+
 section.article aside ul.nav {
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 1px solid #aaa;
 }
 
-/* adicionado por mim */
-.tableOfContent  ul  {
-  list-style-type: none;
-}
-/* adicionado por mim */
