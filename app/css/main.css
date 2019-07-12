@@ -1,13 +1,13 @@
 section.article {
   display: flex;
-  width: 100%;
+  width: 90%;
 }
 
 section.article article {
-  margin: 0 30px;
+  margin: 0 20px;
   flex-grow: 1;
   order: 1;
-  width: 100%;
+  width: 90%;
   text-align:justify;
   font-size: 1.202em;
 }
