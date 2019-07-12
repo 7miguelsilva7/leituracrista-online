@@ -64,7 +64,8 @@ var session = localStorage.ref;
 if ( session == 1 )
 {
 var str = document.getElementsByClassName("content")[0].innerHTML;
-var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_") 
+var res = str
+.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom_") 
 .replace(/bibliaonline.com.br\/acf\/1co\//g, "mysword.info\/b?r\=1Co_")
 .replace(/bibliaonline.com.br\/acf\/1cr\//g, "mysword.info\/b?r\=1Ch_")
 .replace(/bibliaonline.com.br\/acf\/1pe\//g, "mysword.info\/b?r\=1Pe_")
@@ -150,18 +151,17 @@ var res = str.replace(/bibliaonline.com.br\/acf\/rm\//g, "mysword.info\/b?r\=Rom
 .replace(/8\//g,"8\:")
 .replace(/9\//g,"9\:")
 .replace(/0\//g,"0\:")
-.replace(/capitulo_([0-9])\:/g,"capitulo_$1\/")
-.replace(/capitulo_([0-9]{2})\:/g,"capitulo_$1\/")
-.replace(/https\:\/\/www.mysword/g,"https\:\/\/mysword")
-.replace(/http\:\/\/www.mysword/g,"https\:\/\/mysword")
-.replace(/http\:/g,"https\:")
-// resolver problema de link offline
+// .replace(/capitulo_([0-9])\:/g,"capitulo_$1\/")
+// .replace(/capitulo_([0-9]{2})\:/g,"capitulo_$1\/")
+// .replace(/https\:\/\/www.mysword/g,"https\:\/\/mysword")
+// .replace(/http\:\/\/www.mysword/g,"https\:\/\/mysword")
+// .replace(/http\:/g,"https\:")
+
 // resolver problema de link offline
 .replace(/href="http/g, "onclick=\"window.open('http")
 .replace(/">/g,"')\">")
 .replace(/onclick/g,"href='../closeWindow.html' target='closeWindow' onclick")
 .replace(/id\=\"(.*.)\'\)/g, "id\=\"$1")
-
 ;
 document.getElementsByClassName("content")[0].innerHTML = res; 
 
