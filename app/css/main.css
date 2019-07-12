@@ -41,5 +41,8 @@ section.article aside ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #aaa;
 }
 /* adicionado por mim */
