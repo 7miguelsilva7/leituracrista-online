@@ -1,13 +1,20 @@
 section.article {
   display: flex;
-  width: 90%;
-}
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;}
 
 section.article article {
   margin: 0 20px;
   flex-grow: 1;
   order: 1;
-  width: 90%;
+  width: 100%;
   text-align:justify;
   font-size: 1.202em;
 }
