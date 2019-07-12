@@ -1,6 +1,16 @@
 section.article {
   display: flex;
   width: 100%;
+
+/* Adicionar word-break */
+overflow-wrap: break-word;
+word-wrap: break-word;
+
+-ms-word-break: break-all;
+/* This is the dangerous one in WebKit, as it breaks things wherever */
+word-break: break-all;
+/* Instead use this non-standard one: */
+word-break: break-word;
 }
 
 section.article article {
@@ -46,13 +56,5 @@ section.article aside ul.nav {
 }
 
 
-/* Adicionar word-break */
-overflow-wrap: break-word;
-word-wrap: break-word;
 
--ms-word-break: break-all;
-/* This is the dangerous one in WebKit, as it breaks things wherever */
-word-break: break-all;
-/* Instead use this non-standard one: */
-word-break: break-word;
 /* adicionado por mim */
