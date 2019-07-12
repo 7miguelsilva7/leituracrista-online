@@ -35,8 +35,11 @@ section.article aside ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding: 25px 10px;
+  background-color: rgb(201, 201, 201)
 }
 /* adicionado por mim */
+
 
 section.article aside ul.nav {
   padding-bottom: 5px;
