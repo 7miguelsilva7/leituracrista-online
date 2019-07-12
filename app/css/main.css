@@ -39,5 +39,7 @@ section.article aside ul.nav {
 /* adicionado por mim */
 .tableOfContent  ul  {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 /* adicionado por mim */
