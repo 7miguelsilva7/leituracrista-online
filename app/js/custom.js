@@ -18,9 +18,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
 
 }else{
-    var share = window.location.href;
-    var title = document.title;
-   
+      
 //Adiciona função abre divBol pelos links
 var str3 = document.getElementsByTagName("body")[0].innerHTML;
 var res3 = str3.replace(/<a href\="http:\/\/biblia/g, "<a target=\"divBol\" onclick\='myFunction()'  href\=\"https\:\/\/biblia")
@@ -43,8 +41,6 @@ x.style.display = "none";
 }
 
 }
-
-// document.write('<a  target="_self" onclick="home()" ><img style="cursor:pointer;width:35px;height:35px;display:scroll;position:fixed;bottom:12px;left:8px;color:#f00;font-weight:bold;"  src="books.png"/></a>');
 
 function linkToMysword() {
 localStorage.setItem("ref", 1);
@@ -151,11 +147,6 @@ var res = str
 .replace(/8\//g,"8\:")
 .replace(/9\//g,"9\:")
 .replace(/0\//g,"0\:")
-// .replace(/capitulo_([0-9])\:/g,"capitulo_$1\/")
-// .replace(/capitulo_([0-9]{2})\:/g,"capitulo_$1\/")
-// .replace(/https\:\/\/www.mysword/g,"https\:\/\/mysword")
-// .replace(/http\:\/\/www.mysword/g,"https\:\/\/mysword")
-// .replace(/http\:/g,"https\:")
 
 // resolver problema de link offline
 .replace(/href="http/g, "onclick=\"window.open('http")
@@ -167,73 +158,8 @@ document.getElementsByClassName("content")[0].innerHTML = res;
 
 }else{
 }
-
-function home()
-{
-location.replace('https://leituracrista.com')
-}
-
-
-// // Elimina botão de busca e chamada de indexsearch.js
-// var str2 = document.getElementById("search-toggle").innerHTML;
-// var res2 = str2.replace(/<i class="fa fa-search"><\/i>/g, "")
-// .replace(/searchindex.js/g, "")
-
-// document.getElementById("search-toggle").innerHTML = res2; 
-// fim de Elimina botão de busca
-
-// Elimina underline do texto e convert barra em 2 pontos
-// var str4 = document.getElementsByTagName("body")[0].innerHTML;
-// var res4 = str4
-// .replace(/”_/g, "\" ")
-// .replace(/“_/g, "\"")
-// .replace(/<strong>/g, " <strong> ")
-// .replace(/<\/strong>/g, " <\/strong> ")
-// .replace(/([0-9])\/">/g, "$1\">") 
-
-// document.getElementsByTagName("body")[0].innerHTML = res4; 
-
-
-// Salva e restaura posição de leitura
-// prepara botões avançar e voltar ara salvar posição
-    var str5 = document.getElementsByTagName("body")[0].innerHTML;
-    var res5 = str5
-    .replace(/title="Next chapter"/g, "onclick\=\"savePositionNext()\" title\=\"Next chapter\"")
-    .replace(/title="Previous chapter"/g, "onclick\=\"savePositionPrevious()\" title\=\"Previous chapter\"")
-    .replace(/src\=\"custom.js\"><\/script>/g, 'src="custom.js"></script>\n<script src="book.js" type="text/javascript" charset="utf-8"></script>')
-    document.getElementsByTagName("body")[0].innerHTML = res5;
-
     // Create var bookNameKey
     var bookNameKey = (document.getElementsByClassName("menu-title"))
-
-    // Get scroll position
-    // function onscrolling(){
-    // window.addEventListener("scroll", function (event) {
-    //   var scroll = this.scrollY;
-    //   console.log(scroll)
-    // }); }
-    
-     
-
-
-function savePositionNext()
-{
-  var locationBook = (document.getElementsByClassName("nav-chapters next"));
-  var locationBook = (document.getElementsByClassName("mobile-nav-chapters next"));
-  localStorage.setItem(bookNameKey[0].innerHTML, locationBook[0])
-  // alert(locationBook[0]);
-}
-function savePositionPrevious()
-{
-  var locationBook = (document.getElementsByClassName("nav-chapters previous"));
-  var locationBook = (document.getElementsByClassName("mobile-nav-chapters previous"));
-  localStorage.setItem(bookNameKey[0].innerHTML, locationBook[0])
-}
-
-
-  
-// FIM Salva e restaura posição de leitura
-
 
 
 /*! jQuery v2.1.3 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
@@ -251,16 +177,6 @@ localStorage.setItem(positionScrollKey, positionScrollValue);
 // End get and Set Scroll Position
 }
 
-function loadLastPage()
-{
-  if(localStorage.hasOwnProperty(bookNameKey[0].innerHTML))
-  {
-// alert('está funcionando')
-  location.replace(localStorage.getItem(bookNameKey[0].innerHTML)) 
-  
-  }
-}
-
 if(localStorage.hasOwnProperty(positionScrollKey)){
   var target = $('#scroll');
   target.css('overflow-y', 'hidden');
@@ -273,11 +189,3 @@ if(localStorage.hasOwnProperty(positionScrollKey)){
 // console.log(localStorage.getItem(bookNameKey[0].innerHTML))
 console.log(positionScrollKey)
 console.log(localStorage.getItem(positionScrollKey));
-
-var str6 = document.getElementsByTagName("head")[0].innerHTML;
-    var res6 = str6
-    .replace(/<link rel="stylesheet" href="book.css">/g, '<link rel="stylesheet" href="book.css">\n<link href="/manifest/style.css" rel="stylesheet">\n<link rel="manifest" href="manifest.webmanifest"></link>')
-    document.getElementsByTagName("head")[0].innerHTML = res6;
-    // teste=document.getElementsByTagName("head")[0].innerHTML = res6;
-    // console.log(teste)
-    
