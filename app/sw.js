@@ -9,7 +9,8 @@ var cached_urls = [
   '/app/closeWindow.html',
 
 
-  '/app/acontecimentos-profeticos/index.html',
+  '/app/a-autoridade-delegada-a-assembleia-r-guillen/index.html',
+'/app/acontecimentos-profeticos/index.html',
 '/app/a-historia-da-greja/index.html',
 '/app/a-mulher---seu-lugar-nas-escrituras/index.html',
 '/app/a-obra-do-evangelho/index.html',
