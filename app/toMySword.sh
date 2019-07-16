@@ -128,6 +128,9 @@ sed -i '/mysword/ s/\/9/\:9/g' *.html
 sed -i '/mysword/ s/\/0/\:0/g' *.html
 
 sed -i '/mysword/ s/\//g' *.html
+
+
+
 ########################################
 ########################################
 ########################################
@@ -142,23 +145,4 @@ exit 0
 #echo '   Tarefas finalizadas!!!    '
 sleep 1
 ) | zenity --progress --width 300 --height 100 --title "Informação do Sistema" --text "Executando tarefa, aguarde... !!!" --pulsate --auto-close
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
