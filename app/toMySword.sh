@@ -44,7 +44,7 @@ sed -i "s/onclick/href='..\/closeWindow.html' target='closeWindow' onclick/g" in
 #sed -i 's///g' index.html
 
 #mudar link para mysword
-sed -i 's:www::g' index.html
+sed -i 's:www\.::g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/1co\/:mysword.info\/b?r\=1Co_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/1cr\/:mysword.info\/b?r\=1Ch_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/1jo\/:mysword.info\/b?r\=1Jo_:g' index.html
