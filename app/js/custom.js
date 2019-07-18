@@ -1,29 +1,5 @@
-document.write('<style>#scroll {overflow-y: auto;}</style>')
- 
-function myFunction() {
-var x = document.getElementById("myDIV");
-if (x.style.display === "none") {
-x.style.display = "block";
-} else {
-x.style.display = "none";
-}
-}
-
-function linkToMysword() {
-localStorage.setItem("ref", 1);
-window.location.reload()
-alert('Referências em MySword')
-}
-
-function linkToBol() {
-localStorage.setItem("ref", 0);
-window.location.reload()
-alert('Referências em Bíblia Online')
-
-}
-
 // Create var bookNameKey
-    var bookNameKey = (document.getElementsByClassName("menu-title"))
+var bookNameKey = (document.getElementsByClassName("menu-title"))
 
 
 /*! jQuery v2.1.3 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
@@ -38,7 +14,6 @@ var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
 function onscrolling(){
 positionScrollValue = $(window).scrollTop();
 localStorage.setItem(positionScrollKey, positionScrollValue);
-// End get and Set Scroll Position
 }
 
 if(localStorage.hasOwnProperty(positionScrollKey)){

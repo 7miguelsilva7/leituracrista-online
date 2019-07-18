@@ -34,17 +34,17 @@ for subpastas in `cat lista.txt`
 ###### Digite seus comando aqui ########
 ###### Digite seus comando aqui ########
  
-sed -i 's/{style\=\"font\-\weight\: normal\"}//g' index.html
-sed -i 's:\:\:g' index.html
+sed -i 's/\\\|www\.//g' index.html
 sed -i 's:\/):):g' index.html
-#resolve problema para abrir me MySword
+
+#resolve problema para abrir referencias MySword
 sed -i "/biblia/ s/href\=\"http/onclick\=\"window.open('http/g" index.html
 sed -i "/biblia/ s/\">/')\">/g" index.html
 sed -i "s/onclick/href='..\/closeWindow.html' target='closeWindow' onclick/g" index.html
 #sed -i 's///g' index.html
 
 #mudar link para mysword
-sed -i 's:www\.::g' index.html
+#sed -i 's:www\.::g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/1co\/:mysword.info\/b?r\=1Co_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/1cr\/:mysword.info\/b?r\=1Ch_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/1jo\/:mysword.info\/b?r\=1Jo_:g' index.html
@@ -89,7 +89,7 @@ sed -i 's:bibliaonline.com.br\/acf\/jl\/:mysword.info\/b?r\=Joe_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/jn\/:mysword.info\/b?r\=Jon_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/jo\/:mysword.info\/b?r\=Joh_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/jó\/:mysword.info\/b?r\=Job_:g' index.html
-sed -i 's:bibliaonline.com.br\/acf\/j%C3%B3\/:mysword.info\/b?r\=Job_:g' index.html
+sed -i 's:bibliaonline.com.br\/acf\/j\%C3\%B3\/:mysword.info\/b?r\=Job_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/jr\/:mysword.info\/b?r\=Jer_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/js\/:mysword.info\/b?r\=Jos_:g' index.html
 sed -i 's:bibliaonline.com.br\/acf\/jz\/:mysword.info\/b?r\=Jdg_:g' index.html
@@ -127,7 +127,7 @@ sed -i '/mysword/ s/\/8/\:8/g' index.html
 sed -i '/mysword/ s/\/9/\:9/g' index.html
 sed -i '/mysword/ s/\/0/\:0/g' index.html
 
-sed -i '/mysword/ s/\//g' index.html
+#sed -i '/mysword/ s/\//g' index.html
 
 
 
