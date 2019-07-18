@@ -42,16 +42,11 @@ Não há nenhuma dúvida que o assunto da autoridade da Assembleia local, para l
 
 
 
-  <title>
-  
-  
-       A Autoridade Divina Delegada a Assembleia 
-  
-  </title>
+  <title>A Autoridade Divina Delegada a Assembleia</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-autoridade-delegada-a-assembleia-r.-guillen/">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563477631">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563477631">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563477631">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563483925">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563483925">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563483925">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -179,8 +174,39 @@ Não há nenhuma dúvida que o assunto da autoridade da Assembleia local, para l
     $(document).ready(function() {
     $('.load').hide();
     });
-</script>
 
+
+var aStatus='Status'
+var bookNameStatus = document.getElementsByTagName("title")[0].innerHTML;
+var livroStatus = bookNameStatus.concat(aStatus)
+
+if (localStorage.getItem(livroStatus) === null) {
+  localStorage.setItem(livroStatus, 0)
+}
+
+
+function setLivroStatus0()
+{
+  localStorage.setItem(livroStatus, 0)
+}
+function setLivroStatus1()
+{
+  localStorage.setItem(livroStatus, 1)
+}
+
+if (localStorage.getItem(livroStatus) == 0)
+{
+  document.write('<div align="center"><a href="../" onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
+}
+else
+{
+  document.write('<div align="center"><a href="../" onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
+}
+
+console.log(localStorage.getItem(livroStatus))
+console.log(livroStatus)
+
+</script>
 
 
 </body>

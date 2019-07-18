@@ -43,16 +43,11 @@ Desde que foi escrito por Charles H. Mackintosh (1820-1896), este artigo sobre a
 
 
 
-  <title>
-  
-  
-       A Ceia do Senhor 
-  
-  </title>
+  <title>A Ceia do Senhor</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-ceia-do-senhor-c.-h.-mackintosh/">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563477631">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563477631">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563477631">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563483925">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563483925">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563483925">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -345,8 +340,39 @@ Desde que foi escrito por Charles H. Mackintosh (1820-1896), este artigo sobre a
     $(document).ready(function() {
     $('.load').hide();
     });
-</script>
 
+
+var aStatus='Status'
+var bookNameStatus = document.getElementsByTagName("title")[0].innerHTML;
+var livroStatus = bookNameStatus.concat(aStatus)
+
+if (localStorage.getItem(livroStatus) === null) {
+  localStorage.setItem(livroStatus, 0)
+}
+
+
+function setLivroStatus0()
+{
+  localStorage.setItem(livroStatus, 0)
+}
+function setLivroStatus1()
+{
+  localStorage.setItem(livroStatus, 1)
+}
+
+if (localStorage.getItem(livroStatus) == 0)
+{
+  document.write('<div align="center"><a href="../" onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
+}
+else
+{
+  document.write('<div align="center"><a href="../" onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
+}
+
+console.log(localStorage.getItem(livroStatus))
+console.log(livroStatus)
+
+</script>
 
 
 </body>
