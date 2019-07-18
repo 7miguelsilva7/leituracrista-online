@@ -3,26 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://leituracrista.com/app/book/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/a-autoridade-delegada-a-assembleia-r.-guillen/</loc>
   </url>
   
@@ -83,15 +63,15 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/a-opiniao-publica-c-buchanan-c.-buchanan/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/a-obra-do-evangelho-charles-stanley/</loc>
   </url>
   
   <url>
     <loc>https://leituracrista.com/app/a-oferta-crista-e-o-dizimo-j-h-smith-j.-h.-smith/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/a-opiniao-publica-c-buchanan-c.-buchanan/</loc>
   </url>
   
   <url>
@@ -123,14 +103,6 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/a-ultima-trombeta-f-g-patterson-f.-g.-patterson/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/a-verdaderia-igreja-o-corpo-e-a-esposa-de/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/a-vinda-de-cristo-bruce-anstey-bruce-anstey/</loc>
   </url>
   
@@ -139,7 +111,15 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/a-verdaderia-igreja-o-corpo-e-a-esposa-de/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/a-vitoria-de-jose/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/a-ultima-trombeta-f-g-patterson-f.-g.-patterson/</loc>
   </url>
   
   <url>
@@ -151,27 +131,11 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/algumas-marcas-da-igreja-de-deus-edward-dennett/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/aliancas-morrish-bible-dictionary/</loc>
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/amando-a-sua-vinda-h.-h.-snell/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/ao-seu-nome-bruce-anstey/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/as-cartas-as-7-igrejas/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/as-duas-naturezas-no-crente-g-h-hayhoe-g.-h.-hayhoe/</loc>
   </url>
   
   <url>
@@ -183,11 +147,53 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/algumas-marcas-da-igreja-de-deus-edward-dennett/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/amando-a-sua-vinda-h.-h.-snell/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/ao-seu-nome-bruce-anstey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/as-duas-naturezas-no-crente-g-h-hayhoe-g.-h.-hayhoe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/book/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/brevehistoriadahumanidade/</loc>
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/considerando-meu-irmao/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/cristo-nosso-pastor-edward-dennett-edward-dennett/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/cristo-nosso-redentor-edward-dennett-edward-dennett/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/cristo-nossa-vida_-edward-dennett/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/carater-de-familia-e-religiao-de-familia-j.-g.-bellet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -307,10 +313,6 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/chapter-a-day-exodo/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/chapter-a-day-filemon/</loc>
   </url>
   
@@ -343,10 +345,6 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/chapter-a-day-joao/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/chapter-a-day-joel/</loc>
   </url>
   
@@ -356,6 +354,10 @@
   
   <url>
     <loc>https://leituracrista.com/app/chapter-a-day-josue/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/chapter-a-day-joao/</loc>
   </url>
   
   <url>
@@ -443,6 +445,10 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/chapter-a-day-exodo/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/cobertura-para-a-cabeca-robert-boulard-robert-boulard/</loc>
   </url>
   
@@ -451,11 +457,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/considerando-meu-irmao/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/cristo-o-centro-porque-nos-reunimos-som-c-charles-stanley/</loc>
+    <loc>https://leituracrista.com/app/cristo-para-meus-pecados-cristo-para-meus-j.-n.-darby/</loc>
   </url>
   
   <url>
@@ -463,19 +465,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/cristo-nossa-vida_-edward-dennett/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/cristo-nosso-pastor-edward-dennett-edward-dennett/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/cristo-nosso-redentor-edward-dennett-edward-dennett/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/cristo-para-meus-pecados-cristo-para-meus-j.-n.-darby/</loc>
+    <loc>https://leituracrista.com/app/cristo-o-centro-porque-nos-reunimos-som-c-charles-stanley/</loc>
   </url>
   
   <url>
@@ -503,23 +493,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/homem-e-mulher-os-papeis-distintos-na-casa-bruce-anstey/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/jesus-nao-poderia-pecar-william-macdonald-william-macdonald/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/jonatas-faltou-uma-coisa-charles-stanley-charles-stanley/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/jugo-desigual-c-h-mackintosh-c.-h.-mackintosh/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/linguas-e-outros-dons-de-sinais-seu-lugar-g.-h.-hayhoe/</loc>
+    <loc>https://leituracrista.com/app/tito-filemom/</loc>
   </url>
   
   <url>
@@ -527,11 +501,32 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/homem-e-mulher-os-papeis-distintos-na-casa-bruce-anstey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/jugo-desigual-c-h-mackintosh-c.-h.-mackintosh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/jonatas-faltou-uma-coisa-charles-stanley-charles-stanley/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/o-livro-de-ester-w.-kelly-w.-kelly/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/luz-para-as-almas-ansiosas-g-cutting/</loc>
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/mateus-darby/</loc>
+    <loc>https://leituracrista.com/app/linguas-e-outros-dons-de-sinais-seu-lugar-g.-h.-hayhoe/</loc>
   </url>
   
   <url>
@@ -547,23 +542,15 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/mateus-darby/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/musica-instrumental-nas-reunioes-c-buchana-c.-buchanan/</loc>
   </url>
   
   <url>
     <loc>https://leituracrista.com/app/naama-o-leproso-charles-stanley-charles-stanley/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/nao-estejais-inquietos-por-coisa-alguma-h-h.-smith/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/nao-repouses-a-tua-mao/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/nao-vos-comove-isto-r-erisman-r.-erisman/</loc>
   </url>
   
   <url>
@@ -587,11 +574,27 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/o-amigo-e-as-coisas-que-nunca-mudam-gordon-g.-h.-hayhoe/</loc>
+    <loc>https://leituracrista.com/app/nao-repouses-a-tua-mao/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/nao-vos-comove-isto-r-erisman-r.-erisman/</loc>
   </url>
   
   <url>
     <loc>https://leituracrista.com/app/o-apocalipse-e-o-reino-cronologia-dos-ev-c-clarence-lunden/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/o-amigo-e-as-coisas-que-nunca-mudam-gordon-g.-h.-hayhoe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/o-centro-de-todo-descanso-e.-j.-checkley-e.-j.-checkley/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/o-chamado-de-deus-j.-g.-bellet/</loc>
   </url>
   
   <url>
@@ -607,14 +610,6 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/o-centro-de-todo-descanso-e.-j.-checkley-e.-j.-checkley/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/o-chamado-de-deus-j.-g.-bellet/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/o-diadema-perdido-f.-b.-hole-f.-b.-hole/</loc>
   </url>
   
@@ -627,19 +622,11 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/o-evangelho-em-3-min-mateus-mario-persona/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/o-evangelho-em-3-minutos-joao/</loc>
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/o-evangelho-em-3-minutos-lucas-comentario/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/o-evangelho-em-3-minutos-lucas/</loc>
+    <loc>https://leituracrista.com/app/o-evangelho-em-3-min-mateus-mario-persona/</loc>
   </url>
   
   <url>
@@ -667,19 +654,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/o-livro-de-ester-w.-kelly-w.-kelly/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/o-mesmo-senhor-descera-do-ceu-j.-n.-darby-j.-n.-darby/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/o-mundo-invisivel-iremos-nos-conhecer-no-c-j.-r.-gill/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/o-que-a-biblia-diz-sobre-romance-namoro-douglas-nicolas/</loc>
   </url>
   
   <url>
@@ -695,91 +670,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/os-desapontamentos-da-vida-laura-a.-b.-snow/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/os-dez-mandamentos-c.-h.-brown-c.-h.-brown/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/os-limites-da-disciplina/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/os-sofrimentos-e-as-glorias-de-cristo-sa-j-j.-n.-darby/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/para-que-servem-os-milagres-w-fereday-w.-fereday/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/parabolas-de-mateus-13-w.-kelly-w.-kelly/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/participantes-da-natureza-divina-2-pedro-1-w.-t.-p.-wolston/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/pedras-grandes-e-preciosas-charles-stanley-charles-stanley/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/politica-paul-wilson-paul-wilson/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/por-causa-dos-anjos-paul-wilson-paul-wilson/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/por-seus-frutos/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/porque-nos-reunimos-assim--j.-r.-gill/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/princ%C3%ADpios-fundamentais-sobre-os-quais-a-igreja-%C3%A9-edificada/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/qual-o-teu-destino/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/que-denominacao-e-esta-autor-desconhecido/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/quem-despreza-o-dia-das-coisas-pequenas-j-j.-t.-armet/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/quem-e-jesus-k-heslop-k.-heslop/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/respondi-12/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/respondi-13/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/respondi-volume-1-mario-persona/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/respondi-volume-10-mario-persona/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/respondi-volume-11-mario-persona/</loc>
   </url>
   
   <url>
@@ -815,6 +706,94 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/respondi-volume-10-mario-persona/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/respondi-volume-11-mario-persona/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/respondi-volume-12-mario-persona/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/respondi-volume-13-mario-persona/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/o-que-a-biblia-diz-sobre-romance-namoro-douglas-nicolas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/os-desapontamentos-da-vida-laura-a.-b.-snow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/os-dez-mandamentos-c.-h.-brown-c.-h.-brown/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/os-sofrimentos-e-as-glorias-de-cristo-sa-j-j.-n.-darby/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/os-limites-da-disciplina/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/para-que-servem-os-milagres-w-fereday-w.-fereday/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/participantes-da-natureza-divina-2-pedro-1-w.-t.-p.-wolston/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/parabolas-de-mateus-13-w.-kelly-w.-kelly/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/pedras-grandes-e-preciosas-charles-stanley-charles-stanley/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/politica-paul-wilson-paul-wilson/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/por-causa-dos-anjos-paul-wilson-paul-wilson/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/por-seus-frutos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/porque-nos-reunimos-assim--j.-r.-gill/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/princ%C3%ADpios-fundamentais-sobre-os-quais-a-igreja-%C3%A9-edificada/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/que-denominacao-e-esta-autor-desconhecido/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/quem-despreza-o-dia-das-coisas-pequenas-j-j.-t.-armet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/quem-e-jesus-k-heslop-k.-heslop/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/qual-o-teu-destino/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/reuniao-de-oracao/</loc>
   </url>
   
@@ -824,10 +803,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/seguir-a-cristo-j-n-darby-j.-n.-darby/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/seguranca-certeza-e-gozo-da-salvacao-etern-g.-cutting/</loc>
   </url>
   
   <url>
@@ -851,6 +826,10 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/seguranca-certeza-e-gozo-da-salvacao-etern-g.-cutting/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/televisao-paul-wilson-paul-wilson/</loc>
   </url>
   
@@ -859,11 +838,12 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/teologia-do-pacto-ou-dispensacoes/</loc>
+    <loc>https://leituracrista.com/app/tags/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/tito-filemom/</loc>
+    <loc>https://leituracrista.com/app/teologia-do-pacto-ou-dispensacoes/</loc>
   </url>
   
   <url>
@@ -871,19 +851,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/um-so-corpo-na-pratica-bruce-anstey/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/uma-carta-sobre-louvar-a-homens-john-nelso-j.-n.-darby/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/uma-palavra-sobre-noivado-gordon-h.-hayhoe-g.-h.-hayhoe/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/uma-variedade-de-reunioes-bruce-anstey-bruce-anstey/</loc>
   </url>
   
   <url>
@@ -891,15 +859,23 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/o-mesmo-senhor-descera-do-ceu-j.-n.-darby-j.-n.-darby/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/um-so-corpo-na-pratica-bruce-anstey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/uma-variedade-de-reunioes-bruce-anstey-bruce-anstey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/uma-carta-sobre-louvar-a-homens-john-nelso-j.-n.-darby/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/unidade/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/util-g-v-wigram-g.-v.-wigram/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/vem-mostrar-te-ei-w.-potter-w.-potter/</loc>
   </url>
   
   <url>
@@ -908,6 +884,26 @@
   
   <url>
     <loc>https://leituracrista.com/app/voce-parte-o-pao-e.-h.-chater-e.-h.-chater/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/vem-mostrar-te-ei-w.-potter-w.-potter/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/jesus-nao-poderia-pecar-william-macdonald-william-macdonald/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/o-evangelho-em-3-minutos-lucas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/util-g-v-wigram-g.-v.-wigram/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/nao-estejais-inquietos-por-coisa-alguma-h-h.-smith/</loc>
   </url>
   
 </urlset>
