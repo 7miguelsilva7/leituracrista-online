@@ -198,6 +198,8 @@ var cached_urls = [
 '/app/respondi-13/index.html',
 '/app/respondi-volume-10-mario-persona/index.html',
 '/app/respondi-volume-11-mario-persona/index.html',
+'/app/respondi-volume-12-mario-persona/index.html',
+'/app/respondi-volume-13-mario-persona/index.html',
 '/app/respondi-volume-1-mario-persona/index.html',
 '/app/respondi-volume-2-mario-persona/index.html',
 '/app/respondi-volume-3-mario-persona/index.html',
