@@ -1,3 +1,5 @@
+
+
 section.article {
   display: flex;
   width: 100%;
@@ -20,30 +22,6 @@ section.article article {
   width: 100%;
   text-align:justify;
   font-size: 1.202em;
-}
-
-section.article aside {
-  width: 30%;
-  order: 0;
-  background: #eee;
-  padding: 4px 10px;
-}
-
-section.article aside .fixed {
-  position: -webkit-sticky;
-  top: 0;
-}
-
-section.article aside ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-section.article aside ul.nav {
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid #aaa;
 }
 
 /* adicionado por mim */
