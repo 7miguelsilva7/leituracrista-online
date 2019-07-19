@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://w3.org/TR/html4/strict.dtd">  
 <html>
     <head>
 
@@ -43,9 +43,9 @@ Por que você não se converteu um pouco antes de morrer? Deus teria poupado mui
 
   <title>ÚTIL</title>
   <link rel="canonical" href="https://leituracrista.com/app/util-g-v-wigram-g.-v.-wigram/">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563502909">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563502909">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563502909">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563503062">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563503062">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563503062">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -79,8 +79,8 @@ Por que você não se converteu um pouco antes de morrer? Deus teria poupado mui
       
     </header>
     
+    <iframe name="closeWindow" style="display:none"><iframe></iframe>
     
-    <iframe name="closeWindow" ><iframe></iframe>
 
     
        <div style="padding: 20px 10px;background-color: rgb(201, 201, 201)" class="tableOfContent"> 
@@ -105,7 +105,7 @@ Por que você não se converteu um pouco antes de morrer? Deus teria poupado mui
 
 <p>Por que você não se converteu um pouco antes de morrer? Deus teria poupado muitos problemas, e muita desonra, se Ele tivesse nos convertido um pouco antes de morrermos. Mas Deus quis ser honrado por nós neste mundo.</p>
 
-<p>Como o relógio é feito para mostrar o tempo, assim o povo de Deus, para dar-Lhe as Suas glórias. Um relógio se torna inútil se não estiver funcionando corretamente; e você nunca encotrará um corpo em perfeita saúde, se não estiver em atividade. Nas coisas espirituais, você nunca encontrará um cristão em saudável condição, que não faça do seu corpo um sacrifício vivo a Deus (<a href="http://mysword.info/b?r=Rom_12:1">Romanos 12:1</a>). Um cristão tem que estar cheio de gozo e do Espírito Santo.</p>
+<p>Como o relógio é feito para mostrar o tempo, assim o povo de Deus, para dar-Lhe as Suas glórias. Um relógio se torna inútil se não estiver funcionando corretamente; e você nunca encotrará um corpo em perfeita saúde, se não estiver em atividade. Nas coisas espirituais, você nunca encontrará um cristão em saudável condição, que não faça do seu corpo um sacrifício vivo a Deus (<a href='../closeWindow.html' target='closeWindow' onclick="window.open('http://mysword.info/b?r=Rom_12:1')">Romanos 12:1</a>). Um cristão tem que estar cheio de gozo e do Espírito Santo.</p>
 
 <p>G. V. Wigram</p>
 
@@ -154,11 +154,11 @@ function setLivroStatus1()
 
 if (localStorage.getItem(livroStatus) == 0)
 {
-  document.write('<div align="center"><a href="../" onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
+  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
 }
 else
 {
-  document.write('<div align="center"><a href="../" onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
+  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
 }
 
 console.log(localStorage.getItem(livroStatus))

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://w3.org/TR/html4/strict.dtd">  
 <html>
     <head>
 
@@ -41,9 +41,9 @@
 
   <title>ADORAÇÃO CRISTÃ</title>
   <link rel="canonical" href="https://leituracrista.com/app/adoracao-crista-j-n-darby-j.-n.-darby/">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563502908">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563502908">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563502908">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563503061">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563503061">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563503061">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -77,8 +77,8 @@
       
     </header>
     
+    <iframe name="closeWindow" style="display:none"><iframe></iframe>
     
-    <iframe name="closeWindow" ><iframe></iframe>
 
     
        <div style="padding: 20px 10px;background-color: rgb(201, 201, 201)" class="tableOfContent"> 
@@ -152,11 +152,11 @@ function setLivroStatus1()
 
 if (localStorage.getItem(livroStatus) == 0)
 {
-  document.write('<div align="center"><a href="../" onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
+  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
 }
 else
 {
-  document.write('<div align="center"><a href="../" onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
+  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
 }
 
 console.log(localStorage.getItem(livroStatus))

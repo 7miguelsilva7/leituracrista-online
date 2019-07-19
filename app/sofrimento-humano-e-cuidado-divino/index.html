@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://w3.org/TR/html4/strict.dtd">  
 <html>
     <head>
 
@@ -42,9 +42,9 @@ A aceitação de seguir a Cristo não significa colocar-se ao abrigo das provas 
 
   <title>SOFRIMENTO HUMANO E CUIDADO DIVINO</title>
   <link rel="canonical" href="https://leituracrista.com/app/sofrimento-humano-e-cuidado-divino/">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563502909">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563502909">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563502909">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563503062">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563503062">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563503062">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -78,8 +78,8 @@ A aceitação de seguir a Cristo não significa colocar-se ao abrigo das provas 
       
     </header>
     
+    <iframe name="closeWindow" style="display:none"><iframe></iframe>
     
-    <iframe name="closeWindow" ><iframe></iframe>
 
     
        <div style="padding: 20px 10px;background-color: rgb(201, 201, 201)" class="tableOfContent"> 
@@ -108,7 +108,7 @@ A aceitação de seguir a Cristo não significa colocar-se ao abrigo das provas 
 
 <p>Antes dos israelitas entrarem no deserto, o maná era algo desconhecido para eles e para seus pais. Nada podiam fazer para o produzir &ndash; dependiam totalmente de Deus. Se Deus tivesse deixado de o enviar por alguns dias, todos teriam perecido de fome. A água que brotou da rocha foi, da mesma maneira, um milagre. Ela não existia no deserto, mas Deus, milagrosamente, concedeu-a a Israel. Também não havia um caminho marcado, todavia Deus operou outra maravilha &ndash; uma nuvem, de dia, e uma coluna de fogo à noite serviam-lhes de guia.</p>
 
-<p>Mas não era somente nas coisas grandes e tão manifestas e visíveis que Deus cuidava deles, ou cuida de nós hoje mesmo neste mundo arruinado. Nós também podemos observar o Seu terno cuidado em nossos problemas e necessidades, por menores que sejam. &quot;Nunca se envelheceu o teu vestido sobre ti, nem se inchou o teu pé estes quarenta anos&quot; (<a href="http://mysword.info/b?r=Deu_8:4">Deut. 8:4</a>). Talvez os próprios israelitas nunca tivessem meditado nestes milagres que nada tinham de espetacular: a duração da roupa e o bem estar dos pés. Não se dá o mesmo conosco? Quantos detalhes do cuidado de nosso Pai nos passam despercebidos! Quão ingratos somos!</p>
+<p>Mas não era somente nas coisas grandes e tão manifestas e visíveis que Deus cuidava deles, ou cuida de nós hoje mesmo neste mundo arruinado. Nós também podemos observar o Seu terno cuidado em nossos problemas e necessidades, por menores que sejam. &quot;Nunca se envelheceu o teu vestido sobre ti, nem se inchou o teu pé estes quarenta anos&quot; (<a href='../closeWindow.html' target='closeWindow' onclick="window.open('http://mysword.info/b?r=Deu_8:4')">Deut. 8:4</a>). Talvez os próprios israelitas nunca tivessem meditado nestes milagres que nada tinham de espetacular: a duração da roupa e o bem estar dos pés. Não se dá o mesmo conosco? Quantos detalhes do cuidado de nosso Pai nos passam despercebidos! Quão ingratos somos!</p>
 
 <p>Autor desconhecido</p>
 
@@ -157,11 +157,11 @@ function setLivroStatus1()
 
 if (localStorage.getItem(livroStatus) == 0)
 {
-  document.write('<div align="center"><a href="../" onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
+  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
 }
 else
 {
-  document.write('<div align="center"><a href="../" onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
+  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
 }
 
 console.log(localStorage.getItem(livroStatus))
