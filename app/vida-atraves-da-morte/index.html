@@ -43,9 +43,9 @@ INTRODUÇÃO - A &quot;CARTA MAGNA&quot; DA HUMANIDADE O AUTOR destas notas gost
 
   <title>Vida Através da Morte</title>
   <link rel="canonical" href="https://leituracrista.com/app/vida-atraves-da-morte/">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563503062">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563503062">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563503062">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563503256">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563503256">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563503256">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -757,11 +757,11 @@ function setLivroStatus1()
 
 if (localStorage.getItem(livroStatus) == 0)
 {
-  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
+  document.write("<div align='center'><a href='../' href='../closeWindow.html' target='closeWindow' onclick='setLivroStatus1()'>Marcar Livro Como Lido</a></div><br><br>")
 }
 else
 {
-  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
+  document.write("<div align='center'><a href='../' href='../closeWindow.html' target='closeWindow' onclick='setLivroStatus0()'>Desmarcar Livro Como Lido</a></div><br><br")
 }
 
 console.log(localStorage.getItem(livroStatus))

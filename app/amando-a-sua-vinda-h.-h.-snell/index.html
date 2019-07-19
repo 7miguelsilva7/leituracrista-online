@@ -42,9 +42,9 @@ Quem são os que amam a Sua vinda? Estes não terão só uma &quot;coroa da vida
 
   <title>Amando A Sua Vinda</title>
   <link rel="canonical" href="https://leituracrista.com/app/amando-a-sua-vinda-h.-h.-snell/">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563503061">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563503061">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563503061">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/normalize.css?t=1563503256">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1563503256">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1563503256">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -182,11 +182,11 @@ function setLivroStatus1()
 
 if (localStorage.getItem(livroStatus) == 0)
 {
-  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus1()">Marcar Livro Como Lido</a></div><br><br>')
+  document.write("<div align='center'><a href='../' href='../closeWindow.html' target='closeWindow' onclick='setLivroStatus1()'>Marcar Livro Como Lido</a></div><br><br>")
 }
 else
 {
-  document.write('<div align="center"><a href="../" href='../closeWindow.html' target='closeWindow' onclick="setLivroStatus0()">Desmarcar Livro Como Lido</a></div><br><br')
+  document.write("<div align='center'><a href='../' href='../closeWindow.html' target='closeWindow' onclick='setLivroStatus0()'>Desmarcar Livro Como Lido</a></div><br><br")
 }
 
 console.log(localStorage.getItem(livroStatus))
