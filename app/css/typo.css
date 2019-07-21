@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/* 
 @font-face {
   font-family: "Ampersand";
   src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
@@ -10,7 +10,7 @@
   font-family: "Ampersand";
   src: local("Georgia");
   unicode-range: U+270C;
-}
+} */
 
 html {
   font: normal 112.5% / 1.65 serif;
@@ -26,15 +26,15 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* 
 a {
   text-decoration: none;
-}
+} */
 
 p {
   margin: auto auto 1.5rem;
 }
-
+/* 
 article header {
   margin: 0 auto;
   width: 70%;
@@ -55,7 +55,7 @@ article header h2 {
 article header h3 {
   font-size: 1.163rem;
   margin: 0.3rem 0 0 0;
-}
+} */
 
 p + p {
   text-indent: 1.5rem;
@@ -85,7 +85,7 @@ h3 {
 h4 {
   font-size: 0.9em;
 }
-
+/* 
 small {
   font-size: 0.8em;
 }
@@ -133,4 +133,4 @@ abbr {
 
 abbr[title]:hover {
   cursor: help;
-}
+} */
