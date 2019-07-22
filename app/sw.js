@@ -9,7 +9,7 @@ var cached_urls = [
   '/app/closeWindow.html',
 
 
-  '/app/a-autoridade-delegada-a-assembleia-r.-guillen/index.html',
+'/app/a-autoridade-delegada-a-assembleia-r.-guillen/index.html',
 '/app/a-ceia-do-senhor-c.-h.-mackintosh/index.html',
 '/app/acontecimentos-profeticos-bruce-anstey/index.html',
 '/app/a-cruz-e-a-gloria-e-h-chater-e.-h.-chater/index.html',
