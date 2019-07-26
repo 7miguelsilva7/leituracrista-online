@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cp -ur zap /opt/lampp/htdocs/leituracrista-online/
+cp -ur tests/ /opt/lampp/htdocs/leituracrista-online/
 
 git pull
 #git add --all
@@ -10,8 +11,8 @@ git push
 
 cd /opt/lampp/htdocs/leituracrista-online/
 
-git pull
-#git add --all
+git add .
+git add --all
 git add --all :/
 git commit -m "update"
 git push

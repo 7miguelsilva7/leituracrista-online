@@ -1,25 +1,16 @@
 let CURRENT_CACHES = {
   offline: 'offlineHinario-v1'
 };
-// files to include
-// const OFFLINE_URL = 
-//        'index.html'
+const OFFLINE_URL = 
+       'index.html'
 
-// ;
-
-var OFFLINE_URL = [
-  'index.html',
-  'style.css',
-  'img/indice.png',
-  'img/numero.png',
-];
-
+;
 
 self.addEventListener('install', event => {
   event.waitUntil(
     fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
       return caches.open(CURRENT_CACHES.offline).then(function(cache) {
-        return cache.addAll(OFFLINE_URL, response);
+        return cache.put(OFFLINE_URL, response);
       });
     })
   );
