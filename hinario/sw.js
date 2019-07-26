@@ -7,10 +7,10 @@ let CURRENT_CACHES = {
 // ;
 
 const OFFLINE_URL = [
-        'index.html',
-        'style.css',
-        'img/indice.png',
-        'img/numero.png',
+  '/hinario/index.html',
+  '/hinario/img/indice.png',
+  '/hinario/style.css',
+  '/hinario/img/numero.png',
 ];
 
 self.addEventListener('install', event => {
