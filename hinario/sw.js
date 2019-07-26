@@ -1,22 +1,25 @@
 let CURRENT_CACHES = {
-  offlineHinario: 'offlineHinario-v1'
+  offline: 'offlineHinario-v1'
 };
-// const OFFLINE_URL = 
-//        'index.html'
+// files to include
+const OFFLINE_URL = 
+       'index.html'
 
-// ;
+;
 
-const OFFLINE_URL = [
-  '/hinario/index.html',
-  '/hinario/style.css',
-  '/hinario/img/indice.png',
-  '/hinario/img/numero.png',
-];
+
+// const OFFLINE_URL = [
+//   '/hinario/index.html',
+//   '/hinario/style.css',
+//   '/hinario/img/indice.png',
+//   '/hinario/img/numero.png',
+// ];
+
 
 self.addEventListener('install', event => {
   event.waitUntil(
     fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
-      return caches.open(CURRENT_CACHES.offlineHinario).then(function(cache) {
+      return caches.open(CURRENT_CACHES.offline).then(function(cache) {
         return cache.put(OFFLINE_URL, response);
       });
     })
@@ -51,13 +54,11 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-
-   if (event.request.mode === 'navigate' ||
+  if (event.request.mode === 'navigate' ||
       (event.request.method === 'GET' &&
        event.request.headers.get('accept').includes('text/html'))) {
     event.respondWith(
       fetch(event.request).catch(error => {
-
         return caches.match(OFFLINE_URL);
       })
     );
