@@ -7,7 +7,7 @@ let CURRENT_CACHES = {
 
 // ;
 
-const OFFLINE_URL = [
+var OFFLINE_URL = [
   'index.html',
   'style.css',
   'img/indice.png',
@@ -19,7 +19,7 @@ self.addEventListener('install', event => {
   event.waitUntil(
     fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
       return caches.open(CURRENT_CACHES.offline).then(function(cache) {
-        return cache.put(OFFLINE_URL, response);
+        return cache.addAll(OFFLINE_URL, response);
       });
     })
   );
