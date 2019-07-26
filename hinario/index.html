@@ -182,8 +182,14 @@ border-top:3px dashed #FFF
         <link rel="manifest" href="manifest.webmanifest">
 
         <script>
-          if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/hinario/sw.js');
+        //   if ('serviceWorker' in navigator) {
+        //     navigator.serviceWorker.register('/hinario/sw.js');
+        // }
+
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/hinario/sw.js');
+          });
         }
           
         </script>
