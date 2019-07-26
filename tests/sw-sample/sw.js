@@ -2,7 +2,7 @@ const v = "0";
 addEventListener('install', e => e.waitUntil(
   caches.open(v).then(cache => cache.addAll([
     
-    '/',
+    '/tests/sw-sample/',
     '/tests/sw-sample/index.html'
   
   ]))
