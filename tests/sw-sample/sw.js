@@ -1,6 +1,10 @@
 const v = "0";
 addEventListener('install', e => e.waitUntil(
-  caches.open(v).then(cache => cache.addAll(['/']))
+  caches.open(v).then(cache => cache.addAll([
+    
+    'index.html'
+  
+  ]))
 ));
 
 addEventListener('fetch', e => {
