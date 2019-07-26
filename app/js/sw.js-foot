@@ -14,10 +14,10 @@ let staticCacheName = true
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
+    caches.keys().then(cacheNames => {
       return Promise.all(
-        cacheNames.map(function(cacheName) {
-          if (cacheName.startsWith('leituraCristaApp') && staticCacheName !== cacheName) {
+        cacheNames.map(cacheName => {
+          if (expectedCacheNames.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })
@@ -25,7 +25,7 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
-
+ 
 self.addEventListener('fetch', function(event) {
     console.log('Fetch event for ', event.request.url);
     event.respondWith(

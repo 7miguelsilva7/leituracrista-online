@@ -2,6 +2,7 @@
 
 cp -ur zap /opt/lampp/htdocs/leituracrista-online/
 cp -ur tests/ /opt/lampp/htdocs/leituracrista-online/
+cp -ur hinario/ /opt/lampp/htdocs/leituracrista-online/
 
 git pull
 #git add --all
