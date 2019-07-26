@@ -1,5 +1,5 @@
 let CURRENT_CACHES = {
-  offline: 'offline-v1'
+  offlineHinario: 'offlineHinario-v1'
 };
 // const OFFLINE_URL = 
 //        'index.html'
@@ -16,7 +16,7 @@ const OFFLINE_URL = [
 self.addEventListener('install', event => {
   event.waitUntil(
     fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
-      return caches.open(CURRENT_CACHES.offline).then(function(cache) {
+      return caches.open(CURRENT_CACHES.offlineHinario).then(function(cache) {
         return cache.put(OFFLINE_URL, response);
       });
     })
