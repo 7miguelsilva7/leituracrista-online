@@ -9,6 +9,8 @@ let CURRENT_CACHES = {
 const OFFLINE_URL = [
   '/hinario/index.html',
   '/hinario/style.css',
+  '/hinario/img/indice.png',
+  '/hinario/img/numero.png',
 ];
 
 self.addEventListener('install', event => {
