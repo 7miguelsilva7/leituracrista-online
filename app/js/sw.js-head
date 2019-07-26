@@ -1,4 +1,4 @@
-var cache_name = 'leituraCristaApp1';
+var cache_name = 'leituraCristaApp2';
 var cached_urls = [
   '/app/',
   '/app/index.html',
