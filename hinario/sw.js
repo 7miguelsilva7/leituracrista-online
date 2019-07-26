@@ -1,10 +1,15 @@
 let CURRENT_CACHES = {
   offline: 'offline-v1'
 };
-const OFFLINE_URL = 
-       'index.html'
+// const OFFLINE_URL = 
+//        'index.html'
 
-;
+// ;
+
+const OFFLINE_URL = [
+        'index.html',
+        'style.css',
+];
 
 self.addEventListener('install', event => {
   event.waitUntil(
