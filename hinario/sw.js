@@ -9,6 +9,8 @@ let CURRENT_CACHES = {
 const OFFLINE_URL = [
         'index.html',
         'style.css',
+        'img/indice.png',
+        'img/numero.png',
 ];
 
 self.addEventListener('install', event => {
