@@ -52,17 +52,11 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
 
-  // adicionado por mim
-  console.log('Fetch event for ', event.request.url);
-
-  if (event.request.mode === 'navigate' ||
+   if (event.request.mode === 'navigate' ||
       (event.request.method === 'GET' &&
        event.request.headers.get('accept').includes('text/html'))) {
     event.respondWith(
       fetch(event.request).catch(error => {
-
-        // adicionado por mim
-        console.log('Found ', event.request.url, ' in cache');
 
         return caches.match(OFFLINE_URL);
       })
