@@ -1,4 +1,4 @@
-var cacheName = 'leituraCristaApp-v3';
+var cacheName = 'leituraCristaApp-v4';
 
 self.addEventListener('install', event => {
   event.waitUntil(
