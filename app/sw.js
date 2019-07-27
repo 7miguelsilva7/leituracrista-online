@@ -1,15 +1,18 @@
-var cache_name = 'leituraCristaApp2';
-var cached_urls = [
-  '/app/',
+var cacheName = 'leituraCristaApp-v1';
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(cacheName)
+      .then(cache => cache.addAll([
+        '/app/',
   '/app/index.html',
   '/app/css/main.css',
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
   '/app/closeWindow.html',
-
-
-  '/app/a-autoridade-delegada-a-assembleia-r.-guillen/index.html',
+      
+      '/app/a-autoridade-delegada-a-assembleia-r.-guillen/index.html',
 '/app/a-ceia-do-senhor-c.-h.-mackintosh/index.html',
 '/app/acontecimentos-profeticos-bruce-anstey/index.html',
 '/app/a-cruz-e-a-gloria-e-h-chater-e.-h.-chater/index.html',
@@ -241,55 +244,24 @@ var cached_urls = [
 '/app/vem-mostrar-te-ei-w.-potter-w.-potter/index.html',
 '/app/vida-atraves-da-morte/index.html',
 '/app/voce-parte-o-pao-e.-h.-chater-e.-h.-chater/index.html',
-
-];
-
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(cache_name)
-    .then(function(cache) {
-      return cache.addAll(cached_urls);
-    })
+]))
   );
 });
 
-let staticCacheName = true
-
-self.addEventListener('activate', function(event) {
-  event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames.map(cacheName => {
-          if (expectedCacheNames.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
+self.addEventListener('message', function (event) {
+  if (event.data.action === 'skipWaiting') {
+    self.skipWaiting();
+  }
 });
- 
-self.addEventListener('fetch', function(event) {
-    console.log('Fetch event for ', event.request.url);
-    event.respondWith(
-      caches.match(event.request).then(function(response) {
+
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function (response) {
         if (response) {
-          console.log('Found ', event.request.url, ' in cache');
           return response;
         }
-        console.log('Network request for ', event.request.url);
-        return fetch(event.request).then(function(response) {
-          if (response.status === 404) {
-            return caches.match('fourohfour.html');
-          }
-          return caches.open(cached_urls).then(function(cache) {
-           cache.put(event.request.url, response.clone());
-            return response;
-          });
-        });
-      }).catch(function(error) {
-        console.log('Error, ', error);
-        return caches.match('/app/index.html');
+        return fetch(event.request);
       })
-    );
-  });
+  );
+});
