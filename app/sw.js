@@ -228,6 +228,7 @@ var cached_urls = [
 '/app/televisao-paul-wilson-paul-wilson/index.html',
 '/app/tempos-dificeis/index.html',
 '/app/teologia-do-pacto-ou-dispensacoes/index.html',
+'/app/tiago-darby-mysword/index.html',
 '/app/tito-filemom/index.html',
 '/app/uma-carta-sobre-louvar-a-homens-john-nelso-j.-n.-darby/index.html',
 '/app/uma-palavra-sobre-noivado-gordon-h.-hayhoe-g.-h.-hayhoe/index.html',
@@ -256,10 +257,10 @@ let staticCacheName = true
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
+    caches.keys().then(cacheNames => {
       return Promise.all(
-        cacheNames.map(function(cacheName) {
-          if (cacheName.startsWith('leituraCristaApp') && staticCacheName !== cacheName) {
+        cacheNames.map(cacheName => {
+          if (expectedCacheNames.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })
@@ -267,7 +268,7 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
-
+ 
 self.addEventListener('fetch', function(event) {
     console.log('Fetch event for ', event.request.url);
     event.respondWith(
