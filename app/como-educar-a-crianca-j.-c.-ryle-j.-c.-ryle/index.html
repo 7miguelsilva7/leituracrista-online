@@ -37,8 +37,8 @@ Talvez você tenha um lar em ordem, segundo os padrões humanos, mas lembre-se d
   <title>Como Educar a Criança?</title>
   <link rel="canonical" href="https://leituracrista.com/app/como-educar-a-crianca-j.-c.-ryle-j.-c.-ryle/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564280836">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564280836">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564281239">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564281239">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -337,11 +337,11 @@ function setLivroStatus1()
 
 if (localStorage.getItem(livroStatus) == 0)
 {
-  document.write("<div align='center'><a href='../' onclick='setLivroStatus1()'>Marcar Livro Como Lido</a></div><br><br>")
+  document.write("<div align='center'><a href='../' onclick='setLivroStatus1();removeNameBookActived()'>Marcar Livro Como Lido</a></div><br><br>")
 }
 else
 {
-  document.write("<div align='center'><a href='../' onclick='setLivroStatus0()'>Desmarcar Livro Como Lido</a></div><br><br")
+  document.write("<div align='center'><a href='../' onclick='setLivroStatus0();removeNameBookActived()'>Desmarcar Livro Como Lido</a></div><br><br")
 }
 
 console.log(localStorage.getItem(livroStatus))

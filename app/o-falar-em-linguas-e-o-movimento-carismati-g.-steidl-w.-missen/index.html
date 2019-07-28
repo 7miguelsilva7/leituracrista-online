@@ -35,8 +35,8 @@ Capítulo 1 - Línguas&hellip; força espiritual, força satânica ou o quê? Es
   <title>O Falar em Línguas e o Movimento Carismático</title>
   <link rel="canonical" href="https://leituracrista.com/app/o-falar-em-linguas-e-o-movimento-carismati-g.-steidl-w.-missen/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564280836">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564280836">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564281239">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564281239">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -433,11 +433,11 @@ function setLivroStatus1()
 
 if (localStorage.getItem(livroStatus) == 0)
 {
-  document.write("<div align='center'><a href='../' onclick='setLivroStatus1()'>Marcar Livro Como Lido</a></div><br><br>")
+  document.write("<div align='center'><a href='../' onclick='setLivroStatus1();removeNameBookActived()'>Marcar Livro Como Lido</a></div><br><br>")
 }
 else
 {
-  document.write("<div align='center'><a href='../' onclick='setLivroStatus0()'>Desmarcar Livro Como Lido</a></div><br><br")
+  document.write("<div align='center'><a href='../' onclick='setLivroStatus0();removeNameBookActived()'>Desmarcar Livro Como Lido</a></div><br><br")
 }
 
 console.log(localStorage.getItem(livroStatus))
