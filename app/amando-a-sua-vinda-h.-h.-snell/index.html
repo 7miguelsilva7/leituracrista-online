@@ -35,8 +35,8 @@ Quem são os que amam a Sua vinda? Estes não terão só uma &quot;coroa da vida
   <title>Amando A Sua Vinda</title>
   <link rel="canonical" href="https://leituracrista.com/app/amando-a-sua-vinda-h.-h.-snell/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564263547">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564263547">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564280274">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564280274">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -44,7 +44,7 @@ Quem são os que amam a Sua vinda? Estes não terão só uma &quot;coroa da vida
 
 </head>
 
-<body onscroll="onscrolling()">
+<body onscroll="onscrolling()" onload="saveBookActived()">
 
 <section class="article">
   <article>
@@ -140,8 +140,8 @@ Quem são os que amam a Sua vinda? Estes não terão só uma &quot;coroa da vida
   
 </a>
 
-<a style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
-  <img style="width:100px"  src="../img/voltar.png" alt="Voltar">
+<a onclick="removeNameBookActived()" style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
+  <img style="width:100px;height: 30px"  src="../img/voltar.png" alt="Voltar">
   
 </a>
 
@@ -185,6 +185,17 @@ else
 
 console.log(localStorage.getItem(livroStatus))
 console.log(livroStatus)
+
+function saveBookActived()
+{
+  var NameBookActived = window.location.href;
+  localStorage.setItem('NameBookActivedKey', NameBookActived)
+  console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+function removeNameBookActived(){
+  localStorage.removeItem('NameBookActivedKey');
+}
 </script>
 
 

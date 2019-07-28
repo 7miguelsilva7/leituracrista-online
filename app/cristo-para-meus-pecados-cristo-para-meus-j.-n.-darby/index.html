@@ -38,8 +38,8 @@ Ele visitou os homens antes do dia do juízo, e nós O encontramos dando, e não
   <title>Cristo Para Meus Pecados, Cristo Para Meus Cuidados</title>
   <link rel="canonical" href="https://leituracrista.com/app/cristo-para-meus-pecados-cristo-para-meus-j.-n.-darby/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564263548">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564263548">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564280274">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564280274">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -47,7 +47,7 @@ Ele visitou os homens antes do dia do juízo, e nós O encontramos dando, e não
 
 </head>
 
-<body onscroll="onscrolling()">
+<body onscroll="onscrolling()" onload="saveBookActived()">
 
 <section class="article">
   <article>
@@ -201,8 +201,8 @@ Ele visitou os homens antes do dia do juízo, e nós O encontramos dando, e não
   
 </a>
 
-<a style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
-  <img style="width:100px"  src="../img/voltar.png" alt="Voltar">
+<a onclick="removeNameBookActived()" style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
+  <img style="width:100px;height: 30px"  src="../img/voltar.png" alt="Voltar">
   
 </a>
 
@@ -246,6 +246,17 @@ else
 
 console.log(localStorage.getItem(livroStatus))
 console.log(livroStatus)
+
+function saveBookActived()
+{
+  var NameBookActived = window.location.href;
+  localStorage.setItem('NameBookActivedKey', NameBookActived)
+  console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+function removeNameBookActived(){
+  localStorage.removeItem('NameBookActivedKey');
+}
 </script>
 
 

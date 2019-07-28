@@ -37,8 +37,8 @@ Talvez você tenha um lar em ordem, segundo os padrões humanos, mas lembre-se d
   <title>Como Educar a Criança?</title>
   <link rel="canonical" href="https://leituracrista.com/app/como-educar-a-crianca-j.-c.-ryle-j.-c.-ryle/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564263548">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564263548">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564280274">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564280274">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -46,7 +46,7 @@ Talvez você tenha um lar em ordem, segundo os padrões humanos, mas lembre-se d
 
 </head>
 
-<body onscroll="onscrolling()">
+<body onscroll="onscrolling()" onload="saveBookActived()">
 
 <section class="article">
   <article>
@@ -301,8 +301,8 @@ Talvez você tenha um lar em ordem, segundo os padrões humanos, mas lembre-se d
   
 </a>
 
-<a style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
-  <img style="width:100px"  src="../img/voltar.png" alt="Voltar">
+<a onclick="removeNameBookActived()" style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
+  <img style="width:100px;height: 30px"  src="../img/voltar.png" alt="Voltar">
   
 </a>
 
@@ -346,6 +346,17 @@ else
 
 console.log(localStorage.getItem(livroStatus))
 console.log(livroStatus)
+
+function saveBookActived()
+{
+  var NameBookActived = window.location.href;
+  localStorage.setItem('NameBookActivedKey', NameBookActived)
+  console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+function removeNameBookActived(){
+  localStorage.removeItem('NameBookActivedKey');
+}
 </script>
 
 
