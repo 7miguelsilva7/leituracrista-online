@@ -1,14 +1,14 @@
-var cacheName = '&&versaoreadinenglish/&&versao';
+var cacheName = '&&versaoleituraCristaApp-19-07-28-22:21:59&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(cacheName)
       .then(cache => cache.addAll([
-        '/app/readinenglish/',
-  '/app/readinenglish/index.html',
-  '/app/readinenglish/css/main.css',
-  '/app/readinenglish/css/normalize.css',
-  '/app/readinenglish/css/typo.css',
-  '/app/readinenglish/js/custom.js',
-  '/app/readinenglish/closeWindow.html',
+        '/app/',
+  '/app/index.html',
+  '/app/css/main.css',
+  '/app/css/normalize.css',
+  '/app/css/typo.css',
+  '/app/js/custom.js',
+  '/app/closeWindow.html',
   
