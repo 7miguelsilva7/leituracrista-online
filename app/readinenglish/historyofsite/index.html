@@ -34,8 +34,8 @@
   <title>History of &#34;True Stories&#34; Website</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/historyofsite/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564364626">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564364626">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564444928">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564444928">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -80,6 +80,8 @@ a {
     <iframe name="closeWindow" style="display:none"><iframe></iframe>
 
     
+ 
+
        <div style="padding: 20px 10px;background-color: rgb(201, 201, 201)" class="tableOfContent"> 
         <a href="#IniciarLeitura">Iniciar ></a>
         <hr>
@@ -188,6 +190,65 @@ function saveBookActived()
 function removeNameBookActivedreadinenglish(){
   localStorage.removeItem('NameBookActivedKeyreadinenglish');
 }
+
+
+
+
+
+var criarLink = t => `<a target="_blank" href="https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}">${t}</a>`
+
+var criarArrayDeLinks = e => e.textContent.split(' ').filter(i => i !== '' && i !== '\n').map(i => criarLink(i));
+
+function criarLinksEmElementos(pai) {
+  const tags = [];
+
+  if (pai.nodeType == 3 && pai.textContent.trim()) { 
+    tags.push(...criarArrayDeLinks(e));
+  } else {          
+    pai.childNodes
+       .forEach(
+          e => {         
+            if (e.nodeType == 3 && e.textContent.trim()) { 
+              tags.push(...criarArrayDeLinks(e));
+            } else {          
+              tags.push(criarLinksEmElementos(e).outerHTML);
+            }
+        });
+  }
+  
+  if (tags.length) {    
+    pai.innerHTML = tags.join(' ');    
+  }
+
+  return pai;  
+}
+
+function criarTextoClicavel(seletor) {  
+  const div = document.querySelector(seletor);
+  criarLinksEmElementos(div);
+}
+
+criarTextoClicavel('#texto-clicavel');
+
+// Contar Texto
+
+function countWords() {
+  var divContent = document.getElementsByClassName('content')[0].innerHTML
+  var divContentFreeHTML = divContent.replace(/((&nbsp;)|(<[^>]*>))+/g, '')
+  .replace(/(^\s*)|(\s*$)/gi,"")
+  .replace(/[ ]{2,}/gi," ")
+  .replace(/\n /,"\n")
+  .replace(/[0-9]/g, '')
+
+  .replace(/\s+/g, ' ')
+  .trim()
+  var matches = divContentFreeHTML.match(/[\w\d\’\'-]+/gi);
+  return matches ? matches.length : 0;
+  
+}
+
+document.write('<h3 align="center">Total de Palavras: '+ countWords() + '</h3></br></br>')
+
 </script>
 
 
