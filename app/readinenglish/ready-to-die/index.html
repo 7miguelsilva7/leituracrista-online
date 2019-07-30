@@ -34,8 +34,8 @@
   <title>Ready to Die</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/ready-to-die/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564500021">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564500021">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564509937">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564509937">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -188,18 +188,30 @@ function countWords() {
 
 document.write('<div align="center">Total de Palavras: '+ countWords() + '</div>')
 
-
-document.write("<div align=\"center\" >Palavras Consultadas: <span class=\"badge\"> 0 </span></div></p>")
+var statusCounterWordsKey = 'statusCounterWordsKey'.concat(window.location.href);
+document.write("<div id=\"cont_direito\" align=\"center\" >Palavras Consultadas: <span class=\"badge\">");
+  document.write(localStorage.getItem(statusCounterWordsKey));
+document.write("</span></div>");
 
 </script>
+
 
 <script>
       function countClicksWords()
       {
-      var contador = document.querySelector('.badge');
-      var numero = parseInt(contador.textContent) + 1;
-      contador.textContent = numero;
+      var statusCounterWordsKey = 'statusCounterWordsKey'.concat(window.location.href)
+
+      var contadorStatusCounterWordsKey = localStorage.getItem(statusCounterWordsKey) || 0;
+      numeroStatusCounterWordsKey = parseInt(contadorStatusCounterWordsKey) + 1;
+      localStorage.setItem(statusCounterWordsKey,numeroStatusCounterWordsKey);
+      console.log(localStorage.getItem(statusCounterWordsKey));
+      
+      var stringCounterWordsKey = 'Palavras Consultadas: '.concat(localStorage.getItem(statusCounterWordsKey));
+      $('#cont_direito').html(stringCounterWordsKey);
+
       }
+
+
 </script>
 
 <script>

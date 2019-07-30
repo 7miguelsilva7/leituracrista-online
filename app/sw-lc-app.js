@@ -1,4 +1,4 @@
-var cacheName = '&&versaoleituraCristaApp-19-07-30-09:56:18&&versao';
+var cacheName = '&&versaoleituraCristaApp-19-07-30-12:20:59&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
