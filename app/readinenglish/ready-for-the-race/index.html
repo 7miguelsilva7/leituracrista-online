@@ -34,8 +34,8 @@
   <title>Ready for The Race</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/ready-for-the-race/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564491448">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564491448">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564500021">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564500021">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -209,8 +209,6 @@ a {
     });
 
 
-
-
 function countWords() {
   var divContent = document.getElementsByClassName('content')[0].innerHTML
   var divContentFreeHTML = divContent.replace(/((&nbsp;)|(<[^>]*>))+/g, '')
@@ -226,9 +224,23 @@ function countWords() {
   
 }
 
-document.write('<div align="center"><h3 >Total de Palavras: '+ countWords() + '</h3></div></br></br>')
+document.write('<div align="center">Total de Palavras: '+ countWords() + '</div>')
 
 
+document.write("<div align=\"center\" >Palavras Consultadas: <span class=\"badge\"> 0 </span></div></p>")
+
+</script>
+
+<script>
+      function countClicksWords()
+      {
+      var contador = document.querySelector('.badge');
+      var numero = parseInt(contador.textContent) + 1;
+      contador.textContent = numero;
+      }
+</script>
+
+<script>
 
 var aStatus='Status'
 var bookNameStatusreadinenglish = document.getElementsByTagName("title")[0].innerHTML;
@@ -272,16 +284,13 @@ function removeNameBookActivedreadinenglish(){
 }
 
 
-
-
-
 str = document.getElementById('texto-clicavel').innerHTML;
 res = str.replace(/\"/g, "'");
 document.getElementById('texto-clicavel').innerHTML = res;
-teste=document.getElementById('texto-clicavel').innerHTML = res;
-console.log(teste)
 
-var criarLink = t => `<a target="_blank" href="https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}">${t}</a>`
+
+
+var criarLink = t => `<a target="_blank" onclick="countClicksWords()" href="https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}">${t}</a>`
 
 var criarArrayDeLinks = e => e.textContent.split(' ').filter(i => i !== '' && i !== '\n').map(i => criarLink(i));
 
@@ -315,7 +324,6 @@ function criarTextoClicavel(seletor) {
 }
 
 criarTextoClicavel('#texto-clicavel');
-
 </script>
 
 
