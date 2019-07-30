@@ -34,8 +34,8 @@
   <title>History of &#34;True Stories&#34; Website</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/historyofsite/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564513836">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564513836">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564514242">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564514242">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -176,7 +176,7 @@ document.write("<div id=\"performance\" align=\"center\" >Performance: <span cla
   var totalClicks = localStorage.getItem(statusCounterWordsKey)
   var totalWord = countWords()
   var resul
-  document.write((100 - totalClicks / totalWord * 100).toFixed(2));
+  document.write((100 - totalClicks / totalWord * 100).toFixed(2).concat('%'));
 document.write("</span></div>");
 
 </script>
@@ -200,7 +200,7 @@ document.write("</span></div>");
       var totalClicks = stringCounterWordsKey1
       var totalWord = countWords()
       var resul
-      var stringPerfomanceKey = 'Performance: '.concat((100 - (totalClicks / totalWord * 100)).toFixed(2));
+      var stringPerfomanceKey = 'Performance: '.concat((100 - (totalClicks / totalWord * 100)).toFixed(2).concat('%'));
       $('#performance').html(stringPerfomanceKey);
       }
 </script>
