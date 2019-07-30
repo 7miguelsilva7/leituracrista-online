@@ -34,8 +34,8 @@
   <title>History of &#34;True Stories&#34; Website</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/historyofsite/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564509937">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564509937">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564510441">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564510441">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -165,11 +165,14 @@ function countWords() {
   return matches ? matches.length : 0;
   
 }
-
 document.write('<div align="center">Total de Palavras: '+ countWords() + '</div>')
 
 var statusCounterWordsKey = 'statusCounterWordsKey'.concat(window.location.href);
 document.write("<div id=\"cont_direito\" align=\"center\" >Palavras Consultadas: <span class=\"badge\">");
+  document.write(localStorage.getItem(statusCounterWordsKey));
+document.write("</span></div>");
+
+document.write("<div id=\"cont_direito\" align=\"center\" >Aproveitamento: <span class=\"badge\">");
   document.write(localStorage.getItem(statusCounterWordsKey));
 document.write("</span></div>");
 
@@ -186,12 +189,10 @@ document.write("</span></div>");
       localStorage.setItem(statusCounterWordsKey,numeroStatusCounterWordsKey);
       console.log(localStorage.getItem(statusCounterWordsKey));
       
+      
       var stringCounterWordsKey = 'Palavras Consultadas: '.concat(localStorage.getItem(statusCounterWordsKey));
       $('#cont_direito').html(stringCounterWordsKey);
-
       }
-
-
 </script>
 
 <script>
