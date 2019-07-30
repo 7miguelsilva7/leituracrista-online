@@ -34,8 +34,8 @@
   <title>History of &#34;True Stories&#34; Website</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/historyofsite/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564449136">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564449136">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564449309">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564449309">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -148,6 +148,27 @@ a {
     $(document).ready(function() {
     $('.load').hide();
     });
+
+
+
+
+function countWords() {
+  var divContent = document.getElementsByClassName('content')[0].innerHTML
+  var divContentFreeHTML = divContent.replace(/((&nbsp;)|(<[^>]*>))+/g, '')
+  .replace(/(^\s*)|(\s*$)/gi,"")
+  .replace(/[ ]{2,}/gi," ")
+  .replace(/\n /,"\n")
+  .replace(/[0-9]/g, '')
+
+  .replace(/\s+/g, ' ')
+  .trim()
+  var matches = divContentFreeHTML.match(/[\w\d\’\'-]+/gi);
+  return matches ? matches.length : 0;
+  
+}
+
+document.write('<div align="center"><h3 >Total de Palavras: '+ countWords() + '</h3></div></br></br>')
+
 
 
 var aStatus='Status'
