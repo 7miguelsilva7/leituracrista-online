@@ -34,8 +34,8 @@
   <title>History of &#34;True Stories&#34; Website</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/historyofsite/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564485977">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564485977">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564491342">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564491342">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -217,6 +217,12 @@ function removeNameBookActivedreadinenglish(){
 
 
 
+str = document.getElementById('texto-clicavel').innerHTML;
+res = str.replace(/\"/g, "'");
+document.getElementById('texto-clicavel').innerHTML = res;
+teste=document.getElementById('texto-clicavel').innerHTML = res;
+console.log(teste)
+
 var criarLink = t => `<a target="_blank" href="https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}">${t}</a>`
 
 var criarArrayDeLinks = e => e.textContent.split(' ').filter(i => i !== '' && i !== '\n').map(i => criarLink(i));
@@ -251,6 +257,7 @@ function criarTextoClicavel(seletor) {
 }
 
 criarTextoClicavel('#texto-clicavel');
+
 </script>
 
 
