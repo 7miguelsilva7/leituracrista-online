@@ -33,8 +33,8 @@
   <title>Leitura Cristã</title>
   <link rel="canonical" href="https://leituracrista.com/app/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564451739">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564451739">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1564452449">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1564452449">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -42,7 +42,7 @@
   
 
 
-    <link rel='manifest' href='manifest.json'>
+    <link rel='manifest' href='https://leituracrista.com/app/app/manifest.json'>
 
 <script>
 
@@ -1735,7 +1735,7 @@ let newWorker;
     newWorker.postMessage({ action: 'skipWaiting' });
   });
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then(reg => {
+    navigator.serviceWorker.register('/app/sw.js').then(reg => {
       reg.addEventListener('updatefound', () => {
         
         newWorker = reg.installing;
