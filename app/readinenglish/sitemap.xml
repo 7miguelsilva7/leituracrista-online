@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leituracrista.com/app/readinenglish/a-stealthy-attack-from-a-hidden-enemy/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/readinenglish/book/</loc>
     <priority>0</priority>
   </url>
@@ -10,6 +14,10 @@
   <url>
     <loc>https://leituracrista.com/app/readinenglish/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/readinenglish/his-last-chance/</loc>
   </url>
   
   <url>
