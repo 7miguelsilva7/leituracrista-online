@@ -34,8 +34,8 @@
   <title>Ready for The Race</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/ready-for-the-race/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564588645">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564588645">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564607407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564607407">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -263,7 +263,7 @@ document.write("</span></div>");
       {
       var statusCounterWordsKey = 'statusCounterWordsKey'.concat(window.location.href)
 
-      var contadorStatusCounterWordsKey = localStorage.getItem(statusCounterWordsKey) || 0;
+      var contadorStatusCounterWordsKey = localStorage.getItem(statusCounterWordsKey);
       numeroStatusCounterWordsKey = parseInt(contadorStatusCounterWordsKey) + 1;
       localStorage.setItem(statusCounterWordsKey,numeroStatusCounterWordsKey);
       console.log(localStorage.getItem(statusCounterWordsKey));
@@ -271,8 +271,10 @@ document.write("</span></div>");
       
       var stringCounterWordsKey1 = localStorage.getItem(statusCounterWordsKey);
       var stringCounterWordsKey2 = 'Checked Words: '.concat(stringCounterWordsKey1);
+
       $('#cont_direito').html(stringCounterWordsKey2);
 
+        
       var totalClicks = stringCounterWordsKey1
       var totalWord = countWords()
       var resul
@@ -307,11 +309,11 @@ function setLivroreadinenglishStatus1()
 
 if (localStorage.getItem(livroreadinenglishStatus) == 0)
 {
-  document.write("<div align='center'><a href='../' onclick='setLivroreadinenglishStatus1();removeNameBookActivedreadinenglish()'>Marcar Livro Como Lido</a></div><br><br>")
+  document.write("<div align='center'><a href='../' onclick='setLivroreadinenglishStatus1();removeNameBookActivedreadinenglish()'>Mark as <b>read</b> book</a></div><br><br>")
 }
 else
 {
-  document.write("<div align='center'><a href='../' onclick='setLivroreadinenglishStatus0();removeNameBookActivedreadinenglish()'>Desmarcar Livro Como Lido</a></div><br><br")
+  document.write("<div align='center'><a href='../' onclick='setLivroreadinenglishStatus0();removeNameBookActivedreadinenglish()'>Mark as <b>unread</b> Book</a></div><br><br")
 }
 
 console.log(localStorage.getItem(livroreadinenglishStatus))
