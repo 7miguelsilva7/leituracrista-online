@@ -34,8 +34,8 @@
   <title>History of &#34;True Stories&#34; Website</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/historyofsite/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564515511">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564515511">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564587932">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564587932">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -167,7 +167,10 @@ function countWords() {
 }
 document.write('<div align="center">Total Words: '+ countWords() + '</div>')
 
+
 var statusCounterWordsKey = 'statusCounterWordsKey'.concat(window.location.href);
+
+if(localStorage.hasOwnProperty(statusCounterWordsKey)){
 document.write("<div id=\"cont_direito\" align=\"center\" >Checked Words: <span class=\"badge\">");
   document.write(localStorage.getItem(statusCounterWordsKey));
 document.write("</span></div>");
@@ -178,6 +181,21 @@ document.write("<div id=\"performance\" align=\"center\" >Performance: <span cla
   var resul
   document.write((100 - totalClicks / totalWord * 100).toFixed(2).concat('%'));
 document.write("</span></div>");
+}else
+{
+
+localStorage.setItem(statusCounterWordsKey,0);
+document.write("<div id=\"cont_direito\" align=\"center\" >Checked Words: <span class=\"badge\">");
+  document.write(localStorage.getItem(statusCounterWordsKey));
+document.write("</span></div>");
+
+document.write("<div id=\"performance\" align=\"center\" >Performance: <span class=\"badge\">");
+  var totalClicks = localStorage.getItem(statusCounterWordsKey)
+  var totalWord = countWords()
+  var resul
+  document.write((100 - totalClicks / totalWord * 100).toFixed(2).concat('%'));
+document.write("</span></div>");
+};
 
 </script>
 
@@ -218,7 +236,8 @@ if (localStorage.getItem(livroreadinenglishStatus) === null) {
 
 function setLivroreadinenglishStatus0()
 {
-  localStorage.setItem(livroreadinenglishStatus, 0)
+  localStorage.setItem(livroreadinenglishStatus, 0);
+  var statusCounterWordsKey = 'statusCounterWordsKey'.concat(window.location.href);
   localStorage.setItem(statusCounterWordsKey, 0);
 
 
