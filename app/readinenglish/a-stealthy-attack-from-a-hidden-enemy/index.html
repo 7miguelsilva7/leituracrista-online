@@ -36,8 +36,8 @@ While we were eating the figs, one of the boys said to my uncle, &quot;We&#039;v
   <title>A stealthy attack from a hidden enemy</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/a-stealthy-attack-from-a-hidden-enemy/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564608904">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564608904">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564675698">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564675698">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -196,7 +196,7 @@ function countWords() {
 document.write('<div align="center">Total Words: '+ countWords() + '</div>')
 
 
-var statusCounterWordsKey = 'statusCounterWordsKey'.concat(window.location.href);
+var statusCounterWordsKey = 'statusCounterWordsKey'.concat(document.getElementsByTagName("title")[0].innerHTML);
 
 if(localStorage.hasOwnProperty(statusCounterWordsKey)){
 document.write("<div id=\"cont_direito\" align=\"center\" >Checked Words: <span class=\"badge\">");
@@ -231,7 +231,8 @@ document.write("</span></div>");
 <script>
       function countClicksWords()
       {
-      var statusCounterWordsKey = 'statusCounterWordsKey'.concat(window.location.href)
+
+      var statusCounterWordsKey = 'statusCounterWordsKey'.concat(document.getElementsByTagName("title")[0].innerHTML)
 
       var contadorStatusCounterWordsKey = localStorage.getItem(statusCounterWordsKey);
       numeroStatusCounterWordsKey = parseInt(contadorStatusCounterWordsKey) + 1;
@@ -267,7 +268,7 @@ if (localStorage.getItem(livroreadinenglishStatus) === null) {
 function setLivroreadinenglishStatus0()
 {
   localStorage.setItem(livroreadinenglishStatus, 0);
-  var statusCounterWordsKey = 'statusCounterWordsKey'.concat(window.location.href);
+  var statusCounterWordsKey = 'statusCounterWordsKey'.concat(document.getElementsByTagName("title")[0].innerHTML);
   localStorage.setItem(statusCounterWordsKey, 0);
 
 
