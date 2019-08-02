@@ -1,4 +1,4 @@
-var cacheName = '&&versaoreadinenglish19-08-01-13:17:16&&versao';
+var cacheName = '&&versaoreadinenglish19-08-01-22:25:02&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -14,9 +14,11 @@ self.addEventListener('install', event => {
   '/app/readinenglish/a-stealthy-attack-from-a-hidden-enemy/index.html',
 '/app/readinenglish/his-last-chance/index.html',
 '/app/readinenglish/historyofsite/index.html',
+'/app/readinenglish/new-york-world-trade-center-under-attack/index.html',
 '/app/readinenglish/ready-for-the-race/index.html',
 '/app/readinenglish/ready-to-die/index.html',
 '/app/readinenglish/the-jailbird-s-song/index.html',
+'/app/readinenglish/the-stairs/index.html',
 '/app/readinenglish/tsunami-the-picture-of-a-nightmare/index.html',
 ]))
   );
