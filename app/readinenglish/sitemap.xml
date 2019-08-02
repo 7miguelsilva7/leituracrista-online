@@ -25,6 +25,10 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/readinenglish/new-york-world-trade-center-under-attack/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/readinenglish/</loc>
     <priority>0</priority>
   </url>
@@ -48,6 +52,10 @@
   
   <url>
     <loc>https://leituracrista.com/app/readinenglish/the-jailbird-s-song/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/readinenglish/the-stairs/</loc>
   </url>
   
 </urlset>
