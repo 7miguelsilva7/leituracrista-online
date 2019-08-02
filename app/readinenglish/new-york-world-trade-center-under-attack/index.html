@@ -34,8 +34,8 @@
   <title>New York World Trade Center Under Attack</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/new-york-world-trade-center-under-attack/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564712139">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564712139">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564713241">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564713241">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -201,7 +201,13 @@ a.link.active { color:red; font-weight: bold;}
 
 
 function countWords() {
-var content = document.getElementById('texto-clicavel').innerText.replace(/,/g,'').toLowerCase()
+var content = document.getElementById('texto-clicavel').innerText
+.replace(/,/g,'')
+.replace(/[0-9]:[0-9]/g,'')
+.replace(/[0-9],[0-9]/g,'')
+.replace(/[0-9]\.[0-9]/g,'')
+.replace(/[0-9]/g,'')
+.toLowerCase()
 
 arr = content.split(' ')  
 
