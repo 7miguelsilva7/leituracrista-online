@@ -34,8 +34,8 @@
   <title>The Jailbird&#39;s Song</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/the-jailbird-s-song/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564676236">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564676236">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1564708216">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1564708216">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -66,9 +66,9 @@
 a {
   text-decoration: none;
   color: black;
-
 }
-a:active { color: #E2144A; background: #f00; }
+a, a:visited { color:black }
+a.link.active { color:red; font-weight: bold;}
 </style>
       <div class="load"> <img src="../img/loading-gif-transparent-10.gif" width="220" height="80"> </div>
     
@@ -235,21 +235,36 @@ a:active { color: #E2144A; background: #f00; }
     });
 
 
-function countWords() {
-  var divContent = document.getElementsByClassName('content')[0].innerHTML
-  var divContentFreeHTML = divContent.replace(/((&nbsp;)|(<[^>]*>))+/g, '')
-  .replace(/(^\s*)|(\s*$)/gi,"")
-  .replace(/[ ]{2,}/gi," ")
-  .replace(/\n /,"\n")
-  .replace(/[0-9]/g, '')
 
-  .replace(/\s+/g, ' ')
-  .trim()
-  var matches = divContentFreeHTML.match(/[\w\d\’\'-]+/gi);
-  return matches ? matches.length : 0;
+
+
+
+
+
+
+
+
+
+
+
   
+
+
+
+
+function countWords() {
+var content = document.getElementById('texto-clicavel').innerText.replace(/,/g,'').toLowerCase()
+
+arr = content.split(' ')  
+
+var novaArr = arr.filter((este, i) => arr.indexOf(este) === i);
+
+totalCountWords = novaArr.length
+return totalCountWords
+
 }
-document.write('<div align="center">Total Words: '+ countWords() + '</div>')
+
+document.write('<div align="center">Total Words: ' + countWords() + '</div>')
 
 
 var statusCounterWordsKey = 'statusCounterWordsKey'.concat(document.getElementsByTagName("title")[0].innerHTML);
@@ -336,11 +351,11 @@ function setLivroreadinenglishStatus1()
 
 if (localStorage.getItem(livroreadinenglishStatus) == 0)
 {
-  document.write("<div align='center'><a href='../' onclick='setLivroreadinenglishStatus1();removeNameBookActivedreadinenglish()'>Mark as <b>read</b> book</a></div><br><br>")
+  document.write("</br><div align='center'><button><a href='../' onclick='setLivroreadinenglishStatus1();removeNameBookActivedreadinenglish()'>Mark as <b  style='color:red;'>read</b> book</a></button></div><br><br>")
 }
 else
 {
-  document.write("<div align='center'><a href='../' onclick='setLivroreadinenglishStatus0();removeNameBookActivedreadinenglish()'>Mark as <b>unread</b> Book</a></div><br><br")
+  document.write("</br><div align='center'><button><a href='../' onclick='setLivroreadinenglishStatus0();removeNameBookActivedreadinenglish()'>Mark as <b style='color:red;'>unread</b> Book</a></button></div><br><br")
 }
 
 console.log(localStorage.getItem(livroreadinenglishStatus))
@@ -364,7 +379,7 @@ document.getElementById('texto-clicavel').innerHTML = res;
 
 
 
-var criarLink = t => `<a target="_blank" onclick="countClicksWords()" href="https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}">${t}</a>`
+var criarLink = t => `<a target="_blank" class="link" onclick="countClicksWords()" href="https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}">${t}</a>`
 
 var criarArrayDeLinks = e => e.textContent.split(' ').filter(i => i !== '' && i !== '\n').map(i => criarLink(i));
 
@@ -398,6 +413,15 @@ function criarTextoClicavel(seletor) {
 }
 
 criarTextoClicavel('#texto-clicavel');
+
+// muda cor e propridade da palavra clicada
+$(function() {
+   $('a.link').click(function() {
+       $('a.link').removeClass('active');
+       $(this).addClass('active');
+   });
+});
+
 </script>
 
 
