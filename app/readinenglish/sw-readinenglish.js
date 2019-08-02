@@ -1,4 +1,4 @@
-var cacheName = '&&versaoreadinenglish19-08-01-23:34:02&&versao';
+var cacheName = '&&versaoreadinenglish19-08-02-17:32:39&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -11,9 +11,11 @@ self.addEventListener('install', event => {
   '/app/readinenglish/css/typo.css',
   '/app/readinenglish/js/custom.js',
   '/app/readinenglish/closeWindow.html',
-  '/app/readinenglish/a-stealthy-attack-from-a-hidden-enemy/index.html',
+  '/app/readinenglish/a-home-higher-than-mountains/index.html',
+'/app/readinenglish/a-stealthy-attack-from-a-hidden-enemy/index.html',
 '/app/readinenglish/his-last-chance/index.html',
 '/app/readinenglish/historyofsite/index.html',
+'/app/readinenglish/my-last-chance/index.html',
 '/app/readinenglish/new-york-world-trade-center-under-attack/index.html',
 '/app/readinenglish/ready-for-the-race/index.html',
 '/app/readinenglish/ready-to-die/index.html',
