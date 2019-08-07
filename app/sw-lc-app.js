@@ -1,4 +1,4 @@
-var cacheName = '&&versaoleituraCristaApp-19-08-02-17:52:28&&versao';
+var cacheName = '&&versaoleituraCristaApp-19-08-07-06:40:48&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -11,7 +11,8 @@ self.addEventListener('install', event => {
   '/app/css/typo.css',
   '/app/js/custom.js',
   '/app/closeWindow.html',
-  '/app/a-autoridade-delegada-a-assembleia-r.-guillen/index.html',
+  '/app/1pedro-darby-mysword/index.html',
+'/app/a-autoridade-delegada-a-assembleia-r.-guillen/index.html',
 '/app/a-ceia-do-senhor-c.-h.-mackintosh/index.html',
 '/app/acontecimentos-profeticos-bruce-anstey/index.html',
 '/app/a-cruz-e-a-gloria-e-h-chater-e.-h.-chater/index.html',
