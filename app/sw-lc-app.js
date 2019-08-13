@@ -1,4 +1,4 @@
-var cacheName = '&&versaoleituraCristaApp-19-08-07-07:18:14&&versao';
+var cacheName = '&&versaoleituraCristaApp-19-08-12-22:27:42&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -263,5 +263,21 @@ self.addEventListener('fetch', function (event) {
         }
         return fetch(event.request);
       })
+  );
+});
+
+let staticCacheName = true
+
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (cacheName.startsWith('&&versaoleituraCristaApp') && staticCacheName !== cacheName) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
   );
 });
