@@ -1,4 +1,4 @@
-var cacheName = '&&versaoleituraCristaApp-19-08-13-01:41:49&&versao';
+var cacheName = '&&versaoleituraCristaApp-19-08-13-02:06:11&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -221,6 +221,7 @@ self.addEventListener('install', event => {
 '/app/respondi-volume-9-mario-persona/index.html',
 '/app/reuniao-de-oracao/index.html',
 '/app/santificacao-c.-h.-mackintosh-c.-h.-mackintosh/index.html',
+'/app/santificacao-c-h-mackintosh/index.html',
 '/app/seguir-a-cristo-j-n-darby-j.-n.-darby/index.html',
 '/app/seguranca-certeza-e-gozo-da-salvacao-etern-g.-cutting/index.html',
 '/app/seguranca-eterna/index.html',
