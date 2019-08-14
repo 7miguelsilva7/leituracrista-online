@@ -1,4 +1,4 @@
-var cacheName = '&&versaoreadinenglish19-08-13-09:30:53&&versao';
+var cacheName = '&&versaoreadinenglish19-08-14-17:50:21&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -13,6 +13,7 @@ self.addEventListener('install', event => {
   '/app/readinenglish/closeWindow.html',
   '/app/readinenglish/a-changed-life/index.html',
 '/app/readinenglish/a-home-higher-than-mountains/index.html',
+'/app/readinenglish/anchored/index.html',
 '/app/readinenglish/a-stealthy-attack-from-a-hidden-enemy/index.html',
 '/app/readinenglish/his-last-chance/index.html',
 '/app/readinenglish/historyofsite/index.html',
@@ -42,5 +43,22 @@ self.addEventListener('fetch', function (event) {
         }
         return fetch(event.request);
       })
+  );
+});
+
+
+let staticCacheName = true
+
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (cacheName.startsWith('&&versaoreadinenglish') && staticCacheName !== cacheName) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
   );
 });
