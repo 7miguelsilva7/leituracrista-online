@@ -45,8 +45,8 @@ Look your doubts and fears away." />
   <title>Christ Your Griefs Has Borne</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/christ-your-griefs-has-borne/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1566224935">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1566224935">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1566225132">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1566225132">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -317,7 +317,7 @@ document.getElementById('texto-clicavel').innerHTML = res;
 
 
 
-var criarLink = t => `<a target="_blank" class="link" onclick="window.open('https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}')">${t}</a>`
+var criarLink = t => `<a target="_blank" class="link" onclick="countClicksWords();window.open('https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}')">${t}</a>`
 
 var criarArrayDeLinks = e => e.textContent.split(' ').filter(i => i !== '' && i !== '\n').map(i => criarLink(i));
 
