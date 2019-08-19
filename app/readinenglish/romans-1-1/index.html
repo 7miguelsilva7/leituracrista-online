@@ -38,8 +38,8 @@ But Paul was called to be the unique Apostle to the Gentiles." />
   <title>Romans 1:1</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/romans-1-1/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1565888753">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1565888753">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1566224000">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1566224000">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -70,6 +70,7 @@ But Paul was called to be the unique Apostle to the Gentiles." />
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 a, a:visited { color:black }
 a.link.active { color:red;}
@@ -319,7 +320,7 @@ document.getElementById('texto-clicavel').innerHTML = res;
 
 
 
-var criarLink = t => `<a target="_blank" class="link" onclick="countClicksWords()" href="https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}">${t}</a>`
+var criarLink = t => `<a target="_blank" class="link" onclick="window.open('https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}','targetWindow','height=800, width=600, left='+(window.innerWidth-600)/2)">${t}</a>`
 
 var criarArrayDeLinks = e => e.textContent.split(' ').filter(i => i !== '' && i !== '\n').map(i => criarLink(i));
 
