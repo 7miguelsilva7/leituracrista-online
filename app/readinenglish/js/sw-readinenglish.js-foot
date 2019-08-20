@@ -8,17 +8,42 @@ self.addEventListener('message', function (event) {
   }
 });
 
-self.addEventListener('fetch', function (event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function (response) {
+//self.addEventListener('fetch', function (event) {
+//  event.respondWith(
+ //   caches.match(event.request)
+  //    .then(function (response) {
+   //     if (response) {
+    //      return response;
+     //   }
+     //   return fetch(event.request);
+    //  })
+ // );
+//});
+
+self.addEventListener('fetch', function(event) {
+    console.log('Fetch event for ', event.request.url);
+    event.respondWith(
+      caches.match(event.request).then(function(response) {
         if (response) {
+          console.log('Found ', event.request.url, ' in cache');
           return response;
         }
-        return fetch(event.request);
+        console.log('Network request for ', event.request.url);
+        return fetch(event.request).then(function(response) {
+          if (response.status === 404) {
+            return caches.match('./index.html');
+          }
+          return caches.open(CURRENT_CACHES.offline).then(function(cache) {
+           cache.put(event.request.url, response.clone());
+            return response;
+          });
+        });
+      }).catch(function(error) {
+        console.log('Error, ', error);
+        return caches.match('./index.html');
       })
-  );
-});
+    );
+  });
 
 
 let staticCacheName = true
