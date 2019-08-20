@@ -72,15 +72,14 @@ function createCacheBustedRequest(url) {
 }
 });
 
-self.addEventListener('activate', event => {
-  let expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
-    return CURRENT_CACHES[key];
-  });
+let staticCacheName = true
+
+self.addEventListener('activate', function(event) {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
+    caches.keys().then(function(cacheNames) {
       return Promise.all(
-        cacheNames.map(cacheName => {
-          if (expectedCacheNames.indexOf(cacheName) === -1) {
+        cacheNames.map(function(cacheName) {
+          if (cacheName.startsWith('&&versaoreadinenglish') && staticCacheName !== cacheName) {
             return caches.delete(cacheName);
           }
         })
