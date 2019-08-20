@@ -7,6 +7,8 @@ const OFFLINE_URL = [
   '/app/readinenglish/css/main.css',
   '/app/readinenglish/css/normalize.css',
   '/app/readinenglish/css/typo.css',
+  '/app/readinenglish/img/voltar.png',
+  '/app/readinenglish/img/up.png',
   '/app/readinenglish/js/custom.js',
   '/app/readinenglish/closeWindow.html',
   '/app/readinenglish/a-blessed-blunder/index.html',
