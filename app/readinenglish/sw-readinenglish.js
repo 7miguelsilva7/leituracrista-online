@@ -1,5 +1,5 @@
 let CURRENT_CACHES = {
-  offline: '&&versaoreadinenglish19-08-20-08:27:33&&versao'
+  offline: '&&versaoreadinenglish19-08-20-08:27:34&&versao'
 };
 const OFFLINE_URL = [
   '/app/readinenglish/',
