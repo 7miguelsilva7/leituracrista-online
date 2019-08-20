@@ -98,7 +98,7 @@ self.addEventListener('fetch', function(event) {
       console.log('Network request for ', event.request.url);
       return fetch(event.request).then(function(response) {
         if (response.status === 404) {
-          return caches.match('/app/readinenglish/index.html');
+          return caches.match('');
         }
         return caches.open(OFFLINE_URL).then(function(cache) {
          cache.put(event.request.url, response.clone());
