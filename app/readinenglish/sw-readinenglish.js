@@ -1,4 +1,4 @@
-var cacheName = '&&versaoreadinenglish19-08-20-09:53:49&&versao';
+var cacheName = '&&versaoreadinenglish19-08-20-10:07:07&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -41,6 +41,7 @@ self.addEventListener('install', event => {
 '/app/readinenglish/my-last-chance/index.html',
 '/app/readinenglish/never-perish/index.html',
 '/app/readinenglish/new-york-world-trade-center-under-attack/index.html',
+'/app/readinenglish/only-one-church/index.html',
 '/app/readinenglish/pull-me-up-janet/index.html',
 '/app/readinenglish/put-my-finger-there/index.html',
 '/app/readinenglish/ready-for-the-race/index.html',
@@ -63,42 +64,17 @@ self.addEventListener('message', function (event) {
   }
 });
 
-//self.addEventListener('fetch', function (event) {
-//  event.respondWith(
- //   caches.match(event.request)
-  //    .then(function (response) {
-   //     if (response) {
-    //      return response;
-     //   }
-     //   return fetch(event.request);
-    //  })
- // );
-//});
-
-self.addEventListener('fetch', function(event) {
-    console.log('Fetch event for ', event.request.url);
-    event.respondWith(
-      caches.match(event.request).then(function(response) {
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function (response) {
         if (response) {
-          console.log('Found ', event.request.url, ' in cache');
           return response;
         }
-        console.log('Network request for ', event.request.url);
-        return fetch(event.request).then(function(response) {
-          if (response.status === 404) {
-            return caches.match('./index.html');
-          }
-          return caches.open(CURRENT_CACHES.offline).then(function(cache) {
-           cache.put(event.request.url, response.clone());
-            return response;
-          });
-        });
-      }).catch(function(error) {
-        console.log('Error, ', error);
-        return caches.match('./index.html');
+        return fetch(event.request);
       })
-    );
-  });
+  );
+});
 
 
 let staticCacheName = true
