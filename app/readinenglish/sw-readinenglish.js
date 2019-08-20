@@ -1,16 +1,19 @@
-let CURRENT_CACHES = {
-  offline: '&&versaoreadinenglish19-08-20-08:27:666&&versao'
-};
-const OFFLINE_URL = [
+var cacheName = '&&versaoreadinenglish19-08-20-09:53:49&&versao';
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(cacheName)
+      .then(cache => cache.addAll([
   '/app/readinenglish/',
   '/app/readinenglish/index.html',
   '/app/readinenglish/css/main.css',
   '/app/readinenglish/css/normalize.css',
   '/app/readinenglish/css/typo.css',
+  '/app/readinenglish/js/custom.js',
   '/app/readinenglish/img/voltar.png',
   '/app/readinenglish/img/up.png',
-  '/app/readinenglish/js/custom.js',
   '/app/readinenglish/closeWindow.html',
+  
   '/app/readinenglish/a-blessed-blunder/index.html',
 '/app/readinenglish/a-changed-life/index.html',
 '/app/readinenglish/a-daring-challenge/index.html',
@@ -50,27 +53,53 @@ const OFFLINE_URL = [
 '/app/readinenglish/the-right-way/index.html',
 '/app/readinenglish/the-stairs/index.html',
 '/app/readinenglish/tsunami-the-picture-of-a-nightmare/index.html',
-];
-
-self.addEventListener('install', event => {
-  event.waitUntil(
-    fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
-      return caches.open(CURRENT_CACHES.offline).then(function(cache) {
-        return cache.put(OFFLINE_URL, response);
-      });
-    })
+]))
   );
-
-function createCacheBustedRequest(url) {
-  let request = new Request(url, {cache: 'reload'});
-  if ('cache' in request) {
-    return request;
-  }
-  let bustedUrl = new URL(url, self.location.href);
-  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
-  return new Request(bustedUrl);
-}
 });
+
+self.addEventListener('message', function (event) {
+  if (event.data.action === 'skipWaiting') {
+    self.skipWaiting();
+  }
+});
+
+//self.addEventListener('fetch', function (event) {
+//  event.respondWith(
+ //   caches.match(event.request)
+  //    .then(function (response) {
+   //     if (response) {
+    //      return response;
+     //   }
+     //   return fetch(event.request);
+    //  })
+ // );
+//});
+
+self.addEventListener('fetch', function(event) {
+    console.log('Fetch event for ', event.request.url);
+    event.respondWith(
+      caches.match(event.request).then(function(response) {
+        if (response) {
+          console.log('Found ', event.request.url, ' in cache');
+          return response;
+        }
+        console.log('Network request for ', event.request.url);
+        return fetch(event.request).then(function(response) {
+          if (response.status === 404) {
+            return caches.match('./index.html');
+          }
+          return caches.open(CURRENT_CACHES.offline).then(function(cache) {
+           cache.put(event.request.url, response.clone());
+            return response;
+          });
+        });
+      }).catch(function(error) {
+        console.log('Error, ', error);
+        return caches.match('./index.html');
+      })
+    );
+  });
+
 
 let staticCacheName = true
 
@@ -84,31 +113,6 @@ self.addEventListener('activate', function(event) {
           }
         })
       );
-    })
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  console.log('Fetch event for ', event.request.url);
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      if (response) {
-        console.log('Found ', event.request.url, ' in cache');
-        return response;
-      }
-      console.log('Network request for ', event.request.url);
-      return fetch(event.request).then(function(response) {
-        if (response.status === 404) {
-          return caches.match('');
-        }
-        return caches.open(OFFLINE_URL).then(function(cache) {
-         cache.put(event.request.url, response.clone());
-          return response;
-        });
-      });
-    }).catch(function(error) {
-      console.log('Error, ', error);
-      return caches.match('/app/readinenglish/index.html');
     })
   );
 });
