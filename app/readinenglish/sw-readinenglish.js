@@ -1,5 +1,5 @@
 let CURRENT_CACHES = {
-  offline: '&&versaoreadinenglish19-08-20-08:27:34&&versao'
+  offline: '&&versaoreadinenglish19-08-20-08:27:55&&versao'
 };
 const OFFLINE_URL = [
   '/app/readinenglish/',
@@ -87,12 +87,6 @@ self.addEventListener('activate', event => {
       );
     })
   );
-});
-
-self.addEventListener('message', function (event) {
-  if (event.data.action === 'skipWaiting') {
-    self.skipWaiting();
-  }
 });
 
 self.addEventListener('fetch', function(event) {
