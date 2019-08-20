@@ -89,6 +89,12 @@ self.addEventListener('activate', event => {
   );
 });
 
+self.addEventListener('message', function (event) {
+  if (event.data.action === 'skipWaiting') {
+    self.skipWaiting();
+  }
+});
+
 self.addEventListener('fetch', function(event) {
   console.log('Fetch event for ', event.request.url);
   event.respondWith(
