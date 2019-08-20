@@ -1,4 +1,4 @@
-var cacheName = '&&versaoreadinenglish19-08-20-10:23:12&&versao';
+var cacheName = '&&versaoreadinenglish19-08-20-11:09:08&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -29,6 +29,7 @@ self.addEventListener('install', event => {
 '/app/readinenglish/a-valiant-captain/index.html',
 '/app/readinenglish/between-two-slides/index.html',
 '/app/readinenglish/catptain-coutts-substitute/index.html',
+'/app/readinenglish/christ-is-coming/index.html',
 '/app/readinenglish/christ-your-griefs-has-borne/index.html',
 '/app/readinenglish/god-s-x-rays/index.html',
 '/app/readinenglish/his-last-chance/index.html',
@@ -38,6 +39,7 @@ self.addEventListener('install', event => {
 '/app/readinenglish/jesus-loves-me/index.html',
 '/app/readinenglish/just-lippen-to-jesus/index.html',
 '/app/readinenglish/just-take-it/index.html',
+'/app/readinenglish/let-your-bucket-down/index.html',
 '/app/readinenglish/my-last-chance/index.html',
 '/app/readinenglish/never-perish/index.html',
 '/app/readinenglish/new-york-world-trade-center-under-attack/index.html',
@@ -47,10 +49,14 @@ self.addEventListener('install', event => {
 '/app/readinenglish/ready-for-the-race/index.html',
 '/app/readinenglish/ready-to-die/index.html',
 '/app/readinenglish/romans-1-1/index.html',
+'/app/readinenglish/saved-by-a-sheep/index.html',
+'/app/readinenglish/sorry/index.html',
 '/app/readinenglish/the-book-seller/index.html',
+'/app/readinenglish/the-changed-word/index.html',
 '/app/readinenglish/the-doctor-s-discovery/index.html',
 '/app/readinenglish/the-jailbird-s-song/index.html',
 '/app/readinenglish/the-nurse-s-mistake/index.html',
+'/app/readinenglish/the-prodigal-son/index.html',
 '/app/readinenglish/the-right-way/index.html',
 '/app/readinenglish/the-stairs/index.html',
 '/app/readinenglish/tsunami-the-picture-of-a-nightmare/index.html',
