@@ -1,6 +1,8 @@
-var cacheName = '&&versaoreadinenglish19-08-19-23:24:23&&versao';
-
-var cacheFiles = [
+let CURRENT_CACHES = {
+  offline: '&&versaoreadinenglish19-08-19-23:24:23&&versao'
+};
+const OFFLINE_URL = 
+  [
   '/app/readinenglish/',
   '/app/readinenglish/index.html',
   '/app/readinenglish/css/main.css',
@@ -48,37 +50,53 @@ var cacheFiles = [
 '/app/readinenglish/the-stairs/index.html',
 '/app/readinenglish/tsunami-the-picture-of-a-nightmare/index.html',
 
-
 ];
 
-//Installing
-//Pre-cache App Shell
-self.addEventListener('install', function(event) {
-  console.log("From SW: Install Event");
-  self.skipWaiting();
+self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(cacheName)
-    .then(function(cache){
-      return cache.addAll(cacheFiles)
+    fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
+      return caches.open(CURRENT_CACHES.offline).then(function(cache) {
+        return cache.put(OFFLINE_URL, response);
+      });
+    })
+  );
+
+function createCacheBustedRequest(url) {
+  let request = new Request(url, {cache: 'reload'});
+  if ('cache' in request) {
+    return request;
+  }
+  let bustedUrl = new URL(url, self.location.href);
+  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
+  return new Request(bustedUrl);
+}
+});
+
+self.addEventListener('activate', event => {
+  let expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
+    return CURRENT_CACHES[key];
+  });
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (expectedCacheNames.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
     })
   );
 });
 
-//Activating
-//Clean up
-self.addEventListener('activate', function(event) {
-  console.log("From SW: Activate Event");
-  self.clients.claim();
-  event.waitUntil(
-    caches.keys()
-      .then(function(cacheKeys){
-        var deletePromises = [];
-        for(var i = 0; i < cacheKeys.length; i++){
-          if(cacheKeys[i] != cacheName){
-            deletePromises.push(caches.delete(cacheKeys[i]));
-          }
-        }
-        return Promise.all(deletePromises);
+self.addEventListener('fetch', event => {
+  if (event.request.mode === 'navigate' ||
+      (event.request.method === 'GET' &&
+       event.request.headers.get('accept').includes('text/html'))) {
+    event.respondWith(
+      fetch(event.request).catch(error => {
+        return caches.match(OFFLINE_URL);
       })
-  );
+    );
+  }
 });
