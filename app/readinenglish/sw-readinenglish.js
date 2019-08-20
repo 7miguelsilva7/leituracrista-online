@@ -1,11 +1,7 @@
-var cacheName = '&&versaoreadinenglish19-08-20-08:27:33&&versao';
-
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(cacheName)
-      .then(cache => cache.addAll([
-   '/',
-   '/app/',
+let CURRENT_CACHES = {
+  offline: '&&versaoreadinenglish19-08-20-08:27:33&&versao'
+};
+const OFFLINE_URL = [
   '/app/readinenglish/',
   '/app/readinenglish/index.html',
   '/app/readinenglish/css/main.css',
@@ -52,14 +48,43 @@ self.addEventListener('install', event => {
 '/app/readinenglish/the-right-way/index.html',
 '/app/readinenglish/the-stairs/index.html',
 '/app/readinenglish/tsunami-the-picture-of-a-nightmare/index.html',
-]))
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
+      return caches.open(CURRENT_CACHES.offline).then(function(cache) {
+        return cache.put(OFFLINE_URL, response);
+      });
+    })
   );
+
+function createCacheBustedRequest(url) {
+  let request = new Request(url, {cache: 'reload'});
+  if ('cache' in request) {
+    return request;
+  }
+  let bustedUrl = new URL(url, self.location.href);
+  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
+  return new Request(bustedUrl);
+}
 });
 
-self.addEventListener('message', function (event) {
-  if (event.data.action === 'skipWaiting') {
-    self.skipWaiting();
-  }
+self.addEventListener('activate', event => {
+  let expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
+    return CURRENT_CACHES[key];
+  });
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (expectedCacheNames.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
 });
 
 self.addEventListener('fetch', function(event) {
@@ -73,33 +98,16 @@ self.addEventListener('fetch', function(event) {
       console.log('Network request for ', event.request.url);
       return fetch(event.request).then(function(response) {
         if (response.status === 404) {
-          return caches.match('./');
+          return caches.match('/app/readinenglish/index.html');
         }
-        return caches.open(cached_urls).then(function(cache) {
+        return caches.open(OFFLINE_URL).then(function(cache) {
          cache.put(event.request.url, response.clone());
           return response;
         });
       });
     }).catch(function(error) {
       console.log('Error, ', error);
-      return caches.match('./');
-    })
-  );
-});
-
-
-let staticCacheName = true
-
-self.addEventListener('activate', function(event) {
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.map(function(cacheName) {
-          if (cacheName.startsWith('&&versaoreadinenglish') && staticCacheName !== cacheName) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
+      return caches.match('/app/readinenglish/index.html');
     })
   );
 });
