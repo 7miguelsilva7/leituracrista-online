@@ -1,4 +1,4 @@
-var cacheName = '&&versaoreadinenglish19-08-19-11:32:13&&versao';
+var cacheName = '&&versaoreadinenglish19-08-19-23:20:16&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -60,18 +60,40 @@ self.addEventListener('message', function (event) {
   }
 });
 
-self.addEventListener('fetch', function (event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function (response) {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
+//self.addEventListener('fetch', function (event) {
+//  event.respondWith(
+//    caches.match(event.request)
+//     .then(function (response) {
+//        if (response) {
+//          return response;
+//        }
+//        return fetch(event.request);
+//      })
+// );
+//});
+
+self.addEventListener('fetch', event => {
+  if (event.request.mode === 'navigate' ||
+      (event.request.method === 'GET' &&
+       event.request.headers.get('accept').includes('text/html'))) {
+    event.respondWith(
+      fetch(event.request).catch(error => {
+        return caches.match(cacheName);
       })
-  );
+    );
+  }
 });
 
+function createCacheBustedRequest(url) {
+  let request = new Request(url, {cache: 'reload'});
+  if ('cache' in request) {
+    return request;
+  }
+  let bustedUrl = new URL(url, self.location.href);
+  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
+  return new Request(bustedUrl);
+}
+});
 
 let staticCacheName = true
 
