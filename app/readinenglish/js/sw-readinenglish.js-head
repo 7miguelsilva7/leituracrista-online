@@ -1,4 +1,4 @@
-var cacheName = '&&versaoreadinenglish19-08-19-23:24:23&&versao';
+var cacheName = '&&versaoreadinenglish19-08-20-08:27:33&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -10,5 +10,8 @@ self.addEventListener('install', event => {
   '/app/readinenglish/css/normalize.css',
   '/app/readinenglish/css/typo.css',
   '/app/readinenglish/js/custom.js',
+  '/app/readinenglish/img/voltar.png',
+  '/app/readinenglish/img/up.png',
   '/app/readinenglish/closeWindow.html',
+  
   
