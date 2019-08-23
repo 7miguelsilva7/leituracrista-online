@@ -35,13 +35,23 @@ Albert spent twenty years ignoring God. However, he experienced many misgivings.
   <title>The Doctor’s Discovery</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/the-doctor-s-discovery/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1566311899">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1566311899">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1566567575">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1566567575">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
 
 
+
+<style>
+  .footer {
+     position: fixed;
+     bottom: 0;
+     color: white;
+     margin: auto;
+  padding: 10px;
+  }
+  </style>
 </head>
 
 <body onscroll="onscrolling()" onload="saveBookActived()">
@@ -80,14 +90,11 @@ a.link.active { color:red;}
       <h4>Bible Truth Publishers</h4>
       
     </header>
-    
+
     <iframe name="closeWindow" style="display:none"><iframe></iframe>
 
     
- 
-
-  
-       <div style="padding: 20px 10px;background-color: rgb(201, 201, 201)" class="tableOfContent"> 
+        <div style="padding: 20px 10px;background-color: rgb(201, 201, 201)" class="tableOfContent"> 
         <a href="#IniciarLeitura">Iniciar ></a>
         <hr>
         <nav id="TableOfContents">
@@ -286,11 +293,11 @@ function setLivroreadinenglishStatus1()
 
 if (localStorage.getItem(livroreadinenglishStatus) == 0)
 {
-  document.write("</br><div align='center'><button><a href='../' onclick='setLivroreadinenglishStatus1();removeNameBookActivedreadinenglish()'>Mark as <b  style='color:red;'>read</b> book</a></button></div><br><br>")
+  document.write("</br><div align='center'><button><a href='../' onclick='setLivroreadinenglishStatus1();removeNameBookActivedreadinenglish()'>Mark as <b  style='color:red;'>read</b> book</a></button></div></br></br></br><br><br>")
 }
 else
 {
-  document.write("</br><div align='center'><button><a href='../' onclick='setLivroreadinenglishStatus0();removeNameBookActivedreadinenglish()'>Mark as <b style='color:red;'>unread</b> Book</a></button></div><br><br")
+  document.write("</br><div align='center'><button><a href='../' onclick='setLivroreadinenglishStatus0();removeNameBookActivedreadinenglish()'>Mark as <b style='color:red;'>unread</b> Book</a></button></div></br></br></br><br><br")
 }
 
 console.log(localStorage.getItem(livroreadinenglishStatus))
@@ -362,5 +369,13 @@ $(function() {
 
 
 </body>
+
+<div align="center">
+    <audio class="footer" controls>
+      <source src="" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+</div>
+
 </html>
 
