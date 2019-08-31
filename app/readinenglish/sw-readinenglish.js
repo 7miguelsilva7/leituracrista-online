@@ -1,4 +1,4 @@
-var cacheName = '&&versaoreadinenglish19-08-26-13:56:02&&versao';
+var cacheName = '&&versaoreadinenglish19-08-30-22:22:10&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -31,6 +31,7 @@ self.addEventListener('install', event => {
 '/app/readinenglish/catptain-coutts-substitute/index.html',
 '/app/readinenglish/christ-is-coming/index.html',
 '/app/readinenglish/christ-your-griefs-has-borne/index.html',
+'/app/readinenglish/does-god-exist/index.html',
 '/app/readinenglish/god-s-x-rays/index.html',
 '/app/readinenglish/his-last-chance/index.html',
 '/app/readinenglish/historyofsite/index.html',
@@ -60,6 +61,8 @@ self.addEventListener('install', event => {
 '/app/readinenglish/the-right-way/index.html',
 '/app/readinenglish/the-stairs/index.html',
 '/app/readinenglish/tsunami-the-picture-of-a-nightmare/index.html',
+'/app/readinenglish/what-is-the-bible-in-basic-english-bbe/index.html',
+'/app/readinenglish/who-is-jesus-christ/index.html',
 ]))
   );
 });
