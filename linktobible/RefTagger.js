@@ -7,8 +7,6 @@
 
 
 
-
-
 // var str = document.getElementsByTagName('body')[0].innerHTML
 // res = str
 // // .replace(/https\:\/\/biblia.com\/bible\/esv/g, "https\:\/\/bibliaonline.com.br\/acf")
