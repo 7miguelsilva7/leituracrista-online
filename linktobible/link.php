@@ -222,7 +222,9 @@ res = str
 .replace(/Sf. ([0-9]{1,2})\:([0-9]{1,2})/g, "Zep $1:$2")
 .replace(/Tg. ([0-9]{1,2})\:([0-9]{1,2})/g, "Jas $1:$2")
 .replace(/Tt. ([0-9]{1,2})\:([0-9]{1,2})/g, "Tit $1:$2")
-.replace(/Zc. ([0-9]{1,2})\:([0-9]{1,2})/g, "Zec $1:$2")console.log(document.getElementsByTagName('body')[0].innerHTML = res);
+.replace(/Zc. ([0-9]{1,2})\:([0-9]{1,2})/g, "Zec $1:$2")
+
+console.log(document.getElementsByTagName('body')[0].innerHTML = res);
 </script>
 
 
