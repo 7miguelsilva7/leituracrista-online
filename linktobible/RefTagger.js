@@ -171,9 +171,7 @@ res = str
 .replace(/Tt. ([0-9]{1,2})\:([0-9]{1,2})/g, "Tit $1:$2")
 .replace(/Zc. ([0-9]{1,2})\:([0-9]{1,2})/g, "Zec $1:$2")
 
-document.getElementsByTagName('body')[0].innerHTML = res
-
-
+document.getElementsByTagName('body')[0].innerHTML = res;
 
 
 
