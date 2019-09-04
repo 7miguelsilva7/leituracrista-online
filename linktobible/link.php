@@ -63,7 +63,7 @@ document.getElemntById(divText) = res
 
 var str = document.getElementsByTagName('body')[0].innerHTML
 res = str
-.replace(/Job ([0-9]{1,2})/g, "Job $1")
+.replace(/Jó ([0-9]{1,2})/g, "Job $1")
 console.log(document.getElementsByTagName('body')[0].innerHTML = res);
 </script>
 
