@@ -40,7 +40,7 @@ echo nl2br($_POST["text"]);
 ?>
 </div>
 
-<script>
+<!-- <script>
 var str = document.getElementsByTagName('body')[0].innerHTML
 res = str
 .replace(/1 Co ([0-9]{1,2})\:([0-9]{1,2})/g, "1Co $1:$2")
@@ -215,7 +215,7 @@ res = str
 .replace(/Zc. ([0-9]{1,2})\:([0-9]{1,2})/g, "Zec $1:$2")
 
 document.getElementsByTagName('body')[0].innerHTML = res;
-</script>
+</script> -->
 
 <script>
  function copyDivToClipboard() {
