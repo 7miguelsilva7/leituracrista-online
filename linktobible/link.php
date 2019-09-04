@@ -35,11 +35,9 @@
 
 
 <div id="divText">
-<?
-textare = ($_POST["text"])
-?>
+
 <script>
-    document.write(<?echo nl2br(textare)?>)
+    document.write((<?echo nl2br($_POST["text"])?>)
 .replace(/1 Co ([0-9]{1,2})\:([0-9]{1,2})/g, "1Co $1:$2")
 .replace(/1 Cr ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ch $1:$2")
 .replace(/1 Jo ([0-9]{1,2})\:([0-9]{1,2})/g, "1Jn $1:$2")
@@ -210,6 +208,7 @@ textare = ($_POST["text"])
 .replace(/Tg. ([0-9]{1,2})\:([0-9]{1,2})/g, "Jas $1:$2")
 .replace(/Tt. ([0-9]{1,2})\:([0-9]{1,2})/g, "Tit $1:$2")
 .replace(/Zc. ([0-9]{1,2})\:([0-9]{1,2})/g, "Zec $1:$2")
+    )
 </script>
 <!-- echo nl2br($_POST["text"]); -->
 </div>
