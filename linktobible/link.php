@@ -241,15 +241,18 @@ Script externo
  	 	 var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; 
  	 	 g.src = '//api.reftagger.com/v2/RefTagger.js'; 
  	 	//  g.src = 'RefTagger.js'; 
- 	 	 s.parentNode.insertBefore(g, s); 
+           s.parentNode.insertBefore(g, s);
+           
+           var str = document.getElementsByTagName('body')[0].innerHTML
+res = str
+.replace(/<(.*?)data-reference="(.*?) ([0-9]{1,3})\.(.*?)"(.*?)<\/a>/g, "<font color='green'>$2_$3:$4</font>")
+document.getElementsByTagName('body')[0].innerHTML = res
+console.log(res) 
+
       }(document, 'script'));    
  </script>
 </body>
 
 <script>
-var str = document.getElementsByTagName('body')[0].innerHTML
-res = str
-.replace(/<(.*?)data-reference="(.*?) ([0-9]{1,3})\.(.*?)"(.*?)<\/a>/g, "<font color='green'>$2_$3:$4</font>")
-document.getElementsByTagName('body')[0].innerHTML = res
-console.log(res)  
+ 
 </script>
