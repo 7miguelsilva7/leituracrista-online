@@ -60,21 +60,14 @@ document.getElemntById(divText) = res
 
 
 <script>
-        var refTagger = {
-            settings: {
-                bibleVersion: "ESV",
-                dropShadow: false,			
-                roundCorners: true,
-                socialSharing: ["twitter","facebook"]
-            }
-        };
-        (function(d, t) {
-            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            g.src = "RefTagger.js";
-            s.parentNode.insertBefore(g, s);
-        }(document, "script"));
-
-// var str = document.getElementsByTagName('body')[0].innerHTML
-// res = str.replace(/https/g, "")
-// document.getElementsByTagName('body')[0].innerHTML = res
-    </script> 
+ 	 var refTagger = {
+ 	 	 settings: { 
+ 	 	 	 bibleVersion: "ESV"   
+ 	 	 }  
+ 	 }; 
+ 	 (function(d, t) { 
+ 	 	 var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; 
+ 	 	 g.src = '//api.reftagger.com/v2/RefTagger.js'; 
+ 	 	 s.parentNode.insertBefore(g, s); 
+ 	 }(document, 'script')); 
+</script> 
