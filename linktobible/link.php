@@ -239,21 +239,8 @@ Script externo
  	 }; 
  	 (function(d, t) { 
  	 	 var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; 
- 	 	 g.src = '//api.reftagger.com/v2/RefTagger.js'; 
+ 	 	 g.src = 'RefTagger.js'; 
  	 	 s.parentNode.insertBefore(g, s); 
  	 }(document, 'script')); 
  </script>
 
-<script>
-var str = document.getElementsByTagName('body')[0].innerHTML
-res = str
-.replace(/rtBibleRef/g, "rtBibleRef link") //adiciona 'class link' para marcar link aberto 
-// .replace(/https\:\/\/biblia.com\/bible\/esv/g, "https\:\/\/bibliaonline.com.br\/acf")
-// .replace(/Luke%20([\d]{1,3}).|Luk%20([\d]{1,3})\./g, "lc/$1$2/")
-// .replace(/Matt%20([\d]{1,3}).|Mat%20([\d]{1,3})\./g, "mt/$1$2/")
-// .replace(/Mark%20([\d]{1,3}).|Mar%20([\d]{1,3})\./g, "mc/$1$2/")
-.replace(/(data-reference=")([0-9]{1,3}) /g, "$1$2")
-.replace(/<(.*?)data-reference="(.*?) ([0-9]{1,3})\.(.*?)"(.*?)<\/a>/g, "<font color='green'>$2_$3:$4</font>")
-document.getElementsByTagName('body')[0].innerHTML = res
-// console.log(res)
-</script>
