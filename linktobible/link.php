@@ -41,7 +41,7 @@ echo nl2br($_POST["text"]);
 </div>
 
 <script>
-var str = document.getElementsByClassName('text').innerHTML
+var str = document.getElementsByClassName('text')[0].innerHTML
 res = str
 .replace(/1 Co ([0-9]{1,2})\:([0-9]{1,2})/g, "1Co $1:$2")
 .replace(/1 Cr ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ch $1:$2")
