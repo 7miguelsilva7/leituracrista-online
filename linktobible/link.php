@@ -37,7 +37,7 @@
 <div id="divText">
 
 <script>
-    document.write((<?echo nl2br($_POST["text"])?>)
+    document.write(('<?echo nl2br($_POST["text"])?>')
 .replace(/1 Co ([0-9]{1,2})\:([0-9]{1,2})/g, "1Co $1:$2")
 .replace(/1 Cr ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ch $1:$2")
 .replace(/1 Jo ([0-9]{1,2})\:([0-9]{1,2})/g, "1Jn $1:$2")
