@@ -227,8 +227,9 @@ document.getElementsByTagName('body')[0].innerHTML = res;
                     window.getSelection().removeAllRanges();// to deselect
                     alert('Texto Copiado!')
                 }
-</script>    
-
+</script> 
+   
+</body>
 
 <script>
  	 var refTagger = {
