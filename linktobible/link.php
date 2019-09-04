@@ -40,31 +40,7 @@ echo nl2br($_POST["text"]);
 ?>
 </div>
 
-
-
-
-
-
-
-
-
 <script>
- function copyDivToClipboard() {
-                    var range = document.createRange();
-                    range.selectNode(document.getElementById("divText"));
-                    window.getSelection().removeAllRanges(); // clear current selection
-                    window.getSelection().addRange(range); // to select text
-                    document.execCommand("copy");
-                    window.getSelection().removeAllRanges();// to deselect
-                    alert('Texto Copiado!')
-                }
-</script>    
-
-
-
-<script>
-    function teste2(){
-
 var str = document.getElementsByTagName('body')[0].innerHTML
 res = str
 .replace(/1 Co ([0-9]{1,2})\:([0-9]{1,2})/g, "1Co $1:$2")
@@ -239,9 +215,22 @@ res = str
 .replace(/Zc. ([0-9]{1,2})\:([0-9]{1,2})/g, "Zec $1:$2")
 
 document.getElementsByTagName('body')[0].innerHTML = res;
-    }
+</script>
 
-function teste1(){
+<script>
+ function copyDivToClipboard() {
+                    var range = document.createRange();
+                    range.selectNode(document.getElementById("divText"));
+                    window.getSelection().removeAllRanges(); // clear current selection
+                    window.getSelection().addRange(range); // to select text
+                    document.execCommand("copy");
+                    window.getSelection().removeAllRanges();// to deselect
+                    alert('Texto Copiado!')
+                }
+</script>    
+
+
+<script>
  	 var refTagger = {
  	 	 settings: { 
  	 	 	 bibleVersion: "ESV"   
@@ -251,9 +240,5 @@ function teste1(){
  	 	 var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; 
  	 	 g.src = '//api.reftagger.com/v2/RefTagger.js'; 
  	 	 s.parentNode.insertBefore(g, s); 
-      }(document, 'script')); 
-    }
-
-    teste1;
-    teste2;
+ 	 }(document, 'script')); 
 </script> 
