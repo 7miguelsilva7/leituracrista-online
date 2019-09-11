@@ -27,15 +27,13 @@
 <p><p>
 <div style="float:right;">
 
-<button onclick="esword()">E-Sword</button>
+<button onclick="bibliaOnline()">From E-Sword To BibliaOn</button>
 
 <button class="btn btn-primary" onclick="copyDivToClipboard()">Copy text</button><p>
 </div>
 
 <?php
 ?>
-
-
 
 <div id="divText">
 <?
@@ -53,181 +51,6 @@ echo nl2br($_POST["text"]);
                     window.getSelection().removeAllRanges();// to deselect
                     alert('Texto Copiado!')
                 }
-
-var str = document.getElementsByTagName('body')[0].innerHTML
-res = str
-.replace(/1 Co ([0-9]{1,2})\:([0-9]{1,2})/g, "1Co $1:$2")
-.replace(/1 Cr ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ch $1:$2")
-.replace(/1 Jo ([0-9]{1,2})\:([0-9]{1,2})/g, "1Jn $1:$2")
-.replace(/1 Pe ([0-9]{1,2})\:([0-9]{1,2})/g, "1Pe $1:$2")
-.replace(/1 Rs ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ki $1:$2")
-.replace(/1 Sm ([0-9]{1,2})\:([0-9]{1,2})/g, "1Sa $1:$2")
-.replace(/1 Ts ([0-9]{1,2})\:([0-9]{1,2})/g, "1Th $1:$2")
-.replace(/1 Tm ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ti $1:$2")
-.replace(/1\nCo ([0-9]{1,2})\:([0-9]{1,2})/g, "1Co $1:$2")
-.replace(/1\nCr ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ch $1:$2")
-.replace(/1\nJo ([0-9]{1,2})\:([0-9]{1,2})/g, "1Jn $1:$2")
-.replace(/1\nPe ([0-9]{1,2})\:([0-9]{1,2})/g, "1Pe $1:$2")
-.replace(/1\nRs ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ki $1:$2")
-.replace(/1\nSm ([0-9]{1,2})\:([0-9]{1,2})/g, "1Sa $1:$2")
-.replace(/1\nTs ([0-9]{1,2})\:([0-9]{1,2})/g, "1Th $1:$2")
-.replace(/1\nTm ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ti $1:$2")
-.replace(/2 Co ([0-9]{1,2})\:([0-9]{1,2})/g, "2Co $1:$2")
-.replace(/2 Cr ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ch $1:$2")
-.replace(/2 Jo ([0-9]{1,2})\:([0-9]{1,2})/g, "2Jn $1:$2")
-.replace(/2 Pe ([0-9]{1,2})\:([0-9]{1,2})/g, "2Pe $1:$2")
-.replace(/2 Rs ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ki $1:$2")
-.replace(/2 Sm ([0-9]{1,2})\:([0-9]{1,2})/g, "2Sa $1:$2")
-.replace(/2 Ts ([0-9]{1,2})\:([0-9]{1,2})/g, "2Th $1:$2")
-.replace(/2 Tm ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ti $1:$2")
-.replace(/2\nCo ([0-9]{1,2})\:([0-9]{1,2})/g, "2Co $1:$2")
-.replace(/2\nCr ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ch $1:$2")
-.replace(/2\nJo ([0-9]{1,2})\:([0-9]{1,2})/g, "2Jn $1:$2")
-.replace(/2\nPe ([0-9]{1,2})\:([0-9]{1,2})/g, "2Pe $1:$2")
-.replace(/2\nRs ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ki $1:$2")
-.replace(/2\nSm ([0-9]{1,2})\:([0-9]{1,2})/g, "2Sa $1:$2")
-.replace(/2\nTs ([0-9]{1,2})\:([0-9]{1,2})/g, "2Th $1:$2")
-.replace(/2\nTm ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ti $1:$2")
-.replace(/3 Jo ([0-9]{1,2})\:([0-9]{1,2})/g, "3Jo $1:$2")
-.replace(/3\nJo ([0-9]{1,2})\:([0-9]{1,2})/g, "3Jn $1:$2")
-.replace(/Ag ([0-9]{1,2})\:([0-9]{1,2})/g, "Hag $1:$2")
-.replace(/Am ([0-9]{1,2})\:([0-9]{1,2})/g, "Amo $1:$2")
-.replace(/Ap ([0-9]{1,2})\:([0-9]{1,2})/g, "Rev $1:$2")
-.replace(/At ([0-9]{1,2})\:([0-9]{1,2})/g, "Act $1:$2")
-.replace(/Ct ([0-9]{1,2})\:([0-9]{1,2})/g, "Son $1:$2")
-.replace(/Cl ([0-9]{1,2})\:([0-9]{1,2})/g, "Col $1:$2")
-.replace(/Dn ([0-9]{1,2})\:([0-9]{1,2})/g, "Dan $1:$2")
-.replace(/Dt ([0-9]{1,2})\:([0-9]{1,2})/g, "Deu $1:$2")
-.replace(/Ec ([0-9]{1,2})\:([0-9]{1,2})/g, "Ecc $1:$2")
-.replace(/Ef ([0-9]{1,2})\:([0-9]{1,2})/g, "Eph $1:$2")
-.replace(/ed ([0-9]{1,2})\:([0-9]{1,2})/g, "Ezr $1:$2")
-.replace(/Et ([0-9]{1,2})\:([0-9]{1,2})/g, "Est $1:$2")
-.replace(/Ex ([0-9]{1,2})\:([0-9]{1,2})/g, "Exo $1:$2")
-.replace(/Ez ([0-9]{1,2})\:([0-9]{1,2})/g, "Eze $1:$2")
-.replace(/Fl ([0-9]{1,2})\:([0-9]{1,2})/g, "Phm $1:$2")
-.replace(/Fp ([0-9]{1,2})\:([0-9]{1,2})/g, "Php $1:$2")
-.replace(/Gl ([0-9]{1,2})\:([0-9]{1,2})/g, "Gal $1:$2")
-.replace(/Gn ([0-9]{1,2})\:([0-9]{1,2})/g, "Gen $1:$2")
-.replace(/Hc ([0-9]{1,2})\:([0-9]{1,2})/g, "Hab $1:$2")
-.replace(/Hb ([0-9]{1,2})\:([0-9]{1,2})/g, "Heb $1:$2")
-.replace(/Is ([0-9]{1,2})\:([0-9]{1,2})/g, "Isa $1:$2")
-.replace(/Jr ([0-9]{1,2})\:([0-9]{1,2})/g, "Jer $1:$2")
-.replace(/Jó ([0-9]{1,2})\:([0-9]{1,2})/g, "Job $1:$2")
-.replace(/Jo ([0-9]{1,2})\:([0-9]{1,2})/g, "Joh $1:$2")
-.replace(/Jl ([0-9]{1,2})\:([0-9]{1,2})/g, "Joe $1:$2")
-.replace(/Jn ([0-9]{1,2})\:([0-9]{1,2})/g, "Jon $1:$2")
-.replace(/js ([0-9]{1,2})\:([0-9]{1,2})/g, "Jos $1:$2")
-.replace(/Jd ([0-9]{1,2})\:([0-9]{1,2})/g, "Jud $1:$2")
-.replace(/Jz ([0-9]{1,2})\:([0-9]{1,2})/g, "Jdg $1:$2")
-.replace(/Lm ([0-9]{1,2})\:([0-9]{1,2})/g, "Lam $1:$2")
-.replace(/Lv ([0-9]{1,2})\:([0-9]{1,2})/g, "Lev $1:$2")
-.replace(/Lc ([0-9]{1,2})\:([0-9]{1,2})/g, "Luk $1:$2")
-.replace(/Ml ([0-9]{1,2})\:([0-9]{1,2})/g, "Mal $1:$2")
-.replace(/Mc ([0-9]{1,2})\:([0-9]{1,2})/g, "Mar $1:$2")
-.replace(/Mt ([0-9]{1,2})\:([0-9]{1,2})/g, "Mat $1:$2")
-.replace(/Mq ([0-9]{1,2})\:([0-9]{1,2})/g, "Mic $1:$2")
-.replace(/Na ([0-9]{1,2})\:([0-9]{1,2})/g, "Nah $1:$2")
-.replace(/Ne ([0-9]{1,2})\:([0-9]{1,2})/g, "Neh $1:$2")
-.replace(/Nm ([0-9]{1,2})\:([0-9]{1,2})/g, "Num $1:$2")
-.replace(/Ob ([0-9]{1,2})\:([0-9]{1,2})/g, "Oba $1:$2")
-.replace(/Os ([0-9]{1,2})\:([0-9]{1,2})/g, "Hos $1:$2")
-.replace(/Pv ([0-9]{1,2})\:([0-9]{1,2})/g, "Pro $1:$2")
-.replace(/Rm ([0-9]{1,2})\:([0-9]{1,2})/g, "Rom $1:$2")
-.replace(/Rt ([0-9]{1,2})\:([0-9]{1,2})/g, "Rth $1:$2")
-.replace(/Sl ([0-9]{1,2})\:([0-9]{1,2})/g, "Psa $1:$2")
-.replace(/Sl ([0-9]{1,2})\:([0-9]{1,2})/g, "Psa $1:$2")
-.replace(/Sf ([0-9]{1,2})\:([0-9]{1,2})/g, "Zep $1:$2")
-.replace(/Tg ([0-9]{1,2})\:([0-9]{1,2})/g, "Jas $1:$2")
-.replace(/Tt ([0-9]{1,2})\:([0-9]{1,2})/g, "Tit $1:$2")
-.replace(/Zc ([0-9]{1,2})\:([0-9]{1,2})/g, "Zec $1:$2")
-
-
-.replace(/1 Co\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Co $1:$2")
-.replace(/1 Cr\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ch $1:$2")
-.replace(/1 Jo\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Jn $1:$2")
-.replace(/1 Pe\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Pe $1:$2")
-.replace(/1 Rs\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ki $1:$2")
-.replace(/1 Sm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Sa $1:$2")
-.replace(/1 Ts\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Th $1:$2")
-.replace(/1 Tm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ti $1:$2")
-.replace(/1\nCo\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Co $1:$2")
-.replace(/1\nCr\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ch $1:$2")
-.replace(/1\nJo\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Jn $1:$2")
-.replace(/1\nPe\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Pe $1:$2")
-.replace(/1\nRs\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ki $1:$2")
-.replace(/1\nSm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Sa $1:$2")
-.replace(/1\nTs\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Th $1:$2")
-.replace(/1\nTm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "1Ti $1:$2")
-.replace(/2 Co\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Co $1:$2")
-.replace(/2 Cr\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ch $1:$2")
-.replace(/2 Jo\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Jn $1:$2")
-.replace(/2 Pe\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Pe $1:$2")
-.replace(/2 Rs\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ki $1:$2")
-.replace(/2 Sm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Sa $1:$2")
-.replace(/2 Ts\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Th $1:$2")
-.replace(/2 Tm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ti $1:$2")
-.replace(/2\nCo\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Co $1:$2")
-.replace(/2\nCr\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ch $1:$2")
-.replace(/2\nJo\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Jn $1:$2")
-.replace(/2\nPe\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Pe $1:$2")
-.replace(/2\nRs\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ki $1:$2")
-.replace(/2\nSm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Sa $1:$2")
-.replace(/2\nTs\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Th $1:$2")
-.replace(/2\nTm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "2Ti $1:$2")
-.replace(/3 Jo\. ([0-9]{1,2})\:([0-9]{1,2})/g, "3Jo $1:$2")
-.replace(/3\nJo\. ([0-9]{1,2})\:([0-9]{1,2})/g, "3Jn $1:$2")
-.replace(/Ag\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Hag $1:$2")
-.replace(/Am\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Amo $1:$2")
-.replace(/Ap\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Rev $1:$2")
-.replace(/At\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Act $1:$2")
-.replace(/Ct\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Son $1:$2")
-.replace(/Cl\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Col $1:$2")
-.replace(/Dn\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Dan $1:$2")
-.replace(/Dt\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Deu $1:$2")
-.replace(/Ec\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Ecc $1:$2")
-.replace(/Ef\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Eph $1:$2")
-.replace(/ed\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Ezr $1:$2")
-.replace(/Et\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Est $1:$2")
-.replace(/Ex\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Exo $1:$2")
-.replace(/Ez\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Eze $1:$2")
-.replace(/Fl\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Phm $1:$2")
-.replace(/Fp\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Php $1:$2")
-.replace(/Gl\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Gal $1:$2")
-.replace(/Gn\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Gen $1:$2")
-.replace(/Hc\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Hab $1:$2")
-.replace(/Hb\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Heb $1:$2")
-.replace(/Is\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Isa $1:$2")
-.replace(/Jr\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Jer $1:$2")
-.replace(/Jó\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Job $1:$2")
-.replace(/Jo\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Joh $1:$2")
-.replace(/Jl\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Joe $1:$2")
-.replace(/Jn\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Jon $1:$2")
-.replace(/js\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Jos $1:$2")
-.replace(/Jd\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Jud $1:$2")
-.replace(/Jz\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Jdg $1:$2")
-.replace(/Lm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Lam $1:$2")
-.replace(/Lv\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Lev $1:$2")
-.replace(/Lc\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Luk $1:$2")
-.replace(/Ml\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Mal $1:$2")
-.replace(/Mc\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Mar $1:$2")
-.replace(/Mt\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Mat $1:$2")
-.replace(/Mq\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Mic $1:$2")
-.replace(/Na\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Nah $1:$2")
-.replace(/Ne\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Neh $1:$2")
-.replace(/Nm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Num $1:$2")
-.replace(/Ob\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Oba $1:$2")
-.replace(/Os\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Hos $1:$2")
-.replace(/Pv\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Pro $1:$2")
-.replace(/Rm\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Rom $1:$2")
-.replace(/Rt\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Rth $1:$2")
-.replace(/Sl\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Psa $1:$2")
-.replace(/Sl\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Psa $1:$2")
-.replace(/Sf\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Zep $1:$2")
-.replace(/Tg\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Jas $1:$2")
-.replace(/Tt\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Tit $1:$2")
-.replace(/Zc\. ([0-9]{1,2})\:([0-9]{1,2})/g, "Zec $1:$2")
-
-console.log(document.getElementsByTagName('body')[0].innerHTML = res);
 </script>
 
 <!-- 
@@ -242,20 +65,227 @@ Script externo
  	 }; 
  	 (function(d, t) { 
  	 	 var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; 
- 	 	 g.src = '//api.reftagger.com/v2/RefTagger.js'; 
- 	 	//  g.src = 'RefTagger.js'; 
+ 	 	//  g.src = '//api.reftagger.com/v2/RefTagger.js'; 
+ 	 	 g.src = 'RefTagger.js'; 
  	 	 s.parentNode.insertBefore(g, s); 
       }(document, 'script'));    
  </script>
 
-
 </body>
 
 <script>
-function esword(){
+
+var books = document.getElementsByTagName('body')[0].innerHTML;
+
+var mapObj = {
+
+'1co_':	'1Co ',
+'1ch_':	'1Ch ',
+'1jn_':	'1Jn ',
+'1pe_':	'1Pe ',
+'1ki_':	'1Ki ',
+'1sa_':	'1Sa ',
+'1th_':	'1Th ',
+'1ti_':	'1Ti ',
+'2co_':	'2Co ',
+'2ch_':	'2Ch ',
+'2jn_':	'2Jn ',
+'2pe_':	'2Pe ',
+'2ki_':	'2Ki ',
+'2sa_':	'2Sa ',
+'2th_':	'2Th ',
+'2ti_':	'2Ti ',
+'3jn_':	'3Jn ',
+'hag_':	'Hag ',
+'amo_':	'Amos ',
+'rev_':	'Rev ',
+'act_':	'Act ',
+'son_':	'Song ',
+'col_':	'Col ',
+'dan_':	'Dan ',
+'deu_':	'Deut ',
+'ecc_':	'Ecc ',
+'eph_':	'Eph ',
+'ezr_':	'Ezr ',
+'est_':	'Est ',
+'exo_':	'Exo ',
+'eze_':	'Eze ',
+'phm_':	'Phm ',
+'php_':	'Php ',
+'gal_':	'Gal ',
+'gen_':	'Gen ',
+'hab_':	'Hab ',
+'heb_':	'Heb ',
+'isa_':	'Isa ',
+'jer_':	'Jer ',
+'job_':	'Job ',
+'joh_':	'Joh ',
+'joe_':	'Joe ',
+'jon_':	'Jon ',
+'jos_':	'Jos ',
+'jud_':	'Jud ',
+'jdg_':	'Jdg ',
+'lam_':	'Lam ',
+'lev_':	'Lev ',
+'luk_':	'Luk ',
+'mal_':	'Mal ',
+'mar_':	'Mar ',
+'mat_':	'Mat ',
+'mic_':	'Mic ',
+'nah_':	'Nah ',
+'neh_':	'Neh ',
+'num_':	'Num ',
+'oba_':	'Obad ',
+'hos_':	'Hos ',
+'pro_':	'Pro ',
+'rom_':	'Rom ',
+'rth_':	'Rth ',
+'psa_':	'Psa ',
+'zep_':	'Zep ',
+'jas_':	'Jas ',
+'tit_':	'Tit ',
+'zec_':	'Zec ',
+};
+
+var re = new RegExp(Object.keys(mapObj).join("|"),"gi");
+res = books.replace(re, function(matched){
+  return mapObj[matched.toLowerCase()];
+});
+
+document.getElementsByTagName('body')[0].innerHTML = res
+</script>
+
+<script>
+function bibliaOnline(){
 var str = document.getElementsByTagName('body')[0].innerHTML
 res = str
-.replace(/<(.*?)data-reference="(.*?) ([0-9]{1,3})\.(.*?)"(.*?)<\/a>/g, "<font color='green'>$2_$3:$4</font>")
+.replace(/biblia.com\/bible\/esv\/1Co%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/1co/$1/")
+.replace(/biblia.com\/bible\/esv\/1Ch%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/1cr/$1/")
+.replace(/biblia.com\/bible\/esv\/1Jo%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/1jo/$1/")
+.replace(/biblia.com\/bible\/esv\/1Pe%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/1pe/$1/")
+.replace(/biblia.com\/bible\/esv\/1Ki%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/1rs/$1/")
+.replace(/biblia.com\/bible\/esv\/1Sa%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/1sm/$1/")
+.replace(/biblia.com\/bible\/esv\/1Th%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/1ts/$1/")
+.replace(/biblia.com\/bible\/esv\/1Ti%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/1tm/$1/")
+.replace(/biblia.com\/bible\/esv\/2Co%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/2co/$1/")
+.replace(/biblia.com\/bible\/esv\/2Ch%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/2cr/$1/")
+.replace(/biblia.com\/bible\/esv\/2Jo%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/2jo/$1/")
+.replace(/biblia.com\/bible\/esv\/2Pe%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/2pe/$1/")
+.replace(/biblia.com\/bible\/esv\/2Ki%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/2rs/$1/")
+.replace(/biblia.com\/bible\/esv\/2Sa%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/2sm/$1/")
+.replace(/biblia.com\/bible\/esv\/2Th%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/2ts/$1/")
+.replace(/biblia.com\/bible\/esv\/2Ti%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/2tm/$1/")
+.replace(/biblia.com\/bible\/esv\/3Jo%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/3jo/$1/")
+.replace(/biblia.com\/bible\/esv\/Hag%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ag/$1/")
+.replace(/biblia.com\/bible\/esv\/Amo%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/am/$1/")
+.replace(/biblia.com\/bible\/esv\/Rev%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ap/$1/")
+.replace(/biblia.com\/bible\/esv\/Act%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/atos/$1/")
+.replace(/biblia.com\/bible\/esv\/Son%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ct/$1/")
+.replace(/biblia.com\/bible\/esv\/Col%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/cl/$1/")
+.replace(/biblia.com\/bible\/esv\/Dan%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/dn/$1/")
+.replace(/biblia.com\/bible\/esv\/Deu%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/dt/$1/")
+.replace(/biblia.com\/bible\/esv\/Ecc%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ec/$1/")
+.replace(/biblia.com\/bible\/esv\/Eph%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ef/$1/")
+.replace(/biblia.com\/bible\/esv\/Ezr%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ed/$1/")
+.replace(/biblia.com\/bible\/esv\/Est%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/et/$1/")
+.replace(/biblia.com\/bible\/esv\/Exo%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ex/$1/")
+.replace(/biblia.com\/bible\/esv\/Eze%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ez/$1/")
+.replace(/biblia.com\/bible\/esv\/Phm%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/fm/$1/")
+.replace(/biblia.com\/bible\/esv\/Php%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/fp/$1/")
+.replace(/biblia.com\/bible\/esv\/Gal%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/gl/$1/")
+.replace(/biblia.com\/bible\/esv\/Gen%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/gn/$1/")
+.replace(/biblia.com\/bible\/esv\/Hab%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/hc/$1/")
+.replace(/biblia.com\/bible\/esv\/Heb%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/hb/$1/")
+.replace(/biblia.com\/bible\/esv\/Isa%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/is/$1/")
+.replace(/biblia.com\/bible\/esv\/Jer%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/jr/$1/")
+.replace(/biblia.com\/bible\/esv\/Job%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/jó/$1/")
+.replace(/biblia.com\/bible\/esv\/Joh%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/jo/$1/")
+.replace(/biblia.com\/bible\/esv\/Joe%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/jl/$1/")
+.replace(/biblia.com\/bible\/esv\/Jon%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/jn/$1/")
+.replace(/biblia.com\/bible\/esv\/Jos%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/js/$1/")
+.replace(/biblia.com\/bible\/esv\/Jud%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/jd/$1/")
+.replace(/biblia.com\/bible\/esv\/Jdg%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/jz/$1/")
+.replace(/biblia.com\/bible\/esv\/Lam%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/lm/$1/")
+.replace(/biblia.com\/bible\/esv\/Lev%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/lv/$1/")
+.replace(/biblia.com\/bible\/esv\/Luk%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/lc/$1/")
+.replace(/biblia.com\/bible\/esv\/Mal%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ml/$1/")
+.replace(/biblia.com\/bible\/esv\/Mar%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/mc/$1/")
+.replace(/biblia.com\/bible\/esv\/Mat%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/mt/$1/")
+.replace(/biblia.com\/bible\/esv\/Mic%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/mq/$1/")
+.replace(/biblia.com\/bible\/esv\/Nah%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/na/$1/")
+.replace(/biblia.com\/bible\/esv\/Neh%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ne/$1/")
+.replace(/biblia.com\/bible\/esv\/Num%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/nm/$1/")
+.replace(/biblia.com\/bible\/esv\/Oba%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/ob/$1/")
+.replace(/biblia.com\/bible\/esv\/Hos%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/os/$1/")
+.replace(/biblia.com\/bible\/esv\/Pro%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/pv/$1/")
+.replace(/biblia.com\/bible\/esv\/Rom%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/rm/$1/")
+.replace(/biblia.com\/bible\/esv\/Rut%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/rt/$1/")
+.replace(/biblia.com\/bible\/esv\/Psa%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/sl/$1/")
+.replace(/biblia.com\/bible\/esv\/Zep%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/sf/$1/")
+.replace(/biblia.com\/bible\/esv\/Jam%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/tg/$1/")
+.replace(/biblia.com\/bible\/esv\/Tit%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/tt/$1/")
+.replace(/biblia.com\/bible\/esv\/Zec%20([0-9]{1,3})./g, "bibliaonline.com.br/acf/zc/$1/")
 document.getElementsByTagName('body')[0].innerHTML = res
-console.log(res)  }
+
+var books = document.getElementsByTagName('body')[0].innerHTML;
+
+var mapObj = {
+
+	'>1co ':	'>1 Co ',
+'>1ch ':	'>1 Cr ',
+'>1jn ':	'>1 Jo ',
+'>1pe ':	'>1 Pe ',
+'>1ki ':	'>1 Rs ',
+'>1sa ':	'>1 Sm ',
+'>1th ':	'>1 Ts ',
+'>1ti ':	'>1 Tm ',
+'>2co ':	'>2 Co ',
+'>2ch ':	'>2 Cr ',
+'>2jn ':	'>2 Jo ',
+'>2pe ':	'>2 Pe ',
+'>2ki ':	'>2 Rs ',
+'>2sa ':	'>2 Sm ',
+'>2th ':	'>2 Ts ',
+'>2ti ':	'>2 Tm ',
+'>3jn ':	'>3 Jo ',
+'>hag ':	'>Ag' ,
+'>amos ':	'>Amós ',
+'>rev ':	'>Apo ',
+'>act ':	'>Atos ',
+'>song ':	'>Ct ',
+'>ecc ':	'>Ec ',
+'>eph ':	'>Ef ',
+'>ezr ':	'>ed ',
+'>phm ':	'>Fl ',
+'>php ':	'>Fp ',
+'>job ':	'>Jó ',
+'>joh ':	'>Jo ',
+'>jdg ':	'>Jz ',
+'>lam ':	'>Lm ',
+'>lev ':	'>Lv ',
+'>luk ':	'>Lc ',
+'>mic ':	'>Mq ',
+'>nah ':	'>Na ',
+'>neh ':	'>Ne ',
+'>hos ':	'>Os ',
+'>pro ':	'>Pv ',
+'>rth ':	'>Rt ',
+'>psa ':	'>Sl ',
+'>zep ':	'>Sf ',
+'>jas ':	'>Tg ',
+'>zec ':	'>Zc ',
+
+
+};
+
+var re = new RegExp(Object.keys(mapObj).join("|"),"gi");
+res = books.replace(re, function(matched){
+  return mapObj[matched.toLowerCase()];
+});
+
+document.getElementsByTagName('body')[0].innerHTML = res 
+
+
+ }
+
 </script>
