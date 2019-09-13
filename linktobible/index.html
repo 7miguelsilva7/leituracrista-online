@@ -36,13 +36,17 @@
         min-width:40vw;
 	border:1px solid black; 
     }
+    
+    [contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
 </style>
 <body>
 <input type="button" onclick="toBibliaOn()" id="btnMoverConteudo" value="Linkar"/>
 <div class="container">
     <div  class="titulo">From E-Sword ToolTip to BibliaOnline</div>
     <div class="ctnFlex">
-       <div contenteditable="true" class="op1 conteudo"></div>
+       <div contenteditable="true" class="op1 conteudo" data-text="Enter text here"></div>
        <div id="receber_conteudo" class="op2 receber_conteudo"></div>
       
     </div>
@@ -135,7 +139,7 @@ res = toBibliaOn
 document.getElementById('receber_conteudo').innerHTML = res
 }
 </script>
-
+<!-- 
 <script> 
  	 var refTagger = {
  	 	 settings: { 
@@ -148,6 +152,6 @@ document.getElementById('receber_conteudo').innerHTML = res
  	 	 // g.src = 'RefTagger.js'; 
  	 	 s.parentNode.insertBefore(g, s); 
       }(document, 'script'));    
- </script>
+ </script> -->
 
 
