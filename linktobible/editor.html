@@ -35,11 +35,17 @@
 				<div style="float:right;">
 						<button  class="btn btn-success">Link Now</button><p>
 				</div>
-			<div>
+			<!-- <div>
 				<textarea name="text"  style="height:500px;width:100%;" placeholder="Escreva ou cole um texto aqui para linkar"></textarea>
-			</div>
+			</div> -->
 
-			
+				<style>
+				[contentEditable=true]:empty:not(:focus):after{
+						content:attr(data-text)
+					}
+				</style>
+				
+				<div name="text" contenteditable="true" style="border:1px solid black; height:90%" data-text="Enter text here"></div>
 		</form>
 
 
