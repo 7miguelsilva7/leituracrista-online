@@ -1,90 +1,97 @@
 
 <html>
-  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-  
-  
-  <style>
 
-
-
-  .container{
-    display: flex;
-    flex-direction: column;
-  }
-  .titulo {
-     font-size: 3vw;
-          background-color: #1111;
-          text-align: center;
-          padding: 3vw;
-          position: relative;
-  }
-  .ctnFlex{
-    display: flex;
-    justify-content: space-between;
-  }
-   div.op1 {
-          width: 50%;
-          background-color: white;
-          min-width:40vw;
-          border:1px solid black; 
-          padding: 0vw 1vw 0vw 1vw;
-          overflow:auto; 
+<head>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    
+    <meta charset="UTF-8">
   
   
-      }
+    <style>
   
-      div.op2 {
-          width: 50%;
-          background-color: white;
-          display: inline-block;
-          margin-right: 0vw;
-          padding: 0vw 1vw 5vw 1vw;
-          min-width:40vw;
-          overflow:auto; 
-          border:1px solid black; 
-          
-      }
   
-      [contentEditable=true]:empty:not(:focus):before{
-      content:attr(data-text)
-
-      
-  }
-  .divButton
-  {
-  left: 50%;
-  margin-left: -10px; /* A metade de sua largura. */
-  position: absolute;
-  width: 200px; /* O valor que você desejar. */
-  }
   
-@media print {
-  .noPrint
-  {
-    display:none
-  }}
-
-@media print {
-    div.receber_conteudo {
-        background-color: white;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin: 0;
-        padding: 15px;
-        font-size: 14px;
-        line-height: 18px;
-        border:0; 
-        z-index: 9999999;
+    .container{
+      display: flex;
+      flex-direction: column;
     }
-}
+    .titulo {
+       font-size: 3vw;
+            background-color: #1111;
+            text-align: center;
+            padding: 3vw;
+            position: relative;
+    }
+    .ctnFlex{
+      display: flex;
+      justify-content: space-between;
+    }
+     div.op1 {
+            width: 50%;
+            background-color: white;
+            min-width:40vw;
+            border:1px solid black; 
+            padding: 0vw 1vw 0vw 1vw;
+            overflow:auto; 
+    
+    
+        }
+    
+        div.op2 {
+            width: 50%;
+            background-color: white;
+            display: inline-block;
+            margin-right: 0vw;
+            padding: 0vw 1vw 5vw 1vw;
+            min-width:40vw;
+            overflow:auto; 
+            border:1px solid black; 
+            
+        }
+    
+        [contentEditable=true]:empty:not(:focus):before{
+        content:attr(data-text)
+  
+        
+    }
+    .divButton
+    {
+    left: 50%;
+    margin-left: -10px; /* A metade de sua largura. */
+    position: absolute;
+    width: 200px; /* O valor que você desejar. */
+    }
+    
+  @media print {
+    .noPrint
+    {
+      display:none
+    }}
+  
+  @media print {
+      div.receber_conteudo {
+          background-color: white;
+          height: 100%;
+          width: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          margin: 0;
+          padding: 15px;
+          font-size: 14px;
+          line-height: 18px;
+          border:0; 
+          z-index: 9999999;
+      }
+  }
+  
+  
+  
+  
+    </style>
 
-
-
-
-  </style>
+</head>
+  
   <body>
     <input type="button" onclick="toBibliaOn()" id="btnMoverConteudo" value="Link to BibliaOnline"/>
     <a href="#" ><input type="button" onclick="toMySword()" id="btnMoverConteudoMySword" value="Link to MySword"/></a>
