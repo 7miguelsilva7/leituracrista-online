@@ -27,7 +27,7 @@
       justify-content: space-between;
     }
      div.op1 {
-            width: 50%;
+            width: 100%;
             background-color: white;
             min-width:40vw;
             border:1px solid black; 
@@ -94,12 +94,16 @@
   
   <body>
     <input type="button" onclick="toBibliaOn()" id="btnMoverConteudo" value="Link to BibliaOnline"/>
+
     <a href="#" ><input type="button" onclick="toMySword()" id="btnMoverConteudoMySword" value="Link to MySword"/></a>
+
+    <!-- <input type="button" onclick="test()" value="Teste"/> -->
+
     <div class="container">
       <div  class="titulo">From e-Sword ToolTip to Bol/MyS</div>
       <div class="ctnFlex">
-         <div contenteditable="true" class="op1 conteudo noPrint" data-text="Enter text here"></div>
-         <div id="receber_conteudo" class="op2 receber_conteudo"></div>
+         <div id="conteudo" contenteditable="true" class="op1 conteudo noPrint" data-text="Enter text here"></div>
+         <!-- <div id="receber_conteudo" class="op2 receber_conteudo"></div> -->
         
       </div>
       
@@ -115,34 +119,34 @@
     
   
   <script>
-      $('#btnMoverConteudo').click(function(){
-      // limpa o valor de receber_conteudo
-      $('.receber_conteudo').html('');
-        // copia o conteÃºdo em .receber_conteudo
-      $('.receber_conteudo').append($('.conteudo').html());
-      $('.conteudo').html('');
+
+      // $('#btnMoverConteudo').click(function(){
+      // // // limpa o valor de receber_conteudo
+      // // $('.receber_conteudo').html('');
+      // //   // copia o conteÃºdo em .receber_conteudo
+      // // $('.receber_conteudo').append($('.conteudo').html());
+      // // $('.conteudo').html('');
 
   
-      toBibliaOn(); 																
-      });
+      // toBibliaOn(); 																
+      // });
 
-      $('#btnMoverConteudoMySword').click(function(){
-      // limpa o valor de receber_conteudo
-      $('.receber_conteudo').html('');
-        // copia o conteÃºdo em .receber_conteudo
-      $('.receber_conteudo').append($('.conteudo').html());
-      $('.conteudo').html('');
+      // $('#btnMoverConteudoMySword').click(function(){
+      // // // limpa o valor de receber_conteudo
+      // // $('.receber_conteudo').html('');
+      // //   // copia o conteÃºdo em .receber_conteudo
+      // // $('.receber_conteudo').append($('.conteudo').html());
+      // // $('.conteudo').html('');
   
-      toMySword(); 																
-      });
+      // toMySword(); 																
+      // });
   
   function toBibliaOn(){
   var siteBiblia = "https://bibliaonline.com.br"
   var version = "acf"
   
-  var toBibliaOn = document.getElementById('receber_conteudo').innerHTML
+  var toBibliaOn = document.getElementById('conteudo').innerHTML
   res = toBibliaOn
-  .replace(/1Ti_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1tm/$1/$2\">1 Tm $1:$2</a>")	
   .replace(/1Co_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1co/$1/$2\">1 Co $1:$2</a>")
   .replace(/1Ch_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1cr/$1/$2\">1 Cr $1:$2</a>")
   .replace(/1Jn_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1jo/$1/$2\">1 Jo $1:$2</a>")
@@ -211,7 +215,7 @@
   .replace(/Zec_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/zc/$1/$2\">Zc $1:$2</a>")
   
 
-  document.getElementById('receber_conteudo').innerHTML = res
+  document.getElementById('conteudo').innerHTML = res
 
   }
 
@@ -219,7 +223,7 @@
   var siteBiblia = "https://mysword.info/b/?r="
   var version = ""
   
-  var toBibliaOn = document.getElementById('receber_conteudo').innerHTML
+  var toBibliaOn = document.getElementById('conteudo').innerHTML
   res = toBibliaOn
   .replace(/(1Co_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Co $2:$3</a>")
   .replace(/(1Ch_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Cr $2:$3</a>")
@@ -288,7 +292,7 @@
   .replace(/(Tit_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Tt $2:$3</a>")
   .replace(/(Zec_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Zc $2:$3</a>")
   
-  document.getElementById('receber_conteudo').innerHTML = res
+  document.getElementById('conteudo').innerHTML = res
   }
   </script>
   
