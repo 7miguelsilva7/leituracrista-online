@@ -1,4 +1,4 @@
-var cacheName = '&&versaoreadinenglish19-09-21-23:44:18&&versao';
+var cacheName = '&&versaoreadinenglish19-09-22-00:04:31&&versao';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -62,6 +62,7 @@ self.addEventListener('install', event => {
 '/app/readinenglish/the-right-way/index.html',
 '/app/readinenglish/the-stairs/index.html',
 '/app/readinenglish/tsunami-the-picture-of-a-nightmare/index.html',
+'/app/readinenglish/what-does-the-bible-teach-about-the-trinity/index.html',
 '/app/readinenglish/what-is-the-bible-in-basic-english-bbe/index.html',
 '/app/readinenglish/what-is-trinitarianism/index.html',
 '/app/readinenglish/who-is-god/index.html',
