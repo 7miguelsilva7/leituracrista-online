@@ -97,9 +97,7 @@
 
     <a href="#" ><input type="button" onclick="toMySword()" id="btnMoverConteudoMySword" value="Link to MySword"/></a>
 
-      <input type="button" onclick="solveProblem()" id="solveProblem" value="Solve Problem Chapter Ref"/>
-
-        <!-- <input type="button" onclick="test()" value="Teste"/> -->
+    <!-- <input type="button" onclick="test()" value="Teste"/> -->
 
     <div class="container">
       <div  class="titulo">From e-Sword ToolTip to Bol/MyS</div>
@@ -295,21 +293,6 @@
   .replace(/(Zec_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Zc $2:$3</a>")
   
   document.getElementById('conteudo').innerHTML = res
-  }
-
-  function solveProblem(){
-  
-  var toBibliaOn = document.getElementById('conteudo').innerHTML
-  res = toBibliaOn
-  
-.replace(/\, ([0-9]{1,2})\:/g, "\; $1\:")
-.replace(/\,\n([0-9]{1,2})\:/g, "\; $1\:")
-.replace(/At ([0-9]{1,2})/g, "Atos $1")
-.replace(/At\n([0-9]{1,2})/g, "Atos $1")
-.replace(/Fl ([0-9]{1,2}):/g, "Fp $1:")
-
-  document.getElementById('conteudo').innerHTML = res
-
   }
   </script>
   
