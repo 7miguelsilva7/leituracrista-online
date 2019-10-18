@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 
-<a href="http://localhost/hinos_espanhol/"><button>Índice</button></a>
+<a href="/hinos_espanhol/"><button>Índice</button></a>
 
 <style>
 div.a {
