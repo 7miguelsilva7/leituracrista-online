@@ -52,8 +52,8 @@ $hino = $_GET['hino'];
  ,GROUP_CONCAT(`linha` SEPARATOR '<br>') as estrofe
  ,`refrao` 
  FROM `estrofes_espanhol` 
- group by estrofe, hino 
  where hino = $hino
+ group by estrofe, hino 
  ";  
  $stm = $PDO->prepare($sql);  
  $stm->execute();  
