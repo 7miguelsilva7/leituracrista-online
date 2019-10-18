@@ -47,9 +47,13 @@ $hino = $_GET['hino'];
   // hino
   require_once 'dbconnect.php';  
 
- $sql = "SELECT h.hino, linha, refrao FROM hinos_espanhol h
- inner join estrofes_espanhol e on e.hino=h.hino
- where h.hino = $hino
+ $sql = "SELECT `hino`
+ ,`estrofe` as estrofeid
+ ,GROUP_CONCAT(`linha` SEPARATOR '<br>') as estrofe
+ ,`refrao` 
+ FROM `estrofes_espanhol` 
+ group by estrofe, hino 
+ where hino = $hino
  ";  
  $stm = $PDO->prepare($sql);  
  $stm->execute();  
@@ -57,7 +61,7 @@ $hino = $_GET['hino'];
  foreach($dados as $reg):  
 
     if ($reg->refrao == 1){ echo '<i style="color:blue">' ;}
-    echo '<div class="c" align="center">' . $reg->linha . '</div>';
+    echo '<div class="c" align="center">' . $reg->estrofe . '</div><p>';
     if ($reg->refrao == 1){ echo '</i>' ;}
        
   endforeach;
