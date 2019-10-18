@@ -80,7 +80,7 @@ $hino = $_GET['hino'];
  foreach($dados as $reg):  
 
     if ($reg->refrao == 1){ echo '<i style="color:blue">' ;}
-    echo '<div class="c" align="center">' . $reg->estrofe . '</div><p>';
+    echo '<div class="c"  align="center" onclick="copyDivToClipboard()" >' . $reg->estrofe . '</div><p>';
     if ($reg->refrao == 1){ echo '</i>' ;}
        
   endforeach;
