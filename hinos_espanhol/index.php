@@ -1,4 +1,17 @@
 <meta charset="UTF-8">
+<style>
+
+a:link{
+text-decoration: none;
+}
+div
+{
+ font-size: 20px;
+ line-height: 1.9;
+}
+
+</style>
+<div align="left">
 <?php
 // titulo
   require_once 'dbconnect.php';  
@@ -7,7 +20,8 @@
  $stm->execute();  
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
  foreach($dados as $reg):  
-    echo '&nbsp;&nbsp;<a href="/hinos_espanhol/hino.php?hino=' . $reg->hino . '" style="font-size:16px"> ' . str_pad($reg->hino, 3, 0, STR_PAD_LEFT) . '&nbsp;&nbsp;</a>';   
+    echo '<a href="/hinos_espanhol/hino.php?hino=' . $reg->hino . '" style="font-size:16px"> ' . str_pad($reg->hino, 3, 0, STR_PAD_LEFT) . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
        
  endforeach;
   ?> 
+  </div >
