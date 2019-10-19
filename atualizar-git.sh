@@ -3,6 +3,7 @@
 cp -ur zap /opt/lampp/htdocs/leituracrista-online/
 cp -ur tests/ /opt/lampp/htdocs/leituracrista-online/
 cp -ur hinario/ /opt/lampp/htdocs/leituracrista-online/
+cp -ur hinos_espanhol /opt/lampp/htdocs/leituracrista-online/
 
 cp -ur img /opt/lampp/htdocs/leituracrista-online/
 cp -ur resetGit /opt/lampp/htdocs/leituracrista-online/
