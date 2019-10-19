@@ -22,7 +22,7 @@ div
  $stm->execute();  
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
  foreach($dados as $reg):  
-    echo '<a href="hino.php?hino=' . $reg->hino . '" style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp; ' . str_pad($reg->hino, 3, 0, STR_PAD_LEFT) . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
+    echo '<a href="hino.php?hino=' . $reg->hino . '" style="font-size:16px"> ' . str_pad($reg->hino, 3, 0, STR_PAD_LEFT) . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
        
  endforeach;
   ?> 
