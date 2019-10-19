@@ -62,7 +62,7 @@ $hino = $_GET['hino'];
  $stm->execute();  
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
  foreach($dados as $reg):  
-  echo '<div align="center"><span class="c" >' . str_pad($hino, 3, 0, STR_PAD_LEFT) . ' - <b>' . $reg->titulo . '</b></span> </div>';   
+  echo '<div align="center"><span class="c" >' . str_pad($hino, 3, 0, STR_PAD_LEFT) . '<br><b>' . $reg->titulo . '</b></span> </div>';   
   echo '<div align="center"><span class="b" >' . $reg->metrica;
    if ($reg->descricao==''){}else{ echo ' - ' . $reg->descricao;}
   echo '</span></div>';
