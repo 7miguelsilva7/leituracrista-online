@@ -18,7 +18,7 @@
 </head>
 
 
-<a href="/hinos_espanhol/"><button>Índice</button></a>
+<a href="../hinos_espanhol/"><button>Índice</button></a>
 
 <style>
 .alert-box {
