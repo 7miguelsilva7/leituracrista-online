@@ -83,6 +83,7 @@ $hino = $_GET['hino'];
  FROM `estrofes_espanhol` 
  where hino = $hino
  group by estrofe, hino 
+ order by estrofe
  ";  
  $stm = $PDO->prepare($sql);  
  $stm->execute();  
