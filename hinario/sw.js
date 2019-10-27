@@ -1,7 +1,7 @@
-let CURRENT_CACHES = {
+var CURRENT_CACHES = {
   offline: 'offlineHinario-v2'
 };
-const OFFLINE_URL = [
+var OFFLINE_URL = [
 '/hinario/',
 '/hinario/css/css.css',
 '/hinario/img/indice.png',
@@ -9,14 +9,16 @@ const OFFLINE_URL = [
 ]
 ;
 
-self.addEventListener('install', event => {
+self.addEventListener('install', function(event) {
+  // Perform install steps
   event.waitUntil(
-    fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
-      return caches.open(CURRENT_CACHES.offline).then(function(cache) {
-        return cache.addAll(OFFLINE_URL, response);
-      });
-    })
+    caches.open(CURRENT_CACHES)
+      .then(function(cache) {
+        console.log('Opened cache');
+        return cache.addAll(OFFLINE_URL);
+      })
   );
+});
 
 function createCacheBustedRequest(url) {
   let request = new Request(url, {cache: 'reload'});
