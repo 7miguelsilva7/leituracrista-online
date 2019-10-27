@@ -1,65 +1,65 @@
 body {
-    font-size: 20px;
+  font-size: 20px;
 
 }    
 
 input[type="checkbox"], input[type="checkbox"] + label {
-    cursor: pointer;
+  cursor: pointer;
 }  
 
 .naoSelecionavel {
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-    /* cursor: default; */
+  -webkit-touch-callout: none;  /* iPhone OS, Safari */
+  -webkit-user-select: none;    /* Chrome, Safari 3 */
+  -khtml-user-select: none;     /* Safari 2 */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* IE10+ */
+  user-select: none;            /* Possível implementação no futuro */
+  /* cursor: default; */
 }
 
 .filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 50px;
-  text-align: center;
-  margin: 2px;
-  display: none;
+float: left;
+background-color: #2196F3;
+color: #ffffff;
+width: 100px;
+line-height: 50px;
+text-align: center;
+margin: 2px;
+display: none;
 }
 
 .show {
-  display: block;
+display: block;
 }
 
 .container {
-  margin-top: 20px;
-  overflow: hidden;
+margin-top: 20px;
+overflow: hidden;
 }
 
 /* Style the buttons */
 .btn {
-  /* border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1; */
-  cursor: pointer;
+/* border: none;
+outline: none;
+padding: 12px 16px;
+background-color: #f1f1f1; */
+cursor: pointer;
 }
 /* 
 .btn:hover {
-  background-color: #ddd;
+background-color: #ddd;
 }
 
 .btn.active {
-  background-color: yellow;
-  color: white;
-  background: yellow;
+background-color: yellow;
+color: white;
+background: yellow;
 
 }
 
 .btn.focus {
-  background-color: yellow;
-  cursor: pointer;
+background-color: yellow;
+cursor: pointer;
 } */
 
 #button{
@@ -69,13 +69,13 @@ cursor: pointer;
 }
 
 /* p {
-  margin-top: 4pt;
-  margin-bottom: 4pt;
+margin-top: 4pt;
+margin-bottom: 4pt;
 }
 
 p {
-  -webkit-margin-before: 4pt;
-  -webkit-margin-after: 4pt;
+-webkit-margin-before: 4pt;
+-webkit-margin-after: 4pt;
 } */
 
 a{
@@ -86,16 +86,16 @@ text-decoration: none;
 }
 
 a:hover{
-color: red;
+/* color: rgb(252, 246, 246); */
 }
 
 a:focus {
-  background-color: yellow;
-  cursor: pointer;
+/* background-color: yellow; */
+cursor: pointer;
 }
 a:active {
-  background: yellow;
-  cursor: pointer;
+/* background: yellow; */
+cursor: pointer;
 }
 
 .cursos{
@@ -162,7 +162,62 @@ border-top:3px dashed #FFF
 }
 
 .div-em-colunas {
-    -webkit-column-count:2; /* Chrome, Safari, Opera */
-    -moz-column-count:2;    /* Firefox */
-    column-count:2;         /* padrão */
+  -webkit-column-count:2; /* Chrome, Safari, Opera */
+  -moz-column-count:2;    /* Firefox */
+  column-count:2;         /* padrão */
 }
+
+body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 80%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+        }
+        
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+
+        .add-button {
+          position: absolute;
+          top: 1px;
+          left: 1px;
+        }
+        
+        @media (orientation: landscape) {
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }        

@@ -1,8 +1,12 @@
 let CURRENT_CACHES = {
   offline: 'offlineHinario-v2'
 };
-const OFFLINE_URL = 
-       'index.html'
+const OFFLINE_URL = [
+'/hinario/index.html',
+'/hinario/css/css.css',
+'/hinario/img/indice.png',
+'/hinario/img/numero.png'
+]
 ;
 
 self.addEventListener('install', event => {
