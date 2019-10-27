@@ -1,7 +1,6 @@
 let CURRENT_CACHES = {
-  offline: 'offlineHinario-v2'
+  offline: 'offlineHinario-v3'
 };
-
 
 const OFFLINE_URL = '/hinario/index.html';
 
@@ -12,8 +11,7 @@ var OFFLINE_URLs = [
 '/hinario/img/numero.png'
 ];
 
-
-
+// configura página inicial ao recaregar a página em modo offline
   self.addEventListener('install', event => {
     event.waitUntil(
       fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
@@ -23,6 +21,7 @@ var OFFLINE_URLs = [
       })
     );
 
+    // instala todos arquivos do site indicados em OFLINE_URLs
   self.addEventListener('install', function(event) {
     // Perform install steps
     event.waitUntil(
