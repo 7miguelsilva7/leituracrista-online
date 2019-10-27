@@ -2,7 +2,7 @@ let CURRENT_CACHES = {
   offline: 'offlineHinario-v2'
 };
 const OFFLINE_URL = [
-'/hinario/index.html',
+'/hinario/',
 '/hinario/css/css.css',
 '/hinario/img/indice.png',
 '/hinario/img/numero.png'
