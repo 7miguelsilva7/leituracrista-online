@@ -1,24 +1,22 @@
-var CURRENT_CACHES = {
+let CURRENT_CACHES = {
   offline: 'offlineHinario-v2'
 };
 var OFFLINE_URL = [
-'/hinario/',
+'/hinario/index.html',
 '/hinario/css/css.css',
 '/hinario/img/indice.png',
 '/hinario/img/numero.png'
 ]
 ;
 
-self.addEventListener('install', function(event) {
-  // Perform install steps
+self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CURRENT_CACHES)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(OFFLINE_URL);
-      })
+    fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
+      return caches.open(CURRENT_CACHES.offline).then(function(cache) {
+        return cache.addAll(OFFLINE_URL, response);
+      });
+    })
   );
-});
 
 function createCacheBustedRequest(url) {
   let request = new Request(url, {cache: 'reload'});
