@@ -1,9 +1,9 @@
-<script src="https://edumais.com.br/js/sorttable.js"></script>
-<script language="JavaScript" type="text/javascript" src="https://edumais.com.br/cidades-estados-utf8.js"></script>
-<script src="https://edumais.com.br/js/jquery-2.1.1.min.js"></script>
+<script src="https://leituracrista.com.br/js/sorttable.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://leituracrista.com.br/cidades-estados-utf8.js"></script>
+<script src="https://leituracrista.com.br/js/jquery-2.1.1.min.js"></script>
 
 <!-- select 2 -->
-<link href="https://edumais.com.br/css/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="https://leituracrista.com.br/css/print.css" rel="stylesheet" type="text/css" media="print">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2-bootstrap.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
@@ -44,7 +44,7 @@ include_once 'db_connect.php';
   $nivel_necessario = 1;
     
   // Verifica se não há a variável da sessão que identifica o usuário
-if (!isset($_SESSION['UsuarioID']) OR ($_SESSION['UsuarioNivel'] <$nivel_necessario)) {
+if (!isset($_SESSION['UsuarioID']) OR ($_SESSION['UsuarioNivel'] < $nivel_necessario)) {
   // Destrói a sessão por segurança
       session_destroy();
   // Redireciona o visitante de volta pro login
@@ -303,4 +303,4 @@ foreach ($arr as &$valuedestino) {
   }
 </script>
 
-<script src="https://edumais.com.br/js/select2.min.js"></script>
+<script src="https://leituracrista.com.br/js/select2.min.js"></script>
