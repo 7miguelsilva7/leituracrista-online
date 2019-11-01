@@ -5,8 +5,8 @@
 <!-- select 2 -->
 <link href="https://edumais.com.br/css/print.css" rel="stylesheet" type="text/css" media="print">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.css" rel="stylesheet" type="text/css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2-bootstrap.css)" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600)" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2-bootstrap.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 <!-- End Select 2 -->
 
 <style>
