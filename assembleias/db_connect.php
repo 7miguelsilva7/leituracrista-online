@@ -1,10 +1,25 @@
 <?php
-$dbHost="localhost";
-$dbUserName="root";
-$dbPassword="";
-$dbName="assembleias";
 
-// // Create database connection
+$whitelist = array('127.0.0.1', "::1");
+
+if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+
+    $host= 'localhost';
+    $dbName= 'u378308740_db';
+    $dbPassword="gogo1352";
+    $dbUserName="u378308740_db";
+
+}else{
+    
+    // $host='sql112.main-hosting.eu';
+    // conexão LOCAL
+    $host='localhost';
+    $dbName='u378308740_db';
+    $dbPassword="gogo1352";
+    $dbUserName="u378308740_db";
+}
+
+// Create database connection
 $connMysqli = new mysqli($dbHost, $dbUserName, $dbPassword, $dbName);
 mysqli_set_charset($connMysqli,"utf8");
 
