@@ -10,13 +10,12 @@ include_once 'db_connect.php';
   $senha = $_POST['senha'];
     
   // Validação do usuário/senha digitados
-  $query_login = $connMysqli->query("SELECT `id`, `nome`, `nivel` FROM `usuarios` WHERE (`usuario` = '".$usuario ."') AND (`senha` = '". sha1($senha) ."') AND (`ativo` = 1) LIMIT 1");
+  $query_login = $connMysqli->query("SELECT `id`, `nome`, `nivel` FROM `assemb_usuarios` WHERE (`usuario` = '".$usuario ."') AND (`senha` = '". sha1($senha) ."') AND (`ativo` = 1) LIMIT 1");
   
   if($query_login->num_rows != 1){ 
     
     //   echo "Login inválido!"; exit;
       header("Location: index.php"); exit;
-
 
   } else {
       // Salva os dados encontados na variável $resultado

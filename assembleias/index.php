@@ -45,12 +45,12 @@ include_once 'db_connect.php';
   $nivel_necessario = 1;
     
   // Verifica se não há a variável da sessão que identifica o usuário
-  if (!isset($_SESSION['UsuarioID']) OR ($_SESSION['UsuarioNivel'] <$nivel_necessario)) {
-      // Destrói a sessão por segurança
+if (!isset($_SESSION['UsuarioID']) OR ($_SESSION['UsuarioNivel'] <$nivel_necessario)) {
+  // Destrói a sessão por segurança
       session_destroy();
-      // Redireciona o visitante de volta pro login
+  // Redireciona o visitante de volta pro login
       header("Location: login.php"); exit;
-  }
+}
 
 $i = 0;
 $arr = array(
@@ -189,13 +189,12 @@ $arr = array(
 // Verificar essas duas assembleis
 // ,'Laranjal do Jari AP'
 // ,'Macapá AP'
-
-
 ?>
+
 <br>
 
 <?php
-$query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `Municipio` m order by Nome");
+$query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m order by Nome");
 
 ?><div align="center">
 <form action="" method="GET">
@@ -261,8 +260,6 @@ foreach ($arr as &$valuedestino) {
         echo "<tr>
         <td>$i</td>  
         <td>Assembleia ou irmãos em <b>" . mb_strtoupper($resultados, 'UTF-8') .  "</b>:<td>" . '<span style="font-size:0.1px; color:white;">' .str_pad($distance['elements'][0]['distance']['value'] , 12 , '0' , STR_PAD_LEFT) . ' - </span>' . $distance['elements'][0]['distance']['text'] . '</td><td> ' . $distance['elements'][0]['duration']['text'] . ' no tráfego atual</td><td>asdf@gmail.com</td></tr>';
-
-
     }
 }
 ?>
