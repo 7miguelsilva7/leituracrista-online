@@ -32,5 +32,4 @@ include_once 'db_connect.php';
 
  // Redireciona o visitante
  header("Location: index.php"); exit;
-
-  ?>
+?>

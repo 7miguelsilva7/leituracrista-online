@@ -1,13 +1,11 @@
-<script src="http://edumais.com.br/js/sorttable.js"></script>
+<script src="https://edumais.com.br/js/sorttable.js"></script>
 <script language="JavaScript" type="text/javascript" src="http://edumais.com.br/cidades-estados-utf8.js"></script>
+<script src="https://edumais.com.br/js/jquery-2.1.1.min.js"></script>
 
 <!-- select 2 -->
-<script src="http://edumais.com.br/js/jquery-2.1.1.min.js"></script>
-<script src="http://edumais.com.br/js/select2.min.js"></script>
-
-<link href="http://edumais.com.br/css/print.css" rel="stylesheet" type="text/css" media="print">
-<link href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.css" rel="stylesheet" type="text/css">
-<link href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2-bootstrap.css)" rel="stylesheet" type="text/css">
+<link href="https://edumais.com.br/css/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2-bootstrap.css)" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600)" rel="stylesheet" type="text/css">
 <!-- End Select 2 -->
 <style>
@@ -265,8 +263,6 @@ foreach ($arr as &$valuedestino) {
 ?>
 <?};?>
 
-<script src="http://edumais.com.br/js/select2.js"></script>
-
 <!-- Distância entre duas Cidades -->
 <!-- http://maps.googleapis.com/maps/api/directions/json?origin=Juazeiro bahia&destination=Petrolina&alternatives=true&sensor=false&key=AIzaSyAGnaxoSR2PXck1Gy-Xy9WCFZCvpJYNFPU -->
 
@@ -305,3 +301,5 @@ foreach ($arr as &$valuedestino) {
     }
   }
 </script>
+
+<script src="https://edumais.com.br/js/select2.min.js"></script>
