@@ -1,5 +1,5 @@
 <script src="https://edumais.com.br/js/sorttable.js"></script>
-<script language="JavaScript" type="text/javascript" src="http://edumais.com.br/cidades-estados-utf8.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://edumais.com.br/cidades-estados-utf8.js"></script>
 <script src="https://edumais.com.br/js/jquery-2.1.1.min.js"></script>
 
 <!-- select 2 -->
@@ -8,6 +8,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2-bootstrap.css)" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600)" rel="stylesheet" type="text/css">
 <!-- End Select 2 -->
+
 <style>
 /* Sortable tables */
 table.sortable thead {
