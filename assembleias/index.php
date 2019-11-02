@@ -248,7 +248,7 @@ foreach ($arr as &$valuedestino) {
     $origin = str_replace(' ', '%20', $origin);
     $destino = str_replace(' ', '%20', $destino);
 
-    $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=$origin&destinations=$destino&mode=CAR&language=pt-BR&sensor=false&key=AIzaSyAGnaxoSR2PXck1Gy-Xy9WCFZCvpJYNFPU";
+    $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=$origin&destinations=$destino&mode=CAR&language=pt-BR&sensor=false&key=";
 
     $data = @file_get_contents($url);
 
