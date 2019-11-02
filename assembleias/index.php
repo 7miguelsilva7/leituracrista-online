@@ -1,9 +1,9 @@
-<script src="https://leituracrista.com.br/js/sorttable.js"></script>
-<script language="JavaScript" type="text/javascript" src="https://leituracrista.com.br/cidades-estados-utf8.js"></script>
-<script src="https://leituracrista.com.br/js/jquery-2.1.1.min.js"></script>
+<script src="sorttable.js"></script>
+<script language="JavaScript" type="text/javascript" src="cidades-estados-utf8.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
 
 <!-- select 2 -->
-<link href="https://leituracrista.com.br/css/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="print.css" rel="stylesheet" type="text/css" media="print">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2-bootstrap.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
@@ -165,7 +165,8 @@ $arr = array(
 ,'São José do Rio Preto SP'
 ,'São Luís de Montes Belos GO'
 ,'São Luís MA'
-,'São Paulo V. Mariana e Zona Leste SP'
+,'Vila Mariana, São Paulo SP'
+,'Patriarca, São Paulo SP'
 ,'Serrana SP'
 ,'Sertãozinho SP'
 ,'Sete Lagoas MG'
