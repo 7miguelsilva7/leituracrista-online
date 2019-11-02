@@ -304,4 +304,4 @@ foreach ($arr as &$valuedestino) {
   }
 </script>
 
-<script src="https://leituracrista.com.br/js/select2.min.js"></script>
+<script src="select2.min.js"></script>
