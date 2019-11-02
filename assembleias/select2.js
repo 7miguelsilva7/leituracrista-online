@@ -1,5 +1,5 @@
 //Select2
-$.getScript('https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.min.js',function(){
+$.getScript('select2.min.js',function(){
            
   /* dropdown and filter select */
   var select = $('#select1').select2();
