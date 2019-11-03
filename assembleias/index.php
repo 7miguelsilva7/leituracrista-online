@@ -198,7 +198,7 @@ $query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m or
 ?><div align="center">
 <form action="" method="GET">
 <!-- <select name="origem" id="select19" style="width:300px;"> -->
-<select name="origem" id="select19" required>
+<select name="origem" class="js-example-basic-single" required>
 <option value="">Por favor, selecione uma cidade</option>
 <?
 
@@ -298,4 +298,11 @@ foreach ($arr as &$valuedestino) {
       switching = true;
     }
   }
+</script>
+
+<script>
+// In your Javascript (external .js resource or <script> tag)
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
 </script>
