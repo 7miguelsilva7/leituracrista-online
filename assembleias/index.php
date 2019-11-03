@@ -1,11 +1,11 @@
-<script src="sorttable.js"></script>
+<script src="js/sorttable.js"></script>
 <!-- <script language="JavaScript" type="text/javascript" src="cidades-estados-utf8.js"></script>
 <script src="jquery-2.1.1.min.js"></script>
 <script src="select2.min.js"></script> -->
 
 <!-- select 2 -->
-<link href="select2.min.css" rel="stylesheet" />
-<script src="select2.min.js"></script>
+<link href="css/select2.min.css" rel="stylesheet" />
+<script src="js/select2.min.js"></script>
 <!-- End Select 2 -->
 
 <style>
