@@ -1,10 +1,9 @@
 <!-- <script language="JavaScript" type="text/javascript" src="cidades-estados-utf8.js"></script>
 <script src="select2.min.js"></script> -->
+<script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/sorttable.js"></script>
 
-
 <!-- select 2 -->
-<script src="js/jquery-2.1.1.min.js"></script>
 <link href="css/select2.min.css" rel="stylesheet" />
 <script src="js/select2.min.js"></script>
 <!-- End Select 2 -->
@@ -206,7 +205,9 @@ $query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m or
 if($query_cidade->num_rows > 0){ 
     while($row_cidade = $query_cidade->fetch_assoc()){ 
 
-echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . $row_cidade['Nome'] . ' - ' . $row_cidade['Uf'] .  '</option>';}}
+echo '
+  <option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . $row_cidade['Nome'] . ' - ' . $row_cidade['Uf'] .  '</option> 
+';}}
 ?>
 </select> 
 <p>
