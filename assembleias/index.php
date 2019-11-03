@@ -200,15 +200,13 @@ $query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m or
 <form action="" method="GET">
 <!-- <select name="origem" id="select19" style="width:300px;"> -->
 <select name="origem" class="js-example-basic-single" required>
-
-<? if ($_GET['origem'] == '') {echo '<option value="">Por favor, selecione uma cidade</option>';}else{echo $_GET['origem'];}?>
+<option value="">Por favor, selecione uma cidade</option>
+<?
 
 if($query_cidade->num_rows > 0){ 
     while($row_cidade = $query_cidade->fetch_assoc()){ 
 
-echo '
-  <option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . $row_cidade['Nome'] . ' - ' . $row_cidade['Uf'] .  '</option> 
-';}}
+echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . $row_cidade['Nome'] . ' - ' . $row_cidade['Uf'] .  '</option>';}}
 ?>
 </select> 
 <p>
