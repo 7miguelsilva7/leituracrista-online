@@ -1,13 +1,11 @@
 <script src="sorttable.js"></script>
-<script language="JavaScript" type="text/javascript" src="cidades-estados-utf8.js"></script>
+<!-- <script language="JavaScript" type="text/javascript" src="cidades-estados-utf8.js"></script>
 <script src="jquery-2.1.1.min.js"></script>
-<script src="select2.min.js"></script>
+<script src="select2.min.js"></script> -->
 
 <!-- select 2 -->
-<link href="print.css" rel="stylesheet" type="text/css" media="print">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.css" rel="stylesheet" type="text/css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2-bootstrap.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.11/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.11/js/select2.min.js"></script>
 <!-- End Select 2 -->
 
 <style>
@@ -266,9 +264,6 @@ foreach ($arr as &$valuedestino) {
 ?>
 <?};?>
 
-<!-- Distância entre duas Cidades -->
-<!-- http://maps.googleapis.com/maps/api/directions/json?origin=Juazeiro bahia&destination=Petrolina&alternatives=true&sensor=false&key=AIzaSyAGnaxoSR2PXck1Gy-Xy9WCFZCvpJYNFPU -->
-
 <!-- Ordenar pela coluna de distância -->
 <script>
   var table, rows, switching, i, x, y, shouldSwitch;
@@ -304,5 +299,3 @@ foreach ($arr as &$valuedestino) {
     }
   }
 </script>
-
-<script src="select2.js"></script>
