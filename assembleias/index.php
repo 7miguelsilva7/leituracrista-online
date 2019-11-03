@@ -4,8 +4,8 @@
 <script src="select2.min.js"></script> -->
 
 <!-- select 2 -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.11/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.11/js/select2.min.js"></script>
+<link href="select2.min.css" rel="stylesheet" />
+<script src="select2.min.js"></script>
 <!-- End Select 2 -->
 
 <style>
