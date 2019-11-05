@@ -189,25 +189,30 @@ $arr = array(
 // ,'Laranjal do Jari AP'
 // ,'Macapá AP'
 ?>
-<br>
-<div align="center">
-<form action="" method="GET">
-<select name="origem" class="js-example-basic-single" required>
-<option value="">Por favor, selecione uma cidade</option>
+
 <?php
 $query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m order by Nome");
 
-if($query_cidade->num_rows > 0){ 
-    while($row_cidade = $query_cidade->fetch_assoc()){ 
+if($query_cidade->num_rows > 0){?>
+  
+  <br>
+  <div align="center">
+  <form action="" method="GET">
+  <select name="origem" class="js-example-basic-single" required>
+  <option value="">Por favor, selecione uma cidade</option>
+  <?  
 
-echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . $row_cidade['Nome'] . ' - ' . $row_cidade['Uf'] . '</option>';}}
-?>
+while($row_cidade = $query_cidade->fetch_assoc()){ 
+
+echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . $row_cidade['Nome'] . ' - ' . $row_cidade['Uf'] . '</option>';
+
+}?>
 </select> 
 <p>
 <input type="submit" value="Distância">
 </form>
 </div> 
-
+<?}?>
 <a href="logout.php">
 <input style="position: absolute;top:20px;right:20" type="submit" value="Sair">
 </a>
