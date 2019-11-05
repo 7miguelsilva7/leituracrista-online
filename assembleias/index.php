@@ -337,5 +337,13 @@ else
   <input type="submit" value="Pesquisar">
   </form>
   </div>
-  
+
+<!-- filtro em select -->
+<script>
+// $(document).ready(function() {
+$(window).load(function() {
+    $('.js-example-basic-single').select2();
+});
+</script>
+
   <?}?>
