@@ -190,15 +190,12 @@ $arr = array(
 // ,'Macapá AP'
 ?>
 <br>
-<?php
-$query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m order by Nome");
-
-?><div align="center">
+<div align="center">
 <form action="" method="GET">
-<!-- <select name="origem" id="select19" style="width:300px;"> -->
 <select name="origem" class="js-example-basic-single" required>
 <option value="">Por favor, selecione uma cidade</option>
-<?
+<?php
+$query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m order by Nome");
 
 if($query_cidade->num_rows > 0){ 
     while($row_cidade = $query_cidade->fetch_assoc()){ 
@@ -216,8 +213,8 @@ echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . 
 </a>
 
 <?
-if(!empty($_GET) && $_SERVER['REQUEST_METHOD'] == 'GET'){
-$_GET['origem'];
+if(!empty($_GET['origem']))
+{
 ?>
 
 <br>
