@@ -230,6 +230,8 @@ $arr = array(
 <h3><?echo $_GET['origem'];?></h3>
 </div>
 
+<div id="loader"></div>
+
 <table class="sortable" id="sortdistance">
         <tr>
         <th>#</th>
@@ -297,7 +299,17 @@ foreach ($arr as &$valuedestino) {
       switching = true;
     }
   }
-</script>    <? 
+</script>    
+
+<script type="text/javascript">
+		// Este evendo é acionado após o carregamento da página
+		jQuery(window).load(function() {
+			//Após a leitura da pagina o evento fadeOut do loader é acionado, esta com delay para ser perceptivo em ambiente fora do servidor.
+			jQuery("#loader").fadeOut("slow");
+		});
+	</script>
+
+<? 
 
   } //segundo foreach
 ?>
