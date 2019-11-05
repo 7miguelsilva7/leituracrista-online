@@ -38,9 +38,6 @@ tr:nth-child(even) {
 </head>
 
 <body>
-<a href="logout.php">
-<input style="position: absolute;top:20px;right:20" type="submit" value="Sair">
-</a>  
 
 <?php
 include_once 'db_connect.php';
