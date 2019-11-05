@@ -1,3 +1,5 @@
+<html>
+<head>
 <!-- <script language="JavaScript" type="text/javascript" src="cidades-estados-utf8.js"></script>
 <script src="select2.min.js"></script> -->
 <script src="js/jquery-2.1.1.min.js"></script>
@@ -33,6 +35,12 @@ tr:nth-child(even) {
   background-color: #ffffff;
 }
 </style>
+</head>
+
+<body>
+<a href="logout.php">
+<input style="position: absolute;top:20px;right:20" type="submit" value="Sair">
+</a>  
 
 <?php
 include_once 'db_connect.php';
