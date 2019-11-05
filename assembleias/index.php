@@ -259,7 +259,6 @@ foreach ($arr as &$valuedestino) {
     }
 };
 ?>
-<?};?>
 
 <!-- Ordenar pela coluna de distância -->
 <script>
@@ -305,3 +304,4 @@ $(document).ready(function() {
 </script>
 
 <?}?>
+<?};?>
