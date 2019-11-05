@@ -295,7 +295,8 @@ foreach ($arr as &$valuedestino) {
 
 <!-- filtro em select -->
 <script>
-$(document).load(function() {
+// $(document).ready(function() {
+$(window).load(function() {
     $('.js-example-basic-single').select2();
 });
 </script>
