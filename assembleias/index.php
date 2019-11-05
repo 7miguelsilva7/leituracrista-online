@@ -319,7 +319,13 @@ else
   // lista municípios
   $query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m order by Nome");
   
-  ?><div align="center">
+  ?>
+  
+<a href="logout.php">
+<input style="position: absolute;top:20px;right:20" type="submit" value="Sair">
+</a>  
+
+  <div align="center">
   <form action="" method="GET">
   <select name="origem" class="js-example-basic-single" required>
   <option value="">Por favor, selecione uma cidade</option>
