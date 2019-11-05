@@ -3,8 +3,6 @@
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/sorttable.js"></script>
 
-teste
-
 <!-- select 2 -->
 <link href="css/select2.min.css" rel="stylesheet" />
 <script src="js/select2.min.js"></script>
@@ -245,7 +243,7 @@ foreach ($arr as &$valuedestino) {
     $origin = str_replace(' ', '%20', $origin);
     $destino = str_replace(' ', '%20', $destino);
 
-    $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=$origin&destinations=$destino&mode=CAR&language=pt-BR&sensor=false&key=";
+    $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=$origin&destinations=$destino&mode=CAR&language=pt-BR&sensor=false&key=AIzaSyCwF2xEA7CGH6iA_Uiv-BTy1qlA1wwgER8";
 
     $data = @file_get_contents($url);
 
