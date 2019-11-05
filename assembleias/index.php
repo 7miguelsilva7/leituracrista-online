@@ -3,8 +3,6 @@
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/sorttable.js"></script>
 
-teste
-
 <!-- select 2 -->
 <link href="css/select2.min.css" rel="stylesheet" />
 <script src="js/select2.min.js"></script>
@@ -50,8 +48,34 @@ if (!isset($_SESSION['UsuarioID']) OR ($_SESSION['UsuarioNivel'] < $nivel_necess
       session_destroy();
   // Redireciona o visitante de volta pro login
       header("Location: login.php"); exit;
+  }
+
+
+// lista municípios
+$query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m order by Nome");
+
+?><div align="center">
+<form action="" method="GET">
+<select name="origem" class="js-example-basic-single" required>
+<option value="">Por favor, selecione uma cidade</option>
+<?
+
+while($row_cidade = $query_cidade->fetch_assoc()){ 
+
+echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . $row_cidade['Nome'] . ' - ' . $row_cidade['Uf'] . '</option>';
+
 }
 
+?>
+</select> 
+<p>
+<input type="submit" value="Pesquisar">
+</form>
+</div> 
+
+<?
+
+if (!empty($_GET['origem'])){
 $i = 0;
 $arr = array(
  'Alagoinha BA'
@@ -191,36 +215,6 @@ $arr = array(
 // ,'Laranjal do Jari AP'
 // ,'Macapá AP'
 ?>
-<br>
-<?php
-$query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m order by Nome");
-
-?><div align="center">
-<form action="" method="GET">
-<!-- <select name="origem" id="select19" style="width:300px;"> -->
-<select name="origem" class="js-example-basic-single" required>
-<option value="">Por favor, selecione uma cidade</option>
-<?
-
-if($query_cidade->num_rows > 0){ 
-    while($row_cidade = $query_cidade->fetch_assoc()){ 
-
-echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . $row_cidade['Nome'] . ' - ' . $row_cidade['Uf'] . '</option>';}}
-?>
-</select> 
-<p>
-<input type="submit" value="Distância">
-</form>
-</div> 
-
-<a href="logout.php">
-<input style="position: absolute;top:20px;right:20" type="submit" value="Sair">
-</a>
-
-<?
-if(!empty($_GET) && $_SERVER['REQUEST_METHOD'] == 'GET'){
-$_GET['origem'];
-?>
 
 <br>
 <div align="center">
@@ -257,10 +251,9 @@ foreach ($arr as &$valuedestino) {
         echo "<tr>
         <td>$i</td>  
         <td>Assembleia ou irmãos em <b>" . mb_strtoupper($resultados, 'UTF-8') .  "</b>:<td>" . '<span style="font-size:0.1px; color:white;">' .str_pad($distance['elements'][0]['distance']['value'] , 12 , '0' , STR_PAD_LEFT) . ' - </span>' . $distance['elements'][0]['distance']['text'] . '</td><td> ' . $distance['elements'][0]['duration']['text'] . ' no tráfego atual</td><td>asdf@gmail.com</td></tr>';
-    }
-};
-?>
-<?};?>
+    } //if $_GET['origem'] deferente de vazio
+    } //if primeiro foreach
+    ?>
 
 <!-- Ordenar pela coluna de distância -->
 <script>
@@ -296,10 +289,13 @@ foreach ($arr as &$valuedestino) {
       switching = true;
     }
   }
-</script>
+</script>    <? 
 
+  } //segundo foreach
+?>
+
+<!-- filtro em select -->
 <script>
-// In your Javascript (external .js resource or <script> tag)
 $(document).ready(function() {
     $('.js-example-basic-single').select2();
 });
