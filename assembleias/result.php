@@ -36,8 +36,8 @@ tr:nth-child(even) {
 }
 </style>
 </head>
-
 <body>
+
 <?php
 include_once 'db_connect.php';
   
@@ -54,13 +54,6 @@ if (!isset($_SESSION['UsuarioID']) OR ($_SESSION['UsuarioNivel'] < $nivel_necess
       header("Location: login.php"); exit;
   }
 
-if (!empty($_GET['origem'])){?>
-<a href="logout.php">
-<input style="position: absolute;top:20px;right:20" type="submit" value="Sair">
-</a>  
-
-<?php
-include_once 'db_connect.php';
 
 // lista municípios
 $query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m order by Nome");
@@ -85,6 +78,7 @@ echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . 
 </div> 
 
 <?
+if (!empty($_GET['origem'])){
 $i = 0;
 $arr = array(
  'Alagoinha BA'
@@ -248,7 +242,7 @@ foreach ($arr as &$valuedestino) {
     $origin = str_replace(' ', '%20', $origin);
     $destino = str_replace(' ', '%20', $destino);
 
-    $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=$origin&destinations=$destino&mode=CAR&language=pt-BR&sensor=false&key=";
+    $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=$origin&destinations=$destino&mode=CAR&language=pt-BR&sensor=false&key=AIzaSyCwF2xEA7CGH6iA_Uiv-BTy1qlA1wwgER8";
 
     $data = @file_get_contents($url);
 
@@ -260,6 +254,7 @@ foreach ($arr as &$valuedestino) {
         echo "<tr>
         <td>$i</td>  
         <td>Assembleia ou irmãos em <b>" . mb_strtoupper($resultados, 'UTF-8') .  "</b>:<td>" . '<span style="font-size:0.1px; color:white;">' .str_pad($distance['elements'][0]['distance']['value'] , 12 , '0' , STR_PAD_LEFT) . ' - </span>' . $distance['elements'][0]['distance']['text'] . '</td><td> ' . $distance['elements'][0]['duration']['text'] . ' no tráfego atual</td><td>asdf@gmail.com</td></tr>';
+    } //if $_GET['origem'] deferente de vazio
     } //if primeiro foreach
     ?>
 
@@ -309,33 +304,3 @@ $(window).load(function() {
     $('.js-example-basic-single').select2();
 });
 </script>
-
-<?
-} //if $_GET['origem'] deferente de vazio
-else
-{
-  include_once 'db_connect.php';
-  
-  // lista municípios
-  $query_cidade = $connMysqli->query("SELECT Nome, Uf FROM `assemb_Municipio` m order by Nome");
-  
-  ?><div align="center">
-  <form action="" method="GET">
-  <select name="origem" class="js-example-basic-single" required>
-  <option value="">Por favor, selecione uma cidade</option>
-  <?
-  
-  while($row_cidade = $query_cidade->fetch_assoc()){ 
-  
-  echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . $row_cidade['Nome'] . ' - ' . $row_cidade['Uf'] . '</option>';
-  
-  }
-  ?>
-  
-  </select> 
-  <p>
-  <input type="submit" value="Pesquisar">
-  </form>
-  </div>
-  
-  <?}?>
