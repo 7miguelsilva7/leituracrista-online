@@ -4,16 +4,15 @@ $whitelist = array('127.0.0.1', "::1");
 
 if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
 
-    $host= 'localhost';
+    $dbHost= 'localhost';
     $dbName= 'u378308740_db';
     $dbPassword="gogo1352";
     $dbUserName="u378308740_db";
 
 }else{
     
-    // $host='sql112.main-hosting.eu';
+    $dbHost='sql112.main-hosting.eu';
     // conexão LOCAL
-    $host='localhost';
     $dbName='u378308740_db';
     $dbPassword="gogo1352";
     $dbUserName="u378308740_db";
