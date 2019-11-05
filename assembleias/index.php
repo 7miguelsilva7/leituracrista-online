@@ -7,6 +7,7 @@
 
 <!-- select 2 -->
 <link href="css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" media="screen"/>
 <script src="js/select2.min.js"></script>
 <!-- End Select 2 -->
 
