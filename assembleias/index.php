@@ -322,7 +322,7 @@ else
   ?>
   
 <a href="logout.php">
-<input style="position: absolute;top:20px;right:20" type="submit" value="Sair">
+<input style="position: absolute;top:20px;right:20" type="submit" name="sair" value="Sair">
 </a>  
 
   <div align="center">
