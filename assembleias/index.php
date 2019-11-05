@@ -212,7 +212,6 @@ echo '<option value="' . $row_cidade['Nome'] . ' ' . $row_cidade['Uf'] . '">' . 
 <input type="submit" value="Distância">
 </form>
 </div> 
-<?}?>
 <a href="logout.php">
 <input style="position: absolute;top:20px;right:20" type="submit" value="Sair">
 </a>
@@ -304,3 +303,5 @@ $(document).ready(function() {
     $('.js-example-basic-single').select2();
 });
 </script>
+
+<?}?>
