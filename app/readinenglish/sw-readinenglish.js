@@ -2,7 +2,7 @@ let CURRENT_CACHES = {
   offline: 'offlineReadInEnglish-v1'
 };
 
-const OFFLINE_URL = '/readinenglish/index.html';
+const OFFLINE_URL = '/app/readinenglish/index.html';
 
 var OFFLINE_URLs = [
   '/app/readinenglish/',
