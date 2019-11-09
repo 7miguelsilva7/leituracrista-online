@@ -1,10 +1,12 @@
-var cacheName = '&&versaoleituraCristaApp-19-10-19-12:37:17&&versao';
+let CURRENT_CACHES = {
+  offline: 'offlineLeituraCrista-v1'
+};
 
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(cacheName)
-      .then(cache => cache.addAll([
-        '/app/',
+const OFFLINE_URL = '/app/index.html';
+
+var OFFLINE_URLs = [
+  
+  '/app/',
   '/app/index.html',
   '/app/css/main.css',
   '/app/css/normalize.css',
@@ -245,36 +247,51 @@ self.addEventListener('install', event => {
 '/app/vem-mostrar-te-ei-w.-potter-w.-potter/index.html',
 '/app/vida-atraves-da-morte/index.html',
 '/app/voce-parte-o-pao-e.-h.-chater-e.-h.-chater/index.html',
-]))
-  );
-});
+];
 
-self.addEventListener('message', function (event) {
-  if (event.data.action === 'skipWaiting') {
-    self.skipWaiting();
-  }
-});
-
-self.addEventListener('fetch', function (event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function (response) {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
+// configura página inicial ao recarregar a página em modo offline
+  self.addEventListener('install', event => {
+    event.waitUntil(
+      fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
+        return caches.open(CURRENT_CACHES.offline).then(function(cache) {
+          return cache.put(OFFLINE_URL, response);
+        });
       })
-  );
+    );
+
+    // instala todos arquivos do site indicados em OFLINE_URLs
+  self.addEventListener('install', function(event) {
+    // Perform install steps
+    event.waitUntil(
+      caches.open(CURRENT_CACHES.offline)
+        .then(function(cache) {
+          console.log('Opened cache');
+          return cache.addAll(OFFLINE_URLs);
+        })
+    );
+  });
+
+
+function createCacheBustedRequest(url) {
+  let request = new Request(url, {cache: 'reload'});
+  if ('cache' in request) {
+    return request;
+  }
+  let bustedUrl = new URL(url, self.location.href);
+  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
+  return new Request(bustedUrl);
+}
 });
 
-let staticCacheName = true
-
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', event => {
+  let expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
+    return CURRENT_CACHES[key];
+  });
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
+    caches.keys().then(cacheNames => {
       return Promise.all(
-        cacheNames.map(function(cacheName) {
-          if (cacheName.startsWith('&&versaoleituraCristaApp') && staticCacheName !== cacheName) {
+        cacheNames.map(cacheName => {
+          if (expectedCacheNames.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })
@@ -282,3 +299,15 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
+
+self.addEventListener('fetch', event => {
+  if (event.request.mode === 'navigate' ||
+      (event.request.method === 'GET' &&
+       event.request.headers.get('accept').includes('text/html'))) {
+    event.respondWith(
+      fetch(event.request).catch(error => {
+        return caches.match(OFFLINE_URL);
+      })
+    );
+  }
+}); 
