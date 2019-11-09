@@ -1,9 +1,10 @@
-var cacheName = '&&versaoreadinenglish19-10-22-20:36:22&&versao';
+let CURRENT_CACHES = {
+  offline: 'offlineReadInEnglish-v1'
+};
 
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(cacheName)
-      .then(cache => cache.addAll([
+const OFFLINE_URL = '/readinenglish/index.html';
+
+var OFFLINE_URLs = [
   '/app/readinenglish/',
   '/app/readinenglish/index.html',
   '/app/readinenglish/css/main.css',

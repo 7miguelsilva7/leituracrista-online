@@ -10,7 +10,7 @@ var OFFLINE_URLs = [
 '/hinario/img/indice.png',
 '/hinario/img/numero.png'
 ];
-
+ 
 // configura página inicial ao recaregar a página em modo offline
   self.addEventListener('install', event => {
     event.waitUntil(
