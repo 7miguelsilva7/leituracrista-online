@@ -1,5 +1,5 @@
 let CURRENT_CACHES = {
-  offline: 'offlineLeituraCrista-v1'
+  offline: 'LeituraCrista'
 };
 
 const OFFLINE_URL = '/app/index.html';
