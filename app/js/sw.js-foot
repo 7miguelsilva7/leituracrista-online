@@ -53,11 +53,11 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  if (event.request_lc.mode === 'navigate' ||
-      (event.request_lc.method === 'GET' &&
-       event.request_lc.headers.get('accept').includes('text/html'))) {
+  if (event.request.mode === 'navigate' ||
+      (event.request.method === 'GET' &&
+       event.request.headers.get('accept').includes('text/html'))) {
     event.respondWith(
-      fetch(event.request_lc).catch(error => {
+      fetch(event.request).catch(error => {
         return caches.match(OFFLINE_URL_lc);
       })
     );
