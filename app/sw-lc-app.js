@@ -1,10 +1,10 @@
-let CURRENT_CACHES = {
-  offline: 'offlineLeituraCrista-v1'
+let CURRENT_CACHES_LC = {
+  offline_lc: 'LeituraCrista'
 };
 
-const OFFLINE_URL = '/app/index.html';
+const OFFLINE_URL_lc = '/app/index.html';
 
-var OFFLINE_URLs = [
+var urls_lc = [
   
   '/app/',
   '/app/index.html',
@@ -12,8 +12,7 @@ var OFFLINE_URLs = [
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
-  '/app/closeWindow.html',
-  '/app/1pedro-darby-mysword/index.html',
+  '/app/closeWindow.html','/app/1pedro-darby-mysword/index.html',
 '/app/a-autoridade-delegada-a-assembleia-r.-guillen/index.html',
 '/app/a-ceia-do-senhor-c.-h.-mackintosh/index.html',
 '/app/acontecimentos-profeticos-bruce-anstey/index.html',
@@ -247,14 +246,15 @@ var OFFLINE_URLs = [
 '/app/vem-mostrar-te-ei-w.-potter-w.-potter/index.html',
 '/app/vida-atraves-da-morte/index.html',
 '/app/voce-parte-o-pao-e.-h.-chater-e.-h.-chater/index.html',
+
 ];
 
-// configura página inicial ao recarregar a página em modo offline
+// configura página inicial ao recarregar a página em modo offline_lc
   self.addEventListener('install', event => {
     event.waitUntil(
-      fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
-        return caches.open(CURRENT_CACHES.offline).then(function(cache) {
-          return cache.put(OFFLINE_URL, response);
+      fetch(createCacheBustedRequest(OFFLINE_URL_lc)).then(function(response) {
+        return caches.open(CURRENT_CACHES_LC.offline_lc).then(function(cache) {
+          return cache.put(OFFLINE_URL_lc, response);
         });
       })
     );
@@ -263,35 +263,35 @@ var OFFLINE_URLs = [
   self.addEventListener('install', function(event) {
     // Perform install steps
     event.waitUntil(
-      caches.open(CURRENT_CACHES.offline)
+      caches.open(CURRENT_CACHES_LC.offline_lc)
         .then(function(cache) {
           console.log('Opened cache');
-          return cache.addAll(OFFLINE_URLs);
+          return cache.addAll(urls_lc);
         })
     );
   });
 
 
 function createCacheBustedRequest(url) {
-  let request = new Request(url, {cache: 'reload'});
-  if ('cache' in request) {
-    return request;
+  let request_lc = new Request(url, {cache: 'reload'});
+  if ('cache' in request_lc) {
+    return request_lc;
   }
-  let bustedUrl = new URL(url, self.location.href);
-  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
-  return new Request(bustedUrl);
+  let bustedUrl_lc = new URL(url, self.location.href);
+  bustedUrl_lc.search += (bustedUrl_lc.search ? '&' : '') + 'cachebust=' + Date.now();
+  return new Request(bustedUrl_lc);
 }
 });
 
 self.addEventListener('activate', event => {
-  let expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
-    return CURRENT_CACHES[key];
+  let expectedCacheNames_lc = Object.keys(CURRENT_CACHES_LC).map(function(key) {
+    return CURRENT_CACHES_LC[key];
   });
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (expectedCacheNames.indexOf(cacheName) === -1) {
+          if (expectedCacheNames_lc.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })
@@ -301,13 +301,15 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  if (event.request.mode === 'navigate' ||
-      (event.request.method === 'GET' &&
-       event.request.headers.get('accept').includes('text/html'))) {
+  if (event.request_lc.mode === 'navigate' ||
+      (event.request_lc.method === 'GET' &&
+       event.request_lc.headers.get('accept').includes('text/html'))) {
     event.respondWith(
-      fetch(event.request).catch(error => {
-        return caches.match(OFFLINE_URL);
+      fetch(event.request_lc).catch(error => {
+        return caches.match(OFFLINE_URL_lc);
       })
     );
   }
 }); 
+
+

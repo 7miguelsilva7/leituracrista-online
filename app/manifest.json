@@ -1,7 +1,7 @@
 {
-  "name": "Read In English",
-  "short_name": "Read In English",
-  "description": "Read In English Off-Line",
+  "name": "Leitura Cristã APP",
+  "short_name": "Leitura Cristã APP",
+  "description": "Literatura Cristã Offline ",
   "icons": [
       {
         "src": "img/touch/android-launchericon-48-48.png",
@@ -35,7 +35,7 @@
         "sizes": "512x512"
       } 
       ],
-  "start_url": "/app/readinenglish/index.html",
+  "start_url": "/app/index.html",
   "display": "standalone",
   "background_color": "purple",
   "theme_color": "purple"

@@ -3,7 +3,7 @@
 #para minúsculo 
  for a in *.odt
  do
- mv -f $a `echo $a | tr "[A-Z]" "[a-z]"`
+ mv -f $a `echo $a | tr "[A-Z]" "[a-z]" `
  done
 
 #renomear ODT

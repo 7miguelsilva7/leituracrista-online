@@ -1,5 +1,5 @@
 let CURRENT_CACHES = {
-  offline: 'offlineReadInEnglish-v2'
+  offline: 'readinenglish'
 };
 
 const OFFLINE_URL = '/app/readinenglish/index.html';
