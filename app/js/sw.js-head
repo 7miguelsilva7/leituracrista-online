@@ -1,10 +1,10 @@
-let CURRENT_CACHES = {
-  offline: 'LeituraCrista'
+let CURRENT_CACHES_LC = {
+  offline_lc: 'LeituraCrista'
 };
 
-const OFFLINE_URL = '/app/index.html';
+const OFFLINE_URL_lc = '/app/index.html';
 
-var OFFLINE_URLs = [
+var urls_lc = [
   
   '/app/',
   '/app/index.html',
@@ -13,4 +13,3 @@ var OFFLINE_URLs = [
   '/app/css/typo.css',
   '/app/js/custom.js',
   '/app/closeWindow.html',
-  
