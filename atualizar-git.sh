@@ -11,6 +11,8 @@ cp -ur resetGit /opt/lampp/htdocs/leituracrista-online/
 cp -ur manifest /opt/lampp/htdocs/leituracrista-online/
 cp -ur linktobible /opt/lampp/htdocs/leituracrista-online/
 cp -ur assembleias /opt/lampp/htdocs/leituracrista-online/
+cp -ur app/leituracrista /opt/lampp/htdocs/leituracrista-online/
+cp -ur app/readinenglish /opt/lampp/htdocs/leituracrista-online/
 
 git pull
 #git add --all

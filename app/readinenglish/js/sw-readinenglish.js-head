@@ -1,10 +1,10 @@
-let CURRENT_CACHES = {
-  offline: 'readinenglish'
+let CURRENT_CACHES_rie = {
+  offline_rie: 'readinenglish'
 };
 
-const OFFLINE_URL = '/app/readinenglish/index.html';
+const OFFLINE_URL_rie = '/app/readinenglish/index.html';
 
-var OFFLINE_URLs = [
+var urls_rie = [
   '/app/readinenglish/',
   '/app/readinenglish/index.html',
   '/app/readinenglish/css/main.css',
