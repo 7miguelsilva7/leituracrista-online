@@ -1,0 +1,110 @@
+---
+title: O Grande Plano de Deus
+Author: D. Rule
+#Translator: translator
+slug: o-grande-plano-de-deus-d.-rule-d.-rule
+---
+
+## O GRANDE PLANO DE DEUS {#o-grande-plano-de-deus}
+
+É reconfortante abrirmos a Palavra de Deus em busca de versículos ou assuntos que se refiram a nós mesmos - que nos mostrem como podemos desfrutar das bênçãos que nos cabem, ou então de como o Senhor pode resolver algum problema particular ou guiar-nos em alguma decisão a tomar. No entanto, se realmente desejamos conhecer o coração de Deus, é de extrema importância que desfrutemos, juntamente com Deus, de Sua Palavra - não apenas de alguns bocados aqui e ali, mas de toda ela.
+
+Uma enorme porção da Palavra de Deus traz em si mesma um caráter profético. Vamos nos ocupar de algumas coisas que nos ajudarão a estudar a profecia. Há muito para se desfrutar e tirar proveito no caráter profético da Palavra de Deus.
+
+Quando foi que você leu pela última vez os livros proféticos, começando com Isaías e indo até o final do Antigo Testamento? Sua resposta irá revelar se você está ou não desfrutando de uma grande porção da Palavra que Deus deu para seu proveito.
+
+## Três Destinos {#tr-s-destinos}
+
+Todos os homens se deparam com um dos três destinos eternos: céu, Terra ou inferno. Ou seu destino é o céu com Cristo, ou o inferno com Satanás. Deus está agora preparando um povo celestial para Seu Filho. Se você aceitou a Cristo como seu Salvador, seu destino é o céu, e se você O rejeitou, é o inferno. Mas há pessoas cujo destino não é nem o céu nem o inferno, pois Deus está preocupado em também preparar para Si um povo terreno. A profecia diz respeito à Terra e às ações de Deus para com o Seu povo terreno, isto é, Israel e todas as outras nações que povoarão a Terra num dia vindouro.
+
+Acompanhando a história de Israel, podemos, através das espantosas revelações do Antigo Testamento, aprender acerca do que sucederá no futuro. O que quero dizer com isto? Jeová colocou diante de Seu povo certas promessas e lhes disse que, se fossem obedientes, Ele cuidaria deles, mas se não obedecessem, certas coisas iriam acontecer. E elas aconteceram. Os procedimentos morais de Deus nunca mudam. E assim, as lições que o Seu povo terreno não aprendeu no passado deverão ser aprendidas no futuro. E as promessas de Deus, ainda por se cumprir, cumprir-se-ão.
+
+## Dois inimigos {#dois-inimigos}
+
+Aprendemos, na história do povo terreno de Deus, que eles tinham dois inimigos. O primeiro inimigo era chamado de Assíria. O segundo era a Babilônia. Distinguir estes dois inimigos é muito importante na compreensão dos procedimentos de Deus no futuro. Quando a Assíria era o inimigo do povo, Deus Se relacionava com Seu povo e os tinha como um povo todo Seu. Quero frisar isto: quando a Assíria era o inimigo do povo de Deus, Jeová Deus reconhecia o povo como propriedade Sua. Ele podia chamar a Assíria de servo, e usá-la para castigar o Seu povo, para puni-los por serem infiéis a Ele. Mas, ainda assim, Ele os considerava como Seu povo, e este nunca poderia ser conquistado pela Assíria.
+
+Mas chegou um tempo em que o Senhor teve que dizer: Não os reconheço mais como Meu povo. E assim Deus escreveu sobre eles o título de &quot;Lo-ami&quot;, que significa &quot;não sois Meu povo&quot; ([Os 1:9](http://mysword.info/b?r=Hos_1:9)). Após escrever tal título sobre Israel, eles passaram a ter um novo inimigo, a Babilônia. Veio Nabucodonosor, o rei de Babilônia, e conseguiu conquistar totalmente a terra de Israel e levar o povo para o cativeiro, fora da terra. Isto é algo importante na compreensão dos procedimentos de Deus, pois Ele vai voltar a tratar com Seu povo terreno e, quando o fizer, irá tratar também com os mesmos dois inimigos.
+
+O primeiro inimigo será formado pelos descendentes do império babilônico e dos impérios que se seguiram a esse. Durante o tempo atual, Israel continua tendo escrito sobre si o título de &quot;Lo-ami&quot;: &quot;não sois Meu povo&quot;. O inimigo terá poder sobre o povo professo de Deus enquanto Ele não os reconhecer como Seu.
+
+Mais tarde Deus reconhecerá Israel novamente como Seu povo, mas irá, no futuro, assim como fez no passado, usar mais uma vez a Assíria para castigá-los. Ainda assim Ele dirá que aquele é o Seu povo, e que a Assíria não poderá fazer o que quiser. Deus irá usá-los para punir o Seu povo, e ensinar Israel por meio do castigo, mas o inimigo não poderá conquistar o povo de Deus.
+
+## A divisão em Israel {#a-divis-o-em-israel}
+
+O que mais vemos na história do povo de Deus? Ele os introduziu numa terra maravilhosa e assegurou-lhes que seriam o Seu povo; Ele os amaria e cuidaria deles. Mas depois vemos aquelas mesmas pessoas, em sua infidelidade, dividindo-se em dois grupos. Dividiram-se em duas partes: as dez tribos que são chamadas de Israel, e as duas outras tribos que são chamadas de Judá. Em meio àquelas duas partes, entre as dez e as duas tribos, havia também um número pequeno de pessoas de todas as doze tribos que eram vistas como fiéis ao Senhor. Eram vistas como um remanescente do povo. Assim como foi no Israel passado, assim também no Israel futuro vemos uns poucos fiéis - um remanescente do povo. À medida que lemos e desfrutamos da palavra profética, vemos o remanescente que segue o Senhor sendo conduzido e tratado por Ele de um modo distinto.
+
+## O bem ordenado caminho de Deus {#o-bem-ordenado-caminho-de-deus}
+
+Deus tem sempre uma boa ordem na Sua maneira de tratar com o homem. Ele trata com diferentes grupos em diferentes épocas. Quando lemos nossas Bíblias, precisamos notar cuidadosamente para quem ou de quem é que Ele está falando.
+
+Em Seu proceder com Seu povo terreno, Deus trata primeiro com o remanescente, depois com as dez tribos, e finalmente Ele faz com que sejam novamente uma nação unida formada por doze tribos.
+
+Deus faz distinção entre a terra e o mundo. [Isaías 26:9](http://mysword.info/b?r=Isa_26:9) diz: &quot;Havendo os teus juízos na terra, os moradores do mundo aprendem justiça&quot;. A terra inclui Israel, o império romano e as outras nações que tiveram algo a ver com Israel no tempo que nosso Senhor esteve aqui. O mundo inclui todo o restante dos povos do planeta Terra. Na profecia vemos Deus julgando a terra enquanto o resto do mundo assiste e aprende justiça. Em Apocalipse, a expressão &quot;a quarta parte da terra&quot; significa Israel, e &quot;a terça parte da terra&quot; significa o império romano.
+
+É esse o modo de Deus julgar. É como se dissesse a uma nação: &quot;Agora é a sua vez; venha&quot;. Ele os introduz em Sua terra e trata com eles ali. Então chama outro grupo de nações e diz: &quot;Agora é a vez de vocês&quot;; e trata com eles ali. É assim que Ele procede com toda a Terra.
+
+A maneira de Deus abençoar é como uma pedra lançada dentro de um lago. As ondas começam em um ponto e então vão se espalhando em círculos. As ondas de bênção começam no Monte Sião, e então se estendem para a amada cidade do Senhor, Jerusalém. Dali passam a um alcançar um círculo um pouco maior chamado Judá, as duas tribos entre as quais Ele viveu, e então atingem toda a terra de Israel, então a terra e, finalmente, o mundo todo é incluído na bênção. Quando lemos a palavra profética, procurando entrar nos pensamentos e no coração de Deus a este respeito, passa a ser algo de extrema importância, e digno de ser desfrutado, vermos qual é o círculo com que Deus está tratando naquele momento.
+
+## Isaías e o Apocalipse {#isa-as-e-o-apocalipse}
+
+O mais abrangente livro da profecia é Isaías. O Apocalipse, por outro lado, é mais específico como um livro profético. Ele completa a palavra profética por tratar de assuntos que não podiam ser conhecidos antes que Cristo viesse e a Igreja fosse formada. Os profetas do Antigo Testamento nos apresentam a profecia vista da Terra, enquanto João, no Apocalipse, é levado em espírito ao céu para que possa ver a profecia do ponto de vista do céu.
+
+## A profecia e o cristianismo {#a-profecia-e-o-cristianismo}
+
+Deus introduziu o cristianismo na Terra; era algo desconhecido nos tempos do Antigo Testamento. Os profetas nada tinham a dizer a este respeito e é por esta razão que Deus, a fim de completar Sua palavra profética, nos dá um livro extra no Novo Testamento. Este livro nos mostra como Deus trata com a Igreja professa e como ela se encaixa em Seus outros procedimentos concernentes à Terra. Vemos nas sete igrejas de [Apocalipse 2](http://mysword.info/b?r=Rev_2) e [3](http://mysword.info/b?r=Rev_3) a história moral da Igreja sobre a Terra. Mas depois que o Senhor Jesus vier nos chamar, juntamente com todos os crentes, para levar-nos ao lar celestial, ficará ainda um grande grupo de pessoas na Terra professando ser a Igreja. Sendo assim, Deus volta Sua atenção para aquele grupo e nos mostra o que lhes irá acontecer. Lemos a respeito de um falso profeta e a respeito de Babilônia, a Grande, coisas estas em que a Igreja acabou se transformando aqui na Terra, e a respeito dos vários líderes que se relacionam com ela. O livro de Apocalipse nos mostra como é que Deus trata com ela em juízo até fazê-la encontrar seu fim.
+
+## Apocalipse {#apocalipse}
+
+Você pode dividir o livro de Apocalipse bem no meio. Há vinte e dois capítulos. Tome os onze primeiros e você descobrirá que estão em ordem cronológica; isto é, o Espírito de Deus coloca os eventos um após o outro à medida que vai tratando com a Terra. Do décimo segundo capítulo até o final Ele apresenta as coisas por tópicos, não cronologicamente. Em alguns casos, o tópico é uma pessoa ou nação, em outros, é um assunto, tal como a vinda do Senhor e quais as consequências daquela vinda para a Terra, ou uma descrição de como Jerusalém e Israel parecerão no futuro.
+
+## Isaías {#isa-as}
+
+Vamos dar uma olhada em [Isaías 1:1](http://mysword.info/b?r=Isa_1:1): &quot;Visão de Isaías, filho de Amós, a qual ele viu a respeito de Judá e Jerusalém&quot;. Temos uma chave bem aqui. Deus diz que vai contar a eles quais são os Seus propósitos concernentes a Judá e Jerusalém. &quot;Nos dias de Uzias, Jotão, Acaz, e Ezequias, reis de Judá. Ouvi, ó céus, e presta ouvidos, tu ó terra, porque fala o Senhor: Criei filhos, e exalcei-os; mas eles prevaricaram contra mim.&quot; Deus nos diz que tomou a Jerusalém, Judá e Seu povo e os alimentou e cuidou deles e zelou por eles, e ainda assim eles se rebelaram contra Ele. Então Ele trata daquele caso como de um povo rebelde.
+
+## O final da história {#o-final-da-hist-ria}
+
+Será que alguma vez você começou a ler um livro e, na metade, disse: Não posso esperar mais; tenho que ver como irá terminar? Aí você vai ao último capítulo e vê como termina, e então continua a ler o livro. Não temos tempo aqui para ler todo o livro de Isaías, mas vamos descobrir como ele termina. Abra no último capítulo de [Isaías, versículo 10](http://mysword.info/b?r=Isa_66:10): &quot;Regozijai-vos com Jerusalém, e alegrai-vos por ela, vós todos os que a amais: enchei-vos por ela de alegria, todos os que por ela pranteastes... Porque assim diz o Senhor: Eis que estenderei sobre ela a paz como um rio... E trarão todos os vossos irmãos dentre todas as nações, por presente ao Senhor, sobre cavalos, e em carros, e em liteiras, e sobre mulas e sobre dromedários, ao Meu santo monte, a Jerusalém&quot;.
+
+Vemos que tudo acabará bem para Israel, mas também notamos estas palavras: &quot;Porque com fogo e com a Sua espada entrará o Senhor em juízo com toda a carne; e os mortos do Senhor serão multiplicados&quot; ([Isaías 66:16](http://mysword.info/b?r=Isa_66:16)). Este é o caráter daquilo que está reservado para a Terra, e é assim que Isaías o apresenta a nós. À medida que você for lendo o livro de Isaías, verá como Deus toma diferentes grupos de povos e nações e os apresenta, dizendo-nos que irá testar esse povo para ver o que ele é. É o teste de fogo e juízo na Terra. Nossas obras serão provadas pelo fogo de Deus, para ver que tipo de obra elas são, se são ouro, prata e pedras preciosas, ou madeira feno e palha. Assim também as nações da Terra serão colocadas sob o fogo da mão de Deus e Ele as provará para ver que tipo de povos são. Nos é dito que muitos serão os mortos do Senhor - isto é, muitos não passarão no teste que terão que enfrentar.
+
+## Daniel {#daniel}
+
+A profecia de Daniel cobre o período em que Deus diz, acerca de Israel, &quot;Lo-ami&quot; (&quot;Não sois Meu povo&quot;). Quando Ele diz aquilo, a Babilônia e os outros três impérios existentes no mundo, que a seguem, são colocados diante de nós. Nesse período, chamado de &quot;tempo dos gentios&quot; ([Lucas 21:24](http://mysword.info/b?r=Luk_21:24)), Deus remove Israel de sua posição como centro de Seu governo terreno e deixa que os poderes dos gentios assumam o reino sobre a Terra. Os três poderes que se seguiram ao poder babilônico foram o medo-persa, o grego e o romano. Alexandre, o Grande, reinou apenas por alguns anos e, quando morreu, seu império grego foi dividido em quatro partes. Duas partes, a que estava no norte e a que estava no sul, seguiram adiante na história e na profecia. Da profecia de Daniel aprendemos que esses reis, o rei do norte e o rei do sul, irão se levantar outra vez perante Deus e perante o homem.
+
+Quando o Senhor Jesus estava aqui, o quarto império, o império romano, encontrava-se no poder. O que Deus fará? Ele fará com que a Terra fique do jeito que estava aos Seus olhos na época em que Seu Filho foi crucificado. E assim Ele faz reviver o império romano e estabelece o seu poder na Terra. Além disso, o Seu povo também estava na terra quando Seu Filho foi crucificado, mas eram apóstatas; eles O rejeitaram. Do mesmo modo, esse mesmo povo é trazido de volta e colocado no palco, mas como um povo que nada tem a ver com o Senhor, do mesmo modo como aconteceu quando Ele esteve aqui.
+
+## Um Remanescente {#um-remanescente}
+
+Em meio a esse povo há um pequeno grupo que tem fé no Senhor. Não é um grupo muito grande. Sempre me impressiono ao ler a respeito de Ana em [Lucas 2:36](http://mysword.info/b?r=Luk_2:36). Ela era uma mulher com mais de cem anos de idade, e ainda assim nos é dito que falou a todos em Jerusalém que estavam esperando pelo Senhor. Se uma mulher daquela idade podia falar a todos os que estavam esperando pelo Messias, não deviam ser muitos. Mas havia aqueles poucos, e o Senhor desejou-os e apreciou-os de tal maneira que alguns deles foram lembrados por seus nomes. O Senhor terá alguns poucos fiéis que formarão um testemunho para Ele quando recompor o cenário para vir tratar com a Terra.
+
+Primeiro o Senhor deve limpar a Terra de todas as suas impurezas e tirar dela, com juízo, todos os que O rejeitaram e seguiram o falso Cristo. Para isso o Senhor envia um desolador por toda a terra, que a esfrega até que fique limpa. Ele tem que remover de Sua terra tudo aquilo que a suja. Ele não pode introduzir Seu povo na bênção e não pode tampouco introduzir Jerusalém na bênção com toda a sujeira e abominações permanecendo na terra.
+
+Quando o Senhor foi rejeitado sabemos que Pilatos estava ali; sabemos que Herodes estava ali; sabemos que os líderes judeus estavam ali, mas eram todos contra Cristo. Homens de um mesmo caráter estarão novamente ali, e o que é que Ele faz? Ele remove de diante de Seus olhos aquele que conhecemos como a besta e o falso profeta, e diz: &quot;Antes de mais nada vou removê-los em juízo para fora de Minha terra&quot;. E assim faz.
+
+Vemos alguns desses eventos em Daniel, mas devemos nos lembrar que dn não podia ver toda a extensão dos acontecimentos até o fim. Se você vai ao último capítulo de Daniel, encontra que ainda havia muito a ser feito, além daquilo que Daniel podia ver, além daquilo que chamamos de septuagésima semana de Daniel. A visão de Daniel termina com &quot;naquele tempo livrar-se-á o Teu povo, todo aquele que se achar escrito no livro&quot;, e, &quot;Bem-aventurado o que espera&quot; ([Daniel 12:1](http://mysword.info/b?r=Dan_12:1);12). Devemos buscar nos outros profetas para vermos como o povo é libertado de seus últimos inimigos e transformado em um centro de bênção para toda a Terra.
+
+## Os Salmos {#os-salmos}
+
+Muitos de nós lemos os Salmos, encontrando aqui e ali versículos que desfrutamos e que aplicamos a nós. Isso é bom. Mas espero que aprendamos a lê-los vendo que são os pensamentos e sentimentos do povo de Deus quando Este, naquele dia ainda futuro, estiver tratando com Sua terra e com Seu povo em juízo. Os Salmos expressam as esperanças do povo, seus sentimentos, sua insegurança, e seu louvor à medida que passam por tudo e olham para trás vendo a maneira de Deus tratar com eles, primeiro castigando e, então, abençoando.
+
+Você não encontrará pensamentos genuinamente cristãos nos Salmos, pois eles não expressam a posição do cristão em Cristo. Você e eu podemos, e devemos, desfrutar agora mesmo de uma paz já estabelecida, paz esta que eles não poderão desfrutar naqueles dias futuros de agonia e incerteza, enquanto o Senhor estiver tratando com eles.
+
+Deus toma Seu povo e lhes diz: &quot;Sei como se sentem&quot;. E assim eles são levados a ter confiança no Senhor. Então Ele toma uns poucos dos que são Seus e o Senhor volta para eles e Se revela a eles secretamente, e lhes diz: &quot;De agora em diante ficarei com vocês. Vocês serão Meu povo e Eu estarei com vocês; mas há algumas coisas que terão que aprender primeiro&quot;.
+
+Então mais uma vez Ele coloca a Assíria no palco, assim como foi antes, e diz: &quot;Esta é a vara de Minha ira. Com ela antigamente Eu costumava castigar vocês, e ainda vou usá-la&quot;. Então Ele volta a introduzir em cena a Assíria para que sintam a mão do Senhor castigando-os.
+
+## Tempo de Angústia Para Jacó {#tempo-de-ang-stia-para-jac}
+
+[Jeremias 30:4](http://mysword.info/b?r=Jer_30:4) diz: &quot;E estas são palavras que disse o Senhor, acerca de Israel e de Judá&quot;. Note uma vez mais que isto diz respeito a Israel e Judá. Não é Jerusalém que está diante dEle, mas sim Israel e Judá. &quot;Porque assim diz o Senhor: Ouvimos uma voz de tremor, de temor mas não de paz&quot; ([Jeremias 30:5](http://mysword.info/b?r=Jer_30:5)). Ele quer que entendamos como eles estão se sentindo. Nesta passagem, o Seu povo encontra-se na terra e o Senhor está executando Sua obra de juízo para com aquela terra e todas as nações que lhe dizem respeito. Eles estão tremendo. Há medo e inquietação. Alguns desses sentimentos são expressos nos Salmos. Então lemos: &quot;Ah! Porque aquele dia é tão grande, que, não houve outro semelhante! e é tempo de angústia para Jacó: ele porém será livrado dela&quot; ([Jeremias 30:7](http://mysword.info/b?r=Jer_30:7)).
+
+Para entendermos este capítulo precisamos nos lembrar qual era a angústia de Jacó. Ele foi um homem que buscava a bênção de Deus, não é mesmo? Mas qual foi o problema em sua vida? Jacó desejava a bênção de Deus, mas pensava que poderia obtê-la por seus próprios esforços. Ele até se valeu de meios enganosos para tentar obtê-la. Talvez, leitor, a angústia de Jacó seja a sua angústia também. Talvez você sinta que pode conquistar, ou que pode merecer a bênção de Deus, e então você sai em busca dela gastando toda a energia de sua natureza. Jacó planejava conseguir a bênção, mas Deus teve que ensinar a Jacó que ele nunca poderia obter a bênção lutando por ela. Ele teve que aprender que Deus é O que abençoa em conformidade com Seu próprio coração de terno amor. O homem só consegue angústia quando luta por si próprio.
+
+O povo terreno de Deus ainda não aprendeu esta lição. Eles agora tentam manter a posse da terra e de suas bênçãos por seus próprios esforços. Mas todas as doze tribos serão introduzidas na terra e então virá um tempo de medo, grande tremor e pavor na expectativa de todos os inimigos que vêm em direção à sua terra. Eles estarão ali e o Senhor estará ali, e eles então irão aprender que o Senhor está com eles. O Senhor lhes diz em [Jeremias 30:10](http://mysword.info/b?r=Jer_30:10): &quot;Não temas, pois tu, servo meu Jacó, diz o Senhor, nem te espantes, ó Israel; porque eis que te livrarei&quot;.
+
+Prezados cristãos, será que aprendemos as lições que Israel irão aprender durante a angústia de Jacó? Israel terá que passar por isso, e quando lemos a Palavra de Deus podemos aplicar estas coisas a nossas próprias vidas. A profecia não é algo árido e de difícil compreensão. Dela aprendemos os procedimentos morais de Deus para com o Seu povo e para conosco.
+
+Deus lhes diz aqui: &quot;Eis que te livrarei&quot;. Eles têm que aprender a confiar nEle para que os liberte. Talvez você também precise aprender isso; talvez eu precise aprender isso em minha vida. Quando eles aprenderem a confiar no Senhor e não em si próprios, então, apesar da posição aparentemente sem esperança em que estarão, com o inimigo se aproximando e eles com suas cidades desprotegidas e sem muros, lemos: &quot;Jacó tornará, e descansará, e ficará em sossego, e não haverá quem o atemorize&quot; ([Jeremias 30:10](http://mysword.info/b?r=Jer_30:10)). Por que? &quot;Porque Eu sou contigo, diz o Senhor, para te salvar; porquanto darei fim a todas as nações entre as quais te espalhei; a ti, porém, não darei fim, mas castigar-te-ei com medida, e de todo não te terei por inocente&quot; ([Jeremias 30:11](http://mysword.info/b?r=Jer_30:11)).
+
+Os procedimentos dispensacionais e os concertos de Deus com o homem variam com as épocas, mas Seus procedimentos morais são sempre constantes. À medida que você estuda a profecia, vai conhecendo os Seus caminhos para com os homens, inclusive para com você mesmo.
+
+D. Rule

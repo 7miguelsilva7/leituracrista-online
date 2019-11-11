@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+  unicode-range: U+0026;
+}
+
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia");
+  unicode-range: U+270C;
+}
+
+html {
+  font: normal 112.5% / 1.65 serif;
+}
+
+body {
+  background-color: white;
+  font-family: Ampersand;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #444;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: auto auto 1.5rem;
+}
+
+article header {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+article header h1 {
+  font-size: 2.841rem;
+  margin: 0;
+}
+
+article header h2 {
+  font-size: 1.553rem;
+  margin: 0.3rem 0 0 0;
+}
+
+article header h3 {
+  font-size: 1.163rem;
+  margin: 0.3rem 0 0 0;
+}
+
+p + p {
+  text-indent: 1.5rem;
+  margin-top: -1.4rem;
+}
+
+h1, h2, h3, h4 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 0.9em;
+}
+
+h4 {
+  font-size: 0.9em;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+blockquote + figcaption cite {
+  display: block;
+  font-size: inherit;
+  text-align: right;
+}
+
+body {
+  word-wrap: break-word;
+}
+
+
+input, abbr, acronym, blockquote, code, kbd, q, samp, var {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre {
+  white-space: pre;
+}
+
+pre code {
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+abbr {
+  -webkit-font-variant: small-caps;
+  -moz-font-variant: small-caps;
+  -ms-font-variant: small-caps;
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray;
+}
+
+abbr[title]:hover {
+  cursor: help;
+}

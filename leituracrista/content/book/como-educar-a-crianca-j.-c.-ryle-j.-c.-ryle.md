@@ -1,0 +1,186 @@
+---
+title: Como Educar a Criança?
+Author: J. C. Ryle
+#Translator: translator
+slug: como-educar-a-crianca-j.-c.-ryle-j.-c.-ryle
+---
+
+Como Educar a Criança?
+
+Prefácio
+
+Ao publicarmos “Como Educar A Criança?”, sentimos que é importante lembrar, antes de tudo, que coisa alguma pode ser feita apropriadamente se os pais ou responsáveis não forem verdadeiros filhos de Deus. Se este livreto caiu nas mãos de uma mãe ou de um pai incrédulo, nosso desejo é que você aceite o Senhor Jesus como Salvador.
+
+Talvez você tenha um lar em ordem, segundo os padrões humanos, mas lembre-se do que Deus diz em [Hebreus 11:6](http://mysword.info/b?r=Heb_11:6): “Sem fé é impossível agradar a Deus”. Ao se preocupar com essas crianças tão queridas que Deus colocou sob seus cuidados, tendo elas uma alma imortal e preciosa, convém que você se certifique de estar, a si próprio, em ordem com Deus. Foi para pecadores perdidos e sem qualquer esperança, como nós, que o Senhor Jesus morreu. Somente Ele pode limpar os seus pecados, e Ele o fará se você for a Ele agora mesmo, apresentando-Lhe tão somente a sua culpa, e confiando no valor do precioso sangue de Cristo para limpá-lo de toda mancha perante um Deus santo ([1 Jo 1:7](http://mysword.info/b?r=1Jo_1:7)). E então, havendo se tornado um dos filhos de Deus, você estará capacitado — e certamente será este também o seu desejo — a criar seus filhos para o Senhor e para Sua glória.
+
+Antes de serem verdadeiramente salvos, os pais não podem apresentar aos seus filhos a motivação adequada. O pensamento do homem natural nunca pode ir mais alto do que a sua própria pessoa, e mesmo na educação de seus filhos o que os pais inconversos colocarão diante deles será o seu próprio eu. Eles ensinarão seus filhos a falar a verdade porque eles (os pais) não gostam de mentiras. Eles irão ensiná-los a ter boas maneiras a fim de tornarem seus filhos agradáveis e bem aceitos na sociedade. Eles lhes dirão que seus amigos não gostarão deles se fizerem certas coisas e, portanto, não devem fazê-las. Em suma, toda a educação terá um motivo centralizado no próprio eu; e, nesse caso, não poderia ser de outro modo.
+
+Porém até mesmo um cristão, se não estiver vigilante, estará inclinado a copiar essas ideias mundanas. Uma motivação como essa apela para coração natural, nosso e de nossos filhos, mas não se trata de uma motivação vinda de Deus. Criar nossos filhos “na doutrina e admoestação do Senhor” ([Ef 6:4](http://mysword.info/b?r=Eph_6:4)) é algo totalmente contrário a isso. Deveríamos ensiná-los a dizer a verdade porque são responsáveis diante do Senhor, e Ele odeia a mentira. Deveríamos ensiná-los a ser afáveis porque o Senhor diz para serem afáveis ([1 Pe 3:8](http://mysword.info/b?r=1Pe_3:8)), e eles devem procurar agradá-Lo. Deveríamos ensiná-los a buscar sempre fazer o que é correto, não para serem bem vistos pela sociedade (pois haverá ocasiões em que serão desprezados justamente por isso), mas tão somente para agradar ao Senhor. Isto é exatamente o oposto do ponto de vista humano, mas é o único caminho certo, se o que buscamos é educar nossos filhos em conformidade com Deus.
+
+Sentimos que é nosso dever frisar bem aqui que nossa confiança em educar nossos filhos, bem como em tudo aquilo acerca do que devemos ter confiança, deve estar no Senhor, e não em nós mesmos ou em nossos métodos. “Não que sejamos capazes, por nós, de pensar alguma coisa, como de nós mesmos; mas a nossa capacidade vem de Deus” ([2 Co 3:5](http://mysword.info/b?r=2Co_3:5)). Não há um pai ou uma mãe que possa afirmar ter educado corretamente seus filhos em todos os detalhes. Deus nos faz cônscios de nossa fraqueza e de nosso fracasso, a fim de podermos nos voltar a Ele e reconhecer que devemos tudo à Sua graça. Que o Senhor possa dar graça a cada um de nós, e a todos os pais que lerem estas linhas, para que possamos buscar nele a graça, sabedoria e força necessárias, que somente Ele pode suprir a cada dia, para sermos capazes de encaminhar nossa família a Ele nestes últimos dias.
+
+H. E. Hayhoe
+
+## “Criai-os na doutrina e admoestação do Senhor” (Ef 6:4). {#criai-os-na-doutrina-e-admoesta-o-do-senhor-ef-6-4}
+
+([Ef 6:4](http://mysword.info/b?r=Eph_6:4))
+
+Quão pouca importância é dada a este versículo! Vivemos numa época em que há um grande zelo pela educação; novas escolas estão surgindo de todos os lados; novos sistemas e novos livros para educar o jovem em todos os aspectos. Essas coisas podem muito bem despertar um exercício em nossos corações.
+
+Trata-se de um assunto que deveria encontrar morada em cada consciência, pois dificilmente haverá um lar onde ele não se aplique. Neste assunto, mais do que em qualquer outro, somos propensos a enxergar com mais clareza as faltas dos outros do que vermos as nossas próprias. Devemos suspeitar de nosso juízo próprio. Às vezes eu fico perplexo com a demora de certos pais, cristãos bem sensatos, em admitirem que seus filhos cometeram alguma falta ou merecem uma repreensão.
+
+Vamos colocar agora diante de nós algumas sugestões; palavras ditas a seu tempo ([Pv 15:23](http://mysword.info/b?r=Pro_15:23)). Não as rejeite pelo fato de serem apresentadas de forma simples e até mesmo um pouco rude.
+
+## Primeiro, se pretendemos educar nossos filhos com sabedoria, devemos educá-los de acordo com a Palavra de Deus. {#primeiro-se-pretendemos-educar-nossos-filhos-com-sabedoria-devemos-educ-los-de-acordo-com-a-palavra-de-deus}
+
+Lembre-se: crianças nascem com uma evidente inclinação para o mal. Portanto, se deixarmos que elas escolham por si próprias, com certeza farão a escolha errada.
+
+A mãe não pode prever como será o seu tenro bebê quando crescer; alto ou baixo, forte ou fraco, sábio ou tolo; ele poderá se tornar uma coisa ou outra — é tudo uma incerteza. Mas há algo que uma mãe pode dizer com certeza: ele possuirá um coração corrupto e pecaminoso. Faz parte de nossa natureza agir errado. Deus diz que “a estultícia está ligada ao coração do menino” ([Pv 22:15](http://mysword.info/b?r=Pro_22:15)). “A criança entregue a si mesma vem a envergonhar a sua mãe” ([Pv 29:15](http://mysword.info/b?r=Pro_29:15) — Almeida Versão Atualizada).
+
+Portanto, se desejamos agir sabiamente para com nosso filho, não devemos deixá-lo sob a direção da sua própria vontade. Devemos pensar por ele e julgar por ele, assim como teríamos que fazer por alguém cego e débil, mas jamais devemos abandoná-lo às suas próprias tendências e caprichos. Não são os seus gostos e desejos que devem ser consultados. Ele ainda não sabe o que é bom para a sua mente e para a sua alma, tanto quanto ele não sabe o que é bom para o seu corpo. Não deixe que ele decida o que deve comer, o que deve beber e como deve se vestir.
+
+Quantas cenas vergonhosas à mesa poderiam ser evitadas se os pais buscassem sabedoria divina acerca do que é melhor para se colocar no prato de uma criança.
+
+Se não concordamos com este primeiro princípio divino de se educar a criança, não trará nenhum proveito continuar a leitura deste livreto. A vontade própria é geralmente a primeira coisa que surge na mente de uma criança, e nosso primeiro passo deve ser o de resistirmos a ela. O melhor cavalo do mundo teve que ser domado.
+
+## Eduque seu filho com toda ternura, afeição e paciência. {#eduque-seu-filho-com-toda-ternura-afei-o-e-paci-ncia}
+
+Não estou querendo dizer que você deva mimá-lo, mas sim fazê-lo ver que o ama. Bondade, gentileza, domínio-próprio, brandura, paciência, simpatia, desejo de participar dos problemas infantis, prontidão em participar das alegrias infantis — são as cordas pelas quais uma criança pode ser conduzida com a maior facilidade; são as pegadas que você deve seguir se deseja encontrar o caminho ao coração dela.
+
+Austeridade e severidade nos modos as desanimam e fazem com que se afastem. Isso fecha seus corações, e você vai ficar aborrecido tentando procurar a porta. Mas deixe que vejam que você tem um sentimento afetivo para com elas; que você deseja realmente fazê-las felizes e fazer-lhes o bem; que se você as pune é buscando o bem delas.
+
+As crianças são criaturas frágeis e sensíveis, e, como tais, precisam ser tratadas com paciência e consideração. Devemos manuseá-las delicadamente, como plantas delicadas, pois um tratamento áspero lhes fará mais mal do que bem.
+
+Não devemos esperar que aprendam tudo de uma só vez. Devemos nos lembrar do que são e ensiná-las aquilo que puderem suportar. O entendimento delas é como um vaso com gargalo estreito; devemos introduzir nelas o vinho do conhecimento gradualmente, caso contrário a maior parte se derramará e se perderá. Linha após linha e preceito após preceito, um pouco aqui, um pouco acolá; esta deve ser a nossa regra. É verdade que para se educar uma criança há necessidade de paciência, mas sem esta nada poderá ser feito.
+
+Não existe nada que possa compensar a ausência de amor e ternura. Você pode colocar os deveres de seus filhos diante deles, pode dar-lhes ordens, ameaçá-los, puni-los, discutir com eles; mas se faltar afeição no seu tratamento, todo o seu trabalho terá sido em vão. Amor é o grande segredo de uma educação bem sucedida. Ira e aspereza podem assustar, mas não convencerão uma criança de que você esteja certo. E se ela o vê fora de si com frequência, bem cedo deixará de respeitá-lo. O medo põe fim a um relacionamento franco; o medo leva a criança a fazer as coisas às escondidas; o medo lança a semente da hipocrisia e leva muitas a mentirem. Há uma mina de verdade nas palavras do apóstolo aos colossenses: “Vós, pais, não irriteis a vossos filhos, para que não percam o ânimo” ([Cl 3:21](http://mysword.info/b?r=col_3:21)).
+
+## Eduque seus filhos diligentemente, lembrando-se da importância de uma educação correta. {#eduque-seus-filhos-diligentemente-lembrando-se-da-import-ncia-de-uma-educa-o-correta}
+
+Os hábitos criados na tenra idade são, se podemos falar assim, os mais importantes para Deus. Somos o que somos pela educação que tivemos. Nosso caráter toma a forma do molde em que nossos primeiros anos foram colocados, sem esquecer, evidentemente, o que a graça de Deus pode fazer por aquele que se volta a Ele.
+
+Deus dá aos nossos filhos uma disposição para confiarem em nossa palavra e não na de um estranho, e suas mentes receberão marcas e impressões como acontece com a argila úmida. Em poucas palavras, Deus nos dá uma oportunidade de ouro para lhes fazermos bem. Fique atento para não negligenciar essa oportunidade, desperdiçando-a.
+
+Eu sei que você não pode converter seu filho. Sei muito bem que aqueles que são nascidos de novo são nascidos, não da vontade do homem, mas de Deus. Mas também estou ciente de que Deus diz expressamente, “criai-os na doutrina e admoestação do Senhor” ([Ef 6:4](http://mysword.info/b?r=Eph_6:4)), e Ele nunca deu ao homem uma ordem sem prover também a graça para que fosse capaz de cumpri-la. O caminho de obediência é o caminho de bênção. Temos tão somente que fazer como fizeram os servos na festa de casamento em Caná, ou seja, encher os vasos com água; e podemos seguramente deixar que o Senhor transforme a água em vinho.
+
+## Tenha sempre em mente que a alma de seu filho é o que deve estar em primeiro lugar. {#tenha-sempre-em-mente-que-a-alma-de-seu-filho-o-que-deve-estar-em-primeiro-lugar}
+
+Sem dúvida alguma esses pequeninos são preciosos aos nossos olhos, mas se os amamos iremos nos preocupar constantemente com suas almas. Nada poderá nos interessar mais do que seu bem estar eterno. Nenhuma parte deles deveria ser tão cara a nós do que aquela que nunca morrerá. O mundo, com toda a sua glória, passará, mas o espírito que habita naquelas criaturinhas que tanto amamos, sobreviverá a tudo, e se será para felicidade ou para miséria (falando como homem), isso dependerá de nós. Este é o pensamento que deveria estar sempre em primeiro lugar em nossa mente, em tudo aquilo que fazemos para nossos filhos: “Como isso afetará sua alma?”.
+
+Mimar e satisfazer todos os caprichos de nosso filho, como se este mundo fosse a única coisa importante para ele e esta vida a única ocasião disponível para ser feliz, não é amor verdadeiro, mas crueldade. Tampouco é fidelidade a Cristo.
+
+Um cristão fiel não pode ser escravo da moda, se quiser educar seu filho para o Senhor. Ele não deve se contentar em fazer as coisas meramente por serem o costume do mundo, principalmente no que diz respeito ao mundo religioso com suas tradições populares, mas não autorizadas biblicamente, como é o caso do “Natal” e da “Páscoa” ([Gl 4:10](http://mysword.info/b?r=Gal_4:10); [Romanos 12:2](http://mysword.info/b?r=Rom_12:2)). Você tampouco os estará protegendo se permitir que leiam as vãs revistas em quadrinhos e livros de qualidade questionável, simplesmente porque todo mundo os lê. E o que mais pode introduzir tanto o mundo no lar além da televisão? Pais cristãos não devem se envergonhar se chamarem seu método de educar estranho e excêntrico. E se for, o que importa? O tempo é curto — a moda deste mundo passa logo. Aqueles que têm educado seus filhos para o céu ao invés de educá-los para a terra — para Deus ao invés de fazê-lo para os homens — são pais que no final serão chamados sábios. “Aquele que faz a vontade de Deus permanece para sempre” ([1 Jo 2:17](http://mysword.info/b?r=1Jo_2:17)).
+
+## Eduque seu filho no conhecimento da Bíblia. {#eduque-seu-filho-no-conhecimento-da-b-blia}
+
+Não podemos fazer nossos filhos amarem a Bíblia, eu sei disso. Ninguém além do Espírito Santo pode dar a eles um coração que se deleite com a Palavra. Mas podemos fazer com que nossos filhos fiquem familiarizados com a Bíblia; e pode ter certeza de que nunca será cedo demais para fazê-lo, e eles nunca estarão familiarizados demais para você dar a tarefa por encerrada. Deixe que a Bíblia, simplesmente, seja tudo na educação de suas almas; e que todos os outros livros fiquem em segundo lugar.
+
+## Faça com que seus filhos leiam a Bíblia reverentemente; em verdade ela é a Palavra de Deus. E faça com que a leiam regularmente. {#fa-a-com-que-seus-filhos-leiam-a-b-blia-reverentemente-em-verdade-ela-a-palavra-de-deus-e-fa-a-com-que-a-leiam-regularmente}
+
+Fale a eles do pecado, de sua culpa, das consequências, do seu poder, de sua vileza — você verá que são capazes de compreender algo a esse respeito. Fale a eles do Senhor Jesus Cristo, do Seu amor, da Sua obra para nossa salvação — Sua cruz, Seu sangue derramado, Sua ressurreição, ascensão e breve retorno. Em tudo você descobrirá algo que não estará além da compreensão deles.
+
+## Eduque-os no hábito da oração. {#eduque-os-no-h-bito-da-ora-o}
+
+Se você ama seus filhos, faça tudo o que estiver ao seu alcance para educá-los no hábito da oração. Mostre a eles como devem começar. Diga a eles o que devem falar. Encoraje-os a perseverarem. Faça com que se lembrem, caso se tornem descuidados e negligentes neste assunto. Assim como os primeiros passos em qualquer atividade são os mais importantes, o mesmo acontece com a maneira como as orações de nossos filhos são feitas, um assunto que merece nossa maior atenção. São poucos os que parecem compreender o quanto depende disto. Devemos estar atentos para que não passem a fazer suas orações de uma maneira precipitada, descuidada e irreverente. Querido leitor, se você ama seus filhos, eu lhe rogo que não deixe passar a época do plantio da semente do hábito de orar.
+
+## Eduque-os a se reunirem com o povo de Deus numa maneira bíblica. {#eduque-os-a-se-reunirem-com-o-povo-de-deus-numa-maneira-b-blica}
+
+Diga a eles que onde o povo do Senhor estiver reunido ao Seu nome, ali o Senhor Jesus está presente de uma maneira especial, e que aqueles que se ausentam, como o apóstolo Tomé, devem saber que estão perdendo uma bênção. “Não deixando a nossa congregação, como é costume de alguns” ([Hb 10:25](http://mysword.info/b?r=Heb_10:25)).
+
+Não permita que cresçam com o hábito de decidir se querem ou não ir às reuniões. Tampouco gosto de ver aquilo que chamo de “cantinho dos jovens” em uma assembleia. Ali eles com frequência adquirem o hábito de ficar desatentos e irreverentes, o qual leva anos para perder, se é que conseguem perdê-lo. Gosto de ver todos os membros de uma família sentados juntos. “Havemos de ir com os nossos meninos, e com os nossos velhos; com os nossos filhos, e com as nossas filhas... porque festa do Senhor temos”
+
+([Ex 10:9](http://mysword.info/b?r=Exo_10:9)). Também não deveríamos desperdiçar levianamente o Dia do Senhor transformando-o em um dia de recreação e proveito próprio.
+
+## Eduque-os para que lhe obedeçam, mesmo que muitas vezes não saibam o porquê. {#eduque-os-para-que-lhe-obede-am-mesmo-que-muitas-vezes-n-o-saibam-o-porqu}
+
+Devemos ensiná-los a aceitar tudo aquilo que exigimos deles como sendo para seu próprio bem. Tenho ouvido alguns dizerem que nunca deveríamos exigir das crianças coisas que elas não possam entender; que deveríamos explicar e dar uma razão para tudo o que desejamos que façam. Eu o alerto solenemente contra tal conceito. E vou mais além: creio que se trata de um princípio mau e sem base nas Escrituras.
+
+É, sem dúvida alguma, um absurdo fazer mistério de tudo o que fazemos, e há muitas coisas que é melhor que expliquemos às crianças, a fim de verem que são coisas sábias e razoáveis. Porém, criá-las com a ideia de que não devem receber nada sem antes se certificarem — que elas, com sua compreensão fraca e imperfeita, devem ter antes os “por quê?” e os “qual o motivo?” claramente explicados para cada passo que devem dar — trata-se, isto sim, de um temível engano que provavelmente trará um péssimo efeito à mente das crianças.
+
+Coloque diante de seus filhos o exemplo de Isaque quando Abraão levou-o para oferecer sobre o Monte Moriá ([Gn 22](http://mysword.info/b?r=Gen_22)). Ele perguntou a seu pai simplesmente: “Onde está o cordeiro para o holocausto?” E não recebeu outra resposta além desta: “Deus proverá para Si o cordeiro para o holocausto, meu filho”. Como, quando, de onde, de que maneira, ou por que meios — nada disso foi dito a Isaque; mas a resposta foi suficiente. Ele creu que tudo estaria bem, pois seu pai lhe dissera, e ficou satisfeito com isso.
+
+## Eduque-os no hábito de uma pronta obediência. {#eduque-os-no-h-bito-de-uma-pronta-obedi-ncia}
+
+Isso compensa o trabalho que dá. Creio que nenhum hábito tem maior influência em nossa vida do que este. Esteja determinado a fazer com que seus filhos lhe obedeçam, mesmo que isso possa custar a você mais trabalho, e a eles mais lágrimas. Que não haja questionamento, argumentação ou disputa, e que eles não procedam de modo a ganhar tempo.
+
+Quando você der uma ordem, faça com que vejam claramente que sua vontade tem que ser cumprida. A característica de uma criança bem educada é fazer tudo o que seus pais ordenam. Pois onde estará a honra de que fala [Ef 6:1-3](http://mysword.info/b?r=Eph_6:1-3), se os pais não são obedecidos alegremente, prontamente e de boa vontade? (leia também [Colossenses 3:20](http://mysword.info/b?r=col_3:20)).
+
+A obediência que começa cedo conta com todas as Escrituras a seu favor. No elogio que é feito a Abraão não diz apenas que ele iria educar seus filhos, mas “ordenar a seus filhos e a sua casa depois dele” ([Gn 18:19](http://mysword.info/b?r=Gen_18:19)). Acerca do Senhor Jesus foi dito que, quando jovem, era sujeito a Maria e a José ([Lc 2:51](http://mysword.info/b?r=Luk_2:51)). Repare que o apóstolo Paulo menciona a desobediência aos pais como um dos maus sinais dos últimos dias ([2 Tm 3:2](http://mysword.info/b?r=2Ti_3:2)).
+
+Você deseja ver seus filhos felizes? Cuide de educá-los para que obedeçam quando recebem uma ordem. Creia-me, não somos feitos para uma completa independência; não servimos para isso. Mesmo os libertos de Cristo têm um jugo para levar — servem a Cristo, o Senhor ([Cl 3:24](http://mysword.info/b?r=col_3:24)). Nunca é cedo para as crianças aprenderem que este é um mundo onde não podemos querer mandar, e que nunca estaremos em nosso devido lugar enquanto não aprendermos como obedecer. Ensine-os a obedecer enquanto são jovens, ou mais tarde estarão, pelo resto da vida, em guarda contra Deus, dominados pela vã ideia de serem independentes do Seu controle.
+
+Você encontrará muitos em nossos dias que permitem que seus filhos escolham e pensem por si próprios muito antes de serem capazes de fazê-lo, e que até mesmo dão desculpas para a sua desobediência, como se fosse algo que não merecesse uma repreensão. Para mim, uma das cenas mais tristes de se presenciar é ver um pai ou uma mãe cedendo sempre, e uma criança tendo sempre a última palavra; triste, pois se trata de uma inversão e perversão da ordem estabelecida por Deus; triste, pois sei que no final, com toda certeza, o caráter daquela criança acabará em vaidade e vontade própria.
+
+## Eduque-os para que falem sempre a verdade, toda a verdade e nada além da verdade. {#eduque-os-para-que-falem-sempre-a-verdade-toda-a-verdade-e-nada-al-m-da-verdade}
+
+Deus é apresentado como um Deus de verdade. Menos do que a verdade é uma mentira; aquela fuga, aquela desculpa, ou aquele exagero são meio-caminho para a falsidade, e devem ser evitados. Encoraje-os a serem francos em toda e qualquer circunstância, e a falarem a verdade custe o que custar.
+
+Eu insisto nisto para que também possamos ficar mais tranquilos e sermos auxiliados em tudo o que tivermos que tratar com eles. Descobriremos ser isto uma poderosa ajuda, pois poderemos sempre confiar no que disserem. Isto tem um efeito ainda mais amplo, pois ajuda a prevenir aquele hábito que infelizmente prevalece entre as crianças, de fazer as coisas às escondidas.
+
+## Eduque-os no hábito de sempre aproveitarem o tempo. {#eduque-os-no-h-bito-de-sempre-aproveitarem-o-tempo}
+
+A ociosidade é a melhor amiga do diabo. É, com certeza, a maneira mais eficaz de dar a ele uma oportunidade de causar algum dano. Uma mente desocupada é como uma porta aberta, e se Satanás não entrar nela pessoalmente, é certo que lançará dentro dela alguma coisa para gerar maus pensamentos. Devemos ter nossas mãos cheias e nossas mentes ocupadas com alguma coisa, do contrário nossa imaginação cedo fermentará e acalentará o mal. “Eis que esta foi a maldade de Sodoma, tua irmã; soberba, fartura de pão, e abundância de ociosidade teve ela” ([Ez 16:49](http://mysword.info/b?r=Eze_16:49)).
+
+Eu verdadeiramente creio que a ociosidade leva ao pecado, mais do que talvez qualquer outro hábito que se possa mencionar. Gosto de ver as crianças ativas e laboriosas, e se entregando de coração a tudo o que empreendem fazer.
+
+## Eduque-as com constante aversão à auto piedade. {#eduque-as-com-constante-avers-o-auto-piedade}
+
+Sei muito bem que a punição e a correção são coisas desagradáveis. Nada é mais desagradável do que causar dor naqueles que amamos, produzindo neles muitas lágrimas. Mas já que o coração é o que é, de um modo geral será inútil pensar que as crianças possam ser criadas sem que haja correção. A palavra “arruinar” é muito expressiva e, infelizmente, cheia de significado. E a maneira mais rápida de arruinar os filhos é deixar que sigam o seu próprio caminho — permitir que façam o que é errado, e não puni-los por isso. Creia-me, você nunca deve agir assim, não importa quanta dor possa lhe custar, a não ser que deseje arruinar a alma de seus filhos.
+
+“O que retém a sua vara aborrece a seu filho, mas o que o ama a seu tempo o castiga” ([Pv 13:24](http://mysword.info/b?r=Pro_13:24)). “Castiga a teu filho enquanto há esperança, mas para o matar não alçarás a tua alma” ([Pv 19:18](http://mysword.info/b?r=Pro_19:18)). “A estultícia está ligada ao coração do menino, mas a vara da correção a afugentará dele” ([Pv 22:15](http://mysword.info/b?r=Pro_22:15)). “Não retires a disciplina da criança, porque, fustigando-a com a vara, nem por isso morrerá. Tu a fustigarás com a vara e livrarás a sua alma do inferno” ([Pv 23:13-14](http://mysword.info/b?r=Pro_23:13-14)). “A vara e a repreensão dão sabedoria, mas o rapaz entregue a si mesmo envergonha a sua mãe. Castiga a teu filho, e te fará descansar; e dará delícias à tua alma” ([Pv 29:15, 17](http://mysword.info/b?r=Pro_29:15,27)).
+
+Quão fortes e enérgicas são estas passagens! Como é triste que em muitas famílias cristãs elas até pareçam ser desconhecidas! Seus filhos precisam de repreensão, mas esta quase nunca é dada; eles precisam de correção, mas quase nunca é empregada. O livro de Provérbios ainda não está obsoleto e inadequado para os cristãos; foi dado por inspiração de Deus e é útil. Com toda a certeza, o crente que cria seus filhos sem prestar atenção aos seus conselhos está se fazendo a si mesmo mais sábio do que aquilo que está escrito, e fazendo assim erra tremendamente.
+
+Afirmo claramente que os pais que não punem seus filhos quando cometem uma falta estão lhes infligindo um dano muito mais cruel. Quero alertá-los de que esse modo de agir é um recife no qual os santos de Deus, de todas as épocas, com muita frequência naufragaram. Gostaria de persuadi-los a serem sábios no tempo presente, e passarem ao largo de tal perigo.
+
+Veja o caso de Eli. Seus filhos Hofni e Finéias tornaram-se vis, e ele não os repreendeu. Ele não lhes deu muito mais do que uma mansa e leve repreensão, quando devia tê-los repreendido asperamente. Em suma, ele deu mais honra aos seus filhos do que a Deus. E no que terminou isso? Ele viveu apenas o suficiente para ouvir da morte de ambos os seus filhos no campo de batalha e suas cãs foram baixadas com tristeza à sepultura. ([1 Sm 2:12-34](http://mysword.info/b?r=1Sa_2:12-34); [3:10-18](http://mysword.info/b?r=1Sa_3:10-18)).
+
+Veja, também, o caso de Davi. Quem poderá ler, sem um sentimento de dor, a história de seus filhos e seus pecados? O incesto de Amnon, o assassinato e rebelião praticados por Absalão, a ardilosa ambição de Adonias ([2 Sm 13 a 18](http://mysword.info/b?r=2Sa_13); [1 Reis 1](http://mysword.info/b?r=1Ki_1)). No que diz respeito a Adonias, em [1 Reis 1:6](http://mysword.info/b?r=1Ki_1:6) lemos que “nunca seu pai o tinha contrariado, dizendo: Por que fizeste assim?”. Foi esse o alicerce de todo o dano. Davi era um pai indulgente ao extremo — um pai que deixa que seus filhos tenham sua própria maneira de ser; e ele colheu de acordo com o que semeou.
+
+Rogo aos pais, pelo bem de seus próprios filhos, que tenham o cuidado de não ser indulgentes em extremo. Rogo que se lembrem de que a obrigação principal dos pais é considerar as necessidades reais de seus filhos e não seus gostos e manias; é educá-los, e não satisfazê-los; dar a eles o que é de proveito, não meramente agradá-los.
+
+Você não deve estimular cada desejo e capricho da mente de seu filho, não importa o quanto você o ame; você não deve fazê-lo pensar que a vontade dele está acima de tudo e que basta ele querer algo, e será feito. Eu lhe rogo, não faça de seus filhos ídolos, para que Deus não os leve e quebre seus ídolos para convencê-lo de sua insensatez.
+
+Aprenda a dizer “não” aos seus filhos. Mostre-lhes que você estará pronto a recusar qualquer coisa que achar imprópria para eles. Fique firme quando tiver que decidir acerca de diversões e atividades extraescolares, a menos que deseje que seus filhos sejam carregados na correnteza das seduções de Satanás.
+
+Mostre a eles que você está pronto para punir toda desobediência, e que quando você fala de punição, não está pronto apenas para ameaçar, mas também para executá-la. “Deixando as ameaças” ([Ef 6:9](http://mysword.info/b?r=Eph_6:9)). É melhor que haja menos punições, porém sérias e eficientes, do que punições leves e frequentes, porém nunca permita que a desobediência fique impune. Quando a disciplina de seus filhos se fizer necessária, é imperativo que os pais estejam de comum acordo em cooperação de amor.
+
+Cuidado ao permitir que pequenas faltas passem despercebidas, sob o pretexto de que “é pequena”. Não há coisas pequenas na educação das crianças; todas são importantes. As pequenas ervas daninhas devem ser arrancadas tanto quanto as outras. Deixe-as e em breve estarão grandes. Querido leitor, se você não tiver trabalho com seus filhos enquanto são pequenos, eles lhe darão trabalho quando forem grandes.
+
+## Eduque-os, lembrando continuamente de como Deus educa os Seus próprios filhos. {#eduque-os-lembrando-continuamente-de-como-deus-educa-os-seus-pr-prios-filhos}
+
+Se quiser educar seus filhos sabiamente, preste atenção na maneira como Deus Pai educa os que Lhe pertencem. Ele faz tudo bem feito; o método que Ele adota deve, portanto, ser o correto. Os filhos de Deus, depois de uma longa jornada, poderão dizer a você que foi algo bendito não terem seguido seus próprios caminhos e que o que Deus fez para eles foi muito melhor do que aquilo que poderiam ter feito por si mesmos. Sim, e poderão lhe dizer também que o modo de Deus tratá-los lhes trouxe mais alegria do que eles jamais teriam conseguido por si próprios.
+
+Rogo a você que conserve no coração a lição que lhe ensina o modo como Deus trata Seus próprios filhos. Não tema privar seu filho de tudo aquilo que você considerar poder causar-lhe algum dano, não importa quais sejam os desejos dele. É este o método de Deus. Ser perpetuamente indulgente é a maneira de se criar um egoísta; e pessoas egoístas e crianças arruinadas dificilmente são felizes. Querido leitor, não seja mais sábio do que Deus; eduque seus filhos como Ele educa os que Lhe pertencem.
+
+## Eduque-os, lembrando-se continuamente da influência do seu próprio exemplo. {#eduque-os-lembrando-se-continuamente-da-influ-ncia-do-seu-pr-prio-exemplo}
+
+Não há substituto para a piedade — o real temor de Deus na vida dos pais. Instruções, avisos e ordens terão pouco valor se não tiverem respaldo no modelo apresentado por sua própria vida. Seus filhos nunca crerão que você esteja falando sério, e que deseja que realmente lhe obedeçam, se suas atitudes estiverem contradizendo seus conselhos. Nós pouco conhecemos a força e o poder de um exemplo.
+
+As crianças observam nossos modos, registram a nossa conduta, observam nosso temperamento. Em nenhum outro caso, creio eu, o exemplo fala tão alto quanto no relacionamento entre pais e filhos. Não se esqueça de que seus filhos aprendem mais pelo olho do que pelo ouvido. O que eles veem tem um efeito muito mais forte sobre suas mentes do que aquilo que lhes é falado.
+
+Empenhe-se ao ponto de ser uma epístola viva de Cristo, de modo que seus filhos possam lê-la claramente. Seja um exemplo nas palavras, no temperamento, na diligência, na temperança, na fé, na bondade, na humildade. Acredite que seus filhos não irão praticar aquilo que não virem você praticar. Os pais são o modelo que eles copiarão. Seus raciocínios e suas leituras, suas sábias ordens e seu bom conselho — talvez eles não compreendam tudo isso, mas compreenderão sua vida. A medida de Cristo que você desfruta para si mesmo é a que eles crerão tratar-se de algo real. As crianças são observadoras muito ágeis; muito ágeis em enxergar através da hipocrisia, muito ágeis em adotar todos os seus modos e opiniões; e você logo descobrirá ser verdadeira a expressão: “tal pai, tal filho”.
+
+## Eduque-os, lembrando continuamente o poder do pecado. {#eduque-os-lembrando-continuamente-o-poder-do-pecado}
+
+Isto o guardará de acalentar esperanças que não são bíblicas. É triste constatar quanta corrupção e quanto mal existe no coração de uma pequena criança, e quão cedo isso começa a dar fruto.
+
+Temperamento violento, vontade-própria, orgulho, obstinação, ira, preguiça, egoísmo, engano, astúcia, falsidade, hipocrisia, uma terrível aptidão para aprender o que é mau, uma triste lentidão para aprender o que é bom, uma prontidão para fingir qualquer coisa a fim de atingir seus propósitos. Você não deve achar estranho ou inusitado que corações tão pequenos possam estar tão cheios de pecado. Trata-se da única herança que nosso pai Adão nos deixou: a natureza caída com a qual viemos a este mundo.
+
+Nunca dê ouvidos àqueles que dizem que seus filhos são bons e bem-criados, e que são de confiança. No fundo eles precisam apenas de uma pequenina faísca para acender sua corrupção. Normalmente os pais não são muito prontos a admitir isto. Lembre-se da natureza depravada de seus filhos e tome cuidado.
+
+“Lança o teu pão sobre as águas”, diz o Espírito, “porque depois de muitos dias o acharás” ([Ec 11:1](http://mysword.info/b?r=Ecc_11:1)). Não tenho dúvida de que muitas crianças se levantarão no dia do juízo e bendirão a seus pais pela boa educação que receberam, mesmo que nunca tenham dado mostra de haverem tirado algum proveito disso durante a vida de seus pais. Portanto, siga adiante por fé, e pode ter certeza de que seu trabalho não será totalmente em vão. Por três vezes Eliseu se estendeu sobre o corpo do filho da viúva antes que este revivesse. Siga o exemplo dele e persevere.
+
+## Eduque-os com contínua oração por bênção em tudo o que você está fazendo. {#eduque-os-com-cont-nua-ora-o-por-b-n-o-em-tudo-o-que-voc-est-fazendo}
+
+Olhe para seus filhos como fazia Jacó para com os dele; ele diz a Esaú, “os filhos que Deus graciosamente tem dado a teu servo” ([Gn 33:5](http://mysword.info/b?r=Gen_33:5)). Olhe para eles como José olhou para os seus, quando disse a seu pai, “Eles são meus filhos, que Deus me tem dado aqui” ([Gn 48:9](http://mysword.info/b?r=Gen_48:9)). Considere-os, com o salmista, como “herança do Senhor” ([Sl 127:3](http://mysword.info/b?r=Psa_127:3)).
+
+Repare como Manué fala ao anjo acerca de Sansão: “Qual será o modo de viver e serviço do menino?” ([Jz 13:12](http://mysword.info/b?r=Jdg_13:12)) (N.T.: ou, numa tradução livre da versão inglesa, “Como devemos ordenar a criança, e como devemos proceder para com ela?”). Observe com que ternura Jó cuidava da alma de seus filhos, o qual “oferecia holocaustos segundo o número de todos eles”, pois ele dizia, “porventura pecaram meus filhos, e blasfemaram de Deus no seu coração. Assim o fazia Jó continuamente” ([Jó 1:5](http://mysword.info/b?r=Job_1:5)).
+
+Pais, se vocês amam seus filhos, vão em frente e façam o mesmo. Nunca será demais trazer à memória o nome de seus filhos diante do propiciatório. Vocês podem mandar seus filhos para as melhores escolas, dar a eles Bíblias e encher suas cabeças com conhecimento; mas se durante todo esse tempo não houver uma educação constante no lar, quero dizer-lhes claramente, temo que no final as coisas sejam difíceis para os seus filhos, no que se refere às suas almas.
+
+Os cálices mais amargos que o homem já bebeu foram aqueles preparados pelos filhos. Filhos têm sido os causadores das mais tristes lágrimas que o homem já derramou. Adão podia falar a respeito disso; Davi também podia fazer o mesmo. Não há tristezas neste mundo como aquelas que filhos trouxeram a seus pais.
+
+Oh! Tenha cuidado para que sua própria negligência não lhe traga miséria na sua velhice. “Derrama o teu coração como águas diante da face do Senhor: levanta a eles as tuas mãos, pela vida de teus filhinhos” ([Lm 2:19](http://mysword.info/b?r=Lam_2:19)).
+
+Nota do Editor: O texto aqui publicado é “The duties of parents”, de autoria de J. C. Ryle, e foi editado, contemporizado e adaptado por H. E. Hayhoe. O original inglês pode ser encontrado na web. John Charles Ryle nasceu em 1816 e faleceu em 1900 na Inglaterra.

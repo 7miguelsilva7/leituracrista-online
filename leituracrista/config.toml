@@ -1,0 +1,9 @@
+baseURL = "https://leituracrista.com/app/"
+languageCode = "pt-br"
+title = "Leitura Cristã"
+
+theme = "default"
+canonifyURLs = true
+
+[permalinks]
+book  = ":slug/"

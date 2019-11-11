@@ -1,0 +1,15 @@
+let CURRENT_CACHES_LC = {
+  offline_lc: 'LeituraCrista'
+};
+
+const OFFLINE_URL_lc = '/app/index.html';
+
+var urls_lc = [
+  
+  '/app/',
+  '/app/index.html',
+  '/app/css/main.css',
+  '/app/css/normalize.css',
+  '/app/css/typo.css',
+  '/app/js/custom.js',
+  '/app/closeWindow.html',

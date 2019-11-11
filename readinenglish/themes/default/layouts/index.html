@@ -1,0 +1,161 @@
+{{ partial "header.html" . }}
+
+    <link rel='manifest' href='readinenglish-manifest.json'>
+
+<script>
+// function goToActivedBook()
+// {
+if(localStorage.hasOwnProperty('NameBookActivedKeyreadinenglish')){
+location.replace(localStorage.getItem('NameBookActivedKeyreadinenglish'));
+}
+// }
+</script>
+
+</head>
+<body onscroll="onscrolling()" >
+
+<!-- The actual snackbar -->
+ <div id="snackbar"><a href="#" id="reload"><div>Atualização disponível clique aqui!</a></div></div>
+
+<style>
+#scroll {overflow-y: auto;}
+
+/* update */
+#snackbar {
+      visibility: hidden;
+      min-width: 250px;
+      margin-left: -125px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 2px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1;
+      left: 50%;
+      right: 50%;
+      bottom: 30px;
+      cursor:pointer;
+
+    }
+    #snackbar.show {
+      visibility: visible;
+      -webkit-animation: fadein 0.5s;
+      animation: fadein 0.5s;
+      
+    }
+    @-webkit-keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+    @keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+</style>
+
+<hr>
+<ul>
+  {{ range where .Data.Pages.ByTitle "Section" "book" }}
+    <li>
+      <script>
+        var livroreadinenglishStatus = '{{ .Title }}'.concat('Status')
+        if(localStorage.hasOwnProperty(livroreadinenglishStatus)){if (localStorage.getItem(livroreadinenglishStatus) == 1){document.write('<span style="color:#04B404">LIDO</span>')}}</script>
+        <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+        <!-- <span onclick='await fetch("{{ .Permalink }}");'>Baixar</span> -->
+    </li>
+  {{ end }}
+</li>
+
+<a style="display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;" href="#" title="Para o topo!">
+  <img style="width:150px" src="img/up.png" alt="Subir">
+
+<!-- <a style="display:scroll;bottom:10px;right:50%;left:50%;color:#f00;font-weight:bold;" href="#" onclick="window.location.reload();">Update</a> -->
+
+  <!-- <b>^<br>
+    ^</b> -->
+</a>
+
+<script>
+
+function downloadBook(){
+  
+}
+//   if ('serviceWorker' in navigator) {
+//     window.addEventListener('load', function () {
+//         navigator.serviceWorker.register('sw.js').then(function (registration) {
+//             console.log('Service worker successfully registered on scope', registration.scope);
+//         }).catch(function (error) {
+//             console.log('Service worker failed to register', error);
+//         });
+//     });
+// }
+
+let newWorker;
+  function showUpdateBar() {
+    let snackbar = document.getElementById('snackbar');
+    snackbar.className = 'show';
+  }
+  // The click event on the pop up notification
+  document.getElementById('reload').addEventListener('click', function(){
+    newWorker.postMessage({ action: 'skipWaiting' });
+  });
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/app/readinenglish/sw-readinenglish.js').then(reg => {
+      reg.addEventListener('updatefound', () => {
+        // A wild service worker has appeared in reg.installing!
+        newWorker = reg.installing;
+        newWorker.addEventListener('statechange', () => {
+          // Has network.state changed?
+          switch (newWorker.state) {
+            case 'installed':
+              if (navigator.serviceWorker.controller) {
+                // new update available
+                showUpdateBar();
+              }
+              // No update available
+              break;
+          }
+        });
+      });
+    });
+    let refreshing;
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (refreshing) return;
+      window.location.reload();
+      refreshing = true;
+    });
+  }
+
+// var closeWindowLC = localStorage.getItem('closeWindowLC')
+// if (closeWindowLC != 1)
+// {
+// console.log(closeWindowLC)
+// window.open('closeWindow.html')
+// }
+// console.log(closeWindowLC);
+
+// Return to the actived book
+function goToActivedBook()
+{
+  if(localStorage.hasOwnProperty('NameBookActivedKeyreadinenglish')){
+location.replace(localStorage.getItem('NameBookActivedKeyreadinenglish'));
+}
+}
+</script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+{{ partial "footer.html" . }}

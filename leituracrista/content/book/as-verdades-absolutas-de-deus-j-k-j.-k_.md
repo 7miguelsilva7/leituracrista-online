@@ -1,0 +1,39 @@
+---
+title: As Verdades Absolutas de Deus
+Author: J. K.
+slug: as-verdades-absolutas-de-deus-j-k-j.-k_
+---
+
+# AS VERDADES ABSOLUTAS DE DEUS {#as-verdades-absolutas-de-deus}
+
+J. K.
+
+Certa vez, um professor fez um comentário que tem vindo a minha mente nestes dias. Depois de ter ouvido falar de sua necessidade do Salvador, ele comentou: &quot;Você não pode ter certeza das coisas de que você fala, não existem verdades absolutas. Tudo é relativo&quot;. Ele então passou a falar das &quot;zonas cinzentas &quot; da vida, no qual é impossível saber com precisão o que é verdadeiro.
+
+Ele faz meu coração cantar pensando nas verdades absolutas de Deus. Não somos deixados no mundo para vagar em &quot;zonas cinzentas&quot;, indecisão, &quot;se&quot; ou &quot;talvez&quot; ou em nossas próprias experiências e opiniões. Como aceitamos Jesus Cristo como nosso Salvador pessoal, já agradecemos hoje a Deus pela fé em conhecer e ser convencidos de Suas verdades? Já fizemos uma pausa para agradecer a Ele pelas escrituras que apresentam o Salvador de forma simples e clara como o único capaz de atender as nossas necessidades? Temos agradecido a Ele por um livro que dá respostas e princípios claros para cada pergunta, problema ou julgamento com o qual sempre somos confrontados?
+
+## A CONFIANÇA EM DEUS {#a-confian-a-em-deus}
+
+É grandioso descansar sobre as verdades absolutas de Deus. É isso que levanta o espírito do crente e estabelece a paz em um mundo turbulento. Esta confiança na palavra de Deus é a mesma que Satanás tenta minar desde o início quando ele apresentou a Eva a sutil pergunta: &quot;É isso que Deus disse?&quot;. Isto implica em dizer que Deus não tenha realmente falado com a humanidade; que somos livres para viver de forma independente d’Ele. As condições políticas, econômicas e morais no mundo atual refletem os resultados trágicos da recusa do homem das verdades absolutas de Deus.
+
+Em nenhum outro lugar as grandes perguntas da vida estão desbloqueadas, apenas nas escrituras sagradas. Os olhos da fé encontrarão o nosso relacionamento com um Deus amoroso, o nosso propósito de estar no planeta Terra e nosso destino eterno. Na verdade, nossos corações devem estar cheios de louvor por Seu amor nos revelar Sua mente.
+
+Quando as verdades absolutas de Deus nos tocam, somos levados a própria pessoa e a presença de nosso Senhor. É triste ver que muitas vezes nossas vidas dão provas de que não é essa a nossa experiência. Recebemos com prazer as promessas e garantias da palavra de Deus, mas damos pouca atenção aos seus mandamentos. Queremos desfrutar das bênçãos do Senhor, mas nos ressentimos por qualquer coisa que possa atingir as nossas consciências. No entanto, quando falamos de bênção, as promessas de Deus estão ligadas a obediência.
+
+## GOZO E OBEDIÊNCIA {#gozo-e-obedi-ncia}
+
+A única prova de amor do Novo Testamento é a obediência. As palavras do Senhor vêm a mente: &quot;Se alguém me ama, guardará a minha palavra&quot; ([João 14:23](http://mysword.info/b?r=Joh_14:23)). Esta é uma verdade absoluta comum em toda a escritura. O antigo testamento nos ensina que Deus prefere a amorosa obediência do que muitos sacrifícios que se possam trazer ou fazer ([1 Samuel 15:22](http://mysword.info/b?r=1Sa_15:22)).
+
+Deus não nos salvou apenas para o nosso prazer, mas para nos conformar, não a este mundo, mas ao Seu Filho ([Romanos 8:29](http://mysword.info/b?r=Rom_8:29)). No entanto, muitos de nós mal se distinguem do mundo que rejeita a Ele. Seria uma falta de cuidado sobre o que custou ao nosso Senhor Jesus para nos salvar pela Sua obra expiatória na cruz? Os nossos hábitos, atitudes e estilo de vida tornaram-se tão enredados com o espírito do mundo que o frescor do primeiro amor não é mais do que uma memória sem graça? Esquecemos a grande verdade das escrituras: &quot;que não sois de vós mesmos .... Fostes comprados por bom preço&quot; ([1 Corintios 6:19,20](http://mysword.info/b?r=1Co_6:19,20))? Temos estado por tanto tempo acostumados a seguir Jesus de longe e a viver entre aqueles que O seguem de longe que não temos consciência da nossa pobreza de espírito?
+
+Para desfrutarmos e estarmos alinhados com as verdades absolutas da palavra de Deus, devemos dar mais do que um consentimento casual ao cristianismo do Novo Testamento. Ele deve possuir nossos corações e afetar toda a nossa maneira de viver. A separação, a obediência, a humildade, a simplicidade, a modéstia, o autocontrole e o levar a cruz devem ser uma parte viva da nossa conduta diária e estar totalmente sob o controle e a autoridade de nosso Senhor Jesus Cristo ressuscitado. Não há outro caminho aberto para aqueles que professam Seu nome, possuem o desejo de testemunhar d’Ele e experimentar bênção em suas vidas.
+
+De acordo com o novo testamento, a verdadeira Igreja é composta de pecadores perdoados e regenerados que são diferentes de todos os outros seres humanos, recebemos um tipo de vida superior dada a nós no momento em que recebemos Jesus Cristo como nosso Senhor e Salvador. Somos filhos de Deus num sentido que não é verdadeiro para outros seres criados. Nossa origem é divina e nossa pátria é celestial. Adoramos a Deus no Espírito, nos gloriamos em Cristo Jesus e não confiamos na carne. Temos sustentado a causa de um homem rejeitado e crucificado que prometeu que Ele voltará em breve para nos levar para a casa do Pai ([João 14:1-3](http://mysword.info/b?r=Joh_14:1-3)).
+
+Por enquanto, levamos a Sua cruz, sofremos a aversão dos homens por carregar sobre nós o amor a Ele, agimos como Seus embaixadores e fazemos o bem a todos os homens em Seu nome. E, graças a Deus, nosso Senhor oferece o poder e os meios para todos.
+
+Outra das verdades de Deus é que &quot;todos os que piamente querem viver em Cristo Jesus padecerão perseguições&quot; ([2 Timóteo 3:12](http://mysword.info/b?r=2Ti_3:12)). As escrituras não prometem nenhuma imunidade a perseguição desde que a Igreja está sobre a terra. Isto é o que devemos esperar. Aqueles que não podem ser chamados para enfrentar o pelotão de fuzilamento ou o campo de concentração serão, no entanto, confrontados com o ódio do mundo. A arma de ridículo - o escárnio, o sarcasmo – faz jus a suas conquistas para o poder do mal, bem como ataques físicos.
+
+Em tempos como o nosso, a perseguição pode ter como alvo sua mente ao invés do corpo. Quão importante é nos vestirmos de toda a armadura de Deus. Bem-aventurado é, que podemos firmar nossos pés sobre a Rocha no meio de um mundo naufragando à deriva e compreender de todo o coração as verdades absolutas da palavra de Deus. E quem pode estimar, meus queridos amigos, os resultados que teremos se nos lançarmos diante Dele com uma Bíblia aberta e com lágrimas dizer: &quot;eis aqui o teu servo, Senhor! Seja isso em mim, de acordo com a Sua vontade&quot;.
+
+J.K - Christian Truth for the Household of Faith, Vol. 38, 1985
