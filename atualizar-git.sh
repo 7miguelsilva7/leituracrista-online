@@ -1,18 +1,18 @@
 #!/bin/bash
 
 # Copia pastas de projetos
-cp -ur zap /opt/lampp/htdocs/leituracrista-online/
-cp -ur tests/ /opt/lampp/htdocs/leituracrista-online/
-cp -ur hinario/ /opt/lampp/htdocs/leituracrista-online/
-cp -ur hinos_espanhol /opt/lampp/htdocs/leituracrista-online/
-cp -ur tests /opt/lampp/htdocs/leituracrista-online/
-cp -ur img /opt/lampp/htdocs/leituracrista-online/
-cp -ur resetGit /opt/lampp/htdocs/leituracrista-online/
-cp -ur manifest /opt/lampp/htdocs/leituracrista-online/
-cp -ur linktobible /opt/lampp/htdocs/leituracrista-online/
-cp -ur assembleias /opt/lampp/htdocs/leituracrista-online/
-cp -ur app/leituracrista /opt/lampp/htdocs/leituracrista-online/
-cp -ur app/readinenglish /opt/lampp/htdocs/leituracrista-online/
+cp -r zap /opt/lampp/htdocs/leituracrista-online/
+cp -r tests/ /opt/lampp/htdocs/leituracrista-online/
+cp -r hinario/ /opt/lampp/htdocs/leituracrista-online/
+cp -r hinos_espanhol /opt/lampp/htdocs/leituracrista-online/
+cp -r tests /opt/lampp/htdocs/leituracrista-online/
+cp -r img /opt/lampp/htdocs/leituracrista-online/
+cp -r resetGit /opt/lampp/htdocs/leituracrista-online/
+cp -r manifest /opt/lampp/htdocs/leituracrista-online/
+cp -r linktobible /opt/lampp/htdocs/leituracrista-online/
+cp -r assembleias /opt/lampp/htdocs/leituracrista-online/
+cp -r app/leituracrista/public/* /opt/lampp/htdocs/leituracrista-online/app/
+cp -r app/readinenglish/public* /opt/lampp/htdocs/leituracrista-online/app/readinenglish/
 
 git pull
 #git add --all

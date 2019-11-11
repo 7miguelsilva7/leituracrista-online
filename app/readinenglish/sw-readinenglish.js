@@ -1,10 +1,10 @@
-let CURRENT_CACHES = {
-  offline: 'readinenglish'
+let CURRENT_CACHES_rie = {
+  offline_rie: 'readinenglish'
 };
 
-const OFFLINE_URL = '/app/readinenglish/index.html';
+const OFFLINE_URL_rie = '/app/readinenglish/index.html';
 
-var OFFLINE_URLs = [
+var urls_rie = [
   '/app/readinenglish/',
   '/app/readinenglish/index.html',
   '/app/readinenglish/css/main.css',
@@ -68,14 +68,14 @@ var OFFLINE_URLs = [
 '/app/readinenglish/what-is-trinitarianism/index.html',
 '/app/readinenglish/who-is-god/index.html',
 '/app/readinenglish/who-is-jesus-christ/index.html',
-];
+ ];
  
-// configura página inicial ao recarregar a página em modo offline
+// configura página inicial ao recarregar a página em modo offline_rie
   self.addEventListener('install', event => {
     event.waitUntil(
-      fetch(createCacheBustedRequest(OFFLINE_URL)).then(function(response) {
-        return caches.open(CURRENT_CACHES.offline).then(function(cache) {
-          return cache.put(OFFLINE_URL, response);
+      fetch(createCacheBustedRequest(OFFLINE_URL_rie)).then(function(response) {
+        return caches.open(CURRENT_CACHES_rie.offline_rie).then(function(cache) {
+          return cache.put(OFFLINE_URL_rie, response);
         });
       })
     );
@@ -84,35 +84,35 @@ var OFFLINE_URLs = [
   self.addEventListener('install', function(event) {
     // Perform install steps
     event.waitUntil(
-      caches.open(CURRENT_CACHES.offline)
+      caches.open(CURRENT_CACHES_rie.offline_rie)
         .then(function(cache) {
           console.log('Opened cache');
-          return cache.addAll(OFFLINE_URLs);
+          return cache.addAll(urls_rie);
         })
     );
   });
 
 
 function createCacheBustedRequest(url) {
-  let request = new Request(url, {cache: 'reload'});
-  if ('cache' in request) {
-    return request;
+  let request_rie = new Request(url, {cache: 'reload'});
+  if ('cache' in request_rie) {
+    return request_rie;
   }
-  let bustedUrl = new URL(url, self.location.href);
-  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
-  return new Request(bustedUrl);
+  let bustedUrl_rie = new URL(url, self.location.href);
+  bustedUrl_rie.search += (bustedUrl_rie.search ? '&' : '') + 'cachebust=' + Date.now();
+  return new Request(bustedUrl_rie);
 }
 });
 
 self.addEventListener('activate', event => {
-  let expectedCacheNames = Object.keys(CURRENT_CACHES).map(function(key) {
-    return CURRENT_CACHES[key];
+  let expectedCacheNames_rie = Object.keys(CURRENT_CACHES_rie).map(function(key) {
+    return CURRENT_CACHES_rie[key];
   });
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (expectedCacheNames.indexOf(cacheName) === -1) {
+          if (expectedCacheNames_rie.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })
@@ -127,7 +127,7 @@ self.addEventListener('fetch', event => {
        event.request.headers.get('accept').includes('text/html'))) {
     event.respondWith(
       fetch(event.request).catch(error => {
-        return caches.match(OFFLINE_URL);
+        return caches.match(OFFLINE_URL_rie);
       })
     );
   }
