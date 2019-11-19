@@ -13,6 +13,7 @@
     <form action="">
             <label>Cidade</label>
             <select name = 'origem' class = "form-control js-example-basic-single" required>
+                <option value="">Selecione uma Cidade</option>
                 @foreach($municipios as $municipio) 
                 <option value="{!!$municipio->uf!!} {!!$municipio->nome!!}">{!!$municipio->uf!!} - {!!$municipio->nome!!}</option>
                 @endforeach 
@@ -55,7 +56,7 @@ foreach ($arr as $valuedestino) {
     $origin = $_GET['origem'];
     $busca = $origin;
     $destino = $valuedestino;
-    $resultados = $destino;    
+    $resultados = $destino;   
 
     $origin = str_replace(' ', '%20', $origin);
     $destino = str_replace(' ', '%20', $destino);
@@ -71,7 +72,7 @@ foreach ($arr as $valuedestino) {
         // echo '<br>';
         echo "<tr>
         <td>$i</td>  
-        <td>" . mb_strtoupper($resultados, 'UTF-8') .  "</b>:<td>" . '<span style="font-size:0.1px; color:white;">' .str_pad($distance['elements'][0]['distance']['value'] , 12 , '0' , STR_PAD_LEFT) . ' - </span>' . $distance['elements'][0]['distance']['text'] . '</td><td> ' . $distance['elements'][0]['duration']['text'] . '</td><td>asdf@gmail.com</td></tr>';
+        <td>" . mb_strtoupper($resultados, 'UTF-8') .  "</b>:<td>" . '<span style="font-size:0.1px; color:white;">' .str_pad($distance['elements'][0]['distance']['value'] , 12 , '0' , STR_PAD_LEFT) . ' - </span>' . $distance['elements'][0]['distance']['text'] . '</td><td> ' . $distance['elements'][0]['duration']['text'] . '</td><td>contato@gmail.com</td></tr>';
     } //if primeiro foreach
 ?>
 
