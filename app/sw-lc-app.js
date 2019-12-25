@@ -2,7 +2,7 @@ let CURRENT_CACHES_LC = {
   offline_lc: 'LeituraCrista'
 };
 
-const OFFLINE_URL_lc = '/app/index.html';
+const OFFLINE_URL_lc = 'index.html';
 
 var urls_lc = [
   
@@ -12,7 +12,10 @@ var urls_lc = [
   '/app/css/normalize.css',
   '/app/css/typo.css',
   '/app/js/custom.js',
-  '/app/closeWindow.html','/app/1pedro-darby-mysword/index.html',
+  '/app/closeWindow.html',
+  '/app/img/voltar.png',
+  '/app/img/up.png',
+'/app/1pedro-darby-mysword/index.html',
 '/app/a-autoridade-delegada-a-assembleia-r.-guillen/index.html',
 '/app/a-ceia-do-senhor-c.-h.-mackintosh/index.html',
 '/app/acontecimentos-profeticos-bruce-anstey/index.html',
