@@ -13,3 +13,5 @@ var urls_lc = [
   '/app/css/typo.css',
   '/app/js/custom.js',
   '/app/closeWindow.html',
+  '/app/img/voltar.png',
+  '/app/img/up.png',

@@ -33,8 +33,8 @@
   <title>Read in English</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1577291793">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1577291793">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1577293402">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1577293402">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -55,9 +55,6 @@ location.replace(localStorage.getItem('NameBookActivedKeyreadinenglish'));
 
 </head>
 <body onscroll="onscrolling()" >
-
-
- <div id="snackbar"><a href="#" id="reload"><div>Atualização disponível clique aqui!</a></div></div>
 
 <style>
 #scroll {overflow-y: auto;}
@@ -560,49 +557,11 @@ function downloadBook(){
 
 
 
-let newWorker;
-  function showUpdateBar() {
-    let snackbar = document.getElementById('snackbar');
-    snackbar.className = 'show';
-  }
-  
-  document.getElementById('reload').addEventListener('click', function(){
-    newWorker.postMessage({ action: 'skipWaiting' });
-  });
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/app/readinenglish/sw-readinenglish.js').then(reg => {
-      reg.addEventListener('updatefound', () => {
-        
-        newWorker = reg.installing;
-        newWorker.addEventListener('statechange', () => {
-          
-          switch (newWorker.state) {
-            case 'installed':
-              if (navigator.serviceWorker.controller) {
-                
-                showUpdateBar();
-              }
-              
-              break;
-          }
-        });
-      });
-    });
-    let refreshing;
-    navigator.serviceWorker.addEventListener('controllerchange', function () {
-      if (refreshing) return;
-      window.location.reload();
-      refreshing = true;
-    });
-  }
-
-
-
-
-
-
-
-
+if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/app/readinenglish/sw-readinenglish.js');
+          });
+}  
 
 
 function goToActivedBook()
