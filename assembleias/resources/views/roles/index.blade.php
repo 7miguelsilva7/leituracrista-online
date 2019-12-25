@@ -1,24 +1,26 @@
-@extends('scaffold-interface.layouts.app')
+@extends('layouts.app')
 @section('content')
-<section class="content">
-	<div class="box box-primary">
-		<div class="box-header">
-			<h3>All Roles</h3>
-		</div>
-		<div class="box-body">
-			<a href="{{url('scaffold-roles/create')}}" class = "btn btn-success"><i class="fa fa-plus fa-md" aria-hidden="true"></i> New</a>
+<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Regras:</div>
+
+    <div class="panel-body">
+    
+    <div class="form-group">
+			<a href="{{url('role/create')}}" class = "btn btn-success"><i class="fa fa-plus fa-md" aria-hidden="true"></i> Add</a>
 			<table class="table table-striped">
 				<head>
-					<th>Role</th>
-					<th>Actions</th>
+					<th>Regras</th>
+					<th>Ações</th>
 				</head>
 				<tbody>
 					@foreach($roles as $role)
 					<tr>
 						<td>{{$role->name}}</td>
 						<td>
-							<a href="{{url('/scaffold-roles/edit')}}/{{$role->id}}" class = "btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="{{url('/scaffold-roles/delete')}}/{{$role->id}}" class = "btn btn-danger btn-sm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+							<a  class = 'viewEdit btn btn-primary btn-xs' href = "{{url('/role/edit')}}/{{$role->id}}"><i class = 'material-icons'> edit</i></a>
+							<a  class = 'delete btn btn-danger btn-xs' href="{{url('/role/delete')}}/{{$role->id}}" ><i class = 'material-icons'> delete</i></a>
 						</td>
 					</tr>
 					@endforeach

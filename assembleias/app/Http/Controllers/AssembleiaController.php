@@ -25,11 +25,18 @@ class AssembleiaController extends Controller
      *
      * @return  \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+
         $title = 'Index - assembleia';
-        $assembleias = Assembleia::paginate(6);
-        return view('assembleia.index',compact('assembleias','title'));
+        // $assembleias = Assembleia::paginate(6);
+
+        $search = $request->get('search');
+        $assembleias = Assembleia::where('endereco_reuniao', 'LIKE', '%'.$search.'%')
+        ->orWhere('municipio_id', 'LIKE', '%'.$search.'%')
+        ->paginate(10); //busca com operador LIKE SQL
+
+        return view('assembleia.index',compact('assembleias','title', 'search'));
     }
 
     public function modal_distancia()

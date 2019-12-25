@@ -18,12 +18,13 @@
             <input id="endereco_reuniao" name = "endereco_reuniao" type="text" class="form-control" required>
         </div>
         <div class="form-group">
-            <label>Cidade</label>
+        <label>Cidade</label>
             <select name = 'municipio_id' class = "form-control js-example-basic-single" required>
+                <option value="">Selecione uma Cidade</option>
                 @foreach($municipios as $municipio) 
                 <option value="{!!$municipio->id!!}">{!!$municipio->uf!!} - {!!$municipio->nome!!}</option>
                 @endforeach 
-            </select>            
+            </select> <p></p>        
         </div>
         <div class="form-group">
             <label for="cep">Cep</label>

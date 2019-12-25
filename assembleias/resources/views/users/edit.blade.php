@@ -10,7 +10,7 @@
 			<a href="{!!url('user')!!}" class = 'btn btn-primary'><i class="fa fa-home"></i> <b> Voltar</b></a>
 
 		<div class="box-body">
-			<form action="{{url('scaffold-users/update')}}" method = "post">
+			<form action="{{url('user/update')}}" method = "post">
 				{!! csrf_field() !!}
 				<input type="hidden" name = "user_id" value = "{{$user->id}}">
 				<div class="form-group">
@@ -35,10 +35,10 @@
 		<div class="col-md-6">
 			<div class="box box-primary">
 				<div class="box-header">
-					<h3>{{$user->name}} Regras</h3>
+					<h4>{{$user->name}} </h4>Regras
 				</div>
 				<div class="box-body">
-					<form action="{{url('scaffold-users/addRole')}}" method = "post">
+					<form action="{{url('user/addRole')}}" method = "post">
 						{!! csrf_field() !!}
 						<input type="hidden" name = "user_id" value = "{{$user->id}}">
 						<div class="form-group">
@@ -61,7 +61,10 @@
 							@foreach($userRoles as $role)
 							<tr>
 								<td>{{$role->name}}</td>
-								<td><a href="{{url('scaffold-users/removeRole')}}/{{str_slug($role->name,'-')}}/{{$user->id}}" class = "btn btn-danger btn-sm"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+								<td>
+								<a  class = 'delete btn btn-danger btn-xs' href="{{url('user/revokeRole')}}/{{str_slug($role->name,'-')}}/{{$user->id}}" ><i class = 'material-icons'> delete</i></a>
+								</td>
+
 							</tr>
 							@endforeach
 						</tbody>
@@ -72,10 +75,10 @@
 		<div class="col-md-6">
 			<div class="box box-primary">
 				<div class="box-header">
-					<h3>{{$user->name}} Permissions</h3>
+					<h4>{{$user->name}} </h4>Permissions
 				</div>
 				<div class="box-body">
-					<form action="{{url('scaffold-users/addPermission')}}" method = "post">
+					<form action="{{url('user/addPermission')}}" method = "post">
 						{!! csrf_field() !!}
 						<input type="hidden" name = "user_id" value = "{{$user->id}}">
 						<div class="form-group">
@@ -98,7 +101,10 @@
 							@foreach($userPermissions as $permission)
 							<tr>
 								<td>{{$permission->name}}</td>
-								<td><a href="{{url('scaffold-users/removePermission')}}/{{str_slug($permission->name,'-')}}/{{$user->id}}" class = "btn btn-danger btn-sm"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+								<td>
+								<a  class = 'delete btn btn-danger btn-xs' href="{{url('user/revokePermission')}}/{{str_slug($permission->name,'-')}}/{{$user->id}}" ><i class = 'material-icons'> delete</i></a>
+
+								</td>
 							</tr>
 							@endforeach
 						</tbody>

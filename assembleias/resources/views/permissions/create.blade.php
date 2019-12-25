@@ -1,12 +1,14 @@
-@extends('scaffold-interface.layouts.app')
+@extends('layouts.app')
 @section('content')
-<section class="content">
-	<div class="box box-primary">
-		<div class="box-header">
-			<h3>Create new Permission</h3>
-		</div>
+div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Adicionar Permissões:</div>
+
+    <div class="panel-body">
+			<h3>Criar Permissões</h3>
 		<div class="box-body">
-			<form action="{{url('scaffold-permissions/store')}}" method = "post">
+			<form action="{{url('permission/store')}}" method = "post">
 				{!! csrf_field() !!}
 				<div class="form-group">
 				<label for="">Permission</label>

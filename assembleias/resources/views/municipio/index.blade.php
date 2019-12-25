@@ -8,9 +8,9 @@
                 <div class="panel-heading">Município</div>
 
     <div class="panel-body">
-
+    @role('admin')
     <a href='{!!url("municipio")!!}/create' class = 'btn btn-success'><i class="fa fa-plus"></i> NOVO</a>
-    <br>
+    @endrole
     <br>
     <table class = "table table-striped table-bordered table-hover" style = 'background:#fff'>
         <thead>
@@ -26,8 +26,10 @@
                 <td>{!!$municipio->nome!!}</td>
                 <td>{!!$municipio->uf!!}</td>
                 <td>
+                @role('admin')
                     <a data-toggle="modal" data-target="#myModal" class = 'delete btn btn-danger btn-xs' data-link = "/municipio/{!!$municipio->id!!}/deleteMsg" ><i class = 'material-icons'> delete</i></a>
                     <a href = '#' class = 'viewEdit btn btn-primary btn-xs' data-link = '/municipio/{!!$municipio->id!!}/edit'><i class = 'material-icons'> edit</i></a>
+                @endrole
                     <a href = '#' class = 'viewShow btn btn-warning btn-xs' data-link = '/municipio/{!!$municipio->id!!}'><i class = 'material-icons'> info</i></a>
                 </td>
             </tr>

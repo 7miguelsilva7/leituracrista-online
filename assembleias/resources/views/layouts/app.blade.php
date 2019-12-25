@@ -13,7 +13,9 @@
     <title>{{ config('app.name', 'Assembleias') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
+
+    <link href="{{ public_path() }}/css/app.css" rel="stylesheet">
 
     <!-- scripts JS -->
     <!-- select 2 -->
@@ -82,10 +84,8 @@
                             </li>
 
                             <!-- Menu Usuários -->
-                            <?php 
-                            $usuario_logado = Auth::user()->email;
-                            if ($usuario_logado == "7miguelsilva7@gmail.com") { ?>
-                            
+                           
+                            @role('admin')
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Usuários <span class="caret"></span>
@@ -96,10 +96,10 @@
                                 <li ><a href="{{url('/user')}}"><i class="fa fa-users"></i> <span>Usuários</span></a></li>
 						                    <li ><a href="{{url('/role')}}"><i class="fa fa-user-plus"></i> <span>Regras</span></a></li>
 						                    <li ><a href="{{url('/permission')}}"><i class="fa fa-key"></i> <span>Permissões</span></a></li> 
-                              </li>
+                            </li>
                                 </ul>
                             </li>
-                            <?php } ?>
+                            @endrole
 
                         @endif
                     </ul>                    
@@ -122,7 +122,7 @@
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                            Sair
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

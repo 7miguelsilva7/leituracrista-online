@@ -1,12 +1,14 @@
-@extends('scaffold-interface.layouts.app')
+@extends('layouts.app')
 @section('content')
-<section class="content">
-	<div class="box box-primary">
-		<div class="box-header">
-			<h3>Edit Role</h3>
-		</div>
+<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Editar Regras:</div>
+
+    <div class="panel-body">
+			<h3>Editar Regras</h3>
 		<div class="box-body">
-			<form action="{{url('scaffold-roles/update')}}" method = "post">
+			<form action="{{url('role/update')}}" method = "post">
 				{!! csrf_field() !!}
 				<input type="hidden" name = "role_id" value = "{{$role->id}}">
 				<div class="form-group">

@@ -41,7 +41,7 @@ class RoleController extends Controller
     {
         Role::create(['name' => $request->name]);
 
-        return redirect('roles');
+        return redirect('role');
     }
 
     /**
@@ -73,7 +73,7 @@ class RoleController extends Controller
 
         $role->update();
 
-        return redirect('roles');
+        return redirect('role');
     }
 
     /**
@@ -89,6 +89,6 @@ class RoleController extends Controller
 
         $role->delete();
 
-        return redirect('roles');
+        return redirect('role');
     }
 }

@@ -1,12 +1,13 @@
-@extends('scaffold-interface.layouts.app')
+@extends('layouts.app')
 @section('content')
-<section class="content">
-	<div class="box box-primary">
-		<div class="box-header">
-			<h3>All Permissions</h3>
-		</div>
+<div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Permissões:</div>
+
+    <div class="panel-body">
+			<h3>Permissões</h3>
 		<div class="box-body">
-			<a href="{{url('scaffold-permissions/create')}}" class = "btn btn-success"><i class="fa fa-plus fa-md" aria-hidden="true"></i> New</a>
+			<a href="{{url('permission/create')}}" class = "btn btn-success"><i class="fa fa-plus fa-md" aria-hidden="true"></i> Add</a>
 			<table class="table table-striped">
 				<head>
 					<th>Permission</th>
@@ -17,8 +18,9 @@
 					<tr>
 						<td>{{$permission->name}}</td>
 						<td>
-							<a href="{{url('/scaffold-permissions/edit')}}/{{$permission->id}}" class = "btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-							<a href="{{url('/scaffold-permissions/delete')}}/{{$permission->id}}" class = "btn btn-danger btn-sm"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+							<a  class = 'viewEdit btn btn-primary btn-xs' href = "{{url('/permission/edit')}}/{{$permission->id}}"><i class = 'material-icons'> edit</i></a>
+							<a  class = 'delete btn btn-danger btn-xs' href="{{url('/permission/delete')}}/{{$permission->id}}" ><i class = 'material-icons'> delete</i></a>
+
 						</td>
 					</tr>
 					@endforeach

@@ -5,7 +5,9 @@
 <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Assembleias Próximas de:</div>
+                <div class="panel-heading">Assembleias Próximas de: <BR>
+                (As distãncias apresentadas servem apenas para dar um ideia de qual seja a assembleia mais próximas da cidade pesquisada)
+                </div>
 
     <div class="panel-body">
     
@@ -25,9 +27,19 @@
 <?if (!empty($_GET['origem'])){?>
 
 <!-- put name of cities on array -->
+@role('admin')
+
 @foreach($assembleias as $assembleia)
 <? $cidades[] = $assembleia->municipio->nome . ' - ' . $assembleia->municipio->uf?>
 @endforeach
+
+@else
+
+@foreach($assembleias as $assembleia)
+<? $cidades[] = $assembleia->municipio->nome . ' - ' . $assembleia->municipio->uf?>
+@endforeach
+
+@endrole
 
 <?php 
 $i = 0;
@@ -118,7 +130,7 @@ foreach ($arr as $valuedestino) {
 			//Após a leitura da pagina o evento fadeOut do loader é acionado, esta com delay para ser perceptivo em ambiente fora do servidor.
 			jQuery("#loader").fadeOut("slow");
 		});
-	</script>
+</script>
 
 <? 
   } //segundo foreach

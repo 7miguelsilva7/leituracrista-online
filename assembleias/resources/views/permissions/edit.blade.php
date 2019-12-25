@@ -1,12 +1,13 @@
-@extends('scaffold-interface.layouts.app')
+@extends('layouts.app')
 @section('content')
-<section class="content">
-	<div class="box box-primary">
-		<div class="box-header">
-			<h3>Edit Permission</h3>
-		</div>
+<div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Editar Permissões:</div>
+
+    <div class="panel-body">
+			<h3>Editar Permissões</h3>
 		<div class="box-body">
-			<form action="{{url('scaffold-permissions/update')}}" method = "post">
+			<form action="{{url('permission/update')}}" method = "post">
 				{!! csrf_field() !!}
 				<input type="hidden" name = "permission_id" value = "{{$permission->id}}">
 				<div class="form-group">

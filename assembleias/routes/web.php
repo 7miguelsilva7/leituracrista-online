@@ -52,7 +52,7 @@ Route::group(['middleware'=> 'web'],function(){
 //Users
 Route::group(['middleware'=> 'web'],function(){
   Route::resource('user','\App\Http\Controllers\UserController');
-  Route::post('user/{id}/update','\App\Http\Controllers\UserController@update');
+  Route::post('user/update','\App\Http\Controllers\UserController@update');
   Route::get('user/{id}/delete','\App\Http\Controllers\UserController@destroy');
   Route::get('user/{id}/deleteMsg','\App\Http\Controllers\UserController@DeleteMsg');
   Route::post('user/store', '\App\Http\Controllers\UserController@store');
@@ -62,16 +62,30 @@ Route::group(['middleware'=> 'web'],function(){
 //roles
 Route::group(['middleware'=> 'web'],function(){
   Route::resource('role','\App\Http\Controllers\RoleController');
-  Route::post('role/{id}/update','\App\Http\Controllers\RoleController@update');
-  Route::get('role/{id}/delete','\App\Http\Controllers\RoleController@destroy');
+  Route::post('role/update','\App\Http\Controllers\RoleController@update');
+  Route::get('role/delete/{id}','\App\Http\Controllers\RoleController@destroy');
+  Route::get('role/edit/{id}','\App\Http\Controllers\RoleController@edit');
   Route::get('role/{id}/deleteMsg','\App\Http\Controllers\RoleController@DeleteMsg');
+  Route::post('role/store', '\App\Http\Controllers\RoleController@store');
+
 });
 
 //Permissions
 Route::group(['middleware'=> 'web'],function(){
   Route::resource('permission','\App\Http\Controllers\PermissionController');
-  Route::post('permission/{id}/update','\App\Http\Controllers\PermissionController@update');
-  Route::get('permission/{id}/delete','\App\Http\Controllers\PermissionController@destroy');
+  Route::post('permission/update','\App\Http\Controllers\PermissionController@update');
+  Route::get('permission/delete/{id}','\App\Http\Controllers\PermissionController@destroy');
+  Route::get('permission/edit/{id}','\App\Http\Controllers\PermissionController@edit');
   Route::get('permission/{id}/deleteMsg','\App\Http\Controllers\PermissionController@DeleteMsg');
+  Route::post('permission/store', '\App\Http\Controllers\PermissionController@store');
+
 });
+
+// garantee roles and permissions
+Route::post('user/addRole', 'UserController@addRole');
+Route::get('user/revokeRole/{role}/{id}', 'UserController@revokeRole');
+
+Route::post('user/addPermission', 'UserController@addPermission');
+Route::get('user/revokePermission/{permission}/{id}', 'UserController@revokePermission');
+
 
