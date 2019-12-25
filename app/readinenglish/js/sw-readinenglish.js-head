@@ -2,7 +2,7 @@ let CURRENT_CACHES_rie = {
   offline_rie: 'readinenglish'
 };
 
-const OFFLINE_URL_rie = '/app/readinenglish/index.html';
+const OFFLINE_URL_rie = 'index.html';
 
 var urls_rie = [
   '/app/readinenglish/',
