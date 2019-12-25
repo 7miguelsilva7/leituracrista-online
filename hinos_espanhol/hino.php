@@ -21,6 +21,8 @@
 <a href="../hinos_espanhol/"><button>Índice</button></a>
 
 <style>
+
+/* css copiar texto */
 .alert-box {
 	padding: 15px;
     margin-bottom: 20px;
@@ -33,7 +35,9 @@
     border-color: #d6e9c6;
     display: none;
 }  
+/* css copiar texto */
   
+
 span.a {
   font-size: 15px;
 }
