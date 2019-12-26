@@ -34,8 +34,8 @@
   <title>Catptain Coutts&#39; Substitute</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/catptain-coutts-substitute/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1577325638">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1577325638">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1577376532">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1577376532">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/books.png"/>
 
   
@@ -227,15 +227,29 @@ The captain sent for his first mate and said, “Williams, I need you to pray fo
 
 function countWords() {
 var content = document.getElementById('texto-clicavel').innerText
-.replace(/,/g,'')
-.replace(/[0-9]{1,2}:[0-9]{1,2}/g,'')
-.replace(/[0-9],[0-9]/g,'')
-.replace(/[0-9]\.[0-9]/g,'')
-.replace(/[\.-;?)(\[\]\{\}!]/g, '')
-.replace(/[0-9]{1,2}/g,'')
+
+
+
+
+
+
+
+
+.replace(/(,)/g, "$1@@")
+.replace(/(\.)/g, "$1@@")
+.replace(/(\?)/g, "$1@@")
+.replace(/(\!)/g, "$1@@")
+.replace(/(;)/g, "$1@@")
+.replace(/(:)/g, "$1@@")
+.replace(/( - )/g, "$1@@")
+
+
 .toLowerCase()
 
-arr = content.split(' ')  
+
+
+
+arr = content.split('@@')  
 
 var novaArr = arr.filter((este, i) => arr.indexOf(este) === i);
 
@@ -244,13 +258,13 @@ return totalCountWords
 
 }
 
-document.write('<div align="center">Total Words: ' + countWords() + '</div>')
+document.write('<div align="center">Total Sentences: ' + countWords() + '</div>')
 
 
 var statusCounterWordsKey = 'statusCounterWordsKey'.concat(document.getElementsByTagName("title")[0].innerHTML);
 
 if(localStorage.hasOwnProperty(statusCounterWordsKey)){
-document.write("<div id=\"cont_direito\" align=\"center\" >Checked Words: <span class=\"badge\">");
+document.write("<div id=\"cont_direito\" align=\"center\" >Checked Sentences: <span class=\"badge\">");
   document.write(localStorage.getItem(statusCounterWordsKey));
 document.write("</span></div>");
 
@@ -264,7 +278,7 @@ document.write("</span></div>");
 {
 
 localStorage.setItem(statusCounterWordsKey,0);
-document.write("<div id=\"cont_direito\" align=\"center\" >Checked Words: <span class=\"badge\">");
+document.write("<div id=\"cont_direito\" align=\"center\" >Checked Sentences: <span class=\"badge\">");
   document.write(localStorage.getItem(statusCounterWordsKey));
 document.write("</span></div>");
 
@@ -292,7 +306,7 @@ document.write("</span></div>");
       
       
       var stringCounterWordsKey1 = localStorage.getItem(statusCounterWordsKey);
-      var stringCounterWordsKey2 = 'Checked Words: '.concat(stringCounterWordsKey1);
+      var stringCounterWordsKey2 = 'Checked Sentences: '.concat(stringCounterWordsKey1);
 
       $('#cont_direito').html(stringCounterWordsKey2);
 
@@ -355,13 +369,26 @@ function removeNameBookActivedreadinenglish(){
 
 str = document.getElementById('texto-clicavel').innerHTML;
 res = str.replace(/\"/g, "'");
+
+
+res = str.replace(/(,)/g, "$1@@")
+.replace(/(\.)/g, "$1@@")
+.replace(/(\?)/g, "$1@@")
+.replace(/(\!)/g, "$1@@")
+.replace(/(;)/g, "$1@@")
+.replace(/(:)/g, "$1@@")
+.replace(/( - )/g, "$1@@")
+
+
+;
 document.getElementById('texto-clicavel').innerHTML = res;
+
 
 
 
 var criarLink = t => `<a target="_blank" class="link" onclick="countClicksWords();window.open('https://translate.google.com/m/translate?ie=UTF8&sl=pt-BR&tl=en&q=#en/pt/${t}')">${t}</a>`
 
-var criarArrayDeLinks = e => e.textContent.split(' ').filter(i => i !== '' && i !== '\n').map(i => criarLink(i));
+var criarArrayDeLinks = e => e.textContent.split('@@').filter(i => i !== '' && i !== '\n').map(i => criarLink(i));
 
 
 function criarLinksEmElementos(pai) {
@@ -382,7 +409,7 @@ function criarLinksEmElementos(pai) {
   }
   
   if (tags.length) {    
-    pai.innerHTML = tags.join(' ');    
+    pai.innerHTML = tags.join('');    
   }
 
   return pai;  
