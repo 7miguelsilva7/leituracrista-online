@@ -30,6 +30,7 @@ var OFFLINE_URLs_RIE = [
 '/app/readinenglish/a-true-shark-story/index.html',
 '/app/readinenglish/a-valiant-captain/index.html',
 '/app/readinenglish/between-two-slides/index.html',
+'/app/readinenglish/can-a-christian-lose-salvation/index.html',
 '/app/readinenglish/catptain-coutts-substitute/index.html',
 '/app/readinenglish/christ-is-coming/index.html',
 '/app/readinenglish/christ-your-griefs-has-borne/index.html',
