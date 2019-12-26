@@ -1,11 +1,11 @@
  ];
  
-// configura página inicial ao recarregar a página em modo offline_rie
+// configura página inicial ao recaregar a página em modo offline_rie
   self.addEventListener('install', event => {
     event.waitUntil(
-      fetch(createCacheBustedRequest(OFFLINE_URL_rie)).then(function(response) {
-        return caches.open(CURRENT_CACHES_rie.offline_rie).then(function(cache) {
-          return cache.put(OFFLINE_URL_rie, response);
+      fetch(createCacheBustedRequest(OFFLINE_URL_RIE)).then(function(response) {
+        return caches.open(CURRENT_CACHES_RIE.offline_rie).then(function(cache) {
+          return cache.put(OFFLINE_URL_RIE, response);
         });
       })
     );
@@ -14,35 +14,35 @@
   self.addEventListener('install', function(event) {
     // Perform install steps
     event.waitUntil(
-      caches.open(CURRENT_CACHES_rie.offline_rie)
+      caches.open(CURRENT_CACHES_RIE.offline_rie)
         .then(function(cache) {
           console.log('Opened cache');
-          return cache.addAll(urls_rie);
+          return cache.addAll(OFFLINE_URLs_RIE);
         })
     );
   });
 
 
 function createCacheBustedRequest(url) {
-  let request_rie = new Request(url, {cache: 'reload'});
-  if ('cache' in request_rie) {
-    return request_rie;
+  let request = new Request(url, {cache: 'reload'});
+  if ('cache' in request) {
+    return request;
   }
-  let bustedUrl_rie = new URL(url, self.location.href);
-  bustedUrl_rie.search += (bustedUrl_rie.search ? '&' : '') + 'cachebust=' + Date.now();
-  return new Request(bustedUrl_rie);
+  let bustedUrl = new URL(url, self.location.href);
+  bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
+  return new Request(bustedUrl);
 }
 });
 
 self.addEventListener('activate', event => {
-  let expectedCacheNames_rie = Object.keys(CURRENT_CACHES_rie).map(function(key) {
-    return CURRENT_CACHES_rie[key];
+  let expectedCacheNames = Object.keys(CURRENT_CACHES_RIE).map(function(key) {
+    return CURRENT_CACHES_RIE[key];
   });
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (expectedCacheNames_rie.indexOf(cacheName) === -1) {
+          if (expectedCacheNames.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })
@@ -57,7 +57,7 @@ self.addEventListener('fetch', event => {
        event.request.headers.get('accept').includes('text/html'))) {
     event.respondWith(
       fetch(event.request).catch(error => {
-        return caches.match(OFFLINE_URL_rie);
+        return caches.match(OFFLINE_URL_RIE);
       })
     );
   }

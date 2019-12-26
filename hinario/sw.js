@@ -2,6 +2,7 @@ let CURRENT_CACHES = {
   offline: 'offlineHinario-v3'
 };
 
+
 const OFFLINE_URL = '/hinario/index.html';
 
 var OFFLINE_URLs = [

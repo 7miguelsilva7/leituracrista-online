@@ -1,10 +1,11 @@
-let CURRENT_CACHES_rie = {
-  offline_rie: 'readinenglish'
+let CURRENT_CACHES_RIE = {
+  offline_rie: 'readinenglish-APP'
 };
 
-const OFFLINE_URL_rie = 'index.html';
 
-var urls_rie = [
+const OFFLINE_URL_RIE = '/hinario/index.html';
+
+var OFFLINE_URLs_RIE = [
   '/app/readinenglish/',
   '/app/readinenglish/index.html',
   '/app/readinenglish/css/main.css',
