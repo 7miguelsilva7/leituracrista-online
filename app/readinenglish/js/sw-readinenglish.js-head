@@ -3,7 +3,7 @@ let CURRENT_CACHES_RIE = {
 };
 
 
-const OFFLINE_URL_RIE = '/hinario/index.html';
+const OFFLINE_URL_RIE = 'index.html';
 
 var OFFLINE_URLs_RIE = [
   '/app/readinenglish/',
