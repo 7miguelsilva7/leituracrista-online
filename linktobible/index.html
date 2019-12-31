@@ -303,6 +303,7 @@
   res = toBibliaOn
   
 .replace(/\, ([0-9]{1,2})\:/g, "\; $1\:")
+.replace(/\, ([0-9]{3})\:/g, "\; $1\:")
 .replace(/\,\n([0-9]{1,2})\:/g, "\; $1\:")
 .replace(/At ([0-9]{1,2})/g, "Atos $1")
 .replace(/At\n([0-9]{1,2})/g, "Atos $1")
