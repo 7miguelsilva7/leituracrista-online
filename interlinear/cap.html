@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
@@ -18,6 +18,9 @@ div > a {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
+  opacity:.7; 
+  margin:5px
+
 }
 
 .modal-dialog {
@@ -38,12 +41,42 @@ div.b {
 </style>
 
 <center >
+      <br>
 
-        <SCRIPt>
-        document.write(localStorage.getItem('InterlinearBookBibleSelected'))
-        </SCRIPt>
+<SCRIPt>
+        document.write('<a href="index.html?query=@'+localStorage.getItem('InterlinearBookBibleSelected')+'"><h4>'+localStorage.getItem('InterlinearBookBibleSelected')+'</h4></a>')
+</SCRIPt>
 
-      <h4><span>Capítulo</span></h4>
-      <a data-toggle="modal" onclick="setBookCapBible('1:')" href="#myModalVers" class="btn btn-default" style="width:60px;">1</a>
-      <a data-toggle="modal" onclick="setBookCapBible('2:')" href="#myModalVers" class="btn btn-default" style="width:60px;">2</a>
+      <span>Capítulos</span> <hr>
+      
+      <div id="bookcap" class="btnContainer"></div>
+      <!-- <div class="btnContainer" data-book="Êxodo"></div> -->
 </center>  
+
+<script>
+
+// script cria botões de acordo com o livro da bíblia
+const books = {
+  "Gênesis": 50,
+  "Êxodo": 40,
+};
+[...document.querySelectorAll(".btnContainer")].forEach(function(container) {
+  // const book = container.getAttribute("data-book");
+  const book = localStorage.getItem('InterlinearBookBibleSelected')
+  const numLinks = books[book]
+  // container.style.backgroundbook=book;
+  for (let i = 0; i < numLinks; i++) {
+    let a = document.createElement('a');
+    a.textContent =  (i + 1);
+    a.href = 'verse.html?book=' + localStorage.getItem('InterlinearBookBibleSelected') + '&cap=' + (i + 1);
+    a.classList.add('btn', 'btn-default');
+    container.appendChild(a);
+  }
+})
+
+function setBookCapBible(itemBookCap)
+{
+localStorage.setItem('InterlinearBookCapBibleSelected', localStorage.getItem('InterlinearBookBibleSelected') + itemBookCap)
+}
+ 
+</script>
