@@ -1,7 +1,7 @@
 #!/bin/bash
 hugo 
 # copia head e foot para juntar ao index
-cp script.head.html script.foot.html docs
+cp script.head.html script.foot.html docs/
 
 # Junta arquivos
 cd docs

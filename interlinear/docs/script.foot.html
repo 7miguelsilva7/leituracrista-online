@@ -59,6 +59,11 @@ begin_search ();
             <div class="modal-body b">
               
               <center >
+
+                <SCRIPt>
+                document.write(localStorage.getItem('InterlinearBookBibleSelected'))
+                </SCRIPt>
+
               <h4><span>Capítulo</span></h4>
               <a data-toggle="modal" onclick="setBookCapBible('1:')" href="#myModalVers" class="btn btn-default" style="width:60px;">1</a>
               <a data-toggle="modal" onclick="setBookCapBible('2:')" href="#myModalVers" class="btn btn-default" style="width:60px;">2</a>
@@ -94,7 +99,8 @@ begin_search ();
 <script>
 function setBookBible(itemBook)
 {
-localStorage.setItem('InterlinearBookBibleSelected', itemBook)
+localStorage.setItem('InterlinearBookBibleSelected', itemBook);
+location.replace('cap.html')
 }
 
 function setBookCapBible(itemBookCap)
