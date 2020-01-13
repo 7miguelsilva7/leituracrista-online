@@ -15,7 +15,7 @@ tiles:
 -
   book:  "Gênesis 1:2"
   tags:  "Gênesis1:2"
-  version1: "E a terra era sem forma e vazia; e <i>havia</i> trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas."
+  version1: 'E a terra era sem forma e vazia; e <i>havia</i> trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas.'
   version2: "E a terra era sem forma e vazia; e <i>havia</i> trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas."
   version3: "E a terra era sem forma e vazia; e havia trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas."
   version4: "A terra era sem forma e vazia; e havia trevas sobre a face do abismo, mas o Espírito de Deus pairava sobre a face das águas."
@@ -9263,8 +9263,7 @@ tiles:
   version6: "fica com ele alguns dias, até que passe o furor de teu irmão,"
   version7: "fica em casa dele algum tempo, até que se acalme a cólera do teu irmão."
   version8: "and abide with him some days, until thy brother's fury turn away"
-  book:  " And tarry with him a few days, until thy brother's fury turn away;"
-  tags:  "And tarry with him a few days, until thy brother's fury turn away;"
+  version9: "And tarry with him a few days, until thy brother's fury turn away;"
 -
   book:  "Gênesis 27:45"
   tags:  "Gênesis27:45"
