@@ -63,6 +63,46 @@ $('#myTabs a').click(function (e) {
 
 <body>
 
+<!-- modal de livros -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="container"></div>
+            <div class="modal-body b">
+
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Velho Testamento</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Novo Testamento</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <center >
+                    <a  onclick="setBookBible('Gênesis')"  class="btn btn-default" style="width:60px;">GN</a>
+                    <a  onclick="setBookBible('Êxodo')"  class="btn btn-default" style="width:60px;">ÊX</a>
+                  </center>
+                </div>
+                
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <center >
+                    <a  onclick="setBookBible('Mateus')"  class="btn btn-default" style="width:60px;">MT</a>
+                    <a  onclick="setBookBible('Marcos')"  class="btn btn-default" style="width:60px;">MC</a>
+                  </center>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <a href="#" data-dismiss="modal" class="btn btn-danger">Fechar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <a href="" data-toggle="modal" data-target="#myModal"><img src="img/3bars.png" style="width:25px;position:absolute;right:15px;top:15px;"></a>
 
 <script>
@@ -111,19 +151,7 @@ window.location.replace(match[0]);
 
      <font size="2">
 
-<div id="fb-root"></div>
 
-<script>
-
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-</script>
 
 <!-- 
 <div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F%2F&amp;src=sdkpreparse">Compartilhar</a></div>
@@ -147,7 +175,8 @@ $(function(){
      </form>
 
 <center>
-<div align="center" style="width: 100%; height: 100%"> 
+
+<div id="content" align="center" style="width: 100%; height: 100%"> 
   <table width="95%">
     <tr> 
       <!--<td width="100%"><font size="3" face="Verdana, Arial, Helvetica, sans-serif">-->

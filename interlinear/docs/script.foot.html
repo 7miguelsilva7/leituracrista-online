@@ -12,44 +12,7 @@ begin_search ();
 
 </script>
 
-<div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
-            <div class="container"></div>
-            <div class="modal-body b">
 
-              <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Velho Testamento</a>
-                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Novo Testamento</a>
-                </div>
-              </nav>
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <center >
-                    <a  onclick="setBookBible('Gênesis')"  class="btn btn-default" style="width:60px;">GN</a>
-                    <a  onclick="setBookBible('Êxodo')"  class="btn btn-default" style="width:60px;">ÊX</a>
-                  </center>
-                </div>
-                
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <center >
-                    <a  onclick="setBookBible('Mateus')"  class="btn btn-default" style="width:60px;">MT</a>
-                    <a  onclick="setBookBible('Marcos')"  class="btn btn-default" style="width:60px;">MC</a>
-                  </center>
-                </div>
-              </div>
-              
-            </div>
-            <div class="modal-footer">
-              <a href="#" data-dismiss="modal" class="btn btn-danger">Fechar</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <script>
@@ -68,6 +31,13 @@ function setBookVersBible(itemBookVers)
 {
 window.location.replace('?query=@' + localStorage.getItem('InterlinearBookBibleSelected') + localStorage.getItem('InterlinearBookCapBibleSelected') + itemBookVers + '@');
 }
+
+//adicion strong a algumas palavras
+var str3 = document.getElementById("content").innerHTML;
+var res3 = str3.replace(/<i>/g,"<strong>").replace.replace(/<\/i>/g,"</strong>");
+document.getElementById("content").innerHTML = res3; 
+// fim //adicion strong a algumas palavras
+
 </script>
 
 
