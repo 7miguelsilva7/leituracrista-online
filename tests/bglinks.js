@@ -120,7 +120,7 @@ window.BGLinks = (function() {
         var passage = book + " " + chapter + ":" + verse;
         newLinkNode.href =
           bgHost +
-          "/" +
+          "/acf/" +
           passage +
           "&version=" +
           that.version +
