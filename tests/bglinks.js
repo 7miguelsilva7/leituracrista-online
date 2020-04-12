@@ -122,8 +122,7 @@ window.BGLinks = (function() {
         newLinkNode.href =
           bgHost +
           "/acf/" +
-          passage +
-          that.version;
+          passage;
         newLinkNode.innerHTML = matched[1];
         if (that.clickTooltip === true) {
           newLinkNode.onclick = function() {
