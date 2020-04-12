@@ -118,7 +118,7 @@ window.BGLinks = (function() {
         newLinkNode.className = "bibleref";
         newLinkNode.target = "_BLANK";
         // var passage = book + " " + chapter + ":" + verse;
-        var passage = book + chapter + "/" + verse;
+        var passage = book + '/' + chapter + "/" + verse;
         newLinkNode.href =
           bgHost +
           "/acf/" +
