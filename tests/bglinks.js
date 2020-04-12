@@ -75,7 +75,7 @@ window.BGLinks = (function() {
       "*?)?(?:(\\d*):)?(\\d+(?:(?:ff|f|\\w)|(?:\\s?(?:-|–|—)\\s?\\d+)?)))([^a-z0-9]*)";
     var regex_string =
       "(?:" +
-      book_string +
+      book_string.replace(/%20/g, "") +
       apoc_string +
       ")(?:.)?" +
       unicode_space +
