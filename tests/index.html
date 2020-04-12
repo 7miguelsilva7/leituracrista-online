@@ -37,7 +37,7 @@ BGLinks.linkVerses();
 <script>
 
 var str = document.getElementById("content").innerHTML;
-var res = str.replace(/www.biblegateway.com\/passage\/?search=/g, "www.bibliaonline.com.br/acf/") 
+var res = str.replace(/&version=ARC&src=tools/g, "") 
 ;
 document.getElementById("content").innerHTML = res; 
 
