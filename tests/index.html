@@ -1,6 +1,13 @@
 <html>
+<head>
+
+  <meta charset="UTF-8">
+
+</head>
 
 <body>
+
+<div id="content">
   
 ZACARIAS 1:18
 
@@ -16,12 +23,24 @@ Zc 1:15 Deus está irado com as nações pois viviam tranqüilas enquanto Israel
 Zc 1:16 Deus ainda irá mostrar misericórdia para Jerusalém, após toda a desobediência contra Ele. Misericórdia? Pois Cristo pagou por seus pecados.
 <br>
 Zc 1:18-21 Os quatro Impérios do mundo representados por quatro chifres, foram os instrumentos de Deus para espalhar Israel por sua desobediência.
-</p>p>
+</p>
+
+</div>
 
 <script src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js" type="text/javascript"></script>
 <script type="text/javascript">
 BGLinks.version = "ARC";
 BGLinks.linkVerses();
+</script>
+
+
+<script>
+
+var str = document.getElementById("content").innerHTML;
+var res = str.replace(/www.biblegateway.com\/passage\/?search=/g, "www.bibliaonline.com.br/acf/") 
+;
+document.getElementById("content").innerHTML = res; 
+
 </script>
 
 </body>
