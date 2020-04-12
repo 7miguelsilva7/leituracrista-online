@@ -2,11 +2,11 @@ window.BGLinks = (function() {
   var that = {};
 
   // can be set like BGLinks.parameter
-  that.version = "NIV";
+  that.version = "ARC";
   that.clickTooltip = false;
   that.apocrypha = false;
   that.showTooltips = true;
-  that.host = "www.biblegateway.com";
+  that.host = "www.bibliaonline.com.br";
 
   var showTimer = 0;
   var hideTimer = 0;
