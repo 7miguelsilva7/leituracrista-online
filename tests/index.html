@@ -36,12 +36,9 @@ BGLinks.linkVerses();
 
 
 <script>
-
 var str = document.getElementById("content").innerHTML;
-var res = str.replace(/%20/g, "") 
-;
+var res = str.replace(/&version=ARC&src=tools/g, "");
 document.getElementById("content").innerHTML = res; 
-
 </script>
 
 </body>
