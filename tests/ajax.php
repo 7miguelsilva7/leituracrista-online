@@ -1,6 +1,10 @@
 <?
 
-$html = file_get_contents('https://www.bibliaonline.com.br/acf/zc/1/18-20');
+$versao = $_POST['veersao'];	
+$livro = $_POST['livro'];
+$cap = $_POST['cap'];
+$ver = $_POST['ver'];
+$html = file_get_contents('https://www.bibliaonline.com.br/'.$versao.'/'.$livro.'/'.$cap.'/'.$ver);
 $dom = new DOMDocument();
 // $dom->loadHTML($html);
 @$dom->loadHTML($html);
