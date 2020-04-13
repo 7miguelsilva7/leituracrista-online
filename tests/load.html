@@ -34,12 +34,6 @@ Zc 1:18-21 Os quatro Impérios do mundo representados por quatro chifres, foram 
 // BGLinks.version = "ARC";
 BGLinks.linkVerses();
 
-$versao = $_POST['versao'];
-$livro = $_POST['livro'];
-$cap = $_POST['cap'];
-$ver = $_POST['ver'];
-$html = file_get_contents('https://www.bibliaonline.com.br/'.$versao.'/'.$livro.'/'.$cap.'/'.$ver);
-
 $(function($){   
 	$("a").click(function(e) {
 	e.preventDefault();		
