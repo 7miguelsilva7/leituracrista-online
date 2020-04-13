@@ -2,7 +2,7 @@ window.BGLinks = (function() {
   var that = {};
 
   // can be set like BGLinks.parameter
-  that.version = "acf";
+  that.version = "ARC";
   that.clickTooltip = false;
   that.apocrypha = false;
   that.showTooltips = true;
@@ -118,10 +118,10 @@ window.BGLinks = (function() {
         newLinkNode.className = "bibleref";
         newLinkNode.target = "_BLANK";
         // var passage = book + " " + chapter + ":" + verse;
-        var passage = 'ajax.php?site='+bgHost+'/'+that.version+'&ref=' + book + '/' + chapter + "/" + verse;
+        var passage = book + '/' + chapter + "/" + verse;
         newLinkNode.href =
-        // bgHost +
-        "" +
+          bgHost +
+          "/acf/" +
           passage;
         newLinkNode.innerHTML = matched[1];
         if (that.clickTooltip === true) {
