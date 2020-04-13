@@ -1,0 +1,69 @@
+<html>
+<head>
+
+  <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+<div id="content">
+  
+Zechariah 1:18
+<br>
+Ed 1:2
+
+<p>
+Seu nome significa "Lembrado por Jeová". Nada da própria vida de Zacarias é registrado. Sua época foi cerca de 519 A.C. Acabamos de ler o livro de Ageu, e estes dois homens aparentemente viveram na mesma época, conforme Esdras 5:1, 2, Ed 6:14. Ageu está preocupado com a Casa, Zacarias com a cidade. Veremos tratar-se de um livro muito interessante, pois nos fala da primeira vinda do Senhor Jesus, a qual naquela ocasião ainda estava no futuro. Então ele vai mais além para nos falar de dias que ainda são futuros para nós, quando Israel será abençoado em sua terra. Eles receberam sua terra de volta em Maio de 1948. Portanto falta pouco!
+<br>
+Zc 1:1-6 Um chamado para que o povo volte-se para o Senhor, não para que sejam como seus pais que se recusaram a ouvir os avisos de Deus por meio dos profetas. Eles admitiram que o castigo foi exatamente como Ele havia dito.
+<br>
+Zc 1:7-17 A primeira mensagem de Zacarias. Um cavalo é um símbolo do poder de Deus no mundo, usando as nações para executar Seus objetivos. É possível que o cavalo vermelho represente a Pérsia (Irã hoje) a mesma cor daquele que o anjo montava, pois a Pérsia era que governava naquele tempo. O malhado poderia representar o próximo Império futuro - Grécia, e o cavalo branco seria o Império Romano (o último Império).
+<br>
+Zc 1:15 Deus está irado com as nações pois viviam tranqüilas enquanto Israel era punido.
+<br>
+Zc 1:16 Deus ainda irá mostrar misericórdia para Jerusalém, após toda a desobediência contra Ele. Misericórdia? Pois Cristo pagou por seus pecados.
+<br>
+Zc 1:18-21 Os quatro Impérios do mundo representados por quatro chifres, foram os instrumentos de Deus para espalhar Israel por sua desobediência.
+</p>
+<div id="msg"></div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://leituracrista.com/tests/bglinks.js" type="text/javascript"></script>
+<script type="text/javascript">
+// BGLinks.version = "ARC";
+BGLinks.linkVerses();
+
+$(function($){   
+	$("a").click(function(e) {
+	e.preventDefault();		
+	var href = $(this).attr('href');
+	var rep = href.replace('https://www.bibliaonline.com.br/', '');
+	var spl = rep.split('/');
+	var versao = spl[0];
+	var livro = spl[1];
+	var cap = spl[2];
+	var ver = spl[3];
+	$("#msg").html('Carregando versículo(s)...');
+		$.ajax({  
+			type: "POST",  
+			url: "https://leituracrista.com/tests/ajax.php",  
+			data: {versao:versao, livro:livro, cap:cap, ver:ver},  
+			success: function(result){ 
+				console.log(result); 
+				if(result != ''){	
+					$("#msg").html(result);
+				}else{			
+					$("#msg").html('Informações não encontradas!');
+				}	
+			}
+		}); 
+	});
+});
+</script>
+
+</body>
+
+</html>
+
+  
