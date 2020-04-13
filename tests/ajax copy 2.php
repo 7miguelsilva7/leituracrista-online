@@ -14,7 +14,9 @@ function file_get_contents_curl($url)
 		return $data;
 	}
 
-$html = file_get_contents('https://www.bibliaonline.com.br/acf/zc/1/18-20');
+	$site=$_GET['site'];
+	$ref=$_GET['ref'];
+$html = file_get_contents($site.'/'.$ref);
 $dom = new DOMDocument();
 // $dom->loadHTML($html);
 @$dom->loadHTML($html);
