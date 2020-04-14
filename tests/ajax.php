@@ -1,6 +1,6 @@
 <?
 
-$versao = $_POST['veersao'];	
+$versao = $_POST['versao'];	
 $livro = $_POST['livro'];
 $cap = $_POST['cap'];
 $ver = $_POST['ver'];
@@ -19,3 +19,4 @@ preg_match_all('~<p class="jss161">(.*?)</p>~is', $html, $matches );
 foreach($matches[0] as $vers){
 	echo $vers;
 }
+?><br><br>

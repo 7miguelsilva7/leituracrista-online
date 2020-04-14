@@ -1,66 +1,15 @@
 <html>
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <meta charset="UTF-8">
-<style>
-.sidenav {
-	font-family:Verdana, Geneva, sans-serif;
-	display:none;
-  height: 100%;
-  width: 70%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  color:#000;
-  padding:3%;
-  float:left;
- overflow: auto;
- background: #f0e68c;  
- font-size:20px;
- opacity: 0.95;
-}
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-#close{
-  font-size:24px;
-  font-weight:800;
-  float:right;
-  color:#F30;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  cursor:pointer;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
 </head>
 
 <body>
 
 <div id="content">
   
-Zacarias 1:18
+Zechariah 1:18
 <br>
 Ed 1:2
 
@@ -77,24 +26,14 @@ Zc 1:16 Deus ainda irá mostrar misericórdia para Jerusalém, após toda a deso
 <br>
 Zc 1:18-21 Os quatro Impérios do mundo representados por quatro chifres, foram os instrumentos de Deus para espalhar Israel por sua desobediência.
 </p>
-<div class="sidenav">
-	<div id="close">X</div>
-	<div id="msg"></div>
-</div>
+<div id="msg"></div>
 </div>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="leituracrista.com/tests/bglinks.js" type="text/javascript"></script>
+<script src="https://leituracrista.com/tests/bglinks.js" type="text/javascript"></script>
 <script type="text/javascript">
 // BGLinks.version = "ARC";
 BGLinks.linkVerses();
 
-$(function($){   
-	$("#close").click(function() {
-		$(".sidenav").animate({
-      width: "toggle"
-    });
-	});
-})		
 $(function($){   
 	$("a").click(function(e) {
 	e.preventDefault();		
@@ -108,15 +47,12 @@ $(function($){
 	$("#msg").html('Carregando versículo(s)...');
 		$.ajax({  
 			type: "POST",  
-			url: "ajax.php",  
+			url: "https://leituracrista.com/tests/ajax.php",  
 			data: {versao:versao, livro:livro, cap:cap, ver:ver},  
 			success: function(result){ 
+				console.log(result); 
 				if(result != ''){	
 					$("#msg").html(result);
-					$(".sidenav").css('width','90%');
-					$(".sidenav").animate({
-					  width: "toggle"
-					});
 				}else{			
 					$("#msg").html('Informações não encontradas!');
 				}	
@@ -127,5 +63,7 @@ $(function($){
 </script>
 
 </body>
+
 </html>
+
   
