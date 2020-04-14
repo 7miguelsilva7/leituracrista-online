@@ -19,4 +19,9 @@ preg_match_all('~<p class="jss161">(.*?)</p>~is', $html, $matches );
 foreach($matches[0] as $vers){
 	echo $vers;
 }
-?><br><br>
+?>
+<p align="right">
+Biblia Online
+<?php echo '<a href="https://www.bibliaonline.com.br/'.$versao.'/'.$livro.'/'.$cap.'/'.$ver.'.>'.'">'.$livro.' '.$cap.':'.$ver.'</a>'?>
+</p>
+<br><br>
