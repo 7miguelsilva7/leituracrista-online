@@ -22,6 +22,6 @@ foreach($matches[0] as $vers){
 ?>
 <p align="right">
 <!-- <span style="color:blue">Biblia Online</span> -->
-<?php echo '<a target="_blank" href="https://www.bibliaonline.com.br/'.$versao.'/'.$livro.'/'.$cap.'/'.$ver.'.>'.'">'.$livro.' '.$cap.':'.$ver.'</a>'?>
+<?php echo '<a target="_blank" href="https://www.bibliaonline.com.br/'.$versao.'/'.$livro.'/'.$cap.'/'.$ver.'">'.$livro.' '.$cap.':'.$ver.'</a>'?>
 </p>
 <br><br>
