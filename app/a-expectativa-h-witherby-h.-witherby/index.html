@@ -37,8 +37,8 @@ Amado, paremos um pouco para considerar quanto tempo ainda resta até que vejamo
   <title>A Expectativa</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-expectativa-h-witherby-h.-witherby/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1577322119">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1577322119">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1586959563">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1586959563">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -114,15 +114,22 @@ Amado, paremos um pouco para considerar quanto tempo ainda resta até que vejamo
   
 </section>
 
-<a style="display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;" href="#" title="Para o topo!">
-  <img style="width:100px" src="../img/up.png" alt="Subir">
-  
-</a>
 
-<a onclick="removeNameBookActived()" style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
-  <img style="width:200px;height: 30px"  src="../img/voltar.png" alt="Voltar">
-  
-</a>
+<div onclick='window.open("#");' class="footerup">
+  <span>^</span>
+</div>
+
+<script>
+  function back(){
+  window.location.href = "../"
+  }
+</script>
+
+<div onclick='removeNameBookActived();back();' class="footerback">
+  <span>&lt;</span>
+</div>
+
+
 
 <script type="text/javascript" src="../js/custom.js"></script>
 

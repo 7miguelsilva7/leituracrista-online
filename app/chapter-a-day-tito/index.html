@@ -36,8 +36,8 @@ Tt 1:1 Tito recebe instruções de Paulo de como transmitir ordem e um comportam
   <title>Chapter-a-Day - Tito</title>
   <link rel="canonical" href="https://leituracrista.com/app/chapter-a-day-tito/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1577322119">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1577322119">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1586959564">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1586959564">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -159,15 +159,22 @@ Tt 1:1 Tito recebe instruções de Paulo de como transmitir ordem e um comportam
   
 </section>
 
-<a style="display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;" href="#" title="Para o topo!">
-  <img style="width:100px" src="../img/up.png" alt="Subir">
-  
-</a>
 
-<a onclick="removeNameBookActived()" style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
-  <img style="width:200px;height: 30px"  src="../img/voltar.png" alt="Voltar">
-  
-</a>
+<div onclick='window.open("#");' class="footerup">
+  <span>^</span>
+</div>
+
+<script>
+  function back(){
+  window.location.href = "../"
+  }
+</script>
+
+<div onclick='removeNameBookActived();back();' class="footerback">
+  <span>&lt;</span>
+</div>
+
+
 
 <script type="text/javascript" src="../js/custom.js"></script>
 
