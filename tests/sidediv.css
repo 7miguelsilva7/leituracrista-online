@@ -35,8 +35,8 @@
 #close{
   font-size:24px;
   font-weight:800;
-  /* float:right; */
-  position: fixed;
+  float:right;
+  /* position: fixed; */
   color:#F30;
   top: 0;
   right: 25px;
