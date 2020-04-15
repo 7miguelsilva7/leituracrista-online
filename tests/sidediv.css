@@ -35,11 +35,15 @@
 #close{
   font-size:24px;
   font-weight:800;
-  float:right;
+  /* float:right; */
+  position: fixed;
   color:#F30;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
   cursor:pointer;
+}
+a:visited {
+  color: blue;
 }
