@@ -157,9 +157,9 @@ window.BGLinks = (function() {
       css.rel = "stylesheet";
       if (browser.search("MSIE 6.0") != -1) {
         browser = "ie6";
-        css.href = cdHost + "https://leituracrista.com/linktobible/css/sidediv.css";
+        css.href = "https://leituracrista.com/linktobible/css/sidediv.css";
       } else {
-        css.href = cdHost + "https://leituracrista.com/linktobible/css/sidediv.css";
+        css.href = "https://leituracrista.com/linktobible/css/sidediv.css";
       }
       css.media = "screen";
       var n1 = document.getElementsByTagName("head")[0].childNodes[0];
@@ -571,41 +571,3 @@ window.BGLinks = (function() {
 
   return that;
 })();
-
-
-$(function($){   
-	$("#close").click(function() {
-		$(".sidenav").animate({
-      width: "toggle"
-    });
-	});
-})		
-$(function($){   
-	$("a").click(function(e) {
-	e.preventDefault();		
-	var href = $(this).attr('href');
-	var rep = href.replace('https://www.bibliaonline.com.br/', '');
-	var spl = rep.split('/');
-	var versao = spl[0];
-	var livro = spl[1];
-	var cap = spl[2];
-	var ver = spl[3];
-	$("#msg").html('Carregando versículo(s)...');
-		$.ajax({  
-			type: "POST",  
-			url: "ajax.php",  
-			data: {versao:versao, livro:livro, cap:cap, ver:ver},  
-			success: function(result){ 
-				if(result != ''){	
-					$("#msg").html(result);
-					$(".sidenav").css('width','90%');
-					$(".sidenav").animate({
-					  width: "toggle"
-					});
-				}else{			
-					$("#msg").html('Informações não encontradas!');
-				}	
-			}
-		}); 
-	});
-});
