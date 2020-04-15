@@ -5,7 +5,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
+<!-- <style>
 .sidenav {
 	font-family:Verdana, Geneva, sans-serif;
 	display:none;
@@ -51,20 +51,7 @@
   margin-left: 50px;
   cursor:pointer;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .sidenav {padding-top: 15px;
-            font-size: 18px;}
-  .sidenav a {font-size: 18px;}
-} */
-
-/* @media screen and (max-width: 450px) {
-  .sidenav {padding-top: 15px;
-            font-size: 18px;}
-  .sidenav a {font-size: 18px;}
-} */
-
-</style>
+</style> -->
 </head>
 
 <body>
@@ -88,6 +75,8 @@ Zc 1:16 Deus ainda irá mostrar misericórdia para Jerusalém, após toda a deso
 <br>
 Zc 1:18-21 Os quatro Impérios do mundo representados por quatro chifres, foram os instrumentos de Deus para espalhar Israel por sua desobediência.
 </p>
+
+
 <div class="sidenav">
 	<div id="close">X</div>
 	<div id="msg"></div>
@@ -96,45 +85,44 @@ Zc 1:18-21 Os quatro Impérios do mundo representados por quatro chifres, foram 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://leituracrista.com/tests/bglinks.js" type="text/javascript"></script>
 <script type="text/javascript">
-// BGLinks.version = "ARC";
 BGLinks.linkVerses();
 
-$(function($){   
-	$("#close").click(function() {
-		$(".sidenav").animate({
-      width: "toggle"
-    });
-	});
-})		
-$(function($){   
-	$("a").click(function(e) {
-	e.preventDefault();		
-	var href = $(this).attr('href');
-	var rep = href.replace('https://www.bibliaonline.com.br/', '');
-	var spl = rep.split('/');
-	var versao = spl[0];
-	var livro = spl[1];
-	var cap = spl[2];
-	var ver = spl[3];
-	$("#msg").html('Carregando versículo(s)...');
-		$.ajax({  
-			type: "POST",  
-			url: "ajax.php",  
-			data: {versao:versao, livro:livro, cap:cap, ver:ver},  
-			success: function(result){ 
-				if(result != ''){	
-					$("#msg").html(result);
-					$(".sidenav").css('width','90%');
-					$(".sidenav").animate({
-					  width: "toggle"
-					});
-				}else{			
-					$("#msg").html('Informações não encontradas!');
-				}	
-			}
-		}); 
-	});
-});
+// $(function($){   
+// 	$("#close").click(function() {
+// 		$(".sidenav").animate({
+//       width: "toggle"
+//     });
+// 	});
+// })		
+// $(function($){   
+// 	$("a").click(function(e) {
+// 	e.preventDefault();		
+// 	var href = $(this).attr('href');
+// 	var rep = href.replace('https://www.bibliaonline.com.br/', '');
+// 	var spl = rep.split('/');
+// 	var versao = spl[0];
+// 	var livro = spl[1];
+// 	var cap = spl[2];
+// 	var ver = spl[3];
+// 	$("#msg").html('Carregando versículo(s)...');
+// 		$.ajax({  
+// 			type: "POST",  
+// 			url: "ajax.php",  
+// 			data: {versao:versao, livro:livro, cap:cap, ver:ver},  
+// 			success: function(result){ 
+// 				if(result != ''){	
+// 					$("#msg").html(result);
+// 					$(".sidenav").css('width','90%');
+// 					$(".sidenav").animate({
+// 					  width: "toggle"
+// 					});
+// 				}else{			
+// 					$("#msg").html('Informações não encontradas!');
+// 				}	
+// 			}
+// 		}); 
+// 	});
+// });
 </script>
 
 </body>
