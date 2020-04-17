@@ -33,8 +33,8 @@
   <title>Read in English</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1586981424">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1586981424">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1587143684">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1587143684">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/touch/usaFlag-48-48.png"/>
 
   
@@ -542,13 +542,16 @@ location.replace(localStorage.getItem('NameBookActivedKeyreadinenglish'));
   
 </li>
 
-<a style="display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;" href="#" title="Para o topo!">
-  <img style="width:150px" src="img/up.png" alt="Subir">
 
 
-
-  
-</a>
+<script>
+  function up(){
+    window.location.href = "#"
+    }
+  </script>
+  <div style="width:100%" onclick='up();' class="footerup">
+    <span>^</span>
+  </div>
 
 <script>
 

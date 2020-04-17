@@ -34,8 +34,8 @@
   <title>Between Two Slides</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/between-two-slides/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1586981424">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1586981424">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1587143684">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1587143684">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/touch/usaFlag-48-48.png"/>
 
   
@@ -188,15 +188,24 @@ div.sticky {
   
 </section>
 
-<a style="display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;" href="#" title="Para o topo!">
-  <img style="width:100px" src="../img/up.png" alt="Subir">
-  
-</a>
 
-<a onclick="removeNameBookActivedreadinenglish()" style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
-  <img style="width:100px;height: 30px"  src="../img/voltar.png" alt="Voltar">
-  
-</a>
+
+<script>
+  function back(){
+  window.location.href = "../"
+  }
+
+  function up(){
+  window.location.href = "#"
+  }
+</script>
+<div onclick='up();' class="footerup">
+  <span>^</span>
+</div>
+
+<div onclick='removeNameBookActived();back();' class="footerback">
+  <span>&lt;</span>
+</div>
 
 <script type="text/javascript" src="../js/custom.js"></script>
 

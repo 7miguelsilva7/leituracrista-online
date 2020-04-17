@@ -44,5 +44,33 @@ section.article article {
 }
 
 
+.footerback {
+   
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 49.9%;
+  background-color: DarkSlateBlue;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
 
+  }
+
+.footerup {
+  margin: auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 49.9%;
+  background-color: DarkSlateBlue;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+
+  }   
 /* adicionado por mim */
