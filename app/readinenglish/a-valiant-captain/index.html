@@ -36,8 +36,8 @@ One day while the ferry was in the harbor at Port aux Basques, a violent storm c
   <title>A Valiant Captain</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/a-valiant-captain/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1587147109">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1587147109">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1587155895">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1587155895">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/touch/usaFlag-48-48.png"/>
 
   
@@ -83,26 +83,18 @@ a, a:visited { color:black }
 a.link.active { color:red;}
 
 div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width:100%;
-  height: 0px;
-  padding: 5px;
-  background-color: #cae8ca;
-  border: 0px solid #4CAF50;
+   
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+   
 }
 
 </style>
       <div class="load"> <img src="../img/loading-gif-transparent-10.gif" width="220" height="80"> </div>
     
-
-      <div class="sticky" align="center">
-        <audio  controls preload="none" >
-            <source src="https://www.mediafire.com/file/okqzotov6zge1hi/A_Valiant_Captain.mp3/file" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-      </div>
       
     <header>
         
@@ -183,12 +175,21 @@ div.sticky {
   window.location.href = "#"
   }
 </script>
+
+
+<div onclick='removeNameBookActivedreadinenglish();back();' class="footerback">
+  <span>&lt;</span>
+</div>
+
 <div onclick='up();' class="footerup">
   <span>^</span>
 </div>
 
-<div onclick='removeNameBookActivedreadinenglish();back();' class="footerback">
-  <span>&lt;</span>
+<div class="sticky" align="center">
+  <audio  controls preload="none" >
+      <source src="https://www.mediafire.com/file/okqzotov6zge1hi/A_Valiant_Captain.mp3/file" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
 </div>
 
 <script type="text/javascript" src="../js/custom.js"></script>
