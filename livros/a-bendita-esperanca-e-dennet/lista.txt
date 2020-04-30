@@ -1,0 +1,2 @@
+comandoEmPastas.sh
+lista.txt
