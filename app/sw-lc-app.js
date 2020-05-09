@@ -15,7 +15,6 @@ var urls_lc = [
   '/app/closeWindow.html',
   '/app/img/voltar.png',
   '/app/img/up.png',
-  '/app/img/toc-black-48dp.svg',
 '/app/1pedro-darby-mysword/index.html',
 '/app/a-autoridade-delegada-a-assembleia-r.-guillen/index.html',
 '/app/a-ceia-do-senhor-c.-h.-mackintosh/index.html',
