@@ -43,8 +43,8 @@ Ele nos faz lembrar de nossos inestimáveis privilégios: a salvação da alma (
   <title>Estudo Sobre a Palavra de Deus - 1ª Pedro</title>
   <link rel="canonical" href='../closeWindow.html' target='closeWindow' onclick="window.open('https://leituracrista.com/app/1pedro-darby-mysword/')">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589049753">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589049753">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -130,15 +130,7 @@ Ele nos faz lembrar de nossos inestimáveis privilégios: a salvação da alma (
         </div>
       </div>
       <div class="modal-footer">
-        <script>
-        $(function($){   
-        $("a").click(function(e) {
-        e.preventDefault();	
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
-          });   
-        });
-        </script>
+        
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -793,6 +785,8 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
+    $('.modal').modal('hide');
+    $('#exampleModalLong').modal('hide');
   }
 }
 

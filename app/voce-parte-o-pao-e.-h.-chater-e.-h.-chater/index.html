@@ -36,8 +36,8 @@ Na noite em que Jesus foi traído, após a ceia pascal, Ele tomou &quot;o pão, 
   <title>Você Parte o Pão - Por Que, Quando, Onde e Como?</title>
   <link rel="canonical" href="https://leituracrista.com/app/voce-parte-o-pao-e.-h.-chater-e.-h.-chater/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589049754">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589049754">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -122,15 +122,7 @@ Na noite em que Jesus foi traído, após a ceia pascal, Ele tomou &quot;o pão, 
         </div>
       </div>
       <div class="modal-footer">
-        <script>
-        $(function($){   
-        $("a").click(function(e) {
-        e.preventDefault();	
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
-          });   
-        });
-        </script>
+        
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -339,6 +331,8 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
+    $('.modal').modal('hide');
+    $('#exampleModalLong').modal('hide');
   }
 }
 

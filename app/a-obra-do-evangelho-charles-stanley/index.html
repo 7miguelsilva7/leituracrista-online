@@ -40,8 +40,8 @@ Quão maravilhosamente verdadeira é a palavra que o Senhor falou a Moisés: &qu
   <title>A Obra do Evangelho</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-obra-do-evangelho-charles-stanley/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589049753">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589049753">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -228,15 +228,7 @@ Quão maravilhosamente verdadeira é a palavra que o Senhor falou a Moisés: &qu
         </div>
       </div>
       <div class="modal-footer">
-        <script>
-        $(function($){   
-        $("a").click(function(e) {
-        e.preventDefault();	
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
-          });   
-        });
-        </script>
+        
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -1357,6 +1349,8 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
+    $('.modal').modal('hide');
+    $('#exampleModalLong').modal('hide');
   }
 }
 

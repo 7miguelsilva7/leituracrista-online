@@ -37,8 +37,8 @@ Deus prometeu que se crermos no Seu Filho, somos salvos da ira vindoura. Quão t
   <title>A Salvação É Para Sempre</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-salvacao-e-para-sempre-ron-reeves-ron-reeves/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589049753">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589049753">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -113,15 +113,7 @@ Deus prometeu que se crermos no Seu Filho, somos salvos da ira vindoura. Quão t
         </div>
       </div>
       <div class="modal-footer">
-        <script>
-        $(function($){   
-        $("a").click(function(e) {
-        e.preventDefault();	
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
-          });   
-        });
-        </script>
+        
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -248,6 +240,8 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
+    $('.modal').modal('hide');
+    $('#exampleModalLong').modal('hide');
   }
 }
 

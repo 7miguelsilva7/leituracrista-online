@@ -36,8 +36,8 @@ Tt 1:1 Tito recebe instruções de Paulo de como transmitir ordem e um comportam
   <title>Chapter-a-Day - Tito</title>
   <link rel="canonical" href="https://leituracrista.com/app/chapter-a-day-tito/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589049753">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589049753">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -124,15 +124,7 @@ Tt 1:1 Tito recebe instruções de Paulo de como transmitir ordem e um comportam
         </div>
       </div>
       <div class="modal-footer">
-        <script>
-        $(function($){   
-        $("a").click(function(e) {
-        e.preventDefault();	
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
-          });   
-        });
-        </script>
+        
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -289,6 +281,8 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
+    $('.modal').modal('hide');
+    $('#exampleModalLong').modal('hide');
   }
 }
 

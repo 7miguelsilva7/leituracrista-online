@@ -35,8 +35,8 @@ JUÍZES 1, Vers. 1-15 Voltamos para o Antigo Testamento para vermos o próximo p
   <title>Chapter-a-Day - Juízes</title>
   <link rel="canonical" href="https://leituracrista.com/app/chapter-a-day-juizes/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589049753">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589049753">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -163,15 +163,7 @@ JUÍZES 1, Vers. 1-15 Voltamos para o Antigo Testamento para vermos o próximo p
         </div>
       </div>
       <div class="modal-footer">
-        <script>
-        $(function($){   
-        $("a").click(function(e) {
-        e.preventDefault();	
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
-          });   
-        });
-        </script>
+        
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -578,6 +570,8 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
+    $('.modal').modal('hide');
+    $('#exampleModalLong').modal('hide');
   }
 }
 
