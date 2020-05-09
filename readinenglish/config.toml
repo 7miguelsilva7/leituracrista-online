@@ -1,9 +1,0 @@
-baseURL = "https://leituracrista.com/app/readinenglish"
-languageCode = "pt-br"
-title = "Read in English"
-
-theme = "default"
-canonifyURLs = true
-
-[permalinks]
-book  = ":slug/"
