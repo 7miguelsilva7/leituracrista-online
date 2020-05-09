@@ -35,8 +35,8 @@ JÓ 1 Outro de nosso grupo de cinco livros; Provérbios, Tiago, Jó, Eclesiastes
   <title>Chapter-a-Day - Jó</title>
   <link rel="canonical" href="https://leituracrista.com/app/chapter-a-day-j%C3%B3/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012409">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012409">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012877">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012877">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -808,11 +808,28 @@ JÓ 1 Outro de nosso grupo de cinco livros; Provérbios, Tiago, Jó, Eclesiastes
 
 
 
-<script type="text/javascript" src="../js/custom.js"></script>
+
+
 
 
 <script>
-    
+
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+}
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
     $(document).ready(function() {
     });
 

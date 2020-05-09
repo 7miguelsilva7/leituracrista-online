@@ -36,8 +36,8 @@ Por “disciplina” queremos dizer o exercício geral de cuidado no governo da 
   <title>Os Limites da Disciplina</title>
   <link rel="canonical" href="https://leituracrista.com/app/os-limites-da-disciplina/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012410">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012410">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012877">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012877">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -285,11 +285,28 @@ Por “disciplina” queremos dizer o exercício geral de cuidado no governo da 
 
 
 
-<script type="text/javascript" src="../js/custom.js"></script>
+
+
 
 
 <script>
-    
+
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+}
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
     $(document).ready(function() {
     });
 

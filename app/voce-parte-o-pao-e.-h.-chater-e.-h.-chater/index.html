@@ -36,8 +36,8 @@ Na noite em que Jesus foi traído, após a ceia pascal, Ele tomou &quot;o pão, 
   <title>Você Parte o Pão - Por Que, Quando, Onde e Como?</title>
   <link rel="canonical" href="https://leituracrista.com/app/voce-parte-o-pao-e.-h.-chater-e.-h.-chater/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012410">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012410">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012877">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012877">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -285,11 +285,28 @@ Na noite em que Jesus foi traído, após a ceia pascal, Ele tomou &quot;o pão, 
 
 
 
-<script type="text/javascript" src="../js/custom.js"></script>
+
+
 
 
 <script>
-    
+
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+}
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
     $(document).ready(function() {
     });
 

@@ -37,8 +37,8 @@ Deus prometeu que se crermos no Seu Filho, somos salvos da ira vindoura. Quão t
   <title>A Salvação É Para Sempre</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-salvacao-e-para-sempre-ron-reeves-ron-reeves/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012409">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012409">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012877">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012877">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -194,11 +194,28 @@ Deus prometeu que se crermos no Seu Filho, somos salvos da ira vindoura. Quão t
 
 
 
-<script type="text/javascript" src="../js/custom.js"></script>
+
+
 
 
 <script>
-    
+
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+}
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
     $(document).ready(function() {
     });
 

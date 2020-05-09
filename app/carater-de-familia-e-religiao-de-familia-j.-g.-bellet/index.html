@@ -36,8 +36,8 @@ Como sabemos, houve o dia da visitação à casa de Terá. A família de Sem hav
   <title>Carater de Família e Religião de Família</title>
   <link rel="canonical" href="https://leituracrista.com/app/carater-de-familia-e-religiao-de-familia-j.-g.-bellet/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012409">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012409">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012877">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012877">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -294,11 +294,28 @@ Como sabemos, houve o dia da visitação à casa de Terá. A família de Sem hav
 
 
 
-<script type="text/javascript" src="../js/custom.js"></script>
+
+
 
 
 <script>
-    
+
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+}
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
     $(document).ready(function() {
     });
 

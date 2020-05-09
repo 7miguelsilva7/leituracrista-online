@@ -37,8 +37,8 @@ A Palavra de Deus mostra claramente que havia, para o ministério, dons de diver
   <title>A Igreja</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-igreja-a-h-rule-a.-h.-rule/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012409">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012409">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012877">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012877">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -186,11 +186,28 @@ A Palavra de Deus mostra claramente que havia, para o ministério, dons de diver
 
 
 
-<script type="text/javascript" src="../js/custom.js"></script>
+
+
 
 
 <script>
-    
+
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+}
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
     $(document).ready(function() {
     });
 
