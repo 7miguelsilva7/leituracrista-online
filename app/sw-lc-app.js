@@ -134,6 +134,7 @@ var urls_lc = [
 '/app/definicoesdoutrinais-bruce-anstey/index.html',
 '/app/deus-esta-em-todas-as-circunstancias-c-h-m-c.-h.-mackintosh/index.html',
 '/app/dois-dias-nas-escrituras-bruce-anstey-bruce-anstey/index.html',
+'/app/esbocos-dos-livros-da-biblia/index.html',
 '/app/esbocos-dos-livros-da-bíblia/index.html',
 '/app/escolhas-l-c-perry.jpeg-l.-c.-perry/index.html',
 '/app/espere-r-pilkington-r.-pilkington/index.html',
