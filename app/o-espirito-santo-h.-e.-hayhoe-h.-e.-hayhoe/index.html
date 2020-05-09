@@ -35,8 +35,8 @@ PREFÁCIO Este breve estudo a respeito do Espírito Santo não busca apresentar 
   <title>O Espírito Santo</title>
   <link rel="canonical" href="https://leituracrista.com/app/o-espirito-santo-h.-e.-hayhoe-h.-e.-hayhoe/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589010995">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589010995">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012200">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012200">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -255,7 +255,6 @@ PREFÁCIO Este breve estudo a respeito do Espírito Santo não busca apresentar 
 <script>
     
     $(document).ready(function() {
-    $('.load').hide();
     });
 
 
@@ -300,10 +299,9 @@ function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
 }
 
-
-var siteBiblia = "https://mysword.info/b/?r=";
-  var version = "";
-
+  
+  var siteBiblia = "https://mysword.info/b/?r="
+  var version = ""
   var toMySword = document.getElementById('content').innerHTML
   res = toMySword
   .replace(/(1Co_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target="_blank" href="" + siteBiblia + version + "$1$2:$3">1 Co $2:$3</a>")

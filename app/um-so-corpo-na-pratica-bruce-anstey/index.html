@@ -38,8 +38,8 @@ Prefácio A maior parte deste volume foi escrita na mesma época de “A Ordem d
   <title>Um Só Corpo na Prática</title>
   <link rel="canonical" href="https://leituracrista.com/app/um-so-corpo-na-pratica-bruce-anstey/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589010995">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589010995">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012201">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012201">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -939,7 +939,6 @@ Prefácio A maior parte deste volume foi escrita na mesma época de “A Ordem d
 <script>
     
     $(document).ready(function() {
-    $('.load').hide();
     });
 
 
@@ -984,10 +983,9 @@ function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
 }
 
-
-var siteBiblia = "https://mysword.info/b/?r=";
-  var version = "";
-
+  
+  var siteBiblia = "https://mysword.info/b/?r="
+  var version = ""
   var toMySword = document.getElementById('content').innerHTML
   res = toMySword
   .replace(/(1Co_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target="_blank" href="" + siteBiblia + version + "$1$2:$3">1 Co $2:$3</a>")

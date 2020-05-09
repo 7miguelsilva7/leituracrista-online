@@ -36,8 +36,8 @@ Mas se você se põe a dormir na reunião, sussurra e ora com os dentes cerrados
   <title>Reunião de Oração</title>
   <link rel="canonical" href="https://leituracrista.com/app/reuniao-de-oracao/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589010995">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589010995">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012201">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012201">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -197,7 +197,6 @@ Mas se você se põe a dormir na reunião, sussurra e ora com os dentes cerrados
 <script>
     
     $(document).ready(function() {
-    $('.load').hide();
     });
 
 
@@ -242,10 +241,9 @@ function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
 }
 
-
-var siteBiblia = "https://mysword.info/b/?r=";
-  var version = "";
-
+  
+  var siteBiblia = "https://mysword.info/b/?r="
+  var version = ""
   var toMySword = document.getElementById('content').innerHTML
   res = toMySword
   .replace(/(1Co_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target="_blank" href="" + siteBiblia + version + "$1$2:$3">1 Co $2:$3</a>")

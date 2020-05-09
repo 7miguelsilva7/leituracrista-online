@@ -35,8 +35,8 @@ Jesus conta uma parábola: “A terra de certo homem rico produziu muito bem. El
   <title>O Evangelho em 3 Minutos - Lucas (Parte 2)</title>
   <link rel="canonical" href="https://leituracrista.com/app/o-evangelho-em-3-minutos-lucas2/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589010995">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589010995">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012200">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012200">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -3466,7 +3466,6 @@ Jesus conta uma parábola: “A terra de certo homem rico produziu muito bem. El
 <script>
     
     $(document).ready(function() {
-    $('.load').hide();
     });
 
 
@@ -3511,10 +3510,9 @@ function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
 }
 
-
-var siteBiblia = "https://mysword.info/b/?r=";
-  var version = "";
-
+  
+  var siteBiblia = "https://mysword.info/b/?r="
+  var version = ""
   var toMySword = document.getElementById('content').innerHTML
   res = toMySword
   .replace(/(1Co_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target="_blank" href="" + siteBiblia + version + "$1$2:$3">1 Co $2:$3</a>")

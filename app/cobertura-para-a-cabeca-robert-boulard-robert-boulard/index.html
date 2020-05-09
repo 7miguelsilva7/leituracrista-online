@@ -36,8 +36,8 @@ O adversário de Deus e do homem – Satanás – tem sido por demais bem sucedi
   <title>Cobertura para a Cabeça</title>
   <link rel="canonical" href="https://leituracrista.com/app/cobertura-para-a-cabeca-robert-boulard-robert-boulard/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589010995">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589010995">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012200">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012200">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -298,7 +298,6 @@ O adversário de Deus e do homem – Satanás – tem sido por demais bem sucedi
 <script>
     
     $(document).ready(function() {
-    $('.load').hide();
     });
 
 
@@ -343,10 +342,9 @@ function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
 }
 
-
-var siteBiblia = "https://mysword.info/b/?r=";
-  var version = "";
-
+  
+  var siteBiblia = "https://mysword.info/b/?r="
+  var version = ""
   var toMySword = document.getElementById('content').innerHTML
   res = toMySword
   .replace(/(1Co_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target="_blank" href="" + siteBiblia + version + "$1$2:$3">1 Co $2:$3</a>")

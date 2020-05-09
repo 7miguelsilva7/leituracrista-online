@@ -36,8 +36,8 @@ O apóstolo Paulo dá início ao terceiro capítulo de sua carta aos Filipenses 
   <title>Sucesso!</title>
   <link rel="canonical" href="https://leituracrista.com/app/sucesso-c.-h.-brown-c.-h.-brown/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589010995">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589010995">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589012201">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589012201">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -236,7 +236,6 @@ O apóstolo Paulo dá início ao terceiro capítulo de sua carta aos Filipenses 
 <script>
     
     $(document).ready(function() {
-    $('.load').hide();
     });
 
 
@@ -281,10 +280,9 @@ function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
 }
 
-
-var siteBiblia = "https://mysword.info/b/?r=";
-  var version = "";
-
+  
+  var siteBiblia = "https://mysword.info/b/?r="
+  var version = ""
   var toMySword = document.getElementById('content').innerHTML
   res = toMySword
   .replace(/(1Co_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target="_blank" href="" + siteBiblia + version + "$1$2:$3">1 Co $2:$3</a>")
