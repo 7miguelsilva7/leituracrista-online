@@ -1,0 +1,136 @@
+<html>
+
+<head>
+
+
+<title>Bíblia Interlinear</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
+<style>
+
+div > a {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  opacity:.7; 
+  margin:5px
+
+}
+
+.modal-dialog {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  border-radius: 0;
+}
+
+div.b {
+  line-height: 50px;
+}
+
+</style>
+
+<center >
+      <br>
+
+<SCRIPt>
+  // pega valor parametros book  & verses
+var url_string = window.location.href;
+var url = new URL(url_string);
+bookBible = url.searchParams.get("book");
+BibleCap = url.searchParams.get("cap");
+        document.write('<h4>' + bookBible + ' Cap. ' + BibleCap + '</h4>')
+</SCRIPt>
+
+      <span>Versículos</span> <br>
+
+      <div class="btnContainer"></div>
+
+</center>  
+
+<script>
+// script cria botões de acordo com o livro da bíblia
+const books = {
+// Genesis
+"GênesisCap1": 31,
+"GênesisCap2": 25,
+"GênesisCap3": 24,
+"GênesisCap4": 26,
+"GênesisCap5": 32,
+"GênesisCap6": 22,
+"GênesisCap7": 24,
+"GênesisCap8": 22,
+"GênesisCap9": 29,
+"GênesisCap10": 32,
+"GênesisCap11": 32,
+"GênesisCap12": 20,
+"GênesisCap13": 18,
+"GênesisCap14": 24,
+"GênesisCap15": 21,
+"GênesisCap16": 16,
+"GênesisCap17": 27,
+"GênesisCap18": 33,
+"GênesisCap19": 38,
+"GênesisCap20": 18,
+"GênesisCap21": 34,
+"GênesisCap22": 24,
+"GênesisCap23": 20,
+"GênesisCap24": 67,
+"GênesisCap25": 34,
+"GênesisCap26": 35,
+"GênesisCap27": 46,
+"GênesisCap28": 22,
+"GênesisCap29": 35,
+"GênesisCap30": 43,
+"GênesisCap31": 55,
+"GênesisCap32": 32,
+"GênesisCap33": 20,
+"GênesisCap34": 31,
+"GênesisCap35": 29,
+"GênesisCap36": 43,
+"GênesisCap37": 36,
+"GênesisCap38": 30,
+"GênesisCap39": 23,
+"GênesisCap40": 23,
+"GênesisCap41": 57,
+"GênesisCap42": 38,
+"GênesisCap43": 34,
+"GênesisCap44": 34,
+"GênesisCap45": 28,
+"GênesisCap46": 34,
+"GênesisCap47": 31,
+"GênesisCap48": 22,
+"GênesisCap49": 33,
+"GênesisCap50": 26,
+};
+
+// pega valor parametros book  & verses
+var url_string = window.location.href;
+var url = new URL(url_string);
+bookBible = url.searchParams.get("book");
+BibleCap = url.searchParams.get("cap");
+
+[...document.querySelectorAll(".btnContainer")].forEach(function(container) {
+  const book =  bookBible + 'Cap' + BibleCap;
+  const numLinks = books[book]
+  // container.style.backgroundbook=book;
+  for (let i = 0; i < numLinks; i++) {
+    let a = document.createElement('a');
+    a.textContent =  (i + 1);
+    a.href = 'index.html?query=' + bookBible + BibleCap + ':' + (i + 1) + '@';
+    a.classList.add('btn', 'btn-default');
+    container.appendChild(a);
+  }
+})
+
+</script>

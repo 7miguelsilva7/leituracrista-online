@@ -1,0 +1,138 @@
+var entry_num = the_entries.length; //aumenta de acordo com as obcoes de busca no caso 2 ate agora
+
+var max_keywords = 20; //aumenta de acordo com as obcoes de busca no caso 2 ate agora
+
+var points_title = the_entries.length; //aumenta de acordo com as obcoes de busca no caso 2 ate agora
+
+var points_keywords = the_entries.length; //aumenta de acordo com as obcoes de busca no caso 2 ate agora
+
+var points_description = 3;
+
+begin_search ();
+
+</script>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                	<h4 class="modal-title">Modal 1</h4>
+            </div>
+            <div class="container"></div>
+            <div class="modal-body b">
+            <center >
+              <h4><span>Velho Testamento</span></h4>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">EX</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">NM</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">GN</a>
+            </center>
+              
+            </div>
+            <div class="modal-footer">
+              <a href="#" data-dismiss="modal" class="btn btn-danger">Fechar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                	<h4 class="modal-title">Modal 2</h4>
+            </div>
+            <div class="container"></div>
+            <div class="modal-body b">
+            <center >
+              <h4><span>Capítulo</span></h4>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">1</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">2</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">3</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">4</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">5</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">6</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">7</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">8</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">9</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">10</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">11</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">12</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">13</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">14</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">15</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">16</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">17</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">115</a>
+            </center>            
+            </div>
+            <div class="modal-footer">
+              <a href="#" data-dismiss="modal" class="btn btn-danger">Fechar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                	<h4 class="modal-title">Modal 3</h4>
+            </div>
+            <div class="container"></div>
+            <div class="modal-body">
+            <center >
+              <h4><span>Versículo</span></h4>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">1</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">2</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">3</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">4</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">5</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">6</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">7</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">8</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">9</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">10</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">11</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">12</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">13</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">14</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">15</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">16</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">17</a>
+              <a data-toggle="modal" href="#myModal2" class="btn btn-primary" style="width:50px;">115</a>
+            </center>
+            </div>
+            <div class="modal-footer">
+              <a href="#" data-dismiss="modal" class="btn btn-danger">Fechar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
