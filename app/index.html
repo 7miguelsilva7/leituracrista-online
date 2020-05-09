@@ -33,13 +33,18 @@
   <title>Leitura Cristã</title>
   <link rel="canonical" href="https://leituracrista.com/app/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1588542104">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1588542104">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589004611">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589004611">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
     <link href="https://leituracrista.com/app/index.xml" rel="alternate" type="application/rss+xml" title="Leitura Cristã" />
   
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
     <link rel='manifest' href='leitura-crista-app-manifest.json'>
@@ -52,11 +57,12 @@ location.replace(localStorage.getItem('NameBookActivedKey'));
 }
 
 </script>
+<link rel="stylesheet" href="https://leituracrista.com/linktobible/css/sidediv.css">
 
 </head>
 <body onscroll="onscrolling()" >
 
-  <a id="reload"><div id="snackbar"> Atualização disponível clique aqui!</div></a>
+  
 
 <style>
 #scroll {overflow-y: auto;}
@@ -1722,8 +1728,6 @@ location.replace(localStorage.getItem('NameBookActivedKey'));
   
 </li>
 
-
-
 <script>
 function up(){
   window.location.href = "#"
@@ -1739,50 +1743,6 @@ function up(){
           navigator.serviceWorker.register('/app/sw-lc-app.js');
           });
         }  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function goToActivedBook()
 {

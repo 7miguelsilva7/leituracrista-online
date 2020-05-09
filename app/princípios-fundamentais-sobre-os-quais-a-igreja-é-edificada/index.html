@@ -37,11 +37,16 @@ Na Palavra de Deus encontramos o pensamento de Deus com referência à igreja de
   <title>Princípios Fundamentais Sobre os quais A Igreja é Edificada</title>
   <link rel="canonical" href="https://leituracrista.com/app/princ%C3%ADpios-fundamentais-sobre-os-quais-a-igreja-%C3%A9-edificada/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1588542104">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1588542104">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589004612">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589004612">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 </head>
@@ -52,6 +57,18 @@ Na Palavra de Deus encontramos o pensamento de Deus com referência à igreja de
   <article>
     
       <style>
+  html { padding: 0; }
+  body { padding-top: 40px;   }
+  div { padding: 0; margin: 0; }
+  #header { 
+    position: fixed; 
+    top: 0; 
+    right: 10px; 
+    width: 50px; 
+    height: 40px;
+    cursor: pointer;
+  }
+
           .load {
           width: 100px;
           height: 100px;
@@ -68,18 +85,30 @@ Na Palavra de Deus encontramos o pensamento de Deus com referência à igreja de
       <div class="load"> <img src="../img/loading-gif-transparent-10.gif" width="220" height="80"> </div>
     
 
-    <header>
-      <h3>Princípios Fundamentais Sobre os quais A Igreja é Edificada</h3><br>
-      <h4>C. H. BROWN</h4>
-      
-    </header>
+    
     
     <iframe name="closeWindow" style="display:none"><iframe></iframe>
 
     
-       <div style="padding: 20px 10px;background-color: rgb(201, 201, 201)" class="tableOfContent"> 
-        <a href="#IniciarLeitura">Iniciar ></a>
-        <hr>
+    
+    
+
+
+
+  <img id="header" data-toggle="modal" data-target="#exampleModalLong" src="../img/toc-black-48dp.svg" alt="">
+
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">ÍNDICE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="tableOfContent">
         <nav id="TableOfContents">
 <ul>
 <li><a href="#quem-eram-eles">Quem eram eles?</a></li>
@@ -89,10 +118,36 @@ Na Palavra de Deus encontramos o pensamento de Deus com referência à igreja de
 <li><a href="#ora-o">Oração</a></li>
 </ul>
 </nav>
-       </div> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <script>
+        $(function($){   
+        $("a").click(function() {
+        
+        $('.modal').modal('hide');
+        $('#exampleModalLong').modal('hide');
+          });   
+        });
+        </script>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+       
+
+       <header>
+        <span id="IniciarLeitura"></span> 
+        <h3>Princípios Fundamentais Sobre os quais A Igreja é Edificada</h3><br>
+        <h4>C. H. BROWN</h4>
+        
+      </header>
+
     
     <div class="content"> 
-    <span id="IniciarLeitura"></span>  
     
 
 <p>Princípios Fundamentais Sobre os quais A Igreja é Edificada</p>
@@ -143,9 +198,8 @@ Na Palavra de Deus encontramos o pensamento de Deus com referência à igreja de
 
     </div>
   </article>
-  
+ 
 </section>
-
 
 <script>
   function back(){
@@ -169,7 +223,6 @@ Na Palavra de Deus encontramos o pensamento de Deus com referência à igreja de
 
 
 <script type="text/javascript" src="../js/custom.js"></script>
-
 
 
 <script>
@@ -219,6 +272,7 @@ function saveBookActived()
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
 }
+
 </script>
 
 
