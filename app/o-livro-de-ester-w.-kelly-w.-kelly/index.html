@@ -35,8 +35,8 @@ O livro de Ester é uma das poucas porções das Escrituras que nos chamam a ate
   <title>O Livro de Ester</title>
   <link rel="canonical" href="https://leituracrista.com/app/o-livro-de-ester-w.-kelly-w.-kelly/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050929">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050929">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -128,7 +128,15 @@ O livro de Ester é uma das poucas porções das Escrituras que nos chamam a ate
         </div>
       </div>
       <div class="modal-footer">
-        
+        <script>
+        $(function($){   
+        $("a").click(function() {
+        $('.modal').modal('hide');
+        $('#exampleModalLong').modal('hide');
+          });         
+
+        });
+        </script>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -349,8 +357,6 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
-    $('.modal').modal('hide');
-    $('#exampleModalLong').modal('hide');
   }
 }
 

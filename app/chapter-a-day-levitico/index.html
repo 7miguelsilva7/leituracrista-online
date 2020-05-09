@@ -37,8 +37,8 @@ Rm - A verdade fundamental do Cristianismo. Como Deus pode receber pecadores e a
   <title>Chapter-a-Day - Levítico</title>
   <link rel="canonical" href="https://leituracrista.com/app/chapter-a-day-levitico/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050929">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050929">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -189,7 +189,15 @@ Rm - A verdade fundamental do Cristianismo. Como Deus pode receber pecadores e a
         </div>
       </div>
       <div class="modal-footer">
-        
+        <script>
+        $(function($){   
+        $("a").click(function() {
+        $('.modal').modal('hide');
+        $('#exampleModalLong').modal('hide');
+          });         
+
+        });
+        </script>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -790,8 +798,6 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
-    $('.modal').modal('hide');
-    $('#exampleModalLong').modal('hide');
   }
 }
 

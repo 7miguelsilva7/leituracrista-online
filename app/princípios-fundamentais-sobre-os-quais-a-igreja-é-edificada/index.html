@@ -37,8 +37,8 @@ Na Palavra de Deus encontramos o pensamento de Deus com referência à igreja de
   <title>Princípios Fundamentais Sobre os quais A Igreja é Edificada</title>
   <link rel="canonical" href="https://leituracrista.com/app/princ%C3%ADpios-fundamentais-sobre-os-quais-a-igreja-%C3%A9-edificada/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050929">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050929">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -121,7 +121,15 @@ Na Palavra de Deus encontramos o pensamento de Deus com referência à igreja de
         </div>
       </div>
       <div class="modal-footer">
-        
+        <script>
+        $(function($){   
+        $("a").click(function() {
+        $('.modal').modal('hide');
+        $('#exampleModalLong').modal('hide');
+          });         
+
+        });
+        </script>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -268,8 +276,6 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
-    $('.modal').modal('hide');
-    $('#exampleModalLong').modal('hide');
   }
 }
 

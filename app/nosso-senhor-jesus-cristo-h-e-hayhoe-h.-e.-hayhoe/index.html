@@ -35,8 +35,8 @@ A Pessoa do Senhor Jesus Cristo, o Filho de Deus, está além da compreensão da
   <title>Nosso Senhor Jesus Cristo</title>
   <link rel="canonical" href="https://leituracrista.com/app/nosso-senhor-jesus-cristo-h-e-hayhoe-h.-e.-hayhoe/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050929">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050929">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -122,7 +122,15 @@ A Pessoa do Senhor Jesus Cristo, o Filho de Deus, está além da compreensão da
         </div>
       </div>
       <div class="modal-footer">
-        
+        <script>
+        $(function($){   
+        $("a").click(function() {
+        $('.modal').modal('hide');
+        $('#exampleModalLong').modal('hide');
+          });         
+
+        });
+        </script>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -267,8 +275,6 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
-    $('.modal').modal('hide');
-    $('#exampleModalLong').modal('hide');
   }
 }
 

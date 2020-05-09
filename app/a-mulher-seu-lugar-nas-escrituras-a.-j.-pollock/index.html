@@ -36,8 +36,8 @@ INTRODUÇÃO Nossos dias são de muita inquietação. O Movimento Sufragista Fem
   <title>A Mulher - Seu Lugar nas Escrituras</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-mulher-seu-lugar-nas-escrituras-a.-j.-pollock/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050407">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050407">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589050929">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589050929">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -124,7 +124,15 @@ INTRODUÇÃO Nossos dias são de muita inquietação. O Movimento Sufragista Fem
         </div>
       </div>
       <div class="modal-footer">
-        
+        <script>
+        $(function($){   
+        $("a").click(function() {
+        $('.modal').modal('hide');
+        $('#exampleModalLong').modal('hide');
+          });         
+
+        });
+        </script>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
@@ -335,8 +343,6 @@ function removeNameBookActived(){
 function offsetAnchor() {
   if (location.hash.length !== 0) {
     window.scrollTo(window.scrollX, window.scrollY - 45);
-    $('.modal').modal('hide');
-    $('#exampleModalLong').modal('hide');
   }
 }
 
