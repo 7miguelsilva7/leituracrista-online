@@ -10,7 +10,7 @@ cp -r img /opt/lampp/htdocs/leituracrista-online/
 cp -r resetGit /opt/lampp/htdocs/leituracrista-online/
 cp -r manifest /opt/lampp/htdocs/leituracrista-online/
 cp -r linktobible /opt/lampp/htdocs/leituracrista-online/
-cp -r assembleias /opt/lampp/htdocs/leituracrista-online/
+# cp -r assembleias /opt/lampp/htdocs/leituracrista-online/
 cp -r app/leituracrista/public/* /opt/lampp/htdocs/leituracrista-online/app/
 cp -r app/readinenglish/public/* /opt/lampp/htdocs/leituracrista-online/app/readinenglish/
 cp -r interlinear/ /opt/lampp/htdocs/leituracrista-online/
