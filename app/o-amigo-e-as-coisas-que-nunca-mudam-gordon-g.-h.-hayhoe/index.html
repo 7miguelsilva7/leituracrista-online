@@ -36,8 +36,8 @@
   <title>O Amigo e as Coisas que Nunca Mudam</title>
   <link rel="canonical" href="https://leituracrista.com/app/o-amigo-e-as-coisas-que-nunca-mudam-gordon-g.-h.-hayhoe/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589142579">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589142579">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589146344">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589146344">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -124,11 +124,11 @@
       <div class="modal-footer">
         <script>
         $(function($){   
-        $("a").click(function() {
+        $("a").click(function(e) {
+        e.preventDefault();		
         $('.modal').modal('hide');
         $('#exampleModalLong').modal('hide');
           });         
-
         });
         </script>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

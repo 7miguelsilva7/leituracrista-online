@@ -36,8 +36,8 @@ J. N. DARBY
   <title>A Nossa Esperança</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-nossa-esperanca-j-n-darby-j.-n.-darby/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589142579">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589142579">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589146344">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589146344">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -113,11 +113,11 @@ J. N. DARBY
       <div class="modal-footer">
         <script>
         $(function($){   
-        $("a").click(function() {
+        $("a").click(function(e) {
+        e.preventDefault();		
         $('.modal').modal('hide');
         $('#exampleModalLong').modal('hide');
           });         
-
         });
         </script>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

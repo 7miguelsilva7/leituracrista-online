@@ -37,8 +37,8 @@ O Dr. John Snow, ao estudar as mortes de 89 pessoas em uma semana em uma certa Ã
   <title>A Fonte</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-fonte/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589142579">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589142579">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589146344">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589146344">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -114,11 +114,11 @@ O Dr. John Snow, ao estudar as mortes de 89 pessoas em uma semana em uma certa Ã
       <div class="modal-footer">
         <script>
         $(function($){   
-        $("a").click(function() {
+        $("a").click(function(e) {
+        e.preventDefault();		
         $('.modal').modal('hide');
         $('#exampleModalLong').modal('hide');
           });         
-
         });
         </script>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
