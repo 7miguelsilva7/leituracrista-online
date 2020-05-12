@@ -123,11 +123,17 @@ if(str.match(/https:\/\/mysword.info\/b|http:\/\/mysword.info\/b/)){
     .replace(/(Tit_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Tt $2:$3</a>")
     .replace(/(Zec_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Zc $2:$3</a>")
     
-    document.getElementById('content').innerHTML = resLinks
+    document.getElementById('content').innerHTML = resLinks;
+
     }
   
     $( document ).ready(function() {
       toMySword();  
+
+      // inclui script bglinks.js
+      document.write('<script src="..\/js\/bglinks.js" type="text\/javascript"><\/script>');
+      
+      // executa bglinks
       BGLinks.linkVerses();
 
 
