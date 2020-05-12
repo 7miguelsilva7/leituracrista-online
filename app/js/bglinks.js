@@ -2,11 +2,11 @@
     var that = {};
   
     // can be set like BGLinks.parameter
-    that.version = 'ARC';
+    that.version = 'acf';
     that.clickTooltip = true;
     that.apocrypha = false;
-    that.showTooltips = true;
-    that.host = 'www.biblegateway.com';
+    that.showTooltips = false;
+    that.host = 'www.bibliaonline.com.br';
   
     var showTimer = 0;
     var hideTimer = 0;
@@ -19,7 +19,7 @@
     var cdHost;
     var browser = navigator.appVersion;
   
-  var book_string = 'G[eê]nesis|Gen?|Gn|[ÊE]xodo|Exod?|[ÊE]x|Lev[ií]tico|Le?v|N[úu]meros|Nu?m|Nm|Deuteron[ôo]mio|Deut?|Dt|Josu[ée]|Js|Ju[íi]zes|Jz|Rute|Rt|(?:1|i|2|ii) ?Samuel|(?:1|i|2|ii) ?Sm|(?:1|i|2|ii) ?R(?:ei?)s?|(?:1|i|2|ii) ?Rs|(?:1|i|2|ii) ?Cr[ôo]nicas|(?:1|i|2|ii) ?Cr|(?:1|i|2|ii) ?Cr|Esdras|Ed||Neemias|Ne|Ester|Et|Jó|Salmos|Sl|Prov[ée]rbios|Proverbios|Pv|Eclesiastes|Ec|C[âa]nticos|Ct|Cnt|Cantares|Isa[íi]as|Is?|Jeremias|J(?:e?)r|Lamentacoes|Lamentações|L(?:a?)m|Ezequiel|Ez(?:e?)|Daniel|Da?n|Da|Oséias|Oseias|Os|Joel|Jl|Am[óo]s|Am|Obadias|Ob(?:ad?)?|Jonas|Jn|Miqu[ée]ias|Mq|Naum|Na|Habacuque|Hab|Hc|Sofonias|Sf|Ag(?:eu?)?|Zacarias|Zc|Malaquias|Ml|Mateus|Mat?|Mt|Mark|Marcos|Mc|Lucas|Lc|Luc?|Jo[ãa]o|Jo[ãa]|Jo|At(?:os?)?|Romanos|Rm|(?:1|i|2|ii) ?Cor[íi]ntios|(?:1|i|2|ii) ?Co|(?:1|i|2|ii) ?Cor|G[áa]latas|G[áa]l?|Gl|Ef[ée]sios|Ef?|Filipenses|Fp|Colossenses|Col|Cl|(?:1|i|2|ii) ?Tessalonicenses|(?:1|i|2|ii) ?T(?:e?)s?|(?:1|i|2|ii) ?Tim[óo]teo|(?:1|i|2|ii) ?T(?:i?)m|Tito|Tt|Filemon|Fm|Hebreus|H(?:e?)b?|Tiago|Tg|Jas|(?:1|i|2|ii) ?Pedro|(?:1|i|2|ii) ?Pe?|(?:1|i|2|ii|3|iii) ?Jo[ãa]o|(?:1|i|2|ii|3|iii) ?Jo|Judas?|Jd|Apocalipse?|Ap';
+  var book_string = 'G[eê]nesis|Gen?|Gn|[ÊE]xodo|Exod?|[ÊE]x|Lev[ií]tico|Le?v|N[úu]meros|Nu?m|Nm|Deuteron[ôo]mio|Deut?|Dt|Josu[ée]|Js|Ju[íi]zes|Jz|Rute|Rt|(?:1|i|2|ii) ?Samuel|(?:1|i|2|ii) ?Sm|(?:1|i|2|ii) ?R(?:ei?)s?|(?:1|i|2|ii) ?Rs|(?:1|i|2|ii) ?Cr[ôo]nicas|(?:1|i|2|ii) ?Cr|(?:1|i|2|ii) ?Cr|Esdras|Ed||Neemias|Ne|Ester|Et|Jó|Salmos|Sl|Prov[ée]rbios|Proverbios|Pv|Eclesiastes|Ec|C[âa]nticos|Ct|Cnt|Cantares|Isa[íi]as|Is?|Jeremias|J(?:e?)r|Lamentacoes|Lamentações|L(?:a?)m|Ezequiel|Ez(?:e?)|Daniel|Da?n|Da|Oséias|Oseias|Os|Joel|Jl|Am[óo]s|Am|Obadias|Ob(?:ad?)?|Jonas|Jn|Miqu[ée]ias|Mq|Naum|Na|Habacuque|Hab|Hc|Sofonias|Sf|Ag(?:eu?)?|Zacarias|Zc|Malaquias|Ml|Mateus|Mat?|Mt|Mark|Marcos|Mc|Lucas|Lc|Luc?|Jo[ãa]o|Jo[ãa]|Jo|At(?:os?)?|Romanos|Rm|(?:1|i|2|ii) ?Cor[íi]ntios|(?:1|i|2|ii) ?Co|(?:1|i|2|ii) ?Cor|G[áa]latas|G[áa]l?|Gl|Ef[ée]sios|Ef?|Filipenses|Fp|Colossenses|Col|Cl|(?:1|i|2|ii) ?Tessalonicenses|(?:1|i|2|ii) ?T(?:e?)s?|(?:1|i|2|ii) ?Tim[óo]teo|(?:1|i|2|ii) ?T(?:i?)m|Tito|Tt|Filemon|Filemom|Fm|Hebreus|H(?:e?)b?|Tiago|Tg|Jas|(?:1|i|2|ii) ?Pedro|(?:1|i|2|ii) ?Pe?|(?:1|i|2|ii|3|iii) ?Jo[ãa]o|(?:1|i|2|ii|3|iii) ?Jo|Judas?|Jd|Apocalipse?|Ap';
   
   var apoc_books = '|Tobit?|To?b|Judi(?:th?)?|Jdt|(?:1|2) ?Mac(?:cabees)?|(?:1|2) ?Ma?|Wi(?:sdom)?|Wi?s|Sir(?:ach)?|Ba(?:ruc?h)?|Ba?r';
   
@@ -98,11 +98,8 @@
   
   
   
-  book = matched[2].replace(/[áàâã]/g,'a').replace(/[ÁÀÂÃ]/g,'A').replace(/[éèê]/g,'e').replace(/[ÉÈÊ]/g,'E').replace(/[íìî]/g,'i').replace(/[ÍÌÎ]/g,'I').replace(/[ôõ]/g,'o').replace(/[ÔÕ]/g,'O').replace(/[úùû]/g,'u').replace(/[ÚÙÛ]/g,'U').replace('Js', 'Jsh').replace('Jz', 'Jg').replace('II Sm', '2 Samuel').replace('Reis', 'Kings').replace('Rs', 'Kings').replace('Cronicas', 'Chronicles').replace('Cr', 'Chronicles').replace('Ed', 'Esdras').replace('Et', 'Ester').replace('Sl', 'Salmos').replace('Pv', 'Proverbs').replace(/(Ct)|(Canticos)|(Cantares)/g,'Songs').replace(/(Lamentacoes)|(Lamentaçoes)/g,'Lamentations').replace('Jn', 'Jonah').replace('Mq', 'Micah').replace('Hc', 'Habakkuk').replace('Sf', 'Zephaniah').replace('Ag', 'Hg').replace('Hgeu', 'Hg').replace('Jo', 'John').replace('Johnao', 'John').replace('Johna', 'John').replace('Jó', 'Job').replace('At', 'Acts').replace('Actsos', 'Acts').replace(/(I Corintios)|(I Co)/g,'1 Corinthians').replace(/(II Corintios)|(II Co)/g,'2 Corinthians').replace('1 Corinthiansr', '1 Corinthians').replace('2 Corinthiansr', '2 Corinthians').replace('I1 Corinthians', '2 Corinthians').replace('Fp', 'Philippians').replace('Fp', 'Philippians').replace(/(I Tes)|(1 Tes)|(I Ts)|(1 Ts)/g,'1 Thessalonians').replace('1 Thessalonianssalonicenses', '1 Thessalonians').replace(/(2 Tes)|(2 Ts)/g,'2 Thessalonians').replace('I1 Thessalonians', '2 Thessalonians').replace('2 Thessalonianssalonicenses', '2 Thessalonians').replace('Fm', 'Philemon').replace('Hb', 'Hebrews').replace('Tg', 'James').replace('I Pe', 'I Peter').replace('I Peterdro', 'I Peter').replace('Jd', 'Jude').replace(/(1 T)|(I T)|(1T)|(IT)/g,'1 Timothy').replace('1 Timothyim', '1 Timothy').replace(/(1 Timothyóteo)|(1 Timothyoteo)/g,'1 Timothy').replace(/(2 T)|(2T)|(I1 Timothy)/g,'1 Timothy').replace('1 Timothyim', '1 Timothy').replace('1 Timothyóteo', '1 Timothy').replace('1 Timothyhessalonians', '1 Thessalonians').replace('2 Timothyhessalonians', '2 Thessalonians');
-  
-  
-  
-  
+  book = matched[2].replace(/[áàâã]/g,'a').replace(/[ÁÀÂÃ]/g,'A').replace(/[éèê]/g,'e').replace(/[ÉÈÊ]/g,'E').replace(/[íìî]/g,'i').replace(/[ÍÌÎ]/g,'I').replace(/[ôõ]/g,'o').replace(/[ÔÕ]/g,'O').replace(/[úùû]/g,'u').replace(/[ÚÙÛ]/g,'U').replace('Js', 'Jsh').replace('Jz', 'Jg').replace('II Sm', '2 Samuel').replace('Reis', 'Kings').replace('Rs', 'Kings').replace('Cronicas', 'Chronicles').replace('Cr', 'Chronicles').replace('Ed', 'Esdras').replace('Et', 'Ester').replace('Sl', 'Salmos').replace('Pv', 'Proverbs').replace(/(Ct)|(Canticos)|(Cantares)/g,'Songs').replace(/(Lamentacoes)|(Lamentaçoes)/g,'Lamentations').replace('At', 'Atos').replace(/(I Corintios)|(I Co)/g,'1 Coríntios').replace(/(II Corintios)|(II Co)/g,'2 Coríntios').replace('I1 Coríntios', '2 Coríntios').replace(/(I Tes)|(1 Tes)|(I Ts)|(1 Ts)/g,'1 Tessalonicenses').replace('1 Tessalonicenses', '1 Tessalonicenses').replace(/(2 Tes)|(2 Ts)/g,'2 Tessalonicenses').replace('II Tessalonicenses', '2 Tessalonicenses').replace('Fm', 'Filemom').replace('Hb', 'Hebreus').replace('Tg', 'Tiago').replace('I Pe', 'I Pedro').replace('I Pedro', 'I Pedro').replace('Jd', 'Judas').replace(/(1 T)|(I T)|(1T)|(IT)/g,'1 Tmóteo');
+   
   
           }
           if (matched[3] != '' && matched[3] != null) {
@@ -112,8 +109,10 @@
           var newLinkNode = document.createElement("a");
           newLinkNode.className = 'bibleref';
           newLinkNode.target = '_BLANK';
-          var passage = book+' '+chapter+':'+verse;
-          newLinkNode.href = bgHost+'/passage/?search='+passage+'&version='+that.version+'&src=tools';
+          // var passage = book+' '+chapter+':'+verse;
+          var passage = that.version+'/'+book+'/'+chapter+'/'+verse;
+          // newLinkNode.href = bgHost+'/passage/?search='+passage+'&version='+that.version+'&src=tools';
+          newLinkNode.href = bgHost+'/'+passage;
           newLinkNode.innerHTML = matched[1];
           if (that.clickTooltip === true) {
             newLinkNode.onclick=function() {return false};
