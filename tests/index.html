@@ -11,19 +11,32 @@
 <body>
 
 <div id="content">
-  
-Zacarias 1:18
+	Mateus 28:2
+<br>
+Mateus 28, Mateus 2
+<br>
+Ageu 2
+<br>  
+1 João 1, 2 Joao 2, 3 João 1 <br>
+João 2
+<br>
+Zacarias 1:18 <br>
+1 Timóteo 2
+<br>
+Lamentações 12:3
 <br>
 Ed 1:2
 <br>
 1 Tessalonicenses 1.1
 <br>
-1 Tessalonicenses
+1 Tessalonicenses 1
+<br>
+2 Tessalonicenses 1:2
 <br>
 1 Pd 3:18
 <br>
-Hb 10.17
-
+Hb 10.17, hb 10.17
+<br>
 Hb 10:17
 
 <p>
@@ -122,8 +135,8 @@ Por Charles Stanley - Extraído de "Palavras de Edificação, Exortação e Cons
 "Estaria você pronto a abandonar tudo aquilo que não subsistir ao exame da palavra de Deus - e permanecer nesta posição... e não aceitar nada menos do que isso, mesmo que possa ficar sozinho numa tal posição?" - C. H. Mackintosh</div>
 
 
-<div class="sidenav">
-	<div id="close">X</div>
+<div id="closeDiv" class="sidenav">
+	<!-- <div id="close">X</div> -->
 	<div id="msg"></div>
 </div>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -138,6 +151,15 @@ $(function($){
     });
 	});
 })		
+
+$(function($){   
+	$("#closeDiv").click(function() {
+		$(".sidenav").animate({
+      width: "toggle"
+    });
+	});
+})		
+
 $(function($){   
 	$("a").click(function(e) {
 	e.preventDefault();		
@@ -168,6 +190,8 @@ $(function($){
 	});
 });
 </script>
+
+
 
 </body>
 </html>

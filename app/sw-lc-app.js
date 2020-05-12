@@ -240,7 +240,6 @@ var urls_lc = [
 '/app/teologia-do-pacto-ou-dispensacoes/index.html',
 '/app/tiago-darby-mysword/index.html',
 '/app/tito-filemom/index.html',
-'/app/titulominusculosemespaco/index.html',
 '/app/uma-carta-sobre-louvar-a-homens-john-nelso-j.-n.-darby/index.html',
 '/app/uma-palavra-sobre-noivado-gordon-h.-hayhoe-g.-h.-hayhoe/index.html',
 '/app/uma-variedade-de-reunioes-bruce-anstey-bruce-anstey/index.html',
