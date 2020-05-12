@@ -35,8 +35,8 @@ A Pessoa do Senhor Jesus Cristo, o Filho de Deus, está além da compreensão da
   <title>Nosso Senhor Jesus Cristo</title>
   <link rel="canonical" href="https://leituracrista.com/app/nosso-senhor-jesus-cristo-h-e-hayhoe-h.-e.-hayhoe/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589178293">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589178293">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589273711">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589273711">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -219,7 +219,6 @@ A Pessoa do Senhor Jesus Cristo, o Filho de Deus, está além da compreensão da
 
 <script type="text/javascript" src="../js/custom.js"></script>
 
-
 <script>
 
 
@@ -262,6 +261,16 @@ function saveBookActived()
 
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
+}
+
+var str = document.getElementById('content').innerHTML;
+if(str.match(/https://mysword.info/b|http://mysword.info/b)){
+  
+  alert('string encontrada');
+
+}else{
+  document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
+
 }
 
 </script>

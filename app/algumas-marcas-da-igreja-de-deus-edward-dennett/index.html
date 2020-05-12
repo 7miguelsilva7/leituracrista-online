@@ -35,8 +35,8 @@ Meu Caro Irmão, Antes de eu responder a questão pendente, parece me ser meu de
   <title>Algumas Marcas Da Igreja De Deus</title>
   <link rel="canonical" href="https://leituracrista.com/app/algumas-marcas-da-igreja-de-deus-edward-dennett/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589178293">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589178293">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589273711">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589273711">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -211,7 +211,6 @@ Meu Caro Irmão, Antes de eu responder a questão pendente, parece me ser meu de
 
 <script type="text/javascript" src="../js/custom.js"></script>
 
-
 <script>
 
 
@@ -254,6 +253,16 @@ function saveBookActived()
 
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
+}
+
+var str = document.getElementById('content').innerHTML;
+if(str.match(/https://mysword.info/b|http://mysword.info/b)){
+  
+  alert('string encontrada');
+
+}else{
+  document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
+
 }
 
 </script>

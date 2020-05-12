@@ -128,6 +128,9 @@ if(str.match(/https:\/\/mysword.info\/b|http:\/\/mysword.info\/b/)){
   
     $( document ).ready(function() {
       toMySword();  
+      BGLinks.linkVerses();
+
+
     });
 
 }

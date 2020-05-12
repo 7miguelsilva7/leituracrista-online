@@ -36,8 +36,8 @@ A opinião pública é uma das duas coisas que controlam o homem natural. A outr
   <title>A Opinião Pública</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-opiniao-publica-c-buchanan-c.-buchanan/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589178293">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589178293">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589273710">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589273710">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -185,7 +185,6 @@ A opinião pública é uma das duas coisas que controlam o homem natural. A outr
 
 <script type="text/javascript" src="../js/custom.js"></script>
 
-
 <script>
 
 
@@ -228,6 +227,16 @@ function saveBookActived()
 
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
+}
+
+var str = document.getElementById('content').innerHTML;
+if(str.match(/https://mysword.info/b|http://mysword.info/b)){
+  
+  alert('string encontrada');
+
+}else{
+  document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
+
 }
 
 </script>

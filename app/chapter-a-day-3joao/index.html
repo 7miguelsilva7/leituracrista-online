@@ -35,8 +35,8 @@
   <title>Chapter-a-Day - 3 João</title>
   <link rel="canonical" href="https://leituracrista.com/app/chapter-a-day-3joao/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589178293">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589178293">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589273711">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589273711">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -190,7 +190,6 @@
 
 <script type="text/javascript" src="../js/custom.js"></script>
 
-
 <script>
 
 
@@ -233,6 +232,16 @@ function saveBookActived()
 
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
+}
+
+var str = document.getElementById('content').innerHTML;
+if(str.match(/https://mysword.info/b|http://mysword.info/b)){
+  
+  alert('string encontrada');
+
+}else{
+  document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
+
 }
 
 </script>
