@@ -40,8 +40,8 @@ Vamos abrir em João 14:16-17: “E eu rogarei ao Pai, e ele vos dará outro Con
   <title>A Presença e o Poder do Espírito de Deus</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-presenca-e-o-poder-do-espirito-de-deus-b-bruce-anstey/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589305346">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589305346">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589305912">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589305912">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -412,14 +412,15 @@ function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
 }
 
-var str = document.getElementById('content').innerHTML;
-if(str.match(/https://mysword.info/b|http://mysword.info/b)){
-  
-  alert('string encontrada');
 
+var str = document.getElementById('content').innerHTML;
+if(str.match(/(http|https)://mysword.info/b))
+{
+  
 }else{
   document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
 }
+
 
 </script>
 
