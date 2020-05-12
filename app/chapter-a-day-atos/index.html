@@ -35,8 +35,8 @@ ATOS 1 Vimos no livro de Êxodo que se tratava do livro da &quot;saída do Egito
   <title>Chapter-a-Day - Atos</title>
   <link rel="canonical" href="https://leituracrista.com/app/chapter-a-day-atos/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589306300">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589306300">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589307243">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589307243">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -784,6 +784,17 @@ function saveBookActived()
 
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
+}
+
+var str = document.getElementById('content').innerHTML;
+if(str.match(/https://mysword.info/b|http://mysword.info/b)){
+  
+  
+
+}else{
+  document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
+      alert('adicionado script');
+
 }
 
 </script>

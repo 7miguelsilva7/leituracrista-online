@@ -36,8 +36,8 @@ Na noite em que Jesus foi traído, após a ceia pascal, Ele tomou &quot;o pão, 
   <title>Você Parte o Pão - Por Que, Quando, Onde e Como?</title>
   <link rel="canonical" href="https://leituracrista.com/app/voce-parte-o-pao-e.-h.-chater-e.-h.-chater/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589306300">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589306300">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589307244">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589307244">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -325,6 +325,17 @@ function saveBookActived()
 
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
+}
+
+var str = document.getElementById('content').innerHTML;
+if(str.match(/https://mysword.info/b|http://mysword.info/b)){
+  
+  
+
+}else{
+  document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
+      alert('adicionado script');
+
 }
 
 </script>

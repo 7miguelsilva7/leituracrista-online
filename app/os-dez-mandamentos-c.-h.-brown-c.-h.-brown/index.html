@@ -35,8 +35,8 @@ Tenho o propósito de considerar aqui o assunto dos dez mandamentos e sua aplica
   <title>Os Dez Mandamentos</title>
   <link rel="canonical" href="https://leituracrista.com/app/os-dez-mandamentos-c.-h.-brown-c.-h.-brown/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589306300">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589306300">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589307244">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589307244">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -299,6 +299,17 @@ function saveBookActived()
 
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
+}
+
+var str = document.getElementById('content').innerHTML;
+if(str.match(/https://mysword.info/b|http://mysword.info/b)){
+  
+  
+
+}else{
+  document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
+      alert('adicionado script');
+
 }
 
 </script>

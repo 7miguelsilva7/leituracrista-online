@@ -35,8 +35,8 @@ Que Deus é soberano e que o homem, embora caído, é uma criatura responsável,
   <title>Soberania e Responsabilidade</title>
   <link rel="canonical" href="https://leituracrista.com/app/soberania-e-responsabilidade-f-b-hole-f.-b.-hole/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589306300">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589306300">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589307244">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589307244">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -238,6 +238,17 @@ function saveBookActived()
 
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
+}
+
+var str = document.getElementById('content').innerHTML;
+if(str.match(/https://mysword.info/b|http://mysword.info/b)){
+  
+  
+
+}else{
+  document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
+      alert('adicionado script');
+
 }
 
 </script>

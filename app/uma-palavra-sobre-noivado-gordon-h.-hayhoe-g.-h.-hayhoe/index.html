@@ -35,8 +35,8 @@ Costuma-se dizer que todos buscam a satisfação de suas afeições e, maravilha
   <title>Uma Palavra Sobre Noivado</title>
   <link rel="canonical" href="https://leituracrista.com/app/uma-palavra-sobre-noivado-gordon-h.-hayhoe-g.-h.-hayhoe/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589306300">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589306300">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589307244">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589307244">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -303,6 +303,17 @@ function saveBookActived()
 
 function removeNameBookActived(){
   localStorage.removeItem('NameBookActivedKey');
+}
+
+var str = document.getElementById('content').innerHTML;
+if(str.match(/https://mysword.info/b|http://mysword.info/b)){
+  
+  
+
+}else{
+  document.write('<script src="../js/bglinks.js" type="text/javascript"></script>');
+      alert('adicionado script');
+
 }
 
 </script>
