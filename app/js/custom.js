@@ -269,7 +269,6 @@ var toBibliaOn = document.getElementById('content').innerHTML
 
     $( document ).ready(function() {
       toMySword();  
-      BGLinks.linkVerses();
 
 
     });
