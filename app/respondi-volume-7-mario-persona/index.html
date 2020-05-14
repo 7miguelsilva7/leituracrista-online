@@ -44,8 +44,8 @@ contato@mariopersona.com.br
   <title>O que Respondi Volume 07</title>
   <link rel="canonical" href="https://leituracrista.com/app/respondi-volume-7-mario-persona/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589417208">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589417208">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589428720">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589428720">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -66,7 +66,7 @@ contato@mariopersona.com.br
     
       <style>
   html { padding: 0; }
-  body { padding-top: 40px;   }
+  body { padding-top: 10px;   }
   p {padding-bottom: 20px;}
   div { padding: 0; margin: 0; }
   #header { 
@@ -102,7 +102,7 @@ contato@mariopersona.com.br
 
 
 
-  <img type="button" class="btn btn-primary" id="header" data-toggle="modal" data-target="#exampleModalLong" src="../img/toc-black-48dp.svg" alt="">
+  
 
 
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -237,8 +237,16 @@ contato@mariopersona.com.br
         <script>
         $(function($){   
         $("a").click(function() {
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
+          
+          window.setTimeout(function() {
+          
+          
+          
+          
+          $('.modal').modal('hide');
+          $('#exampleModalLong').modal('hide');
+          }, 0);
+
           });         
         });
         </script>
@@ -4668,11 +4676,16 @@ contato@mariopersona.com.br
   <span>^</span>
 </div>
 
-
-
 <div onclick='removeNameBookActived();back();' class="footerback">
   <span>&lt;</span>
 </div>
+
+<div onclick='' class="indice" data-toggle="modal"  data-target="#exampleModalLong">
+  
+  <img align="center"  src="../img/toc-black-48dp.svg" alt="Índice">
+
+</div>
+
 
 
 <script>

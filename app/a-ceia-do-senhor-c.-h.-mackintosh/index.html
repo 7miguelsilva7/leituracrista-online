@@ -38,8 +38,8 @@ Desde que foi escrito por Charles H. Mackintosh (1820-1896), este artigo sobre a
   <title>A Ceia do Senhor</title>
   <link rel="canonical" href="https://leituracrista.com/app/a-ceia-do-senhor-c.-h.-mackintosh/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589417207">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589417207">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589428720">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589428720">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -60,7 +60,7 @@ Desde que foi escrito por Charles H. Mackintosh (1820-1896), este artigo sobre a
     
       <style>
   html { padding: 0; }
-  body { padding-top: 40px;   }
+  body { padding-top: 10px;   }
   p {padding-bottom: 20px;}
   div { padding: 0; margin: 0; }
   #header { 
@@ -96,7 +96,7 @@ Desde que foi escrito por Charles H. Mackintosh (1820-1896), este artigo sobre a
 
 
 
-  <img type="button" class="btn btn-primary" id="header" data-toggle="modal" data-target="#exampleModalLong" src="../img/toc-black-48dp.svg" alt="">
+  
 
 
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -126,8 +126,16 @@ Desde que foi escrito por Charles H. Mackintosh (1820-1896), este artigo sobre a
         <script>
         $(function($){   
         $("a").click(function() {
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
+          
+          window.setTimeout(function() {
+          
+          
+          
+          
+          $('.modal').modal('hide');
+          $('#exampleModalLong').modal('hide');
+          }, 0);
+
           });         
         });
         </script>
@@ -383,11 +391,16 @@ Desde que foi escrito por Charles H. Mackintosh (1820-1896), este artigo sobre a
   <span>^</span>
 </div>
 
-
-
 <div onclick='removeNameBookActived();back();' class="footerback">
   <span>&lt;</span>
 </div>
+
+<div onclick='' class="indice" data-toggle="modal"  data-target="#exampleModalLong">
+  
+  <img align="center"  src="../img/toc-black-48dp.svg" alt="Índice">
+
+</div>
+
 
 
 <script>

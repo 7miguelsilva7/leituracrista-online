@@ -42,8 +42,8 @@ A importância da Epístola aos Hebreus requer que a examinemos com especial cui
   <title>Estudo Sobre a Palavra de Deus - Hebreus</title>
   <link rel="canonical" href="https://leituracrista.com/app/hebreus-darby/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589417208">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589417208">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589428720">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589428720">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -64,7 +64,7 @@ A importância da Epístola aos Hebreus requer que a examinemos com especial cui
     
       <style>
   html { padding: 0; }
-  body { padding-top: 40px;   }
+  body { padding-top: 10px;   }
   p {padding-bottom: 20px;}
   div { padding: 0; margin: 0; }
   #header { 
@@ -100,7 +100,7 @@ A importância da Epístola aos Hebreus requer que a examinemos com especial cui
 
 
 
-  <img type="button" class="btn btn-primary" id="header" data-toggle="modal" data-target="#exampleModalLong" src="../img/toc-black-48dp.svg" alt="">
+  
 
 
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -142,8 +142,16 @@ A importância da Epístola aos Hebreus requer que a examinemos com especial cui
         <script>
         $(function($){   
         $("a").click(function() {
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
+          
+          window.setTimeout(function() {
+          
+          
+          
+          
+          $('.modal').modal('hide');
+          $('#exampleModalLong').modal('hide');
+          }, 0);
+
           });         
         });
         </script>
@@ -159,7 +167,7 @@ A importância da Epístola aos Hebreus requer que a examinemos com especial cui
        <header>
         <span id="IniciarLeitura"></span> 
         <h3>Estudo Sobre a Palavra de Deus - Hebreus</h3><br>
-        <h4>J. N. Darby</h4>
+        <h4>John Nelson Darby</h4>
         <h4>Tradução de Martins do Vale</h4>
       </header>
 
@@ -1483,11 +1491,16 @@ A importância da Epístola aos Hebreus requer que a examinemos com especial cui
   <span>^</span>
 </div>
 
-
-
 <div onclick='removeNameBookActived();back();' class="footerback">
   <span>&lt;</span>
 </div>
+
+<div onclick='' class="indice" data-toggle="modal"  data-target="#exampleModalLong">
+  
+  <img align="center"  src="../img/toc-black-48dp.svg" alt="Índice">
+
+</div>
+
 
 
 <script>

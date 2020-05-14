@@ -35,8 +35,8 @@ JOSUÉ 1 Um lembrete. O Antigo Testamento nos dá figuras dos passos na vida do 
   <title>Chapter-a-Day - Josué</title>
   <link rel="canonical" href="https://leituracrista.com/app/chapter-a-day-josue/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589417208">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589417208">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589428720">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589428720">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -57,7 +57,7 @@ JOSUÉ 1 Um lembrete. O Antigo Testamento nos dá figuras dos passos na vida do 
     
       <style>
   html { padding: 0; }
-  body { padding-top: 40px;   }
+  body { padding-top: 10px;   }
   p {padding-bottom: 20px;}
   div { padding: 0; margin: 0; }
   #header { 
@@ -93,7 +93,7 @@ JOSUÉ 1 Um lembrete. O Antigo Testamento nos dá figuras dos passos na vida do 
 
 
 
-  <img type="button" class="btn btn-primary" id="header" data-toggle="modal" data-target="#exampleModalLong" src="../img/toc-black-48dp.svg" alt="">
+  
 
 
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -176,8 +176,16 @@ JOSUÉ 1 Um lembrete. O Antigo Testamento nos dá figuras dos passos na vida do 
         <script>
         $(function($){   
         $("a").click(function() {
-        $('.modal').modal('hide');
-        $('#exampleModalLong').modal('hide');
+          
+          window.setTimeout(function() {
+          
+          
+          
+          
+          $('.modal').modal('hide');
+          $('#exampleModalLong').modal('hide');
+          }, 0);
+
           });         
         });
         </script>
@@ -599,11 +607,16 @@ JOSUÉ 1 Um lembrete. O Antigo Testamento nos dá figuras dos passos na vida do 
   <span>^</span>
 </div>
 
-
-
 <div onclick='removeNameBookActived();back();' class="footerback">
   <span>&lt;</span>
 </div>
+
+<div onclick='' class="indice" data-toggle="modal"  data-target="#exampleModalLong">
+  
+  <img align="center"  src="../img/toc-black-48dp.svg" alt="Índice">
+
+</div>
+
 
 
 <script>
