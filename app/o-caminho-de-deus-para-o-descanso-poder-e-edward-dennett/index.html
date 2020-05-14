@@ -36,8 +36,8 @@ A triste verdade é que a maioria dos cristãos não é feliz; e se esses crist�
   <title>O Caminho de Deus para o descanso, poder e consagração</title>
   <link rel="canonical" href="https://leituracrista.com/app/o-caminho-de-deus-para-o-descanso-poder-e-edward-dennett/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589492655">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589492655">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1589494347">
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1589494347">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
 
   
@@ -49,12 +49,55 @@ A triste verdade é que a maioria dos cristãos não é feliz; e se esses crist�
   <script src="https://leituracrista.com/app/js/bootstrap.min.js" ></script>
 
 
+<style>
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  </style>
+
+
 </head>
 
 <body onscroll="onscrolling()" onload="saveBookActived()">
 
 <section class="article">
   <article>
+  
     
       <style>
   html { padding: 0; }
@@ -88,27 +131,9 @@ A triste verdade é que a maioria dos cristãos não é feliz; e se esses crist�
     
     <iframe name="closeWindow" style="display:none"><iframe></iframe>
 
-    
-    
-    
-
-
-
-  
-
-
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">ÍNDICE</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="tableOfContent">
-        <nav id="TableOfContents">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <nav id="TableOfContents">
 <ul>
 <li>
 <ul>
@@ -121,16 +146,35 @@ A triste verdade é que a maioria dos cristãos não é feliz; e se esses crist�
 </ul></li>
 </ul>
 </nav>
-        </div>
-      </div>
-      <div class="modal-footer">
-        
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
 </div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "95%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+        <script>
+        $(function($){   
+        $("a").click(function() {
+        closeNav()
+          
+          
+          
+          
+          
+
+
+          });         
+        });
+        </script>
+
 
        
 
@@ -338,7 +382,7 @@ A triste verdade é que a maioria dos cristãos não é feliz; e se esses crist�
   <span>&lt;</span>
 </div>
 
-<div onclick='' class="indice" data-toggle="modal"  data-target="#exampleModalLong">
+<div onclick="openNav()" class="indice" data-toggle="modal"  data-target="#exampleModalLong">
   
   <img align="center"  src="../img/toc-black-48dp.svg" alt="Índice">
 
