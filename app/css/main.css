@@ -60,6 +60,8 @@ section.article article {
   font-size: 25px;
   font-weight: bold;
   cursor: pointer;
+  padding-top: 5px;
+  height: 37px;
 
   }  
   
@@ -79,4 +81,21 @@ section.article article {
   
     }    
 
+    .footerbackground {
+      margin: auto;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(185, 180, 216);
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      height: 38px;
+    
+      }      
+
+
+    
 /* adicionado por mim */
