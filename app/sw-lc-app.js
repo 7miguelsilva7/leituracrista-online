@@ -148,6 +148,7 @@ var urls_lc = [
 '/app/jesus-nao-poderia-pecar-william-macdonald/index.html',
 '/app/jonatas-faltou-uma-coisa-charles-stanley-charles-stanley/index.html',
 '/app/jugo-desigual-c-h-mackintosh-c.-h.-mackintosh/index.html',
+'/app/lembraivos-dos-vossos-guias/index.html',
 '/app/linguas-e-outros-dons-de-sinais-seu-lugar-g.-h.-hayhoe/index.html',
 '/app/longe-do-arraial-fora-do-arraial-autor-des/index.html',
 '/app/luz-para-as-almas-ansiosas-g-cutting/index.html',
