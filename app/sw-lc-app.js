@@ -143,6 +143,7 @@ var urls_lc = [
 '/app/escolhas-l-c-perry.jpeg-l.-c.-perry/index.html',
 '/app/espere-r-pilkington-r.-pilkington/index.html',
 '/app/eu-sou-do-senhor-e-j-checkley-e.-j.-checkley/index.html',
+'/app/evangelho-segundo-mateus/index.html',
 '/app/hebreus-darby/index.html',
 '/app/homem-e-mulher-os-papeis-distintos-na-casa-bruce-anstey/index.html',
 '/app/jesus-nao-poderia-pecar-william-macdonald/index.html',
