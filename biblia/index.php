@@ -23,7 +23,7 @@ div
  font-size: 30px;
  line-height: 1.9;
 }
-div.cap{
+div.book{
   columns: 100px 4;
 }
 
@@ -37,7 +37,7 @@ div.cap{
 
 <div align="CENTER">
 
-<div>
+<div class="book">
 
 <?php
 // Livro
