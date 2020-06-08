@@ -82,6 +82,7 @@ $o = $_GET['o']; //Order
 
 <?php
 
+echo '<title>' . $b . ' ' . $c . '</title>';
 echo '<h2>' . $b . ' ' . $c . '</h2>';
 
 ?><br><?php
