@@ -57,20 +57,20 @@ span.c {
  require_once 'dbconnect.php';  
 
 // book and cap get
-$b = $_GET['b'];
-$c = $_GET['c'];
+$b = $_GET['b']; //book
+$c = $_GET['c']; //capitulo
 
 // Livro
 require_once 'dbconnect.php';  
 $sql = "SELECT ord, cap FROM biblias 
-where `version`= 'ADO' and book=$b
+where `version`= 'ADO' and ord=$b
 group by abr 
 order by ord";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
-   echo '<a href="cap.php?b=' . $reg->cap . '" style="font-size:16px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
+   echo '<a href="cap.php?c=' . $reg->cap . '" style="font-size:16px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
       
 endforeach;
 ?>
