@@ -33,6 +33,7 @@ div.book{
    
 <div align="center">
 <a href="#"><h1>Livros da Bíblia</h1></a>
+<hr>
 </div>
 
 <div align="CENTER">
