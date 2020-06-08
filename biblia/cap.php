@@ -68,6 +68,8 @@ $o = $_GET['o']; //Ordem
 echo '<h2>' . $b . '</h2>';
 
 ?><br>
+<div align="left" class="cap">
+
  <?php
 
 // Livro
@@ -84,7 +86,7 @@ foreach($dados as $reg):
 endforeach;
 ?>
 </div>
-
+</div>
     <script>
     function copyDivToClipboard<?echo $reg->estrofeid?>() {
                         var range = document.createRange();
