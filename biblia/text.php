@@ -28,7 +28,7 @@ p {
 }
 
 span {
-  font-size: 6px;
+  font-size: 9px;
 }
 /* css copiar texto */
 .cap {
@@ -95,7 +95,7 @@ $stm->execute();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
   // echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-  echo '<span>' . $reg->verse . '</span> <p>' . $reg->text . '</p>';   
+  echo '<p><span>' . $reg->verse . '</span> ' . $reg->text . '</p>';   
       
 endforeach;
 ?>
