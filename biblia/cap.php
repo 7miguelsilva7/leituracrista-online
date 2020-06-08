@@ -56,7 +56,6 @@ text-decoration: none;
 
 <br>
 <br>
-<!-- echo '<a href="cap.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '" style="line-height: 2;font-size:20px">' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';    -->
 
 <div align="center">
 
