@@ -49,7 +49,7 @@ p {
 }
 
 span {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 /* css copiar texto */
