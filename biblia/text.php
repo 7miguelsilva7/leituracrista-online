@@ -20,6 +20,11 @@ body {
   margin: 50px;
   }
 
+p {
+  font-size: 18px;
+
+
+}
 /* css copiar texto */
 .cap {
   line-height: 3;
