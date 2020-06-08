@@ -18,11 +18,14 @@
 body {
   
   margin: 50px;
-  font-size: 20px;
-  line-height: 1.9;
   }
 
 /* css copiar texto */
+.cap {
+  font-size: 20px;
+  line-height: 1.9;
+}
+
 .alert-box {
 	padding: 15px;
     margin-bottom: 20px;
@@ -55,12 +58,10 @@ span.c {
   
 <a href="../biblia/"><button>Livros</button></a>
 
-
-
-
-
 <br>
 <br>
+
+<div class="cap">
 
 <?php
  require_once 'dbconnect.php';  
