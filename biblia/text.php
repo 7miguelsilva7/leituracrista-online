@@ -18,7 +18,7 @@
 @media screen and (max-width: 2000px) {
   body {
   
-  margin: 200px;
+  margin: 100px;
   margin-top: 10px;
   }
 }
