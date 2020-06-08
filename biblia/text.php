@@ -23,6 +23,14 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  body {
+  
+  margin: 50px;
+  margin-top: 10px;
+  }
+}
+
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   body {
