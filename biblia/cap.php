@@ -18,6 +18,7 @@
 body {
   
   margin: 50px;
+  margin-left: 75px;
   }
 
 /* css copiar texto */
