@@ -66,7 +66,9 @@ div.cap{
 $b = $_GET['b']; //book
 $o = $_GET['o']; //Ordem
 
-echo '<h2>' . $b . '<h2>';
+echo '<h2>' . $b . '</h2>';
+
+// ?><br> <?php
 
 // Livro
 require_once 'dbconnect.php';  
