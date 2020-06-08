@@ -57,7 +57,6 @@ div.cap{
 <br>
 
 <div align="center">
-<div align="left" class="cap">
 
 <?php
  require_once 'dbconnect.php';  
@@ -68,7 +67,9 @@ $o = $_GET['o']; //Ordem
 
 echo '<h2>' . $b . '</h2>';
 
-// ?><br> <?php
+?><br>
+<div align="left" class="cap">
+ <?php
 
 // Livro
 require_once 'dbconnect.php';  
