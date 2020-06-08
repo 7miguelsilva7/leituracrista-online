@@ -23,6 +23,9 @@ div
  font-size: 30px;
  line-height: 1.9;
 }
+div.cap{
+  columns: 100px 4;
+}
 
 </style>
 
@@ -33,6 +36,9 @@ div
 </div>
 
 <div align="CENTER">
+
+<div>
+
 <?php
 // Livro
   require_once 'dbconnect.php';  
@@ -45,4 +51,5 @@ div
        
  endforeach;
   ?> 
+  </div>
   </div >
