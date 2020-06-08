@@ -96,10 +96,8 @@ $o = $_GET['o']; //Order
 <a href="../biblia/"><button>Livros</button></a>
 <a href="cap.php?o=<?php echo $o . '&b=' . $b ?>"><button>Capítulos</button></a>
 </div> -->
-<br>
 
 <div align="center">
-
 <div align="left">
 
 <?php
