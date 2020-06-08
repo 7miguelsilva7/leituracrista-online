@@ -57,8 +57,7 @@ span.c {
  require_once 'dbconnect.php';  
 
 // book and cap get
-$b = $_GET['b']; //book
-$c = $_GET['c']; //capitulo
+$b = $_GET['b']; //book | Ordem
 
 // Livro
 require_once 'dbconnect.php';  
