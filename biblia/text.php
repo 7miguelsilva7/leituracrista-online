@@ -130,30 +130,34 @@ endforeach;
 
 
 <script>
-  function back(){
-  window.location.href = "../"
+  function book(){
+  window.location.href = "../biblia/"
   }
 
-  function up(){
+  function cap(){
+  window.location.href = "#"
+  }
+
+  function verse(){
   window.location.href = "#"
   }
 </script>
 
 <div class="footerbackground"></div>
 
-<div onclick='up();' class="footerup">
-  <span>^</span>
+<div onclick='book();' class="footerback">
+  <span>Livros</span>
 </div>
 
-<div onclick='removeNameBookActived();back();' class="footerback">
-  <span><</span>
+<div onclick='cap();' class="footerup">
+  <span>Capítulos</span>
 </div>
 
-<div onclick="openNav()" class="indice" data-toggle="modal"  data-target="#exampleModalLong">
-  <!-- <span><</span> -->
-  <img align="center"  src="../img/toc-black-48dp.svg" alt="Índice">
-
+<div onclick="verse()" class="indice" data-toggle="modal"  data-target="#exampleModalLong">
+  <span></span>
 </div>
+
+
 
     <script>
     function copyDivToClipboard<?echo $reg->estrofeid?>() {
