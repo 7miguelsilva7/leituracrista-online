@@ -22,8 +22,8 @@ body {
 
 /* css copiar texto */
 .cap {
-  font-size: 16px;
-  line-height: 1.9;
+  font-size: 12px;
+  line-height: 3;
 }
 
 .alert-box {
