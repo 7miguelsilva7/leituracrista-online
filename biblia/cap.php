@@ -40,16 +40,6 @@ body {
 }  
 /* css copiar texto */
   
-
-span.a {
-  font-size: 15px;
-}
-span.b {
-  font-size: large;
-}
-span.c {
-  font-size: 150%;
-}
 </style>
 
 </head>
@@ -85,6 +75,9 @@ foreach($dados as $reg):
       
 endforeach;
 ?>
+
+</div>
+
     <script>
     function copyDivToClipboard<?echo $reg->estrofeid?>() {
                         var range = document.createRange();
