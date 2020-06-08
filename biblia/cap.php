@@ -15,11 +15,30 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
 <style>
-body {
+@media screen and (max-width: 2000px) {
+  body {
+  
+  margin: 100px;
+  margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
   
   margin: 50px;
   margin-top: 10px;
   }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  body {
+  
+  margin: 15px;
+  margin-top: 10px;
+  }
+}
 
 /* css copiar texto */
 .cap {

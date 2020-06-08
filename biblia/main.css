@@ -1,0 +1,67 @@
+
+.footerback {
+   
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 33%;
+  background-color: DarkSlateBlue;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+
+  }
+
+.footerup {
+  margin: auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 33%;
+  background-color: DarkSlateBlue;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-top: 5px;
+  height: 37px;
+
+  }  
+  
+  .indice {
+    margin: auto;
+    position: fixed;
+    left: 33.5%;
+    bottom: 0;
+    width: 33%;
+    background-color: DarkSlateBlue;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 38px;
+  
+    }    
+
+    .footerbackground {
+      margin: auto;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(185, 180, 216);
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      height: 38px;
+    
+      }      
+
+
+    
+/* adicionado por mim */

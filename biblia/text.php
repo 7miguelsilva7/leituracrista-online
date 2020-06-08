@@ -10,6 +10,7 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
@@ -42,7 +43,7 @@
 
 
 p {
-  font-size: 18px;
+  font-size: 20px;
 
 
 }
@@ -50,6 +51,7 @@ p {
 span {
   font-size: 11px;
 }
+
 /* css copiar texto */
 .cap {
   line-height: 3;
@@ -124,6 +126,33 @@ foreach($dados as $reg):
 endforeach;
 ?>
 </div>
+</div>
+
+
+<script>
+  function back(){
+  window.location.href = "../"
+  }
+
+  function up(){
+  window.location.href = "#"
+  }
+</script>
+
+<div class="footerbackground"></div>
+
+<div onclick='up();' class="footerup">
+  <span>^</span>
+</div>
+
+<div onclick='removeNameBookActived();back();' class="footerback">
+  <span><</span>
+</div>
+
+<div onclick="openNav()" class="indice" data-toggle="modal"  data-target="#exampleModalLong">
+  <!-- <span><</span> -->
+  <img align="center"  src="../img/toc-black-48dp.svg" alt="Índice">
+
 </div>
 
     <script>
