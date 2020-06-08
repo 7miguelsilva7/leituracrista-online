@@ -18,7 +18,7 @@ div
 <?php
 // Livro
   require_once 'dbconnect.php';  
- $sql = "SELECT ord, book FROM biblias where `version`= 'ADO' group by abr order by ord";  
+ $sql = "SELECT ord, book FROM biblias where `version`= 'ADO' group by ord order by ord";  
  $stm = $PDO->prepare($sql);  
  $stm->execute();  
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
