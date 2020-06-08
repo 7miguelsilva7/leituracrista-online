@@ -63,6 +63,7 @@ div.cap{
 
 <div align="center">
 
+<div align="left">
 <?php
  require_once 'dbconnect.php';  
 
@@ -92,6 +93,7 @@ foreach($dados as $reg):
       
 endforeach;
 ?>
+</div>
 </div>
 
     <script>
