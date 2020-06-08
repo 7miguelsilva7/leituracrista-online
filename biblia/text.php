@@ -57,9 +57,10 @@ div.cap{
 
 <body>
   
+<div align="center">
 <a href="../biblia/"><button>Livros</button></a>
+</div>
 
-<br>
 <br>
 
 <div align="center">
@@ -90,7 +91,7 @@ $stm->execute();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
   // echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-  echo '<p>' . $reg->text . '</p>';   
+  echo '<span><sup>' . $reg->text . '</sup></span> <p>' . $reg->text . '</p>';   
       
 endforeach;
 ?>
