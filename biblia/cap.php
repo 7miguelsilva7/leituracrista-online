@@ -43,9 +43,9 @@ text-decoration: none;
     display: none;
 }  
 /* css copiar texto */
-div.cap{
+/* div.cap{
   columns: 50px 10;
-}
+} */
 </style>
 
 </head>
