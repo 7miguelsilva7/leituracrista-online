@@ -22,7 +22,7 @@ body {
 
 /* css copiar texto */
 .cap {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.9;
 }
 
