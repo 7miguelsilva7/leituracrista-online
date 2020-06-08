@@ -46,7 +46,7 @@ div
  line-height: 1.9;
 }
 div.book{
-  columns: 150px 4;
+  columns: 160px 4;
 }
 
 </style>
