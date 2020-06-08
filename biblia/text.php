@@ -60,16 +60,6 @@ div.cap{
 </head>
 
 <body>
-  
-<div align="center">
-<a href="../biblia/"><button>Livros</button></a>
-</div>
-
-<br>
-
-<div align="center">
-
-<div align="left">
 <?php
  require_once 'dbconnect.php';  
 
@@ -77,6 +67,19 @@ div.cap{
 $b = $_GET['b']; //book
 $c = $_GET['c']; //cap
 $o = $_GET['o']; //Order
+?>
+
+<div align="center">
+<a href="../biblia/"><button>Livros</button></a>
+<a href="cap.php?o=<?php $o . '&b=' . $b ?>"><button>Capítulos</button></a>
+</div>
+<br>
+
+<div align="center">
+
+<div align="left">
+
+<php
 
 echo '<h2>' . $b . ' ' . $c . '</h2>';
 
