@@ -28,7 +28,7 @@ p {
 }
 
 span {
-  font-size: 9px;
+  font-size: 11px;
 }
 /* css copiar texto */
 .cap {
