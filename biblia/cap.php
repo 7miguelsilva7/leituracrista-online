@@ -72,7 +72,7 @@ echo '<h2>' . $b . '</h2>';
 
 // Livro
 require_once 'dbconnect.php';  
-$sql = "SELECT book, ord, cap, FROM biblias 
+$sql = "SELECT book, ord, cap FROM biblias 
 where `version`= 'ADO' and ord=$o
 group by cap";  
 $stm = $PDO->prepare($sql);  
