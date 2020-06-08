@@ -25,6 +25,10 @@ body {
   line-height: 3;
 }
 
+a:link{
+text-decoration: none;
+}
+
 .alert-box {
 	padding: 15px;
     margin-bottom: 20px;
@@ -38,7 +42,9 @@ body {
     display: none;
 }  
 /* css copiar texto */
-  
+div.cap{
+  columns: 50px 20;
+}
 </style>
 
 </head>
@@ -50,7 +56,8 @@ body {
 <br>
 <br>
 
-<div class="cap">
+<div align="center">
+<div align="left" class="cap">
 
 <?php
  require_once 'dbconnect.php';  
@@ -74,7 +81,7 @@ foreach($dados as $reg):
       
 endforeach;
 ?>
-
+</div>
 </div>
 
     <script>
