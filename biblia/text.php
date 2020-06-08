@@ -125,6 +125,7 @@ foreach($dados as $reg):
       
 endforeach;
 ?>
+<br><br><br>
 </div>
 </div>
 
