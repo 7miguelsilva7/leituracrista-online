@@ -22,7 +22,6 @@ body {
 
 /* css copiar texto */
 .cap {
-  font-size: 12px;
   line-height: 3;
 }
 
@@ -71,7 +70,7 @@ $stm = $PDO->prepare($sql);
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
-   echo '<a href="cap.php?c=' . $reg->cap . '"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
+   echo '<a href="cap.php?c=' . $reg->cap . '" style="font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
       
 endforeach;
 ?>
