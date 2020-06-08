@@ -92,10 +92,10 @@ $c = $_GET['c']; //cap
 $o = $_GET['o']; //Order
 ?>
 
-<div align="center">
+<!-- <div align="center">
 <a href="../biblia/"><button>Livros</button></a>
 <a href="cap.php?o=<?php echo $o . '&b=' . $b ?>"><button>Capítulos</button></a>
-</div>
+</div> -->
 <br>
 
 <div align="center">
