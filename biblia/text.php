@@ -135,7 +135,7 @@ endforeach;
   }
 
   function cap(){
-  window.location.href = "#"
+  window.location.href = "cap.php?o=<?php echo $o . '&b=' . $b ?>"
   }
 
   function verse(){
