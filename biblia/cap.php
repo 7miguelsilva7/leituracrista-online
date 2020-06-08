@@ -53,10 +53,11 @@ div.cap{
   
 <a href="../biblia/"><button>Livros</button></a>
 
-<hr>
+<br>
 <br>
 
 <div align="center">
+<div align="left" class="cap">
 
 <?php
  require_once 'dbconnect.php';  
@@ -67,9 +68,7 @@ $o = $_GET['o']; //Ordem
 
 echo '<h2>' . $b . '</h2>';
 
-?><br>
-<div align="left" class="cap">
- <?php
+// ?><br> <?php
 
 // Livro
 require_once 'dbconnect.php';  
@@ -80,12 +79,13 @@ $stm = $PDO->prepare($sql);
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
-   echo '<a href="cap.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '" style="line-height: 2;font-size:20px">' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
+   echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
       
 endforeach;
 ?>
 </div>
 </div>
+
     <script>
     function copyDivToClipboard<?echo $reg->estrofeid?>() {
                         var range = document.createRange();
