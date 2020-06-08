@@ -53,7 +53,7 @@ div.cap{
   
 <a href="../biblia/"><button>Livros</button></a>
 
-<br>
+<hr>
 <br>
 
 <div align="center">
@@ -68,23 +68,21 @@ $o = $_GET['o']; //Ordem
 echo '<h2>' . $b . '</h2>';
 
 ?><br>
-<div align="left" class="cap">
  <?php
 
 // Livro
 require_once 'dbconnect.php';  
-$sql = "SELECT book, ord, cap FROM biblias 
+$sql = "SELECT book, ord, cap, FROM biblias 
 where `version`= 'ADO' and ord=$o
 group by cap";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
-   echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
+   echo '<a href="cap.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '" style="line-height: 2;font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
       
 endforeach;
 ?>
-</div>
 </div>
 
     <script>
