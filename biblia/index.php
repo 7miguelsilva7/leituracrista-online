@@ -23,7 +23,7 @@ div
  $stm->execute();  
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
  foreach($dados as $reg):  
-    echo '<a href="cap.php?b=' . $reg->ord . '" style="font-size:16px"> ' . $reg->book . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"> ' . $reg->book . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
        
  endforeach;
   ?> 

@@ -50,6 +50,10 @@ span.c {
   
 <a href="../biblia/"><button>Livros</button></a>
 
+
+
+
+
 <br>
 <br>
 
@@ -57,14 +61,16 @@ span.c {
  require_once 'dbconnect.php';  
 
 // book and cap get
-$b = $_GET['b']; //book | Ordem
+$b = $_GET['b']; //book
+$o = $_GET['o']; //Ordem
+
+echo '<h4>' . $b . '<h4>';
 
 // Livro
 require_once 'dbconnect.php';  
-$sql = "SELECT ord, cap FROM biblias 
-where `version`= 'ADO' and ord=$b
-group by abr 
-order by ord";  
+$sql = "SELECT book, ord, cap FROM biblias 
+where `version`= 'ADO' and ord=$o
+group by cap";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
