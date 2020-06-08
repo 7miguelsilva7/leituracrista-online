@@ -18,6 +18,7 @@
 body {
   
   margin: 50px;
+  margin-top: 10px;
   }
 
 p {
@@ -72,7 +73,7 @@ $b = $_GET['b']; //book
 $c = $_GET['c']; //cap
 $o = $_GET['o']; //Order
 
-echo '<h2>' . $b . '</h2>';
+echo '<h2>' . $b . ' ' . $c . '</h2>';
 
 ?><br>
  <?php
