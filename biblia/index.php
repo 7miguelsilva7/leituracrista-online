@@ -17,7 +17,9 @@ div
 
 <body>
    
+<div align="center">
 <a href="#"><h1>Livros da Bíblia</h1></a>
+</div>
 
 <div align="CENTER">
 <?php
