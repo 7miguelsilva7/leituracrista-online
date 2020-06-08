@@ -79,12 +79,11 @@ $o = $_GET['o']; //Order
 
 <div align="left">
 
-<php
+<?php
 
 echo '<h2>' . $b . ' ' . $c . '</h2>';
 
-?><br>
- <?php
+?><br><?php
 
 // Livro
 require_once 'dbconnect.php';  
