@@ -70,7 +70,7 @@ $stm = $PDO->prepare($sql);
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
-   echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 3;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
+   echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
       
 endforeach;
 ?>
