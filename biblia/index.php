@@ -14,7 +14,12 @@ div
 }
 
 </style>
-<div align="left">
+
+<body>
+   
+<a href="#"><button>Livros da Bíblia</button></a>
+
+<div align="CENTER">
 <?php
 // Livro
   require_once 'dbconnect.php';  
