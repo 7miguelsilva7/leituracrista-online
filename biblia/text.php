@@ -153,7 +153,7 @@ endforeach;
 </div>
 
 <div onclick="verse()" class="footerup" data-toggle="modal"  data-target="#exampleModalLong">
-  <span></span>
+  <span>Versículos</span>
 </div>
 
 
