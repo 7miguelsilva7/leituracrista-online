@@ -9,7 +9,7 @@ text-decoration: none;
 }
 div
 {
- font-size: 20px;
+ font-size: 30px;
  line-height: 1.9;
 }
 
