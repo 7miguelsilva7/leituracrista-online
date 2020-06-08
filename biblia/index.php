@@ -24,7 +24,7 @@ div
  line-height: 1.9;
 }
 div.book{
-  columns: 100px 4;
+  columns: 150px 4;
 }
 
 </style>
@@ -37,7 +37,7 @@ div.book{
 
 <div align="CENTER">
 
-<div class="book">
+<div align="left" class="book">
 
 <?php
 // Livro
