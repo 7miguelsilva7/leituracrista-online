@@ -69,7 +69,6 @@ echo '<h2>' . $b . '</h2>';
 
 ?><br>
 <div align="left" class="cap">
-
  <?php
 
 // Livro
