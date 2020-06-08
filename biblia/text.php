@@ -61,7 +61,8 @@ div.cap{
 
 <body>
 <?php
- require_once 'dbconnect.php';  
+
+require_once 'dbconnect.php';  
 
 // book and cap get
 $b = $_GET['b']; //book

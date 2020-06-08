@@ -18,7 +18,7 @@
 body {
   
   margin: 50px;
-  margin-left: 75px;
+  margin-top: 10px;
   }
 
 /* css copiar texto */
@@ -52,9 +52,9 @@ text-decoration: none;
 
 <body>
   
+<div align="center">
 <a href="../biblia/"><button>Livros</button></a>
-
-<br>
+</div>
 <br>
 
 <div align="center">
