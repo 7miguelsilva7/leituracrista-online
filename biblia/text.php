@@ -149,11 +149,11 @@ endforeach;
   <span>Livros</span>
 </div>
 
-<div onclick='cap();' class="footerup">
+<div onclick='cap();' class="indice">
   <span>Capítulos</span>
 </div>
 
-<div onclick="verse()" class="indice" data-toggle="modal"  data-target="#exampleModalLong">
+<div onclick="verse()" class="footerup" data-toggle="modal"  data-target="#exampleModalLong">
   <span></span>
 </div>
 
