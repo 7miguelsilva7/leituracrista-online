@@ -16,13 +16,49 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
 <style>
+
+#verses {
+	font-family:Verdana, Geneva, sans-serif;
+	display:none;
+  height: 100%;
+  width: 90%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color:#000;
+  padding:3%;
+  float:left;
+  overflow: auto;
+  background: #f0e68c;  
+  /* background: white;   */
+  font-size:20px;
+  opacity: 0.95;
+}
+
 .btn-default {
+  height: 60;
+  background: transparent;
+  border-style: solid;
+  width:60;
+  }
+
+.btn-defaultCap {
   height: 40;
   background: transparent;
   border-style: solid;
   width:49%;
-  
-  }
+  }  
+
+button.verses{
+  width: 70;
+  height: 60;
+  border-style: solid;
+  background: transparent;
+}
 
 @media screen and (max-width: 2000px) {
   body {
@@ -108,6 +144,8 @@ $o = $_GET['o']; //Order
 <a href="cap.php?o=<?php echo $o . '&b=' . $b ?>"><button>Capítulos</button></a>
 </div> -->
 
+
+
 <div align="center">
 <div align="left">
 
@@ -116,7 +154,9 @@ $o = $_GET['o']; //Order
 echo '<title>' . $b . ' ' . $c . '</title>';
 echo '<h2>' . $b . ' ' . $c . '</h2>';
 
-?><br><?php
+?><br>
+
+<?php
 
 // Livro
 require_once 'dbconnect.php';  
@@ -143,11 +183,28 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
   // echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-  echo '<p><span class="verse">' . $reg->verse . '</span> ' . $reg->text . '</p>';   
-      
+  echo '<p id="backgroundP" ><span class="verse">' . $reg->verse . '</span> <span id="verse'. $reg->verse .'">' . $reg->text . '</span></p>';
 endforeach;
-// echo $rowcount;
 ?>
+
+<!-- verses -->
+<div id="verses" class="sidenav">
+  <h4>Versíulos</h4>
+<?php 
+$sqlVerses = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 
+where `version`= 'ADO' 
+and ord=$o
+and cap=$c
+group by `verse`";  
+$stmV = $PDO->prepare($sqlVerses);  
+$stmV->execute();  
+$verses = $stmV->fetchAll(PDO::FETCH_OBJ); 
+foreach($verses as $regVerses):  
+  echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a> ';
+endforeach; 
+?>
+
+</div>
 </div>
 </div>
 
@@ -186,11 +243,11 @@ $back = $c -1;
 
   <?php
   if ($c > 1){
-    echo '<button class="btn-default" onclick="backCap()"><< Anterior</button> ';
+    echo '<button class="btn-defaultCap" onclick="backCap()"><< Anterior</button> ';
   }
 
   if ($c < $rowcount){
-    echo ' <button class="btn-default" onclick="nextCap()">Próximo >></button>';
+    echo ' <button class="btn-defaultCap" onclick="nextCap()">Próximo >></button>';
   }
   ?>
 
@@ -212,7 +269,7 @@ $back = $c -1;
   <span class="navFooter">Capítulos</span>
 </div>
 
-<div onclick="verse()" class="footerup" data-toggle="modal"  data-target="#exampleModalLong">
+<div id="versiculos" class="footerup" data-toggle="modal"  data-target="#exampleModalLong">
   <span class="navFooter">Versículos</span>
 </div>
 
@@ -236,4 +293,37 @@ $back = $c -1;
 // $( ".DivSuccess" ).click(function() {
 // $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
 // });
+
+$(function($){   
+	$("#verses").click(function() {
+		$(".sidenav").animate({
+      width: "toggle"
+    });
+	});
+})
+
+$(function($){   
+	$("#versiculos").click(function() {
+		$(".sidenav").animate({
+      width: "toggle"
+    });
+	});
+})
+
+function highlightVerse(){
+
+setTimeout(highlightVerse, 1000);
+var verse = window.location.href;
+var num = verse.split('#');
+// alert(num[1]);
+document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
+
+}
+
+$( document ).ready(function() {
+var verse = window.location.href;
+var num = verse.split('#');
+// alert(num[1]);
+document.getElementById(num[1]).style.backgroundColor = "#ffffc7";});
 </script>
+
