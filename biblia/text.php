@@ -190,7 +190,7 @@ endforeach;
 <!-- verses -->
 
 <div align="center" id="verses" class="sidenav">
-  <h4>Versíulos</h4>
+  <h4>Versículos</h4>
 <?php 
 $sqlVerses = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 
 where `version`= 'ADO' 
