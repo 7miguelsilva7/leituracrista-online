@@ -19,9 +19,14 @@
 
 .btn-default
 {
-  width: 100;
+  width: 70;
   height: 60;
   border-style: solid;
+  
+}
+
+span.livros{
+  font-size: 18;
 }
 
 @media screen and (max-width: 2000px) {
@@ -152,5 +157,5 @@ endforeach;
 <div class="footerbackground"></div>
 
 <div onclick='book();' class="footerbackCap">
-  <span>Livros</span>
+  <span class="livros" >Livros</span>
 </div>

@@ -60,6 +60,9 @@ span.verse {
   font-size: 12px;
 }
 
+span.navFooter{
+  font-size:14;
+}
 /* css copiar texto */
 .cap {
   line-height: 3;
@@ -202,15 +205,15 @@ $back = $c -1;
 <div class="footerbackground"></div>
 
 <div onclick='book();' class="footerback">
-  <span>Livros</span>
+  <span class="navFooter">Livros</span>
 </div>
 
 <div onclick='cap();' class="indice">
-  <span>Capítulos</span>
+  <span class="navFooter">Capítulos</span>
 </div>
 
 <div onclick="verse()" class="footerup" data-toggle="modal"  data-target="#exampleModalLong">
-  <span>Versículos</span>
+  <span class="navFooter">Versículos</span>
 </div>
 
 
