@@ -45,7 +45,7 @@ div
  line-height: 1.9;
 }
 div.book{
-  columns: 160px 4;
+  columns: 150px 4;
 }
 
 </style>
@@ -70,7 +70,7 @@ div.book{
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
  
  foreach($dados as $reg): 
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0; background:white"> ' . $reg->book . '</button></a><br>';   
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0; background:white; text-overflow: clip clip"> ' . $reg->book . '</button></a><br>';   
  endforeach;
   ?> 
   </div>
