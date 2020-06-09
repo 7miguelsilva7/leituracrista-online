@@ -22,6 +22,7 @@
   width: 70;
   height: 60;
   border-style: solid;
+  background: white;
   
 }
 
