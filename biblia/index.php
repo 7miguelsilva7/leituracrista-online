@@ -64,13 +64,18 @@ div.book{
 <?php
 // Livro
   require_once 'dbconnect.php';  
- $sql = "SELECT ord, book FROM biblias where `version`= 'ADO' group by ord order by ord";  
+ $sql = "SELECT ord, book, testament FROM biblias where `version`= 'ADO' group by ord order by ord";  
  $stm = $PDO->prepare($sql);  
  $stm->execute();  
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
- foreach($dados as $reg):  
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"> ' . $reg->book . '&nbsp;&nbsp;&nbsp;&nbsp;</a><br>';   
-       
+ 
+ foreach($dados as $reg): 
+    if ($reg->testament == 1) {
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0"> ' . $reg->book . '</button></a><br>';   
+    }else
+    {
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0;background:#D3D3D3"> ' . $reg->book . '</button></a><br>';
+    }
  endforeach;
   ?> 
   </div>
