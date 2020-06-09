@@ -13,8 +13,17 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="main.css">
 
 <style>
+
+.btn-default
+{
+  width: 100;
+  height: 60;
+  border-style: solid;
+}
+
 @media screen and (max-width: 2000px) {
   body {
   
@@ -71,10 +80,10 @@ text-decoration: none;
 
 <body>
   
-<div align="center">
+<!-- <div align="center">
 <a href="../biblia/"><button>Livros</button></a>
 </div>
-<br>
+<br> -->
 
 <div align="center">
 
@@ -87,8 +96,11 @@ $o = $_GET['o']; //Ordem
 
 echo '<h2>' . $b . '</h2>';
 
+echo '<title>' . $b . '</title>';
+
+
 ?><br>
-<div align="left" class="cap">
+<div align="center" class="cap">
  <?php
 
 // Livro
@@ -98,11 +110,12 @@ where `version`= 'ADO' and ord=$o
 group by cap";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
+// $rowcount =  $stm->rowCount();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
-foreach($dados as $reg):  
-   echo '<a href="text.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-      
+foreach($dados as $reg):
+   echo '<a href="text.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '" style="line-height: 2;font-size:20px"><button class="btn-default"> ' . $reg->cap . '</button> </a> ';
 endforeach;
+// echo $rowcount;
 ?>
 </div>
 </div>
@@ -126,3 +139,18 @@ endforeach;
 // $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
 // });
 </script>
+
+<!-- barra de navegação -->
+<script>
+  function book(){
+  window.location.href = "../biblia/"
+  }
+
+</script>
+<br>
+<br>
+<div class="footerbackground"></div>
+
+<div onclick='book();' class="footerbackCap">
+  <span>Livros</span>
+</div>

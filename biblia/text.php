@@ -16,6 +16,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
 <style>
+.btn-default {
+  height: 40;
+  background: transparent;
+  border-style: solid;
+  width:49%;
+  
+  }
+
 @media screen and (max-width: 2000px) {
   body {
   
@@ -48,8 +56,8 @@ p {
 
 }
 
-span {
-  font-size: 13px;
+span.verse {
+  font-size: 12px;
 }
 
 /* css copiar texto */
@@ -109,7 +117,18 @@ echo '<h2>' . $b . ' ' . $c . '</h2>';
 
 // Livro
 require_once 'dbconnect.php';  
-$sql = "SELECT book, ord, cap, verse, text FROM biblias 
+
+// conta qtd capítulos
+$sql = "SELECT book, ord, cap FROM biblias 
+where `version`= 'ADO' and ord=$o
+group by cap";  
+$stm = $PDO->prepare($sql);  
+$stm->execute();  
+$rowcount =  $stm->rowCount();
+// conta qtd capítulos
+
+
+$sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 
 where `version`= 'ADO' 
 and ord=$o
 and cap=$c
@@ -117,13 +136,15 @@ group by `verse`";
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
+
 foreach($dados as $reg):  
+  $totalCaps = $reg->totalCaps;
   // echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-  echo '<p><span>' . $reg->verse . '</span> ' . $reg->text . '</p>';   
+  echo '<p><span class="verse">' . $reg->verse . '</span> ' . $reg->text . '</p>';   
       
 endforeach;
+// echo $rowcount;
 ?>
-<br><br><br>
 </div>
 </div>
 
@@ -140,7 +161,43 @@ endforeach;
   function verse(){
   window.location.href = "#"
   }
+
+<?php 
+$next = $c +1;
+$back = $c -1;
+?>
+
+// navegate on caps
+  function backCap(){
+  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $back ?>"
+  }
+  
+  function nextCap(){
+  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $next ?>"
+  }
 </script>
+<br>
+
+<!-- navegate on capters -->
+<div align="center">
+
+  <?php
+  if ($c > 1){
+    echo '<button class="btn-default" onclick="backCap()"><< Anterior</button> ';
+  }
+
+  if ($c < $rowcount){
+    echo ' <button class="btn-default" onclick="nextCap()">Próximo >></button>';
+  }
+  ?>
+
+</div>
+
+<div align="right" onclick='book();'>
+  
+</div>
+
+<br><br><br>
 
 <div class="footerbackground"></div>
 

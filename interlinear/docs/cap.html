@@ -15,7 +15,7 @@
 <style>
 
 div > a {
-  text-align: center;
+  text-align: left;
   display: table-cell;
   vertical-align: middle;
   opacity:.7; 
@@ -38,18 +38,38 @@ div.b {
   line-height: 50px;
 }
 
+.btn-default
+{
+  width: 70;
+  border-style: solid;
+
+}
+
 </style>
 
 <center >
       <br>
 
 <SCRIPt>
-        document.write('<a href="index.html?query=@'+localStorage.getItem('InterlinearBookBibleSelected')+'"><h4>'+localStorage.getItem('InterlinearBookBibleSelected')+'</h4></a>')
+        // document.write('<a href="index.html?query=@'+localStorage.getItem('InterlinearBookBibleSelected')+'"><h4>'+localStorage.getItem('InterlinearBookBibleSelected')+'</h4></a>')
 </SCRIPt>
 
       <span>Capítulos</span> <hr>
       
-      <div id="bookcap" class="btnContainer"></div>
+      <button class="btn-default"> 1 </button>
+      <button class="btn-default"> 100 </button>
+      <button class="btn-default"> 100 </button>
+      <button class="btn-default"> 100 </button>
+      <button class="btn-default"> 100 </button>
+      <button class="btn-default"> 100 </button>
+      <button class="btn-default"> 100 </button>
+      <button class="btn-default"> 100 </button>
+      <button class="btn-default"> 100 </button>
+
+
+
+
+      </div>
       <!-- <div class="btnContainer" data-book="Êxodo"></div> -->
 </center>  
 
