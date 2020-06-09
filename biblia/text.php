@@ -188,7 +188,9 @@ endforeach;
 ?>
 
 <!-- verses -->
-<div id="verses" class="sidenav">
+
+<div align="center" id="verses" class="sidenav">
+<div align="left" style="width:auto">
   <h4>Versíulos</h4>
 <?php 
 $sqlVerses = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 
@@ -203,6 +205,7 @@ foreach($verses as $regVerses):
   echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a> ';
 endforeach; 
 ?>
+</div>
 
 </div>
 </div>
