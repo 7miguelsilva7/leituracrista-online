@@ -74,7 +74,7 @@ div.book{
     echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0"> ' . $reg->book . '</button></a><br>';   
     }else
     {
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0;background:#D3D3D3"> ' . $reg->book . '</button></a><br>';
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0;background:white"> ' . $reg->book . '</button></a><br>';
     }
  endforeach;
   ?> 
