@@ -70,12 +70,7 @@ div.book{
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
  
  foreach($dados as $reg): 
-    if ($reg->testament == 1) {
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0"> ' . $reg->book . '</button></a><br>';   
-    }else
-    {
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0;background:white"> ' . $reg->book . '</button></a><br>';
-    }
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0; background:white"> ' . $reg->book . '</button></a><br>';   
  endforeach;
   ?> 
   </div>
