@@ -64,7 +64,7 @@ div.book{
 </style>
 </head>
 <body>
-<div class="config" style="position: fixed; cursor: pointer; width:40; height:40; top:20; right:20;"><img width="40" src="img/config.png" alt="Configurações"></div>   
+<!-- <div class="config" style="position: fixed; cursor: pointer; width:40; height:40; top:20; right:20;"><img width="40" src="img/config.png" alt="Configurações"></div>    -->
 <div align="center">
 <a href="#"><h1>Livros da Bíblia</h1></a>
 <hr>
