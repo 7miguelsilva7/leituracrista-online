@@ -13,6 +13,17 @@
 
 
 <style>
+
+#config {
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        padding: 20;
+        background: yellow; text-align:center;
+        display:none;
+      }
+
 @media screen and (max-width: 2000px) {
   body {
   
@@ -26,6 +37,7 @@
   
   margin: 50px;
   margin-top: 10px;
+
   }
 }
 
@@ -51,17 +63,21 @@ div.book{
 
 </style>
 </head>
-
-
 <body>
-   
+<div class="config" style="position: fixed; cursor: pointer; width:40; height:40; top:20; right:20;"><img width="40" src="img/config.png" alt="Configurações"></div>   
 <div align="center">
 <a href="#"><h1>Livros da Bíblia</h1></a>
 <hr>
 </div>
 
-<div align="CENTER">
+<div id="config">
+Bíblia Interlinear <br>
+<button class="config">Ativar</button> 
+<button class="config">Desativar</button><br>
+<span style="color:red">Disponível em breve!</span>
+</div>
 
+<div align="CENTER">
 <div align="left" class="book">
 
 <?php
@@ -79,3 +95,13 @@ div.book{
   </div>
   </div >
 
+<script>
+  $(function($){   
+	$(".config").click(function() {
+		$("#config").animate({
+      width: "toggle"
+    });
+	});
+  })
+</script>
+  
