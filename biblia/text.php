@@ -230,7 +230,7 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
   // echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-  echo '<div style="cursor:pointer" id="divVersesTexts" ><span class="verse"><a style="color:black" href="#verse'. $reg->verse .'">' . $reg->verse . '</span> <span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
+  echo '<div style="cursor:pointer" id="divVersesTexts" ><span class="verse"><a class="verseText" style="color:black" href="#verse'. $reg->verse .'">' . $reg->verse . '</span> <span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
 endforeach;
 ?><!-- textos dos versiculo -->
 
@@ -348,6 +348,7 @@ $back = $c -1;
 
 $(function($){   
 	$("#verses").click(function() {
+    document.getElementById('noScroll').style.overflow = "initial";
 		$(".sidenav").animate({
       width: "toggle"
     });
@@ -356,6 +357,8 @@ $(function($){
 
 $(function($){   
 	$("#versiculos").click(function() {
+    document.getElementById('noScroll').style.overflow = "hidden";
+
 		$(".sidenav").animate({
       width: "toggle"
     });
@@ -400,7 +403,7 @@ $('#holdBtn').on("mousedown",function(){
 
 <script>
 $(function($){   
-	$("a").click(function() {
+	$(".verseText").click(function() {
 
 setTimeout(function(){ 
 
