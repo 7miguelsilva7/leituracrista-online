@@ -16,8 +16,46 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
 <style>
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 
 #verses {
+	font-family:Verdana, Geneva, sans-serif;
+	display:none;
+  height: 100%;
+  width: 90%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color:#000;
+  padding:3%;
+  float:left;
+  overflow: auto;
+  background: #f0e68c;  
+  /* background: white;   */
+  font-size:20px;
+  opacity: 0.95;
+}
+
+#interlinear {
 	font-family:Verdana, Geneva, sans-serif;
 	display:none;
   height: 100%;
@@ -88,6 +126,10 @@ button.verses{
 
 p {
   font-size: 20px;
+}
+
+#divVersesTexts {
+  font-size: 20px;
 
 
 }
@@ -128,7 +170,7 @@ div.cap{
 
 </head>
 
-<body>
+<body id="noScroll">
 <?php
 
 require_once 'dbconnect.php';  
@@ -158,8 +200,11 @@ echo '<h2>' . $b . ' ' . $c . '</h2>';
 
 <?php
 
-// Livro
-require_once 'dbconnect.php';  
+  // connection
+  require_once 'dbconnect.php';  
+
+
+
 
 // conta qtd capítulos
 $sql = "SELECT book, ord, cap FROM biblias 
@@ -171,6 +216,9 @@ $rowcount =  $stm->rowCount();
 // conta qtd capítulos
 
 
+
+
+// textos dos versiculo
 $sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 
 where `version`= 'ADO' 
 and ord=$o
@@ -179,16 +227,16 @@ group by `verse`";
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
-
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
   // echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-  echo '<p id="backgroundP" ><span class="verse">' . $reg->verse . '</span> <span id="verse'. $reg->verse .'">' . $reg->text . '</span></p>';
+  echo '<div style="cursor:pointer" id="divVersesTexts" ><span class="verse"><a style="color:black" href="#verse'. $reg->verse .'">' . $reg->verse . '</span> <span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
 endforeach;
-?>
+?><!-- textos dos versiculo -->
 
-<!-- verses -->
 
+
+<!-- div de versiculos -->
 <div align="center" id="verses" class="sidenav">
   <h4>Versículos</h4>
 <?php 
@@ -204,6 +252,9 @@ foreach($verses as $regVerses):
   echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a> ';
 endforeach; 
 ?>
+
+
+
 </div>
 </div>
 </div>
@@ -275,7 +326,7 @@ $back = $c -1;
 
 
 
-    <script>
+    <!-- <script>
     function copyDivToClipboard<?echo $reg->estrofeid?>() {
                         var range = document.createRange();
                         range.selectNode(document.getElementById("divText<?echo $reg->estrofeid?>"));
@@ -283,11 +334,12 @@ $back = $c -1;
                         window.getSelection().addRange(range); // to select text
                         document.execCommand("copy");
                         window.getSelection().removeAllRanges();// to deselect
-    //                     alert('Estrofe Copiada!')
                         $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
     
           }
-    </script> 
+    </script>  -->
+
+
 
 <script>
 // $( ".DivSuccess" ).click(function() {
@@ -311,19 +363,74 @@ $(function($){
 })
 
 function highlightVerse(){
-
 setTimeout(highlightVerse, 1000);
 var verse = window.location.href;
 var num = verse.split('#');
 // alert(num[1]);
+if (num[1] != null){
 document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
-
+}
 }
 
 $( document ).ready(function() {
 var verse = window.location.href;
 var num = verse.split('#');
 // alert(num[1]);
-document.getElementById(num[1]).style.backgroundColor = "#ffffc7";});
+if (num[1] != null){
+document.getElementById(num[1]).style.backgroundColor = "#ffffc7";}});
+
+
+// longClick
+var timer;
+$('#holdBtn').on("mousedown",function(){
+    timer = setTimeout(function(){
+        alert("WORKY");
+    },2*600);
+}).on("mouseup mouseleave",function(){
+    clearTimeout(timer);
+});
 </script>
 
+<div id="interlinear" class="inter">
+
+</div>
+
+<button class="holdBtn" id="holdBtn">Teste de long click</button>
+
+
+<script>
+$(function($){   
+	$("a").click(function() {
+
+setTimeout(function(){ 
+
+var v = window.location.href;
+var num = v.split('#');
+// alert(num[1]);
+document.getElementById('noScroll').style.overflow = "hidden";
+
+    var book='<?php echo $b ?>';
+    var order='<?php echo $o ?>';
+    var cap='<?php echo $c ?>';
+    var verse= num[1].replace('verse', '');
+    $("#interlinear").load("ajax.php", {"book": book, "order": order, "cap": cap, "verse": verse,});
+		$(".inter").css('width','100%');
+					$(".inter").animate({
+					  width: "toggle"
+					});
+          }, 600);
+  });
+  
+  
+
+})
+
+// close div interlinear
+$( "#interlinear" ).click(function() {
+  document.getElementById('noScroll').style.overflow = "initial";
+  $(".inter").css('width','90%');
+					$(".inter").animate({
+					  width: "toggle"
+					});
+});
+</script>
