@@ -229,8 +229,9 @@ $stm->execute();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
-  // echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-  echo '<div style="cursor:pointer" id="divVersesTexts" ><a class="verseText" style="color:black" href="#verse'. $reg->verse .'"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
+  // echo '<div style="cursor:pointer" id="divVersesTexts" ><a class="verseText" style="color:black" href="&verse='. $reg->verse .'"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
+
+  echo '<div class="verseText" style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
 endforeach;
 ?><!-- textos dos versiculo -->
 
@@ -326,36 +327,8 @@ $back = $c -1;
 
 
 
-    <!-- <script>
-    function copyDivToClipboard<?echo $reg->estrofeid?>() {
-                        var range = document.createRange();
-                        range.selectNode(document.getElementById("divText<?echo $reg->estrofeid?>"));
-                        window.getSelection().removeAllRanges(); // clear current selection
-                        window.getSelection().addRange(range); // to select text
-                        document.execCommand("copy");
-                        window.getSelection().removeAllRanges();// to deselect
-                        $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
-    
-          }
-    </script>  -->
-
-
 
 <script>
-// $( ".DivSuccess" ).click(function() {
-// $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
-// });
-
-// close div of verses
-$(function($){   
-	$("#verses").click(function() {
-    document.getElementById('noScroll').style.overflow = "initial";
-		$(".sidenav").animate({
-      width: "toggle"
-    });
-	});
-})
-
 // Open div od verse
 $(function($){   
 	$("#versiculos").click(function() {
@@ -367,6 +340,20 @@ $(function($){
 	});
 })
 
+
+
+// close div of verses
+$(function($){   
+	$("#verses").click(function() {
+    document.getElementById('noScroll').style.overflow = "initial";
+		$(".sidenav").animate({
+      width: "toggle"
+    });
+	});
+})
+
+
+// highlightVerse
 function highlightVerse(){
 setTimeout(highlightVerse, 1000);
 var verse = window.location.href;
@@ -377,12 +364,15 @@ document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
 }
 }
 
+// highlightVerse
 $( document ).ready(function() {
 var verse = window.location.href;
 var num = verse.split('#');
 // alert(num[1]);
 if (num[1] != null){
-document.getElementById(num[1]).style.backgroundColor = "#ffffc7";}});
+document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
+}
+});
 
 
 // longClick
@@ -410,15 +400,16 @@ $(function($){
 	$(".verseText").click(function() {
 
 setTimeout(function(){ 
-var v = window.location.href;
-var num = v.split('#');
-// alert(num[1]);
+var v = 'verse' + localStorage.getItem('verseInterlinear');
+// var num = v.split('#');
+alert(localStorage.getItem('verseInterlinear'));
+document.getElementById(v).style.backgroundColor = "#ffffc7";
 document.getElementById('noScroll').style.overflow = "hidden";
 
     var book='<?php echo $b ?>';
     var order='<?php echo $o ?>';
     var cap='<?php echo $c ?>';
-    var verse= num[1].replace('verse', '');
+    var verse= v.replace('verse', '');
     $("#interlinear").load("ajax.php", {"book": book, "order": order, "cap": cap, "verse": verse,});
 		$(".inter").css('width','100%');
 					$(".inter").animate({
