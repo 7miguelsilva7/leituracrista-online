@@ -353,6 +353,8 @@ $(function($){
 })
 
 
+
+
 // highlightVerse
 function highlightVerse(){
 setTimeout(highlightVerse, 1000);
@@ -363,6 +365,8 @@ if (num[1] != null){
 document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
 }
 }
+
+
 
 // highlightVerse
 $( document ).ready(function() {
@@ -394,6 +398,8 @@ $('#holdBtn').on("mousedown",function(){
 
 
 
+
+
 <!-- open div interlinear -->
 <script>
 $(function($){   
@@ -415,9 +421,10 @@ document.getElementById('noScroll').style.overflow = "hidden";
 					$(".inter").animate({
 					  width: "toggle"
 					});
-          }, 600);
+          }, 200);
   });
 })
+
 
 
 
