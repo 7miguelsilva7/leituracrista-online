@@ -402,7 +402,7 @@ $(function($){
 setTimeout(function(){ 
 var v = 'verse' + localStorage.getItem('verseInterlinear');
 // var num = v.split('#');
-alert(localStorage.getItem('verseInterlinear'));
+// alert(localStorage.getItem('verseInterlinear'));
 document.getElementById(v).style.backgroundColor = "#ffffc7";
 document.getElementById('noScroll').style.overflow = "hidden";
 
