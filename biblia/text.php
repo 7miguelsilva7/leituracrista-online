@@ -353,7 +353,7 @@ $(function($){
 })
 
 
-
+  
 
 // highlightVerse
 function highlightVerse(){
