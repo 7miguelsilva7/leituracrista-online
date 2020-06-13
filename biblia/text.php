@@ -346,6 +346,7 @@ $back = $c -1;
 // $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
 // });
 
+// close div of verses
 $(function($){   
 	$("#verses").click(function() {
     document.getElementById('noScroll').style.overflow = "initial";
@@ -355,6 +356,7 @@ $(function($){
 	});
 })
 
+// Open div od verse
 $(function($){   
 	$("#versiculos").click(function() {
     document.getElementById('noScroll').style.overflow = "hidden";
@@ -401,12 +403,13 @@ $('#holdBtn').on("mousedown",function(){
 <!-- <button class="holdBtn" id="holdBtn">Teste de long click</button> -->
 
 
+
+<!-- open div interlinear -->
 <script>
 $(function($){   
 	$(".verseText").click(function() {
 
 setTimeout(function(){ 
-
 var v = window.location.href;
 var num = v.split('#');
 // alert(num[1]);
@@ -423,10 +426,9 @@ document.getElementById('noScroll').style.overflow = "hidden";
 					});
           }, 600);
   });
-  
-  
-
 })
+
+
 
 // close div interlinear
 $( "#interlinear" ).click(function() {
