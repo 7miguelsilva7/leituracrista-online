@@ -134,9 +134,9 @@ p {
 
 }
 
-span.verse {
+/* span.verse {
   font-size: 12px;
-}
+} */
 
 span.navFooter{
   font-size:14;
@@ -230,7 +230,7 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
   // echo '<a href="cap.php?c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-  echo '<div style="cursor:pointer" id="divVersesTexts" ><span class="verse"><a class="verseText" style="color:black" href="#verse'. $reg->verse .'">' . $reg->verse . '</span> <span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
+  echo '<div style="cursor:pointer" id="divVersesTexts" ><a class="verseText" style="color:black" href="#verse'. $reg->verse .'"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
 endforeach;
 ?><!-- textos dos versiculo -->
 
@@ -398,7 +398,7 @@ $('#holdBtn').on("mousedown",function(){
 
 </div>
 
-<button class="holdBtn" id="holdBtn">Teste de long click</button>
+<!-- <button class="holdBtn" id="holdBtn">Teste de long click</button> -->
 
 
 <script>
