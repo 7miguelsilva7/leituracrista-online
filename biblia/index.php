@@ -1,3 +1,6 @@
+<?php
+require_once 'dbconnect.php';  
+?>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +16,16 @@
 
 
 <style>
+
+.btn-default
+{
+  width: 70;
+  height: 60;
+  border-style: solid;
+  background: white;
+  
+  
+}
 
 #config {
         position:fixed;
@@ -30,6 +43,9 @@
   margin: 100px;
   margin-top: 10px;
   }
+  .abr{
+    display:none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -39,6 +55,9 @@
   margin-top: 10px;
 
   }
+  .abr{
+    display:none;
+  }
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -47,6 +66,12 @@
   
   margin: 15px;
   margin-top: 10px;
+  }
+  .abr{
+    display:initial;
+  }
+  .book{
+    display:none;
   }
 }
 a:link{
@@ -78,11 +103,9 @@ Bíblia Interlinear <br>
 </div>
 
 <div align="CENTER">
+<!-- Complete books Names -->
 <div align="left" class="book">
-
 <?php
-// Livro
-  require_once 'dbconnect.php';  
  $sql = "SELECT ord, book, testament FROM biblias where `version`= 'ADO' group by ord order by ord";  
  $stm = $PDO->prepare($sql);  
  $stm->execute();  
@@ -92,8 +115,33 @@ Bíblia Interlinear <br>
     echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0; background:white; text-overflow: clip clip"> ' . $reg->book . '</button></a><br>';   
  endforeach;
   ?> 
-  </div>
-  </div >
+</div>
+
+<!-- Complete books Names -->
+
+
+
+<!-- abreviates books names -->
+<div align="center" class="abr">
+<?php
+$sql = "SELECT abr, ord, book, testament FROM biblias where `version`= 'ADO' group by ord order by ord";  
+$stm = $PDO->prepare($sql);  
+$stm->execute();  
+$dados = $stm->fetchAll(PDO::FETCH_OBJ);  
+foreach($dados as $reg):
+  // echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button class="btn-default"> ' . $reg->abr . '</button></a><br>';   
+  if ($reg->testament == 1){
+  echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button  class="btn-default">' . $reg->abr . '</button></a>';}
+  if ($reg->testament == 2){
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button style="color:blue" class="btn-default">' . $reg->abr . '</button></a>';}
+endforeach;
+?>
+</div>
+<!-- abreviates books names -->
+
+</div >
+
+<br><br>
 
 <script>
   $(function($){   

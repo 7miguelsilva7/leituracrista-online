@@ -109,7 +109,7 @@ echo '<title>' . $b . '</title>';
 <div align="center" class="cap">
  <?php
 
-// Livro
+// connetion
 require_once 'dbconnect.php';  
 $sql = "SELECT book, ord, cap FROM biblias 
 where `version`= 'ADO' and ord=$o
@@ -121,30 +121,10 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):
    echo '<a href="text.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '" style="line-height: 2;font-size:20px"><button class="btn-default"> ' . $reg->cap . '</button> </a> ';
 endforeach;
-// echo $rowcount;
 ?>
 </div>
 </div>
 
-    <script>
-    function copyDivToClipboard<?echo $reg->estrofeid?>() {
-                        var range = document.createRange();
-                        range.selectNode(document.getElementById("divText<?echo $reg->estrofeid?>"));
-                        window.getSelection().removeAllRanges(); // clear current selection
-                        window.getSelection().addRange(range); // to select text
-                        document.execCommand("copy");
-                        window.getSelection().removeAllRanges();// to deselect
-    //                     alert('Estrofe Copiada!')
-                        $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
-    
-          }
-    </script> 
-
-<script>
-// $( ".DivSuccess" ).click(function() {
-// $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
-// });
-</script>
 
 <!-- barra de navegação -->
 <script>
