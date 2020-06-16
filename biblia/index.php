@@ -122,7 +122,7 @@ Bíblia Interlinear <br>
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
  
  foreach($dados as $reg): 
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button style="width:100%;text-align:left;border:0; background:white; text-overflow: clip clip"> ' . $reg->book . '</button></a><br>';   
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button class="naoSelecionavel" style="width:100%;text-align:left;border:0; background:white; text-overflow: clip clip"> ' . $reg->book . '</button></a><br>';   
  endforeach;
   ?> 
 </div>
@@ -141,9 +141,9 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):
   // echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button class="btn-default"> ' . $reg->abr . '</button></a><br>';   
   if ($reg->testament == 1){
-  echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button  class="btn-default">' . $reg->abr . '</button></a>';}
+  echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button  class="btn-default naoSelecionavel">' . $reg->abr . '</button></a>';}
   if ($reg->testament == 2){
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button style="color:blue" class="btn-default">' . $reg->abr . '</button></a>';}
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button style="color:blue" class="btn-default naoSelecionavel">' . $reg->abr . '</button></a>';}
 endforeach;
 ?>
 </div>
