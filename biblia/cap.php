@@ -119,7 +119,7 @@ $stm->execute();
 // $rowcount =  $stm->rowCount();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):
-   echo '<a href="text.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '" style="line-height: 2;font-size:20px"><button class="btn-default"> ' . $reg->cap . '</button> </a> ';
+   echo '<a href="text.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '" style="line-height: 2;font-size:20px"><button class="btn-default">' . $reg->cap . '</button></a> ';
 endforeach;
 ?>
 </div>
