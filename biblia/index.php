@@ -121,7 +121,7 @@ Bíblia Interlinear <br>
 
 
 
-<!-- abreviates books names -->
+<!-- abreviate books names -->
 <div align="center" class="abr">
 <?php
 $sql = "SELECT abr, ord, book, testament FROM biblias where `version`= 'ADO' group by ord order by ord";  
@@ -137,7 +137,7 @@ foreach($dados as $reg):
 endforeach;
 ?>
 </div>
-<!-- abreviates books names -->
+<!-- abreviate books names -->
 
 </div >
 
