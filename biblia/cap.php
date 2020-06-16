@@ -17,6 +17,16 @@
 
 <style>
 
+.naoSelecionavel {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+
 .btn-default
 {
   width: 70;
@@ -106,7 +116,7 @@ echo '<title>' . $b . '</title>';
 
 
 ?><br>
-<div align="center" class="cap">
+<div align="center" class="cap naoSelecionavel">
  <?php
 
 // connetion

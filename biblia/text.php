@@ -16,6 +16,17 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
 <style>
+
+.naoSelecionavel {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+
 a:link {
   text-decoration: none;
   color: black;
@@ -238,7 +249,7 @@ endforeach;
 
 
 <!-- div de versiculos -->
-<div align="center" id="verses" class="sidenav">
+<div align="center" id="verses" class="sidenav naoSelecionavel">
   <h4>Versículos</h4>
 <?php 
 $sqlVerses = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 

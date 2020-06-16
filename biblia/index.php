@@ -17,6 +17,16 @@ require_once 'dbconnect.php';
 
 <style>
 
+.naoSelecionavel {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+
 .btn-default
 {
   width: 70;
@@ -104,7 +114,7 @@ Bíblia Interlinear <br>
 
 <div align="CENTER">
 <!-- Complete books Names -->
-<div align="left" class="book">
+<div align="left" class="book naoSelecionavel">
 <?php
  $sql = "SELECT ord, book, testament FROM biblias where `version`= 'ADO' group by ord order by ord";  
  $stm = $PDO->prepare($sql);  
@@ -122,7 +132,7 @@ Bíblia Interlinear <br>
 
 
 <!-- abreviate books names -->
-<div align="center" class="abr">
+<div align="center" class="abr naoSelecionavel">
 <?php
 $sql = "SELECT abr, ord, book, testament FROM biblias where `version`= 'ADO' group by ord order by ord";  
 $stm = $PDO->prepare($sql);  
