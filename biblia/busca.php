@@ -251,17 +251,18 @@ while($row = mysqli_fetch_array($res_data)){
 }
 mysqli_close($conn);
 ?>
+<div align="center">
 <ul class="pagination">
-<!-- <li><a href="?page=1&q=<?php echo $q?>">First</a></li> -->
+<li><a href="?page=1&q=<?php echo $q?>">Início</a></li>
 <li class="<?php if($page <= 1){ echo 'disabled'; } ?>">
   <a href="<?php if($page <= 1){ echo '#'; } else { echo "?page=".($page - 1).'&q='.$q; } ?>"><< Anterior</a>
 </li>
 <li class="<?php if($page >= $total_pages){ echo 'disabled'; } ?>">
   <a href="<?php if($page >= $total_pages){ echo '#'; } else { echo "?page=".($page + 1).'&q='.$q; } ?>">Próximo >></a>
 </li>
-<!-- <li><a href="?page=<?php echo $total_pages.'&q='.$q; ?>">Last</a></li> -->
+<li><a href="?page=<?php echo $total_pages.'&q='.$q; ?>">Fim</a></li>
 </ul>
-
+</div>
 <!-- textos dos versiculo -->
 
 
