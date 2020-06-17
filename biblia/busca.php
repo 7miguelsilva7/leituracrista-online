@@ -224,7 +224,7 @@ if (isset($_GET['page'])) {
 $no_of_records_per_page = 10;
 $offset = ($page-1) * $no_of_records_per_page;
 
-$conn=mysqli_connect("localhost","root","","biblia");
+$conn=mysqli_connect("localhost","u378308740_biblia","gogo1352","u378308740_biblia");
 // Check connection
 if (mysqli_connect_errno()){
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
