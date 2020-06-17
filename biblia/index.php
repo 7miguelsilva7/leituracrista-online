@@ -17,9 +17,7 @@ require_once 'dbconnect.php';
 
 
 <style>
-input, select, textarea{
-    color: blue;
-}
+
 .footersearch {
     background-color: DarkSlateBlue;
     position: fixed;
@@ -72,6 +70,13 @@ input, select, textarea{
   .abr{
     display:none;
   }
+  input, select, textarea{
+    color: blue;
+    width:50%;
+    font-size:20;
+}
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -84,6 +89,11 @@ input, select, textarea{
   .abr{
     display:none;
   }
+  input, select, textarea{
+    color: blue;
+    width:90%;
+    font-size:20;
+}
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -177,7 +187,7 @@ endforeach;
 
 <div class="footersearch"  align="center">
 <form action="busca.php">
-  <input style="width:50%;font-size:20" name="q" autofocus placeholder="Busca">
+  <input style="" name="q" autofocus placeholder="Busca">
 </form>
 </div>
 
