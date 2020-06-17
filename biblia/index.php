@@ -9,6 +9,7 @@ require_once 'dbconnect.php';
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
+<link rel="stylesheet" href="main.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 <!-- Latest compiled and minified JavaScript -->
@@ -16,6 +17,19 @@ require_once 'dbconnect.php';
 
 
 <style>
+
+.footersearch {
+    background-color: #FFFFC0;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: 0;
+    height: 37;
+    padding-top: 5;
+
+
+}
 
 .naoSelecionavel {
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -87,21 +101,26 @@ require_once 'dbconnect.php';
 a:link{
 text-decoration: none;
 }
-div
-{
- font-size: 30px;
- line-height: 1.9;
-}
+
 div.book{
   columns: 150px 4;
+  font-size: 30px;
+ line-height: 1.9;
 }
 
 </style>
 </head>
-<body>
+
+
+
+
+
 <!-- <div class="config" style="position: fixed; cursor: pointer; width:40; height:40; top:20; right:20;"><img width="40" src="img/config.png" alt="Configurações"></div>    -->
+
+
 <div align="center">
-<a href="#"><h1>Livros da Bíblia</h1></a>
+
+<a href="#"><h3>Livros da Bíblia</h3></a>
 <hr>
 </div>
 
@@ -148,10 +167,18 @@ endforeach;
 ?>
 </div>
 <!-- abreviate books names -->
-
 </div >
 
+</body>
+
 <br><br>
+
+<div style="background-color: blue" class="footersearch"  align="center">
+<form action="busca.php">
+  <input style="width:50%" name="q" autofocus placeholder="Busca">
+</form>
+</div>
+
 
 <script>
   $(function($){   
