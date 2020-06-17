@@ -17,16 +17,18 @@ require_once 'dbconnect.php';
 
 
 <style>
-
+input, select, textarea{
+    color: blue;
+}
 .footersearch {
-  background-color: DarkSlateBlue;
+    /* background-color: DarkSlateBlue; */
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     bottom: 0;
-    height: 37;
-    padding-top: 5;
+    height: 50;
+    /* padding-top: 5; */
 
 
 }
@@ -173,9 +175,9 @@ endforeach;
 
 <br><br>
 
-<div style="background-color: DarkSlateBlue" class="footersearch"  align="center">
+<div class="footersearch"  align="center">
 <form action="busca.php">
-  <input style="width:50%" name="q" autofocus placeholder="Busca">
+  <input style="width:50%;font-size:20" name="q" autofocus placeholder="Busca">
 </form>
 </div>
 

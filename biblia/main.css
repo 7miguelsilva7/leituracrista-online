@@ -14,21 +14,6 @@
   padding: 10px;
 }
   
-.footersearch {
-    margin: auto;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: DarkSlateBlue;
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    height: 37px;
-    padding: 10px;
-
-}
 
 .footerup {
   margin: auto;
