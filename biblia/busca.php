@@ -252,14 +252,14 @@ while($row = mysqli_fetch_array($res_data)){
 mysqli_close($conn);
 ?>
 <ul class="pagination">
-<li><a href="?page=1&q=<?php echo $q?>">First</a></li>
+<!-- <li><a href="?page=1&q=<?php echo $q?>">First</a></li> -->
 <li class="<?php if($page <= 1){ echo 'disabled'; } ?>">
-  <a href="<?php if($page <= 1){ echo '#'; } else { echo "?page=".($page - 1).'&q='.$q; } ?>">Prev</a>
+  <a href="<?php if($page <= 1){ echo '#'; } else { echo "?page=".($page - 1).'&q='.$q; } ?>"><< Anterior</a>
 </li>
 <li class="<?php if($page >= $total_pages){ echo 'disabled'; } ?>">
-  <a href="<?php if($page >= $total_pages){ echo '#'; } else { echo "?page=".($page + 1).'&q='.$q; } ?>">Next</a>
+  <a href="<?php if($page >= $total_pages){ echo '#'; } else { echo "?page=".($page + 1).'&q='.$q; } ?>">Próximo >></a>
 </li>
-<li><a href="?page=<?php echo $total_pages.'&q='.$q; ?>">Last</a></li>
+<!-- <li><a href="?page=<?php echo $total_pages.'&q='.$q; ?>">Last</a></li> -->
 </ul>
 
 <!-- textos dos versiculo -->
