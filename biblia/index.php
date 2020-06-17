@@ -19,7 +19,7 @@ require_once 'dbconnect.php';
 <style>
 
 .footersearch {
-    background-color: #FFFFC0;
+  background-color: DarkSlateBlue;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -173,7 +173,7 @@ endforeach;
 
 <br><br>
 
-<div style="background-color: blue" class="footersearch"  align="center">
+<div style="background-color: DarkSlateBlue" class="footersearch"  align="center">
 <form action="busca.php">
   <input style="width:50%" name="q" autofocus placeholder="Busca">
 </form>
