@@ -186,7 +186,7 @@ endforeach;
 <br><br><br><br>
 
 <div class="footersearch"  align="center">
-<form action="busca.php">
+<form action="busca.php?pageno=1">
   <input style="" name="q" autofocus placeholder="Busca">
 </form>
 </div>

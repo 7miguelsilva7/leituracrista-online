@@ -180,6 +180,7 @@ div.cap{
 <body id="noScroll">
 <?php
 
+require_once 'dbconnect.php';  
 
 // book and cap get
 $q = $_GET['q']; //book
@@ -200,69 +201,23 @@ $q = $_GET['q']; //book
   require_once 'dbconnect.php';  
 
 // textos dos versiculo
-// $sql = "SELECT ord, book, cap, verse, text FROM biblias WHERE MATCH(text) AGAINST('$q')
-// and version='ADO'
-// -- ORDER BY text
-// ";  
-// $stm = $PDO->prepare($sql);  
-// $stm->execute();  
-// $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
-// foreach($dados as $reg):  
-//   echo '
-//   <a href="text.php?o=' . $row['ord'] . '&b=' . $row['book'] . '&c=' . $row['cap'] . '&v=#verse' . $row['verse'] . '" style="font-size:18px">'.$row['book']. ' '.$row['cap'].'</a></p>
-//   <div class="verseText" id="divVersesTexts">
-  
-//   <sup>' . $row['verse'] . '</sup><span  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
-// endforeach;
-
-
-if (isset($_GET['page'])) {
-  $page = $_GET['page'];
-} else {
-  $page = 1;
-}
-$no_of_records_per_page = 10;
-$offset = ($page-1) * $no_of_records_per_page;
-
-$conn=mysqli_connect("localhost","root","","biblia");
-// Check connection
-if (mysqli_connect_errno()){
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  die();
-}
-
-$total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q')
-and version='ADO'";
-$result = mysqli_query($conn,$total_pages_sql);
-$total_rows = mysqli_fetch_array($result)[0];
-// echo $total_rows;
-$total_pages = ceil($total_rows / $no_of_records_per_page);
 $sql = "SELECT ord, book, cap, verse, text FROM biblias WHERE MATCH(text) AGAINST('$q')
-and version='ADO' LIMIT $offset, $no_of_records_per_page";
-$res_data = mysqli_query($conn,$sql);
-while($row = mysqli_fetch_array($res_data)){
+and version='ADO'
+-- ORDER BY text
+";  
+$stm = $PDO->prepare($sql);  
+$stm->execute();  
+$dados = $stm->fetchAll(PDO::FETCH_OBJ);  
+foreach($dados as $reg):  
+  // echo '<div style="cursor:pointer" id="divVersesTexts" ><a class="verseText" style="color:black" href="&verse='. $reg->verse .'"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
 
   echo '
-  <a href="text.php?o=' . $row['ord'] . '&b=' . $row['book'] . '&c=' . $row['cap'] . '&v=#verse' . $row['verse'] . '" style="font-size:18px">'.$row['book']. ' '.$row['cap'].'</a></p>
+  <a href="text.php?o=' . $reg->ord . '&b=' . $reg->book . '&c=' . $reg->cap . '&v=#verse' . $reg->verse . '" style="font-size:18px">'.$reg->book. ' '.$reg->cap.'</a></p>
   <div class="verseText" id="divVersesTexts">
   
-  <sup>' . $row['verse'] . '</sup><span  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
-
-}
-mysqli_close($conn);
-?>
-<ul class="pagination">
-<li><a href="?page=1&q=<?php echo $q?>">First</a></li>
-<li class="<?php if($page <= 1){ echo 'disabled'; } ?>">
-  <a href="<?php if($page <= 1){ echo '#'; } else { echo "?page=".($page - 1).'&q='.$q; } ?>">Prev</a>
-</li>
-<li class="<?php if($page >= $total_pages){ echo 'disabled'; } ?>">
-  <a href="<?php if($page >= $total_pages){ echo '#'; } else { echo "?page=".($page + 1).'&q='.$q; } ?>">Next</a>
-</li>
-<li><a href="?page=<?php echo $total_pages.'&q='.$q; ?>">Last</a></li>
-</ul>
-
-<!-- textos dos versiculo -->
+  <sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></p><hr>';
+endforeach;
+?><!-- textos dos versiculo -->
 
 
 </div>
