@@ -21,14 +21,14 @@ input, select, textarea{
     color: blue;
 }
 .footersearch {
-    /* background-color: DarkSlateBlue; */
+    background-color: DarkSlateBlue;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     bottom: 0;
     height: 50;
-    /* padding-top: 5; */
+    padding-top: 8;
 
 
 }
@@ -173,7 +173,7 @@ endforeach;
 
 </body>
 
-<br><br>
+<br><br><br><br>
 
 <div class="footersearch"  align="center">
 <form action="busca.php">

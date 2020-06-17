@@ -186,6 +186,8 @@ require_once 'dbconnect.php';
 $q = $_GET['q']; //book
 ?>
 
+<h4> <a href="index.php"><< Voltar</a></h4>
+
 <div align="center">
 <div align="left">
 
