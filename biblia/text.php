@@ -17,6 +17,20 @@
 
 <style>
 
+#closeInter {
+  cursor:pointer;
+  text-align: center;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 40;
+  color:red;
+  background: #f0e68c;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .naoSelecionavel {
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -265,8 +279,6 @@ foreach($verses as $regVerses):
 endforeach; 
 ?>
 
-
-
 </div>
 </div>
 </div>
@@ -340,7 +352,7 @@ $back = $c -1;
 
 
 <script>
-// Open div od verse
+// Open div of verse
 $(function($){   
 	$("#versiculos").click(function() {
     document.getElementById('noScroll').style.overflow = "hidden";
@@ -402,7 +414,6 @@ $('#holdBtn').on("mousedown",function(){
 </script>
 
 <div id="interlinear" class="inter">
-
 </div>
 
 <!-- <button class="holdBtn" id="holdBtn">Teste de long click</button> -->
@@ -440,11 +451,11 @@ document.getElementById('noScroll').style.overflow = "hidden";
 
 
 // close div interlinear
-$( "#interlinear" ).click(function() {
-  document.getElementById('noScroll').style.overflow = "initial";
-  $(".inter").css('width','90%');
-					$(".inter").animate({
-					  width: "toggle"
-					});
-});
+// $( "#interlinear" ).click(function() {
+//   document.getElementById('noScroll').style.overflow = "initial";
+//   $(".inter").css('width','90%');
+// 					$(".inter").animate({
+// 					  width: "toggle"
+// 					});
+// });
 </script>
