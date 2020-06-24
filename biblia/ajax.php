@@ -28,6 +28,7 @@ endforeach;
 <br>
 <div id=closeInter><strong>X</strong></div>
 <script>
+
 // close div interlinear
 $( "#closeInter" ).click(function() {
   document.getElementById('noScroll').style.overflow = "initial";

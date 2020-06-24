@@ -31,6 +31,20 @@
   transform: translateX(-50%);
 }
 
+#closeDivVerses {
+  cursor:pointer;
+  text-align: center;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 40;
+  color:red;
+  background: #f0e68c;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .naoSelecionavel {
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -278,8 +292,9 @@ foreach($verses as $regVerses):
   echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a> ';
 endforeach; 
 ?>
-
+<div id=closeDivVerses><strong>X</strong></div>
 </div>
+
 </div>
 </div>
 
@@ -357,6 +372,7 @@ $(function($){
 	$("#versiculos").click(function() {
     document.getElementById('noScroll').style.overflow = "hidden";
 
+    $(".sidenav").css('width','100%');
 		$(".sidenav").animate({
       width: "toggle"
     });
@@ -446,8 +462,6 @@ document.getElementById('noScroll').style.overflow = "hidden";
           }, 200);
   });
 })
-
-
 
 
 // close div interlinear
