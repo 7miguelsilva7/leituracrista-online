@@ -256,7 +256,7 @@ foreach($dados as $reg):
   $totalCaps = $reg->totalCaps;
   // echo '<div style="cursor:pointer" id="divVersesTexts" ><a class="verseText" style="color:black" href="&verse='. $reg->verse .'"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
 
-  echo '<div class="verseText" style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->pgrph . $reg->text . '</span></div></a></p>';
+  echo '<div class="verseText" style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
 endforeach;
 ?><!-- textos dos versiculo -->
 
