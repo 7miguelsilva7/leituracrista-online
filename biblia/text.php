@@ -294,6 +294,8 @@ endforeach;
 ?>
 <br>
 <br>
+<br>
+<br>
 
 <div id=closeDivVerses><strong>X</strong></div>
 </div>
