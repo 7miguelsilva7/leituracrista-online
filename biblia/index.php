@@ -46,8 +46,7 @@ require_once 'dbconnect.php';
   width: 70;
   height: 60;
   border-style: solid;
-  background: white;
-  
+  background: white;  
   
 }
 
@@ -100,7 +99,7 @@ require_once 'dbconnect.php';
 @media screen and (max-width: 600px) {
   body {
   
-  margin: 15px;
+  margin: 1px;
   margin-top: 10px;
   }
   .abr{
@@ -110,6 +109,9 @@ require_once 'dbconnect.php';
     display:none;
   }
 }
+
+
+
 a:link{
 text-decoration: none;
 }
@@ -117,7 +119,7 @@ text-decoration: none;
 div.book{
   columns: 150px 4;
   font-size: 30px;
- line-height: 1.9;
+  line-height: 1.9;
 }
 
 </style>
@@ -172,9 +174,9 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):
   // echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button class="btn-default"> ' . $reg->abr . '</button></a><br>';   
   if ($reg->testament == 1){
-  echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button  class="btn-default naoSelecionavel"> ' . $reg->abr . '</button> </a>';}
+  echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button  class="btn-default naoSelecionavel">' . $reg->abr . '</button></a>';}
   if ($reg->testament == 2){
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button style="color:blue" class="btn-default naoSelecionavel"> ' . $reg->abr . '</button> </a>';}
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button style="color:blue" class="btn-default naoSelecionavel">' . $reg->abr . '</button></a>';}
 endforeach;
 ?>
 </div>

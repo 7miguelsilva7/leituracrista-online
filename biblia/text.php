@@ -146,7 +146,7 @@ button.verses{
 }
 
 @media screen and (max-width: 800px) {
-  body {
+  body {  
   
   margin: 50px;
   margin-top: 10px;
@@ -157,7 +157,7 @@ button.verses{
 @media screen and (max-width: 600px) {
   body {
   
-  margin: 15px;
+  /* margin: 1px; */
   margin-top: 10px;
   }
 }
@@ -289,7 +289,7 @@ $stmV = $PDO->prepare($sqlVerses);
 $stmV->execute();  
 $verses = $stmV->fetchAll(PDO::FETCH_OBJ); 
 foreach($verses as $regVerses):  
-  echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a> ';
+  echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a>';
 endforeach; 
 ?>
 <div id=closeDivVerses><strong>X</strong></div>
