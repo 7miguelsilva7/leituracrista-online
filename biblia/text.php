@@ -292,6 +292,9 @@ foreach($verses as $regVerses):
   echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a>';
 endforeach; 
 ?>
+<br>
+<br>
+
 <div id=closeDivVerses><strong>X</strong></div>
 </div>
 
