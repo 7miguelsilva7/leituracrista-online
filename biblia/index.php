@@ -114,6 +114,7 @@ require_once 'dbconnect.php';
 
 a:link{
 text-decoration: none;
+active: 
 }
 
 div.book{

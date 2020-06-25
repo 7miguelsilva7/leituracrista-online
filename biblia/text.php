@@ -157,7 +157,7 @@ button.verses{
 @media screen and (max-width: 600px) {
   body {
   
-  /* margin: 1px; */
+  margin: 1px;
   margin-top: 10px;
   }
 }
