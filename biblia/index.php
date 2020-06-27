@@ -18,6 +18,10 @@ require_once 'dbconnect.php';
 
 <style>
 
+#versionsInfo{
+  padding:10;
+}
+
 .footersearch {
     background-color: DarkSlateBlue;
     position: fixed;
@@ -168,7 +172,7 @@ Bíblia Interlinear <br>
 <!-- abreviate books names -->
 <div align="center" class="abr naoSelecionavel">
 <?php
-$sql = "SELECT abr, ord, book, testament FROM biblias where `version`= 'ADO' group by ord order by ord";  
+$sql = "SELECT abr, ord, book, testament FROM biblias where `version`= 'ARC69' group by ord order by ord";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
@@ -185,6 +189,7 @@ endforeach;
 </div >
 
 <hr>
+
 <!-- versions informations -->
 <div id="versionsInfo">
 Versões
@@ -211,6 +216,7 @@ Versões
 
 </body>
 
+<br><br>
 <br><br>
 
 <div class="footersearch"  align="center">
