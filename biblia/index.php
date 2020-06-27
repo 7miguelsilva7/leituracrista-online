@@ -150,7 +150,7 @@ Bíblia Interlinear <br>
 <!-- Complete books Names -->
 <div align="left" class="book naoSelecionavel">
 <?php
- $sql = "SELECT ord, book, testament FROM biblias where `version`= 'ADO' group by ord order by ord";  
+ $sql = "SELECT ord, book, testament FROM biblias where `version`= 'ARC69' group by ord order by ord";  
  $stm = $PDO->prepare($sql);  
  $stm->execute();  
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
@@ -184,9 +184,34 @@ endforeach;
 <!-- abreviate books names -->
 </div >
 
+<hr>
+<!-- versions informations -->
+<div id="versionsInfo">
+Versões
+<p></p>
+(<b>ARC69</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1969).
+<p></p>
+(<b>ARC95</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1995). 
+<p></p>
+(<b>ARF</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Corrigida e Revisada Fiel ao Texto Original - Sociedade Bíblica Trinitariana do Brasil. 
+<p></p>
+(<b>AIB</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no Século XVII (ca. 1680) Edição Revisada pela Imprensa Bíblica Brasileira em 1967.
+<p></p>
+(<b>TB</b>) Bíblia Sagrada, traduzida entre os anos de 1902 e 1917, sob a coordenação do Rev. William Cabell Brown, erudito na área das línguas bíblicas, e Eduardo Carlos Pereira, famoso filólogo da Língua Portuguesa, ambos prestimosos colaboradores da obra bíblica no Brasil, a serviço da Sociedade Bíblica Britânica e Estrangeira (de Londres) e da Sociedade Bíblica Americana (de Nova Iorque).
+<p></p>
+(<b>ARA</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Atualizada (1959, 1993).
+ <p></p>
+(<b>VC</b>) Versão Católica, traduzida dos originais dos Monges de Maredsous (Bélgica) pelo Centro Bíblico Católico, revisada pelo Frei João José Pedreira de Castro em 1959.
+<p></p>
+(<b>JND</b>) A New translation from the original languages by J.N.DARBY
+<p></p>
+(<b>KJV</b>) 1611 Authorised Version To the Most High and Mighty Prince JAMES, by the grace of God, King of Great Britian, France, and Ireland, Defender of the Faith.
+
+</div>
+
 </body>
 
-<br><br><br><br>
+<br><br>
 
 <div class="footersearch"  align="center">
 <form action="busca.php?pageno=1">

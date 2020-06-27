@@ -122,7 +122,7 @@ echo '<title>' . $b . '</title>';
 // connetion
 require_once 'dbconnect.php';  
 $sql = "SELECT book, ord, cap FROM biblias 
-where `version`= 'ADO' and ord=$o
+where `version`= 'ARC69' and ord=$o
 group by cap";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
