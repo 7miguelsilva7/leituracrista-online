@@ -218,6 +218,7 @@ require_once 'dbconnect.php';
 $b = $_GET['b']; //book
 $c = $_GET['c']; //cap
 $o = $_GET['o']; //Order
+$v = $_GET['v']; //Order
 ?>
 
 <!-- <div align="center">
@@ -233,7 +234,7 @@ $o = $_GET['o']; //Order
 <?php
 
 echo '<title>' . $b . ' ' . $c . '</title>';
-echo '<h2>' . $b . ' ' . $c . '</h2>';
+echo '<h2>('. $v .') '. $b . ' ' . $c . '</h2>';
 
 ?><br>
 
@@ -324,15 +325,14 @@ $back = $c -1;
 
 // navegate on caps
   function backCap(){
-  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $back ?>"
+  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $back . '&v=' . $v ?>"
   }
   
   function nextCap(){
-  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $next ?>"
+  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $next . '&v=' . $v ?>"
   }
 </script>
 <br>
-
 <!-- navegate on capters -->
 <div align="center">
 
