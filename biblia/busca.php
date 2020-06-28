@@ -232,7 +232,7 @@ if (mysqli_connect_errno()){
 }
 
 $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q')
-and version='ADO'";
+and version='ARC69'";
 $result = mysqli_query($conn,$total_pages_sql);
 $total_rows = mysqli_fetch_array($result)[0];
 // echo $total_rows;
