@@ -237,13 +237,13 @@ $result = mysqli_query($conn,$total_pages_sql);
 $total_rows = mysqli_fetch_array($result)[0];
 // echo $total_rows;
 $total_pages = ceil($total_rows / $no_of_records_per_page);
-$sql = "SELECT ord, book, cap, verse, text FROM biblias WHERE MATCH(text) AGAINST('$q')
+$sql = "SELECT ord, book, cap, verse, version, text FROM biblias WHERE MATCH(text) AGAINST('$q')
 and version='ARC69' LIMIT $offset, $no_of_records_per_page";
 $res_data = mysqli_query($conn,$sql);
 while($row = mysqli_fetch_array($res_data)){
 
   echo '
-  <a href="text.php?o=' . $row['ord'] . '&b=' . $row['book'] . '&c=' . $row['cap'] . '&v=' . $reg->version . '&v=#verse' . $row['verse'] . '" style="font-size:18px">'.$row['book']. ' '.$row['cap'].'</a></p>
+  <a href="text.php?o=' . $row['ord'] . '&b=' . $row['book'] . '&c=' . $row['cap'] . '&v=' . $row->version . '#verse' . $row['verse'] . '" style="font-size:18px">'.$row['book']. ' '.$row['cap'].'</a></p>
   <div class="verseText" id="divVersesTexts">
   
   <sup>' . $row['verse'] . '</sup><span  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
