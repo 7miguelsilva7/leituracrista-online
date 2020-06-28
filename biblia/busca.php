@@ -243,7 +243,7 @@ $res_data = mysqli_query($conn,$sql);
 while($row = mysqli_fetch_array($res_data)){
 
   echo '
-  <a href="text.php?o=' . $row['ord'] . '&b=' . $row['book'] . '&c=' . $row['cap'] . '&v=' . $row->version . '#verse' . $row['verse'] . '" style="font-size:18px">'.$row['book']. ' '.$row['cap'].'</a></p>
+  <a href="text.php?o=' . $row['ord'] . '&b=' . $row['book'] . '&c=' . $row['cap'] . '&v=' . $row['version'] . '#verse' . $row['verse'] . '" style="font-size:18px">'.$row['book']. ' '.$row['cap'].'</a></p>
   <div class="verseText" id="divVersesTexts">
   
   <sup>' . $row['verse'] . '</sup><span  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
