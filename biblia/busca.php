@@ -18,6 +18,20 @@
 
 <style>
 
+
+.footersearch {
+    background-color: DarkSlateBlue;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: 0;
+    height: 50;
+    padding-top: 8;
+
+
+}
+
 .naoSelecionavel {
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -267,4 +281,10 @@ mysqli_close($conn);
 
 
 </div>
+</div>
+
+<div class="footersearch"  align="center">
+<form action="busca.php?pageno=1">
+  <input style="" name="q" autofocus placeholder="Busca">
+</form>
 </div>
