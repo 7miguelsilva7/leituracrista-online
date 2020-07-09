@@ -279,7 +279,6 @@ mysqli_close($conn);
 </div>
 <!-- textos dos versiculo -->
 
-
 </div>
 </div>
 
