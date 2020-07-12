@@ -20,7 +20,7 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 35%;
+  width: 40%;
   background-color: DarkSlateBlue;
   color: white;
   text-align: center;
@@ -36,7 +36,7 @@
     position: fixed;
     /* left: 33.5%; */
     bottom: 0;
-    width: 30%;
+    width: 20%;
     background-color: red;
     color: white;
     text-align: center;
@@ -55,7 +55,7 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 35%;
+  width: 40%;
   background-color: DarkSlateBlue;
   color: white;
   text-align: center;
