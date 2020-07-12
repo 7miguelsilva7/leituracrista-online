@@ -139,7 +139,6 @@ $(function($){
 $(function($){   
 	$("#forwardVerse").click(function() {
 
-
     var book='<?php echo $book ?>';
     var order='<?php echo $order ?>';
     var cap='<?php echo $cap ?>';
@@ -148,7 +147,9 @@ $(function($){
 		// $(".inter").css('width','100%');
 		// 			$(".inter").animate({
 		// 			  width: "toggle"
-		// 			});
+    // 			});
+    $("#interlinear").animate({ scrollTop: 0 }, "fast");
+    
   });
 })
 

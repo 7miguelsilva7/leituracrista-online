@@ -448,10 +448,12 @@ document.getElementById('noScroll').style.overflow = "hidden";
     var cap='<?php echo $c ?>';
     var verse= v.replace('verse', '');
     $("#interlinear").load("ajax.php", {"book": book, "order": order, "cap": cap, "verse": verse,});
-		$(".inter").css('width','100%');
+    $(".inter").css('width','100%');
 					$(".inter").animate({
-					  width: "toggle"
-					});
+            width: "toggle"
+          });
+          $("#interlinear").animate({ scrollTop: 0 }, "fast");
+
           }, 200);
   });
 })
