@@ -17,19 +17,7 @@
 
 <style>
 
-#closeInter {
-  cursor:pointer;
-  text-align: center;
-  position:fixed;
-  bottom: 0;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 40;
-  color:red;
-  background: #f0e68c;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 
 #closeDivVerses {
   cursor:pointer;
@@ -342,7 +330,7 @@ $back = $c -1;
   }
 
   if ($c < $rowcount){
-    echo ' <button class="btn-defaultCap" onclick="nextCap()">Próximo >></button>';
+    echo '<button class="btn-defaultCap" onclick="nextCap()">Próximo >></button>';
   }
   ?>
 
