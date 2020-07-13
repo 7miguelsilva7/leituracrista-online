@@ -124,7 +124,7 @@ button.verses{
   margin-top: 10px;
   }
   input, select, textarea{
-      color: blue;
+      color: black;
       width:50%;
       font-size:20;
   }
@@ -137,7 +137,7 @@ button.verses{
   margin-top: 10px;
   }
   input, select, textarea{
-      color: blue;
+      color: black;
       width:90%;
       font-size:20;
   }
@@ -221,9 +221,8 @@ $q = $_GET['q']; //book
 
 <?php
 
-  // connection
-  require_once 'dbconnect.php';  
-
+// connection
+require_once 'dbconnect.php';  
 
 if (isset($_GET['page'])) {
   $page = $_GET['page'];

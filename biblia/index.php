@@ -73,7 +73,7 @@ require_once 'dbconnect.php';
     display:none;
   }
     input, select, textarea{
-      color: blue;
+      color: black;
       width:50%;
       font-size:20;
   }
@@ -92,7 +92,7 @@ require_once 'dbconnect.php';
     display:none;
   }
   input, select, textarea{
-    color: blue;
+    color: black;
     width:90%;
     font-size:20;
 }
