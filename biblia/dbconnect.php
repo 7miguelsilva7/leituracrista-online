@@ -16,4 +16,10 @@ if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
 }
 
 $PDO = new PDO( 'mysql:host=' . $host . ';dbname=' . $db, $username, $password);
+
+$mysqli = new mysqli($host, $username, $password, $db);
+if ($mysqli->connect_errno) {
+    echo "Falha ao conectar: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+}
+
 ?>

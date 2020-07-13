@@ -75,7 +75,7 @@ a:active {
   font-size:20px;
   opacity: 0.95;
 }
-
+/* 
 #interlinear {
 	font-family:Verdana, Geneva, sans-serif;
 	display:none;
@@ -93,17 +93,16 @@ a:active {
   float:left;
   overflow: auto;
   background: #f0e68c;  
-  /* background: white;   */
   font-size:20px;
   opacity: 0.95;
-}
-
+} */
+/* 
 .btn-default {
   height: 60;
   background: transparent;
   border-style: solid;
   width:60;
-  }
+  } */
 
 .btn-defaultCap {
   height: 40;
@@ -125,6 +124,11 @@ button.verses{
   margin: 100px;
   margin-top: 10px;
   }
+  input, select, textarea{
+      color: blue;
+      width:50%;
+      font-size:20;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -132,6 +136,11 @@ button.verses{
   
   margin: 50px;
   margin-top: 10px;
+  }
+  input, select, textarea{
+      color: blue;
+      width:90%;
+      font-size:20;
   }
 }
 
@@ -213,22 +222,6 @@ $q = $_GET['q']; //book
   // connection
   require_once 'dbconnect.php';  
 
-// textos dos versiculo
-// $sql = "SELECT ord, book, cap, verse, text FROM biblias WHERE MATCH(text) AGAINST('$q')
-// and version='ADO'
-// -- ORDER BY text
-// ";  
-// $stm = $PDO->prepare($sql);  
-// $stm->execute();  
-// $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
-// foreach($dados as $reg):  
-//   echo '
-//   <a href="text.php?o=' . $row['ord'] . '&b=' . $row['book'] . '&c=' . $row['cap'] . '&v=#verse' . $row['verse'] . '" style="font-size:18px">'.$row['book']. ' '.$row['cap'].'</a></p>
-//   <div class="verseText" id="divVersesTexts">
-  
-//   <sup>' . $row['verse'] . '</sup><span  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
-// endforeach;
-
 
 if (isset($_GET['page'])) {
   $page = $_GET['page'];
@@ -238,22 +231,22 @@ if (isset($_GET['page'])) {
 $no_of_records_per_page = 10;
 $offset = ($page-1) * $no_of_records_per_page;
 
-$conn=mysqli_connect("localhost","u378308740_biblia","gogo1352","u378308740_biblia");
-// Check connection
-if (mysqli_connect_errno()){
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  die();
-}
+// $mysqli=mysqli_connect("localhost","u378308740_biblia","gogo1352","u378308740_biblia");
+// // Check connection
+// if (mysqli_connect_errno()){
+//   echo "Failed to connect to MySQL: " . mysqli_connect_error();
+//   die();
+// }
 
 $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q')
 and version='ARC69'";
-$result = mysqli_query($conn,$total_pages_sql);
+$result = mysqli_query($mysqli,$total_pages_sql);
 $total_rows = mysqli_fetch_array($result)[0];
 // echo $total_rows;
 $total_pages = ceil($total_rows / $no_of_records_per_page);
 $sql = "SELECT ord, book, cap, verse, version, text FROM biblias WHERE MATCH(text) AGAINST('$q')
 and version='ARC69' LIMIT $offset, $no_of_records_per_page";
-$res_data = mysqli_query($conn,$sql);
+$res_data = mysqli_query($mysqli,$sql);
 while($row = mysqli_fetch_array($res_data)){
 
   echo '
@@ -263,7 +256,7 @@ while($row = mysqli_fetch_array($res_data)){
   <sup>' . $row['verse'] . '</sup><span  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
 
 }
-mysqli_close($conn);
+mysqli_close($mysqli);
 ?>
 <div align="center">
 <ul class="pagination">

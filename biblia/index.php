@@ -73,11 +73,11 @@ require_once 'dbconnect.php';
   .abr{
     display:none;
   }
-  input, select, textarea{
-    color: blue;
-    width:50%;
-    font-size:20;
-}
+    input, select, textarea{
+      color: blue;
+      width:50%;
+      font-size:20;
+  }
 
 
 }
