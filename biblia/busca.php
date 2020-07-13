@@ -20,16 +20,15 @@
 
 
 .footersearch {
-    background-color: DarkSlateBlue;
+    background-color: gray;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
+    top: 0;
     height: 50;
     padding-top: 8;
-
-
 }
 
 .naoSelecionavel {
@@ -208,6 +207,9 @@ div.cap{
 $q = $_GET['q']; //book
 ?>
 
+<br>
+<br>
+
 <h4> <a href="index.php"><< Voltar</a></h4>
 
 <div align="center">
@@ -231,12 +233,6 @@ if (isset($_GET['page'])) {
 $no_of_records_per_page = 10;
 $offset = ($page-1) * $no_of_records_per_page;
 
-// $mysqli=mysqli_connect("localhost","u378308740_biblia","gogo1352","u378308740_biblia");
-// // Check connection
-// if (mysqli_connect_errno()){
-//   echo "Failed to connect to MySQL: " . mysqli_connect_error();
-//   die();
-// }
 
 $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q')
 and version='ARC69'";
@@ -274,6 +270,9 @@ mysqli_close($mysqli);
 
 </div>
 </div>
+
+<br><br>
+<br><br>
 
 <div class="footersearch"  align="center">
 <form action="busca.php?pageno=1">
