@@ -187,10 +187,10 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):
   // echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button class="btn-default"> ' . $reg->abr . '</button></a><br>';   
   if ($reg->testament == 1){
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" class="btn" style="font-size:15px;" >' . $reg->abr . '</a>';}
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" class="btn" style="font-size:17px;" >' . $reg->abr . '</a>';}
   // echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="line-height: 2;font-size:20px;"><button style="color:blue"  class="btn-default naoSelecionavel">' . $reg->abr . '</button></a>';}
   if ($reg->testament == 2){
-    echo '<a style="color:blue" href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" class="btn" style="font-size:15px;" >' . $reg->abr . '</a>';}
+    echo '<a style="color:blue" href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" class="btn" style="font-size:17px;" >' . $reg->abr . '</a>';}
 endforeach;
 ?>
 </div>
