@@ -29,10 +29,11 @@
 
 .btn-default
 {
-  width: 70;
-  height: 60;
-  border-style: solid;
+  width: 50;
+  height: 45;
+  border-style: none;
   background: white;
+  color: blue; 
   
 }
 
