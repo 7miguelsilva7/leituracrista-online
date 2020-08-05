@@ -56,7 +56,7 @@ require_once 'dbconnect.php';
 .btn
 {
   width: 50;
-  height: 40;
+  height: 42;
   border-style: solid;
   background: white;  
   
