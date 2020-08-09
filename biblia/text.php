@@ -263,8 +263,6 @@ foreach($dados as $reg):
 endforeach;
 ?><!-- textos dos versiculo -->
 
-
-
 <!-- div de versiculos -->
 <div align="center" id="verses" class="sidenav naoSelecionavel">
   <h4>Versículos</h4>
