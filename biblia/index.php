@@ -215,6 +215,8 @@ Versões
 <p></p>
 (<b>ARA</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Atualizada (1959, 1993).
  <p></p>
+(<b>JER</b>) A Bíblia de Jerusalém é a edição brasileira (1981, com revisão e atualização na edição de 2002) da edição francesa Bible de Jérusalem, que é assim chamada por ser fruto de estudos feitos pela Escola Bíblica de Jerusalém, em francês: École Biblique de Jérusalem.
+ <p></p> 
 (<b>VC</b>) Versão Católica, traduzida dos originais dos Monges de Maredsous (Bélgica) pelo Centro Bíblico Católico, revisada pelo Frei João José Pedreira de Castro em 1959.
 <p></p>
 (<b>JND</b>) A New translation from the original languages by J.N.DARBY
