@@ -27,14 +27,13 @@
     /* cursor: default; */
 }
 
-.btn-default
+.btn
 {
   width: 50;
   height: 45;
   border-style: none;
   background: white;
-  color: blue; 
-  
+  color: blue;  
 }
 
 span.livros{
@@ -130,7 +129,7 @@ $stm->execute();
 // $rowcount =  $stm->rowCount();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):
-   echo '<a href="text.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '&v=' . $reg->version .'" style="line-height: 2;font-size:20px"><button class="btn-default">' . $reg->cap . '</button></a>';
+   echo '<a href="text.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '&v=' . $reg->version .'" style="line-height: 2;font-size:20px" class="btn">' . $reg->cap . '</a>';
 endforeach;
 ?>
 </div>

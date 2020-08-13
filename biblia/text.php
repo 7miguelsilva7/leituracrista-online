@@ -257,9 +257,8 @@ $stm->execute();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
-  // echo '<div style="cursor:pointer" id="divVersesTexts" ><a class="verseText" style="color:black" href="&verse='. $reg->verse .'"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
-
-  echo '<div class="verseText" style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>'. $reg->abr . ' ' . $reg->cap . ':</sup><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
+  // echo '<div class="verseText"  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>'. $reg->abr . ' ' . $reg->cap . ':</sup><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
+  echo '<div  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup class="verseText"><b style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</b></sup><span onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();" id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
 endforeach;
 ?><!-- textos dos versiculo -->
 
@@ -396,7 +395,13 @@ document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
 }
 }
 
-
+// Ao clicar no texto do versículo
+function highlightVerseText(){
+// setTimeout(highlightVerse, 1000);
+var v = 'verse' + localStorage.getItem('verseInterlinear');
+document.getElementById(v).style.backgroundColor = "#ffffc7";
+// alert(v);
+}
 
 // highlightVerse
 $( document ).ready(function() {

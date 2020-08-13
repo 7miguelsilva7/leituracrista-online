@@ -44,24 +44,6 @@ require_once 'dbconnect.php';
     /* cursor: default; */
 }
 
-.btn-default
-{
-  width: 70;
-  height: 60;
-  border-style: solid;
-  background: white;  
-  
-}
-
-.btn
-{
-  width: 50;
-  height: 42;
-  border-style: solid;
-  background: white;  
-  
-}
-
 #config {
         position:fixed;
         top:50%;
@@ -74,10 +56,21 @@ require_once 'dbconnect.php';
 
 @media screen and (max-width: 2000px) {
   body {
+
+      
   
   margin: 100px;
   margin-top: 10px;
   }
+
+  .btn
+{
+  width: 50;
+  height: 35;
+  border-style: solid;
+  background: white;  
+  
+}
   .abr{
     display:none;
   }
@@ -97,6 +90,14 @@ require_once 'dbconnect.php';
   margin-top: 10px;
 
   }
+  .btn
+{
+  width: 50;
+  height: 35;
+  border-style: solid;
+  background: white;  
+  
+}
   .abr{
     display:none;
   }
@@ -114,6 +115,16 @@ require_once 'dbconnect.php';
   margin: 1px;
   margin-top: 10px;
   }
+
+  .btn
+{
+  width: 50;
+  height: 42;
+  border-style: solid;
+  background: white;  
+  
+}
+
   .abr{
     display:initial;
   }
@@ -168,8 +179,9 @@ Bíblia Interlinear <br>
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
  
  foreach($dados as $reg): 
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button class="naoSelecionavel" style="width:100%;text-align:left;border:0; background:white; text-overflow: clip clip"> ' . $reg->book . '</button></a><br>';   
- endforeach;
+    // echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button class="naoSelecionavel" style="width:100%;text-align:left;border:0; background:white; text-overflow: clip clip"> ' . $reg->book . '</button></a><br>';   
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" class="btn" style="font-size:17px;width:100%;text-align:left;text-overflow: clip clip;border:0" >' . $reg->book . '</a><br>';
+  endforeach;
   ?> 
 </div>
 
