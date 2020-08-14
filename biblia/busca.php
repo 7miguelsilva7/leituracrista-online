@@ -19,7 +19,7 @@
 <style>
 
 
-.footersearch {
+.Topsearch {
     background-color: gray;
     position: fixed;
     left: 50%;
@@ -74,34 +74,7 @@ a:active {
   font-size:20px;
   opacity: 0.95;
 }
-/* 
-#interlinear {
-	font-family:Verdana, Geneva, sans-serif;
-	display:none;
-  height: 100%;
-  width: 90%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  color:#000;
-  padding:3%;
-  float:left;
-  overflow: auto;
-  background: #f0e68c;  
-  font-size:20px;
-  opacity: 0.95;
-} */
-/* 
-.btn-default {
-  height: 60;
-  background: transparent;
-  border-style: solid;
-  width:60;
-  } */
+
 
 .btn-defaultCap {
   height: 40;
@@ -163,9 +136,6 @@ p {
 
 }
 
-/* span.verse {
-  font-size: 12px;
-} */
 
 span.navFooter{
   font-size:14;
@@ -233,7 +203,8 @@ $no_of_records_per_page = 10;
 $offset = ($page-1) * $no_of_records_per_page;
 
 
-$total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q')
+// $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='ARC69'";
+$total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') 
 and version='ARC69'";
 $result = mysqli_query($mysqli,$total_pages_sql);
 $total_rows = mysqli_fetch_array($result)[0];
@@ -273,8 +244,8 @@ mysqli_close($mysqli);
 <br><br>
 <br><br>
 
-<div class="footersearch"  align="center">
+<div class="Topsearch"  align="center">
 <form action="busca.php?pageno=1">
-  <input style="" name="q" autofocus placeholder="Busca">
+  <input style="" name="q" value="<?php echo $q?>" autofocus placeholder="Busca">
 </form>
 </div>

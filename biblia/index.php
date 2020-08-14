@@ -22,7 +22,7 @@ require_once 'dbconnect.php';
   padding:10;
 }
 
-.footersearch {
+.Topsearch {
     background-color: gray;
     position: fixed;
     left: 50%;
@@ -212,7 +212,7 @@ endforeach;
 <hr>
 
 <!-- versions informations -->
-<div id="versionsInfo">
+<div style="font-size:16" id="versionsInfo">
 Versões
 <p></p>
 (<b>ARC69</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1969).
@@ -234,16 +234,14 @@ Versões
 (<b>JND</b>) A New translation from the original languages by J.N.DARBY
 <p></p>
 (<b>KJV</b>) 1611 Authorised Version To the Most High and Mighty Prince JAMES, by the grace of God, King of Great Britian, France, and Ireland, Defender of the Faith.
-
 </div>
-
 </body>
 
 <br><br>
 <br><br>
 
-<div class="footersearch"  align="center">
-<form action="busca.php?pageno=1">
+<div class="Topsearch"  align="center">
+<form action="busca.php?page=1">
   <input style="" name="q" autofocus placeholder="Busca">
 </form>
 </div>
