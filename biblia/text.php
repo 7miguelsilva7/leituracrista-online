@@ -248,7 +248,6 @@ echo '<title>' . $b . ' ' . $c . '</title>';
 echo '<h2>('. $v .') '. $b . ' ' . $c . '</h2>';
 
 ?><br>
-<img id="resetFont" style="cursor:pointer;position:fixed;top:45px;right:10px;width:30px" src="img/reset.png" alt="Restauar Fonte">
 <?php
 
   // connection
@@ -290,8 +289,9 @@ endforeach;
 <div class="btn-container">
         <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button>
         <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button><br>
-
 </div>
+<img id="resetFont" style="cursor:pointer;position:fixed;top:45px;right:10px;width:30px" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte">
+
 <!-- textos dos versiculo -->
 
 <!-- div de versiculos -->
