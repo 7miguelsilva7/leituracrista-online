@@ -131,6 +131,8 @@ button.verses{
   margin: 100px;
   margin-top: 10px;
   }
+  
+
 }
 
 @media screen and (max-width: 800px) {
@@ -139,6 +141,8 @@ button.verses{
   margin: 50px;
   margin-top: 10px;
   }
+  
+
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -148,6 +152,15 @@ button.verses{
   margin: 10px;
   margin-top: 10px;
   }
+  .btn-container
+  {
+    display:none;
+  }
+  #resetFont
+  {
+    display:none;
+  }
+
 }
 
 
@@ -193,11 +206,21 @@ text-decoration: none;
 div.cap{
   columns: 50px 20;
 }
+.btn-container
+            {
+                position: fixed;
+                right: 10px;
+                top: 10px
+                
+            }
 </style>
 
 </head>
 
 <body id="noScroll">
+
+
+
 <?php
 
 require_once 'dbconnect.php';  
@@ -225,7 +248,7 @@ echo '<title>' . $b . ' ' . $c . '</title>';
 echo '<h2>('. $v .') '. $b . ' ' . $c . '</h2>';
 
 ?><br>
-
+<img id="resetFont" style="cursor:pointer;position:fixed;top:45px;right:10px;width:30px" src="img/reset.png" alt="Restauar Fonte">
 <?php
 
   // connection
@@ -247,6 +270,7 @@ $rowcount =  $stm->rowCount();
 
 
 // textos dos versiculo
+
 $sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, abr, text, pgrph FROM biblias 
 where `version`= 'ARC69' 
 and ord=$o
@@ -258,9 +282,17 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
   // echo '<div class="verseText"  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>'. $reg->abr . ' ' . $reg->cap . ':</sup><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
-  echo '<div  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><sup class="verseText"><b style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</b></sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
+  echo '<div  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><sup class="verseText"><b style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</b></sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
+?>
+<?php
 endforeach;
-?><!-- textos dos versiculo -->
+?>
+<div class="btn-container">
+        <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button>
+        <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button><br>
+
+</div>
+<!-- textos dos versiculo -->
 
 <!-- div de versiculos -->
 <div align="center" id="verses" class="sidenav naoSelecionavel">
@@ -408,8 +440,12 @@ document.getElementById(v).style.backgroundColor = "";
 // alert(teste);
 }
 
-// highlightVerse
+// highlightVerse and fontSize
 $( document ).ready(function() {
+var fontSizeBible = localStorage.getItem('fontSizeBible');
+var $elemento = $("body .verseTextP");
+$elemento.css('font-size', fontSizeBible);
+
 var verse = window.location.href;
 var num = verse.split('#');
 // alert(num[1]);
@@ -466,6 +502,29 @@ document.getElementById('noScroll').style.overflow = "hidden";
   });
 })
 
+var $btnAumentar = $("#btnAumentar");
+var $btnDiminuir = $("#btnDiminuir");
+var $reset = $("#resetFont");
+var $elemento = $("body .verseTextP");
+
+function obterTamnhoFonte() {
+  return parseFloat($elemento.css('font-size'));
+}
+
+$btnAumentar.on('click', function() {
+  $elemento.css('font-size', obterTamnhoFonte() + 1);
+  localStorage.setItem('fontSizeBible', obterTamnhoFonte() + 1);
+});
+
+$btnDiminuir.on('click', function() {
+  $elemento.css('font-size', obterTamnhoFonte() - 1);
+  localStorage.setItem('fontSizeBible', obterTamnhoFonte() - 1);
+});
+
+$reset.on('click', function() {
+  $elemento.css('font-size', 20);
+  localStorage.setItem('fontSizeBible', 20);
+});
 
 // close div interlinear
 // $( "#interlinear" ).click(function() {
@@ -476,3 +535,4 @@ document.getElementById('noScroll').style.overflow = "hidden";
 // 					});
 // });
 </script>
+
