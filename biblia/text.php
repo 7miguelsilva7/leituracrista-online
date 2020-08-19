@@ -1,6 +1,10 @@
 <html>
     
 <head>
+<meta property="og:type" content="bible">
+<meta property="og:title" content="Bíblia Sagrada">
+<meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
+<meta property="og:image" content="img/bible-icon.jpg">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="img/bible-icon.jpg">
