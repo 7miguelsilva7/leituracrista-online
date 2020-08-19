@@ -291,11 +291,12 @@ foreach($dados as $reg):
 <?php
 endforeach;
 ?>
-<div class="btn-container">
-        <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button>
-        <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button><br>
+<div align="right" class="btn-container">
+        <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button></p>
+        <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button></p>
+        <img id="resetFont" style="width:30px;cursor:pointer" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte">
+
 </div>
-<img id="resetFont" style="cursor:pointer;position:fixed;top:45px;right:10px;width:30px" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte">
 
 <!-- textos dos versiculo -->
 
