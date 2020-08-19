@@ -4,10 +4,10 @@
 <meta property="og:type" content="bible">
 <meta property="og:title" content="Bíblia Sagrada">
 <meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
-<meta property="og:image" content="img/bible.jpg">
+<meta property="og:image" content="img/bible.png">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="img/bible.jpg">
+<link rel="shortcut icon" href="img/bible.png">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
