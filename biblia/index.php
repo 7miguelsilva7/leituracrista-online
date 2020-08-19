@@ -5,13 +5,13 @@ require_once 'dbconnect.php';
 <meta property="og:type" content="bible">
 <meta property="og:title" content="Bíblia Sagrada">
 <meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
-<meta property="og:image" content="img/bible-icon.jpg">
+<meta property="og:image" content="img/bible.png">
 
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bíblia Sagrada</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<link rel="shortcut icon" href="img/bible-icon.jpg">
+<link rel="shortcut icon" href="img/bible.png">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
 <link rel="stylesheet" href="main.css">
