@@ -38,7 +38,14 @@ require_once 'dbconnect.php';
     top: 0;
     height: 50;
     padding-top: 8;
+    border:0
 }
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 
 .naoSelecionavel {
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
