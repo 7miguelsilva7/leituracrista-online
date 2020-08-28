@@ -102,7 +102,7 @@ $stm = $PDO->prepare($sql);
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):
-  echo '(<b>' . $reg->version . '</b>)<span class="verse"></span><span> ' . $reg->pgrph . ' ' . $reg->text . '</span><hr>';
+  echo '</i>(<b>' . $reg->version . '</b>)<span class="verse"></span><span> ' . $reg->pgrph . ' ' . $reg->text . '</span><hr>';
 endforeach;
 ?><!-- textos dos versiculo -->
 <br>
