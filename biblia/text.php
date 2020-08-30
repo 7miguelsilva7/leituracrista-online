@@ -1,3 +1,14 @@
+<?php
+$tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
+//verifica se o cookie está definido
+if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
+  $version="ARA";
+  // setcookie("version", 'ARA', $tomorrow_cookie);
+} else {
+  $version=$_COOKIE['version'];
+}
+?>
+
 <html>
     
 <head>
@@ -263,7 +274,7 @@ echo '<h2>('. $v .') '. $b . ' ' . $c . '</h2>';
 
 // conta qtd capítulos
 $sql = "SELECT book, ord, cap FROM biblias 
-where `version`= 'ARC69' and ord=$o
+where `version`= '$version' and ord=$o
 group by cap";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
@@ -276,7 +287,7 @@ $rowcount =  $stm->rowCount();
 // textos dos versiculo
 
 $sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, abr, text, pgrph FROM biblias 
-where `version`= 'ARC69' 
+where `version`= '$version' 
 and ord=$o
 and cap=$c
 group by `verse`";  
@@ -305,7 +316,7 @@ endforeach;
   <h4>Versículos</h4>
 <?php 
 $sqlVerses = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 
-where `version`= 'ARC69' 
+where `version`= '$version' 
 and ord=$o
 and cap=$c
 group by `verse`";  

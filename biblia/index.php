@@ -1,4 +1,14 @@
 <?php
+
+$tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
+//verifica se o cookie está definido
+if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
+  $version="ARA";
+  // document.cookie = "version=ARA; expires=Thu, 31 Dec 2099 23:59:59 GMT";
+} else {
+  $version=$_COOKIE['version'];
+}
+
 require_once 'dbconnect.php';  
 ?>
 <head>
@@ -19,8 +29,6 @@ require_once 'dbconnect.php';
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
-
 
 <style>
 
@@ -162,10 +170,6 @@ div.book{
 </style>
 </head>
 
-
-
-
-
 <!-- <div class="config" style="position: fixed; cursor: pointer; width:40; height:40; top:20; right:20;"><img width="40" src="img/config.png" alt="Configurações"></div>    -->
 
 
@@ -185,15 +189,18 @@ Bíblia Interlinear <br>
 <div align="CENTER">
 <!-- Complete books Names -->
 <div align="left" class="book naoSelecionavel">
+
+
 <?php
- $sql = "SELECT ord, book, testament FROM biblias where `version`= 'ARC69' group by ord order by ord";  
+  
+ $sql = "SELECT ord, book, testament FROM biblias where `version`= '$version' group by ord order by ord";  
  $stm = $PDO->prepare($sql);  
  $stm->execute();  
  $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
  
  foreach($dados as $reg): 
     // echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" style="font-size:16px"><button class="naoSelecionavel" style="width:100%;text-align:left;border:0; background:white; text-overflow: clip clip"> ' . $reg->book . '</button></a><br>';   
-    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" class="btn" style="font-size:17px;width:100%;text-align:left;text-overflow: clip clip;border:0" >' . $reg->book . '</a><br>';
+    echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '&v=' . $version .'" class="btn" style="font-size:17px;width:100%;text-align:left;text-overflow: clip clip;border:0" >' . $reg->book . '</a><br>';
   endforeach;
   ?> 
 </div>
@@ -205,7 +212,7 @@ Bíblia Interlinear <br>
 <!-- abreviate books names -->
 <div align="center" class="abr naoSelecionavel">
 <?php
-$sql = "SELECT abr, ord, book, testament FROM biblias where `version`= 'ARC69' group by ord order by ord";  
+$sql = "SELECT abr, ord, book, testament FROM biblias where `version`= '$version' group by ord order by ord";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
@@ -217,6 +224,8 @@ foreach($dados as $reg):
   if ($reg->testament == 2){
     echo '<a href="cap.php?o=' . $reg->ord . '&b=' . $reg->book . '" class="btn" style="font-size:17px;color:blue" >' . $reg->abr . '</a>';}
 endforeach;
+
+
 ?>
 </div>
 <!-- abreviate books names -->
@@ -226,27 +235,29 @@ endforeach;
 
 <!-- versions informations -->
 <div style="font-size:16" id="versionsInfo">
+
 Versões
 <p></p>
-(<b>ARC69</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1969).
+
+(<span onClick="SetCookie('version','ARC69','365')" style="cursor:pointer"><b>ARC69</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1969).
 <p></p>
-(<b>ARC95</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1995). 
+(<span onClick="SetCookie('version','ARC95','365')" style="cursor:pointer"><b>ARC95</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1995). 
 <p></p>
-(<b>ARF</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Corrigida e Revisada Fiel ao Texto Original - Sociedade Bíblica Trinitariana do Brasil. 
+(<span onClick="SetCookie('version','ARF','365')" style="cursor:pointer"><b>ARF</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Corrigida e Revisada Fiel ao Texto Original - Sociedade Bíblica Trinitariana do Brasil. 
 <p></p>
-(<b>AIB</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no Século XVII (ca. 1680) Edição Revisada pela Imprensa Bíblica Brasileira em 1967.
+(<span onClick="SetCookie('version','AIB','365')" style="cursor:pointer"><b>AIB</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no Século XVII (ca. 1680) Edição Revisada pela Imprensa Bíblica Brasileira em 1967.
 <p></p>
-(<b>TB</b>) Bíblia Sagrada, traduzida entre os anos de 1902 e 1917, sob a coordenação do Rev. William Cabell Brown, erudito na área das línguas bíblicas, e Eduardo Carlos Pereira, famoso filólogo da Língua Portuguesa, ambos prestimosos colaboradores da obra bíblica no Brasil, a serviço da Sociedade Bíblica Britânica e Estrangeira (de Londres) e da Sociedade Bíblica Americana (de Nova Iorque).
+(<span onClick="SetCookie('version','TB','365')" style="cursor:pointer"><b>TB</b></span>) Bíblia Sagrada, traduzida entre os anos de 1902 e 1917, sob a coordenação do Rev. William Cabell Brown, erudito na área das línguas bíblicas, e Eduardo Carlos Pereira, famoso filólogo da Língua Portuguesa, ambos prestimosos colaboradores da obra bíblica no Brasil, a serviço da Sociedade Bíblica Britânica e Estrangeira (de Londres) e da Sociedade Bíblica Americana (de Nova Iorque).
 <p></p>
-(<b>ARA</b>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Atualizada (1959, 1993).
+(<span onClick="SetCookie('version','ARA','365')" style="cursor:pointer"><b>ARA</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Atualizada (1959, 1993).
  <p></p>
-(<b>JER</b>) A Bíblia de Jerusalém é a edição brasileira (1981, com revisão e atualização na edição de 2002) da edição francesa Bible de Jérusalem, que é assim chamada por ser fruto de estudos feitos pela Escola Bíblica de Jerusalém, em francês: École Biblique de Jérusalem.
+(<span onClick="SetCookie('version','JER','365')" style="cursor:pointer"><b>JER</b></span>) A Bíblia de Jerusalém é a edição brasileira (1981, com revisão e atualização na edição de 2002) da edição francesa Bible de Jérusalem, que é assim chamada por ser fruto de estudos feitos pela Escola Bíblica de Jerusalém, em francês: École Biblique de Jérusalem.
  <p></p> 
-(<b>VC</b>) Versão Católica, traduzida dos originais dos Monges de Maredsous (Bélgica) pelo Centro Bíblico Católico, revisada pelo Frei João José Pedreira de Castro em 1959.
+(<span onClick="SetCookie('version','VC','365')" style="cursor:pointer"><b>VC</b></span>) Versão Católica, traduzida dos originais dos Monges de Maredsous (Bélgica) pelo Centro Bíblico Católico, revisada pelo Frei João José Pedreira de Castro em 1959.
 <p></p>
-(<b>JND</b>) A New translation from the original languages by J.N.DARBY
+(<span onClick="SetCookie('version','JND','365')" style="cursor:pointer"><b>JND</b></span>) A New translation from the original languages by J.N.DARBY
 <p></p>
-(<b>KJV</b>) 1611 Authorised Version To the Most High and Mighty Prince JAMES, by the grace of God, King of Great Britian, France, and Ireland, Defender of the Faith.
+(<span onClick="SetCookie('version','KJV','365')" style="cursor:pointer"><b>KJV</b></span>) 1611 Authorised Version To the Most High and Mighty Prince JAMES, by the grace of God, King of Great Britian, France, and Ireland, Defender of the Faith.
 </div>
 </body>
 
@@ -268,5 +279,16 @@ Versões
     });
 	});
   })
+
+  function SetCookie(c_name,value,expiredays)
+	{
+		var exdate=new Date()
+		exdate.setDate(exdate.getDate()+expiredays)
+		document.cookie=c_name+ "=" +escape(value)+
+		((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+    window.scrollTo(0, 0); 
+    location.reload();
+
+	}
+
 </script>
-  

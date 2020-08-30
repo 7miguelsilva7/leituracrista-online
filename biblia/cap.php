@@ -1,3 +1,14 @@
+<?php
+$tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
+//verifica se o cookie está definido
+if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
+  $version="ARA";
+  // setcookie("version", 'ARA', $tomorrow_cookie);
+} else {
+  $version=$_COOKIE['version'];
+}
+?>
+
 <html>
     
 <head>
@@ -127,7 +138,7 @@ echo '<title>' . $b . '</title>';
 // connetion
 require_once 'dbconnect.php';  
 $sql = "SELECT book, ord, cap, version FROM biblias 
-where `version`= 'ARC69' and ord=$o
+where `version`= '$version' and ord=$o
 group by cap";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
