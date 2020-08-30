@@ -261,7 +261,7 @@ $v = $_GET['v']; //Order
 <?php
 
 echo '<title>' . $b . ' ' . $c . '</title>';
-echo '<h2>('. $v .') '. $b . ' ' . $c . '</h2>';
+echo '<h2>('. $version .') '. $b . ' ' . $c . '</h2>';
 
 ?><br>
 <?php
