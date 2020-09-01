@@ -239,25 +239,25 @@ endforeach;
 Versões
 <p></p>
 
-(<span onClick="SetCookie('version','ARC69','365')" style="cursor:pointer"><b>ARC69</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1969).
+(<a href="#"><span onClick="SetCookie('version','ARC69','365')" style="cursor:pointer"><b>ARC69</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1969).
 <p></p>
-(<span onClick="SetCookie('version','ARC95','365')" style="cursor:pointer"><b>ARC95</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1995). 
+(<a href="#"><span onClick="SetCookie('version','ARC95','365')" style="cursor:pointer"><b>ARC95</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1995). 
 <p></p>
-(<span onClick="SetCookie('version','ARF','365')" style="cursor:pointer"><b>ARF</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Corrigida e Revisada Fiel ao Texto Original - Sociedade Bíblica Trinitariana do Brasil. 
+(<a href="#"><span onClick="SetCookie('version','ARF','365')" style="cursor:pointer"><b>ARF</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Corrigida e Revisada Fiel ao Texto Original - Sociedade Bíblica Trinitariana do Brasil. 
 <p></p>
-(<span onClick="SetCookie('version','AIB','365')" style="cursor:pointer"><b>AIB</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no Século XVII (ca. 1680) Edição Revisada pela Imprensa Bíblica Brasileira em 1967.
+(<a href="#"><span onClick="SetCookie('version','AIB','365')" style="cursor:pointer"><b>AIB</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no Século XVII (ca. 1680) Edição Revisada pela Imprensa Bíblica Brasileira em 1967.
 <p></p>
-(<span onClick="SetCookie('version','TB','365')" style="cursor:pointer"><b>TB</b></span>) Bíblia Sagrada, traduzida entre os anos de 1902 e 1917, sob a coordenação do Rev. William Cabell Brown, erudito na área das línguas bíblicas, e Eduardo Carlos Pereira, famoso filólogo da Língua Portuguesa, ambos prestimosos colaboradores da obra bíblica no Brasil, a serviço da Sociedade Bíblica Britânica e Estrangeira (de Londres) e da Sociedade Bíblica Americana (de Nova Iorque).
+(<a href="#"><span onClick="SetCookie('version','TB','365')" style="cursor:pointer"><b>TB</b></span></a>) Bíblia Sagrada, traduzida entre os anos de 1902 e 1917, sob a coordenação do Rev. William Cabell Brown, erudito na área das línguas bíblicas, e Eduardo Carlos Pereira, famoso filólogo da Língua Portuguesa, ambos prestimosos colaboradores da obra bíblica no Brasil, a serviço da Sociedade Bíblica Britânica e Estrangeira (de Londres) e da Sociedade Bíblica Americana (de Nova Iorque).
 <p></p>
-(<span onClick="SetCookie('version','ARA','365')" style="cursor:pointer"><b>ARA</b></span>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Atualizada (1959, 1993).
+(<a href="#"><span onClick="SetCookie('version','ARA','365')" style="cursor:pointer"><b>ARA</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Atualizada (1959, 1993).
  <p></p>
-(<span onClick="SetCookie('version','JER','365')" style="cursor:pointer"><b>JER</b></span>) A Bíblia de Jerusalém é a edição brasileira (1981, com revisão e atualização na edição de 2002) da edição francesa Bible de Jérusalem, que é assim chamada por ser fruto de estudos feitos pela Escola Bíblica de Jerusalém, em francês: École Biblique de Jérusalem.
+(<a href="#"><span onClick="SetCookie('version','JER','365')" style="cursor:pointer"><b>JER</b></span></a>) A Bíblia de Jerusalém é a edição brasileira (1981, com revisão e atualização na edição de 2002) da edição francesa Bible de Jérusalem, que é assim chamada por ser fruto de estudos feitos pela Escola Bíblica de Jerusalém, em francês: École Biblique de Jérusalem.
  <p></p> 
-(<span onClick="SetCookie('version','VC','365')" style="cursor:pointer"><b>VC</b></span>) Versão Católica, traduzida dos originais dos Monges de Maredsous (Bélgica) pelo Centro Bíblico Católico, revisada pelo Frei João José Pedreira de Castro em 1959.
+(<a href="#"><span onClick="SetCookie('version','VC','365')" style="cursor:pointer"><b>VC</b></span></a>) Versão Católica, traduzida dos originais dos Monges de Maredsous (Bélgica) pelo Centro Bíblico Católico, revisada pelo Frei João José Pedreira de Castro em 1959.
 <p></p>
-(<span onClick="SetCookie('version','JND','365')" style="cursor:pointer"><b>JND</b></span>) A New translation from the original languages by J.N.DARBY
+(<a href="#"><span onClick="SetCookie('version','JND','365')" style="cursor:pointer"><b>JND</b></span></a>) A New translation from the original languages by J.N.DARBY
 <p></p>
-(<span onClick="SetCookie('version','KJV','365')" style="cursor:pointer"><b>KJV</b></span>) 1611 Authorised Version To the Most High and Mighty Prince JAMES, by the grace of God, King of Great Britian, France, and Ireland, Defender of the Faith.
+(<a href="#"><span onClick="SetCookie('version','KJV','365')" style="cursor:pointer"><b>KJV</b></span></a>) 1611 Authorised Version To the Most High and Mighty Prince JAMES, by the grace of God, King of Great Britian, France, and Ireland, Defender of the Faith.
 </div>
 </body>
 
