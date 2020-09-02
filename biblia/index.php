@@ -234,12 +234,12 @@ endforeach;
 <!-- abreviate books names -->
 </div >
 
-<hr>
+<hr id="selecionarversao">
 
 <!-- versions informations -->
 <div style="font-size:16" id="versionsInfo">
 
-<p id="selecionarversao">Versões</p>
+<p >Versões</p>
 <span > Escolha a versão para leitura clicando nos links abaixo</span><p></p>
 
 (<a href="#"><span onClick="SetCookie('version','ARC69','365')" style="cursor:pointer"><b>ARC69</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1969).
