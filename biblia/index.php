@@ -178,7 +178,7 @@ div.book{
 <p></p>
 <p></p>
 <!-- <a href="#"><h3>Livros da Bíblia</h3></a> -->
-<span><a href="#Selecionar_versao">Versão Selecionada:<b> <?php echo $_COOKIE['version']; ?></b></a></span>
+<span><a href="#selecionarversao">Versão Selecionada:<b> <?php echo $_COOKIE['version']; ?></b></a></span>
 <hr>
 </div>
 
@@ -239,8 +239,8 @@ endforeach;
 <!-- versions informations -->
 <div style="font-size:16" id="versionsInfo">
 
-Versões</p>
-<span id="Selecionar_versao"> Escolha a versão para leitura clicando nos links abaixo</span><p></p>
+<p id="selecionarversao">Versões</p>
+<span > Escolha a versão para leitura clicando nos links abaixo</span><p></p>
 
 (<a href="#"><span onClick="SetCookie('version','ARC69','365')" style="cursor:pointer"><b>ARC69</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1969).
 <p></p>
