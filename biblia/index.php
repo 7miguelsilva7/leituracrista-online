@@ -178,7 +178,7 @@ div.book{
 <p></p>
 <p></p>
 <!-- <a href="#"><h3>Livros da Bíblia</h3></a> -->
-<span><a href="#selecionarversao">Versão Selecionada:<b> <?php echo $_COOKIE['version']; ?></b></a></span>
+<span><a href="#selecionarversao">Versão Selecionada:<b style="color:red"> <?php echo $_COOKIE['version']; ?></b></a></span>
 <hr>
 </div>
 
