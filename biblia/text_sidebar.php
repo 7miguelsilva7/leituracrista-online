@@ -333,7 +333,8 @@ endforeach;
 ?>          
   </div>
     </div>
-          
+
+    <!--  texto do capitulo -->
       <div class="column divText" style="background-color:white;font-size:20px;">
 <?
 $sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, abr, text, pgrph FROM biblias 
@@ -440,6 +441,8 @@ $( document ).ready(function() {
 var fontSizeBible = localStorage.getItem('fontSizeBible');
 var $elemento = $("body .verseTextP");
 $elemento.css('font-size', fontSizeBible);
+// document.getElementById("divText").style.fontSize = fontSizeBible;
+// alert(localStorage.getItem('fontSizeBible'))
 
 var verse = window.location.href;
 var num = verse.split('#');

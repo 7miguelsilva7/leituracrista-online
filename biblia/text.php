@@ -235,10 +235,7 @@ div.cap{
 
 <body id="noScroll">
 
-
-
 <?php
-
 require_once 'dbconnect.php';  
 
 // book and cap get
