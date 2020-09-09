@@ -321,7 +321,6 @@ where `version`= '$version' and ord=$o
 group by cap";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
-// $rowcount =  $stm->rowCount();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):
   if ($reg->cap == $c){
@@ -334,8 +333,8 @@ endforeach;
   </div>
     </div>
 
-    <!--  texto do capitulo -->
-      <div class="column divText" style="background-color:white;font-size:20px;">
+<!--  texto do capitulo -->
+      <div class="column divText" style="background-color:white;">
 <?
 $sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, abr, text, pgrph FROM biblias 
 where `version`= '$version' 

@@ -282,7 +282,6 @@ $rowcount =  $stm->rowCount();
 
 
 // textos dos versiculo
-
 $sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, abr, text, pgrph FROM biblias 
 where `version`= '$version' 
 and ord=$o
