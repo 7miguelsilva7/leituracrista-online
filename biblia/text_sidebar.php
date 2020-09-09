@@ -15,6 +15,14 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 
 <html>
 <head>
+
+<meta property="og:type" content="bible">
+<meta property="og:title" content="Bíblia Sagrada">
+<meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
+<meta property="og:image" content="img/bible.png">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/bible.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -158,14 +166,6 @@ button.verses{
 }
 
 
-
-
-
-
-
-
-
-
 p {
   font-size: 20px;
 }
@@ -248,7 +248,7 @@ $rowcount =  $stm->rowCount();
         <div class="column divConf" style="background-color:#eee;" >
           <span><b><? echo '('. $version .')<br>'. $b; ?></b></span><br><br>
               <a href="text.php?o=<?php echo $o?>&b=<?php echo $b?>&c=<?php echo $c?>&v=<?php echo $v?>"><button><img id="sidebar" style="width:16px;" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></button></a>
-              <button><img id="resetFont" style="width:17px;" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte"></button>
+              <button><img id="resetFont" style="width:16px;" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte"></button>
               <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button> 
               <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button> 
         </div>
@@ -343,11 +343,6 @@ var hConf = $('.divConf').height()
 </script>
 
 
-
-
-
-
-
 <script>
 // Open div of verse
 $(function($){   
@@ -428,12 +423,6 @@ $('#holdBtn').on("mousedown",function(){
 
 <div id="interlinear" class="inter">
 </div>
-
-<!-- <button class="holdBtn" id="holdBtn">Teste de long click</button> -->
-
-
-
-
 
 <!-- open div interlinear -->
 <script>
