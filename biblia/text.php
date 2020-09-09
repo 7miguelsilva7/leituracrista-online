@@ -299,7 +299,7 @@ endforeach;
 <div align="right" class="btn-container">
         <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button></p>
         <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button></p>
-        <img id="resetFont" style="width:30px;cursor:pointer" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte"><p></p>
+        <img id="resetFont" style="width:30px;cursor:pointer" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte"></p>
         <a href="text_sidebar.php?o=<?php echo $o?>&b=<?php echo $b?>&c=<?php echo $c?>&v=<?php echo $v?>"><img id="sidebar" style="width:30px;cursor:pointer" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></a>
 
 </div>
