@@ -207,7 +207,9 @@ button.verses{
 
 
 p {
+  font-family:Verdana, Geneva, sans-serif;
   font-size: 20px;
+  color: #424249;
 }
 
 #divVersesTexts {
@@ -334,7 +336,7 @@ endforeach;
     </div>
 
 <!--  texto do capitulo -->
-      <div class="column divText" style="background-color:white;">
+      <div class="column divText">
 <?
 $sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, abr, text, pgrph FROM biblias 
 where `version`= '$version' 
@@ -348,6 +350,7 @@ foreach($dados as $reg):
   $totalCaps = $reg->totalCaps;
   // echo '<div class="verseText"  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>'. $reg->abr . ' ' . $reg->cap . ':</sup><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
   echo '<div  style="cursor:pointer;font-size:20px;" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><span class="verseText"><span style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</span></span><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
+
 endforeach;
 ?>
       
@@ -358,6 +361,20 @@ endforeach;
 <script>
 
 $( document ).ready(function() {
+
+var fontSizeBible = localStorage.getItem('fontSizeBible');
+var $elemento = $("body .verseTextP");
+$elemento.css('font-size', fontSizeBible);
+// document.getElementById("divText").style.fontSize = fontSizeBible;
+// alert(localStorage.getItem('fontSizeBible'))
+
+var verse = window.location.href;
+var num = verse.split('#');
+// alert(num[1]);
+if (num[1] != null){
+document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
+}
+
   var hTotal = $(window).height()
 
 // height divBooks
@@ -434,23 +451,6 @@ document.getElementById(v).style.backgroundColor = "";
 }
 // alert(teste);
 }
-
-// highlightVerse and fontSize
-$( document ).ready(function() {
-var fontSizeBible = localStorage.getItem('fontSizeBible');
-var $elemento = $("body .verseTextP");
-$elemento.css('font-size', fontSizeBible);
-// document.getElementById("divText").style.fontSize = fontSizeBible;
-// alert(localStorage.getItem('fontSizeBible'))
-
-var verse = window.location.href;
-var num = verse.split('#');
-// alert(num[1]);
-if (num[1] != null){
-document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
-}
-});
-
 
 // longClick
 var timer;
