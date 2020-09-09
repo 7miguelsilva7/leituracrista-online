@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <?php
 $tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
@@ -15,6 +14,7 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <meta property="og:type" content="bible">
 <meta property="og:title" content="Bíblia Sagrada">
@@ -25,6 +25,46 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 <link rel="shortcut icon" href="img/bible.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -246,7 +286,7 @@ $rowcount =  $stm->rowCount();
     <div style="float: left; width: 15%;">
       <div class="row">
         <div class="column divConf" style="background-color:#eee;" >
-          <span><b><? echo '('. $version .')<br>'. $b; ?></b></span><br><br>
+          <span><a style="cursor:pointer" id="myBtn"><b><? echo '('. $version .')</a><br>'. $b; ?></b></span><br><br>
               <a href="text.php?o=<?php echo $o?>&b=<?php echo $b?>&c=<?php echo $c?>&v=<?php echo $v?>"><button><img id="sidebar" style="width:16px;" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></button></a>
               <button><img id="resetFont" style="width:16px;" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte"></button>
               <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button> 
@@ -274,7 +314,7 @@ endforeach;
     <div class="row">
     <div  style="float: left; width: 85%;">
           <div class="column divCap" style="background-color:#eee;">
-            <span>Capítulo: </span>
+            <span>Capítulos: </span>
 <?php
 $sql = "SELECT book, ord, cap, version FROM biblias 
 where `version`= '$version' and ord=$o
@@ -475,5 +515,80 @@ $reset.on('click', function() {
   localStorage.setItem('fontSizeBible', 20);
 });
 </script>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+<!-- versions informations -->
+<div style="font-size:16" id="versionsInfo">
+<span > Escolha a versão para leitura clicando nos links abaixo</span><p></p>
+
+(<a href="#"><span onClick="SetCookie('version','ARC69','365')" style="cursor:pointer"><b>ARC69</b></span></a>) Edição Revista e Corrigida (1898, 1969).
+<p></p>
+(<a href="#"><span onClick="SetCookie('version','ARC95','365')" style="cursor:pointer"><b>ARC95</b></span></a>) Edição Revista e Corrigida (1898, 1995). 
+<p></p>
+(<a href="#"><span onClick="SetCookie('version','ARF','365')" style="cursor:pointer"><b>ARF</b></span></a>) Edição Corrigida e Revisada Fiel ao Texto Original.
+<p></p>
+(<a href="#"><span onClick="SetCookie('version','AIB','365')" style="cursor:pointer"><b>AIB</b></span></a>) Edição Revisada pela Imprensa Bíblica Brasileira em 1967.
+<p></p>
+(<a href="#"><span onClick="SetCookie('version','TB','365')" style="cursor:pointer"><b>TB</b></span></a>) Edição Bíblica Britânica.
+<p></p>
+(<a href="#"><span onClick="SetCookie('version','ARA','365')" style="cursor:pointer"><b>ARA</b></span></a>) Edição Revista e Atualizada (1959, 1993).
+ <p></p>
+(<a href="#"><span onClick="SetCookie('version','JER','365')" style="cursor:pointer"><b>JER</b></span></a>) Edição de Jérusalem.
+ <p></p> 
+(<a href="#"><span onClick="SetCookie('version','VC','365')" style="cursor:pointer"><b>VC</b></span></a>) Edição Versão Católica (1959)
+<p></p>
+(<a href="#"><span onClick="SetCookie('version','JND','365')" style="cursor:pointer"><b>JND</b></span></a>) John Nelson DARBY.
+<p></p>
+(<a href="#"><span onClick="SetCookie('version','KJV','365')" style="cursor:pointer"><b>KJV</b></span></a>) King James Version.
+</div>  </div>
+
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function SetCookie(c_name,value,expiredays)
+	{
+		var exdate=new Date()
+		exdate.setDate(exdate.getDate()+expiredays)
+		document.cookie=c_name+ "=" +escape(value)+
+		((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+    window.scrollTo(0, 0); 
+    var url = location.href.split('v=');
+    window.location.href = url[0]+'v='+value;  // Sadly this reloads
+    // location.reload();
+
+	}
+
+</script>
+
 </body>
 </html>
