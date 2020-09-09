@@ -19,7 +19,7 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 <meta property="og:type" content="bible">
 <meta property="og:title" content="Bíblia Sagrada">
 <meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
-<meta property="og:image" content="img/bible.png">
+<meta property="og:image" content="https://leituracrista.com/biblia/img/bible.png">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="img/bible.png">
