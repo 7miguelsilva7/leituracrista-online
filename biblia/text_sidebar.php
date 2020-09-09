@@ -26,6 +26,8 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -353,52 +355,9 @@ foreach($dados as $reg):
 
 endforeach;
 ?>
-      
-      </div>
+<br><br>      </div>
     </div>
     </div>
-
-<script>
-
-$( document ).ready(function() {
-
-var fontSizeBible = localStorage.getItem('fontSizeBible');
-var $elemento = $("body .verseTextP");
-$elemento.css('font-size', fontSizeBible);
-// document.getElementById("divText").style.fontSize = fontSizeBible;
-// alert(localStorage.getItem('fontSizeBible'))
-
-var verse = window.location.href;
-var num = verse.split('#');
-// alert(num[1]);
-if (num[1] != null){
-document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
-}
-
-  var hTotal = $(window).height()
-
-// height divBooks
-var hConf = $('.divConf').height()
-
-  // alert(hConf)
-  var newBooksHeight = hTotal - hConf;
-      $(".divBooks").height(newBooksHeight);
-  // // height divCap
-  // var hcap = Math.round(
-  //       $('.divCap').height() /
-  //       $(window).height() * 100
-  //   );
-  //   // alert(hcap)
-  
-  // var newCapHeight = hTotal - hcap;
-  //   alert(newCapHeight)
-  //     $(".divText").height(newCapHeight *100);
-    
-    
-    });
-
-</script>
-
 
 <script>
 // Open div of verse
@@ -496,7 +455,7 @@ document.getElementById('noScroll').style.overflow = "hidden";
 var $btnAumentar = $("#btnAumentar");
 var $btnDiminuir = $("#btnDiminuir");
 var $reset = $("#resetFont");
-var $elemento = $("body .verseTextP");
+var $elemento = $(".verseTextP");
 
 function obterTamnhoFonte() {
   return parseFloat($elemento.css('font-size'));
@@ -514,6 +473,7 @@ $btnDiminuir.on('click', function() {
 
 $reset.on('click', function() {
   $elemento.css('font-size', 20);
+  
   localStorage.setItem('fontSizeBible', 20);
 });
 </script>
@@ -589,6 +549,32 @@ function SetCookie(c_name,value,expiredays)
     // location.reload();
 
 	}
+
+
+$( document ).ready(function() {
+
+  var hTotal = $(window).height()
+
+// height divBooks
+var hConf = $('.divConf').height()
+
+  // alert(hConf)
+  var newBooksHeight = hTotal - hConf;
+      $(".divBooks").height(newBooksHeight);    
+    
+var fontSizeBible = localStorage.getItem('fontSizeBible');
+var $elemento = $(".verseTextP");
+$elemento.css('font-size', fontSizeBible);
+// alert(fontSizeBible)
+
+var verse = window.location.href;
+var num = verse.split('#');
+// alert(num[1]);
+if (num[1] != null){
+document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
+}
+
+    });
 
 </script>
 
