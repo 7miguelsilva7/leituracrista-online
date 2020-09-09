@@ -1,8 +1,24 @@
+<?php
+$tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
+//verifica se o cookie está definido
+if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
+  $version="ARA";
+  // setcookie("version", 'ARA', $tomorrow_cookie);
+} else {
+  $version=$_COOKIE['version'];
+}
+?>
+
 <html>
     
 <head>
+<meta property="og:type" content="bible">
+<meta property="og:title" content="Bíblia Sagrada">
+<meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
+<meta property="og:image" content="img/bible.png">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/bible.png">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -17,20 +33,21 @@
 
 <style>
 
-#close{
-  font-size:50px;
-  font-weight:900;
-  /* float:right; */
-  color:#F30;
-  bottom: 10;
-  position: fixed;
-    left: 45%;
-    transform: translateX(-50%);
-    width: 100%;
-    bottom: 0;
-  cursor:pointer;
-}
 
+
+#closeDivVerses {
+  cursor:pointer;
+  text-align: center;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 40;
+  color:red;
+  background: #f0e68c;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .naoSelecionavel {
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -130,23 +147,36 @@ button.verses{
   margin: 100px;
   margin-top: 10px;
   }
+  
+
 }
 
 @media screen and (max-width: 800px) {
-  body {
+  body {  
   
   margin: 50px;
   margin-top: 10px;
   }
+  
+
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   body {
   
-  margin: 15px;
+  margin: 10px;
   margin-top: 10px;
   }
+  .btn-container
+  {
+    display:none;
+  }
+  #resetFont
+  {
+    display:none;
+  }
+
 }
 
 
@@ -192,11 +222,21 @@ text-decoration: none;
 div.cap{
   columns: 50px 20;
 }
+.btn-container
+            {
+                position: fixed;
+                right: 10px;
+                top: 10px
+                
+            }
 </style>
 
 </head>
 
 <body id="noScroll">
+
+
+
 <?php
 
 require_once 'dbconnect.php';  
@@ -205,6 +245,7 @@ require_once 'dbconnect.php';
 $b = $_GET['b']; //book
 $c = $_GET['c']; //cap
 $o = $_GET['o']; //Order
+$v = $_GET['v']; //Order
 ?>
 
 <!-- <div align="center">
@@ -220,10 +261,9 @@ $o = $_GET['o']; //Order
 <?php
 
 echo '<title>' . $b . ' ' . $c . '</title>';
-echo '<h2>' . $b . ' ' . $c . '</h2>';
+echo '<h2>('. $version .') '. $b . ' ' . $c . '</h2>';
 
 ?><br>
-
 <?php
 
   // connection
@@ -234,7 +274,7 @@ echo '<h2>' . $b . ' ' . $c . '</h2>';
 
 // conta qtd capítulos
 $sql = "SELECT book, ord, cap FROM biblias 
-where `version`= 'ADO' and ord=$o
+where `version`= '$version' and ord=$o
 group by cap";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
@@ -245,8 +285,9 @@ $rowcount =  $stm->rowCount();
 
 
 // textos dos versiculo
-$sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 
-where `version`= 'ADO' 
+
+$sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, abr, text, pgrph FROM biblias 
+where `version`= '$version' 
 and ord=$o
 and cap=$c
 group by `verse`";  
@@ -255,20 +296,25 @@ $stm->execute();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
-  // echo '<div style="cursor:pointer" id="divVersesTexts" ><a class="verseText" style="color:black" href="&verse='. $reg->verse .'"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
-
-  echo '<div class="verseText" style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . $reg->text . '</span></div></a></p>';
+  // echo '<div class="verseText"  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>'. $reg->abr . ' ' . $reg->cap . ':</sup><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
+  echo '<div  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><sup class="verseText"><b style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</b></sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
 endforeach;
-?><!-- textos dos versiculo -->
+?>
+<div align="right" class="btn-container">
+        <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button></p>
+        <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button></p>
+        <img id="resetFont" style="width:30px;cursor:pointer" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte">
 
+</div>
 
+<!-- textos dos versiculo -->
 
 <!-- div de versiculos -->
 <div align="center" id="verses" class="sidenav naoSelecionavel">
   <h4>Versículos</h4>
 <?php 
 $sqlVerses = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 
-where `version`= 'ADO' 
+where `version`= '$version' 
 and ord=$o
 and cap=$c
 group by `verse`";  
@@ -276,12 +322,16 @@ $stmV = $PDO->prepare($sqlVerses);
 $stmV->execute();  
 $verses = $stmV->fetchAll(PDO::FETCH_OBJ); 
 foreach($verses as $regVerses):  
-  echo '<a href="#verse' . $regVerses->verse . '"><button id="closebtn" onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a> ';
+  echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a>';
 endforeach; 
 ?>
-<div id="close">X</div>
-</div>
+<br>
+<br>
+<br>
+<br>
 
+<div id=closeDivVerses><strong>X</strong></div>
+</div>
 
 </div>
 </div>
@@ -307,15 +357,14 @@ $back = $c -1;
 
 // navegate on caps
   function backCap(){
-  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $back ?>"
+  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $back . '&v=' . $v ?>"
   }
   
   function nextCap(){
-  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $next ?>"
+  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $next . '&v=' . $v ?>"
   }
 </script>
 <br>
-
 <!-- navegate on capters -->
 <div align="center">
 
@@ -325,7 +374,7 @@ $back = $c -1;
   }
 
   if ($c < $rowcount){
-    echo ' <button class="btn-defaultCap" onclick="nextCap()">Próximo >></button>';
+    echo '<button class="btn-defaultCap" onclick="nextCap()">Próximo >></button>';
   }
   ?>
 
@@ -355,11 +404,12 @@ $back = $c -1;
 
 
 <script>
-// Open div od verse
+// Open div of verse
 $(function($){   
 	$("#versiculos").click(function() {
     document.getElementById('noScroll').style.overflow = "hidden";
 
+    $(".sidenav").css('width','100%');
 		$(".sidenav").animate({
       width: "toggle"
     });
@@ -370,16 +420,7 @@ $(function($){
 
 // close div of verses
 $(function($){   
-	$("#close").click(function() {
-    document.getElementById('noScroll').style.overflow = "initial";
-		$(".sidenav").animate({
-      width: "toggle"
-    });
-	});
-})
-
-$(function($){   
-	$("#closebtn").click(function() {
+	$("#verses").click(function() {
     document.getElementById('noScroll').style.overflow = "initial";
 		$(".sidenav").animate({
       width: "toggle"
@@ -401,10 +442,25 @@ document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
 }
 }
 
+// Ao clicar no texto do versículo
+function highlightVerseText(){
+// setTimeout(highlightVerse, 1000);
+var v = 'verse' + localStorage.getItem('verseInterlinear');
+color = document.getElementById(v).style.backgroundColor;
+if (color != ''){
+document.getElementById(v).style.backgroundColor = "";
+}else{
+  document.getElementById(v).style.backgroundColor = "#ffffc7";
+}
+// alert(teste);
+}
 
-
-// highlightVerse
+// highlightVerse and fontSize
 $( document ).ready(function() {
+var fontSizeBible = localStorage.getItem('fontSizeBible');
+var $elemento = $("body .verseTextP");
+$elemento.css('font-size', fontSizeBible);
+
 var verse = window.location.href;
 var num = verse.split('#');
 // alert(num[1]);
@@ -426,7 +482,6 @@ $('#holdBtn').on("mousedown",function(){
 </script>
 
 <div id="interlinear" class="inter">
-
 </div>
 
 <!-- <button class="holdBtn" id="holdBtn">Teste de long click</button> -->
@@ -452,23 +507,47 @@ document.getElementById('noScroll').style.overflow = "hidden";
     var cap='<?php echo $c ?>';
     var verse= v.replace('verse', '');
     $("#interlinear").load("ajax.php", {"book": book, "order": order, "cap": cap, "verse": verse,});
-		$(".inter").css('width','100%');
+    $(".inter").css('width','100%');
 					$(".inter").animate({
-					  width: "toggle"
-					});
+            width: "toggle"
+          });
+          $("#interlinear").animate({ scrollTop: 0 }, "fast");
+
           }, 200);
   });
 })
 
+var $btnAumentar = $("#btnAumentar");
+var $btnDiminuir = $("#btnDiminuir");
+var $reset = $("#resetFont");
+var $elemento = $("body .verseTextP");
 
+function obterTamnhoFonte() {
+  return parseFloat($elemento.css('font-size'));
+}
 
+$btnAumentar.on('click', function() {
+  $elemento.css('font-size', obterTamnhoFonte() + 1);
+  localStorage.setItem('fontSizeBible', obterTamnhoFonte() + 1);
+});
+
+$btnDiminuir.on('click', function() {
+  $elemento.css('font-size', obterTamnhoFonte() - 1);
+  localStorage.setItem('fontSizeBible', obterTamnhoFonte() - 1);
+});
+
+$reset.on('click', function() {
+  $elemento.css('font-size', 20);
+  localStorage.setItem('fontSizeBible', 20);
+});
 
 // close div interlinear
-$( "#interlinear" ).click(function() {
-  document.getElementById('noScroll').style.overflow = "initial";
-  $(".inter").css('width','90%');
-					$(".inter").animate({
-					  width: "toggle"
-					});
-});
+// $( "#interlinear" ).click(function() {
+//   document.getElementById('noScroll').style.overflow = "initial";
+//   $(".inter").css('width','90%');
+// 					$(".inter").animate({
+// 					  width: "toggle"
+// 					});
+// });
 </script>
+

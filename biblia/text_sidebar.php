@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 <?php
 $tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
 //verifica se o cookie está definido
@@ -10,30 +14,58 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 ?>
 
 <html>
-    
 <head>
-<meta property="og:type" content="bible">
-<meta property="og:title" content="Bíblia Sagrada">
-<meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
-<meta property="og:image" content="img/bible.png">
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="img/bible.png">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-<link rel="stylesheet" href="main.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
 <style>
+* {
+  box-sizing: border-box;
+}
+
+a { 
+  text-decoration: none;
+  color: blue;
+ }
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  /* height: 300px; */
+}
+
+.divBooks {
+  width: 100%;
+  overflow: auto;
+  max-height: 80vh;
+  white-space: nowrap;
+  }
+
+.divConf {
+  width: 100%;
+  overflow: auto;
+  max-height: auto;
+}
+
+.divCap {
+  width: auto;
+  overflow: auto;
+  max-height: auto;
+}
+
+.divText {
+  width: 85%;
+  overflow: auto;
+  max-height: 90vh;;
+}
 
 
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 #closeDivVerses {
   cursor:pointer;
@@ -59,22 +91,6 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
     /* cursor: default; */
 }
 
-a:link {
-  text-decoration: none;
-  color: black;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
 
 #verses {
 	font-family:Verdana, Geneva, sans-serif;
@@ -141,43 +157,13 @@ button.verses{
   background: transparent;
 }
 
-@media screen and (max-width: 2000px) {
-  body {
-  
-  margin: 100px;
-  margin-top: 10px;
-  }
-  
 
-}
 
-@media screen and (max-width: 800px) {
-  body {  
-  
-  margin: 50px;
-  margin-top: 10px;
-  }
-  
 
-}
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  body {
-  
-  margin: 10px;
-  margin-top: 10px;
-  }
-  .btn-container
-  {
-    display:none;
-  }
-  #resetFont
-  {
-    display:none;
-  }
 
-}
+
+
 
 
 p {
@@ -229,13 +215,10 @@ div.cap{
                 top: 10px
                 
             }
+
 </style>
-
 </head>
-
 <body id="noScroll">
-
-
 
 <?php
 
@@ -246,30 +229,7 @@ $b = $_GET['b']; //book
 $c = $_GET['c']; //cap
 $o = $_GET['o']; //Order
 $v = $_GET['v']; //Order
-?>
-
-<!-- <div align="center">
-<a href="../biblia/"><button>Livros</button></a>
-<a href="cap.php?o=<?php echo $o . '&b=' . $b ?>"><button>Capítulos</button></a>
-</div> -->
-
-
-
-<div align="center">
-<div align="left">
-
-<?php
-
 echo '<title>' . $b . ' ' . $c . '</title>';
-echo '<h2>('. $version .') '. $b . ' ' . $c . '</h2>';
-
-?><br>
-<?php
-
-  // connection
-  require_once 'dbconnect.php';  
-
-
 
 
 // conta qtd capítulos
@@ -280,12 +240,62 @@ $stm = $PDO->prepare($sql);
 $stm->execute();  
 $rowcount =  $stm->rowCount();
 // conta qtd capítulos
+?>
 
+  <div class="bottom">
+    <div style="float: left; width: 15%;">
+      <div class="row">
+        <div class="column divConf" style="background-color:#eee;" >
+          <span><b><? echo '('. $version .')<br>'. $b; ?></b></span><br><br>
+              <a href="text.php?o=<?php echo $o?>&b=<?php echo $b?>&c=<?php echo $c?>&v=<?php echo $v?>"><button><img id="sidebar" style="width:16px;" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></button></a>
+              <button><img id="resetFont" style="width:17px;" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte"></button>
+              <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button> 
+              <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button> 
+        </div>
+        
+      </div>
 
+      <div class="column divBooks" style="background-color:#eee;">
+<?php
+$sql = "SELECT abr, ord, book, testament, version FROM biblias where `version`= '$version' group by ord order by ord";  
+$stm = $PDO->prepare($sql);  
+$stm->execute();  
+$dados = $stm->fetchAll(PDO::FETCH_OBJ);  
+foreach($dados as $reg):
+  if ($reg->testament == 1){
+    echo '<a href="text_sidebar.php?o=' . $reg->ord . '&b=' . $reg->book . '&c=1' . '&v=' . $reg->version . '" class="btn" style="font-size:17px;" >' . $reg->book . '</a><br>';}
+  if ($reg->testament == 2){
+    echo '<a href="text_sidebar.php?o=' . $reg->ord . '&b=' . $reg->book . '&c=1' . '&v=' . $reg->version . '" class="btn" style="font-size:17px;color:red" >' . $reg->book . '</a><br>';}
+endforeach;
+?>
+      </div>
+    </div>
 
-
-// textos dos versiculo
-
+    <div class="row">
+    <div  style="float: left; width: 85%;">
+          <div class="column divCap" style="background-color:#eee;">
+            <span>Capítulo: </span>
+<?php
+$sql = "SELECT book, ord, cap, version FROM biblias 
+where `version`= '$version' and ord=$o
+group by cap";  
+$stm = $PDO->prepare($sql);  
+$stm->execute();  
+// $rowcount =  $stm->rowCount();
+$dados = $stm->fetchAll(PDO::FETCH_OBJ);  
+foreach($dados as $reg):
+  if ($reg->cap == $c){
+   echo '<a href="text_sidebar.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '&v=' . $reg->version .'" style="line-height: 1;font-size:15px;color:red" class="btn"><b> ' . $reg->cap . ' </b></a>';
+  }else{
+   echo '<a href="text_sidebar.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '&v=' . $reg->version .'" style="line-height: 1;font-size:15px" class="btn"> ' . $reg->cap . ' </a>';
+  }
+endforeach;
+?>          
+  </div>
+    </div>
+          
+      <div class="column divText" style="background-color:white;font-size:20px;">
+<?
 $sql = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, abr, text, pgrph FROM biblias 
 where `version`= '$version' 
 and ord=$o
@@ -297,109 +307,43 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
   // echo '<div class="verseText"  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>'. $reg->abr . ' ' . $reg->cap . ':</sup><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
-  echo '<div  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><sup class="verseText"><b style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</b></sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
+  echo '<div  style="cursor:pointer;font-size:20px;" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><span class="verseText"><span style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</span></span><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
 endforeach;
 ?>
-<div align="right" class="btn-container">
-        <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button></p>
-        <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button></p>
-        <img id="resetFont" style="width:30px;cursor:pointer" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte"><p></p>
-        <a href="text_sidebar.php?o=<?php echo $o?>&b=<?php echo $b?>&c=<?php echo $c?>&v=<?php echo $v?>"><img id="sidebar" style="width:30px;cursor:pointer" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></a>
-
-</div>
-
-<!-- textos dos versiculo -->
-
-<!-- div de versiculos -->
-<div align="center" id="verses" class="sidenav naoSelecionavel">
-  <h4>Versículos</h4>
-<?php 
-$sqlVerses = "SELECT book, ord, cap, sum(cap) as totalCaps, verse, text FROM biblias 
-where `version`= '$version' 
-and ord=$o
-and cap=$c
-group by `verse`";  
-$stmV = $PDO->prepare($sqlVerses);  
-$stmV->execute();  
-$verses = $stmV->fetchAll(PDO::FETCH_OBJ); 
-foreach($verses as $regVerses):  
-  echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a>';
-endforeach; 
-?>
-<br>
-<br>
-<br>
-<br>
-
-<div id=closeDivVerses><strong>X</strong></div>
-</div>
-
-</div>
-</div>
-
+      
+      </div>
+    </div>
+    </div>
 
 <script>
-  function book(){
-  window.location.href = "../biblia/"
-  }
 
-  function cap(){
-  window.location.href = "cap.php?o=<?php echo $o . '&b=' . $b ?>"
-  }
+$( document ).ready(function() {
+  var hTotal = $(window).height()
 
-  function verse(){
-  window.location.href = "#"
-  }
+// height divBooks
+var hConf = $('.divConf').height()
 
-<?php 
-$next = $c +1;
-$back = $c -1;
-?>
-
-// navegate on caps
-  function backCap(){
-  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $back . '&v=' . $v ?>"
-  }
+  // alert(hConf)
+  var newBooksHeight = hTotal - hConf;
+      $(".divBooks").height(newBooksHeight);
+  // // height divCap
+  // var hcap = Math.round(
+  //       $('.divCap').height() /
+  //       $(window).height() * 100
+  //   );
+  //   // alert(hcap)
   
-  function nextCap(){
-  window.location.href = "text.php?o=<?php echo $o . '&b=' . $b . '&c=' . $next . '&v=' . $v ?>"
-  }
+  // var newCapHeight = hTotal - hcap;
+  //   alert(newCapHeight)
+  //     $(".divText").height(newCapHeight *100);
+    
+    
+    });
+
 </script>
-<br>
-<!-- navegate on capters -->
-<div align="center">
 
-  <?php
-  if ($c > 1){
-    echo '<button class="btn-defaultCap" onclick="backCap()"><< Anterior</button> ';
-  }
 
-  if ($c < $rowcount){
-    echo '<button class="btn-defaultCap" onclick="nextCap()">Próximo >></button>';
-  }
-  ?>
 
-</div>
-
-<div align="right" onclick='book();'>
-  
-</div>
-
-<br><br><br>
-
-<div class="footerbackground"></div>
-
-<div onclick='book();' class="footerback">
-  <span class="navFooter">Livros</span>
-</div>
-
-<div onclick='cap();' class="indice">
-  <span class="navFooter">Capítulos</span>
-</div>
-
-<div id="versiculos" class="footerup" data-toggle="modal"  data-target="#exampleModalLong">
-  <span class="navFooter">Versículos</span>
-</div>
 
 
 
@@ -541,14 +485,6 @@ $reset.on('click', function() {
   $elemento.css('font-size', 20);
   localStorage.setItem('fontSizeBible', 20);
 });
-
-// close div interlinear
-// $( "#interlinear" ).click(function() {
-//   document.getElementById('noScroll').style.overflow = "initial";
-//   $(".inter").css('width','90%');
-// 					$(".inter").animate({
-// 					  width: "toggle"
-// 					});
-// });
 </script>
-
+</body>
+</html>
