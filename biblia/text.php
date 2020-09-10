@@ -2,7 +2,7 @@
 $tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
 //verifica se o cookie está definido
 if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
-  $version="ARA";
+  $version="ARF";
   // setcookie("version", 'ARA', $tomorrow_cookie);
 } else {
   $version=$_COOKIE['version'];
@@ -256,9 +256,9 @@ $v = $_GET['v']; //Order
 <div align="left">
 
 <?php
-
+echo '<a href="#" style="color:blue" data-toggle="modal" data-target="#exampleModal"><h2>('. $version .')</a> ' . $b . ' ' . $c . '</h2>';
 echo '<title>' . $b . ' ' . $c . '</title>';
-echo '<h2>('. $version .') '. $b . ' ' . $c . '</h2>';
+
 
 ?><br>
 <?php
@@ -483,8 +483,44 @@ $('#holdBtn').on("mousedown",function(){
 <div id="interlinear" class="inter">
 </div>
 
-<!-- <button class="holdBtn" id="holdBtn">Teste de long click</button> -->
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Escolha a versão para leitura clicando nos links abaixo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      (<a style="color:blue" href="#"><span onClick="SetCookie('version','ARC69','365')" style="cursor:pointer"><b>ARC69</b></span></a>) Edição Revista e Corrigida (1898, 1969).
+<p></p>
+(<a style="color:blue" href="#"><span onClick="SetCookie('version','ARC95','365')" style="cursor:pointer"><b>ARC95</b></span></a>) Edição Revista e Corrigida (1898, 1995). 
+<p></p>
+(<a style="color:blue" href="#"><span onClick="SetCookie('version','ARF','365')" style="cursor:pointer"><b>ARF</b></span></a>) Edição Corrigida e Revisada Fiel ao Texto Original.
+<p></p>
+(<a style="color:blue" href="#"><span onClick="SetCookie('version','AIB','365')" style="cursor:pointer"><b>AIB</b></span></a>) Edição Revisada pela Imprensa Bíblica Brasileira em 1967.
+<p></p>
+(<a style="color:blue" href="#"><span onClick="SetCookie('version','TB','365')" style="cursor:pointer"><b>TB</b></span></a>) Edição Bíblica Britânica.
+<p></p>
+(<a style="color:blue" href="#"><span onClick="SetCookie('version','ARA','365')" style="cursor:pointer"><b>ARA</b></span></a>) Edição Revista e Atualizada (1959, 1993).
+ <p></p>
+(<a style="color:blue" href="#"><span onClick="SetCookie('version','JER','365')" style="cursor:pointer"><b>JER</b></span></a>) Edição de Jérusalem.
+ <p></p> 
+(<a style="color:blue" href="#"><span onClick="SetCookie('version','VC','365')" style="cursor:pointer"><b>VC</b></span></a>) Edição Versão Católica (1959)
+<p></p>
+(<a style="color:blue" href="#"><span onClick="SetCookie('version','JND','365')" style="cursor:pointer"><b>JND</b></span></a>) John Nelson DARBY.
+<p></p>
+(<a style="color:blue" href="#"><span onClick="SetCookie('version','KJV','365')" style="cursor:pointer"><b>KJV</b></span></a>) King James Version.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -515,6 +551,20 @@ document.getElementById('noScroll').style.overflow = "hidden";
           }, 200);
   });
 })
+
+function SetCookie(c_name,value,expiredays)
+	{
+		var exdate=new Date()
+		exdate.setDate(exdate.getDate()+expiredays)
+		document.cookie=c_name+ "=" +escape(value)+
+		((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+    window.scrollTo(0, 0); 
+    var url = location.href.split('v=');
+    location.reload();
+    window.location.href = url[0]+'v='+value; 
+
+	}
+
 
 var $btnAumentar = $("#btnAumentar");
 var $btnDiminuir = $("#btnDiminuir");

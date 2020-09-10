@@ -5,7 +5,7 @@
 $tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
 //verifica se o cookie está definido
 if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
-  $version="ARA";
+  $version="ARF";
   // setcookie("version", 'ARA', $tomorrow_cookie);
 } else {
   $version=$_COOKIE['version'];
@@ -87,6 +87,7 @@ a {
   overflow: auto;
   max-height: 80vh;
   white-space: nowrap;
+  font-size:19px;
   }
 
 .divConf {
@@ -99,7 +100,9 @@ a {
   width: auto;
   overflow: auto;
   max-height: auto;
-}
+  line-height: 1.2;
+  font-size:17px;
+  }
 
 .divText {
   width: 85%;
@@ -247,10 +250,7 @@ text-decoration: none;
     border-color: #d6e9c6;
     display: none;
 }  
-/* css copiar texto */
-div.cap{
-  columns: 50px 20;
-}
+
 .btn-container
             {
                 position: fixed;
@@ -306,9 +306,9 @@ $stm->execute();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):
   if ($reg->testament == 1){
-    echo '<a href="text_sidebar.php?o=' . $reg->ord . '&b=' . $reg->book . '&c=1' . '&v=' . $reg->version . '" class="btn" style="font-size:17px;" >' . $reg->book . '</a><br>';}
+    echo '<a href="text_sidebar.php?o=' . $reg->ord . '&b=' . $reg->book . '&c=1' . '&v=' . $reg->version . '" class="btn" >' . $reg->book . '</a><br>';}
   if ($reg->testament == 2){
-    echo '<a href="text_sidebar.php?o=' . $reg->ord . '&b=' . $reg->book . '&c=1' . '&v=' . $reg->version . '" class="btn" style="font-size:17px;color:red" >' . $reg->book . '</a><br>';}
+    echo '<a href="text_sidebar.php?o=' . $reg->ord . '&b=' . $reg->book . '&c=1' . '&v=' . $reg->version . '" class="btn" style="color:red" >' . $reg->book . '</a><br>';}
 endforeach;
 ?>
       </div>
@@ -327,9 +327,9 @@ $stm->execute();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):
   if ($reg->cap == $c){
-   echo '<a href="text_sidebar.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '&v=' . $reg->version .'" style="line-height: 1;font-size:15px;color:red" class="btn"><b> ' . $reg->cap . ' </b></a>';
+   echo '<a href="text_sidebar.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '&v=' . $reg->version .'" style="color:red" class="btn"><b> ' . $reg->cap . ' </b></a>';
   }else{
-   echo '<a href="text_sidebar.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '&v=' . $reg->version .'" style="line-height: 1;font-size:15px" class="btn"> ' . $reg->cap . ' </a>';
+   echo '<a href="text_sidebar.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '&v=' . $reg->version .'" class="btn"> ' . $reg->cap . ' </a>';
   }
 endforeach;
 ?>          
