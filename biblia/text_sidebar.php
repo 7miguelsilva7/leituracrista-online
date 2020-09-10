@@ -15,7 +15,6 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 <meta property="og:type" content="bible">
 <meta property="og:title" content="Bíblia Sagrada">
 <meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
@@ -355,7 +354,8 @@ foreach($dados as $reg):
 
 endforeach;
 ?>
-<br><br>      </div>
+<br><br>      
+    </div>
     </div>
     </div>
 
@@ -463,18 +463,18 @@ function obterTamnhoFonte() {
 
 $btnAumentar.on('click', function() {
   $elemento.css('font-size', obterTamnhoFonte() + 1);
-  localStorage.setItem('fontSizeBible', obterTamnhoFonte() + 1);
+  localStorage.setItem('fontSize', obterTamnhoFonte() + 1);
+  // $.cookie("fontSize", obterTamnhoFonte() + 1, { expires: 365 });
 });
 
 $btnDiminuir.on('click', function() {
   $elemento.css('font-size', obterTamnhoFonte() - 1);
-  localStorage.setItem('fontSizeBible', obterTamnhoFonte() - 1);
+  localStorage.setItem('fontSize', obterTamnhoFonte() - 1);
 });
 
 $reset.on('click', function() {
   $elemento.css('font-size', 20);
-  
-  localStorage.setItem('fontSizeBible', 20);
+  localStorage.setItem('fontSize', 20);
 });
 </script>
 
@@ -545,7 +545,7 @@ function SetCookie(c_name,value,expiredays)
 		((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
     window.scrollTo(0, 0); 
     var url = location.href.split('v=');
-    window.location.href = url[0]+'v='+value;  // Sadly this reloads
+    window.location.href = url[0]+'v='+value; 
     // location.reload();
 
 	}
@@ -553,19 +553,13 @@ function SetCookie(c_name,value,expiredays)
 
 $( document ).ready(function() {
 
-  var hTotal = $(window).height()
-
+var hTotal = $(window).height()
 // height divBooks
 var hConf = $('.divConf').height()
-
-  // alert(hConf)
-  var newBooksHeight = hTotal - hConf;
-      $(".divBooks").height(newBooksHeight);    
+// alert(hConf)
+var newBooksHeight = hTotal - hConf;
+$(".divBooks").height(newBooksHeight);    
     
-var fontSizeBible = localStorage.getItem('fontSizeBible');
-var $elemento = $(".verseTextP");
-$elemento.css('font-size', fontSizeBible);
-// alert(fontSizeBible)
 
 var verse = window.location.href;
 var num = verse.split('#');
@@ -574,7 +568,13 @@ if (num[1] != null){
 document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
 }
 
-    });
+// font size
+var $elemento = $(".verseTextP");
+var fontSize = window.localStorage.getItem('fontSize');
+// alert(fontSize)
+$elemento.css('font-size', Number(fontSize));
+
+});
 
 </script>
 

@@ -293,7 +293,7 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
   // echo '<div class="verseText"  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>'. $reg->abr . ' ' . $reg->cap . ':</sup><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
-  echo '<div  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><sup class="verseText"><b style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</b></sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
+  echo '<div  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><sup class="verseText"><b style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</b></sup><span id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
 endforeach;
 ?>
 <div align="right" class="btn-container">
@@ -303,7 +303,6 @@ endforeach;
         <a href="text_sidebar.php?o=<?php echo $o?>&b=<?php echo $b?>&c=<?php echo $c?>&v=<?php echo $v?>"><img id="sidebar" style="width:30px;cursor:pointer" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></a>
 
 </div>
-
 <!-- textos dos versiculo -->
 
 <!-- div de versiculos -->
@@ -454,9 +453,9 @@ document.getElementById(v).style.backgroundColor = "";
 
 // highlightVerse and fontSize
 $( document ).ready(function() {
-var fontSizeBible = localStorage.getItem('fontSizeBible');
+var fontSize = localStorage.getItem('fontSize');
 var $elemento = $("body .verseTextP");
-$elemento.css('font-size', fontSizeBible);
+$elemento.css('font-size', fontSize);
 
 var verse = window.location.href;
 var num = verse.split('#');
@@ -525,17 +524,17 @@ function obterTamnhoFonte() {
 
 $btnAumentar.on('click', function() {
   $elemento.css('font-size', obterTamnhoFonte() + 1);
-  localStorage.setItem('fontSizeBible', obterTamnhoFonte() + 1);
+  localStorage.setItem('fontSize', obterTamnhoFonte() + 1);
 });
 
 $btnDiminuir.on('click', function() {
   $elemento.css('font-size', obterTamnhoFonte() - 1);
-  localStorage.setItem('fontSizeBible', obterTamnhoFonte() - 1);
+  localStorage.setItem('fontSize', obterTamnhoFonte() - 1);
 });
 
 $reset.on('click', function() {
   $elemento.css('font-size', 20);
-  localStorage.setItem('fontSizeBible', 20);
+  localStorage.setItem('fontSize', 20);
 });
 
 // close div interlinear
