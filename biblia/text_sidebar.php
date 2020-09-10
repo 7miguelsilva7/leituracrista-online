@@ -464,7 +464,6 @@ function obterTamnhoFonte() {
 $btnAumentar.on('click', function() {
   $elemento.css('font-size', obterTamnhoFonte() + 1);
   localStorage.setItem('fontSize', obterTamnhoFonte() + 1);
-  // $.cookie("fontSize", obterTamnhoFonte() + 1, { expires: 365 });
 });
 
 $btnDiminuir.on('click', function() {
@@ -571,9 +570,11 @@ document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
 // font size
 var $elemento = $(".verseTextP");
 var fontSize = window.localStorage.getItem('fontSize');
-// alert(fontSize)
+if (fontSize == null){
+$elemento.css('font-size', 20);
+}else{
 $elemento.css('font-size', Number(fontSize));
-
+}
 });
 
 </script>
