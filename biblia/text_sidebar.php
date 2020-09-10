@@ -545,7 +545,7 @@ function SetCookie(c_name,value,expiredays)
     window.scrollTo(0, 0); 
     var url = location.href.split('v=');
     window.location.href = url[0]+'v='+value; 
-    // location.reload();
+    location.reload();
 
 	}
 
