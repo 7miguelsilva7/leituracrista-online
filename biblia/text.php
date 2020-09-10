@@ -455,7 +455,7 @@ document.getElementById(v).style.backgroundColor = "";
 $( document ).ready(function() {
 var fontSize = localStorage.getItem('fontSize');
 var $elemento = $("body .verseTextP");
-$elemento.css('font-size', fontSize);
+$elemento.css('font-size', Number(fontSize));
 
 var verse = window.location.href;
 var num = verse.split('#');
