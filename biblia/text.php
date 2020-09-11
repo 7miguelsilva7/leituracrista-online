@@ -33,7 +33,15 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 
 <style>
 
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: #ffffc7;
+}
 
+::selection {
+  color: red;
+  background: #ffffc7;
+}
 
 #closeDivVerses {
   cursor:pointer;

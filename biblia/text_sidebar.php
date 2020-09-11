@@ -23,9 +23,19 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="img/bible.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 <style>
 
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: #ffffc7;
+}
 
+::selection {
+  color: red;
+  background: #ffffc7;
+}
 
 /* The Modal (background) */
 .modal {
