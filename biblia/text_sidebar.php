@@ -350,16 +350,32 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
   // echo '<div class="verseText"  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>'. $reg->abr . ' ' . $reg->cap . ':</sup><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
-  echo '<div  style="cursor:pointer;font-size:20px;" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><span class="verseText"><span style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</span></span><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
+  echo '<div  style="cursor:pointer;font-size:20px;" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><span class="verseText"><span style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</span></span><span class="hightlights"  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
 
 endforeach;
 ?>
+
 <br><br>      
     </div>
     </div>
     </div>
 
 <script>
+// Ao clicar no texto do versículo
+function highlightVerseText(){
+$(".hightlights").css("background-color", "");
+// setTimeout(highlightVerse, 1000);
+var v = 'verse' + localStorage.getItem('verseInterlinear');
+color = document.getElementById(v).style.backgroundColor;
+if (color != ''){
+document.getElementById(v).style.backgroundColor = "";
+}else{
+  document.getElementById(v).style.backgroundColor = "#ffffc7";
+}
+// alert(teste);
+}
+
+
 // Open div of verse
 $(function($){   
 	$("#versiculos").click(function() {
@@ -398,18 +414,7 @@ document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
 }
 }
 
-// Ao clicar no texto do versículo
-function highlightVerseText(){
-// setTimeout(highlightVerse, 1000);
-var v = 'verse' + localStorage.getItem('verseInterlinear');
-color = document.getElementById(v).style.backgroundColor;
-if (color != ''){
-document.getElementById(v).style.backgroundColor = "";
-}else{
-  document.getElementById(v).style.backgroundColor = "#ffffc7";
-}
-// alert(teste);
-}
+
 
 // longClick
 var timer;
