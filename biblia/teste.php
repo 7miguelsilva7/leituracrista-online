@@ -137,7 +137,7 @@ foreach($dados as $reg):
   if ($reg->testament == 1){
     echo '<a class="alivros" onClick="getCapsAndText(\'' . $version . '\','. $reg->ord .',\''. $reg->book . '\');setUrl(\'' . $version . '\','. $reg->ord .',1,\'' . $reg->book . '\')" >' . $reg->book . '</a><br>';}
   if ($reg->testament == 2){
-    echo '<a class="alivros" onClick="getCapsAndText(\'' . $version . '\','. $reg->ord .');setUrl(\'' . $version . '\','. $reg->ord .',1,\'' . $reg->book . '\')" style="color:red" >' . $reg->book . '</a><br>';}
+    echo '<a class="alivros" onClick="getCapsAndText(\'' . $version . '\','. $reg->ord .',\''. $reg->book . '\');setUrl(\'' . $version . '\','. $reg->ord .',1,\'' . $reg->book . '\')" style="color:red" >' . $reg->book . '</a><br>';}
 endforeach;
 ?>
 <br><br>
