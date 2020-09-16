@@ -214,15 +214,15 @@ $no_of_records_per_page = 10;
 $offset = ($page-1) * $no_of_records_per_page;
 
 
-// $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='ARC69'";
+// $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='ARA'";
 $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') 
-and version='ARC69'";
+and version='ARA'";
 $result = mysqli_query($mysqli,$total_pages_sql);
 $total_rows = mysqli_fetch_array($result)[0];
 // echo $total_rows;
 $total_pages = ceil($total_rows / $no_of_records_per_page);
 $sql = "SELECT ord, book, cap, verse, version, text FROM biblias WHERE MATCH(text) AGAINST('$q')
-and version='ARC69' LIMIT $offset, $no_of_records_per_page";
+and version='ARA' LIMIT $offset, $no_of_records_per_page";
 $res_data = mysqli_query($mysqli,$sql);
 while($row = mysqli_fetch_array($res_data)){
 
