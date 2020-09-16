@@ -247,7 +247,7 @@ if(!empty($_GET['b'])) {
     <!-- <form class="form-busca-site" action="busca.php"> -->
             <input class="btn-text-top" type="text" name="txtsearch" placeholder="Buscar">
             <div style="z-index: 9999;"><button class="btn-buscar-top" type="submit"></button></div>
-          </form>
+    </form>
               <a href="index.php"><button><img style="width:16px;" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></button></a>
               <button><img id="resetFont" style="width:16px;" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte"></button>
               <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button> 

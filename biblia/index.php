@@ -169,6 +169,7 @@ div.book{
 
 </style>
 </head>
+<body>
 
 <!-- <div class="config" style="position: fixed; cursor: pointer; width:40; height:40; top:20; right:20;"><img width="40" src="img/config.png" alt="Configurações"></div>    -->
 
@@ -192,7 +193,9 @@ Bíblia Interlinear <br>
 <div align="CENTER">
 <!-- Complete books Names -->
 <div align="left" class="book naoSelecionavel">
-
+<div style="position: fixed;top:60px; right:20px">
+<a href="text_sidebar.php"><button><img style="width:20px;" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></button></a>
+</div>
 
 <?php
   
@@ -207,10 +210,7 @@ Bíblia Interlinear <br>
   endforeach;
   ?> 
 </div>
-
 <!-- Complete books Names -->
-
-
 
 <!-- abreviate books names -->
 <div align="center" class="abr naoSelecionavel">
@@ -263,6 +263,8 @@ endforeach;
 (<a href="#"><span onClick="SetCookie('version','KJV','365')" style="cursor:pointer"><b>KJV</b></span></a>) 1611 Authorised Version To the Most High and Mighty Prince JAMES, by the grace of God, King of Great Britian, France, and Ireland, Defender of the Faith.
 </div>
 </body>
+
+
 
 <br><br>
 <br><br>
