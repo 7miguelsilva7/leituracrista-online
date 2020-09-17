@@ -156,6 +156,9 @@ function start(){
 
 }
 
+$(document).ready(function(){
+$('html, body').animate({scrollTop: 0}, 'fast');
+})
 </script>
 
 <br><br>
