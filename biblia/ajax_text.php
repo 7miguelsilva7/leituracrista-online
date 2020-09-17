@@ -26,6 +26,26 @@ endforeach;
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <script>
 
@@ -73,11 +93,32 @@ document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
 
 
 $(document).ready(function(){
-$("html, body").animate({ scrollTop: 0 }, "fast");
-  // alert('top')
-  return false;
-});
 
+// verifica se vem de busca
+var verse = localStorage.getItem('verse');
+if (verse != ''){
+    // navega para versículo
+    $('html,body').animate({
+    scrollTop: $("#verse" + verse).offset().top
+    }, 'fast');
+  // scroll depois da barra top
+  var marginTop = $("#Caps").height()+30;
+  $('html, body').animate({scrollTop: '+=-'+marginTop+'px'}, 'fast');
+  // destaca versículo
+  var v = 'verse' + verse;
+  document.getElementById(v).style.backgroundColor = '#ffffc7';
+
+  localStorage.setItem('verse', '');
+ 
+
+  }else{
+    $("html, body").animate({ scrollTop: 0 }, "fast");
+
+  }
+  return false;
+
+
+});
 
 
 </script>

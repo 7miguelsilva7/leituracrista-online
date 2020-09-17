@@ -31,22 +31,25 @@ a {
 </head>
 
 <body id="noScroll">
+<?
+$q = $_POST['txtsearch']; //book
+?>
+<script>
+  $('#Caps').html('<span style="font-size:20px" >Resultados para  <?php echo '<span style="color:blue;">"' . $q .'"</span></span>'?>');
+</script>
+
 <?php
 $tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
 //verifica se o cookie está definido
 if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
   $version="ARF";
-  // setcookie("version", 'ARA', $tomorrow_cookie);
+  // setcookie("version", '$version', $tomorrow_cookie);
 } else {
   $version=$_COOKIE['version'];
 }
 
 // book and cap get
-$q = $_POST['txtsearch']; //book
 ?>
-
-<br>
-<br>
 
 <div align="center">
 <div align="left">
@@ -60,8 +63,8 @@ $q = $_POST['txtsearch']; //book
 // connection
 require_once 'dbconnect.php';  
 
-if (isset($_GET['page'])) {
-  $page = $_GET['page'];
+if (isset($_POST['page'])) {
+  $page = $_POST['page'];
 } else {
   $page = 1;
 }
@@ -69,20 +72,20 @@ $no_of_records_per_page = 10;
 $offset = ($page-1) * $no_of_records_per_page;
 
 
-// $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='ARA'";
+// $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='$version'";
 $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') 
-and version='ARA'";
+and version='$version'";
 $result = mysqli_query($mysqli,$total_pages_sql);
 $total_rows = mysqli_fetch_array($result)[0];
 // echo $total_rows;
 $total_pages = ceil($total_rows / $no_of_records_per_page);
 $sql = "SELECT ord, book, cap, verse, version, text FROM biblias WHERE MATCH(text) AGAINST('$q')
-and version='ARA' LIMIT $offset, $no_of_records_per_page";
+and version='$version' LIMIT $offset, $no_of_records_per_page";
 $res_data = mysqli_query($mysqli,$sql);
 while($row = mysqli_fetch_array($res_data)){
 
   echo '
-  <a onClick="getCapsAndText(\'' . $version . '\','. $row['ord'] .',\''. $row['book'] . '\','. $row['cap'] .');setUrl(\'' . $version . '\','. $row['ord'] .','. $row['cap'] .',\'' . $row['book'] . '\')"
+  <a onClick="getCapsAndText(\'' . $version . '\','. $row['ord'] .',\''. $row['book'] . '\','. $row['cap'] .');setUrl(\'' . $version . '\','. $row['ord'] .','. $row['cap'] .',\'' . $row['book'] . '\');localStorage.setItem(\'verse\',\''. $row['verse'] .'\')"
   style="font-size:18px">'.$row['book']. ' '.$row['cap'].'</a></p>
   <div class="verseText" id="divVersesTexts">
   ' . $row['verse'] . '<span class="verseTextP" style="font-size:20px"  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
@@ -92,20 +95,68 @@ mysqli_close($mysqli);
 ?>
 <div align="center">
 <ul class="pagination">
-<li><a href="?page=1&q=<?php echo $q?>">Início</a></li>
+<li><a onclick="start()">Início</a></li>
 <li class="<?php if($page <= 1){ echo 'disabled'; } ?>">
-  <a href="<?php if($page <= 1){ echo '#'; } else { echo "?page=".($page - 1).'&q='.$q; } ?>"><< Anterior</a>
+  <a onclick="backpage()" ><< Anterior</a>
 </li>
 <li class="<?php if($page >= $total_pages){ echo 'disabled'; } ?>">
-  <a href="<?php if($page >= $total_pages){ echo '#'; } else { echo "?page=".($page + 1).'&q='.$q; } ?>">Próximo >></a>
+  <a  onclick="forward()" >Próximo >></a>
 </li>
-<li><a href="?page=<?php echo $total_pages.'&q='.$q; ?>">Fim</a></li>
+<li><a onclick="end()" >Fim</a></li>
 </ul>
 </div>
 <!-- textos dos versiculo -->
 
 </div>
 </div>
+
+<script>
+function backpage(){
+    event.preventDefault();
+    var page = '<?php echo $page?>'
+    if( page <= 1){ } else{
+    var q = '<?php echo $q ?>'
+    var p = '<?php echo $page - 1 ?>'
+    $("#Text").load("busca_sidebar.php", {"txtsearch": q, "page": p });
+    $('html, body').animate({scrollTop: 0}, 'fast');
+    return false;
+
+    }
+};
+
+function forward(){
+    event.preventDefault();
+    var page = '<?php echo $page?>'
+    var total_pages = '<?php echo $total_pages?>'
+    if( page == total_pages){ } else {
+    var q = '<?php echo $q ?>'
+    var p = '<?php echo $page + 1 ?>'
+    $("#Text").load("busca_sidebar.php", {"txtsearch": q, "page": p });
+    $('html, body').animate({scrollTop: 0}, 'fast');
+    return false;
+
+    }
+};
+
+function end(){
+    event.preventDefault();
+    var total_pages = '<?php echo $total_pages?>'
+    var q = '<?php echo $q ?>'
+    $("#Text").load("busca_sidebar.php", {"txtsearch": q, "page": total_pages });
+    $('html, body').animate({scrollTop: 0}, 'fast');
+    return false;
+}
+
+function start(){
+    event.preventDefault();
+    var q = '<?php echo $q ?>'
+    $("#Text").load("busca_sidebar.php", {"txtsearch": q, "page": 1 });
+    $('html, body').animate({scrollTop: 0}, 'fast');
+    return false;
+
+}
+
+</script>
 
 <br><br>
 <br><br>
