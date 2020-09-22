@@ -3,7 +3,7 @@
 $tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
 //verifica se o cookie está definido
 if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
-  $version="ARA";
+  $version="ARF";
   // document.cookie = "version=ARA; expires=Thu, 31 Dec 2099 23:59:59 GMT";
 } else {
   $version=$_COOKIE['version'];
