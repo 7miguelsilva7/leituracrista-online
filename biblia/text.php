@@ -328,7 +328,7 @@ $stmV = $PDO->prepare($sqlVerses);
 $stmV->execute();  
 $verses = $stmV->fetchAll(PDO::FETCH_OBJ); 
 foreach($verses as $regVerses):  
-  echo '<a href="#verse' . $regVerses->verse . '"><button onclick="highlightVerse();" class="btn-default">' . $regVerses->verse . '</button></a>';
+  echo '<a href="#verse' . $regVerses->verse . '"><button onclick="localStorage.setItem(\'verseInterlinear\',\''. $regVerses->verse .'\');highlightVerseText();" class="btn-default">' . $regVerses->verse . '</button></a>';
 endforeach; 
 ?>
 <br>
@@ -440,12 +440,14 @@ $(function($){
 // highlightVerse
 function highlightVerse(){
 setTimeout(highlightVerse, 1000);
-var verse = window.location.href;
-var num = verse.split('#');
-// alert(num[1]);
-if (num[1] != null){
-document.getElementById(num[1]).style.backgroundColor = "#ffffc7";
-}
+$(".hightlights").css("background-color", "");
+// setTimeout(highlightVerse, 1000);
+var v = 'verse' + localStorage.getItem('verseInterlinear');
+// color = document.getElementById(v).style.backgroundColor;
+// if (color != ''){
+// document.getElementById(v).style.backgroundColor = "";
+// }else{
+  document.getElementById(v).style.backgroundColor = "#ffffc7";
 }
 
 // Ao clicar no texto do versículo
@@ -453,12 +455,12 @@ function highlightVerseText(){
 $(".hightlights").css("background-color", "");
 // setTimeout(highlightVerse, 1000);
 var v = 'verse' + localStorage.getItem('verseInterlinear');
-color = document.getElementById(v).style.backgroundColor;
-if (color != ''){
-document.getElementById(v).style.backgroundColor = "";
-}else{
+// color = document.getElementById(v).style.backgroundColor;
+// if (color != ''){
+// document.getElementById(v).style.backgroundColor = "";
+// }else{
   document.getElementById(v).style.backgroundColor = "#ffffc7";
-}
+// }
 // alert(teste);
 }
 
