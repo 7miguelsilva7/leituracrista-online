@@ -437,18 +437,20 @@ $(function($){
 
   
 
-// highlightVerse
-function highlightVerse(){
-setTimeout(highlightVerse, 1000);
-$(".hightlights").css("background-color", "");
+// highlightVerse ao clicar no numero do verso
+// function highlightVerse(){
 // setTimeout(highlightVerse, 1000);
-var v = 'verse' + localStorage.getItem('verseInterlinear');
-// color = document.getElementById(v).style.backgroundColor;
-// if (color != ''){
-// document.getElementById(v).style.backgroundColor = "";
-// }else{
-  document.getElementById(v).style.backgroundColor = "#ffffc7";
-}
+
+// $(".hightlights").css("background-color", "");
+// // setTimeout(highlightVerse, 1000);
+// var v = 'verse' + localStorage.getItem('verseInterlinear');
+// // color = document.getElementById(v).style.backgroundColor;
+// // if (color != ''){
+// // document.getElementById(v).style.backgroundColor = "";
+// // }else{
+//   document.getElementById(v).style.backgroundColor = "#ffffc7";
+
+// }
 
 // Ao clicar no texto do versículo
 function highlightVerseText(){
@@ -460,6 +462,7 @@ var v = 'verse' + localStorage.getItem('verseInterlinear');
 // document.getElementById(v).style.backgroundColor = "";
 // }else{
   document.getElementById(v).style.backgroundColor = "#ffffc7";
+  
 // }
 // alert(teste);
 }
@@ -611,5 +614,36 @@ $reset.on('click', function() {
 // 					  width: "toggle"
 // 					});
 // });
+
+
+
+
+
+// Aqui nós estaremos realizando o scroll da página para 45px acima
+// de onde ela está atualmente
+function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 28);
+  }
+}
+
+// Aqui estou adicionando um listener à todos elementos <a> que
+// redirecionam para algum link que comece com #. Você pode criar uma 
+// classe ou aplicar à elementos específicos.
+document.querySelectorAll('a[href^="#"').forEach(el => {
+  el.addEventListener("click", function() {
+  
+    window.setTimeout(function() {
+      // O clique é capturado antes da mudança do #, então
+      // o timeout faz com que esse código seja executado
+      // apenas após a rolagem do redirecionamento ser executada
+      offsetAnchor();
+    }, 0);
+
+  });
+})
+
+// Definimos o offset inicial caso a página aberta já esteja indo para um #elemento
+window.setTimeout(offsetAnchor, 0);
 </script>
 
