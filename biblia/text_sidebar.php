@@ -248,7 +248,7 @@ if(!empty($_GET['b'])) {
             <input class="btn-text-top" type="text" name="txtsearch" placeholder="Buscar">
             <div style="z-index: 9999;"><button class="btn-buscar-top" type="submit"></button></div>
     </form>
-              <a href="index.php"><button><img style="width:16px;" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></button></a>
+              <a href="index.php" onclick="localStorage.setItem('layoutBar',0);"><button><img style="width:16px;" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></button></a>
               <button><img id="resetFont" style="width:16px;" title="Restaurar fonte" src="img/reset.png" alt="Restauar Fonte"></button>
               <button name="decrease-font" id="btnDiminuir" title="Diminuir fonte">A <sup>-</sup></button> 
               <button name="increase-font" id="btnAumentar" title="Aumentar fonte">A <sup>+</sup></button> 
@@ -469,5 +469,14 @@ function SetCookie(c_name,value,expiredays)
         // $("#Text").load("ajax_text.php", {"version": v, "order": o, "cap": c, "book": b,});  
   }
 
+  $( document ).ready(function() {
+  if (localStorage.getItem('layoutBar') != null){
+    if (localStorage.getItem('layoutBar') == 0)
+      {
+      window.location.href = "index.php";
+      }else{
+      }
+  }
+});
 
 </script>

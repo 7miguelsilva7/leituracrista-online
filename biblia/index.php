@@ -194,7 +194,7 @@ Bíblia Interlinear <br>
 <!-- Complete books Names -->
 <div align="left" class="book naoSelecionavel">
 <div style="position: fixed;top:60px; right:20px">
-<a href="text_sidebar.php"><button><img style="width:20px;" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></button></a>
+<a href="text_sidebar.php" onclick="localStorage.setItem('layoutBar',1);" ><button><img style="width:20px;" title="Layout Sidebar" src="img/sidebar.png" alt="Layout Sidebar"></button></a>
 </div>
 
 <?php
@@ -264,8 +264,6 @@ endforeach;
 </div>
 </body>
 
-
-
 <br><br>
 <br><br>
 
@@ -296,4 +294,13 @@ endforeach;
 
 	}
 
+$( document ).ready(function() {
+  if (localStorage.getItem('layoutBar') != null){
+    if (localStorage.getItem('layoutBar') == 1)
+      {
+      window.location.href = "text_sidebar.php";
+      }else{
+      }
+  }
+});
 </script>
