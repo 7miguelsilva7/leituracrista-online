@@ -645,5 +645,6 @@ document.querySelectorAll('a[href^="#"').forEach(el => {
 
 // Definimos o offset inicial caso a página aberta já esteja indo para um #elemento
 window.setTimeout(offsetAnchor, 0);
+
 </script>
 

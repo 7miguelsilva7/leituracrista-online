@@ -469,4 +469,5 @@ function SetCookie(c_name,value,expiredays)
         // $("#Text").load("ajax_text.php", {"version": v, "order": o, "cap": c, "book": b,});  
   }
 
+
 </script>

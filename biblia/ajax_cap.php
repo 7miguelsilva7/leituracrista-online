@@ -20,7 +20,7 @@ foreach($dados as $reg):
   if ($cap == $reg->cap){
   echo '<a style="cursor:pointer;width:20px; color:red;font-weight:bold" onClick="getText(\'' . $version .'\',' . $reg->ord . ',' . $reg->cap . ',\''. $reg->book . '\')"> ' . $reg->cap . ' </a>';
   }else{
-  echo '<a style="cursor:pointer;width:20px;" onClick="getText(\'' . $version .'\',' . $reg->ord . ',' . $reg->cap . ',\''. $reg->book . '\')"> ' . $reg->cap . ' </a>';
+  echo '<a style="cursor:pointer;width:20px;" onClick="getText(\'' . $version .'\',' . $reg->ord . ',' . $reg->cap . ',\''. $reg->book . '\');settitle(\''.$reg->book.'\','.$reg->cap.')"> ' . $reg->cap . ' </a>';
   }
 endforeach;
 ?></span>
@@ -29,4 +29,6 @@ endforeach;
 $(document).ready(function(){
   resizeDivText();
 }); 
+
+
 </script>

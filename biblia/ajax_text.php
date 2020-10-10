@@ -120,5 +120,9 @@ if (verse != ''){
 
 });
 
-
+// renomear titulo da página
+function settitle(b, c){
+  
+  document.title = b + ' ' + c
+}
 </script>
