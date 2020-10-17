@@ -294,7 +294,7 @@ endforeach;
 
 	}
 
-$( document ).ready(function() {
+// $( document ).ready(function() {
   if (localStorage.getItem('layoutBar') != null){
     if (localStorage.getItem('layoutBar') == 1)
       {
@@ -302,5 +302,5 @@ $( document ).ready(function() {
       }else{
       }
   }
-});
+// });
 </script>

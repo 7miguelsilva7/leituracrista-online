@@ -469,7 +469,7 @@ function SetCookie(c_name,value,expiredays)
         // $("#Text").load("ajax_text.php", {"version": v, "order": o, "cap": c, "book": b,});  
   }
 
-  $( document ).ready(function() {
+  // $( document ).ready(function() {
   if (localStorage.getItem('layoutBar') != null){
     if (localStorage.getItem('layoutBar') == 0)
       {
@@ -477,6 +477,6 @@ function SetCookie(c_name,value,expiredays)
       }else{
       }
   }
-});
+// });
 
 </script>
