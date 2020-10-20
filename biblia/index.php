@@ -12,6 +12,19 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 require_once 'dbconnect.php';  
 ?>
 <head>
+
+<script>
+  // $( document ).ready(function() {
+    if (localStorage.getItem('layoutBar') != null){
+    if (localStorage.getItem('layoutBar') == 1)
+      {
+      window.location.href = "text_sidebar.php";
+      }else{
+      }
+  }
+// });
+</script>
+
 <meta property="og:type" content="bible">
 <meta property="og:title" content="Bíblia Sagrada">
 <meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
@@ -294,13 +307,5 @@ endforeach;
 
 	}
 
-// $( document ).ready(function() {
-  if (localStorage.getItem('layoutBar') != null){
-    if (localStorage.getItem('layoutBar') == 1)
-      {
-      window.location.href = "text_sidebar.php";
-      }else{
-      }
-  }
-// });
+
 </script>

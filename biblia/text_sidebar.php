@@ -17,6 +17,20 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 <html>
 <head>
 
+<script>
+
+// $( document ).ready(function() {
+  if (localStorage.getItem('layoutBar') != null){
+    if (localStorage.getItem('layoutBar') == 0)
+      {
+      window.location.href = "index.php";
+      }else{
+      }
+  }
+// });
+
+</script>
+
 <meta property="og:type" content="bible">
 <meta property="og:title" content="Bíblia Sagrada">
 <meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
@@ -469,14 +483,6 @@ function SetCookie(c_name,value,expiredays)
         // $("#Text").load("ajax_text.php", {"version": v, "order": o, "cap": c, "book": b,});  
   }
 
-  // $( document ).ready(function() {
-  if (localStorage.getItem('layoutBar') != null){
-    if (localStorage.getItem('layoutBar') == 0)
-      {
-      window.location.href = "index.php";
-      }else{
-      }
-  }
-// });
+  
 
 </script>
