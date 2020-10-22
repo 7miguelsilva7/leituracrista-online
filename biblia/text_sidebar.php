@@ -483,6 +483,36 @@ function SetCookie(c_name,value,expiredays)
         // $("#Text").load("ajax_text.php", {"version": v, "order": o, "cap": c, "book": b,});  
   }
 
-  
+$(document).keypress(function(event){
+// navega por versículo com highlight avança
+if (String.fromCharCode(event.which) == ">") {
+$('.hightlights').css('background-color', '');
+var verseStr = localStorage.getItem('verseInterlinear');
+var verseNUmber =  Number(verseStr)+1
+// alert(verseNUmber)
+localStorage.setItem('verseInterlinear', verseNUmber)
+var v = 'verse' + verseNUmber;
+color = document.getElementById(v).style.backgroundColor;
+if (color != ''){
+document.getElementById(v).style.backgroundColor = '';
+}else{
+  document.getElementById(v).style.backgroundColor = '#ffffc7';
+}}
+
+// navega por versículo com highlight volta
+if (String.fromCharCode(event.which) == "<") {
+$('.hightlights').css('background-color', '');
+var verseStr = localStorage.getItem('verseInterlinear');
+var verseNUmber =  Number(verseStr)-1
+// alert(verseNUmber)
+localStorage.setItem('verseInterlinear', verseNUmber)
+var v = 'verse' + verseNUmber;
+color = document.getElementById(v).style.backgroundColor;
+if (color != ''){
+document.getElementById(v).style.backgroundColor = '';
+}else{
+  document.getElementById(v).style.backgroundColor = '#ffffc7';
+}}
+});  
 
 </script>
