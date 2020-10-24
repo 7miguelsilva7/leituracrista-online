@@ -97,10 +97,11 @@ $(document).ready(function(){
 // verifica se vem de busca
 var verse = localStorage.getItem('verse');
 if (verse != ''){
-    // navega para versículo
-    $('html,body').animate({
-    scrollTop: $("#verse" + verse).offset().top
-    }, 'fast');
+    
+  // navega para versículo
+  $('html,body').animate({
+  scrollTop: $("#verse" + verse).offset().top
+  }, 'fast');
   // scroll depois da barra top
   var marginTop = $("#Caps").height()+30;
   $('html, body').animate({scrollTop: '+=-'+marginTop+'px'}, 'fast');

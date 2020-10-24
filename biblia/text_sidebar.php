@@ -484,6 +484,7 @@ function SetCookie(c_name,value,expiredays)
   }
 
 $(document).keypress(function(event){
+
 // navega por versículo com highlight avança
 if (String.fromCharCode(event.which) == ">") {
 $('.hightlights').css('background-color', '');
@@ -497,6 +498,15 @@ if (color != ''){
 document.getElementById(v).style.backgroundColor = '';
 }else{
   document.getElementById(v).style.backgroundColor = '#ffffc7';
+  
+  // navega para versículo
+  $('html,body').animate({
+  scrollTop: $("#verse" + verseNUmber).offset().top
+  }, 'fast');
+  // scroll depois da barra top
+  var marginTop = $("#Caps").height()+50;
+  $('html, body').animate({scrollTop: '+=-'+marginTop+'px'}, 'fast');
+  
 }}
 
 // navega por versículo com highlight volta
@@ -512,6 +522,15 @@ if (color != ''){
 document.getElementById(v).style.backgroundColor = '';
 }else{
   document.getElementById(v).style.backgroundColor = '#ffffc7';
+
+    // navega para versículo
+    $('html,body').animate({
+  scrollTop: $("#verse" + verseNUmber).offset().top
+  }, 'fast');
+  // scroll depois da barra top
+  var marginTop = $("#Caps").height()+50;
+  $('html, body').animate({scrollTop: '+=-'+marginTop+'px'}, 'fast');
+  
 }}
 });  
 
