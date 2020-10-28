@@ -86,7 +86,7 @@ while($row = mysqli_fetch_array($res_data)){
 
   echo '
   <a onClick="getCapsAndText(\'' . $version . '\','. $row['ord'] .',\''. $row['book'] . '\','. $row['cap'] .');setUrl(\'' . $version . '\','. $row['ord'] .','. $row['cap'] .',\'' . $row['book'] . '\');localStorage.setItem(\'verse\',\''. $row['verse'] .'\')"
-  style="font-size:18px">'.$row['book']. ' '.$row['cap']. ':' . $row['verse'] .'</a>
+  style="font-size:18px">'.$row['book']. ' '.$row['cap']. ':' . $row['verse'] .'&nbsp;</a>
   <div class="verseText" id="divVersesTexts">
   <span class="verseTextP" style="font-size:20px"  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
 
