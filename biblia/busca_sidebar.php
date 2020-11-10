@@ -18,6 +18,8 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/mark.js/8.6.0/mark.min.js"></script>
+
 
 <style>
 hr { margin:  10px 10px; }
@@ -51,12 +53,10 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 // book and cap get
 ?>
 
-<div align="center">
+<div id='source' align="center">
 <div align="left">
 
-<?php
-
-?><br>
+<br>
 
 <?php
 
