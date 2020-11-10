@@ -18,8 +18,6 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/mark.js/8.6.0/mark.min.js"></script>
-
 
 <style>
 hr { margin:  10px 10px; }
@@ -53,10 +51,12 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 // book and cap get
 ?>
 
-<div id='source' align="center">
+<div align="center">
 <div align="left">
 
-<br>
+<?php
+
+?><br>
 
 <?php
 
@@ -88,7 +88,7 @@ while($row = mysqli_fetch_array($res_data)){
   <a onClick="getCapsAndText(\'' . $version . '\','. $row['ord'] .',\''. $row['book'] . '\','. $row['cap'] .');setUrl(\'' . $version . '\','. $row['ord'] .','. $row['cap'] .',\'' . $row['book'] . '\');localStorage.setItem(\'verse\',\''. $row['verse'] .'\')"
   style="font-size:18px">'.$row['book']. ' '.$row['cap']. ':' . $row['verse'] .'&nbsp;</a>
   <div class="verseText" id="divVersesTexts">
-  <span class="verseTextP" style="font-size:20px"  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
+  <span class="verseTextP resultado" style="font-size:20px"  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
 
 }
 mysqli_close($mysqli);
@@ -159,6 +159,22 @@ function start(){
 $(document).ready(function(){
 $('html, body').animate({scrollTop: 0}, 'fast');
 })
+
+$q = '<?php echo $q ?>'
+var searchTerm = $q.split(" ");
+ 
+$(".resultado").each(function() {
+    var html = $(this).html().toString();
+    for(var i = 0; i < searchTerm.length; i++) {
+        var pattern = "([^\w]*)(" + searchTerm[i] + ")([^\w]*)";
+        var rg = new RegExp(pattern);
+        var match = rg.exec(html);
+        if(match) {
+            html = html.replace(rg,match[1] + "<b>"+ match[2] +"</b>" + match[3]);
+            $(this).html(html);
+        }
+    }
+});
 </script>
 
 <br><br>
