@@ -170,7 +170,7 @@ $(".resultado").each(function() {
         var rg = new RegExp(pattern);
         var match = rg.exec(html);
         if(match) {
-            html = html.replace(rg,match[1] + "<b>"+ match[2] +"</b>" + match[3]);
+            html = html.replace(rg,match[1] + '<b style="color:red">'+ match[2] +'</b>' + match[3]);
             $(this).html(html);
         }
     }
