@@ -165,16 +165,14 @@ var searchTerm = $q.split(" ");
  
 $(".resultado").each(function() {
     var html = $(this).html().toString();
-    for(var i = 0; i < searchTerm.length; i++) {
-        var pattern = "([^\w]*)(" + searchTerm[i] + ")([^\w]*)";
-        var rg = new RegExp(pattern);
-        var match = rg.exec(html);
-        if(match) {
-            html = html.replace(rg,match[1] + '<b style="color:red">'+ match[2] +'</b>' + match[3]);
-            $(this).html(html);
-        }
-    }
+    var pattern = "\\b(" + searchTerm.join('|') + ")\\b";
+    var rg = new RegExp(pattern, 'ig');
+    var match = rg.exec(html);
+
+    html = html.replace(rg, '<span style="color:red">$1</span>');
+    $(this).html(html);
 });
+
 </script>
 
 <br><br>
