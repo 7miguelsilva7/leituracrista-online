@@ -297,7 +297,7 @@ where `version`= '$version'
 and ord=$o
 and cap=$c
 group by `verse`";  
-$stm = $PDO->prepare($sql);  
+$stm = $PDO->prepare($sql);
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
 foreach($dados as $reg):  
