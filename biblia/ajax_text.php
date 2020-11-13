@@ -17,7 +17,7 @@ and cap= $cap
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
-?><h2 id=""><?php echo '(<a style="cursor:pointer" id="myBtn">' . $version . '</a>) ' . $book?></h2> <span style="font-size:17px;"><?
+?><h2 id=""><?php echo '(<a style="cursor:pointer" id="myBtn">' . $version . '</a>) ' . $book . $reg->cap?></h2> <span style="font-size:17px;"><?
 foreach($dados as $reg):
   echo '<div  style="cursor:pointer;font-size:20px;" class="hightlights"  id="verse'. $reg->verse .'" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><span onclick="interlinear(' . $reg->ord . ',\'' . $reg->book . '\',' . $reg->cap . ',' . $reg->verse . ');" class="verseText" style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</span><span >' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
 endforeach;
