@@ -303,7 +303,7 @@ $dados = $stm->fetchAll(PDO::FETCH_OBJ);
 foreach($dados as $reg):  
   $totalCaps = $reg->totalCaps;
   // echo '<div class="verseText"  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');"><sup>'. $reg->abr . ' ' . $reg->cap . ':</sup><sup>' . $reg->verse . '</sup><span  id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></div></a></p>';
-  echo '<div  style="cursor:pointer" id="divVersesTexts" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><sup class="verseText"><b style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</b></sup><span class="hightlights" id="verse'. $reg->verse .'">' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
+  echo '<div  style="cursor:pointer" class="hightlights divVersesTexts" id="verse'. $reg->verse .'" onclick="localStorage.setItem(\'verseInterlinear\',\''. $reg->verse .'\');highlightVerseText();"><p class="verseTextP"><sup class="verseText"><b style="color:blue;">'. $reg->abr . ' ' . $reg->cap . ':' . $reg->verse . '</b></sup><span >' . ' ' . $reg->pgrph . $reg->text . '</span></p></div>';
 endforeach;
 ?>
 <div align="right" class="btn-container">
