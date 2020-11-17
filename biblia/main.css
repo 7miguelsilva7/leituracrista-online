@@ -1,3 +1,4 @@
+
 .footerback {
   margin: auto;
   position: fixed;
@@ -12,8 +13,9 @@
   cursor: pointer;
   height: 37px;
   padding: 10px;
-}
-  
+
+
+  }
 
 .footerup {
   margin: auto;
@@ -49,23 +51,6 @@
   
     }    
 
-    .footerbackCap {
-      margin: auto;
-      position: fixed;
-      left: 1;
-      bottom: 0;
-      width: 100%;
-      background-color: DarkSlateBlue;
-      color: white;
-      text-align: center;
-      font-size: 25px;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 5px;
-      height: 38px;
-    
-      }   
-    
     .footerbackground {
       margin: auto;
       position: fixed;
