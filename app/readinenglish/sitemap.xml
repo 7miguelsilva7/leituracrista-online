@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -23,15 +23,15 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/readinenglish/a-stealthy-attack-from-a-hidden-enemy/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/readinenglish/a-true-shark-story/</loc>
   </url>
   
   <url>
     <loc>https://leituracrista.com/app/readinenglish/a-valiant-captain/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/readinenglish/a-stealthy-attack-from-a-hidden-enemy/</loc>
   </url>
   
   <url>
@@ -60,7 +60,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/readinenglish/book/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -69,7 +68,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/readinenglish/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -77,11 +75,11 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/readinenglish/christ-your-griefs-has-borne/</loc>
+    <loc>https://leituracrista.com/app/readinenglish/christ-is-coming/</loc>
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/readinenglish/christ-is-coming/</loc>
+    <loc>https://leituracrista.com/app/readinenglish/christ-your-griefs-has-borne/</loc>
   </url>
   
   <url>
@@ -150,7 +148,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/readinenglish/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -178,12 +175,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/readinenglish/tsunami-the-picture-of-a-nightmare/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/readinenglish/tags/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -219,15 +211,19 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/readinenglish/tsunami-the-picture-of-a-nightmare/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/readinenglish/what-does-the-bible-teach-about-the-trinity/</loc>
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/readinenglish/what-is-trinitarianism/</loc>
+    <loc>https://leituracrista.com/app/readinenglish/what-is-the-bible-in-basic-english-bbe/</loc>
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/readinenglish/what-is-the-bible-in-basic-english-bbe/</loc>
+    <loc>https://leituracrista.com/app/readinenglish/what-is-trinitarianism/</loc>
   </url>
   
   <url>

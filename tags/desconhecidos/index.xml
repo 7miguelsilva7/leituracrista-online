@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Desconhecidos on Leitura Cristã</title>
@@ -83,6 +83,15 @@
     </item>
     
     <item>
+      <title>A fonte</title>
+      <link>https://leituracrista.com/folhetos/doutrinarios/a-fonte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/folhetos/doutrinarios/a-fonte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Mentira</title>
       <link>https://leituracrista.com/folhetos/doutrinarios/a-mentira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -97,15 +106,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leituracrista.com/folhetos/doutrinarios/a-porteira/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A fonte</title>
-      <link>https://leituracrista.com/folhetos/doutrinarios/a-fonte/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/folhetos/doutrinarios/a-fonte/</guid>
       <description></description>
     </item>
     

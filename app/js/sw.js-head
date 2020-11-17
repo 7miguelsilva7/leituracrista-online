@@ -11,12 +11,7 @@ var urls_lc = [
   '/app/css/main.css',
   '/app/css/normalize.css',
   '/app/css/typo.css',
-  '/app/css/bootstrap.min.css',
-  '/app/js/jquery-3.2.1.slim.min.js',
-  '/app/js/popper.min.js',
-  '/app/js/bootstrap.min.js',
   '/app/js/custom.js',
   '/app/closeWindow.html',
   '/app/img/voltar.png',
   '/app/img/up.png',
-

@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://leituracrista.com/app/a-autoridade-delegada-a-assembleia-r.-guillen/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/a-bem-aventurada-esperanca/</loc>
   </url>
   
   <url>
@@ -172,7 +168,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/book/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -185,7 +180,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -465,11 +459,11 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/cristo-nossa-vida_-edward-dennett/</loc>
+    <loc>https://leituracrista.com/app/cristo-a-sabedoria-de-deus-para-o-caminho-g.-h.-hayhoe/</loc>
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/cristo-a-sabedoria-de-deus-para-o-caminho-g.-h.-hayhoe/</loc>
+    <loc>https://leituracrista.com/app/cristo-nossa-vida_-edward-dennett/</loc>
   </url>
   
   <url>
@@ -486,10 +480,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/dois-dias-nas-escrituras-bruce-anstey-bruce-anstey/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/esbocos-dos-livros-da-biblia/</loc>
   </url>
   
   <url>
@@ -525,10 +515,6 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/evangelho-segundo-mateus/</loc>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/longe-do-arraial-fora-do-arraial-autor-des/</loc>
   </url>
   
@@ -550,11 +536,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/lembraivos-dos-vossos-guias/</loc>
   </url>
   
   <url>
@@ -650,11 +631,11 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/o-espirito-santo-h.-e.-hayhoe-h.-e.-hayhoe/</loc>
+    <loc>https://leituracrista.com/app/o-espirito-de-graca-c-buchaman-c.-buchanan/</loc>
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/o-espirito-de-graca-c-buchaman-c.-buchanan/</loc>
+    <loc>https://leituracrista.com/app/o-espirito-santo-h.-e.-hayhoe-h.-e.-hayhoe/</loc>
   </url>
   
   <url>
@@ -706,15 +687,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/o-servo-vigilante-a-vinda-do-senhor-john-n-j.-n.-darby/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/o-tribunal-de-cristo-bruce-anstey-bruce-anstey/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/o-vinculo-matrimonial-c.-h.-hayhoe-g.-h.-hayhoe/</loc>
+    <loc>https://leituracrista.com/app/o-que-a-biblia-diz-sobre-romance-namoro-douglas-nicolas/</loc>
   </url>
   
   <url>
@@ -782,7 +755,15 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/o-que-a-biblia-diz-sobre-romance-namoro-douglas-nicolas/</loc>
+    <loc>https://leituracrista.com/app/o-servo-vigilante-a-vinda-do-senhor-john-n-j.-n.-darby/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/o-tribunal-de-cristo-bruce-anstey-bruce-anstey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/o-vinculo-matrimonial-c.-h.-hayhoe-g.-h.-hayhoe/</loc>
   </url>
   
   <url>
@@ -830,7 +811,7 @@
   </url>
   
   <url>
-    <loc>https://leituracrista.com/app/porque-nos-reunimos-assim--j.-r.-gill/</loc>
+    <loc>https://leituracrista.com/app/porque-nos-reunimos-assim-j.-r.-gill/</loc>
   </url>
   
   <url>
@@ -851,10 +832,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/quem-e-jesus-k-heslop-k.-heslop/</loc>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/questoes-profeticas/</loc>
   </url>
   
   <url>
@@ -895,7 +872,6 @@
   
   <url>
     <loc>https://leituracrista.com/app/tags/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

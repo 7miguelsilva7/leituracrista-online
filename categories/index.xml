@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Leitura Cristã</title>
     <link>https://leituracrista.com/categories/</link>
     <description>Recent content in Categories on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leituracrista.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,20 +20,11 @@
     </item>
     
     <item>
-      <title>Doutrinarios</title>
-      <link>https://leituracrista.com/categories/doutrinarios/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Livros</title>
+      <link>https://leituracrista.com/categories/livros/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/categories/doutrinarios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Evangelisticos</title>
-      <link>https://leituracrista.com/categories/evangelisticos/</link>
-      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/categories/evangelisticos/</guid>
+      <guid>https://leituracrista.com/categories/livros/</guid>
       <description></description>
     </item>
     
@@ -46,11 +38,20 @@
     </item>
     
     <item>
-      <title>Livros</title>
-      <link>https://leituracrista.com/categories/livros/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Evangelisticos</title>
+      <link>https://leituracrista.com/categories/evangelisticos/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/categories/livros/</guid>
+      <guid>https://leituracrista.com/categories/evangelisticos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Doutrinarios</title>
+      <link>https://leituracrista.com/categories/doutrinarios/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/categories/doutrinarios/</guid>
       <description></description>
     </item>
     

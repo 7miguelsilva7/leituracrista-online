@@ -1,39 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Leitura Cristã</title>
     <link>https://leituracrista.com/tags/</link>
     <description>Recent content in Tags on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 21 Jul 2017 17:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leituracrista.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A. H. Rule</title>
-      <link>https://leituracrista.com/tags/a.-h.-rule/</link>
-      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
+      <title>J. N. DARBY</title>
+      <link>https://leituracrista.com/tags/j.-n.-darby/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/tags/a.-h.-rule/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Algernon James Pollock</title>
-      <link>https://leituracrista.com/tags/algernon-james-pollock/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/algernon-james-pollock/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Andrew Miller</title>
-      <link>https://leituracrista.com/tags/andrew-miller/</link>
-      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
-      
-      <guid>https://leituracrista.com/tags/andrew-miller/</guid>
+      <guid>https://leituracrista.com/tags/j.-n.-darby/</guid>
       <description></description>
     </item>
     
@@ -47,20 +29,11 @@
     </item>
     
     <item>
-      <title>C. Buchanan</title>
-      <link>https://leituracrista.com/tags/c.-buchanan/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Norman Berry</title>
+      <link>https://leituracrista.com/tags/norman-berry/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/tags/c.-buchanan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C. E. Lunden</title>
-      <link>https://leituracrista.com/tags/c.-e.-lunden/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/c.-e.-lunden/</guid>
+      <guid>https://leituracrista.com/tags/norman-berry/</guid>
       <description></description>
     </item>
     
@@ -92,24 +65,6 @@
     </item>
     
     <item>
-      <title>Christian Treasury</title>
-      <link>https://leituracrista.com/tags/christian-treasury/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/christian-treasury/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Christian Truth for the Household of Faith</title>
-      <link>https://leituracrista.com/tags/christian-truth-for-the-household-of-faith/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/christian-truth-for-the-household-of-faith/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Clarence E. Lunden</title>
       <link>https://leituracrista.com/tags/clarence-e.-lunden/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
@@ -119,7 +74,7 @@
     </item>
     
     <item>
-      <title>Clarence Lunden</title>
+      <title>CLARENCE LUNDEN</title>
       <link>https://leituracrista.com/tags/clarence-lunden/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
@@ -128,27 +83,9 @@
     </item>
     
     <item>
-      <title>Concise Bible Dictionary</title>
-      <link>https://leituracrista.com/tags/concise-bible-dictionary/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/concise-bible-dictionary/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>D. Rule</title>
-      <link>https://leituracrista.com/tags/d.-rule/</link>
-      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/d.-rule/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Desconhecido</title>
+      <title>DESCONHECIDO</title>
       <link>https://leituracrista.com/tags/desconhecido/</link>
-      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://leituracrista.com/tags/desconhecido/</guid>
       <description></description>
@@ -164,33 +101,6 @@
     </item>
     
     <item>
-      <title>Diversos Autores</title>
-      <link>https://leituracrista.com/tags/diversos-autores/</link>
-      <pubDate>Fri, 09 Jun 2017 17:00:00 +0900</pubDate>
-      
-      <guid>https://leituracrista.com/tags/diversos-autores/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Douglas Nicolet</title>
-      <link>https://leituracrista.com/tags/douglas-nicolet/</link>
-      <pubDate>Fri, 19 May 2017 17:00:00 +0900</pubDate>
-      
-      <guid>https://leituracrista.com/tags/douglas-nicolet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>E. H. Charter</title>
-      <link>https://leituracrista.com/tags/e.-h.-charter/</link>
-      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
-      
-      <guid>https://leituracrista.com/tags/e.-h.-charter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>E. H. Chater</title>
       <link>https://leituracrista.com/tags/e.-h.-chater/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
@@ -200,74 +110,11 @@
     </item>
     
     <item>
-      <title>E. J. Checkley</title>
-      <link>https://leituracrista.com/tags/e.-j.-checkley/</link>
-      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/e.-j.-checkley/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Echoes of Grace</title>
-      <link>https://leituracrista.com/tags/echoes-of-grace/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/echoes-of-grace/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Edward Acomb</title>
-      <link>https://leituracrista.com/tags/edward-acomb/</link>
-      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/edward-acomb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Edward Dennett</title>
       <link>https://leituracrista.com/tags/edward-dennett/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://leituracrista.com/tags/edward-dennett/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>F. B. Hole</title>
-      <link>https://leituracrista.com/tags/f.-b.-hole/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/f.-b.-hole/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>F. G. Patterson</title>
-      <link>https://leituracrista.com/tags/f.-g.-patterson/</link>
-      <pubDate>Sun, 17 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/f.-g.-patterson/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Frank Binford Hole</title>
-      <link>https://leituracrista.com/tags/frank-binford-hole/</link>
-      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/frank-binford-hole/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fábio Sandes</title>
-      <link>https://leituracrista.com/tags/f%C3%A1bio-sandes/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/f%C3%A1bio-sandes/</guid>
       <description></description>
     </item>
     
@@ -286,15 +133,6 @@
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://leituracrista.com/tags/g.-h.-hayhoe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>G. v. Wigram</title>
-      <link>https://leituracrista.com/tags/g.-v.-wigram/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/g.-v.-wigram/</guid>
       <description></description>
     </item>
     
@@ -344,33 +182,6 @@
     </item>
     
     <item>
-      <title>H. Smith</title>
-      <link>https://leituracrista.com/tags/h.-smith/</link>
-      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
-      
-      <guid>https://leituracrista.com/tags/h.-smith/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>H. Witherby</title>
-      <link>https://leituracrista.com/tags/h.-witherby/</link>
-      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
-      
-      <guid>https://leituracrista.com/tags/h.-witherby/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hamilton Smith</title>
-      <link>https://leituracrista.com/tags/hamilton-smith/</link>
-      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/hamilton-smith/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>J. C. Ryle</title>
       <link>https://leituracrista.com/tags/j.-c.-ryle/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
@@ -389,119 +200,11 @@
     </item>
     
     <item>
-      <title>J. H. Smith</title>
-      <link>https://leituracrista.com/tags/j.-h.-smith/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/j.-h.-smith/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>J. K.</title>
-      <link>https://leituracrista.com/tags/j.-k./</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/j.-k./</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>J. N. Darby</title>
-      <link>https://leituracrista.com/tags/j.-n.-darby/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/j.-n.-darby/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>J. R. Gill</title>
-      <link>https://leituracrista.com/tags/j.-r.-gill/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/j.-r.-gill/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>J. T. Armet</title>
-      <link>https://leituracrista.com/tags/j.-t.-armet/</link>
-      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/j.-t.-armet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jean Koechlin E Norman Berry</title>
-      <link>https://leituracrista.com/tags/jean-koechlin-e-norman-berry/</link>
-      <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
-      
-      <guid>https://leituracrista.com/tags/jean-koechlin-e-norman-berry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>K. Heslop</title>
-      <link>https://leituracrista.com/tags/k.-heslop/</link>
-      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/k.-heslop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>L.c.perry</title>
+      <title>L.C.Perry</title>
       <link>https://leituracrista.com/tags/l.c.perry/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://leituracrista.com/tags/l.c.perry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laura Anna Bartner Snow</title>
-      <link>https://leituracrista.com/tags/laura-anna-bartner-snow/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/laura-anna-bartner-snow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mario Persona</title>
-      <link>https://leituracrista.com/tags/mario-persona/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/mario-persona/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Miguel Silva</title>
-      <link>https://leituracrista.com/tags/miguel-silva/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/miguel-silva/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Morrish Bible Dictionary</title>
-      <link>https://leituracrista.com/tags/morrish-bible-dictionary/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/morrish-bible-dictionary/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Norman Berry</title>
-      <link>https://leituracrista.com/tags/norman-berry/</link>
-      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/norman-berry/</guid>
       <description></description>
     </item>
     
@@ -515,92 +218,11 @@
     </item>
     
     <item>
-      <title>R. Erisman</title>
-      <link>https://leituracrista.com/tags/r.-erisman/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/r.-erisman/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R. Guillen</title>
-      <link>https://leituracrista.com/tags/r.-guillen/</link>
-      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/r.-guillen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robert Boulard</title>
-      <link>https://leituracrista.com/tags/robert-boulard/</link>
-      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/robert-boulard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Robert Pilkington</title>
       <link>https://leituracrista.com/tags/robert-pilkington/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://leituracrista.com/tags/robert-pilkington/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ron Reeves</title>
-      <link>https://leituracrista.com/tags/ron-reeves/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/ron-reeves/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>S. Ridout</title>
-      <link>https://leituracrista.com/tags/s.-ridout/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/s.-ridout/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Verdades Bíblicas</title>
-      <link>https://leituracrista.com/tags/verdades-b%C3%ADblicas/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/verdades-b%C3%ADblicas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>W. Fereday</title>
-      <link>https://leituracrista.com/tags/w.-fereday/</link>
-      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/w.-fereday/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>W. J. Missen</title>
-      <link>https://leituracrista.com/tags/w.-j.-missen/</link>
-      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/w.-j.-missen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>W. J. Prost</title>
-      <link>https://leituracrista.com/tags/w.-j.-prost/</link>
-      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
-      
-      <guid>https://leituracrista.com/tags/w.-j.-prost/</guid>
       <description></description>
     </item>
     
@@ -614,29 +236,11 @@
     </item>
     
     <item>
-      <title>W. Scott</title>
-      <link>https://leituracrista.com/tags/w.-scott/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/w.-scott/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>W. T. P. Wolston</title>
       <link>https://leituracrista.com/tags/w.-t.-p.-wolston/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://leituracrista.com/tags/w.-t.-p.-wolston/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>W. W. Fereday</title>
-      <link>https://leituracrista.com/tags/w.-w.-fereday/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/tags/w.-w.-fereday/</guid>
       <description></description>
     </item>
     
@@ -650,11 +254,119 @@
     </item>
     
     <item>
-      <title>William Macdonald</title>
-      <link>https://leituracrista.com/tags/william-macdonald/</link>
-      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      <title>D. RULE</title>
+      <link>https://leituracrista.com/tags/d.-rule/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leituracrista.com/tags/william-macdonald/</guid>
+      <guid>https://leituracrista.com/tags/d.-rule/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>E. J. Checkley</title>
+      <link>https://leituracrista.com/tags/e.-j.-checkley/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/e.-j.-checkley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Frank Binford Hole</title>
+      <link>https://leituracrista.com/tags/frank-binford-hole/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/frank-binford-hole/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HAMILTON SMITH</title>
+      <link>https://leituracrista.com/tags/hamilton-smith/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/hamilton-smith/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>W. J. Missen</title>
+      <link>https://leituracrista.com/tags/w.-j.-missen/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/w.-j.-missen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mario Persona</title>
+      <link>https://leituracrista.com/tags/mario-persona/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/mario-persona/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Christian Treasury</title>
+      <link>https://leituracrista.com/tags/christian-treasury/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/christian-treasury/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>F. B. HOLE</title>
+      <link>https://leituracrista.com/tags/f.-b.-hole/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/f.-b.-hole/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G. V. WIGRAM</title>
+      <link>https://leituracrista.com/tags/g.-v.-wigram/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/g.-v.-wigram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Verdades Bíblicas</title>
+      <link>https://leituracrista.com/tags/verdades-b%C3%ADblicas/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/verdades-b%C3%ADblicas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J. T. Armet</title>
+      <link>https://leituracrista.com/tags/j.-t.-armet/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/j.-t.-armet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K. Heslop</title>
+      <link>https://leituracrista.com/tags/k.-heslop/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/k.-heslop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>W. FEREDAY</title>
+      <link>https://leituracrista.com/tags/w.-fereday/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/w.-fereday/</guid>
       <description></description>
     </item>
     
@@ -664,6 +376,294 @@
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://leituracrista.com/tags/young-christian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fábio Sandes</title>
+      <link>https://leituracrista.com/tags/f%C3%A1bio-sandes/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/f%C3%A1bio-sandes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C. BUCHANAN</title>
+      <link>https://leituracrista.com/tags/c.-buchanan/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/c.-buchanan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C. E. Lunden</title>
+      <link>https://leituracrista.com/tags/c.-e.-lunden/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/c.-e.-lunden/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Echoes of Grace</title>
+      <link>https://leituracrista.com/tags/echoes-of-grace/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/echoes-of-grace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J. R. Gill</title>
+      <link>https://leituracrista.com/tags/j.-r.-gill/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/j.-r.-gill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LAURA ANNA BARTNER SNOW</title>
+      <link>https://leituracrista.com/tags/laura-anna-bartner-snow/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/laura-anna-bartner-snow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R. Erisman</title>
+      <link>https://leituracrista.com/tags/r.-erisman/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/r.-erisman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Ridout</title>
+      <link>https://leituracrista.com/tags/s.-ridout/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/s.-ridout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>W. SCOTT</title>
+      <link>https://leituracrista.com/tags/w.-scott/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/w.-scott/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Christian Truth for the Household of Faith</title>
+      <link>https://leituracrista.com/tags/christian-truth-for-the-household-of-faith/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/christian-truth-for-the-household-of-faith/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Concise Bible Dictionary</title>
+      <link>https://leituracrista.com/tags/concise-bible-dictionary/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/concise-bible-dictionary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J. K.</title>
+      <link>https://leituracrista.com/tags/j.-k./</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/j.-k./</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Miguel Silva</title>
+      <link>https://leituracrista.com/tags/miguel-silva/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/miguel-silva/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MORRISH BIBLE DICTIONARY</title>
+      <link>https://leituracrista.com/tags/morrish-bible-dictionary/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/morrish-bible-dictionary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Edward Acomb</title>
+      <link>https://leituracrista.com/tags/edward-acomb/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/edward-acomb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>F. G. PATTERSON</title>
+      <link>https://leituracrista.com/tags/f.-g.-patterson/</link>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/f.-g.-patterson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robert Boulard</title>
+      <link>https://leituracrista.com/tags/robert-boulard/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/robert-boulard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R. Guillen</title>
+      <link>https://leituracrista.com/tags/r.-guillen/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/r.-guillen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A. H. RULE</title>
+      <link>https://leituracrista.com/tags/a.-h.-rule/</link>
+      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
+      
+      <guid>https://leituracrista.com/tags/a.-h.-rule/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andrew Miller</title>
+      <link>https://leituracrista.com/tags/andrew-miller/</link>
+      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
+      
+      <guid>https://leituracrista.com/tags/andrew-miller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>E. H. CHARTER</title>
+      <link>https://leituracrista.com/tags/e.-h.-charter/</link>
+      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
+      
+      <guid>https://leituracrista.com/tags/e.-h.-charter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>H. SMITH</title>
+      <link>https://leituracrista.com/tags/h.-smith/</link>
+      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
+      
+      <guid>https://leituracrista.com/tags/h.-smith/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>H. WITHERBY</title>
+      <link>https://leituracrista.com/tags/h.-witherby/</link>
+      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
+      
+      <guid>https://leituracrista.com/tags/h.-witherby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>W. J. PROST</title>
+      <link>https://leituracrista.com/tags/w.-j.-prost/</link>
+      <pubDate>Fri, 21 Jul 2017 17:00:00 +0900</pubDate>
+      
+      <guid>https://leituracrista.com/tags/w.-j.-prost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WILLIAM MACDONALD</title>
+      <link>https://leituracrista.com/tags/william-macdonald/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/william-macdonald/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diversos Autores</title>
+      <link>https://leituracrista.com/tags/diversos-autores/</link>
+      <pubDate>Fri, 09 Jun 2017 17:00:00 +0900</pubDate>
+      
+      <guid>https://leituracrista.com/tags/diversos-autores/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Douglas Nicolet</title>
+      <link>https://leituracrista.com/tags/douglas-nicolet/</link>
+      <pubDate>Fri, 19 May 2017 17:00:00 +0900</pubDate>
+      
+      <guid>https://leituracrista.com/tags/douglas-nicolet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jean Koechlin e Norman Berry</title>
+      <link>https://leituracrista.com/tags/jean-koechlin-e-norman-berry/</link>
+      <pubDate>Mon, 01 May 2017 17:00:00 +0900</pubDate>
+      
+      <guid>https://leituracrista.com/tags/jean-koechlin-e-norman-berry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algernon James Pollock</title>
+      <link>https://leituracrista.com/tags/algernon-james-pollock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/algernon-james-pollock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J. H. SMITH</title>
+      <link>https://leituracrista.com/tags/j.-h.-smith/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/j.-h.-smith/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RON REEVES</title>
+      <link>https://leituracrista.com/tags/ron-reeves/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/ron-reeves/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>W. W. Fereday</title>
+      <link>https://leituracrista.com/tags/w.-w.-fereday/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/tags/w.-w.-fereday/</guid>
       <description></description>
     </item>
     

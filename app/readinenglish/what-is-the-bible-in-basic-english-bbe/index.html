@@ -19,25 +19,11 @@ The Bible in Basic English was translated by Professor Samuel Henry Hooke, who w
 <meta property="og:url" content="https://leituracrista.com/app/readinenglish/what-is-the-bible-in-basic-english-bbe/" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <title>What is the Bible in Basic English (BBE)?</title>
   <link rel="canonical" href="https://leituracrista.com/app/readinenglish/what-is-the-bible-in-basic-english-bbe/">
   
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1591677950">
-  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1591677950">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/typo.css?t=1605581070">
+  <link rel="stylesheet" href="https://leituracrista.com/app/readinenglish/css/main.css?t=1605581070">
   <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/readinenglish/img/touch/usaFlag-48-48.png"/>
 
   
@@ -79,23 +65,30 @@ a {
   color: black;
   cursor: pointer;
 }
-
 a, a:visited { color:black }
 a.link.active { color:red;}
 
 div.sticky {
-   
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, 0);
-
-   
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width:100%;
+  height: 0px;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 0px solid #4CAF50;
 }
 
 </style>
       <div class="load"> <img src="../img/loading-gif-transparent-10.gif" width="220" height="80"> </div>
     
+
+      <div class="sticky" align="center">
+        <audio  controls preload="none" >
+            <source src="https://www.mediafire.com/file/0wqxnczgmfqyokg/Bible-Basic-English-BBE.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+      </div>
       
     <header>
         
@@ -121,38 +114,25 @@ div.sticky {
         <div style="padding: 20px 10px;background-color: rgb(201, 201, 201)" class="tableOfContent"> 
         <a href="#IniciarLeitura">Start Reading ></a>
         <hr>
-        
+        <nav id="TableOfContents"></nav>
        </div>
        <hr>
     
     <div id="texto-clicavel" class="content"> 
     <span id="IniciarLeitura"></span>  
     <p>&ldquo;What is the Bible in Basic English or (BBE)?&rdquo;</p>
-
 <p>##The History</p>
-
 <p>The Bible in Basic English was translated by Professor Samuel Henry Hooke, who was an English scholar and Professor Emeritus of Old Testament Studies at the University of London. The BBE was printed in 1965 by Cambridge Press in England. Published without any copyright notice and distributed in America, this work fell immediately and irretrievably into the public domain in the United States.</p>
-
 <p>##The Translation Method</p>
-
 <p>In an effort to simplify the text, Professor Hooke and his team limited the vocabulary to C. K. Ogden&rsquo;s Basic English vocabulary of 850 words which is said to be able to give the sense of anything which may be said in English. One hundred words that were helpful to understand poetry were added, along with 50 &ldquo;Bible&rdquo; words.</p>
-
 <p>##Pro’s and con’s</p>
-
 <p>The Bible in Basic English strives to simplify the Bible so that more people worldwide can read and understand the text. By using the Basic English vocabulary, this goal is accomplished. The BBE is certainly straightforward and simple. However, the restrictive nature of the Basic English vocabulary presents two problems. First, the narrow limits of the word list make it difficult to keep the BBE completely parallel to the Greek and Hebrew. Second, the beauty of the poetry of other versions such as the New King James Version and New American Standard Bible is lost in the BBE, as are the subtle shades and nuances of the language that make the Bible rich in expression and meaning.</p>
-
 <p>##Sample verses</p>
-
 <p>John 1:1, 14 – “From the first he was the Word, and the Word was in relation with God and was God. And so the Word became flesh and took a place among us for a time; and we saw his glory — such glory as is given to an only son by his father — saw it to be true and full of grace.”</p>
-
 <p>John 3:16 – “For God had such love for the world that he gave his only Son, so that whoever has faith in him may not come to destruction but have eternal life.”</p>
-
 <p>John 8:58 – “Jesus said to them, ‘Truly I say to you, Before Abraham came into being, I am.’”</p>
-
 <p>Ephesians 2:8-9 – “Because by grace you have salvation through faith; and that not of yourselves: it is given by God: Not by works, so that no man may take glory to himself.”</p>
-
 <p>Titus 2:13 – “Looking for the glad hope, the revelation of the glory of our great God and Saviour Jesus Christ;”</p>
-
 <p>From: <a href="https://www.gotquestions.org/Bible-Basic-English-BBE.html">https://www.gotquestions.org/Bible-Basic-English-BBE.html</a></p>
 
     </div>
@@ -160,33 +140,15 @@ div.sticky {
   
 </section>
 
+<a style="display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;" href="#" title="Para o topo!">
+  <img style="width:100px" src="../img/up.png" alt="Subir">
+  
+</a>
 
-
-<script>
-  function back(){
-  window.location.href = "../"
-  }
-
-  function up(){
-  window.location.href = "#"
-  }
-</script>
-
-
-<div onclick='removeNameBookActivedreadinenglish();back();' class="footerback">
-  <span>&lt;</span>
-</div>
-
-<div onclick='up();' class="footerup">
-  <span>^</span>
-</div>
-
-<div class="sticky" align="center">
-  <audio  controls preload="none" >
-      <source src="https://www.mediafire.com/file/0wqxnczgmfqyokg/Bible-Basic-English-BBE.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-  </audio>
-</div>
+<a onclick="removeNameBookActivedreadinenglish()" style="display:scroll;position:fixed;bottom:10px;left:20px;color:#f00;font-weight:bold;" href="../" title="Home">
+  <img style="width:100px;height: 30px"  src="../img/voltar.png" alt="Voltar">
+  
+</a>
 
 <script type="text/javascript" src="../js/custom.js"></script>
 
