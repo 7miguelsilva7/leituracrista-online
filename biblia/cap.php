@@ -1,8 +1,24 @@
+<?php
+$tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
+//verifica se o cookie está definido
+if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
+  $version="ARF";
+  // setcookie("version", 'ARA', $tomorrow_cookie);
+} else {
+  $version=$_COOKIE['version'];
+}
+?>
+
 <html>
     
 <head>
+<meta property="og:type" content="bible">
+<meta property="og:title" content="Bíblia Sagrada">
+<meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
+<meta property="og:image" content="img/bible.png">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="img/bible.png">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -13,8 +29,33 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="main.css">
 
 <style>
+
+.naoSelecionavel {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+
+.btn
+{
+  width: 50;
+  height: 45;
+  border-style: none;
+  background: white;
+  color: blue;  
+}
+
+span.livros{
+  font-size: 18;
+}
+
 @media screen and (max-width: 2000px) {
   body {
   
@@ -35,7 +76,7 @@
 @media screen and (max-width: 600px) {
   body {
   
-  margin: 15px;
+  margin: 1px;
   margin-top: 10px;
   }
 }
@@ -71,10 +112,10 @@ text-decoration: none;
 
 <body>
   
-<div align="center">
+<!-- <div align="center">
 <a href="../biblia/"><button>Livros</button></a>
 </div>
-<br>
+<br> -->
 
 <div align="center">
 
@@ -87,42 +128,41 @@ $o = $_GET['o']; //Ordem
 
 echo '<h2>' . $b . '</h2>';
 
+echo '<title>' . $b . '</title>';
+
+
 ?><br>
-<div align="left" class="cap">
+<div align="center" class="cap naoSelecionavel">
  <?php
 
-// Livro
+// connetion
 require_once 'dbconnect.php';  
-$sql = "SELECT book, ord, cap FROM biblias 
-where `version`= 'ADO' and ord=$o
+$sql = "SELECT book, ord, cap, version FROM biblias 
+where `version`= '$version' and ord=$o
 group by cap";  
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
+// $rowcount =  $stm->rowCount();
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
-foreach($dados as $reg):  
-   echo '<a href="text.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '" style="line-height: 2;font-size:20px"> ' . $reg->cap . '&nbsp;&nbsp;&nbsp;&nbsp;</a>';   
-      
+foreach($dados as $reg):
+   echo '<a href="text.php?o=' . $o . '&b=' . $b . '&c=' . $reg->cap . '&v=' . $reg->version .'" style="line-height: 2;font-size:20px" class="btn">' . $reg->cap . '</a>';
 endforeach;
 ?>
 </div>
 </div>
 
-    <script>
-    function copyDivToClipboard<?echo $reg->estrofeid?>() {
-                        var range = document.createRange();
-                        range.selectNode(document.getElementById("divText<?echo $reg->estrofeid?>"));
-                        window.getSelection().removeAllRanges(); // clear current selection
-                        window.getSelection().addRange(range); // to select text
-                        document.execCommand("copy");
-                        window.getSelection().removeAllRanges();// to deselect
-    //                     alert('Estrofe Copiada!')
-                        $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
-    
-          }
-    </script> 
 
+<!-- barra de navegação -->
 <script>
-// $( ".DivSuccess" ).click(function() {
-// $( "div.success" ).fadeIn( 50 ).delay( 1000 ).fadeOut( 100 );
-// });
+  function book(){
+  window.location.href = "../biblia/"
+  }
+
 </script>
+<br>
+<br>
+<div class="footerbackground"></div>
+
+<div onclick='book();' class="footerbackCap">
+  <span class="livros" >Livros</span>
+</div>
