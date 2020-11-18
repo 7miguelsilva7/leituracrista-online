@@ -1,179 +1,2076 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">  
-<html>
-    <head>
-	<meta name="generator" content="Hugo 0.68.3" />
+<!doctype html>
+<html lang="en">
 
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-  <meta property="og:title" content="Leitura Cristã" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://leituracrista.com/app/" />
-
-
-  <title>Leitura Cristã</title>
-  <link rel="canonical" href="https://leituracrista.com/app/">
-  
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/typo.css?t=1605583097">
-  <link rel="stylesheet" href="https://leituracrista.com/app/css/main.css?t=1605583097">
-  <link rel="shortcut icon" type="image/png" href="https://leituracrista.com/app/img/books.png"/>
+  <meta name="generator" content="Hugo 0.68.3" />
 
   
-    <link href="https://leituracrista.com/app/index.xml" rel="alternate" type="application/rss+xml" title="Leitura Cristã" />
+  <meta name="description" content="Leitura Cristã">
   
 
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://leituracrista.com/app/apple-touch-icon.png">
 
-    <link rel='manifest' href='leitura-crista-app-manifest.json'>
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://leituracrista.com/app/favicon-32x32.png">
 
-<script>
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://leituracrista.com/app/favicon-16x16.png">
 
+  
+  <link rel="manifest" href="https://leituracrista.com/app/site.webmanifest">
 
-if(localStorage.hasOwnProperty('NameBookActivedKey')){
-location.replace(localStorage.getItem('NameBookActivedKey'));
-}
+  
+  <link rel="mask-icon" href="https://leituracrista.com/app/safari-pinned-tab.svg" color="#5bbad5">
 
-</script>
+  <meta name="msapplication-TileColor" content="#da532c">
 
-</head>
-<body onscroll="onscrolling()" >
+  <meta name="theme-color" content="#ffffff">
 
-  <a id="reload"><div id="snackbar"> Atualização disponível clique aqui!</div></a>
+  
+  <link rel="stylesheet" href="https://leituracrista.com/app/css/bootstrap.min.css" />
 
-<style>
-#scroll {overflow-y: auto;}
-
- 
-#snackbar {
-      visibility: hidden;
-      min-width: 250px;
-      margin-left: -125px;
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      border-radius: 2px;
-      padding: 16px;
-      position: fixed;
-      z-index: 1;
-      left: 50%;
-      right: 50%;
-      bottom: 30px;
-      cursor:pointer;
-
-    }
-    #snackbar.show {
-      visibility: visible;
-      -webkit-animation: fadein 0.5s;
-      animation: fadein 0.5s;
+  
+  
+  
+    
       
-    }
-    @-webkit-keyframes fadein {
-      from {
-        bottom: 0;
-        opacity: 0;
-      }
-      to {
-        bottom: 30px;
-        opacity: 1;
-      }
-    }
-    @keyframes fadein {
-      from {
-        bottom: 0;
-        opacity: 0;
-      }
-      to {
-        bottom: 30px;
-        opacity: 1;
-      }
-    }
+    
+  
+  <title>Posts | Leitura Cristã</title>
+  
+
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+code {
+  padding: 2px 4px;
+  color: inherit; 
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+
+
+blockquote,
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1em;
+  border-left: 5px solid #6c757d;
+}
+
 </style>
+</head>
 
-<hr>
-<ul>
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    
+    <a href="/app/">Posts</a>
+    
+    <a href="/app/tags/">Tags</a>
+    
+    <a href="/app/about/">About</a>
+    
+    <a href="/app/index.xml">RSS</a>
+    
+  </div>
+</nav>
   
-    <li>
-      <script>
-        var livroStatus = 'Books'.concat('Status')
-        if(localStorage.hasOwnProperty(livroStatus)){if (localStorage.getItem(livroStatus) == 1){document.write('<span style="color:#04B404">LIDO</span>')}}</script>
-        <a href="https://leituracrista.com/app/book/"><span>Books</span></a>
-    </li>
-  
-</li>
+  <div class="container">
+    <article>
+      
 
-<a style="display:scroll;position:fixed;bottom:10px;right:20px;color:#f00;font-weight:bold;" href="#" title="Para o topo!">
-  <img style="width:150px" src="img/up.png" alt="Subir">
   
-</a>
+    
+  
 
+<h1>Posts</h1>
+
+
+
+  <p>
+    <a href="https://leituracrista.com/app/util-g-v-wigram-g.-v.-wigram/">Útil</a>
+    <br>
+    
+
+<small><code><a href="https://leituracrista.com/app/tags/g.-v.-wigram">G. V. WIGRAM</a></code></small>
+
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/voce-parte-o-pao-e.-h.-chater-e.-h.-chater/">Você Parte o Pão - Por Que, Quando, Onde e Como?</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/vida-atraves-da-morte/">Vida Através da Morte</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/vem-mostrar-te-ei-w.-potter-w.-potter/">Vem, Mostrar-te-ei</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/unidade/">Unidade</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/uma-voz-mansa-e-delicada-clarence-lunden-clarence-lunden/">Uma Voz Mansa e Delicada</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/uma-variedade-de-reunioes-bruce-anstey-bruce-anstey/">Uma Variedade de Reuniões</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/uma-palavra-sobre-noivado-gordon-h.-hayhoe-g.-h.-hayhoe/">Uma Palavra Sobre Noivado</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/uma-carta-sobre-louvar-a-homens-john-nelso-j.-n.-darby/">Uma Carta Sobre Louvar a Homens</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/um-so-corpo-na-pratica-bruce-anstey/">Um Só Corpo na Prática</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/um-deus-justo-e-salvador-j.-n.-darby-j.-n.-darby/">Um Deus Justo e Salvador</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-mesmo-senhor-descera-do-ceu-j.-n.-darby-j.-n.-darby/">Um Breve Estudo sobre 1 Tessalonicenses</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/teologia-do-pacto-ou-dispensacoes/">Teologia do Pacto ou Dispensações</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/tempos-dificeis/">Tempos Difíceis</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/televisao-paul-wilson-paul-wilson/">Televisão</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/sucesso-c.-h.-brown-c.-h.-brown/">Sucesso!</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/sofrimento-humano-e-cuidado-divino/">Sofrimento Humano e Cuidado Divino</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/soberania-e-responsabilidade-f-b-hole-f.-b.-hole/">Soberania e Responsabilidade</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/seus-leitos/">Seus Eleitos</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/seguranca-certeza-e-gozo-da-salvacao-etern-g.-cutting/">Segurança, Certeza e Gozo da Salvação Eterna</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/seguranca-eterna/">Segurança Eterna</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/seguir-a-cristo-j-n-darby-j.-n.-darby/">Seguir a Cristo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/santificacao-c.-h.-mackintosh-c.-h.-mackintosh/">Santificação - O Que É?</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/reuniao-de-oracao.odt/">Reunião de Oração</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/quem-e-jesus-k-heslop-k.-heslop/">Quem é Jesus?</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/quem-despreza-o-dia-das-coisas-pequenas-j-j.-t.-armet/">Quem Despreza o Dia das Coisas Pequenas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/que-denominacao-e-esta-autor-desconhecido/">Que Denominação é Esta?</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/qual-o-teu-destino/">Qual o Teu Destino</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/princ%C3%ADpios-fundamentais-sobre-os-quais-a-igreja-%C3%A9-edificada/">Princípios Fundamentais Sobre os quais A Igreja é Edificada</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/porque-nos-reunimos-assim-j.-r.-gill/">Porque Nos Reunimos Assim</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/por-seus-frutos/">Por Seus Frutos</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/por-causa-dos-anjos-paul-wilson-paul-wilson/">Por Causa dos Anjos</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/politica-paul-wilson-paul-wilson/">Política</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/pedras-grandes-e-preciosas-charles-stanley-charles-stanley/">Pedras Grandes e Preciosas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/parabolas-de-mateus-13-w.-kelly-w.-kelly/">Parábolas de Mateus 13</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/participantes-da-natureza-divina-2-pedro-1-w.-t.-p.-wolston/">Participantes da Natureza Divina</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/para-que-servem-os-milagres-w-fereday-w.-fereday/">Para Que Servem os Milagres?</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/os-sofrimentos-e-as-glorias-de-cristo-sa-j-j.-n.-darby/">Os Sofrimentos e as Glórias de Cristo no Salmo 22</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/os-limites-da-disciplina/">Os Limites da Disciplina</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/os-dez-mandamentos-c.-h.-brown-c.-h.-brown/">Os Dez Mandamentos</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/os-desapontamentos-da-vida-laura-a.-b.-snow/">OS Desapontamentos da Vida</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-vinculo-matrimonial-c.-h.-hayhoe-g.-h.-hayhoe/">O Vínculo Matrimonial</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-tribunal-de-cristo-bruce-anstey-bruce-anstey/">O Tribunal de Cristo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-servo-vigilante-a-vinda-do-senhor-john-n-j.-n.-darby/">O Servo Vigilante – ou A vinda do Senhor</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-13-mario-persona2/">O que Respondi Volume 13 (Parte 2)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-13-mario-persona/">O que Respondi Volume 13 (Parte 1)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-12-mario-persona/">O que Respondi Volume 12</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-11-mario-persona/">O que Respondi Volume 11</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-10-mario-persona/">O que Respondi Volume 10</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-9-mario-persona/">O que Respondi Volume 09</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-8-mario-persona2/">O que Respondi Volume 08 (Parte 2)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-8-mario-persona/">O que Respondi Volume 08 (Parte 1)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-7-mario-persona/">O que Respondi Volume 07</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-6-mario-persona/">O que Respondi Volume 06</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-5-mario-persona2/">O que Respondi Volume 05 (Parte 2)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-5-mario-persona/">O que Respondi Volume 05 (Parte 1)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-4-mario-persona/">O que Respondi Volume 04</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-3-mario-persona/">O que Respondi Volume 03</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-2-mario-persona/">O que Respondi Volume 02</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/respondi-volume-1-mario-persona/">O que Respondi Volume 01</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-que-a-biblia-diz-sobre-romance-namoro-douglas-nicolas/">O que a Bíblia Diz Sobre Romance e Namoro</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-mundo-invisivel-iremos-nos-conhecer-no-c-j.-r.-gill/">O Mundo Invisível</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-livro-de-ester-w.-kelly-w.-kelly/">O Livro de Ester</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-grande-plano-de-deus-d.-rule-d.-rule/">O Grande Plano de Deus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-fim-de-uma-jornada/">O Fim de uma Jornada</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-filho-de-deus-hamilton-smith-h.-smith/">O Filho de Deus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-fariseu-o-publicano-e-um-homem-em-cristo-j.-n.-darby/">O Fariseu, o Publicano e um Homem em Cristo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-falso-messias-w-scott-w.-scott/">O Falso Messias</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-falar-em-linguas-e-o-movimento-carismati-g.-steidl-w.-missen/">O Falar em Línguas e o Movimento Carismático</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-evangelho-em-3-min-mateus-mario-persona/">O Evangelho em 3 Minutos - Mateus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-evangelho-em-3-minutos-lucas2/">O Evangelho em 3 Minutos - Lucas (Parte 2)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-evangelho-em-3-minutos-lucas/">O Evangelho em 3 Minutos - Lucas (Parte 1)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-evangelho-em-3-minutos-joao/">O Evangelho em 3 Minutos - João</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-espirito-santo-h.-e.-hayhoe-h.-e.-hayhoe/">O Espírito Santo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-espirito-de-graca-c-buchaman-c.-buchanan/">O Espírito de Graça</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-diadema-perdido-f.-b.-hole-f.-b.-hole/">O Diadema Perdido</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-cantico-dos-canticos-do-noivo-c-e-lunden-clarence-lunden/">O Cântico dos Cânticos do Noivo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-chamado-de-deus-j.-g.-bellet/">O Chamado de Deus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-centro-de-todo-descanso-e.-j.-checkley-e.-j.-checkley/">O Centro de Todo Descanso</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-caminho-de-deus-para-o-descanso-poder-e-edward-dennett/">O Caminho de Deus para o descanso, poder e consagração</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-caminho-de-deus-e-como-encontra-lo-c.-h.-c.-h.-mackintosh/">O Caminho de Deus e Como Encontrá-Lo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-apocalipse-e-o-reino-cronologia-dos-ev-c-clarence-lunden/">O Apocalipse e o Reino</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/o-amigo-e-as-coisas-que-nunca-mudam-gordon-g.-h.-hayhoe/">O Amigo e as Coisas que Nunca Mudam</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/nao-vos-comove-isto-r-erisman-r.-erisman/">Não Vos Comove Isto?</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/nao-repouses-a-tua-mao/">Não Repouses a Tua Mão</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/nao-estejais-inquietos-por-coisa-alguma-h-h.-smith/">Não Estejais Inquietos por Coisa Alguma</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/nunca-g.-cutting-g-cutting/">Nunca!</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/notas-sobre-o-salmo-2/">Notas Sobre o Salmo 22</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/nosso-senhor-jesus-cristo-h-e-hayhoe-h.-e.-hayhoe/">Nosso Senhor Jesus Cristo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/nossa-luta-j-h-smith-j.-h.-smith/">Nossa Luta</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/no-mundo-mas-nao-do-mundo-w-j-prost-w.-j.-prost/">No Mundo Mas Não do Mundo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/naama-o-leproso-charles-stanley-charles-stanley/">Naamã, O Leproso</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/musica-instrumental-nas-reunioes-c-buchana-c.-buchanan/">Música Instrumental nas Reuniões</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/missionarios-k-heslop-k.-heslop/">Missionários</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/mefibosete-a-bondade-de-deus-charles-stanl-charles-stanley/">Mefibosete</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/medo-de-perder-a-salvacao/">Medo de Perder a Salvação</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/linguas-e-outros-dons-de-sinais-seu-lugar-g.-h.-hayhoe/">Línguas e Outros Dons de Sinais</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/luz-para-as-almas-ansiosas-g-cutting/">Luz para as Almas Ansiosas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/jonatas-faltou-uma-coisa-charles-stanley-charles-stanley/">Jônatas - Faltou uma Coisa</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/jugo-desigual-c-h-mackintosh-c.-h.-mackintosh/">Jugo Desigual</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/jesus-nao-poderia-pecar-william-macdonald-william-macdonald/">Jesus não Poderia Pecar</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/homem-e-mulher-os-papeis-distintos-na-casa-bruce-anstey/">Homem e Mulher – Os Papeis Distintos na Casa de Deus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/longe-do-arraial-fora-do-arraial-autor-des/">Fora do Arraial, Longe do Arraial</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/eu-sou-do-senhor-e-j-checkley-e.-j.-checkley/">Eu Sou do Senhor</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/tito-filemom-darby/">Estudo Sobre a Palavra de Deus - Tito - Filemom</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/tiago-darby-mysword/">Estudo Sobre a Palavra de Deus - Tiago</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/mateus-darby/">Estudo Sobre a Palavra de Deus - Mateus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/hebreus-darby/">Estudo Sobre a Palavra de Deus - Hebreus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/espere-r-pilkington-r.-pilkington/">Espere!</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/escolhas-l-c-perry.jpeg-l.-c.-perry/">Escolhas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/dois-dias-nas-escrituras-bruce-anstey-bruce-anstey/">Dois Dias nas Escrituras</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/deus-esta-em-todas-as-circunstancias-c-h-m-c.-h.-mackintosh/">Deus Está em Todas as Circunstâncias</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/definicoesdoutrinais-bruce-anstey/">Definições Doutrinais</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/cristo-o-centro-porque-nos-reunimos-som-c-charles-stanley/">Cristo, o Centro</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/cristo-nossa-vida_-edward-dennett/">Cristo, Nossa Vida</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/cristo-a-sabedoria-de-deus-para-o-caminho-g.-h.-hayhoe/">Cristo, a Sabedoria de Deus para o Caminho do Crente</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/cristo-para-meus-pecados-cristo-para-meus-j.-n.-darby/">Cristo Para Meus Pecados, Cristo Para Meus Cuidados</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/cristo-nosso-redentor-edward-dennett-edward-dennett/">Cristo Nosso Redentor</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/cristo-nosso-pastor-edward-dennett-edward-dennett/">Cristo Nosso Pastor</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/considerando-meu-irmao/">Considerando Meu Irmão</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/como-educar-a-crianca-j.-c.-ryle-j.-c.-ryle/">Como Educar a Criança?</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/cobertura-para-a-cabeca-robert-boulard-robert-boulard/">Cobertura para a Cabeça</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-exodo.odt/">Chapter-a-Day - Êxodo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-zacarias/">Chapter-a-Day - Zacarias</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-tito.odt/">Chapter-a-Day - Tito</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-tiago.odt/">Chapter-a-Day - Tiago</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-sofonias.odt/">Chapter-a-Day - Sofonias</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-salmos.odt/">Chapter-a-Day - Salmos</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-rute.odt/">Chapter-a-Day - Rute</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-romanos.odt/">Chapter-a-Day - Romanos</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-proverbios.odt/">Chapter-a-Day - Provérbios</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-oseias.odt/">Chapter-a-Day - Oséias</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-obadias.odt/">Chapter-a-Day - Obadias</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-numeros.odt/">Chapter-a-Day - Números</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-neemias.odt/">Chapter-a-Day - Neemias</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-naum.odt/">Chapter-a-Day - Naum</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-mateus.odt/">Chapter-a-Day - Mateus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-marcos.odt/">Chapter-a-Day - Marcos</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-malaquias.odt/">Chapter-a-Day - Malaquias</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-lucas.odt/">Chapter-a-Day - Lucas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-levitico.odt/">Chapter-a-Day - Levítico</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-j%C3%B3.odt/">Chapter-a-Day - Jó</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-juizes.odt/">Chapter-a-Day - Juízes</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-judas.odt/">Chapter-a-Day - Judas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-joao.odt/">Chapter-a-Day - João</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-josue.odt/">Chapter-a-Day - Josué</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-jonas.odt/">Chapter-a-Day - Jonas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-joel.odt/">Chapter-a-Day - Joel</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-jeremias.odt/">Chapter-a-Day - Jeremias</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-isaias.odt/">Chapter-a-Day - Isaías</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-hebreus.odt/">Chapter-a-Day - Hebreus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-habacuque.odt/">Chapter-a-Day - Habacuque</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-genesis.odt/">Chapter-a-Day - Gênesis</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-galatas.odt/">Chapter-a-Day - Gálatas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-filipenses.odt/">Chapter-a-Day - Filipenses</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-filemon.odt/">Chapter-a-Day - Filemom</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-ester.odt/">Chapter-a-Day - Ester</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-esdras.odt/">Chapter-a-Day - Esdras</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-efesios.odt/">Chapter-a-Day - Efésios</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-eclesiastes.odt/">Chapter-a-Day - Eclisiastes</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-deuteronomio.odt/">Chapter-a-Day - Deuteronômio</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-daniel.odt/">Chapter-a-Day - Daniel</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-colosseses.odt/">Chapter-a-Day - Colossenses</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-cantares.odt/">Chapter-a-Day - Cantares</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-atos.odt/">Chapter-a-Day - Atos</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-apocalipse.odt/">Chapter-a-Day - Apocalipse</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-amos.odt/">Chapter-a-Day - Amós</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-ageu.odt/">Chapter-a-Day - Ageu</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-3joao.odt/">Chapter-a-Day - 3 João</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-2timoteo.odt/">Chapter-a-Day - 2 Timóteo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-2tessalonicenses.odt/">Chapter-a-Day - 2 Tessalonicenses</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-2samuel.odt/">Chapter-a-Day - 2 Samuel</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-2reis.odt/">Chapter-a-Day - 2 Reis</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-2pedro.odt/">Chapter-a-Day - 2 Pedro</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-2joao.odt/">Chapter-a-Day - 2 João</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-2cronicas.odt/">Chapter-a-Day - 2 Crônicas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-2corintios.odt/">Chapter-a-Day - 2 Coríntios</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-1timoteo.odt/">Chapter-a-Day - 1 Timóteo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-1tessalonicenses.odt/">Chapter-a-Day - 1 Tessalonicenses</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-1samuel.odt/">Chapter-a-Day - 1 Samuel</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-1reis.odt/">Chapter-a-Day - 1 Reis</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-1pedro.odt/">Chapter-a-Day - 1 Pedro</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-1joao.odt/">Chapter-a-Day - 1 João</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-1cronicas.odt/">Chapter-a-Day - 1 Crônicas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/chapter-a-day-1corintios.odt/">Chapter-a-Day - 1 Coríntios</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/carater-de-familia-e-religiao-de-familia-j.-g.-bellet/">Carater de Família e Religião de Família</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/brevehistoriadahumanidade/">Breve História da Humanidade</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/auxilio-ou-empecilho-c.-h.-mackintosh-c.-h.-mackintosh/">Auxílio ou Empecilho</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/as-verdades-absolutas-de-deus-j-k-j.-k_/">As Verdades Absolutas de Deus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/as-duas-naturezas-no-crente-g-h-hayhoe-g.-h.-hayhoe/">As Duas Naturezas no Crente</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/as-cartas-as-7-igrejas/">As Cartas as Sete Igrejas</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/ao-seu-nome-bruce-anstey/">Ao Seu Nome</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/amando-a-sua-vinda-h.-h.-snell/">Amando A Sua Vinda</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/aliancas-morrish-bible-dictionary/">Alianças</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/algumas-marcas-da-igreja-de-deus-edward-dennett/">Algumas Marcas Da Igreja De Deus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/adoracao-crista-j-n-darby-j.-n.-darby/">Adoração Cristã</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/acontecimentos-profeticos-bruce-anstey/">Acontecimentos Proféticos</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-ultima-trombeta-f-g-patterson-f.-g.-patterson/">A Última Trombeta</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-vitoria-de-jose/">A Vitória de José</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-vinha-de-nabote-clarence-lunden-clarence-lunden/">A Vinha de Nabote</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-vinda-de-cristo-bruce-anstey-bruce-anstey/">A Vinda de Cristo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-verdaderia-igreja-o-corpo-e-a-esposa-de/">A Verdadeira Igreja, o Corpo e a Esposa de Cristo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-total-suficiencia-de-cristo-c.-h.-mackintosh/">A Total Suficiência de Cristo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-salvacao-e-para-sempre-ron-reeves-ron-reeves/">A Salvação É Para Sempre</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-presenca-e-o-poder-do-espirito-de-deus-b-bruce-anstey/">A Presença e o Poder do Espírito de Deus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-porteira-christian-treasury-christian-treasury/">A Porteira</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-ordem-de-deus-bruce-anstey/">A Ordem de Deus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-oracao-e-o-mundo-invisivel-paul-wilson-paul-wilson/">A Oração e o Mundo Invisivel</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-oracao-e-as-reunioes-de-oracao-c.-h.-mackintosh/">A Oração e as Reuniões de Oração</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-opiniao-publica-c-buchanan-c.-buchanan/">A Opinião Pública</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-oferta-crista-e-o-dizimo-j-h-smith-j.-h.-smith/">A Oferta Cristã e o Dízimo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-obra-do-evangelho-charles-stanley/">A Obra do Evangelho</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-nossa-esperanca-j-n-darby-j.-n.-darby/">A Nossa Esperança</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-mulher-seu-lugar-nas-escrituras-a.-j.-pollock/">A Mulher - Seu Lugar nas Escrituras</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-morte-o-estado-intermediario-a-ressurrei-bruce-anstey/">A Morte, O Estado Intermediario, A Ressurreicao E O Destino Final</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-mesa-do-senhor-d-rule-d.-rule/">A Mesa do Senhor</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-mentira/">A Mentira</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-igreja-e-a-tribulacao-c-h-mackintosh/">A Igreja e a Tribulação</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-igreja-do-deus-vivo-g.-h.-hayhoe/">A Igreja do Deus Vivo</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-igreja-a-h-rule-a.-h.-rule/">A Igreja</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-humanidade-sem-pecado-de-nosso-senhor-je-g.-h.-hayhoe/">A Humanidade sem Pecado de Nosso Senhor Jesus</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-historia-da-igreja-andrew-miller2/">A História da Igreja (Parte 2)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-historia-da-igreja-andrew-miller/">A História da Igreja (Parte 1)</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-fonte/">A Fonte</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-expectativa-h-witherby-h.-witherby/">A Expectativa</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-cruz-e-a-gloria-e-h-chater-e.-h.-chater/">A Cruz e a Glória</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-ceia-do-senhor-c.-h.-mackintosh/">A Ceia do Senhor</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/a-autoridade-delegada-a-assembleia-r.-guillen/">A Autoridade Divina Delegada a Assembleia</a>
+    <br>
+    
+    
+  </p>
+  <hr>
+
+  <p>
+    <a href="https://leituracrista.com/app/1pedro-darby-mysword/">1ª Pedro - Estudo Sobre a Palavra de Deus -</a>
+    <br>
+    
+
+<small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
+
+    
+  </p>
+  <hr>
+
+    </article>
+  </div>
+
+  
+  
+  
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-123456789-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+
+  
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 <script>
-        if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/app/sw-lc-app.js');
-          });
-        }  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function goToActivedBook()
-{
-  if(localStorage.hasOwnProperty('NameBookActivedKey')){
-location.replace(localStorage.getItem('NameBookActivedKey'));
-}
-}
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#216942",
+      "text": "#b2d192"
+    },
+    "button": {
+      "background": "#afed71"
+    }
+  }
+})});
 </script>
-
-<script type="text/javascript" src="https://leituracrista.com/app/js/custom.js"></script>
-
 
 </body>
-</html>
 
+</html>

@@ -5,10 +5,28 @@
     <link>https://leituracrista.com/app/tags/</link>
     <description>Recent content in Tags on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
+    <language>en-us</language>
     
 	<atom:link href="https://leituracrista.com/app/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Darby</title>
+      <link>https://leituracrista.com/app/tags/darby/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/app/tags/darby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G. V. WIGRAM</title>
+      <link>https://leituracrista.com/app/tags/g.-v.-wigram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/app/tags/g.-v.-wigram/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
