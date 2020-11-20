@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - Zacarias</h1>
 <p>
@@ -194,6 +196,39 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1012">#1012</a></li>
+    <li><a href="#zacarias-1"><a href="http://mysword.info/b?r=Zec_1">ZACARIAS 1</a></a></li>
+    <li><a href="#1013">#1013</a></li>
+    <li><a href="#zacarias-2"><a href="http://mysword.info/b?r=Zec_2">ZACARIAS 2</a></a></li>
+    <li><a href="#1014">#1014</a></li>
+    <li><a href="#zacarias-3"><a href="http://mysword.info/b?r=Zec_3">ZACARIAS 3</a></a></li>
+    <li><a href="#1015">#1015</a></li>
+    <li><a href="#zacarias-4"><a href="http://mysword.info/b?r=Zec_4">ZACARIAS 4</a></a></li>
+    <li><a href="#1016">#1016</a></li>
+    <li><a href="#zacarias-5"><a href="http://mysword.info/b?r=Zec_5">ZACARIAS 5</a></a></li>
+    <li><a href="#1017">#1017</a></li>
+    <li><a href="#zacarias-6"><a href="http://mysword.info/b?r=Zec_6">ZACARIAS 6</a></a></li>
+    <li><a href="#1018">#1018</a></li>
+    <li><a href="#zacarias-7"><a href="http://mysword.info/b?r=Zec_7">ZACARIAS 7</a></a></li>
+    <li><a href="#1019">#1019</a></li>
+    <li><a href="#1020">#1020</a></li>
+    <li><a href="#zacarias-9"><a href="http://mysword.info/b?r=Zec_9">ZACARIAS 9</a></a></li>
+    <li><a href="#1021">#1021</a></li>
+    <li><a href="#zacarias-10"><a href="http://mysword.info/b?r=Zec_10">ZACARIAS 10</a></a></li>
+    <li><a href="#1022">#1022</a></li>
+    <li><a href="#zacarias-11"><a href="http://mysword.info/b?r=Zec_11">ZACARIAS 11</a></a></li>
+    <li><a href="#1023">#1023</a></li>
+    <li><a href="#zacarias-12"><a href="http://mysword.info/b?r=Zec_12">ZACARIAS 12</a></a></li>
+    <li><a href="#1024">#1024</a></li>
+    <li><a href="#zacarias-13"><a href="http://mysword.info/b?r=Zec_13">ZACARIAS 13</a></a></li>
+    <li><a href="#1025">#1025</a></li>
+    <li><a href="#zacarias-14"><a href="http://mysword.info/b?r=Zec_14">ZACARIAS 14</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="1012">#1012</h2>
 <p>Quando um pecador hesita em ir a Cristo, Satanás opera em sua hesitação.</p>
 <h2 id="zacarias-1"><a href="http://mysword.info/b?r=Zec_1">ZACARIAS 1</a></h2>
@@ -326,6 +361,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

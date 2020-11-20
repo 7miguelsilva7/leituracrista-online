@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Nossa Luta</h1>
 <p>
@@ -191,7 +193,14 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-h.-smith">J. H. SMITH</a></code></small>
 
 </p>
-<h1 id="nossa-luta">NOSSA LUTA</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#nossa-luta">NOSSA LUTA</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="nossa-luta">NOSSA LUTA</h2>
 <p>Deus ainda não está julgando as nações, e nem ainda introduzindo um governo justo na Terra sob a direção do &quot;Seu Ungido&quot;. Não; pelo contrário, em soberana graça e bondade, Ele está salvando pecadores dentre as nações antes que caia o juízo. Portanto, nós que somos santos com uma vocação celestial totalmente acima e fora deste mundo, não devemos nos preocupar com os assuntos mundanos, e sim com o &quot;reino de Deus, e&hellip; as coisas pertencentes ao Senhor Jesus Cristo&quot; (<a href="http://mysword.info/b?r=Act_28:31">Atos 28:31</a>). &quot;&hellip;que o caco de barro contenda com os cacos de barro da Terra&quot; (<a href="http://mysword.info/b?r=Isa_45:9">Isaías 45:9</a> - Trad. King James).</p>
 <p>Ló participava nos negócios da culpada Sodoma; ele sentava-se como juiz à porta da cidade. O que aconteceu a ele? Quando os quatro reis fizeram guerra contra cinco, Ló, sua família e todos os seus bens tornaram-se parte do espólio de guerra. É bem verdade que seu tio Abraão, um homem separado (de Sodoma) o resgatou, mas Ló nunca exibiu um caráter de peregrino, que era o apropriado para um santo de Deus naqueles dias. O mundo tinha um poder vitorioso sobre sua alma; ele voltou a se estabelecer em Sodoma e ali afligiu sua alma justa até o exato dia da terrível ruína da cidade. Querido santo de Deus: CUIDADO!</p>
 <p>Nossa luta continua sem tréguas. Não existe licença. O diabo e seus exércitos bem organizados não se entregaram. A única luta que Deus reconhece como a luta dos cristãos (&quot;irmãos santos&quot; com uma &quot;vocação celestial&quot;) não somente não terminou, como está crescendo em intensidade à medida em que esgota-se o tempo para o diabo.</p>
@@ -236,6 +245,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

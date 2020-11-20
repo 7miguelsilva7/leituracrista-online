@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Cristo Nosso Pastor</h1>
 <p>
@@ -191,6 +193,13 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/edward-dennet">Edward Dennet</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#cristo-nosso-pastor">CRISTO NOSSO PASTOR</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="cristo-nosso-pastor">CRISTO NOSSO PASTOR</h2>
 <p>Cabe aqui perguntarmos se esta relação nosso bendito Senhor tem com o Seu povo ocupa o seu devido lugar em nossas almas. É bem verdade que trata-se de algo encontrado com muito maior frequência nas Escrituras do Antigo Testamento, mas seria uma grande perda supormos que se trate de algo relacionado apenas com os judeus. Na verdade, João (<a href="http://mysword.info/b?r=Joh_10">capítulo 10</a>) expressamente proíbe que cheguemos a tal conclusão, pois o Senhor claramente afirma: &quot;Ainda tenho outras ovelhas que não são deste aprisco; também me convém agregar estas, e elas ouvirão a minha voz, e haverá um rebanho&quot; (e não &quot;um aprisco&quot;) &quot;e um Pastor&quot; (<a href="http://mysword.info/b?r=Joh_10:16">v. 16</a>). Também Pedro, ao escrever aos crentes desta dispensação, diz: &quot;Porque éreis como ovelhas desgarradas: mas agora tendes voltado ao Pastor e Bispo das vossas almas&quot; (<a href="http://mysword.info/b?r=1Pe_2:25">1 Pedro 2:25</a>); e também, &quot;Apascentai o rebanho de Deus, que está entre vós, tendo cuidado dele, não por força, mas voluntariamente: nem por torpe ganância, mas de ânimo pronto; nem como tendo domínio sobre a herança de Deus, mas servindo de exemplo ao rebanho. E, quando aparecer o Sumo Pastor, alcançareis a incorruptível coroa de glória&quot; (<a href="http://mysword.info/b?r=1Pe_5:2-4">1 Pd 5:2-4</a>). Paulo usa a mesma figura, quando dirige-se aos anciãos da Igreja em Éfeso. &quot;Olhai pois&quot;, diz ele, &quot;por vós, e por todo o rebanho sobre que o Espírito Santo vos constituiu bispos, para apascentardes a Igreja de Deus&hellip;&quot; (<a href="http://mysword.info/b?r=Act_20:28">Atos 20:28</a>).</p>
 <p>Cristo é, agora, o Pastor do Seu povo; e são todos ovelhas Suas - coletivamente, Seu rebanho. No entanto, existe esta diferença. Para os judeus, se O tivessem recebido, Ele teria sido um Pastor sobre a Terra, todavia Ele será, no milênio, o Pastor do Seu povo terrenal. &quot;E levantarei sobre elas um só Pastor, e Ele as apascentará: o Meu servo Davi que as há de apascentar; Ele lhes servirá de Pastor&quot; (<a href="http://mysword.info/b?r=Eze_34:23">Ezequiel 34:23</a>; leia também <a href="http://mysword.info/b?r=Jer_23:1-4">Jeremias 23:1-4</a>). Mas Ele é nosso Pastor, como Aquele que morreu, ressuscitou e está sentado à destra de Deus. O escritor da epístola aos Hebreus diz assim: &quot;Ora o Deus de paz, que pelo sangue do concerto eterno tornou a trazer dos mortos a nosso Senhor Jesus Cristo, grande Pastor das ovelhas&hellip;&quot; (<a href="http://mysword.info/b?r=Heb_13:20">Hebreus 13:20</a>). É, portanto, do Seu lugar nas alturas que Ele pastoreia agora o Seu povo; e é ainda chamado de Grande Pastor, pois em Seu terno cuidado para com as ovelhas, estando Ele ausente, concede aqueles que &quot;Ele mesmo deu&hellip; para pastores&quot; (<a href="http://mysword.info/b?r=Eph_4:11">Efésios 4:11</a>), os quais devem alimentar o rebanho sob Seu cuidado e direção; pois é por intermédio destes, que ocupam um lugar de autoridade, que Ele agora exercita as funções de Pastor do Seu povo.</p>
@@ -249,6 +258,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Segurança Eterna</h1>
 <p>
@@ -191,7 +193,14 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/hristian-treasury">hristian Treasury</a></code></small>
 
 </p>
-<h1 id="seguran-a-eterna">SEGURANÇA ETERNA</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#seguran-a-eterna">SEGURANÇA ETERNA</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="seguran-a-eterna">SEGURANÇA ETERNA</h2>
 <p>Existem cinco coisas que deveriam acontecer antes que um salvo perca a sua salvação. Porém, são coisas impossíveis de acontecer!</p>
 <p>​1. Alguém teria que nos tirar da mão do próprio Deus. &quot;Meu Pai, que mas deu, é maior do que todos; e ninguém pode arrebatá-las da mão de meu Pai&quot; (<a href="http://mysword.info/b?r=Joh_10:29">João 10:29</a>).</p>
 <p>​2. Alguém teria que quebrar o selo de propriedade que nos tornou propriedade particular de Deus. &quot;Fostes selados com o Espírito Santo da promessa. O qual é o penhor da vossa herança, para redenção da possessão de Deus, para louvor da Sua glória&quot; (<a href="http://mysword.info/b?r=Eph_1:13,14">Efésios 1:13, 14</a>).</p>
@@ -241,6 +250,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

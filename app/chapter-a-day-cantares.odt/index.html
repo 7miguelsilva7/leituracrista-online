@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - Cantares</h1>
 <p>
@@ -194,6 +196,28 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#721">#721</a></li>
+    <li><a href="#cantares-de-salom-o-1"><a href="http://mysword.info/b?r=son_1">CANTARES DE SALOMÃO 1</a></a></li>
+    <li><a href="#722">#722</a></li>
+    <li><a href="#cantares-de-salom-o-2"><a href="http://mysword.info/b?r=son_2">CANTARES DE SALOMÃO 2</a></a></li>
+    <li><a href="#723">#723</a></li>
+    <li><a href="#cantares-de-salom-o-3"><a href="http://mysword.info/b?r=son_3">CANTARES DE SALOMÃO 3</a></a></li>
+    <li><a href="#724">#724</a></li>
+    <li><a href="#cantares-de-salom-o-4"><a href="http://mysword.info/b?r=son_4">CANTARES DE SALOMÃO 4</a></a></li>
+    <li><a href="#725">#725</a></li>
+    <li><a href="#cantares-de-salom-o-5"><a href="http://mysword.info/b?r=son_5">CANTARES DE SALOMÃO 5</a></a></li>
+    <li><a href="#726">#726</a></li>
+    <li><a href="#cantares-de-salom-o-6"><a href="http://mysword.info/b?r=son_6">CANTARES DE SALOMÃO 6</a></a></li>
+    <li><a href="#727">#727</a></li>
+    <li><a href="#cantares-de-salom-o-7"><a href="http://mysword.info/b?r=son_7">CANTARES DE SALOMÃO 7</a></a></li>
+    <li><a href="#728">#728</a></li>
+    <li><a href="#cantares-de-salom-o-8"><a href="http://mysword.info/b?r=son_8">CANTARES DE SALOMÃO 8</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="721">#721</h2>
 <p>A sabedoria natural nas coisas de Deus fará cessar o fluxo de bênçãos.</p>
 <h2 id="cantares-de-salom-o-1"><a href="http://mysword.info/b?r=son_1">CANTARES DE SALOMÃO 1</a></h2>
@@ -304,6 +328,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

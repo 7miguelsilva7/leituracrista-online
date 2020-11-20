@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - Oséias</h1>
 <p>
@@ -194,6 +196,40 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#845">#845</a></li>
+    <li><a href="#os-ias-1"><a href="http://mysword.info/b?r=Hos_1">OSÉIAS 1</a></a></li>
+    <li><a href="#846">#846</a></li>
+    <li><a href="#os-ias-2"><a href="http://mysword.info/b?r=Hos_2">OSÉIAS 2</a></a></li>
+    <li><a href="#847">#847</a></li>
+    <li><a href="#os-ias-3"><a href="http://mysword.info/b?r=Hos_3">OSÉIAS 3</a></a></li>
+    <li><a href="#848">#848</a></li>
+    <li><a href="#os-ias-4"><a href="http://mysword.info/b?r=Hos_4">OSÉIAS 4</a></a></li>
+    <li><a href="#849">#849</a></li>
+    <li><a href="#os-ias-5"><a href="http://mysword.info/b?r=Hos_5">OSÉIAS 5</a></a></li>
+    <li><a href="#850">#850</a></li>
+    <li><a href="#os-ias-6"><a href="http://mysword.info/b?r=Hos_6">OSÉIAS 6</a></a></li>
+    <li><a href="#851">#851</a></li>
+    <li><a href="#os-ias-7"><a href="http://mysword.info/b?r=Hos_7">OSÉIAS 7</a></a></li>
+    <li><a href="#852">#852</a></li>
+    <li><a href="#os-ias-8"><a href="http://mysword.info/b?r=Hos_8">OSÉIAS 8</a></a></li>
+    <li><a href="#853">#853</a></li>
+    <li><a href="#os-ias-9"><a href="http://mysword.info/b?r=Hos_9">OSÉIAS 9</a></a></li>
+    <li><a href="#854">#854</a></li>
+    <li><a href="#os-ias-10"><a href="http://mysword.info/b?r=Hos_10">OSÉIAS 10</a></a></li>
+    <li><a href="#855">#855</a></li>
+    <li><a href="#os-ias-11"><a href="http://mysword.info/b?r=Hos_11">OSÉIAS 11</a></a></li>
+    <li><a href="#856">#856</a></li>
+    <li><a href="#os-ias-12"><a href="http://mysword.info/b?r=Hos_12">OSÉIAS 12</a></a></li>
+    <li><a href="#857">#857</a></li>
+    <li><a href="#os-ias-13"><a href="http://mysword.info/b?r=Hos_13">OSÉIAS 13</a></a></li>
+    <li><a href="#858">#858</a></li>
+    <li><a href="#os-ias-14"><a href="http://mysword.info/b?r=Hos_14">OSÉIAS 14</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="845">#845</h2>
 <p>A ansiedade nunca livra o amanhã de suas tristezas - ela apenas rouba do hoje a sua força.</p>
 <h2 id="os-ias-1"><a href="http://mysword.info/b?r=Hos_1">OSÉIAS 1</a></h2>
@@ -318,6 +354,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

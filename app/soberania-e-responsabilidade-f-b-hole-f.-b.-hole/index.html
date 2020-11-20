@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Soberania e Responsabilidade</h1>
 <p>
@@ -191,7 +193,14 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/f.-b.-hole">F. B. HOLE</a></code></small>
 
 </p>
-<h1 id="soberania-e-responsabilidade">SOBERANIA E RESPONSABILIDADE</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#soberania-e-responsabilidade">SOBERANIA E RESPONSABILIDADE</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="soberania-e-responsabilidade">SOBERANIA E RESPONSABILIDADE</h2>
 <p>F. B. HOLE</p>
 <p>Que Deus é soberano e que o homem, embora caído, é uma criatura responsável, são dois fatos que estão bem claros nas Escrituras. É quando estudamos estes dois fatos em suas implicações que nos vemos diante de uma dificuldade intelectual. É fácil colocarmos todo o peso de um lado, enquanto ignoramos quase completamente o outro. Os dois extremos são conhecidos como Hiper-Calvinismo e Arminianismo.</p>
 <p>O Hiper-Calvinismo é o pensamento religioso que enxerga nas Escrituras pouco mais do que a soberania de Deus na eleição. A responsabilidade humana é de tal maneira deixada de lado, ou até mesmo negada, que o homem acaba reduzido a um mero fantoche. O homem fica como um brinquedo nas mãos do destino. Se ele for eleito, então DEVE ser salvo, seja como for; se não for eleito, ele DEVE ser condenado, e ponto final.</p>
@@ -239,6 +248,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

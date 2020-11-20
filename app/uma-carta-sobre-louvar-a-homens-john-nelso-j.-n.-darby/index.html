@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Uma Carta Sobre Louvar a Homens</h1>
 <p>
@@ -191,7 +193,14 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
 
 </p>
-<h1 id="uma-carta-sobre-louvar-a-homens">Uma carta sobre louvar a homens</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#uma-carta-sobre-louvar-a-homens">Uma carta sobre louvar a homens</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="uma-carta-sobre-louvar-a-homens">Uma carta sobre louvar a homens</h2>
 <p>Carta escrita no século dezenove por John Nelson Darby (1800-1882) ao Editor de um de seus livros: Meu caro amigo e irmão em Jesus Cristo, Deu-me muita satisfação ver sua tradução de meu livro. Tive o grato prazer de lê-la, ou melhor dizendo, de ter alguém que a lesse para mim, naqueles momentos dos quais o Senhor nos diz, como disse aos apóstolos, &quot;Vinde vós, aqui à parte, a um lugar deserto, e repousai um pouco&quot; (<a href="http://mysword.info/b?r=Mar_6:31">Marcos 6:31</a>). Mas não posso deixar de dizer-lhe, meu caro amigo, que o prazer que a aparência do seu trabalho me trouxe foi, em certa medida, abatido pela opinião demasiado favorável que você expressou a meu respeito no prefácio.</p>
 <p>Antes que tivesse lido uma palavra sequer de sua tradução, presenteei a um mui querido e sincero amigo com um exemplar, e ele mencionou o que você escreveu em seu prefácio louvando minha piedade. O texto produziu em meu amigo o mesmo efeito que viria a produzir em mim, mais tarde, quando o pude ler. Espero, entretanto, que você não leve a mal o que vou dizer a respeito do assunto, o que é fruto de uma experiência razoavelmente longa.</p>
 <p>O orgulho é o maior de todos os males que nos afligem, e de todos os nossos inimigos, não apenas é o mais difícil de morrer, como também o que tem a morte mais lenta; mesmo os filhos deste mundo são capazes de discernir isto. Madame De Stael disse, em seu leito de morte, Sabe qual é a última coisa que morre em uma pessoa? É o seu amor-próprio.&quot; Deus abomina o orgulho mais do que qualquer coisa, pois o orgulho dá ao homem o lugar que pertence a Deus que está acima de tudo. O orgulho interrompe a comunhão com Deus, e atrai Sua repreensão pois &quot;Deus resiste aos soberbos&quot; (<a href="http://mysword.info/b?r=1Pe_5:5">I Pd. 5:5</a>). Ele irá destruir o nome do soberbo, pois nos é dito que &quot;a altivez do homem será humilhada, e a altivez dos varões se abaterá, e só o Senhor será exaltado naquele dia&quot; (<a href="http://mysword.info/b?r=Isa_2:17">Isaías 2:17</a>).</p>
@@ -237,6 +246,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

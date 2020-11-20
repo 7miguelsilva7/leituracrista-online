@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Segurança, Certeza e Gozo da Salvação Eterna</h1>
 <p>
@@ -191,6 +193,16 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-cutting">G. Cutting</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#seguran-a-certeza-e-gozo-da-salva-o-eterna">Segurança, Certeza e Gozo da Salvação Eterna</a></li>
+    <li><a href="#caminho-da-salva-o">CAMINHO DA SALVAÇÃO</a></li>
+    <li><a href="#o-conhecimento-da-salva-o">O CONHECIMENTO DA SALVAÇÃO</a></li>
+    <li><a href="#o-gozo-da-salva-o">O GOZO DA SALVAÇÃO</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="seguran-a-certeza-e-gozo-da-salva-o-eterna">Segurança, Certeza e Gozo da Salvação Eterna</h2>
 <p>Quando estamos numa estação ferroviária ouvimos, com certa freqüência, a seguinte pergunta: &quot;Em que classe você está viajando?&quot; Você, leitor, com toda a certeza está de viagem - de viagem para a eternidade - e pode ser que neste momento esteja muito próximo da estação final: a Morte. Permita-me, então, que lhe pergunte: &quot;Nesta jornada pela vida, em que classe você está viajando?&quot;</p>
 <p>Neste caso podemos pensar em três diferentes classes, e vou explicar quais são a fim de que você possa responder à minha pergunta como que diante de Deus; sim, diante dAquele a Quem certamente todos nós temos que prestar contas.</p>
@@ -313,6 +325,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

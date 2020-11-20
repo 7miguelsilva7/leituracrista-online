@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - Filipenses</h1>
 <p>
@@ -194,6 +196,24 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#238">#238</a></li>
+    <li><a href="#filipenses-1-vers-1-10"><a href="http://mysword.info/b?r=Php_1:1-10">FILIPENSES 1, Vers. 1-10</a></a></li>
+    <li><a href="#239">#239</a></li>
+    <li><a href="#filipenses-1-vers-11-30"><a href="http://mysword.info/b?r=Php_1:11-30">FILIPENSES 1, Vers. 11-30</a></a></li>
+    <li><a href="#240">#240</a></li>
+    <li><a href="#filipenses-2-vers-1-11"><a href="http://mysword.info/b?r=Php_2:1-11">FILIPENSES 2, Vers. 1-11</a></a></li>
+    <li><a href="#241">#241</a></li>
+    <li><a href="#filipenses-2-vers-12-30"><a href="http://mysword.info/b?r=Php_2:12-30">FILIPENSES 2, Vers. 12-30</a></a></li>
+    <li><a href="#242">#242</a></li>
+    <li><a href="#filipenses-3"><a href="http://mysword.info/b?r=Php_3">FILIPENSES 3</a></a></li>
+    <li><a href="#243">#243</a></li>
+    <li><a href="#filipenses-4"><a href="http://mysword.info/b?r=Php_4">FILIPENSES 4</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="238">#238</h2>
 <p>A oração e o louvor andam juntos. Aqueles que têm louvores têm orações.</p>
 <h2 id="filipenses-1-vers-1-10"><a href="http://mysword.info/b?r=Php_1:1-10">FILIPENSES 1, Vers. 1-10</a></h2>
@@ -290,6 +310,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

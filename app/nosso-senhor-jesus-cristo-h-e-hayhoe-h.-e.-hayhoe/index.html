@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Nosso Senhor Jesus Cristo</h1>
 <p>
@@ -191,7 +193,19 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/h.-e.-hayhoe">H. E. HAYHOE</a></code></small>
 
 </p>
-<h1 id="nosso-senhor-jesus-cristo">NOSSO SENHOR JESUS CRISTO</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#nosso-senhor-jesus-cristo">NOSSO SENHOR JESUS CRISTO</a></li>
+    <li><a href="#a-divindade">A DIVINDADE</a></li>
+    <li><a href="#cria-o">CRIAÇÃO</a></li>
+    <li><a href="#reden-o">REDENÇÃO</a></li>
+    <li><a href="#deus-o-filho">DEUS, O FILHO</a></li>
+    <li><a href="#ele-o-eterno-eu-sou-jo-8-58">ELE É O ETERNO &quot;EU SOU&quot; (jo 8:58).</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="nosso-senhor-jesus-cristo">NOSSO SENHOR JESUS CRISTO</h2>
 <p>H. E. HAYHOE</p>
 <p>A Pessoa do Senhor Jesus Cristo, o Filho de Deus, está além da compreensão da mente humana. Ele mesmo disse: &quot;Ninguém conhece o Filho, senão o Pai; e ninguém conhece o Pai, senão o Filho, e aquele a quem o Filho o quiser revelar&quot; (<a href="http://mysword.info/b?r=Mat_11:27">Mateus 11:27</a>). O Filho revelou o Pai, mas NINGUÉM compreende o Filho. A Sua Pessoa é um mistério divino. &quot;O Seu nome será: Maravilhoso, Conselheiro, Deus forte, Pai da eternidade, Príncipe da paz.&quot; <a href="http://mysword.info/b?r=Isa_9:6">Isaías 9:6</a></p>
 <p>Como nascido em Belém Ele era filho de Davi, mas era ao mesmo tempo Senhor de Davi na glória da Sua Pessoa (<a href="http://mysword.info/b?r=Mat_22:41-46">Mateus 22:41-46</a>).</p>
@@ -247,6 +261,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

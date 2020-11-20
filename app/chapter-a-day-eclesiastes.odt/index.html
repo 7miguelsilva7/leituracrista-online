@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - Eclisiastes</h1>
 <p>
@@ -194,6 +196,35 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#671">#671</a></li>
+    <li><a href="#eclesiastes-1"><a href="http://mysword.info/b?r=Ecc_1">ECLESIASTES 1</a></a></li>
+    <li><a href="#672">#672</a></li>
+    <li><a href="#eclesiastes-2"><a href="http://mysword.info/b?r=Ecc_2">ECLESIASTES 2</a></a></li>
+    <li><a href="#673">#673</a></li>
+    <li><a href="#eclesiastes-3"><a href="http://mysword.info/b?r=Ecc_3">ECLESIASTES 3</a></a></li>
+    <li><a href="#674">#674</a></li>
+    <li><a href="#eclesiastes-4"><a href="http://mysword.info/b?r=Ecc_4">ECLESIASTES 4</a></a></li>
+    <li><a href="#675">#675</a></li>
+    <li><a href="#eclesiastes-5"><a href="http://mysword.info/b?r=Ecc_5">ECLESIASTES 5</a></a></li>
+    <li><a href="#676">#676</a></li>
+    <li><a href="#eclesiastes-6"><a href="http://mysword.info/b?r=Ecc_6">ECLESIASTES 6</a></a></li>
+    <li><a href="#677">#677</a></li>
+    <li><a href="#eclesiastes-7"><a href="http://mysword.info/b?r=Ecc_7">ECLESIASTES 7</a></a></li>
+    <li><a href="#678">#678</a></li>
+    <li><a href="#679">#679</a></li>
+    <li><a href="#eclesiastes-9"><a href="http://mysword.info/b?r=Ecc_9">ECLESIASTES 9</a></a></li>
+    <li><a href="#680">#680</a></li>
+    <li><a href="#eclesiastes-10"><a href="http://mysword.info/b?r=Ecc_10">ECLESIASTES 10</a></a></li>
+    <li><a href="#681">#681</a></li>
+    <li><a href="#eclesiastes-11"><a href="http://mysword.info/b?r=Ecc_11">ECLESIASTES 11</a></a></li>
+    <li><a href="#682">#682</a></li>
+    <li><a href="#eclesiastes-12"><a href="http://mysword.info/b?r=Ecc_12">ECLESIASTES 12</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="671">#671</h2>
 <p>Uma falta de apreço pela maravilha de uma salvação completa em Cristo abre a porta para todo tipo de desequilíbrio, e produz frustração e fracasso contínuos.</p>
 <h2 id="eclesiastes-1"><a href="http://mysword.info/b?r=Ecc_1">ECLESIASTES 1</a></h2>
@@ -305,6 +336,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

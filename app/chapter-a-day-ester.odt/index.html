@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - Ester</h1>
 <p>
@@ -194,6 +196,31 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#973">#973</a></li>
+    <li><a href="#ester-1"><a href="http://mysword.info/b?r=Est_1">ESTER 1</a></a></li>
+    <li><a href="#974">#974</a></li>
+    <li><a href="#ester-1-2"><a href="http://mysword.info/b?r=Est_1">ESTER 1-2</a></a></li>
+    <li><a href="#975">#975</a></li>
+    <li><a href="#ester-3"><a href="http://mysword.info/b?r=Est_3">ESTER 3</a></a></li>
+    <li><a href="#976">#976</a></li>
+    <li><a href="#977">#977</a></li>
+    <li><a href="#ester-5"><a href="http://mysword.info/b?r=Est_5">ESTER 5</a></a></li>
+    <li><a href="#978">#978</a></li>
+    <li><a href="#ester-6"><a href="http://mysword.info/b?r=Est_6">ESTER 6</a></a></li>
+    <li><a href="#979">#979</a></li>
+    <li><a href="#ester-7"><a href="http://mysword.info/b?r=Est_7">ESTER 7</a></a></li>
+    <li><a href="#980">#980</a></li>
+    <li><a href="#ester-8"><a href="http://mysword.info/b?r=Est_8">ESTER 8</a></a></li>
+    <li><a href="#981">#981</a></li>
+    <li><a href="#ester-9"><a href="http://mysword.info/b?r=Est_9">ESTER 9</a></a></li>
+    <li><a href="#982">#982</a></li>
+    <li><a href="#ester-10"><a href="http://mysword.info/b?r=Est_10">ESTER 10</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="973">#973</h2>
 <p>Atividade, quando alguém não se encontra na presença de Deus, onde o coração não se julga a si mesmo, sempre tem a tendência de endurecê-lo.</p>
 <h2 id="ester-1"><a href="http://mysword.info/b?r=Est_1">ESTER 1</a></h2>
@@ -287,6 +314,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Sucesso!</h1>
 <p>
@@ -191,6 +193,13 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-h.-brown">C. H. Brown</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sucesso">SUCESSO!</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="sucesso">SUCESSO!</h2>
 <p>&quot;Resta, irmãos meus, que vos regozijeis no Senhor. Não me aborreço de escrever-vos as mesmas coisas, e é segurança para vós.&quot; (<a href="http://mysword.info/b?r=Php_3:1">Fp 3:1</a>).</p>
 <p>O apóstolo Paulo dá início ao terceiro capítulo de sua carta aos Filipenses lembrando-lhes de que o fato de estar escrevendo &quot;as mesmas coisas&quot;, ou seja, aquilo que já lhes havia comunicado, não o aborrecia, pelo contrário, era para eles um fator de segurança.</p>
@@ -253,6 +262,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>O Chamado de Deus</h1>
 <p>
@@ -191,7 +193,14 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-g.-bellet">J. G. Bellet</a></code></small>
 
 </p>
-<h1 id="o-chamado-de-deus">O CHAMADO DE DEUS</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-chamado-de-deus">O CHAMADO DE DEUS</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="o-chamado-de-deus">O CHAMADO DE DEUS</h2>
 <p>J. G. Bellet</p>
 <p>Nos dias que antecedem o dilúvio, os que pertencem à família de Deus trilham um caminho de peregrinos. Eles deixam o mundo para Caim. Não há neles nenhum sentimento de disputa e nem tampouco o menor indício de queixa. Eles não dizem, e nem pensam em dizer, &quot;Mestre, dize a meu irmão que reparta comigo a herança&quot; (<a href="http://mysword.info/b?r=Luk_12:13">Lucas 12:13</a>). Em seus hábitos e princípios de conduta, eles são tão distintos de seu irmão infrator (Caim) que parecem pertencer a uma outra raça; é como se vivessem em outro mundo.</p>
 <p>A família de Caim é que faz toda a história do mundo. Eles constroem as cidades, eles promovem as artes, eles conduzem os negócios, eles inventam seus prazeres e passatempos. Mas em nada disso é encontrada a família de Sete. Os daquela geração chamam às suas cidades por seus nomes; os desta se fazem chamar pelo nome do Senhor. Os daquela fazem tudo o que podem para tornar o mundo seu, e não do Senhor; os da outra fazem tudo o que podem para se fazerem do Senhor e não mais pertencerem a si mesmos. Caim escreve seu próprio nome sobre a terra; Sete escreve o nome do Senhor sobre si.</p>
@@ -232,6 +241,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

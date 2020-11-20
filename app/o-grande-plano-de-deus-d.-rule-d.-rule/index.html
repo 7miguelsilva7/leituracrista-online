@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>O Grande Plano de Deus</h1>
 <p>
@@ -191,6 +193,26 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/d.-rule">D. Rule</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-grande-plano-de-deus">O GRANDE PLANO DE DEUS</a></li>
+    <li><a href="#tr-s-destinos">Três Destinos</a></li>
+    <li><a href="#dois-inimigos">Dois inimigos</a></li>
+    <li><a href="#a-divis-o-em-israel">A divisão em Israel</a></li>
+    <li><a href="#o-bem-ordenado-caminho-de-deus">O bem ordenado caminho de Deus</a></li>
+    <li><a href="#isa-as-e-o-apocalipse">Isaías e o Apocalipse</a></li>
+    <li><a href="#a-profecia-e-o-cristianismo">A profecia e o cristianismo</a></li>
+    <li><a href="#apocalipse">Apocalipse</a></li>
+    <li><a href="#isa-as">Isaías</a></li>
+    <li><a href="#o-final-da-hist-ria">O final da história</a></li>
+    <li><a href="#daniel">Daniel</a></li>
+    <li><a href="#um-remanescente">Um Remanescente</a></li>
+    <li><a href="#os-salmos">Os Salmos</a></li>
+    <li><a href="#tempo-de-ang-stia-para-jac">Tempo de Angústia Para Jacó</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="o-grande-plano-de-deus">O GRANDE PLANO DE DEUS</h2>
 <p>É reconfortante abrirmos a Palavra de Deus em busca de versículos ou assuntos que se refiram a nós mesmos - que nos mostrem como podemos desfrutar das bênçãos que nos cabem, ou então de como o Senhor pode resolver algum problema particular ou guiar-nos em alguma decisão a tomar. No entanto, se realmente desejamos conhecer o coração de Deus, é de extrema importância que desfrutemos, juntamente com Deus, de Sua Palavra - não apenas de alguns bocados aqui e ali, mas de toda ela.</p>
 <p>Uma enorme porção da Palavra de Deus traz em si mesma um caráter profético. Vamos nos ocupar de algumas coisas que nos ajudarão a estudar a profecia. Há muito para se desfrutar e tirar proveito no caráter profético da Palavra de Deus.</p>
@@ -277,6 +299,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

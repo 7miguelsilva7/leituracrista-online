@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Um Breve Estudo sobre 1 Tessalonicenses</h1>
 <p>
@@ -191,6 +193,18 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-mesmo-senhor-descer-do-c-u">&quot;O MESMO SENHOR DESCERÁ DO CÉU&quot;</a></li>
+    <li><a href="#cap-tulo-primeiro-a-f-o-amor-e-a-esperan-a">Capítulo Primeiro - A Fé, o Amor e a Esperança</a></li>
+    <li><a href="#cap-tulo-segundo-as-dificuldades">Capítulo Segundo - As Dificuldades</a></li>
+    <li><a href="#cap-tulo-terceiro-com-todos-os-seus-santos">Capítulo Terceiro - Com Todos os Seus Santos</a></li>
+    <li><a href="#cap-tulo-quarto-o-mesmo-senhor">Capítulo Quarto - O Mesmo Senhor</a></li>
+    <li><a href="#cap-tulo-quinto-conservados-irrepreens-veis">Capítulo Quinto - Conservados Irrepreensíveis</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="o-mesmo-senhor-descer-do-c-u">&quot;O MESMO SENHOR DESCERÁ DO CÉU&quot;</h2>
 <p>Um Breve Estudo sobre 1 Tessalonicenses</p>
 <p>A volta do Senhor, amado irmão, é o assunto que gostaria de tratar. Antes da vinda do Senhor a este mundo, as Escrituras não mostravam muita coisa acerca do céu. Porém, tão logo Ele aqui chegou, veio do céu um testemunho dirigido aos pastores de ovelhas, que anunciava haver glória a Deus nas maiores alturas e paz na Terra aos homens a quem Ele quer bem(????) . E a primeira palavra a testemunhar do Senhor veio do céu - pela voz de Deus - dizendo: &quot;Tu és Meu Filho amado, em Ti Me tenho comprazido&quot; (<a href="http://mysword.info/b?r=Luk_3:22">Lucas 3:22</a>). Em <a href="http://mysword.info/b?r=Joh_17">João 17</a> encontramos o Senhor aqui na Terra conversando com Seu Pai no céu acerca do Seu povo celestial, com o coração transbordando de amor e cuidado para com os Seus. Então, depois de tudo consumado e de volta ao céu a fim de Se assentar à destra do Seu Pai, a glória pôde brilhar vinda das alturas, pois Deus quis que a glória do Seu amado Filho fosse vista. Essa glória foi a que literalmente brilhou quando Estêvão foi martirizado; ele viu o Filho do homem olhando para si e pôde falar com Ele. Na epístola aos Hebreus, vemos coisas maravilhosas pois este Homem, Jesus, está no céu. Todas as coisas tão diferentes que encontramos naquela epístola são apresentadas pelo Espírito Santo a fim de alimentar as nossas almas com coisas celestiais. Se minha cidadania é celestial, o que mais poderia esperar? Que deveria haver uma porção maior das coisas deste mundo em minha mente? Mais das coisas deste mundo em meu coração? Ou deveria eu esperar que houvesse mais das coisas do céu em minha mente; mais das coisas do céu em meu coração? Oh! Certamente meu desejo deve ser que haja mais das coisas celestiais em minha mente e mais das coisas celestiais em meu coração!</p>
@@ -276,6 +290,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

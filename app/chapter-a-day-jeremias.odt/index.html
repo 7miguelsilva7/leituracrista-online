@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - Jeremias</h1>
 <p>
@@ -194,6 +196,52 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1030">#1030</a></li>
+    <li><a href="#jeremias-1"><a href="http://mysword.info/b?r=Jer_1">JEREMIAS 1</a></a></li>
+    <li><a href="#1031">#1031</a></li>
+    <li><a href="#jeremias-2"><a href="http://mysword.info/b?r=Jer_2">JEREMIAS 2</a></a></li>
+    <li><a href="#1032">#1032</a></li>
+    <li><a href="#jeremias-3"><a href="http://mysword.info/b?r=Jer_3">JEREMIAS 3</a></a></li>
+    <li><a href="#1033">#1033</a></li>
+    <li><a href="#jeremias-7"><a href="http://mysword.info/b?r=Jer_7">JEREMIAS 7</a></a></li>
+    <li><a href="#1034">#1034</a></li>
+    <li><a href="#jeremias-10"><a href="http://mysword.info/b?r=Jer_10">JEREMIAS 10</a></a></li>
+    <li><a href="#1035">#1035</a></li>
+    <li><a href="#jeremias-18"><a href="http://mysword.info/b?r=Jer_18">JEREMIAS 18</a></a></li>
+    <li><a href="#1036">#1036</a></li>
+    <li><a href="#jeremias-21"><a href="http://mysword.info/b?r=Jer_21">JEREMIAS 21</a></a></li>
+    <li><a href="#1037">#1037</a></li>
+    <li><a href="#jeremias-26"><a href="http://mysword.info/b?r=Jer_26">JEREMIAS 26</a></a></li>
+    <li><a href="#1038">#1038</a></li>
+    <li><a href="#jeremias-29"><a href="http://mysword.info/b?r=Jer_29">JEREMIAS 29</a></a></li>
+    <li><a href="#1039">#1039</a></li>
+    <li><a href="#jeremias-30"><a href="http://mysword.info/b?r=Jer_30">JEREMIAS 30</a></a></li>
+    <li><a href="#1040">#1040</a></li>
+    <li><a href="#jeremias-31"><a href="http://mysword.info/b?r=Jer_31">JEREMIAS 31</a></a></li>
+    <li><a href="#1041">#1041</a></li>
+    <li><a href="#jeremias-32"><a href="http://mysword.info/b?r=Jer_32">JEREMIAS 32</a></a></li>
+    <li><a href="#1042">#1042</a></li>
+    <li><a href="#jeremias-33"><a href="http://mysword.info/b?r=Jer_33">JEREMIAS 33</a></a></li>
+    <li><a href="#1043">#1043</a></li>
+    <li><a href="#jeremias-34"><a href="http://mysword.info/b?r=Jer_34">JEREMIAS 34</a></a></li>
+    <li><a href="#1044">#1044</a></li>
+    <li><a href="#jeremias-35"><a href="http://mysword.info/b?r=Jer_35">JEREMIAS 35</a></a></li>
+    <li><a href="#1045">#1045</a></li>
+    <li><a href="#jeremias-36"><a href="http://mysword.info/b?r=Jer_36">JEREMIAS 36</a></a></li>
+    <li><a href="#1046">#1046</a></li>
+    <li><a href="#jeremias-37"><a href="http://mysword.info/b?r=Jer_37">JEREMIAS 37</a></a></li>
+    <li><a href="#1047">#1047</a></li>
+    <li><a href="#jeremias-38"><a href="http://mysword.info/b?r=Jer_38">JEREMIAS 38</a></a></li>
+    <li><a href="#1048">#1048</a></li>
+    <li><a href="#jeremias-44"><a href="http://mysword.info/b?r=Jer_44">JEREMIAS 44</a></a></li>
+    <li><a href="#1049">#1049</a></li>
+    <li><a href="#jeremias-52"><a href="http://mysword.info/b?r=Jer_52">JEREMIAS 52</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="1030">#1030</h2>
 <p>Nosso conhecimento de Deus é medido por nossa obediência a Sua Palavra; e nosso amor por Ele é a medida dessa obediência.</p>
 <h2 id="jeremias-1"><a href="http://mysword.info/b?r=Jer_1">JEREMIAS 1</a></h2>
@@ -365,6 +413,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - 2 Pedro</h1>
 <p>
@@ -194,6 +196,20 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#349">#349</a></li>
+    <li><a href="#2-pedro-1-vers-1-8"><a href="http://mysword.info/b?r=2Pe_1:1-8">2 PEDRO 1, Vers. 1-8</a></a></li>
+    <li><a href="#350">#350</a></li>
+    <li><a href="#2-pedro-1-vers-9-21"><a href="http://mysword.info/b?r=2Pe_1:9-21">2 PEDRO 1, Vers. 9-21</a></a></li>
+    <li><a href="#351">#351</a></li>
+    <li><a href="#2-pedro-2"><a href="http://mysword.info/b?r=2Pe_2">2 PEDRO 2</a></a></li>
+    <li><a href="#352">#352</a></li>
+    <li><a href="#2-pedro-3"><a href="http://mysword.info/b?r=2Pe_3">2 PEDRO 3</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="349">#349</h2>
 <p>A única descrição biográfica que Jesus deu de Si próprio foi, &quot;Sou manso e humilde de coração&quot; (<a href="http://mysword.info/b?r=Mat_11:29">Mt 11:29</a>).</p>
 <h2 id="2-pedro-1-vers-1-8"><a href="http://mysword.info/b?r=2Pe_1:1-8">2 PEDRO 1, Vers. 1-8</a></h2>
@@ -266,6 +282,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

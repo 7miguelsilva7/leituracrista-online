@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Uma Voz Mansa e Delicada</h1>
 <p>
@@ -191,6 +193,13 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-lunden">C. Lunden</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#uma-voz-mansa-e-delicada">UMA VOZ MANSA E DELICADA</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="uma-voz-mansa-e-delicada">UMA VOZ MANSA E DELICADA</h2>
 <p>“&hellip; uma voz mansa e delicada” ( <a href="http://mysword.info/b?r=1Ki_19:1-18">1 Reis 19:1-18</a>) Deus geralmente usa homens para falar Sua palavra para outros homens. Elias foi um desses mensageiros. Em <a href="http://mysword.info/b?r=1Ki_19">1 Reis 19</a>, nós vemos o arrependimento de Elias, o qual é uma das sete figuras de arrependimento em seu ministério. Além da missão de Elias para com Israel, seu ministério e carreira descrevem também eventos futuros para os gentios.</p>
 <p>Por causa da queda no jardim do Éden, o homem adquiriu uma consciência a qual o introduz numa batalha interior que ele não pode evitar. A saída desse problema depende de sua resposta quanto à moral a ele revelada. A luz de Deus é dada, por Sua palavra, em forma de princípios, e o arrependimento é um dos primeiros.</p>
@@ -283,6 +292,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Amando A Sua Vinda</h1>
 <p>
@@ -191,6 +193,13 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/h.-h.-snell">H. H. Snell</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#amando-a-sua-vinda">Amando A Sua Vinda</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="amando-a-sua-vinda">Amando A Sua Vinda</h2>
 <p>&quot;Desde agora, a coroa da justiça me está guardada, a qual o Senhor, justo juiz, me dará naquele dia; e não somente a mim, mas também a todos os que amarem a Sua vinda&quot; (<a href="http://mysword.info/b?r=2Ti_4:8">2 Tm 4:8</a>).</p>
 <p>Quem são os que amam a Sua vinda? Estes não terão só uma &quot;coroa da vida&quot;, mas uma &quot;coroa de justiça&quot;. Que pensamento precioso! O que devemos então entender como amar Sua vinda? Observe que aqui não se trata de Sua vinda para nós, mas de Sua revelação do céu, Sua aparição em chama de fogo e Seus santos com Ele. Nos enche de gozo saber que no céu agora Ele não está somente coroado de glória e honra, mas os anjos, autoridades e potestades, estão sujeitos a Ele.</p>
@@ -244,6 +253,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

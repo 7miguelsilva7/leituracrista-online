@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - 1 Crônicas</h1>
 <p>
@@ -194,6 +196,52 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#729">#729</a></li>
+    <li><a href="#1-cr-nicas-10"><a href="http://mysword.info/b?r=1Ch_10">1 CRÔNICAS 10</a></a></li>
+    <li><a href="#730">#730</a></li>
+    <li><a href="#1-cr-nicas-11"><a href="http://mysword.info/b?r=1Ch_11">1 CRÔNICAS 11</a></a></li>
+    <li><a href="#731">#731</a></li>
+    <li><a href="#1-cr-nicas-12"><a href="http://mysword.info/b?r=1Ch_12">1 CRÔNICAS 12</a></a></li>
+    <li><a href="#732">#732</a></li>
+    <li><a href="#1-cr-nicas-13"><a href="http://mysword.info/b?r=1Ch_13">1 CRÔNICAS 13</a></a></li>
+    <li><a href="#733">#733</a></li>
+    <li><a href="#1-cr-nicas-14"><a href="http://mysword.info/b?r=1Ch_14">1 CRÔNICAS 14</a></a></li>
+    <li><a href="#734">#734</a></li>
+    <li><a href="#1-cr-nicas-15"><a href="http://mysword.info/b?r=1Ch_15">1 CRÔNICAS 15</a></a></li>
+    <li><a href="#735">#735</a></li>
+    <li><a href="#1-cr-nicas-16"><a href="http://mysword.info/b?r=1Ch_16">1 CRÔNICAS 16</a></a></li>
+    <li><a href="#736">#736</a></li>
+    <li><a href="#1-cr-nicas-17"><a href="http://mysword.info/b?r=1Ch_17">1 CRÔNICAS 17</a></a></li>
+    <li><a href="#737">#737</a></li>
+    <li><a href="#1-cr-nicas-18"><a href="http://mysword.info/b?r=1Ch_18">1 CRÔNICAS 18</a></a></li>
+    <li><a href="#738">#738</a></li>
+    <li><a href="#1-cr-nicas-19"><a href="http://mysword.info/b?r=1Ch_19">1 CRÔNICAS 19</a></a></li>
+    <li><a href="#739">#739</a></li>
+    <li><a href="#1-cr-nicas-20"><a href="http://mysword.info/b?r=1Ch_20">1 CRÔNICAS 20</a></a></li>
+    <li><a href="#740">#740</a></li>
+    <li><a href="#1-cr-nicas-21"><a href="http://mysword.info/b?r=1Ch_21">1 CRÔNICAS 21</a></a></li>
+    <li><a href="#741">#741</a></li>
+    <li><a href="#1-cr-nicas-22"><a href="http://mysword.info/b?r=1Ch_22">1 CRÔNICAS 22</a></a></li>
+    <li><a href="#742">#742</a></li>
+    <li><a href="#1-cr-nicas-23"><a href="http://mysword.info/b?r=1Ch_23">1 CRÔNICAS 23</a></a></li>
+    <li><a href="#743">#743</a></li>
+    <li><a href="#1-cr-nicas-24"><a href="http://mysword.info/b?r=1Ch_24">1 CRÔNICAS 24</a></a></li>
+    <li><a href="#744">#744</a></li>
+    <li><a href="#1-cr-nicas-25"><a href="http://mysword.info/b?r=1Ch_25">1 CRÔNICAS 25</a></a></li>
+    <li><a href="#745">#745</a></li>
+    <li><a href="#1-cr-nicas-26"><a href="http://mysword.info/b?r=1Ch_26">1 CRÔNICAS 26</a></a></li>
+    <li><a href="#746">#746</a></li>
+    <li><a href="#1-cr-nicas-27"><a href="http://mysword.info/b?r=1Ch_27">1 CRÔNICAS 27</a></a></li>
+    <li><a href="#747">#747</a></li>
+    <li><a href="#1-cr-nicas-28"><a href="http://mysword.info/b?r=1Ch_28">1 CRÔNICAS 28</a></a></li>
+    <li><a href="#748">#748</a></li>
+    <li><a href="#1-cr-nicas-29"><a href="http://mysword.info/b?r=1Ch_29">1 CRÔNICAS 29</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="729">#729</h2>
 <p>O orgulho em alguém que já é salvo é tão ruim - talvez pior - quanto o orgulho em alguém que não esteja salvo.</p>
 <h2 id="1-cr-nicas-10"><a href="http://mysword.info/b?r=1Ch_10">1 CRÔNICAS 10</a></h2>
@@ -383,6 +431,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

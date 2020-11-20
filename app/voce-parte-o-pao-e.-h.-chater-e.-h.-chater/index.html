@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Você Parte o Pão - Por Que, Quando, Onde e Como?</h1>
 <p>
@@ -191,6 +193,16 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/e.-h.-chater">E. H. Chater</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#por-que">POR QUE?</a></li>
+    <li><a href="#quando">QUANDO?</a></li>
+    <li><a href="#onde">ONDE?</a></li>
+    <li><a href="#como">COMO?</a></li>
+  </ul>
+</nav>  
+</div>
 <p>Você Parte o Pão - Por Que, Quando, Onde e Como?</p>
 <p>INTRODUÇÃO</p>
 <p>Na noite em que Jesus foi traído, após a ceia pascal, Ele tomou &quot;o pão, e havendo dado graças, partiu-o, e deu-lho (aos Seus discípulos), dizendo: Isto é o Meu corpo, que por vós é dado; fazei isto em memória de Mim. Semelhantemente tomou o cálice, depois da ceia, dizendo: Este cálice é o Novo Testamento no Meu sangue, que é derramado por vós&quot; (<a href="http://mysword.info/b?r=Luk_22:19-20">Lucas 22:19-20</a>).</p>
@@ -279,6 +291,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

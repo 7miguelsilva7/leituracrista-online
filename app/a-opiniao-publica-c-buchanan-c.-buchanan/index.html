@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>A Opinião Pública</h1>
 <p>
@@ -191,6 +193,9 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-buchanan">C. BUCHANAN</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents"></nav>  
+</div>
 <p>A OPINIÃO PÚBLICA</p>
 <p>C. BUCHANAN</p>
 <p>A opinião pública é uma das duas coisas que controlam o homem natural. A outra é a sua própria concupiscência. Na sua epístola, Tiago nos fala claramente da concupiscência e do seu resultado logo no primeiro capítulo. &quot;Ninguém, sendo tentado, diga: De Deus sou tentado; porque Deus não pode ser tentado pelo mal, e a ninguém tenta. Mas cada um é tentado, quando atraído e engodado pela sua própria concupiscência. Depois, havendo a concupiscência concebido, dá à luz o pecado; e o pecado, sendo consumado, gera a morte.&quot; (<a href="http://mysword.info/b?r=Jas_1:13-15">Tiago 1:13-15</a>).</p>
@@ -236,6 +241,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

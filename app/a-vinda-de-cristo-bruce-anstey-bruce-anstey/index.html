@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>A Vinda de Cristo</h1>
 <p>
@@ -191,6 +193,9 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/bruce-anstey">Bruce Anstey</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents"></nav>  
+</div>
 <p>A VINDA DE CRISTO</p>
 <p>BRUCE ANSTEY</p>
 <p>O Senhor Jesus prometeu: &quot;Na casa de meu Pai há muitas moradas; se não fosse assim, eu vo-lo teria dito: vou preparar-vos lugar. E se eu for, e vos preparar lugar, virei outra vez e vos levarei para mim mesmo, para que onde eu estiver estejais vós também.&quot; (<a href="http://mysword.info/b?r=Joh_14:2,3">João 14:2,3</a>). Ele também disse: &quot;Certamente cedo venho.&quot; (<a href="http://mysword.info/b?r=Rev_22:20">Apoc. 22:20</a>). A esperança própria ao Cristão é aguardar o Senhor para qualquer momento. Há muitas indicações que nos levam a concluir que a vinda do Senhor está prestes a acontecer; o Senhor Jesus poderá vir ainda hoje! (<a href="http://mysword.info/b?r=Heb_10:37">Hebreus 10:37</a>).</p>
@@ -241,6 +246,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

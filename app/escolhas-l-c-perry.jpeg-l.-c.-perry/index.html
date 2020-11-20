@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Escolhas</h1>
 <p>
@@ -191,6 +193,22 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/l.-c.-perry">L. C. Perry</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#escolhas">ESCOLHAS</a></li>
+    <li><a href="#o-caminho-de-deus-o-nico-caminho">O Caminho de Deus é o Único Caminho</a></li>
+    <li><a href="#o-que-jesus-pediu-de-nicodemos">O Que Jesus Pediu de Nicodemos</a></li>
+    <li><a href="#josu-s-enxergou-um-caminho">Josué Só Enxergou Um Caminho</a></li>
+    <li><a href="#o-dilema-de-um-homem-rico">O Dilema de Um Homem Rico</a></li>
+    <li><a href="#tesouro-no-c-u">Tesouro no Céu</a></li>
+    <li><a href="#servindo-um-mestre">Servindo Um Mestre</a></li>
+    <li><a href="#n-o-necessariamente-um-caminho-f-cil">Não é Necessariamente um Caminho Fácil</a></li>
+    <li><a href="#poder-para-seguir-na-dire-o-certa">Poder Para Seguir na Direção Certa</a></li>
+    <li><a href="#uma-coisa-fa-o">Uma Coisa Faço&hellip;</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="escolhas">ESCOLHAS</h2>
 <p>De um certo modo, este é um título meio enganador, mas expressa o que a maioria das pessoas considera como sendo uma descrição de suas vidas. As pessoas têm a tendência de sentir que a vida é uma longa sucessão de escolhas difíceis. Certamente a vida está cheia de pontos de decisão, encruzilhadas, desvios do caminho. Todavia, o que as Escrituras nos ensinam, como seguidores de Cristo, é que não existe realmente qualquer escolha para nós em qualquer uma das encruzilhadas desta vida. O único caminho para o crente é seguir a Cristo aonde Ele guiar, sempre em obediência à Sua Palavra.</p>
 <p>Na verdade, com frequência deixamos que nossa vontade própria intervenha e tome o caminho que mais nos agrade, ou aquele que pareça ser o mais lógico ou mais popular, ou então o que dê menos trabalho. Nenhum desses raciocínios tem base nas Escrituras; são sempre provenientes de Satanás.</p>
@@ -263,6 +281,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

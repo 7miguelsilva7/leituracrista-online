@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Nunca!</h1>
 <p>
@@ -191,6 +193,20 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-cutting">G. Cutting</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#nunca">NUNCA!</a></li>
+    <li><a href="#o-fogo-que-nunca-se-apaga">O FOGO QUE NUNCA SE APAGA</a></li>
+    <li><a href="#as-ovelhas-que-nunca-perecem">AS OVELHAS QUE NUNCA PERECEM</a></li>
+    <li><a href="#nunca-jo-o-10-28">&quot;Nunca&quot; - João 10:28</a></li>
+    <li><a href="#jo-o-10-28"><a href="http://mysword.info/b?r=Joh_10:28">João 10:28</a></a></li>
+    <li><a href="#quem-s-o-as-ovelhas">QUEM SÃO AS OVELHAS?</a></li>
+    <li><a href="#as-ovelhas-um-presente-recebido-do-pai">AS OVELHAS - UM PRESENTE RECEBIDO DO PAI</a></li>
+    <li><a href="#ser-o-todos-ovelhas">SERÃO TODOS OVELHAS?</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="nunca">NUNCA!</h2>
 <p>Será que alguma vez você se deu conta, querido leitor, de que a mesma palavra que concede o mais doce consolo ao verdadeiro crente, extingue completamente qualquer raio de esperança para o incrédulo, e não lhe deixa coisa alguma além de trevas e total desespero? Esta palavra é a mesma que aparece no início deste artigo.</p>
 <p>Para tornar isso mais claro, deixe-nos fazer duas perguntas que, provindas dos lábios do Senhor Jesus Cristo, são ambas respondidas por esta mesma palavra.</p>
@@ -271,6 +287,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

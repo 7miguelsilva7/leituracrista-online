@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>O Falso Messias</h1>
 <p>
@@ -191,7 +193,14 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/w.-scott">W. SCOTT</a></code></small>
 
 </p>
-<h1 id="o-falso-messias">O FALSO MESSIAS</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-falso-messias">O FALSO MESSIAS</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="o-falso-messias">O FALSO MESSIAS</h2>
 <p>W. SCOTT</p>
 <p>Uma determinada pessoa, um homem judeu e apóstata, é o Anticristo que encontramos nas profecias das Escrituras. Há aqueles que costumam apresentar o Anticristo como o líder civil do Império Romano, mas não é verdade. O Anticristo é o falso messias,o ministro de Satanás para com os judeus em Jerusalém, operando sinais e fazendo maravilhas por meio de um poder vindo diretamente de Satanás. Ele se assenta no templo de Deus, que estará construído em Jerusalém, e exige ser adorado como Deus. A Besta (Roma),o falso profeta ou Anticristo, e também o dragão (Satanás) são deificados e adorados, numa imitação da adoração que é devida ao Pai, Filho e Espírito Santo. A nação apóstata de Israel aceita o Anticristo como seu rei.</p>
 <p>Ele definitivamente não se trata de um grande poder político. É verdade que exerce influência sobre a Cristandade, mas no seu aspecto religioso, e não politicamente. O governo do mundo Ocidental, civil e político, está nas mãos do grande chefe gentio. É ele, cujo trono se encontra em Roma, quem rege politicamente sob o comando de Satanás. O Anticristo tem seu trono em Jerusalém enquanto que o líder do domínio gentio o tem em Roma. Os dois homens são ministros de Satanás, aliados em iniqüidade. Um é judeu, o outro gentio. Ambos estão presentes por ocasião da vinda do Senhor em juízo, e ambos são lançados vivos no lago de fogo &ndash; uma sentença eterna.</p>
@@ -250,6 +259,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

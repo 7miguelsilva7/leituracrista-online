@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Auxílio ou Empecilho</h1>
 <p>
@@ -191,6 +193,13 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-h.-mackintosh">C. H. Mackintosh</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#aux-lio-ou-empecilho">AUXÍLIO OU EMPECILHO</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="aux-lio-ou-empecilho">AUXÍLIO OU EMPECILHO</h2>
 <p>Que és tu?</p>
 <p>De entre os muitos favores que nos são concedidos pelo nosso bondoso Senhor, um dos mais elevados é, sem dúvida, o privilegio de estarmos presentes na Assembléia do Seu amado povo. Podemos assegurar, com confiança, que todo aquele que verdadeiramente ama a Cristo, se alegará, com os Seus onde Ele prometeu estar, seja qual for o caráter da reunião; quer seja para tomar a Ceia do Senhor, e assim recordar a Sua morte, quer para estudar a Palavra de Deus e conhecer a Sua vontade, quer para oração a fim de lhe narrarmos as nossas necessidades e receber bênçãos do Seu inesgotável tesouro - todo o coração devoto desejará estar aí presente. E podemos estar certos de que qualquer que voluntariamente negligenciar comparecer na Assembléia, conserva a sua alma num estado frio, morto e perigoso. Descuidar-se alguém de se congregar é dar o primeiro passo no plano inclinado que conduz ao abandono de Cristo e dos Seus preciosos interesses (<a href="http://mysword.info/b?r=Heb_10:25-27">Hebreus 10:25-27</a>).</p>
@@ -256,6 +265,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

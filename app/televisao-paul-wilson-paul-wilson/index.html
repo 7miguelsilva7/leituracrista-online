@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Televisão</h1>
 <p>
@@ -191,6 +193,13 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/paul-wilson">Paul Wilson</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#televis-o">TELEVISÃO</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="televis-o">TELEVISÃO</h2>
 <p>Sentimo-nos na obrigação de examinar o assunto da televisão no lar e, sobretudo, em como isto afeta o cristão. Com o rápido crescimento deste último gigante do mundo da diversão e entretenimento, e com o aumento da propaganda para que os cristãos abram os seus lares a esta obra-prima da invenção humana, cremos que é hora de encarar o assunto de frente.</p>
 <p>Sendo assim, seria apropriado nos lembrarmos de uma pergunta que fez o profeta Isaías ao rei Ezequias: &quot;Que viram em tua casa?&quot; (<a href="http://mysword.info/b?r=2Ki_20:15">2 Reis 20:15</a>). Este moderno meio de comunicação irá trazer ao lar uma variedade de cenas e imagens como um alimento cotidiano para seus habitantes e hóspedes. Será para a glória de Deus? Aumentará nossa ocupação com as coisas celestiais? Poderá nos ajudar a crescer no conhecimento de nosso Senhor e Salvador Jesus Cristo? Ou será algo mais para desviar nossa atenção do Único que é digno de nossa ocupação principal?</p>
@@ -251,6 +260,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

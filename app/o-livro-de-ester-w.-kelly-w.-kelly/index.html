@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>O Livro de Ester</h1>
 <p>
@@ -191,6 +193,23 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/w.-kelly">W. Kelly</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#livro-de-ester">LIVRO DE ESTER</a></li>
+    <li><a href="#primeiro-cap-tulo">PRIMEIRO CAPÍTULO</a></li>
+    <li><a href="#segundo-cap-tulo">SEGUNDO CAPÍTULO</a></li>
+    <li><a href="#terceiro-cap-tulo">TERCEIRO CAPÍTULO</a></li>
+    <li><a href="#quarto-cap-tulo">QUARTO CAPÍTULO</a></li>
+    <li><a href="#quinto-cap-tulo">QUINTO CAPÍTULO</a></li>
+    <li><a href="#sexto-cap-tulo">SEXTO CAPÍTULO</a></li>
+    <li><a href="#s-timo-cap-tulo">SÉTIMO CAPÍTULO</a></li>
+    <li><a href="#oitavo-cap-tulo">OITAVO CAPÍTULO</a></li>
+    <li><a href="#nono-cap-tulo">NONO CAPÍTULO</a></li>
+    <li><a href="#d-cimo-cap-tulo">DÉCIMO CAPÍTULO</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="livro-de-ester">LIVRO DE ESTER</h2>
 <p>INTRODUÇÃO</p>
 <p>O livro de Ester é uma das poucas porções das Escrituras que nos chamam a atenção pela ausência do nome de Deus. Isto tem, com frequência, surpreendido a muitos: os próprios judeus não eram capazes de compreender o por quê, e há hoje muitos cristãos que não diferem muito deles. E isto chegou ao ponto de se ter tornado um hábito para alguns, especialmente nestes últimos tempos, tratarem o livro de Ester com uma certa medida de descrédito, como se a ausência do nome do Senhor fosse algo suspeito — como se o livro não fosse de Deus pelo fato de o nome de Deus não ser encontrado nele. Espero mostrar que o fato do nome de Deus não ser encontrado faz parte da excelência do livro, pois há ocasiões em que Deus encobre Sua glória. Não há ocasião em que Ele não opere, mas Ele nem sempre permite que Seu nome seja escutado, ou que Seus caminhos sejam vistos. Quero mostrar que é precisamente este o caráter que o livro exigia — que o nome de Deus não fosse encontrado ali. Por conseguinte, ao invés de despertar uma discussão quanto à participação de Ester no volume sagrado, isto irá mostrar a perfeição dos caminhos de Deus, até mesmo neste fato tão excepcional que é a ausência de Seu nome em todo um livro.</p>
@@ -285,6 +304,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

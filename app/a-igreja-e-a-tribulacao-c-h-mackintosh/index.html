@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>A Igreja e a Tribulação</h1>
 <p>
@@ -191,6 +193,9 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-h.-mackintosh">C. H. MACKINTOSH</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents"></nav>  
+</div>
 <p>A Igreja e a Tribulação</p>
 <p>C. H. MACKINTOSH</p>
 <p>Talvez não exista uma doutrina errônea que tenha sido mais prejudicial às almas dos filhos de Deus do que aquela professada pelos que supõem que a igreja de Deus passará pela &quot;grande tribulação&quot;. Tal declaração subverte a revelação de Deus acerca da Igreja como corpo e noiva de Cristo, reduzindo o povo celestial ao nível de associações judaicas, e os priva de uma atitude de expectativa e anseio pela vinda de Cristo a qualquer momento. Tais pessoas mergulham em um ponto de vista político da vinda do Senhor, ao olharem para os acontecimentos ao invés de olharem para a Sua Pessoa, ou ao se preocuparem mais com o aparecimento do anticristo do que com o de Cristo. Desta forma, as afeições, consciência e esperança da alma ficam seriamente danificadas por tal doutrina.</p>
@@ -233,6 +238,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

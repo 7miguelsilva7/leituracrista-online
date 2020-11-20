@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>O Mundo Invisível</h1>
 <p>
@@ -191,7 +193,21 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-r.-gill">J. R. Gill</a></code></small>
 
 </p>
-<h1 id="o-mundo-invis-vel">O MUNDO INVISÍVEL</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-mundo-invis-vel">O MUNDO INVISÍVEL</a></li>
+    <li><a href="#davi-2-samuel-12-22-23">Davi - 2 Samuel 12:22,23</a></li>
+    <li><a href="#jac-g-nesis-49-33">Jacó - Gênesis 49:33</a></li>
+    <li><a href="#abra-o-isaque-e-jac-mateus-8-11">Abraão, Isaque e Jacó - Mateus 8:11</a></li>
+    <li><a href="#pedro-mois-s-e-elias-mateus-17-3-4">Pedro, Moisés e Elias - Mateus 17:3-4</a></li>
+    <li><a href="#o-rico-e-l-zaro-lucas-16-19-31">O Rico e Lázaro - Lucas 16:19-31</a></li>
+    <li><a href="#paulo-e-os-cor-ntios-2-cor-ntios-1-13-14">Paulo e os Coríntios - 2 Coríntios 1:13-14</a></li>
+    <li><a href="#que-apar-ncia-teremos-l">Que Aparência Teremos Lá?</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="o-mundo-invis-vel">O MUNDO INVISÍVEL</h2>
 <p>Iremos nos conhecer no céu?</p>
 <p>No céu o Senhor Jesus será o centro de atração e o imã de cada coração. Se por um lado isto é uma verdade, por outro é igualmente claro que um de nossos gozos estará em desfrutarmos da companhia de todos os redimidos que lá estarão. Enquanto estamos aqui na Terra, o Senhor ocupa o supremo lugar em nossos corações. No entanto, desfrutamos da companhia e da comunhão uns dos outros, e o gozo e a comunhão dos santos será também conhecido e desfrutado no céu.</p>
 <p>O &quot;hades&quot; é uma expressão neo-testamentária e trata-se de uma palavra grega; &quot;sheol&quot; é a expressão do Velho Testamento e é uma palavra hebraica. Ambas significam a mesma coisa: o mundo invisível, ou lugar dos espíritos que partiram. É correto dizer que nossos amados encontram-se no &quot;hades&quot;. Inferno é uma palavra diferente e significa o lago de fogo. Em <a href="http://mysword.info/b?r=Act_2:31">Atos 2:31</a>, a palavra &quot;inferno&quot;, que aparece em algumas traduções, deveria ser lida &quot;hades&quot;, e no <a href="http://mysword.info/b?r=Psa_16:10">Salmos 16:10</a>, a palavra &quot;inferno&quot; deveria ser lida &quot;sheol&quot;.</p>
@@ -259,6 +275,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

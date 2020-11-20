@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - 2 Coríntios</h1>
 <p>
@@ -194,6 +196,38 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#329">#329</a></li>
+    <li><a href="#2-cor-ntios-1"><a href="http://mysword.info/b?r=2Co_1">2 CORÍNTIOS 1</a></a></li>
+    <li><a href="#330">#330</a></li>
+    <li><a href="#2-cor-ntios-2"><a href="http://mysword.info/b?r=2Co_2">2 CORÍNTIOS 2</a></a></li>
+    <li><a href="#331">#331</a></li>
+    <li><a href="#2-cor-ntios-3"><a href="http://mysword.info/b?r=2Co_3">2 CORÍNTIOS 3</a></a></li>
+    <li><a href="#332">#332</a></li>
+    <li><a href="#2-cor-ntios-4"><a href="http://mysword.info/b?r=2Co_4">2 CORÍNTIOS 4</a></a></li>
+    <li><a href="#333">#333</a></li>
+    <li><a href="#2-cor-ntios-5"><a href="http://mysword.info/b?r=2Co_5">2 CORÍNTIOS 5</a></a></li>
+    <li><a href="#334">#334</a></li>
+    <li><a href="#2-cor-ntios-6"><a href="http://mysword.info/b?r=2Co_6">2 CORÍNTIOS 6</a></a></li>
+    <li><a href="#335">#335</a></li>
+    <li><a href="#2-cor-ntios-7"><a href="http://mysword.info/b?r=2Co_7">2 CORÍNTIOS 7</a></a></li>
+    <li><a href="#336">#336</a></li>
+    <li><a href="#2-cor-ntios-8"><a href="http://mysword.info/b?r=2Co_8">2 CORÍNTIOS 8</a></a></li>
+    <li><a href="#337">#337</a></li>
+    <li><a href="#2-cor-ntios-9"><a href="http://mysword.info/b?r=2Co_9">2 CORÍNTIOS 9</a></a></li>
+    <li><a href="#338">#338</a></li>
+    <li><a href="#2-cor-ntios-10"><a href="http://mysword.info/b?r=2Co_10">2 CORÍNTIOS 10</a></a></li>
+    <li><a href="#339">#339</a></li>
+    <li><a href="#2-cor-ntios-11"><a href="http://mysword.info/b?r=2Co_11">2 CORÍNTIOS 11</a></a></li>
+    <li><a href="#340">#340</a></li>
+    <li><a href="#2-cor-ntios-12"><a href="http://mysword.info/b?r=2Co_12">2 CORÍNTIOS 12</a></a></li>
+    <li><a href="#341">#341</a></li>
+    <li><a href="#2-cor-ntios-13"><a href="http://mysword.info/b?r=2Co_13">2 CORÍNTIOS 13</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="329">#329</h2>
 <p>A inteligência nas coisas divinas vem por meio da consciência, não do intelecto.</p>
 <h2 id="2-cor-ntios-1"><a href="http://mysword.info/b?r=2Co_1">2 CORÍNTIOS 1</a></h2>
@@ -335,6 +369,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

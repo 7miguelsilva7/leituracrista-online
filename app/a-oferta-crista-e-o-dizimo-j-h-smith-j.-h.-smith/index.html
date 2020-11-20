@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>A Oferta Cristã e o Dízimo</h1>
 <p>
@@ -191,6 +193,9 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-h.-smith">J. H. SMITH</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents"></nav>  
+</div>
 <p>A Oferta Cristã e o Dízimo</p>
 <p>J.H.SMITH</p>
 <p>Se tivéssemos sido israelitas, vivendo na Palestina antes de Cristo haver morrido e ressuscitado dos mortos, seríamos obrigados a dar dízimos (ou a décima parte) de todos os nossos rendimentos, dos produtos de nossas plantações e do aumento de nosso rebanho, segundo a lei de Moisés que dizia: &quot;Certamente darás os dízimos de toda a novidade da tua semente que cada ano se recolher do campo&quot; (<a href="http://mysword.info/b?r=Deu_14:22">Dt 14:22</a>). &quot;Também todas as dízimas do campo, da semente do campo, do fruto das árvores, são do Senhor: santas são ao Senhor&hellip;</p>
@@ -237,6 +242,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

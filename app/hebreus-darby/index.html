@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Estudo Sobre a Palavra de Deus - Hebreus</h1>
 <p>
@@ -191,6 +193,27 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ep-stola-aos-hebreus">EPÍSTOLA AOS HEBREUS</a></li>
+    <li><a href="#cap-tulo-1"><a href="https://mysword.info/b?r=Heb_1">CAPÍTULO 1</a></a></li>
+    <li><a href="#notas-do-estudo-sobre-hebreus-cap-tulo-1">(NOTAS DO ESTUDO SOBRE HEBREUS <a href="https://mysword.info/b?r=Heb_1">CAPÍTULO 1</a>)</a></li>
+    <li><a href="#cap-tulo-2"><a href="https://mysword.info/b?r=Heb_2">CAPÍTULO 2</a></a></li>
+    <li><a href="#cap-tulo-3"><a href="https://mysword.info/b?r=Heb_3">CAPÍTULO 3</a></a></li>
+    <li><a href="#cap-tulo-4"><a href="https://mysword.info/b?r=Heb_4">CAPÍTULO 4</a></a></li>
+    <li><a href="#cap-tulo-5"><a href="https://mysword.info/b?r=Heb_5">CAPÍTULO 5</a></a></li>
+    <li><a href="#cap-tulo-6"><a href="https://mysword.info/b?r=Heb_6">CAPÍTULO 6</a></a></li>
+    <li><a href="#cap-tulo-7"><a href="https://mysword.info/b?r=Heb_7">CAPÍTULO 7</a></a></li>
+    <li><a href="#cap-tulo-8"><a href="https://mysword.info/b?r=Heb_8">CAPÍTULO 8</a></a></li>
+    <li><a href="#cap-tulo-9"><a href="https://mysword.info/b?r=Heb_9">CAPÍTULO 9</a></a></li>
+    <li><a href="#cap-tulo-10"><a href="https://mysword.info/b?r=Heb_10">CAPÍTULO 10</a></a></li>
+    <li><a href="#cap-tulo-11"><a href="https://mysword.info/b?r=Heb_11">CAPÍTULO 11</a></a></li>
+    <li><a href="#cap-tulo-12"><a href="https://mysword.info/b?r=Heb_12">CAPÍTULO 12</a></a></li>
+    <li><a href="#cap-tulo-13"><a href="https://mysword.info/b?r=Heb_13">CAPÍTULO 13</a></a></li>
+  </ul>
+</nav>  
+</div>
 <p>Estudo Sobre a Palavra de Deus</p>
 <p>HEBREUS</p>
 <p>Tradutor Martins do Vale</p>
@@ -904,6 +927,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

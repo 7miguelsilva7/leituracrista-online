@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Por Seus Frutos</h1>
 <p>
@@ -191,7 +193,14 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/young-christian">Young Christian</a></code></small>
 
 </p>
-<h1 id="por-seus-frutos-0">POR SEUS FRUTOS</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#por-seus-frutos-0">POR SEUS FRUTOS</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="por-seus-frutos-0">POR SEUS FRUTOS</h2>
 <p>Normalmente uma árvore é conhecida pelos seus frutos. Muitas pessoas que dificilmente conseguiriam diferenciar uma árvore de outra, são capazes de fazê-lo quando vêem o fruto. Existem muitos mestres religiosos cujos lábios podem nos enganar, e cujas pretensões quase que nos fazem cultivar um grande respeito por eles, mas o Senhor não nos disse que deveríamos julgá-los pelo que falavam. Não existiam mestres religiosos mais rigorosos, e nem mais presunçosos, do que os Fariseus, mas Jesus os julgou por seus frutos. Deveríamos fazer este teste em nós mesmos em nossa vida diária.</p>
 <p>Façamo-nos passar pelo mesmo teste. Somos aquilo que fazemos. Os homens não colhem uvas de espinheiros, ou figos dos abrolhos. Não podemos cultivar um espinheiro de modo a fazer dele uma videira, ou transformarmos um abrolho numa figueira, assim como ninguém poderá ser treinado a se tornar um verdadeiro cristão. O verdadeiro cristão é aquele que é nascido de novo; nele habita o Espírito Santo, e pelo Espírito ele é capacitado a produzir os frutos que são aceitáveis a Deus.</p>
 <p>Algumas das árvores do pomar do Senhor não produzem tantos frutos quanto outras, mas todas produzem algum fruto &ndash; algumas, trinta, outras sessenta, outras uma centena. Considere a grande quantidade de mangas que são produzidas por uma única mangueira. Aquela mangueira foi também, um dia, uma solitária manga. Conforme os anos foram se passando, ela brotou, cresceu, criou galhos, e estes, nas épocas apropriadas, produziram frutos. Pense nos milhares e milhares de frutos que uma única mangueira pode produzir. Em algumas épocas as árvores produzem mais abundantemente que em outras, e o mesmo ocorre com o cristão, embora esta palavra seja sempre válida: &quot;Nisto é glorificado meu Pai, que deis muito fruto&quot; (<a href="http://mysword.info/b?r=Joh_15:8">João 15:8</a>).</p>
@@ -234,6 +243,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

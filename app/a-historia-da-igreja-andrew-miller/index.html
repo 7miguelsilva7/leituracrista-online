@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>A História da Igreja (Parte 1)</h1>
 <p>
@@ -191,22 +193,352 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/andrew-miller">Andrew Miller</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-hist-ria-da-igreja">A História da Igreja</a></li>
+    <li><a href="#pref-cio">Prefácio</a></li>
+    <li><a href="#introdu-o">Introdução</a>
+      <ul>
+        <li><a href="#os-erros-dos-historiadores-em-geral">Os Erros dos Historiadores em Geral</a></li>
+        <li><a href="#as-sete-igrejas-da-sia">As Sete Igrejas da Ásia</a></li>
+        <li><a href="#um-resumo-das-sete-igrejas">Um Resumo das Sete Igrejas</a></li>
+      </ul>
+    </li>
+    <li><a href="#verdades-fundamentais">Verdades Fundamentais</a>
+      <ul>
+        <li><a href="#a-pedra-do-fundamento">A Pedra do Fundamento</a></li>
+        <li><a href="#cristo-o-nico-construtor-de-sua-igreja">Cristo, O Único Construtor de Sua Igreja</a></li>
+        <li><a href="#as-chaves-do-reino-dos-c-us">As Chaves do Reino dos Céus</a></li>
+        <li><a href="#a-abertura-do-reino-dos-c-us">A Abertura do Reino dos Céus</a></li>
+        <li><a href="#a-par-bola-do-joio">A Parábola do Joio</a></li>
+        <li><a href="#o-princ-pio-divino-do-governo-na-igreja">O Princípio Divino do Governo na Igreja</a></li>
+        <li><a href="#esse-princ-pio-do-governo-na-igreja-ainda-aplic-vel">Esse Princípio do Governo na Igreja Ainda é Aplicável</a></li>
+        <li><a href="#o-princ-pio-de-receber-pessoas-no-in-cio-da-igreja">O Princípio de Receber Pessoas no Início da Igreja</a></li>
+      </ul>
+    </li>
+    <li><a href="#de-pentecostes-ao-mart-rio-de-est-v-o">De Pentecostes ao Martírio de Estêvão</a>
+      <ul>
+        <li><a href="#o-dia-de-pentecostes">O Dia de Pentecostes</a></li>
+        <li><a href="#a-ressurrei-o-e-ascens-o-de-cristo">A Ressurreição e Ascensão de Cristo</a></li>
+        <li><a href="#os-ap-stolos-e-disc-pulos-agora-aprenderam-duas-coisas">Os apóstolos e discípulos agora aprenderam duas coisas:</a></li>
+        <li><a href="#a-descida-do-esp-rito-santo">A Descida do Espírito Santo</a></li>
+        <li><a href="#o-primeiro-apelo-de-pedro-aos-judeus">O Primeiro Apelo de Pedro aos Judeus</a></li>
+        <li><a href="#o-chamado-dirigido-aos-gentios">O Chamado Dirigido aos Gentios</a></li>
+        <li><a href="#o-selo-dos-gentios">O Selo dos Gentios</a></li>
+        <li><a href="#o-primeiro-m-rtir-crist-o">O Primeiro Mártir Cristão</a></li>
+      </ul>
+    </li>
+    <li><a href="#de-est-v-o-ao-apostolado-de-paulo">De Estêvão ao Apostolado de Paulo</a>
+      <ul>
+        <li><a href="#a-persegui-o-e-dispers-o-dos-disc-pulos">A Perseguição e Dispersão dos Discípulos</a></li>
+        <li><a href="#os-triunfos-do-evangelho-em-samaria">Os Triunfos do Evangelho em Samaria</a></li>
+        <li><a href="#jerusal-m-e-samaria-unidas-pelo-evangelho">Jerusalém e Samaria Unidas pelo Evangelho</a></li>
+        <li><a href="#o-eunuco-et-ope-recebe-o-evangelho">O Eunuco Etíope Recebe o Evangelho</a></li>
+        <li><a href="#a-convers-o-de-saulo-de-tarso">A Conversão de Saulo de Tarso</a></li>
+        <li><a href="#o-apostolado-de-paulo">O Apostolado de Paulo</a></li>
+      </ul>
+    </li>
+    <li><a href="#os-ap-stolos-e-os-pioneiros">Os Apóstolos e os Pioneiros</a>
+      <ul>
+        <li><a href="#os-primeiros-mission-rios-da-cruz">Os Primeiros Missionários da Cruz</a></li>
+        <li><a href="#os-doze-ap-stolos">Os Doze Apóstolos</a></li>
+        <li><a href="#o-ap-stolo-pedro-parte-1">O Apóstolo Pedro (Parte 1)</a></li>
+        <li><a href="#o-ap-stolo-pedro-parte-2">O Apóstolo Pedro (Parte 2)</a></li>
+        <li><a href="#a-linhagem-real-herodiana">A Linhagem Real Herodiana</a></li>
+        <li><a href="#pedro-na-antioquia">Pedro na Antioquia</a></li>
+        <li><a href="#o-ap-stolo-andr">O Apóstolo André</a></li>
+        <li><a href="#o-ap-stolo-tiago">O Apóstolo Tiago</a></li>
+        <li><a href="#o-ap-stolo-jo-o">O Apóstolo João</a></li>
+        <li><a href="#o-ap-stolo-filipe">O Apóstolo Filipe</a></li>
+        <li><a href="#o-ap-stolo-bartolomeu">O Apóstolo Bartolomeu</a></li>
+        <li><a href="#o-ap-stolo-mateus">O Apóstolo Mateus</a></li>
+        <li><a href="#o-ap-stolo-tom">O Apóstolo Tomé</a></li>
+        <li><a href="#o-ap-stolo-tiago-filho-de-alfeu">O Apóstolo Tiago, Filho de Alfeu</a></li>
+        <li><a href="#o-ap-stolo-sim-o-o-zelote">O Apóstolo Simão, o Zelote</a></li>
+        <li><a href="#o-ap-stolo-judas-irm-o-de-tiago">O Apóstolo Judas, irmão de Tiago</a></li>
+        <li><a href="#o-ap-stolo-matias">O Apóstolo Matias</a></li>
+      </ul>
+    </li>
+    <li><a href="#as-duas-primeiras-viagens-de-paulo">As Duas Primeiras Viagens de Paulo</a>
+      <ul>
+        <li><a href="#o-ap-stolo-paulo">O Apóstolo Paulo</a></li>
+        <li><a href="#antes-de-sua-convers-o">Antes de sua Conversão</a></li>
+        <li><a href="#a-primeira-visita-de-saulo-a-jerusal-m-por-volta-de-39-d-c">A Primeira Visita de Saulo a Jerusalém (por volta de 39 d.C.)</a></li>
+        <li><a href="#a-segunda-visita-de-saulo-a-jerusal-m-por-volta-de-44-d-c">A Segunda Visita de Saulo a Jerusalém (por volta de 44 d.C.)</a></li>
+        <li><a href="#a-primeira-viagem-mission-ria-de-saulo-por-volta-de-48-d-c">A Primeira Viagem Missionária de Saulo (por volta de 48 d.C.)</a></li>
+        <li><a href="#retornemos-agora-miss-o">Retornemos agora à missão.</a></li>
+        <li><a href="#a-terceira-visita-de-paulo-a-jerusal-m-por-volta-de-50-d-c">A Terceira Visita de Paulo a Jerusalém (por volta de 50 d.C.)</a></li>
+        <li><a href="#a-segunda-viagem-mission-ria-de-paulo-por-volta-de-51-d-c">A Segunda Viagem Missionária de Paulo (por volta de 51 d.C.)</a></li>
+        <li><a href="#paulo-leva-o-evangelho-para-a-europa">Paulo leva o Evangelho para a Europa</a></li>
+        <li><a href="#o-efeito-da-prega-o-de-paulo-em-filipos">O Efeito da Pregação de Paulo em Filipos</a></li>
+        <li><a href="#paulo-em-tessal-nica-e-bereia">Paulo em Tessalônica e Bereia</a></li>
+        <li><a href="#a-visita-de-paulo-a-atenas">A Visita de Paulo a Atenas</a></li>
+        <li><a href="#a-visita-de-paulo-a-corinto">A Visita de Paulo a Corinto</a></li>
+        <li><a href="#a-r-pida-visita-de-paulo-a-feso">A Rápida Visita de Paulo a Éfeso</a></li>
+        <li><a href="#a-quarta-visita-de-paulo-a-jerusal-m">A Quarta Visita de Paulo a Jerusalém</a></li>
+        <li><a href="#o-retorno-de-paulo-antioquia">O Retorno de Paulo à Antioquia</a></li>
+      </ul>
+    </li>
+    <li><a href="#a-terceira-viagem-de-paulo">A Terceira Viagem de Paulo</a>
+      <ul>
+        <li><a href="#a-terceira-viagem-mission-ria-de-paulo-por-volta-de-54-d-c">A Terceira Viagem Missionária de Paulo (por volta de 54 d.C.)</a></li>
+        <li><a href="#o-tumulto-em-feso">O Tumulto em Éfeso</a></li>
+        <li><a href="#a-partida-de-paulo-de-feso-para-a-maced-nia">A Partida de Paulo de Éfeso para a Macedônia</a></li>
+        <li><a href="#paulo-deixa-corinto">Paulo deixa Corinto</a></li>
+        <li><a href="#paulo-em-mileto">Paulo em Mileto</a></li>
+        <li><a href="#a-quinta-visita-de-paulo-a-jerusal-m-por-volta-de-58-d-c">A Quinta Visita de Paulo a Jerusalém (por volta de 58 d.C.)</a></li>
+        <li><a href="#o-fim-dos-trabalhos-de-paulo-em-liberdade">O Fim dos Trabalhos de Paulo em Liberdade</a></li>
+        <li><a href="#paulo-no-templo">Paulo no Templo</a></li>
+        <li><a href="#o-discurso-de-paulo-nas-escadarias-da-fortaleza">O Discurso de Paulo nas Escadarias da Fortaleza</a></li>
+        <li><a href="#paulo-diante-do-sin-drio">Paulo Diante do Sinédrio</a></li>
+        <li><a href="#paulo-comparece-diante-de-f-lix">Paulo Comparece Diante de Félix</a></li>
+        <li><a href="#paulo-comparece-diante-de-festo-e-agripa">Paulo Comparece Diante de Festo e Agripa</a></li>
+        <li><a href="#paulo-comparece-diante-de-agripa-e-berenice">Paulo Comparece Diante de Agripa e Berenice</a></li>
+        <li><a href="#a-viagem-de-paulo-a-roma-60-d-c">A Viagem de Paulo a Roma (60 d.C.)</a></li>
+        <li><a href="#a-tempestade-no-mar-adri-tico">A Tempestade no Mar Adriático</a></li>
+        <li><a href="#o-naufr-gio">O Naufrágio</a></li>
+        <li><a href="#paulo-em-malta">Paulo em Malta</a></li>
+        <li><a href="#a-chegada-de-paulo-a-roma">A Chegada de Paulo a Roma</a></li>
+        <li><a href="#o-livro-de-atos-como-um-livro-transicional-entre-dispensa-es">O Livro de Atos como um Livro Transicional entre Dispensações</a></li>
+        <li><a href="#a-ocupa-o-de-paulo-durante-sua-pris-o">A Ocupação de Paulo Durante Sua Prisão</a></li>
+        <li><a href="#o-escravo-foragido-on-simo">O Escravo Foragido, Onésimo</a></li>
+        <li><a href="#ep-stolas-que-foram-escritas-por-paulo-durante-seu-aprisionamento">Epístolas que foram Escritas por Paulo Durante seu Aprisionamento</a></li>
+        <li><a href="#a-absolvi-o-e-liberta-o-de-paulo">A Absolvição e Libertação de Paulo</a></li>
+        <li><a href="#a-partida-de-paulo-da-it-lia">A Partida de Paulo da Itália</a></li>
+        <li><a href="#os-lugares-visitados-por-paulo-durante-sua-liberdade">Os Lugares Visitados por Paulo Durante sua Liberdade</a></li>
+        <li><a href="#o-segundo-aprisionamento-de-paulo-em-roma">O Segundo Aprisionamento de Paulo em Roma</a></li>
+        <li><a href="#o-mart-rio-de-paulo">O Martírio de Paulo</a></li>
+        <li><a href="#tabela-cronol-gica-da-vida-de-paulo">Tabela Cronológica da Vida de Paulo</a></li>
+      </ul>
+    </li>
+    <li><a href="#roma-e-seus-governantes-64-d-c-177-d-c">Roma e Seus Governantes (64 d.C. – 177 d.C.)</a>
+      <ul>
+        <li><a href="#o-inc-ndio-de-roma">O Incêndio de Roma</a></li>
+        <li><a href="#a-primeira-persegui-o-sob-os-imperadores">A Primeira Perseguição sob os Imperadores</a></li>
+        <li><a href="#a-queda-de-jerusal-m-70-d-c">A Queda de Jerusalém (70 d.C.)</a></li>
+        <li><a href="#o-cruel-reinado-de-domiciano">O Cruel Reinado de Domiciano</a></li>
+        <li><a href="#o-curto-por-m-pac-fico-reinado-de-nerva">O Curto Porém Pacífico Reinado de Nerva</a></li>
+        <li><a href="#carta-de-pl-nio-ao-imperador-trajano">Carta de Plínio ao Imperador Trajano</a></li>
+        <li><a href="#carta-de-trajano-para-pl-nio">Carta de Trajano para Plínio</a></li>
+        <li><a href="#a-verdadeira-causa-da-persegui-o">A Verdadeira Causa da Perseguição</a></li>
+        <li><a href="#as-causas-ostensivas-da-persegui-o">As Causas Ostensivas da Perseguição</a></li>
+        <li><a href="#o-r-pido-progresso-do-cristianismo">O Rápido Progresso do Cristianismo</a></li>
+        <li><a href="#o-mart-rio-de-in-cio">O Martírio de Inácio</a></li>
+        <li><a href="#os-escritos-dos-pais-e-as-escrituras-sagradas">Os Escritos dos Pais e as Escrituras Sagradas</a></li>
+        <li><a href="#os-reinados-de-adriano-e-dos-antoninos-do-ano-117-ao-180-d-c">Os Reinados de Adriano e dos Antoninos (do ano 117 ao 180 d.C.)</a></li>
+        <li><a href="#o-fim-do-primeiro-per-odo-e-o-in-cio-do-segundo">O Fim do Primeiro Período e o Início do Segundo</a></li>
+        <li><a href="#a-carta-igreja-de-feso-ap-2-1-7">A Carta à Igreja de Éfeso (ap 2:1–7)</a></li>
+        <li><a href="#apocal-pse-2-1-7"><a href="http://mysword.info/b?r=Rev_2:1-7">Apocalípse 2:1–7</a></a></li>
+        <li><a href="#a-carta-igreja-de-esmirna-ap-2-8-11">A Carta à Igreja de Esmirna (ap 2:8–11)</a></li>
+        <li><a href="#apocal-pse-2-8-11"><a href="http://mysword.info/b?r=Rev_2:8-11">Apocalípse 2:8–11</a></a></li>
+        <li><a href="#o-in-cio-do-segundo-per-odo-da-hist-ria-da-igreja-por-volta-do-ano-167-d-c">O Início do Segundo Período da História da Igreja (por volta do ano 167 d.C.)</a></li>
+        <li><a href="#a-persegui-o-na-sia-ano-167-d-c">A Perseguição na Ásia (ano 167 d.C)</a></li>
+        <li><a href="#o-mart-rio-de-justino-chamado-o-m-rtir">O Martírio de Justino, Chamado o Mártir</a></li>
+        <li><a href="#versos-sobre-o-mart-rio-por-um-centuri-o-romano">Versos Sobre o Martírio, por um Centurião Romano</a></li>
+        <li><a href="#o-mart-rio-de-policarpo">O Martírio de Policarpo</a></li>
+        <li><a href="#as-persegui-es-na-fran-a-ano-177-d-c">As Perseguições na França (ano 177 d.C.)</a></li>
+        <li><a href="#o-poder-da-ora-o">O Poder da Oração</a></li>
+      </ul>
+    </li>
+    <li><a href="#a-hist-ria-interna-da-igreja-107-d-c-245-d-c">A História Interna da Igreja (107 d.C. – 245 d.C.)</a>
+      <ul>
+        <li><a href="#a-hist-ria-interna-da-igreja">A História Interna da Igreja</a></li>
+        <li><a href="#os-seguidores-imediatos-dos-ap-stolos">Os Seguidores Imediatos dos Apóstolos</a></li>
+        <li><a href="#clericalismo-minist-rio-e-responsabilidade-individual">Clericalismo, Ministério e Responsabilidade Individual</a></li>
+        <li><a href="#o-efeito-da-nova-ordem-clerical">O Efeito da Nova Ordem Clerical</a></li>
+        <li><a href="#a-origem-da-distin-o-entre-cl-rigos-e-leigos">A Origem da Distinção entre Clérigos e Leigos</a></li>
+        <li><a href="#o-que-era-um-bispo-nos-primeiros-tempos">O Que Era um Bispo Nos Primeiros Tempos?</a></li>
+        <li><a href="#a-origem-das-dioceses">A Origem das Dioceses</a></li>
+        <li><a href="#a-origem-do-bispo-metropolitano">A Origem do Bispo Metropolitano</a></li>
+        <li><a href="#o-cristianismo-sob-o-reinado-de-severo-anos-194-a-210-d-c">O Cristianismo sob o Reinado de Severo (anos 194 a 210 d.C.)</a></li>
+        <li><a href="#a-persegui-o-na-frica">A Perseguição na África</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>  
+</div>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-hist-ria-da-igreja">A História da Igreja</a></li>
+    <li><a href="#pref-cio">Prefácio</a></li>
+    <li><a href="#introdu-o">Introdução</a>
+      <ul>
+        <li><a href="#os-erros-dos-historiadores-em-geral">Os Erros dos Historiadores em Geral</a></li>
+        <li><a href="#as-sete-igrejas-da-sia">As Sete Igrejas da Ásia</a></li>
+        <li><a href="#um-resumo-das-sete-igrejas">Um Resumo das Sete Igrejas</a></li>
+      </ul>
+    </li>
+    <li><a href="#verdades-fundamentais">Verdades Fundamentais</a>
+      <ul>
+        <li><a href="#a-pedra-do-fundamento">A Pedra do Fundamento</a></li>
+        <li><a href="#cristo-o-nico-construtor-de-sua-igreja">Cristo, O Único Construtor de Sua Igreja</a></li>
+        <li><a href="#as-chaves-do-reino-dos-c-us">As Chaves do Reino dos Céus</a></li>
+        <li><a href="#a-abertura-do-reino-dos-c-us">A Abertura do Reino dos Céus</a></li>
+        <li><a href="#a-par-bola-do-joio">A Parábola do Joio</a></li>
+        <li><a href="#o-princ-pio-divino-do-governo-na-igreja">O Princípio Divino do Governo na Igreja</a></li>
+        <li><a href="#esse-princ-pio-do-governo-na-igreja-ainda-aplic-vel">Esse Princípio do Governo na Igreja Ainda é Aplicável</a></li>
+        <li><a href="#o-princ-pio-de-receber-pessoas-no-in-cio-da-igreja">O Princípio de Receber Pessoas no Início da Igreja</a></li>
+      </ul>
+    </li>
+    <li><a href="#de-pentecostes-ao-mart-rio-de-est-v-o">De Pentecostes ao Martírio de Estêvão</a>
+      <ul>
+        <li><a href="#o-dia-de-pentecostes">O Dia de Pentecostes</a></li>
+        <li><a href="#a-ressurrei-o-e-ascens-o-de-cristo">A Ressurreição e Ascensão de Cristo</a></li>
+        <li><a href="#os-ap-stolos-e-disc-pulos-agora-aprenderam-duas-coisas">Os apóstolos e discípulos agora aprenderam duas coisas:</a></li>
+        <li><a href="#a-descida-do-esp-rito-santo">A Descida do Espírito Santo</a></li>
+        <li><a href="#o-primeiro-apelo-de-pedro-aos-judeus">O Primeiro Apelo de Pedro aos Judeus</a></li>
+        <li><a href="#o-chamado-dirigido-aos-gentios">O Chamado Dirigido aos Gentios</a></li>
+        <li><a href="#o-selo-dos-gentios">O Selo dos Gentios</a></li>
+        <li><a href="#o-primeiro-m-rtir-crist-o">O Primeiro Mártir Cristão</a></li>
+      </ul>
+    </li>
+    <li><a href="#de-est-v-o-ao-apostolado-de-paulo">De Estêvão ao Apostolado de Paulo</a>
+      <ul>
+        <li><a href="#a-persegui-o-e-dispers-o-dos-disc-pulos">A Perseguição e Dispersão dos Discípulos</a></li>
+        <li><a href="#os-triunfos-do-evangelho-em-samaria">Os Triunfos do Evangelho em Samaria</a></li>
+        <li><a href="#jerusal-m-e-samaria-unidas-pelo-evangelho">Jerusalém e Samaria Unidas pelo Evangelho</a></li>
+        <li><a href="#o-eunuco-et-ope-recebe-o-evangelho">O Eunuco Etíope Recebe o Evangelho</a></li>
+        <li><a href="#a-convers-o-de-saulo-de-tarso">A Conversão de Saulo de Tarso</a></li>
+        <li><a href="#o-apostolado-de-paulo">O Apostolado de Paulo</a></li>
+      </ul>
+    </li>
+    <li><a href="#os-ap-stolos-e-os-pioneiros">Os Apóstolos e os Pioneiros</a>
+      <ul>
+        <li><a href="#os-primeiros-mission-rios-da-cruz">Os Primeiros Missionários da Cruz</a></li>
+        <li><a href="#os-doze-ap-stolos">Os Doze Apóstolos</a></li>
+        <li><a href="#o-ap-stolo-pedro-parte-1">O Apóstolo Pedro (Parte 1)</a></li>
+        <li><a href="#o-ap-stolo-pedro-parte-2">O Apóstolo Pedro (Parte 2)</a></li>
+        <li><a href="#a-linhagem-real-herodiana">A Linhagem Real Herodiana</a></li>
+        <li><a href="#pedro-na-antioquia">Pedro na Antioquia</a></li>
+        <li><a href="#o-ap-stolo-andr">O Apóstolo André</a></li>
+        <li><a href="#o-ap-stolo-tiago">O Apóstolo Tiago</a></li>
+        <li><a href="#o-ap-stolo-jo-o">O Apóstolo João</a></li>
+        <li><a href="#o-ap-stolo-filipe">O Apóstolo Filipe</a></li>
+        <li><a href="#o-ap-stolo-bartolomeu">O Apóstolo Bartolomeu</a></li>
+        <li><a href="#o-ap-stolo-mateus">O Apóstolo Mateus</a></li>
+        <li><a href="#o-ap-stolo-tom">O Apóstolo Tomé</a></li>
+        <li><a href="#o-ap-stolo-tiago-filho-de-alfeu">O Apóstolo Tiago, Filho de Alfeu</a></li>
+        <li><a href="#o-ap-stolo-sim-o-o-zelote">O Apóstolo Simão, o Zelote</a></li>
+        <li><a href="#o-ap-stolo-judas-irm-o-de-tiago">O Apóstolo Judas, irmão de Tiago</a></li>
+        <li><a href="#o-ap-stolo-matias">O Apóstolo Matias</a></li>
+      </ul>
+    </li>
+    <li><a href="#as-duas-primeiras-viagens-de-paulo">As Duas Primeiras Viagens de Paulo</a>
+      <ul>
+        <li><a href="#o-ap-stolo-paulo">O Apóstolo Paulo</a></li>
+        <li><a href="#antes-de-sua-convers-o">Antes de sua Conversão</a></li>
+        <li><a href="#a-primeira-visita-de-saulo-a-jerusal-m-por-volta-de-39-d-c">A Primeira Visita de Saulo a Jerusalém (por volta de 39 d.C.)</a></li>
+        <li><a href="#a-segunda-visita-de-saulo-a-jerusal-m-por-volta-de-44-d-c">A Segunda Visita de Saulo a Jerusalém (por volta de 44 d.C.)</a></li>
+        <li><a href="#a-primeira-viagem-mission-ria-de-saulo-por-volta-de-48-d-c">A Primeira Viagem Missionária de Saulo (por volta de 48 d.C.)</a></li>
+        <li><a href="#retornemos-agora-miss-o">Retornemos agora à missão.</a></li>
+        <li><a href="#a-terceira-visita-de-paulo-a-jerusal-m-por-volta-de-50-d-c">A Terceira Visita de Paulo a Jerusalém (por volta de 50 d.C.)</a></li>
+        <li><a href="#a-segunda-viagem-mission-ria-de-paulo-por-volta-de-51-d-c">A Segunda Viagem Missionária de Paulo (por volta de 51 d.C.)</a></li>
+        <li><a href="#paulo-leva-o-evangelho-para-a-europa">Paulo leva o Evangelho para a Europa</a></li>
+        <li><a href="#o-efeito-da-prega-o-de-paulo-em-filipos">O Efeito da Pregação de Paulo em Filipos</a></li>
+        <li><a href="#paulo-em-tessal-nica-e-bereia">Paulo em Tessalônica e Bereia</a></li>
+        <li><a href="#a-visita-de-paulo-a-atenas">A Visita de Paulo a Atenas</a></li>
+        <li><a href="#a-visita-de-paulo-a-corinto">A Visita de Paulo a Corinto</a></li>
+        <li><a href="#a-r-pida-visita-de-paulo-a-feso">A Rápida Visita de Paulo a Éfeso</a></li>
+        <li><a href="#a-quarta-visita-de-paulo-a-jerusal-m">A Quarta Visita de Paulo a Jerusalém</a></li>
+        <li><a href="#o-retorno-de-paulo-antioquia">O Retorno de Paulo à Antioquia</a></li>
+      </ul>
+    </li>
+    <li><a href="#a-terceira-viagem-de-paulo">A Terceira Viagem de Paulo</a>
+      <ul>
+        <li><a href="#a-terceira-viagem-mission-ria-de-paulo-por-volta-de-54-d-c">A Terceira Viagem Missionária de Paulo (por volta de 54 d.C.)</a></li>
+        <li><a href="#o-tumulto-em-feso">O Tumulto em Éfeso</a></li>
+        <li><a href="#a-partida-de-paulo-de-feso-para-a-maced-nia">A Partida de Paulo de Éfeso para a Macedônia</a></li>
+        <li><a href="#paulo-deixa-corinto">Paulo deixa Corinto</a></li>
+        <li><a href="#paulo-em-mileto">Paulo em Mileto</a></li>
+        <li><a href="#a-quinta-visita-de-paulo-a-jerusal-m-por-volta-de-58-d-c">A Quinta Visita de Paulo a Jerusalém (por volta de 58 d.C.)</a></li>
+        <li><a href="#o-fim-dos-trabalhos-de-paulo-em-liberdade">O Fim dos Trabalhos de Paulo em Liberdade</a></li>
+        <li><a href="#paulo-no-templo">Paulo no Templo</a></li>
+        <li><a href="#o-discurso-de-paulo-nas-escadarias-da-fortaleza">O Discurso de Paulo nas Escadarias da Fortaleza</a></li>
+        <li><a href="#paulo-diante-do-sin-drio">Paulo Diante do Sinédrio</a></li>
+        <li><a href="#paulo-comparece-diante-de-f-lix">Paulo Comparece Diante de Félix</a></li>
+        <li><a href="#paulo-comparece-diante-de-festo-e-agripa">Paulo Comparece Diante de Festo e Agripa</a></li>
+        <li><a href="#paulo-comparece-diante-de-agripa-e-berenice">Paulo Comparece Diante de Agripa e Berenice</a></li>
+        <li><a href="#a-viagem-de-paulo-a-roma-60-d-c">A Viagem de Paulo a Roma (60 d.C.)</a></li>
+        <li><a href="#a-tempestade-no-mar-adri-tico">A Tempestade no Mar Adriático</a></li>
+        <li><a href="#o-naufr-gio">O Naufrágio</a></li>
+        <li><a href="#paulo-em-malta">Paulo em Malta</a></li>
+        <li><a href="#a-chegada-de-paulo-a-roma">A Chegada de Paulo a Roma</a></li>
+        <li><a href="#o-livro-de-atos-como-um-livro-transicional-entre-dispensa-es">O Livro de Atos como um Livro Transicional entre Dispensações</a></li>
+        <li><a href="#a-ocupa-o-de-paulo-durante-sua-pris-o">A Ocupação de Paulo Durante Sua Prisão</a></li>
+        <li><a href="#o-escravo-foragido-on-simo">O Escravo Foragido, Onésimo</a></li>
+        <li><a href="#ep-stolas-que-foram-escritas-por-paulo-durante-seu-aprisionamento">Epístolas que foram Escritas por Paulo Durante seu Aprisionamento</a></li>
+        <li><a href="#a-absolvi-o-e-liberta-o-de-paulo">A Absolvição e Libertação de Paulo</a></li>
+        <li><a href="#a-partida-de-paulo-da-it-lia">A Partida de Paulo da Itália</a></li>
+        <li><a href="#os-lugares-visitados-por-paulo-durante-sua-liberdade">Os Lugares Visitados por Paulo Durante sua Liberdade</a></li>
+        <li><a href="#o-segundo-aprisionamento-de-paulo-em-roma">O Segundo Aprisionamento de Paulo em Roma</a></li>
+        <li><a href="#o-mart-rio-de-paulo">O Martírio de Paulo</a></li>
+        <li><a href="#tabela-cronol-gica-da-vida-de-paulo">Tabela Cronológica da Vida de Paulo</a></li>
+      </ul>
+    </li>
+    <li><a href="#roma-e-seus-governantes-64-d-c-177-d-c">Roma e Seus Governantes (64 d.C. – 177 d.C.)</a>
+      <ul>
+        <li><a href="#o-inc-ndio-de-roma">O Incêndio de Roma</a></li>
+        <li><a href="#a-primeira-persegui-o-sob-os-imperadores">A Primeira Perseguição sob os Imperadores</a></li>
+        <li><a href="#a-queda-de-jerusal-m-70-d-c">A Queda de Jerusalém (70 d.C.)</a></li>
+        <li><a href="#o-cruel-reinado-de-domiciano">O Cruel Reinado de Domiciano</a></li>
+        <li><a href="#o-curto-por-m-pac-fico-reinado-de-nerva">O Curto Porém Pacífico Reinado de Nerva</a></li>
+        <li><a href="#carta-de-pl-nio-ao-imperador-trajano">Carta de Plínio ao Imperador Trajano</a></li>
+        <li><a href="#carta-de-trajano-para-pl-nio">Carta de Trajano para Plínio</a></li>
+        <li><a href="#a-verdadeira-causa-da-persegui-o">A Verdadeira Causa da Perseguição</a></li>
+        <li><a href="#as-causas-ostensivas-da-persegui-o">As Causas Ostensivas da Perseguição</a></li>
+        <li><a href="#o-r-pido-progresso-do-cristianismo">O Rápido Progresso do Cristianismo</a></li>
+        <li><a href="#o-mart-rio-de-in-cio">O Martírio de Inácio</a></li>
+        <li><a href="#os-escritos-dos-pais-e-as-escrituras-sagradas">Os Escritos dos Pais e as Escrituras Sagradas</a></li>
+        <li><a href="#os-reinados-de-adriano-e-dos-antoninos-do-ano-117-ao-180-d-c">Os Reinados de Adriano e dos Antoninos (do ano 117 ao 180 d.C.)</a></li>
+        <li><a href="#o-fim-do-primeiro-per-odo-e-o-in-cio-do-segundo">O Fim do Primeiro Período e o Início do Segundo</a></li>
+        <li><a href="#a-carta-igreja-de-feso-ap-2-1-7">A Carta à Igreja de Éfeso (ap 2:1–7)</a></li>
+        <li><a href="#apocal-pse-2-1-7"><a href="http://mysword.info/b?r=Rev_2:1-7">Apocalípse 2:1–7</a></a></li>
+        <li><a href="#a-carta-igreja-de-esmirna-ap-2-8-11">A Carta à Igreja de Esmirna (ap 2:8–11)</a></li>
+        <li><a href="#apocal-pse-2-8-11"><a href="http://mysword.info/b?r=Rev_2:8-11">Apocalípse 2:8–11</a></a></li>
+        <li><a href="#o-in-cio-do-segundo-per-odo-da-hist-ria-da-igreja-por-volta-do-ano-167-d-c">O Início do Segundo Período da História da Igreja (por volta do ano 167 d.C.)</a></li>
+        <li><a href="#a-persegui-o-na-sia-ano-167-d-c">A Perseguição na Ásia (ano 167 d.C)</a></li>
+        <li><a href="#o-mart-rio-de-justino-chamado-o-m-rtir">O Martírio de Justino, Chamado o Mártir</a></li>
+        <li><a href="#versos-sobre-o-mart-rio-por-um-centuri-o-romano">Versos Sobre o Martírio, por um Centurião Romano</a></li>
+        <li><a href="#o-mart-rio-de-policarpo">O Martírio de Policarpo</a></li>
+        <li><a href="#as-persegui-es-na-fran-a-ano-177-d-c">As Perseguições na França (ano 177 d.C.)</a></li>
+        <li><a href="#o-poder-da-ora-o">O Poder da Oração</a></li>
+      </ul>
+    </li>
+    <li><a href="#a-hist-ria-interna-da-igreja-107-d-c-245-d-c">A História Interna da Igreja (107 d.C. – 245 d.C.)</a>
+      <ul>
+        <li><a href="#a-hist-ria-interna-da-igreja">A História Interna da Igreja</a></li>
+        <li><a href="#os-seguidores-imediatos-dos-ap-stolos">Os Seguidores Imediatos dos Apóstolos</a></li>
+        <li><a href="#clericalismo-minist-rio-e-responsabilidade-individual">Clericalismo, Ministério e Responsabilidade Individual</a></li>
+        <li><a href="#o-efeito-da-nova-ordem-clerical">O Efeito da Nova Ordem Clerical</a></li>
+        <li><a href="#a-origem-da-distin-o-entre-cl-rigos-e-leigos">A Origem da Distinção entre Clérigos e Leigos</a></li>
+        <li><a href="#o-que-era-um-bispo-nos-primeiros-tempos">O Que Era um Bispo Nos Primeiros Tempos?</a></li>
+        <li><a href="#a-origem-das-dioceses">A Origem das Dioceses</a></li>
+        <li><a href="#a-origem-do-bispo-metropolitano">A Origem do Bispo Metropolitano</a></li>
+        <li><a href="#o-cristianismo-sob-o-reinado-de-severo-anos-194-a-210-d-c">O Cristianismo sob o Reinado de Severo (anos 194 a 210 d.C.)</a></li>
+        <li><a href="#a-persegui-o-na-frica">A Perseguição na África</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>  
+</div>
 <p>A História da Igreja</p>
 <p>Andrew Miller</p>
-<h1 id="a-hist-ria-da-igreja">A História da Igreja</h1>
+<h2 id="a-hist-ria-da-igreja">A História da Igreja</h2>
 <p>Título do original em Inglês: “Church History”, por Andrew Miller.</p>
 <p>Licença Creative Commons: Tradução do livro “Church History” de Andrew Miller de <a href="http://a-historia-da-igreja.blogspot.com.br/">http://a-historia-da-igreja.blogspot.com.br/</a> está licenciado com uma Licença Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional. Baseado no trabalho disponível em <a href="http://stempublishing.com/history/">http://stempublishing.com/history/</a>.</p>
 <p>Mais conteúdo em texto e áudio com a sã doutrina você encontra em:</p>
 <p>Literaturas em formato digital: acervodigitalcristao.com.br</p>
 <p>Literaturas em formato impresso: verdadesvivas.com.br Evangelho em</p>
 <p>03 Minutos: 3minutos.net O que respondi: respondi.com.br</p>
-<h1 id="pref-cio">Prefácio</h1>
+<h2 id="pref-cio">Prefácio</h2>
 <p>Como tudo o que sabemos da história chega a nós por meio de livros, eu examinei, com muito cuidado, os autores mais conceituados, considerando-os confiáveis. E apesar de haver frequentes referências ao volume e à página, isto de modo algum indica tudo o que foi reunido a partir dessas histórias. Seria impossível dizer quantos pensamentos, palavras e sentenças se entrelaçam com os meus próprios. As referências foram, geralmente, dadas, nem tanto para permitir a verificação do que foi escrito, mas também para induzir o leitor a estudá-las. O material é tão variado e abundante que a dificuldade consistiu em fazer a seleção, assim como manter uma linha de continuidade histórica, e ainda deixar de fora o que, no momento, não seria proveitoso nem interessante.</p>
 <p>Alguns dos meus mais antigos e estimados amigos, tais como Greenwood, Milman e Graigie Robertson, concluíram seus relatos por volta do século XIV; Waddington, D’Aubigne e Scott, por volta do século XVI; e Wylie fecha sua história do Protestantismo com seu estabelecimento sob o reinado de William e Mary. As histórias e biografias especiais do Dr M’Crie são, também, extremamente valiosas; e assim também é a história do Protestantismo na França por Felice, a história da Reforma nos Países Baixos por Brandt, a breve história da Idade Média e Reforma por Hardwick, e também o relato de Cunningham sobre a Igreja da Escócia; no entanto, bons relatos gerais sobre os acontecimentos do começo do século XVI até o século presente1, são realmente escassos.</p>
 <p>Eu tenho em vista, neste livro, mais do que a mera história. Tem sido meu desejo conectá-la a Cristo e Sua Palavra, de modo que o leitor possa receber a verdade e a bênção, por meio da graça, à sua alma. O leitor deverá observar que o livro começa com o propósito revelado pelo Senhor referente à Sua Igreja, em <a href="http://mysword.info/b?r=Mat_16">Mateus 16</a>. Outras partes do Novo Testamento referentes ao alvorecer da Igreja foram cuidadosamente examinadas, mas me foquei no traçar de sua real história à luz das sete cartas às Igrejas da Ásia. Isto, é claro, de uma forma muito geral, uma vez que meu desejo é dar ao leitor a visão mais ampla da história eclesiástica quanto possível, de forma consistente com meu plano e brevidade.</p>
 <p>Que as bênçãos do Senhor possam acompanhar o volume que agora é lançado.</p>
 <p>N. do T.: século XIX, quando foi escrito este livro↩</p>
-<h1 id="introdu-o">Introdução</h1>
+<h2 id="introdu-o">Introdução</h2>
 <p>Muitos de nossos leitores, como sabemos, não têm disponibilidade de tempo nem a oportunidade de ler as volumosas obras que foram escritas ao longo do tempo sobre a história da igreja. Ainda assim, aquela que tem sido a morada de Deus nos últimos 2000 anos deve ser objeto do mais profundo interesse de Seus filhos. Não estamos falando, aqui, da igreja como é geralmente representada na história, mas de como ela é definida nas Escrituras. Ali, ela é vista em seu verdadeiro caráter espiritual, como o corpo de Cristo, e como a “morada de Deus em Espírito” (<a href="http://mysword.info/b?r=Eph_2">Efésios 2</a>).</p>
 <p>Devemos sempre ter em mente, ao ler tudo o que é relacionado à história da igreja, que, dos dias dos apóstolos até os dias de hoje, sempre existiram duas classes distintas e amplamente diferentes na igreja professa: os meramente nominais, e os reais - os verdadeiros e os falsos. Isto havia sido predito. “Porque eu sei isto”, disse o apóstolo, “que, depois da minha partida, entrarão no meio de vós lobos cruéis, que não pouparão ao rebanho. E que de entre vós mesmos se levantarão homens que falarão coisas perversas, para atraírem os discípulos após si.” (<a href="http://mysword.info/b?r=Act_20:29-30">Atos 20:29-30</a>). Sua Segunda Epístola a Timóteo é também cheia de alertas e direções referentes às várias formas de mal que foram, então, claramente manifestas. Uma rápida mudança para pior tomou conta desde a vez que sua primeira epístola tinha sido escrita. Ele exorta aos verdadeiros crentes para andar em separação daqueles que tinham aparência de piedade, mas que negavam a eficácia dela. “Destes”, diz ele, “afasta-te”. Tais exortações são sempre necessárias, sempre aplicáveis - tanto hoje quanto antes. Não podemos nos separar da Cristandade professa sem deixarmos de lado o Cristianismo; mas podemos e devemos nos separar do que o apóstolo chama de “vasos para desonra”. A promessa é que, “se alguém se purificar destas coisas, será vaso para honra, santificado e idôneo para uso do Senhor, e preparado para toda a boa obra.” (<a href="http://mysword.info/b?r=2Ti_2:21">2 Timóteo 2:21</a>).</p>
 <p>É interessante - apesar de também doloroso - destacar a diferença, neste ponto, entre a Primeira e a Segunda Epístola a Timóteo. Na primeira, é falado da igreja de acordo com seu verdadeiro caráter e com sua bendita posição na Terra. Lá ela é vista como a casa de Deus - a coluna e a firmeza da verdade para o homem. A Segunda Epístola mostra o que ela se tornou graças às falhas daqueles em cujas mãos ela foi confiada.</p>
@@ -237,7 +569,7 @@ blockquote,
 <p>N. do T.: E aparece no mesmo capítulo também como a esposa já pronta para o casamento: “Regozijemo-nos, e alegremo-nos, e demos-lhe glória; porque vindas são as bodas do Cordeiro, e já a sua esposa se aprontou.” (<a href="http://mysword.info/b?r=Rev_19:7">Apocalipse 19:7</a>)↩</p>
 <p>O título “Papa” foi primeiramente adotado por Higino no ano de 139, e o Papa Bonifácio III induziu Focas, Imperador do Leste, a concedê-lo ao prelado de Roma em 606. Ainda com a conivência de Focas, a supremacia do papa sobre a igreja cristã foi estabelecida - Dicionário de Dados de Haydn)↩</p>
 <p>N. do T.: latitudinarismo é uma seita inglesa que sustenta a máxima tolerância religiosa e a doutrina de que todos os homens se salvarão. Similar ao universalismo↩</p>
-<h1 id="verdades-fundamentais">Verdades Fundamentais</h1>
+<h2 id="verdades-fundamentais">Verdades Fundamentais</h2>
 <h3 id="a-pedra-do-fundamento">A Pedra do Fundamento</h3>
 <p>Ao iniciar o estudo de qualquer assunto, é bom que se conheça seus princípios - a intenção ou plano original, e o primeiro passo em sua história. Temos tais princípios da maneira mais clara e completa, em relação à igreja, nas Sagradas Escrituras. Lá temos, não somente a intenção original, mas os planos e especificações do grande Construtor, e o início da história do trabalho de Suas próprias mãos. O fundamento foi colocado, e o trabalho estava em andamento, mas o próprio Senhor era ainda o único Construtor: portanto, a este tempo, tudo era real e perfeito.</p>
 <p>No final da dispensação dos judeus, o Senhor acrescentou o remanescente salvo de Israel à recém-formada igreja. No entanto, no final da presente dispensação - a dispensação da graça, ou dos cristãos - Ele levará todos os que creem em Seu nome para o Céu em corpos glorificados. Nenhum dos que pertencem à igreja serão agregados à congregação dos santos do milênio. “Porque o mesmo Senhor descerá do céu com alarido, e com voz de arcanjo, e com a trombeta de Deus; e os que morreram em Cristo ressuscitarão primeiro. Depois nós, os que ficarmos vivos, seremos arrebatados juntamente com eles nas nuvens, a encontrar o Senhor nos ares, e assim estaremos sempre com o Senhor.” (<a href="http://mysword.info/b?r=1Th_4:16-17">1 Tessalonicenses 4:16-17</a>). Este será o feliz fechamento da história da igreja na Terra - a verdadeira esposa de Cristo: os mortos ressuscitarão, os vivos serão transformados, e todos, em corpos glorificados, arrebatados juntamente nas nuvens para se encontrarem com o Senhor nos ares. Assim temos todo o limite da igreja definido, e todo o período de sua história diante de nós. Retornemos, porém, ao alvorecer de seu dia na Terra.</p>
@@ -302,7 +634,7 @@ blockquote,
 <p>“Entregar a Satanás é um ato de poder; expulsar uma pessoa é um dever ligado à fidelidade da assembleia. Sem dúvida, a exclusão da assembleia de Deus é algo muito sério e nos deixa expostos à tristeza e vários transtornos vindos do inimigo. Mas entregar diretamente a Satanás é um ato de poder positivo. Isso foi feito no caso de Jó para seu bem. Também foi feito por Paulo em <a href="http://mysword.info/b?r=1Co_5">1 Coríntios 5</a>, embora agindo no contexto de uma assembleia estabelecida, e para a destruição da carne. E outra vez, sem referência à assembleia, em <a href="http://mysword.info/b?r=1Ti_1">1 Timóteo 1</a>, quanto à Himeneu e Alexandre, para que aprendessem a não blasfemar. Toda a disciplina é para a correção do indivíduo, e também para a manutenção da santidade da casa de Deus, e da pureza da consciência dos próprios santos“ - trecho extraído do livro Present Testimony, volume 1↩</p>
 <p>Leia mais sobre o hades e outros termos relacionados à vida após a morte aqui: <a href="http://manjarcelestial.blogspot.com.br">http://manjarcelestial.blogspot.com.br</a>:2013:05/a-morte-o-estado-interme diario.html↩</p>
 <p>Ver <a href="http://mysword.info/b?r=Act_8">Atos 8</a>↩</p>
-<h1 id="de-pentecostes-ao-mart-rio-de-est-v-o">De Pentecostes ao Martírio de Estêvão</h1>
+<h2 id="de-pentecostes-ao-mart-rio-de-est-v-o">De Pentecostes ao Martírio de Estêvão</h2>
 <h3 id="o-dia-de-pentecostes">O Dia de Pentecostes</h3>
 <p>A festa judaica de Pentecostes pode ser chamada de dia do nascimento da igreja cristã. Era também o aniversário da entrega da lei no Monte Sinai, embora aparentemente não havia um dia observado pelos judeus para comemorar o evento. Cinquenta dias depois da ressurreição de nosso Senhor a igreja foi formada - deu-se início à sua história. Os santos do Antigo Testamento não fazem parte da igreja do Novo Testamento. Ela não existia, de fato, até o dia de Pentecostes.</p>
 <p>Todos os santos, desde o início, possuem a mesma vida eterna, são filhos do mesmo Deus e Pai, e o mesmo Céu será a casa deles para sempre. No entanto, os santos do Antigo Testamento pertencem a outra dispensação1 (isto é, uma maneira de Deus tratar com o homem em uma determinada época), ou a diferentes dispensações que ocorreram antes da vinda de Cristo. Cada dispensação tem sua própria origem, progresso, declínio e queda nas Escrituras, e terá seu próprio reflexo no Céu. Nem as pessoas nem as dispensações serão indistinguíveis lá.</p>
@@ -394,7 +726,7 @@ blockquote,
 <p>As seguintes breves declarações dos “pais” do quarto século, sobre o assunto do batismo, mostrará aos leitores as fontes, ou autoridades, de muito do que se dizia e fazia naqueles dias pelos ritualistas. Note que a autoridade das Escrituras é totalmente posta de lado: “Na Páscoa, e no Pentecostes, e em alguns lugares na Epifania, o rito do batismo era administrado publicamente - isto é, na presença dos fiéis - a todos os convertidos naquele ano, com exceção de alguns que tiveram a oportunidade de participar da cerimônia sem atraso, ou quando o cristão deixava para fazê-lo apenas próximo ao final de sua vida, como o exemplo de Constantino: uma prática há muito tempo condenada pelo clero. Mas o fato do atraso demonstra quão profundamente a importância e eficácia do rito era enraizada na mente cristã. Significava uma completa purificação da alma. O neófito (novo convertido) emergia das águas do batismo em um estado de perfeita inocência. A pomba - o Espírito Santo - constantemente pairava sobre a fonte, santificando as águas para a misteriosa lavagem de todos os pecados da vida passada. Se a alma não sofresse nenhuma culpa posterior, ela passaria de uma vez por todas para o reino de pureza e felicidade, isto é, o coração seria purificado, com entendimento iluminado e o espírito revestido de imortalidade.</p>
 <p>”Vestido em branco, emblemático da pureza imaculada, o candidato se aproximava do batistério - que em igrejas maiores era um edifício separado. Lá, ele proferia os solenes votos de que se comprometeria com sua religião. O gênio simbolizante do Oriente adicionou algumas cerimônias significativas. O catecúmeno (um dos primeiros estágios da instrução cristã) se virava para o Ocidente, o reino de Satanás, e renunciava três vezes ao seu poder. Então se virava para o Oriente para adorar o Sol da Justiça, e para proclamar seu pacto com o Senhor da vida. O místico número três prevalecia em tudo: o voto era triplo, e três vezes pronunciado. O batismo se dava geralmente por imersão. O despir das roupas era emblemático do ’tirar o velho homem’, mas o batismo por aspersão era permitido, de acordo com a exigência do caso. A água em si se tornava, na vívida linguagem da igreja, o sangue de Cristo: era comparada, por uma fantasiosa analogia, com o Mar Vermelho. A ousada metáfora de alguns dos ’pais’ parece afirmar uma transmutação da cor da água.</p>
 <p>“Quase todos os ’pais’ dessa era, como Basílio, os dois Gregórios, Ambrósio, etc., tinham escrito tratados sobre o batismo, e rivalizaram, por assim dizer, uns com os outros em seus louvores sobre a importância e eficácia do batismo. Gregório de Nazianzo quase esgota a copiosidade da língua grega ao falar do batismo.” - A História do Cristianismo por Milman, vol. 3↩</p>
-<h1 id="de-est-v-o-ao-apostolado-de-paulo">De Estêvão ao Apostolado de Paulo</h1>
+<h2 id="de-est-v-o-ao-apostolado-de-paulo">De Estêvão ao Apostolado de Paulo</h2>
 <h3 id="a-persegui-o-e-dispers-o-dos-disc-pulos">A Perseguição e Dispersão dos Discípulos</h3>
 <p>Após a morte de Estêvão uma grande perseguição começou (<a href="http://mysword.info/b?r=Act_8">Atos 8</a>). Os líderes judeus pareciam ter ganho uma vitória sobre os discípulos, e estavam determinados a prosseguir com seu aparente triunfo com a maior violência. Mas Deus, que está acima de todos, e que sabe como conter as crescentes paixões dos homens, anulou a posição deles para o cumprimento de Sua própria vontade.</p>
 <p>O homem ainda não tinha aprendido a verdade do provérbio, que “o sangue dos mártires é a semente da igreja.” No caso do primeiro e mais nobre dos mártires, o provérbio foi plenamente verificado. Mas em todas essas vinte centenas de anos os homens têm sido lentos para aprender, ou crer, nesse simples fato histórico. A perseguição, geralmente falando, tinha feito aumentar a causa que procuravam reprimir. Isso tem se provado verdadeiro na maioria dos casos, em qualquer tipo de perseguição ou de oposição . Resistência, decisão e firmeza são criadas por tal tratamento. Verdadeiramente, mentes tímidas podem ser levadas à apostasia por um tempo sob a perseguição; mas quão comumente tais, com o mais profundo arrependimento, e de modo a recuperar sua antiga posição, suportaram com a maior alegria os mais agudos sofrimentos, e mostraram em seus últimos momentos a maior fortaleza! Mas a perseguição, de uma forma ou de outra, deve ser esperada pelos seguidores de Jesus. Eles são exortados a tomar sua cruz diariamente e segui-Lo. Isto testa a sinceridade de nossa fé, a pureza de nossos motivos, a força de nossa afeição por Cristo, e a medida de nossa confiança nEle.</p>
@@ -442,7 +774,7 @@ blockquote,
 <p>Dicionário Bíblico de Smith↩</p>
 <p>Veja Lecture 6 de Atos 2, 8, 10, 19. Lectures on the New Testament Doctrine of the Holy Spirit, por W. Kelly.↩</p>
 <p>Veja mais detalhes sobre esse assunto em John Gifford Bellet, Christian Witness [Testemunho cristão], v. 4, p. 221; William Kelly, Introductory Lectures on Galatians [Estudos introdutórios sobre Gálatas], <a href="http://mysword.info/b?r=Gal_1">cap. 1</a>.↩</p>
-<h1 id="os-ap-stolos-e-os-pioneiros">Os Apóstolos e os Pioneiros</h1>
+<h2 id="os-ap-stolos-e-os-pioneiros">Os Apóstolos e os Pioneiros</h2>
 <h3 id="os-primeiros-mission-rios-da-cruz">Os Primeiros Missionários da Cruz</h3>
 <p>Em vez de passar por cima dos capítulos restantes de Atos achamos que pode ser mais interessante e igualmente instrutivo para nossos leitores considerá-los em conexão com a história dos apóstolos, especialmente com a história dos dois grandes apóstolos. O livro de Atos é quase inteiramente ocupado com os atos de Pedro e de Paulo, embora, é claro, sob a direção do Espírito Santo: o primeiro como o grande apóstolo dos judeus, e o segundo como o grande apóstolo dos gentios. Mas seria também de interesse abraçar a presente oportunidade para observar brevemente os primeiros companheiros e missionários pessoalmente escolhidos por nosso bendito Senhor - os doze apóstolos.</p>
 <p>Mas, antes de tentarmos um esboço dessas interessantes vidas, parece bem declarar qual objetivo temos em vista ao fazê-lo. Estamos saindo um pouco do curso que estávamos seguindo. Em nenhuma das publicações sobre a história da igreja que conhecemos a vida dos apóstolos é apresentada de forma ordenada, e é estranho que os grandes fundadores da igreja não achem seus lugares em sua história.</p>
@@ -566,7 +898,7 @@ blockquote,
 <p>Veja William CAVE, Lives o f the Apostles [A vida dos apóstolos]; Edward BURTON, Lectures upon the Ecclesiastical History, [Palestras sobre história eclesiástica]; William SMITH, Smith’s Bible Dictionary.↩</p>
 <p>Veja William CAVE, Lives of the Apostles.↩</p>
 <p>Veja Introdução ao Novo Testamento de Horne.↩</p>
-<h1 id="as-duas-primeiras-viagens-de-paulo">As Duas Primeiras Viagens de Paulo</h1>
+<h2 id="as-duas-primeiras-viagens-de-paulo">As Duas Primeiras Viagens de Paulo</h2>
 <h3 id="o-ap-stolo-paulo">O Apóstolo Paulo</h3>
 <p>Tendo esboçado brevemente as vidas dos doze apóstolos, naturalmente chegamos ao que pode ser chamado de décimo terceiro - o apóstolo Paulo.</p>
 <p>No capítulo três falamos sobre a “conversão” e sobre o “apostolado” de Paulo. Vamos agora nos esforçar para traçar seu maravilhoso caminho, e tomar nota de algumas características de destaque de seus trabalhos. Mas, antes de tudo, vamos reunir tudo o que sabemos sobre ele antes de sua conversão.</p>
@@ -683,7 +1015,7 @@ blockquote,
 <p>Veja os artigos evangelísticos sobre as principais personagens deste capítulo em Things New and Old, vol. 12, páginas 29-97.↩</p>
 <p>Para detalhes geográficos mais completos e detalhados, veja A Vida e as Epístolas de São Paulo, de Conybeare e Howson. Também acrescentamos que essa é nossa principal fonte no que diz respeito às datas. É provavelmente o melhor e mais abrangente livro sobre a história do grande Apóstolo, com exceção das próprias Escrituras↩</p>
 <p>Como alguns têm supervalorizado essa passagem, e outros a têm subestimado, pode ser interessante observar o que cremos ser seu verdadeiro significado. A decisão do apóstolo de não ser pesado aos santos, como aqui tão fortemente expressa, se aplica principalmente, se não exclusivamente, à igreja de Corinto. Um importante princípio estava envolvido, mas foi um princípio de particular aplicação ao caso, e não geral. Ele reconhece as dádivas das outras igrejas da maneira mais grata possível (<a href="http://mysword.info/b?r=Php_4">Filipenses 4</a>) e, ao escrever aos coríntios mais tarde, ele diz: “Outras igrejas despojei eu para vos servir, recebendo delas salário; e quando estava presente convosco, e tinha necessidade, a ninguém fui pesado. Porque os irmãos que vieram da macedônia supriram a minha necessidade” (<a href="http://mysword.info/b?r=2Co_11:8,9">2 Coríntios 11:8,9</a>). O apóstolo, sem dúvida, tinha a melhor das razões para recusar, dessa maneira, a comunhão com a igreja em Corinto. Sabemos que havia “falsos apóstolos” e muitos inimigos lá, e que muitas perturbações graves e sérias tinham sido permitidas entre eles, as quais ele fortemente repreendeu e procurou corrigir. Sob tais circunstâncias, para que seus motivos não fossem mal interpretados, o apóstolo preferiu trabalhar com suas próprias mãos do que receber apoio da igreja em Corinto. E, “Por quê?”, ele pergunta, “Porque não vos amo? Deus o sabe. Mas o que eu faço o farei, para cortar ocasião aos que buscam ocasião, a fim de que, naquilo em que se gloriam, sejam achados assim como nós” (<a href="http://mysword.info/b?r=2Co_11:11-12">2 Coríntios 11:11-12</a>).↩</p>
-<h1 id="a-terceira-viagem-de-paulo">A Terceira Viagem de Paulo</h1>
+<h2 id="a-terceira-viagem-de-paulo">A Terceira Viagem de Paulo</h2>
 <h3 id="a-terceira-viagem-mission-ria-de-paulo-por-volta-de-54-d-c">A Terceira Viagem Missionária de Paulo (por volta de 54 d.C.)</h3>
 <p>Tendo passado “algum tempo” na Antioquia, Paulo deixa o centro gentio e parte para outra viagem missionária. Nada é dito sobre seus companheiros nesta ocasião. Ele “passou sucessivamente pela província da Galácia e da Frígia, confirmando a todos os discípulos” (<a href="http://mysword.info/b?r=Act_18:23">Atos 18:23</a>), e também dando instruções para a coleta em favor dos santos pobres em Jerusalém (<a href="http://mysword.info/b?r=1Co_16:1,2">1 Coríntios 16:1,2</a>). Em pouco tempo ele chegou ao centro de sua obra na Ásia.</p>
 <p>Éfeso. Nesta época era a maior cidade da Ásia Menor, e a capital da província. Devido à sua posição central, era o ponto de encontro comum de várias personagens e classes de homens. Por esta altura, Apolo tinha partido para Corinto, mas ainda havia outros doze discípulos de João em Éfeso. Paulo fala com eles sobre seu estado e posição. Devemos tomar uma rápida nota do que ocorreu.</p>
@@ -885,7 +1217,7 @@ blockquote,
 <p>O sábio e humano Burrus era prefeito da guarda pretoriana quando Júlio chegou com seus prisioneiros. Ele era um romano virtuoso e sempre tratou Paulo com grande consideração e gentileza. - Dicionário de Biografias do Dr. Smith↩</p>
 <p>Veja Estudos Introdutórios ao Livro de Atos por W. Kelly↩</p>
 <p>Para pormenores sobre a perseguição veja Josefo, Ant. 20, 9, 1.↩</p>
-<h1 id="roma-e-seus-governantes-64-d-c-177-d-c">Roma e Seus Governantes (64 d.C. – 177 d.C.)</h1>
+<h2 id="roma-e-seus-governantes-64-d-c-177-d-c">Roma e Seus Governantes (64 d.C. – 177 d.C.)</h2>
 <h3 id="o-inc-ndio-de-roma">O Incêndio de Roma</h3>
 <p>Como nossos dois grandes apóstolos, Pedro e Paulo, sofreram o martírio durante a primeira perseguição imperial, pode ser interessante para muitos de nossos leitores saber algo sobre os elementos particulares que conduziram a esse edito cruel.</p>
 <p>Mas aqui, embora relutantemente, devemos trocar a certeza da Palavra de Deus pelos escritos incertos dos homens. Passamos, neste momento, do firme e sólido solo da inspiração para o solo inseguro dos historiadores romanos e da historia eclesiástica. No entanto, todos os historiadores, tanto antigos quanto modernos, pagãos e cristãos, concordam quanto aos principais fatos sobre o incêndio em Roma, e sobre a perseguição aos cristãos.</p>
@@ -1099,7 +1431,7 @@ blockquote,
 <p>História Eclesiástica, de Neander, vol.1, p. 142↩</p>
 <p>N. do T.: Antigo instrumento de tortura↩</p>
 <p>Para mais detalhes, veja a História da Igreja, de Milner, vol. 1, p. 194↩</p>
-<h1 id="a-hist-ria-interna-da-igreja-107-d-c-245-d-c">A História Interna da Igreja (107 d.C. – 245 d.C.)</h1>
+<h2 id="a-hist-ria-interna-da-igreja-107-d-c-245-d-c">A História Interna da Igreja (107 d.C. – 245 d.C.)</h2>
 <h3 id="a-hist-ria-interna-da-igreja">A História Interna da Igreja</h3>
 <p>Vamos agora pisar, mais uma vez, em terreno seguro. Temos o privilégio e satisfação de apelarmos para as Escrituras Sagradas. Antes mesmo que o cânon das Escrituras fosse fechado, foi permitido que surgissem muitos dos erros, tanto doutrinais quanto práticos, que vêm desde sempre perturbando e rasgando em pedaços a igreja professa. Estes eram, na sabedoria da graça de Deus, detectados e expostos pelos apóstolos inspirados. Se mantivermos isto em mente, não nos surpreenderemos ao encontrar muitas coisas na história interna da igreja inteiramente contrárias às Escrituras. Nem teremos qualquer dificuldade em resistir a eles. Nós fomos armados pelos apóstolos. O amor ao ofício e preeminência na igreja foi manifestado logo cedo, e muitas observâncias de mera invenção humana foram acrescentadas. A “semente de mostarda” se tornou uma grande árvore – o símbolo do poder político na terra: esta era e continua sendo o aspecto externo da Cristandade; mas internamente, o fermento fez seu trabalho maligno, “até que tudo ficou levedado”. (<a href="http://mysword.info/b?r=Mat_13:31-33">Mateus 13:31–33</a>)</p>
 <p>Aqueles que estudaram cuidadosamente <a href="http://mysword.info/b?r=Mat_13">Mateus 13</a> com outras passagens em Atos e nas Epístolas que falam da profissão do nome de Cristo deveriam ter uma ideia bastante correta tanto do que diz respeito ao início da história da igreja quanto ao que se sucedeu. Ela abrange o período inteiro, desde a semeadura da semente pelo Filho do homem, até a colheita, embora sob a semelhança com o reino dos céus. Isto é um grande alívio para a mente, e nos prepara para uma cena sombria e angustiante, perversamente perpetrada sob o justo nome e sob a capa de Cristianismo. Vamos agora nos voltar para algumas dessas passagens.</p>
@@ -1208,6 +1540,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

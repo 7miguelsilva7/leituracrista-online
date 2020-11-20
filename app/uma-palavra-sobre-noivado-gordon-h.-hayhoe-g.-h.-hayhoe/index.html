@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Uma Palavra Sobre Noivado</h1>
 <p>
@@ -191,6 +193,13 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-h.-hayhoe">G. H. Hayhoe</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#uma-palavra-sobre-noivado">UMA PALAVRA SOBRE NOIVADO</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="uma-palavra-sobre-noivado">UMA PALAVRA SOBRE NOIVADO</h2>
 <p>&quot;&hellip;e foi-lhe ela por mulher e amou-a&quot; (<a href="http://mysword.info/b?r=Gen_24:67">Gênesis 24:67</a>). Tal é o grande clímax para esta maravilhosa história de amor encontrada na Palavra de Deus, a qual nós gostaríamos de considerar em conexão com sua aplicação prática para esta importante decisão na vida dos jovens cristãos.</p>
 <p>Costuma-se dizer que todos buscam a satisfação de suas afeições e, maravilha das maravilhas, Deus é amor e deseja encontrar a satisfação de Suas Divinas afeições na bênção do homem redimido. Cristo, o Filho bendito de Deus em Humanidade, terá uma esposa como o objeto do Seu amoroso coração por toda a Eternidade. A alma que aprendeu isto e experimentou do Seu amor, encontrou a verdadeira felicidade, ou seja, a verdadeira porção de satisfação, a qual terá seu grande clímax no &quot;casamento do Cordeiro&quot; que se dará no Céu.</p>
@@ -270,6 +279,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

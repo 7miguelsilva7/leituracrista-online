@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Uma Variedade de Reuniões</h1>
 <p>
@@ -191,11 +193,30 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/bruce-anstey">Bruce Anstey</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#uma-variedade-de-reuni-es">Uma Variedade de Reuniões</a></li>
+    <li><a href="#reuni-es-de-assembleia">REUNIÕES DE ASSEMBLEIA</a></li>
+    <li><a href="#partimento-do-p-o">PARTIMENTO DO PÃO</a></li>
+    <li><a href="#reuni-o-de-ora-o">REUNIÃO DE ORAÇÃO</a></li>
+    <li><a href="#reuni-o-aberta">REUNIÃO ABERTA</a></li>
+    <li><a href="#reuni-o-para-a-es-de-disciplina">REUNIÃO PARA AÇÕES DE DISCIPLINA</a></li>
+    <li><a href="#reuni-es-da-assembleia">REUNIÕES DA ASSEMBLEIA</a></li>
+    <li><a href="#reuni-o-de-leitura">REUNIÃO DE LEITURA</a></li>
+    <li><a href="#prega-o-para-crentes">PREGAÇÃO PARA CRENTES</a></li>
+    <li><a href="#prega-o-do-evangelho">PREGAÇÃO DO EVANGELHO</a></li>
+    <li><a href="#reuni-o-para-relatar-um-trabalho-mission-rio">REUNIÃO PARA RELATAR UM TRABALHO MISSIONÁRIO</a></li>
+    <li><a href="#reuni-o-de-irm-os-ou-reuni-o-de-cuidados">REUNIÃO DE IRMÃOS (ou REUNIÃO DE CUIDADOS)</a></li>
+    <li><a href="#reuni-o-de-comunh-o-ou-festa-de-amor">REUNIÃO DE COMUNHÃO (ou Festa de Amor)</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="uma-variedade-de-reuni-es">Uma Variedade de Reuniões</h2>
 <p>Uma assembleia baseada nas Escrituras terá uma variedade de reuniões como na igreja primitiva. A exortação nas escrituras é de não abandonarmos nossa congregação (<a href="http://mysword.info/b?r=Heb_10:25">Hebreus 10:25</a>). Procurando no livro de Atos e nas Epístolas, vemos que a igreja primitiva perseverava numa variedade de reuniões (<a href="http://mysword.info/b?r=Act_2:42">Atos 2:42</a>). Uma assembleia baseada nas escrituras hoje, sob condições normais, terá um menu repleto de reuniões também. Essas reuniões se enquadram em duas categorias: Reuniões de Assembleia e Reuniões da Assembleia.</p>
 <p>Reuniões de Assembleia são reuniões onde o Senhor está no centro, no sentido coletivo (<a href="http://mysword.info/b?r=Mat_18:20">Mateus 18:20</a>), conduzindo e guiando os procedimentos pelo Espírito Santo – podendo ser em adoração, orações, ministério ou para as decisões administrativas necessárias. Nessas reuniões nada é pré-arranjado como quem vai fazer o quê; tudo é deixado ao Senhor para dirigir em Espírito de santa espontaneidade.</p>
 <p>Reuniões da Assembleia, por outro lado, são ocasiões onde os santos se reúnem para ministério, para comunhão e encorajamento, onde a responsabilidade é dada a um irmão que tenha algum dom para pregar ou ministrar a Palavra para conduzir a reunião. Ele é responsável para com o Senhor e a assembleia para pregar e ensinar de acordo com as escrituras e usar o tempo para proveito espiritual e encorajamento dos santos então reunidos. Não é que essas reuniões sejam menos importantes, mas o caráter delas é diferente.</p>
-<h1 id="reuni-es-de-assembleia">REUNIÕES DE ASSEMBLEIA</h1>
+<h2 id="reuni-es-de-assembleia">REUNIÕES DE ASSEMBLEIA</h2>
 <h2 id="partimento-do-p-o">PARTIMENTO DO PÃO</h2>
 <p>Esta reunião é referida como sendo a principal reunião de assembleia. Também é chamada de A Ceia do Senhor (<a href="http://mysword.info/b?r=1Co_11:20">1 Coríntios 11:20</a>).</p>
 <p>nos evangelhos a Ceia foi instituída (<a href="http://mysword.info/b?r=Luk_22:19-20">Lucas 22:19-20</a>)</p>
@@ -297,6 +318,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

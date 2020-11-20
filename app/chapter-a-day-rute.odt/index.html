@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - Rute</h1>
 <p>
@@ -194,6 +196,22 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#427">#427</a></li>
+    <li><a href="#rute-1-vers-1-5"><a href="http://mysword.info/b?r=Rut_1:1-5">RUTE 1, vers. 1-5</a></a></li>
+    <li><a href="#428">#428</a></li>
+    <li><a href="#rute-1-vers-6-22"><a href="http://mysword.info/b?r=Rut_1:6-22">RUTE 1, Vers. 6-22</a></a></li>
+    <li><a href="#429">#429</a></li>
+    <li><a href="#rute-2"><a href="http://mysword.info/b?r=Rut_2">RUTE 2</a></a></li>
+    <li><a href="#430">#430</a></li>
+    <li><a href="#rute-3"><a href="http://mysword.info/b?r=Rut_3">RUTE 3</a></a></li>
+    <li><a href="#431">#431</a></li>
+    <li><a href="#rute-4"><a href="http://mysword.info/b?r=Rut_4">RUTE 4</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="427">#427</h2>
 <p>Na escola de Cristo, somente os humildes aprendem.</p>
 <h2 id="rute-1-vers-1-5"><a href="http://mysword.info/b?r=Rut_1:1-5">RUTE 1, vers. 1-5</a></h2>
@@ -268,6 +286,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

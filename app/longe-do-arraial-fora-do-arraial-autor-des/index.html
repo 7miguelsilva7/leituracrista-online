@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Fora do Arraial, Longe do Arraial</h1>
 <p>
@@ -191,6 +193,13 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/desconhecido">DESCONHECIDO</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#fora-do-arraial-longe-do-arraial">FORA DO ARRAIAL, LONGE DO ARRAIAL</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="fora-do-arraial-longe-do-arraial">FORA DO ARRAIAL, LONGE DO ARRAIAL</h2>
 <p>&quot;Saiamos pois a Ele fora do arraial levando o Seu vitupério&quot; <a href="http://mysword.info/b?r=Heb_13:13">Hebreus 13:13</a>. Poderíamos fazer várias perguntas em relação a este versículo da Bíblia. A quem foi dirigido este apelo? Por que foi dirigido? Pode ser aplicado a nós? E, se for para nós, qual é o seu motivo e significado? Busquemos a resposta a estas perguntas no temor do Senhor e para proveito de nossas almas.</p>
 <p>Este versículo, assim como toda a epístola aos Hebreus, foi escrito para os judeus convertidos ao cristianismo. Existem muitas razões para se crer que seu autor foi o apóstolo Paulo. Embora Paulo fosse o apóstolo dos gentios, nesta ocasião o Espírito de Deus o utilizou para redigir uma admoestação direta e especial aos judeus que haviam se arrependido, reconhecendo que sua nação havia rechaçado o seu Messias. Embora tendo aceitado ao Senhor Jesus como seu Salvador, os judeus recém-convertidos continuavam, naturalmente, ligados ao templo, aos ritos e costumes do judaísmo. Haviam sido criados nesse sistema, uma boa parte do qual fora instituído pelo próprio Deus. Mas agora, a partir da rejeição do Senhor Jesus &ndash; da rejeição do testemunho do Espírito Santo acerca do Cristo glorificado &ndash; Deus passou a desaprovar completamente esse sistema.</p>
@@ -250,6 +259,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

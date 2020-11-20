@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Por Causa dos Anjos</h1>
 <p>
@@ -191,6 +193,17 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/paul-wilson">Paul Wilson</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#por-causa-dos-anjos">POR CAUSA DOS ANJOS</a></li>
+    <li><a href="#uma-quest-o-de-ordem">UMA QUESTÃO DE ORDEM</a></li>
+    <li><a href="#instru-es-para-o-homem-e-para-a-mulher">INSTRUÇÕES PARA O HOMEM E PARA A MULHER</a></li>
+    <li><a href="#um-exemplo-dado-pela-pr-pria-natureza">UM EXEMPLO DADO PELA PRÓPRIA NATUREZA</a></li>
+    <li><a href="#outras-distor-es">OUTRAS DISTORÇÕES</a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="por-causa-dos-anjos">POR CAUSA DOS ANJOS</h2>
 <p>&quot;Mas quero que saibais que Cristo é a cabeça de todo o varão, e o varão a cabeça da mulher; e Deus a cabeça de Cristo. Todo o homem que ora ou profetiza, tendo a cabeça coberta, desonra a sua própria cabeça. Mas toda a mulher que ora ou profetiza com a cabeça descoberta, desonra a sua própria cabeça, porque é como se estivesse rapada. Portanto, se a mulher não se cobre com véu, tosquie-se também. Mas, se para a mulher é coisa indecente tosquiar-se ou rapar-se, que ponha o véu.</p>
 <p>&quot;O varão pois não deve cobrir a cabeça, porque é a imagem e glória de Deus, mas a mulher é a glória do varão. Porque o varão não provém da mulher, mas a mulher do varão. Porque também o varão não foi criado por causa da mulher, mas a mulher por causa do varão. Portanto, a mulher deve ter sobre a cabeça sinal de poderio, por causa dos anjos. Todavia, nem o varão é sem a mulher, nem a mulher sem o varão, no Senhor. Porque, como a mulher provém do varão, assim também o varão provém da mulher, mas tudo vem de Deus.</p>
@@ -252,6 +265,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

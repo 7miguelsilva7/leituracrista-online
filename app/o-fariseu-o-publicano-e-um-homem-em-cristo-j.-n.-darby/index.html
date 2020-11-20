@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>O Fariseu, o Publicano e um Homem em Cristo</h1>
 <p>
@@ -191,7 +193,14 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
 
 </p>
-<h1 id="o-fariseu-o-publicano-e-um-homem-em-cristo">O FARISEU, O PUBLICANO E UM HOMEM EM CRISTO</h1>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-fariseu-o-publicano-e-um-homem-em-cristo">O FARISEU, O PUBLICANO E UM HOMEM EM CRISTO</a></li>
+  </ul>
+</nav>  
+</div>
+<h2 id="o-fariseu-o-publicano-e-um-homem-em-cristo">O FARISEU, O PUBLICANO E UM HOMEM EM CRISTO</h2>
 <p><a href="http://mysword.info/b?r=Luk_18:9-14">Lucas 18:9-14</a> e <a href="http://mysword.info/b?r=2Co_12:1-11">II Corintios 12:1-11</a></p>
 <p>Lemos em <a href="http://mysword.info/b?r=Luk_18">Lucas 18</a> que – dois homens subiram ao templo a orar, um fariseu e outro publicano. Não é tão fácil como aprece erradicar o – fariseu – , pois há muito que se pode argumentar a seu favor. Vemo-lo no templo, lugar adequado para um homem religioso como ele costuma ser e o local indicado por Deus para adoração. Vemos que agora já não existe o templo e, embora Deus não tenha designado algum lugar de adoração aqui na terra, é evidente que o homem tem procurado fazer imitações do templo – imitações muito pobres, sem dúvida. Então onde é que está presentemente o lugar de adoração? No céu, ali onde Cristo habita.</p>
 <p>O fariseu estava no templo e as suas primeiras palavras foram : “Oh, Deus, graças te dou”. Isto está correto, pois que deve fazer toda criatura senão louvar a Deus? Mas ao acrescentar, “porque não sou como os demais homens” é que se coloca em terreno movediço, de vanglória e confiança em si mesmo. Notemos que ele dá graças a Deus por isso: que não sou como os demais homens. É evidente que além de negativo havia algo de positivo no seu caso, pois ele diz : Jejuo duas vezes por semana e dou os dízimos de tudo quanto possuo. Todavia, o seu erro consistia em que ele se apresentava diante de Deus, que conhece a natureza de todas as coisas, apoiado no que ele era em si mesmo, tratando estabelecer a sua própria justiça. Mas Deus prefere a atitude do publicano. O erro do fariseu consiste em querer apresentar-se a Deus pelos seus próprios méritos. Quando pensamos no que Deus é e no que será o seu juízo, quem não desejará fazer sua a oração de Davi : “Não entres em juízo com o teu servo”? ( <a href="http://mysword.info/b?r=Psa_143:2">Sal 143:2</a>).</p>
@@ -239,6 +248,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 

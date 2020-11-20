@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -181,7 +183,7 @@ blockquote,
   </div>
 </nav>
   
-  <div class="container">
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
     <article>
       <h1>Chapter-a-Day - Esdras</h1>
 <p>
@@ -194,6 +196,36 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
+<div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#983">#983</a></li>
+    <li><a href="#esdras-1"><a href="http://mysword.info/b?r=Ezr_1">ESDRAS 1</a></a></li>
+    <li><a href="#984">#984</a></li>
+    <li><a href="#esdras-2-vers-1-57"><a href="http://mysword.info/b?r=Ezr_2:1-57">ESDRAS 2, Vers. 1-57</a></a></li>
+    <li><a href="#985">#985</a></li>
+    <li><a href="#esdras-2-vers-58-70"><a href="http://mysword.info/b?r=Ezr_2:58-70">ESDRAS 2, Vers. 58-70</a></a></li>
+    <li><a href="#986">#986</a></li>
+    <li><a href="#esdras-3"><a href="http://mysword.info/b?r=Ezr_3">ESDRAS 3</a></a></li>
+    <li><a href="#987">#987</a></li>
+    <li><a href="#esdras-4"><a href="http://mysword.info/b?r=Ezr_4">ESDRAS 4</a></a></li>
+    <li><a href="#988">#988</a></li>
+    <li><a href="#esdras-5"><a href="http://mysword.info/b?r=Ezr_5">ESDRAS 5</a></a></li>
+    <li><a href="#989">#989</a></li>
+    <li><a href="#esdras-6"><a href="http://mysword.info/b?r=Ezr_6">ESDRAS 6</a></a></li>
+    <li><a href="#990">#990</a></li>
+    <li><a href="#esdras-7-vers-1-10"><a href="http://mysword.info/b?r=Ezr_7:1-10">ESDRAS 7, Vers. 1-10</a></a></li>
+    <li><a href="#991">#991</a></li>
+    <li><a href="#esdras-7-vers-11-28"><a href="http://mysword.info/b?r=Ezr_7:11-28">ESDRAS 7, Vers 11-28</a></a></li>
+    <li><a href="#992">#992</a></li>
+    <li><a href="#esdras-8"><a href="http://mysword.info/b?r=Ezr_8">ESDRAS 8</a></a></li>
+    <li><a href="#993">#993</a></li>
+    <li><a href="#esdras-9"><a href="http://mysword.info/b?r=Ezr_9">ESDRAS 9</a></a></li>
+    <li><a href="#994">#994</a></li>
+    <li><a href="#esdras-10"><a href="http://mysword.info/b?r=Ezr_10">ESDRAS 10</a></a></li>
+  </ul>
+</nav>  
+</div>
 <h2 id="983">#983</h2>
 <p>A humildade diante dos homens é, com frequência, a melhor prova de restauração diante de Deus.</p>
 <h2 id="esdras-1"><a href="http://mysword.info/b?r=Ezr_1">ESDRAS 1</a></h2>
@@ -323,6 +355,43 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
+
+
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+  }
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+<script>
+  $(document).ready(function () {
+
+      
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+  });
+</script>
+
 
 </body>
 
