@@ -6,23 +6,9 @@
     <description>Recent content on Leitura Cristã</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leituracrista.com/app/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://leituracrista.com/app/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://leituracrista.com/app/about/</guid>
-      <description>This Theme Thanks for visiting this theme demo. If you&amp;rsquo;re interested, checkout my other stuff over at https://zwbetz.com
-Hugo Hugo is the world’s fastest framework for building websites. It is written in Go.
-It makes use of a variety of open source projects including:
- https://github.com/russross/blackfriday https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Learn more and contribute on GitHub.
-  _Favicon made by [Freepik](https://www.freepik.com/), from [Flaticon](https://www.flaticon.com/), licensed by [CC 3.0](http://creativecommons.org/licenses/by/3.0/)._  </description>
-    </item>
     
     <item>
       <title>1ª Pedro - Estudo Sobre a Palavra de Deus -</title>
@@ -2435,6 +2421,17 @@ Os &amp;quot;eleitos&amp;quot; podem não necessariamente se referir a cristãos
       <guid>https://leituracrista.com/app/soberania-e-responsabilidade-f-b-hole-f.-b.-hole/</guid>
       <description>SOBERANIA E RESPONSABILIDADE F. B. HOLE
 Que Deus é soberano e que o homem, embora caído, é uma criatura responsável, são dois fatos que estão bem claros nas Escrituras. É quando estudamos estes dois fatos em suas implicações que nos vemos diante de uma dificuldade intelectual. É fácil colocarmos todo o peso de um lado, enquanto ignoramos quase completamente o outro. Os dois extremos são conhecidos como Hiper-Calvinismo e Arminianismo.</description>
+    </item>
+    
+    <item>
+      <title>Sobre</title>
+      <link>https://leituracrista.com/app/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leituracrista.com/app/about/</guid>
+      <description>Leia literatura cristã com as referências linkadas para Bíblia Online
+Outros Sites:
+ https://www.bibliaonline.com.br/ https://www.respondi.com.br/ http://loja.verdadesvivas.com.br/ https://www.pelagraca.com.br/ https://acervodigitalcristao.com.br/ https://www.youtube.com/channel/UCKFsm7HqcA9rCWFU6c1-kuQ https://www.youtube.com/channel/UCPDM2k41ovFPw2d28m0z-Sg   </description>
     </item>
     
     <item>

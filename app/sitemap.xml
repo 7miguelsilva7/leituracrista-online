@@ -3,16 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://leituracrista.com/app/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leituracrista.com/app/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://leituracrista.com/app/1pedro-darby-mysword/</loc>
   </url>
   
@@ -141,11 +131,19 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/a.-h.-rule/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/acontecimentos-profeticos-bruce-anstey/</loc>
   </url>
   
   <url>
     <loc>https://leituracrista.com/app/adoracao-crista-j-n-darby-j.-n.-darby/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/algernon-james-pollock/</loc>
   </url>
   
   <url>
@@ -158,6 +156,10 @@
   
   <url>
     <loc>https://leituracrista.com/app/amando-a-sua-vinda-h.-h.-snell/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/andrew-miller/</loc>
   </url>
   
   <url>
@@ -185,7 +187,35 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/bruce-anstey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/c.-buchanan/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/c.-e.-lunden/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/c.-h.-brown/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/c.-h.-mackintosh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/c.-lunden/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/carater-de-familia-e-religiao-de-familia-j.-g.-bellet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/chapter-a-day/</loc>
   </url>
   
   <url>
@@ -441,6 +471,14 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/charles-stanley/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/clarence-lunden/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/cobertura-para-a-cabeca-robert-boulard-robert-boulard/</loc>
   </url>
   
@@ -477,6 +515,10 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/d.-rule/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/tags/darby/</loc>
   </url>
   
@@ -485,11 +527,43 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/desconhecido/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/deus-esta-em-todas-as-circunstancias-c-h-m-c.-h.-mackintosh/</loc>
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/diversos-autores/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/dois-dias-nas-escrituras-bruce-anstey-bruce-anstey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/douglas-nicolet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/e.-h.-chater/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/e.-j.-checkley/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/e.-l.-bevir/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/echoes-of-grace/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/edward-dennet/</loc>
   </url>
   
   <url>
@@ -521,7 +595,27 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/f.-b.-hole/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/f.-g.-patterson/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/longe-do-arraial-fora-do-arraial-autor-des/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/g.-a.-morrish/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/g.-cutting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/g.-h.-hayhoe/</loc>
   </url>
   
   <url>
@@ -529,7 +623,63 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/h.-e.-hayhoe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/h.-e.-hayhoy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/h.-h.-snell/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/h.-smith/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/h.-witherby/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/hamilton-smith/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/homem-e-mulher-os-papeis-distintos-na-casa-bruce-anstey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/hristian-treasury/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/j.-a.-trench/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/j.-c.-ryle/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/j.-g.-bellet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/j.-h.-smith/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/j.-j.-t.-armet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/j.-k./</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/j.-r.-gill/</loc>
   </url>
   
   <url>
@@ -545,11 +695,31 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/k.-heslop/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/l.-c.-perry/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/laura-a.-b.-snow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/luz-para-as-almas-ansiosas-g-cutting/</loc>
   </url>
   
   <url>
     <loc>https://leituracrista.com/app/linguas-e-outros-dons-de-sinais-seu-lugar-g.-h.-hayhoe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/mario-persona/</loc>
   </url>
   
   <url>
@@ -565,6 +735,10 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/morrish-bible-dictionary/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/musica-instrumental-nas-reunioes-c-buchana-c.-buchanan/</loc>
   </url>
   
@@ -574,6 +748,10 @@
   
   <url>
     <loc>https://leituracrista.com/app/no-mundo-mas-nao-do-mundo-w-j-prost-w.-j.-prost/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/norman-berry/</loc>
   </url>
   
   <url>
@@ -801,6 +979,10 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/paul-wilson/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/pedras-grandes-e-preciosas-charles-stanley-charles-stanley/</loc>
   </url>
   
@@ -845,7 +1027,31 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/r.-erisman/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/r.-guillen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/r.-pilkington/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/reuniao-de-oracao.odt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/robert-boulard/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/ron-reeves/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/s.-ridout/</loc>
   </url>
   
   <url>
@@ -870,6 +1076,10 @@
   
   <url>
     <loc>https://leituracrista.com/app/soberania-e-responsabilidade-f-b-hole-f.-b.-hole/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/about/</loc>
   </url>
   
   <url>
@@ -933,11 +1143,55 @@
   </url>
   
   <url>
+    <loc>https://leituracrista.com/app/tags/verdades-b%C3%ADblicas/</loc>
+  </url>
+  
+  <url>
     <loc>https://leituracrista.com/app/vida-atraves-da-morte/</loc>
   </url>
   
   <url>
     <loc>https://leituracrista.com/app/voce-parte-o-pao-e.-h.-chater-e.-h.-chater/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/w.-fereday/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/w.-j.-missen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/w.-j.-prost/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/w.-kelly/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/w.-potter/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/w.-scott/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/w.-w.-fereday/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/william-kelly/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/william-macdonald/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leituracrista.com/app/tags/young-christian/</loc>
   </url>
   
   <url>
