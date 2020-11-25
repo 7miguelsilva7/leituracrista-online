@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-j.-t.-armet">J. J. T. Armet</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#quem-despreza-o-dia-das-coisas-pequenas">QUEM DESPREZA O DIA DAS COISAS PEQUENAS</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="quem-despreza-o-dia-das-coisas-pequenas">QUEM DESPREZA O DIA DAS COISAS PEQUENAS</h2>
 <p><a href="http://mysword.info/b?r=Zec_4:10">Zacarias 4:10</a></p>
 <p>Para o mundo, hoje é o dia das grandes coisas. Em matéria de guerra, antigamente os homens estavam satisfeitos em contar seus exércitos em milhares, mas agora os milhares são desprezados - as nações devem ter seus milhões de soldados. Em matéria de finanças, onde antes as fortunas eram avaliadas em alguns poucos algarismos, agora fortunas com valores expressos em vários dígitos passaram a ser consideradas apenas como pequenas heranças. Um milionário do passado seria considerado, na avaliação de hoje, apenas um pequeno capitalista. Na vida rural, onde antes um paciente agricultor cultivava alguns poucos hectares, agora grandes máquinas revolvem quilômetros de terra que produzem milhões de fardos de grãos em uma única fazenda. Em matéria de educação, as universidades, faculdades, seminários e escolas técnicas multiplicam-se sem parar, e multidões seguem carreiras em busca de conhecimento e diplomas. Metrópoles florescem onde antes havia cidades; grandes cidades substituíram os povoados. Extensas redes de ferrovias e auto-pistas se emaranham pelos continentes, e o pulsar das máquinas palpita em todo centro industrial. Em resumo - o mundo parou de se importar com o que é pequeno ou insignificante.</p>
@@ -270,8 +273,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -279,7 +281,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

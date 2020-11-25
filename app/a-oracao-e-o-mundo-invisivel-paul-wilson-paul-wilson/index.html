@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/paul-wilson">Paul Wilson</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#pecamos">Pecamos!</a></li>
     <li><a href="#uma-poca-de-ru-na">Uma época de ruína</a></li>
@@ -209,8 +210,10 @@ blockquote,
     <li><a href="#na-peneira-de-satan-s">Na peneira de Satanás</a></li>
     <li><a href="#para-sermos-prudentes">Para sermos prudentes</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <p>A Oração e o Mundo Invisivel</p>
 <p>Paul Wilson</p>
 <p>Palestra a jovens cristãos em Oak Park, Illinois, Estados Unidos - Agosto:1955.</p>
@@ -324,8 +327,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -333,7 +335,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

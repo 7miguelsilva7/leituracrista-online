@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-h.-hayhoe">G. H. Hayhoe</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#l-nguas-e-outros-dons-de-sinais">LÍNGUAS E OUTROS DONS DE SINAIS</a></li>
     <li><a href="#o-que-dizer-de-1-cor-ntios-acerca-do-dom-de-l-nguas">O QUE DIZER DE 1 CORÍNTIOS ACERCA DO DOM DE LÍNGUAS?</a></li>
@@ -202,8 +203,10 @@ blockquote,
     <li><a href="#n-o-devemos-ir-al-m-da-palavra-de-deus">NÃO DEVEMOS IR ALÉM DA PALAVRA DE DEUS</a></li>
     <li><a href="#o-que-a-palavra-diz">O QUE A PALAVRA DIZ?</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="l-nguas-e-outros-dons-de-sinais">LÍNGUAS E OUTROS DONS DE SINAIS</h2>
 <p>Seu Lugar Nas Escrituras &quot;Está escrito na lei: Por gente doutras línguas, e por outros lábios, falarei a este povo; e ainda assim Me não ouvirão, diz o Senhor. De sorte que as línguas são um sinal, não para os fiéis, mas para os infiéis; e a profecia não é sinal para os infiéis, mas para os fiéis&quot; (<a href="http://mysword.info/b?r=1Co_14:21-22">1 Coríntios 14:21-22</a>).</p>
 <p>&quot;E todos foram cheios do Espírito Santo, e começaram a falar noutras línguas, conforme o Espírito Santo lhes concedia que falassem&hellip; E todos pasmavam e se maravilhavam, dizendo uns aos outros: Pois que! Não são galileus todos esses homens que estão falando?&hellip; os temos ouvido em nossas próprias línguas falar das grandezas de Deus&quot; (<a href="http://mysword.info/b?r=Act_2:4-11">Atos 2:4-11</a>).</p>
@@ -299,8 +302,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -308,7 +310,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

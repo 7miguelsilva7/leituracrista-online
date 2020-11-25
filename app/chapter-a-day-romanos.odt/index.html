@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -196,8 +197,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#053">#053</a></li>
     <li><a href="#romanos-1"><a href="https://mysword.info/b?r=Rom_1">ROMANOS 1</a></a></li>
@@ -236,8 +237,10 @@ blockquote,
     <li><a href="#070">#070</a></li>
     <li><a href="#romanos-16"><a href="https://mysword.info/b?r=Rom_16">ROMANOS 16</a></a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="053">#053</h2>
 <p>Toda a vida de nosso bendito Senhor como Homem se resume nas palavras, &quot;Ele Se Humilhou&quot;. Ele começou Sua vida aqui em uma manjedoura e terminou na cruz, e ao longo do caminho não teve onde repousar Sua cabeça.</p>
 <h2 id="romanos-1"><a href="https://mysword.info/b?r=Rom_1">ROMANOS 1</a></h2>
@@ -432,8 +435,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -441,7 +443,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

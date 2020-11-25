@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/charles-stanley">Charles Stanley</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#j-natas-faltou-uma-coisa">JÔNATAS - FALTOU UMA COISA</a></li>
     <li><a href="#o-poderoso-advers-rio">O PODEROSO ADVERSÁRIO</a></li>
@@ -211,8 +212,10 @@ blockquote,
     <li><a href="#s-faltou-uma-coisa">SÓ FALTOU UMA COISA</a></li>
     <li><a href="#reunidos-a-jesus">REUNIDOS A JESUS</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="j-natas-faltou-uma-coisa">JÔNATAS - FALTOU UMA COISA</h2>
 <p>Há algum tempo, durante uma reunião de estudo da Palavra, minha atenção foi despertada para as tristes circunstâncias da morte de Jônatas no Monte Gilboa. Israel fugiu diante do inimigo, e foi vencido. Saul foi morto, e seus três filhos foram mortos juntamente com ele. Foi a completa derrota do reino de Saul. Que triste cena - o corpo de Saul e os corpos de seus três filhos pregados no muro de Bete-Sã! Acaso não seria esse um final triste para qualquer homem que terminasse assim? Imagine então o que foi para Jônatas chegar a um tão vergonhoso fim! E como foi que isso aconteceu? Por que aconteceu? E que lição Deus quer que aprendamos desta história inspirada, nestes últimos dias em que vivemos?</p>
 <p>O ponto decisivo na história de Jônatas está em <a href="http://mysword.info/b?r=1Sa_18">1 Samuel 18</a>, e ilustra também o ponto decisivo na história de toda alma que é nascida do alto. É verdade que encontramos Jônatas, antes disso, como um homem poderoso da casa de Saul. &quot;E Jônatas feriu a guarnição dos filisteus que estava em Gibeá, o que os filisteus ouviram: pelo que Saul tocou a trombeta por toda a terra, dizendo: Ouçam os hebreus!&quot; (<a href="http://mysword.info/b?r=1Sa_13:3">1 Samuel 13:3</a>). Nós o encontramos outra vez como um homem valente na passagem de Micmas. Alguém pôde dizer, dez séculos mais tarde, &quot;E eu, nalgum tempo, vivia sem lei.&quot; (<a href="http://mysword.info/b?r=Rom_7:9">Romanos 7:9</a>). &quot;Se algum outro cuida que pode confiar na carne, ainda mais eu&hellip; hebreu de hebreus.&quot; (<a href="http://mysword.info/b?r=Php_3:4-5">Fp 3:4-5</a>). Assim, o ponto decisivo na vida de Jônatas foi, em figura, muito parecido com o ponto decisivo na vida de Paulo a caminho de Damasco.</p>
@@ -333,8 +336,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -342,7 +344,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

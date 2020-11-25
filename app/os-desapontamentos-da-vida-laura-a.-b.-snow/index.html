@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/laura-a.-b.-snow">Laura A. B. Snow</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#os-desapontamentos-da-vida">OS DESAPONTAMENTOS DA VIDA</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="os-desapontamentos-da-vida">OS DESAPONTAMENTOS DA VIDA</h2>
 <p>Os desapontamentos da vida são, na realidade, apenas determinações do Meu amor. Tenho hoje uma mensagem para ti, Meu filho. Vou segredá-la suavemente ao teu ouvido, a fim de que as nuvens anunciadoras da tempestade, quando aparecerem, sejam douradas de glória, e para que Os espinhos que porventura cerquem o teu caminho, sejam afastados. A mensagem é curta - uma simples frase, mas deixe que entre no fundo do teu coração e que seja para ti como que uma almofada onde possas descansar a tua cabeça fatigada. &quot;FUI EU QUE FIZ ISTO&quot;.</p>
 <p>Nunca pensaste que tudo o que te diz respeito, Me diz respeito a Mim também? &quot;Porque aquele que tocar em vós toca a menina do seu olho&quot; (<a href="http://mysword.info/b?r=Zec_2:8">Zc 2:8</a>). Tu és precioso para Mim, e é por isso que Me interesso especialmente no teu crescimento espiritual. Quando a tentação te assalta e o inimigo “vem como uma inundação”, gostaria que soubesses que “ISTO VEM DE MIM”. Eu sou o Deus das circunstâncias. Não foste colocado onde estás por acaso, mas porque é o lugar que Eu escolhi para ti. Não pediste para ser humilde? Pois saiba que o lugar onde estás é o único onde podes aprender bem esta lição. É por meio de tudo quanto te rodeia, e até dos que te cercam, que a Minha vontade se cumprirá em ti.</p>
@@ -271,8 +274,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -280,7 +282,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

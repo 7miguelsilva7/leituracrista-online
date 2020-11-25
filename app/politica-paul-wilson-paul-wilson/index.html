@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/paul-wilson">Paul Wilson</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#pol-tica">POLÍTICA</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="pol-tica">POLÍTICA</h2>
 <p>Quando a campanha política começa a se aquecer e o mundo é envolvido com clamores contra ou a favor deste ou daquele candidato, os cristãos que são conscientes de sua chamada celestial podem continuar serenos, sabendo que os homens estão tão somente executando o que Deus já predeterminou por Sua mão e por Seus desígnios.</p>
 <p>Apesar de Satanás ser o príncipe deste mundo e estar cegando as mentes daqueles que não crêem em Cristo, Deus continua acima de todas as coisas e Se move por detrás dos cenários para executar Seus conselhos e propósitos. Talvez não seja o que os homens pensem ser o melhor, mas devemos nos lembrar que este mundo, na forma em que se encontra, não está caminhando para um futuro brilhante e sim para uma tribulação tal como nunca se viu antes. Este mundo é culpado de haver expulsado o Filho de Deus, e ainda não se arrependeu do que fez; o justo juízo de Deus paira sobre este mundo, pronto para ser derramado assim que os verdadeiros cristãos forem tirados daqui.</p>
@@ -268,8 +271,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -277,7 +279,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

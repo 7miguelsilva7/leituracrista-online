@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/andrew-miller">Andrew Miller</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li>
       <ul>
@@ -394,8 +395,10 @@ blockquote,
       </ul>
     </li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h3 id="perp-tua-e-seus-companheiros">Perpétua e Seus Companheiros</h3>
 <p>Dentre outros que foram presos e martirizados na África durante essa perseguição, Perpétua e seus companheiros, dentre todas as histórias, merecem um lugar distinto. A história do martírio deles não só carrega todo o selo dessa verdade circunstancial, como também está repleta de toques mais requintados de sentimento e afeição natural. Aqui vemos a bela combinação dos mais ternos sentimentos e dos mais fortes afetos que o cristianismo reconhece em todos os seus direitos, e os torna ainda mais profundos e ternos porque foi a causa do sacrifício deles sobre o altar da total dedicação àquEle que morreu em total dedicação a nós. “O qual me amou”, como diz a fé, com propriedade, “e se entregou a si mesmo por mim.” (<a href="http://mysword.info/b?r=Gal_2:20">Gálatas 2:20</a>)</p>
 <p>Em Cartago, no ano 202, três jovens homens, Revocato, Saturnino e Secundulo, e duas moças, Perpétua e Felicidade, foram presos, todos eles sendo ainda catecúmenos, isto é, novos convertidos que se preparavam para o batismo e comunhão. Perpétua era de boa família, rica e nobre, de educação liberal, e honrosamente casada. Ela tinha cerca de 22 anos de idade, e era mãe de um bebê ainda de peito. Toda sua família aparentemente era cristã, com exceção de seu pai, que ainda era pagão. Nada é dito sobre seu marido. Seu pai era muito apegado a ela, e temia muito a desgraça que seus sofrimentos por Cristo trariam para sua família. Assim ela tinha de lutar não apenas com a morte em sua forma mais terrível, mas também com todo laço sagrado da natureza.</p>
@@ -1279,8 +1282,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -1288,7 +1290,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

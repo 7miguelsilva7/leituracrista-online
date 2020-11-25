@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -196,8 +197,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#353">#353</a></li>
     <li><a href="#josu-1"><a href="http://mysword.info/b?r=Jos_1">JOSUÉ 1</a></a></li>
@@ -256,8 +257,10 @@ blockquote,
     <li><a href="#380">#380</a></li>
     <li><a href="#josu-24"><a href="http://mysword.info/b?r=Jos_24">JOSUÉ 24</a></a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="353">#353</h2>
 <p>Aquele que busca conhecimento, com a idéia de escarnecer e censurar, vai encontrar assunto suficiente para seu deboche, mas nada para sua instrução. Um contraste é&hellip; &quot;o conhecimento é algo fácil para o inteligente.&quot; <a href="http://mysword.info/b?r=Pro_14:6">Pv 14:6</a>.</p>
 <h2 id="josu-1"><a href="http://mysword.info/b?r=Jos_1">JOSUÉ 1</a></h2>
@@ -507,8 +510,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -516,7 +518,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

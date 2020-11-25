@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-r.-gill">J. R. Gill</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#de-acordo-com-a-b-blia">De acordo com a bíblia</a></li>
     <li><a href="#que-nome-levamos">Que nome levamos?</a></li>
@@ -211,8 +212,10 @@ blockquote,
     <li><a href="#um-s-corpo">Um só corpo</a></li>
     <li><a href="#um-p-o">Um pão</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <p>J.R.Gill</p>
 <p>Palestra proferida por: J. R. Gill em uma conferência em Chicago, Estados Unidos, no ano de 1926.</p>
 <p>Tenho o desejo, amados amigos cristãos, de tratar de um certo assunto que já conquistou a atenção de alguns de nós em uma ou duas reuniões recentemente, e gostaria de pedira compreensão de alguém aqui que porventura já nos tenha ouvido tratar do mesmo assunto. Há aqui outras pessoas para as quais o assunto é novo e creio ter a mente do Senhor ao voltar a tratar disso.</p>
@@ -364,8 +367,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -373,7 +375,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

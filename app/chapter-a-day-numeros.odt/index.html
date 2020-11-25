@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -196,8 +197,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#199">#199</a></li>
     <li><a href="#n-meros-1-vers-1-16"><a href="http://mysword.info/b?r=Num_1:1-16">NÚMEROS 1, Vers. 1-16</a></a></li>
@@ -278,8 +279,10 @@ blockquote,
     <li><a href="#237">#237</a></li>
     <li><a href="#n-meros-36"><a href="http://mysword.info/b?r=Num_36">NÚMEROS 36</a></a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="199">#199</h2>
 <p>Na consciência de nossa fraqueza e fracasso, sentimos a necessidade de um sentimento novo da glória, amor, riquezas e poder do Senhor diante de nós; e, com isto, desejamos sguir, contando com Ele para nos ajudar nos dias escuros.</p>
 <h2 id="n-meros-1-vers-1-16"><a href="http://mysword.info/b?r=Num_1:1-16">NÚMEROS 1, Vers. 1-16</a></h2>
@@ -612,8 +615,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -621,7 +623,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

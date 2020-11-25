@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/desconhecido">DESCONHECIDO</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-que-quer-dizer-a-palavra-igreja">O que quer dizer a palavra “igreja”?</a></li>
     <li><a href="#deus-tem-mais-que-uma-igreja">Deus tem mais que uma igreja?</a></li>
@@ -210,8 +211,10 @@ blockquote,
     <li><a href="#que-far-jesus-em-breve-pela-sua-igreja">Que fará Jesus , em breve, pela Sua igreja?</a></li>
     <li><a href="#qual-o-destino-da-igreja-verdadeira">Qual é o destino da igreja verdadeira ?</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-que-quer-dizer-a-palavra-igreja">O que quer dizer a palavra “igreja”?</h2>
 <p>O termo grego significa simplesmente uma “congregação”, “assembléia” ou “concorrência”. <a href="http://mysword.info/b?r=Act_7:38">Atos 7:38</a>, <a href="http://mysword.info/b?r=Act_19:39-41">19:39,41</a></p>
 <p>Emprega-se no Novo Testamento particularmente para designar o corpo de crentes em Cristo Jesus (veja <a href="http://mysword.info/b?r=Mat_16:18">Mateus 16:18</a>; <a href="http://mysword.info/b?r=Mat_18:17">18:17</a>; <a href="http://mysword.info/b?r=Act_2:47">Atos 2:47</a>; <a href="http://mysword.info/b?r=Act_8:1">8:1</a>; <a href="http://mysword.info/b?r=Eph_1:22,23">Ef 1:22,23</a>; <a href="http://mysword.info/b?r=col_1:18">Colossenses 1:18</a>,) .</p>
@@ -304,8 +307,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -313,7 +315,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,16 +194,18 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/e.-h.-chater">E. H. Chater</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#por-que">POR QUE?</a></li>
     <li><a href="#quando">QUANDO?</a></li>
     <li><a href="#onde">ONDE?</a></li>
     <li><a href="#como">COMO?</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <p>Você Parte o Pão - Por Que, Quando, Onde e Como?</p>
 <p>INTRODUÇÃO</p>
 <p>Na noite em que Jesus foi traído, após a ceia pascal, Ele tomou &quot;o pão, e havendo dado graças, partiu-o, e deu-lho (aos Seus discípulos), dizendo: Isto é o Meu corpo, que por vós é dado; fazei isto em memória de Mim. Semelhantemente tomou o cálice, depois da ceia, dizendo: Este cálice é o Novo Testamento no Meu sangue, que é derramado por vós&quot; (<a href="http://mysword.info/b?r=Luk_22:19-20">Lucas 22:19-20</a>).</p>
@@ -316,8 +319,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -325,7 +327,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

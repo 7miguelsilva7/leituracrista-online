@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/desconhecido">DESCONHECIDO</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#fora-do-arraial-longe-do-arraial">FORA DO ARRAIAL, LONGE DO ARRAIAL</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="fora-do-arraial-longe-do-arraial">FORA DO ARRAIAL, LONGE DO ARRAIAL</h2>
 <p>&quot;Saiamos pois a Ele fora do arraial levando o Seu vitupério&quot; <a href="http://mysword.info/b?r=Heb_13:13">Hebreus 13:13</a>. Poderíamos fazer várias perguntas em relação a este versículo da Bíblia. A quem foi dirigido este apelo? Por que foi dirigido? Pode ser aplicado a nós? E, se for para nós, qual é o seu motivo e significado? Busquemos a resposta a estas perguntas no temor do Senhor e para proveito de nossas almas.</p>
 <p>Este versículo, assim como toda a epístola aos Hebreus, foi escrito para os judeus convertidos ao cristianismo. Existem muitas razões para se crer que seu autor foi o apóstolo Paulo. Embora Paulo fosse o apóstolo dos gentios, nesta ocasião o Espírito de Deus o utilizou para redigir uma admoestação direta e especial aos judeus que haviam se arrependido, reconhecendo que sua nação havia rechaçado o seu Messias. Embora tendo aceitado ao Senhor Jesus como seu Salvador, os judeus recém-convertidos continuavam, naturalmente, ligados ao templo, aos ritos e costumes do judaísmo. Haviam sido criados nesse sistema, uma boa parte do qual fora instituído pelo próprio Deus. Mas agora, a partir da rejeição do Senhor Jesus &ndash; da rejeição do testemunho do Espírito Santo acerca do Cristo glorificado &ndash; Deus passou a desaprovar completamente esse sistema.</p>
@@ -284,8 +287,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -293,7 +295,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

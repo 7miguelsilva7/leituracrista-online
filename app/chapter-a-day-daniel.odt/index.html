@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -196,8 +197,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#960">#960</a></li>
     <li><a href="#daniel-1"><a href="http://mysword.info/b?r=Dan_1">DANIEL 1</a></a></li>
@@ -226,8 +227,10 @@ blockquote,
     <li><a href="#972">#972</a></li>
     <li><a href="#daniel-12"><a href="http://mysword.info/b?r=Dan_12">DANIEL 12</a></a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="960">#960</h2>
 <p>Nada pode drenar mais a vitalidade de um Cristão do que o lixo de alianças não santificadas, deleites sujos, práticas ímpias e coisas do tipo. A verdadeira separação dessas coisas fará de nós &quot;vasos para honra, santificados e idôneo para uso do Senhor&quot;.</p>
 <h2 id="daniel-1"><a href="http://mysword.info/b?r=Dan_1">DANIEL 1</a></h2>
@@ -391,8 +394,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -400,7 +402,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

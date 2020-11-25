@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/desconhecido">DESCONHECIDO</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#medo-de-perder-a-salva-o">MEDO DE PERDER A SALVAÇÃO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="medo-de-perder-a-salva-o">MEDO DE PERDER A SALVAÇÃO</h2>
 <p>É um sentimento muito comum, aos recém-convertidos ao Senhor, o medo de perderem a sua salvação, por notarem que o pecado continua a operar em sua carne. Como quem escreve estas linhas viveu também tal experiência e, pela graça de Deus, a superou, desejo ajudar os que sentem tal amargura que é o medo de se perderem novamente.</p>
 <p>Não é possível que isto aconteça, pois Cristo &quot;com uma só oblação aperfeiçoou PARA SEMPRE os que são santificados&quot; (<a href="http://mysword.info/b?r=Heb_10:14">Hebreus 10:14</a>). O medo de se perder a salvação ocorre quando o coração não está firme no fato de que a salvação não depende da nossa conduta, seja antes ou depois da conversão, mas unicamente da perfeição e eficácia da obra de Cristo na cruz. &quot;Temos sido santificados pela oblação do corpo de Jesus Cristo, feita uma vez. Portanto, pode também salvar PERFEITAMENTE os que por ele se chegam a Deus, vivendo sempre para interceder por eles&quot; (<a href="http://mysword.info/b?r=Heb_10:10">Hebreus 10:10</a>; <a href="http://mysword.info/b?r=Heb_7:25">7:25</a>).</p>
@@ -273,8 +276,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -282,7 +284,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

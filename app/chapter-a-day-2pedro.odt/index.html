@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -196,8 +197,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#349">#349</a></li>
     <li><a href="#2-pedro-1-vers-1-8"><a href="http://mysword.info/b?r=2Pe_1:1-8">2 PEDRO 1, Vers. 1-8</a></a></li>
@@ -208,8 +209,10 @@ blockquote,
     <li><a href="#352">#352</a></li>
     <li><a href="#2-pedro-3"><a href="http://mysword.info/b?r=2Pe_3">2 PEDRO 3</a></a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="349">#349</h2>
 <p>A única descrição biográfica que Jesus deu de Si próprio foi, &quot;Sou manso e humilde de coração&quot; (<a href="http://mysword.info/b?r=Mat_11:29">Mt 11:29</a>).</p>
 <h2 id="2-pedro-1-vers-1-8"><a href="http://mysword.info/b?r=2Pe_1:1-8">2 PEDRO 1, Vers. 1-8</a></h2>
@@ -307,8 +310,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -316,7 +318,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

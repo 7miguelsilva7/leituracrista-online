@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,9 +194,11 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/desconhecido">Desconhecido</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents"></nav>  
-</div>
+
+<nav id="TableOfContents"></nav>
+
+<p></p>
+
 <p>A PORTEIRA</p>
 <p>Desconhecido</p>
 <p>Há muitos anos, na Inglaterra, um fazendeiro estava trabalhando em seu campo quando viu um grupo de caçadores, montados a cavalo, se aproximando de sua fazenda. Havia um de seus campos de plantio que não poderia de maneira alguma ser pisoteado pelos cavalos, e ele ordenou a um de seus servos: &quot;Feche a porteira daquele campo, e não a abra em hipótese alguma.&quot;</p>
@@ -263,8 +266,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -272,7 +274,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

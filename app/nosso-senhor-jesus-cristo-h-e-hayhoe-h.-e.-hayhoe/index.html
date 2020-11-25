@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/h.-e.-hayhoe">H. E. HAYHOE</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#nosso-senhor-jesus-cristo">NOSSO SENHOR JESUS CRISTO</a></li>
     <li><a href="#a-divindade">A DIVINDADE</a></li>
@@ -203,8 +204,10 @@ blockquote,
     <li><a href="#deus-o-filho">DEUS, O FILHO</a></li>
     <li><a href="#ele-o-eterno-eu-sou-jo-8-58">ELE É O ETERNO &quot;EU SOU&quot; (jo 8:58).</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="nosso-senhor-jesus-cristo">NOSSO SENHOR JESUS CRISTO</h2>
 <p>H. E. HAYHOE</p>
 <p>A Pessoa do Senhor Jesus Cristo, o Filho de Deus, está além da compreensão da mente humana. Ele mesmo disse: &quot;Ninguém conhece o Filho, senão o Pai; e ninguém conhece o Pai, senão o Filho, e aquele a quem o Filho o quiser revelar&quot; (<a href="http://mysword.info/b?r=Mat_11:27">Mateus 11:27</a>). O Filho revelou o Pai, mas NINGUÉM compreende o Filho. A Sua Pessoa é um mistério divino. &quot;O Seu nome será: Maravilhoso, Conselheiro, Deus forte, Pai da eternidade, Príncipe da paz.&quot; <a href="http://mysword.info/b?r=Isa_9:6">Isaías 9:6</a></p>
@@ -286,8 +289,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -295,7 +297,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

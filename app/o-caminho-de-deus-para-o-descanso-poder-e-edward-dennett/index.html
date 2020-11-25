@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/desconhecido">DESCONHECIDO</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#segunda-parte">Segunda parte</a></li>
     <li><a href="#terceira-parte">Terceira parte</a></li>
@@ -203,8 +204,10 @@ blockquote,
     <li><a href="#sexta-parte">Sexta parte</a></li>
     <li><a href="#s-tima-parte">Sétima parte</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <p>O Caminho de Deus para o descanso, poder e consagração</p>
 <p>Primeira parte</p>
 <p>A triste verdade é que a maioria dos cristãos não é feliz; e se esses cristãos pudessem, confessariam que têm estado tristemente desapontados com sua vida cristã. Quando se converteram, tinham diante de si uma perspectiva cheia de promessas: parecia-lhes a aurora de um dia sem nuvens, cheio de gozo e paz. No entanto, mal haviam iniciado sua jornada, e nuvens de todo tipo já escureciam o céu, e, exceto talvez por alguns poucos raios de sol aqui e ali, a situação continuou mais ou menos inalterada. Em muitos casos tem sido até pior do que isso. Era de se esperar que houvesse conflito, mas geralmente este termina, não em vitória, mas em derrota. O mal do lado de dentro, e o inimigo do lado de fora, têm triunfado vez após outra, a ponto de fazer com que o espírito de confiança e alegre expectativa acabe cedendo lugar a um espírito de desânimo e desespero.</p>
@@ -348,8 +351,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -357,7 +359,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

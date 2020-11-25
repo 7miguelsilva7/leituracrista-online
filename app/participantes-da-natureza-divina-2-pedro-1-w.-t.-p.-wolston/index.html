@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/"></a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li>
       <ul>
@@ -216,8 +217,10 @@ blockquote,
       </ul>
     </li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h3 id="participantes-da-natureza-divina">PARTICIPANTES DA NATUREZA DIVINA</h3>
 <p><a href="http://mysword.info/b?r=2Pe_1">2 PEDRO 1</a></p>
 <p>O grande cuidado que o apóstolo tem para escrever pela segunda vez a estes crentes hebreus dando-lhes instruções a respeito de seu andar, e advertindo-os dos males que viriam, é uma prova clara de que ele não contava com uma continuação da ordem apostólica. O tema geral da carta e seus detalhes também excluem tal pensamento. Certamente, no segundo capítulo, foi mostrado o estado terrível que estava previsto, e então, que Deus julgaria todo aquele cenário.</p>
@@ -345,8 +348,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -354,7 +356,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-h.-brown">C. H. Brown</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#os-dez-mandamentos">OS DEZ MANDAMENTOS</a></li>
     <li><a href="#o-primeiro-mandamento-mosaico">O Primeiro Mandamento Mosaico</a></li>
@@ -208,8 +209,10 @@ blockquote,
     <li><a href="#o-nono-mandamento-mosaico">O Nono Mandamento Mosaico</a></li>
     <li><a href="#o-d-cimo-mandamento-mosaico">O Décimo Mandamento Mosaico</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="os-dez-mandamentos">OS DEZ MANDAMENTOS</h2>
 <p>Seu conteúdo moral e sua aplicação para o cristão</p>
 <p>Tenho o propósito de considerar aqui o assunto dos dez mandamentos e sua aplicação moral para o cristão. Mas antes vamos ler algumas passagens das Escrituras: &quot;Sabendo que o homem não é justificado pelas obras da lei, mas pela fé em Jesus Cristo&hellip; Porque eu pela lei estou morto para a lei, para viver para Deus&hellip; Todos aqueles pois que são das obras da lei estão debaixo da maldição; porque escrito está: Maldito todo aquele que não permanecer em todas as coisas que estão escritas no livro da lei, para fazê-las. E é evidente que pela lei ninguém será justificado diante de Deus, porque o justo vivera da fé. Ora a lei não é da fé; mas o homem, que fizer estas coisas, por elas viverá&hellip; Porque o pecado não terá domínio sobre vós, pois não estais debaixo da lei, mas debaixo da graça.&quot; (<a href="http://mysword.info/b?r=Gal_2:16,19">Gálatas 2:16,19</a>; <a href="http://mysword.info/b?r=Gal_3:10-12">3:10-12</a>; <a href="http://mysword.info/b?r=Rom_6:14">Romanos 6:14</a>).</p>
@@ -307,8 +310,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -316,7 +318,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

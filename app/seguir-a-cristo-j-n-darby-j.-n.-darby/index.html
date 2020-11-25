@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#seguir-a-cristo">SEGUIR A CRISTO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="seguir-a-cristo">SEGUIR A CRISTO</h2>
 <p>J. N. DARBY</p>
 <p>Se você decidiu seguir a Cristo, terá que levar em conta o quanto isto lhe custará. Talvez você tenha que deixar amigos por amor a Ele; pode ser que tenha que deixar tudo, mas a questão é: Devo deixar tudo ou deixar a Deus? &quot;Você não poderá ter dois corações, um para o mundo e outro para Mim&quot;, é o que Cristo poderia lhe dizer. Tremo quando vejo pessoas que não têm levado em conta o quanto custa seguir a Cristo. Muitas vezes o próprio Deus lhes coloca uma barreira logo no princípio para ver se são capazes de saltá-la, e daí para frente tudo irá bem.</p>
@@ -271,8 +274,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -280,7 +282,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

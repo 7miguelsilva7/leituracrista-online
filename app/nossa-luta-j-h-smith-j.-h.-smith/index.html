@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-h.-smith">J. H. SMITH</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#nossa-luta">NOSSA LUTA</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="nossa-luta">NOSSA LUTA</h2>
 <p>Deus ainda não está julgando as nações, e nem ainda introduzindo um governo justo na Terra sob a direção do &quot;Seu Ungido&quot;. Não; pelo contrário, em soberana graça e bondade, Ele está salvando pecadores dentre as nações antes que caia o juízo. Portanto, nós que somos santos com uma vocação celestial totalmente acima e fora deste mundo, não devemos nos preocupar com os assuntos mundanos, e sim com o &quot;reino de Deus, e&hellip; as coisas pertencentes ao Senhor Jesus Cristo&quot; (<a href="http://mysword.info/b?r=Act_28:31">Atos 28:31</a>). &quot;&hellip;que o caco de barro contenda com os cacos de barro da Terra&quot; (<a href="http://mysword.info/b?r=Isa_45:9">Isaías 45:9</a> - Trad. King James).</p>
 <p>Ló participava nos negócios da culpada Sodoma; ele sentava-se como juiz à porta da cidade. O que aconteceu a ele? Quando os quatro reis fizeram guerra contra cinco, Ló, sua família e todos os seus bens tornaram-se parte do espólio de guerra. É bem verdade que seu tio Abraão, um homem separado (de Sodoma) o resgatou, mas Ló nunca exibiu um caráter de peregrino, que era o apropriado para um santo de Deus naqueles dias. O mundo tinha um poder vitorioso sobre sua alma; ele voltou a se estabelecer em Sodoma e ali afligiu sua alma justa até o exato dia da terrível ruína da cidade. Querido santo de Deus: CUIDADO!</p>
@@ -270,8 +273,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -279,7 +281,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/mario-persona">Mario Persona</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#eu-e-meu-namorado-podemos-ter-uma-vida-ntima">Eu e meu namorado podemos ter uma vida íntima?</a></li>
     <li><a href="#como-lidar-com-a-pornografia">Como lidar com a pornografia?</a></li>
@@ -256,8 +257,10 @@ blockquote,
     <li><a href="#existe-alguma-verdade-oculta">Existe alguma verdade oculta?</a></li>
     <li><a href="#o-que-responder-aos-professores">O que responder aos professores?</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="eu-e-meu-namorado-podemos-ter-uma-vida-ntima">Eu e meu namorado podemos ter uma vida íntima?</h2>
 <p>Não sei se entendi direito, mas você parece ter dito que vocês são cristãos convertidos e há algum tempo eram bastante preocupados com a santidade prática, tanto no que se refere à pornografia, como em questões de intimidade e também do cuidado com o vestir. Certamente esse cuidado não é errado, a menos que se torne doentio.</p>
 <p>Então você diz que chegaram à conclusão de que deviam iniciar uma “vida íntima” depois de lerem alguns autores evangélicos. Segundo você, a conclusão a que chegaram é que “fornicação” significa “ficar”, ou seja, fazer sexo sem compromisso, o que não seria o caso de vocês. Pelo que pude ver, todos os argumentos que escreveu são baseados no que você pensa, acha ou pesquisou de “autores evangélicos”.</p>
@@ -1507,8 +1510,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -1516,7 +1518,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

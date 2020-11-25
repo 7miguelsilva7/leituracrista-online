@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/l.-c.-perry">L. C. Perry</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#escolhas">ESCOLHAS</a></li>
     <li><a href="#o-caminho-de-deus-o-nico-caminho">O Caminho de Deus é o Único Caminho</a></li>
@@ -207,8 +208,10 @@ blockquote,
     <li><a href="#poder-para-seguir-na-dire-o-certa">Poder Para Seguir na Direção Certa</a></li>
     <li><a href="#uma-coisa-fa-o">Uma Coisa Faço&hellip;</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="escolhas">ESCOLHAS</h2>
 <p>De um certo modo, este é um título meio enganador, mas expressa o que a maioria das pessoas considera como sendo uma descrição de suas vidas. As pessoas têm a tendência de sentir que a vida é uma longa sucessão de escolhas difíceis. Certamente a vida está cheia de pontos de decisão, encruzilhadas, desvios do caminho. Todavia, o que as Escrituras nos ensinam, como seguidores de Cristo, é que não existe realmente qualquer escolha para nós em qualquer uma das encruzilhadas desta vida. O único caminho para o crente é seguir a Cristo aonde Ele guiar, sempre em obediência à Sua Palavra.</p>
 <p>Na verdade, com frequência deixamos que nossa vontade própria intervenha e tome o caminho que mais nos agrade, ou aquele que pareça ser o mais lógico ou mais popular, ou então o que dê menos trabalho. Nenhum desses raciocínios tem base nas Escrituras; são sempre provenientes de Satanás.</p>
@@ -306,8 +309,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -315,7 +317,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

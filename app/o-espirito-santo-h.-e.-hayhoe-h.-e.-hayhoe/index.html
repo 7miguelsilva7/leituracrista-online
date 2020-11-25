@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/h.-e.-hayhoy">H. E. Hayhoy</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#pref-cio">PREFÁCIO</a></li>
     <li><a href="#o-espirito-santo-sua-pessoa-sua-vinda-e-sua-obra">O ESPIRITO SANTO - Sua Pessoa, Sua Vinda e Sua Obra</a></li>
@@ -207,8 +208,10 @@ blockquote,
     <li><a href="#os-dons-do-esp-rito">OS DONS DO ESPÍRITO</a></li>
     <li><a href="#conclus-o">CONCLUSÃO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <p>Revisão: Luiz Amalfi</p>
 <h2 id="pref-cio">PREFÁCIO</h2>
 <p>Este breve estudo a respeito do Espírito Santo não busca apresentar qualquer novidade, mas é fruto do desejo de colocar diante dos amados santos de Deus o ensino das Escrituras sobre este importante assunto. Que estas linhas possam levar o leitor a uma meditação cuidadosa sobre as passagens bíblicas que são constantemente citadas neste estudo. Aquele que desejarem um ministério que dê uma explanação mais ampla do assunto devem buscá-lo nos escritos de J. N Darby, W. Kelly e Dr. W. T. P. Wolston Que o Senhor possa abençoar abundantemente Sua própria Palavra para todos aqueles que venham a ler estas linhas.</p>
@@ -303,8 +306,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -312,7 +314,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

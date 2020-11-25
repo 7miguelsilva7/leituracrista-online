@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/d.-rule">D. Rule</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-grande-plano-de-deus">O GRANDE PLANO DE DEUS</a></li>
     <li><a href="#tr-s-destinos">Três Destinos</a></li>
@@ -211,8 +212,10 @@ blockquote,
     <li><a href="#os-salmos">Os Salmos</a></li>
     <li><a href="#tempo-de-ang-stia-para-jac">Tempo de Angústia Para Jacó</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-grande-plano-de-deus">O GRANDE PLANO DE DEUS</h2>
 <p>É reconfortante abrirmos a Palavra de Deus em busca de versículos ou assuntos que se refiram a nós mesmos - que nos mostrem como podemos desfrutar das bênçãos que nos cabem, ou então de como o Senhor pode resolver algum problema particular ou guiar-nos em alguma decisão a tomar. No entanto, se realmente desejamos conhecer o coração de Deus, é de extrema importância que desfrutemos, juntamente com Deus, de Sua Palavra - não apenas de alguns bocados aqui e ali, mas de toda ela.</p>
 <p>Uma enorme porção da Palavra de Deus traz em si mesma um caráter profético. Vamos nos ocupar de algumas coisas que nos ajudarão a estudar a profecia. Há muito para se desfrutar e tirar proveito no caráter profético da Palavra de Deus.</p>
@@ -324,8 +327,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -333,7 +335,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

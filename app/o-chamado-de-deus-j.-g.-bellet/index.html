@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-g.-bellet">J. G. Bellet</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-chamado-de-deus">O CHAMADO DE DEUS</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-chamado-de-deus">O CHAMADO DE DEUS</h2>
 <p>J. G. Bellet</p>
 <p>Nos dias que antecedem o dilúvio, os que pertencem à família de Deus trilham um caminho de peregrinos. Eles deixam o mundo para Caim. Não há neles nenhum sentimento de disputa e nem tampouco o menor indício de queixa. Eles não dizem, e nem pensam em dizer, &quot;Mestre, dize a meu irmão que reparta comigo a herança&quot; (<a href="http://mysword.info/b?r=Luk_12:13">Lucas 12:13</a>). Em seus hábitos e princípios de conduta, eles são tão distintos de seu irmão infrator (Caim) que parecem pertencer a uma outra raça; é como se vivessem em outro mundo.</p>
@@ -266,8 +269,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -275,7 +277,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

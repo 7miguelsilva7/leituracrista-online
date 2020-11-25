@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/s.-ridout">S. Ridout</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#os-limites-da-disciplina-0">Os Limites da Disciplina</a></li>
     <li><a href="#1-os-cuidados-gerais-com-os-irm-os">1. Os cuidados gerais com os irmãos</a></li>
@@ -206,8 +207,10 @@ blockquote,
     <li><a href="#7-a-admoesta-o-p-blica">7. A admoestação pública</a></li>
     <li><a href="#8-a-exclus-o-da-comunh-o">8. A exclusão da comunhão</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="os-limites-da-disciplina-0">Os Limites da Disciplina</h2>
 <p>Janeiro 10, 2017</p>
 <p>fonte: <a href="https://minutos-finais.blogspot.com.br">https://minutos-finais.blogspot.com.br</a>:2017:01/os-limites-da-disciplina-s-ridout.html</p>
@@ -319,8 +322,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -328,7 +330,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

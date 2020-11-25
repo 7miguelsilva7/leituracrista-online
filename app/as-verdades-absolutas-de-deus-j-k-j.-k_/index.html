@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,15 +194,17 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-k.">J. K.</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#as-verdades-absolutas-de-deus">AS VERDADES ABSOLUTAS DE DEUS</a></li>
     <li><a href="#a-confian-a-em-deus">A CONFIANÇA EM DEUS</a></li>
     <li><a href="#gozo-e-obedi-ncia">GOZO E OBEDIÊNCIA</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="as-verdades-absolutas-de-deus">AS VERDADES ABSOLUTAS DE DEUS</h2>
 <p>J. K.</p>
 <p>Certa vez, um professor fez um comentário que tem vindo a minha mente nestes dias. Depois de ter ouvido falar de sua necessidade do Salvador, ele comentou: &quot;Você não pode ter certeza das coisas de que você fala, não existem verdades absolutas. Tudo é relativo&quot;. Ele então passou a falar das &quot;zonas cinzentas &quot; da vida, no qual é impossível saber com precisão o que é verdadeiro.</p>
@@ -278,8 +281,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -287,7 +289,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

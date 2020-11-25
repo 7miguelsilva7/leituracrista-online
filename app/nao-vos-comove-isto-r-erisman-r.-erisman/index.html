@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/r.-erisman">R. Erisman</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#n-o-vos-comove-isto">NÃO VOS COMOVE ISTO?</a></li>
     <li><a href="#tr-s-cruzes">TRÊS CRUZES</a></li>
@@ -202,8 +203,10 @@ blockquote,
     <li><a href="#maria-madalena">MARIA MADALENA</a></li>
     <li><a href="#um-sepulcro-vazio">UM SEPULCRO VAZIO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="n-o-vos-comove-isto">NÃO VOS COMOVE ISTO?</h2>
 <p>R. Erisman</p>
 <p>&quot;Não vos comove isto a todos vós que passais pelo caminho? Atendei, e vede, se há dor como a minha dor, que veio sobre mim, com que o Senhor me afligiu, no dia do furor da Sua ira.&quot; <a href="http://mysword.info/b?r=Lam_1:12">Lamentações 1:12</a></p>
@@ -284,8 +287,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -293,7 +295,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

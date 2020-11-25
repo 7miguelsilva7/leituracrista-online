@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/morrish-bible-dictionary">MORRISH BIBLE DICTIONARY</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#alian-as">ALIANÇAS</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="alian-as">ALIANÇAS</h2>
 <p>Traduzido de MORRISH BIBLE DICTIONARY</p>
 <p>Deus faz Suas alianças por conta própria, sem consultar o homem. Com Noé Deus fez uma aliança de que não voltaria a destruir o mundo com um dilúvio, e como garantia daquele concerto Ele colocou o arco-íris nas nuvens (<a href="http://mysword.info/b?r=Gen_9:8-17">Gênesis 9:8-17</a>). Este tipo de aliança assume a forma de uma promessa incondicional. Assim foi a aliança que Deus fez com Abraão, primeiro para com sua posteridade biológica em <a href="http://mysword.info/b?r=Gen_15:4-6">Gênesis 15:4-6</a> e depois no sentido de seu descendente, Cristo (<a href="http://mysword.info/b?r=Gen_22:15-18">Gênesis 22:15-18</a>). A Abraão Deus também deu a aliança da circuncisão (<a href="http://mysword.info/b?r=Gen_17:10-14">Gênesis 17:10-14</a>; <a href="http://mysword.info/b?r=Act_7:8">Atos 7:8</a>), um selo da justiça da fé (<a href="http://mysword.info/b?r=Rom_4:11">Romanos 4:11</a>).</p>
@@ -268,8 +271,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -277,7 +279,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

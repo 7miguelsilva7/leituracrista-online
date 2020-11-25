@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/charles-stanley">Charles Stanley</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#introdu-o-a-carta-magna-da-humanidade">INTRODUÇÃO - A &quot;CARTA MAGNA&quot; DA HUMANIDADE</a></li>
     <li><a href="#cap-tulo-1-um-evangelho-de-poder-para-o-homem-moribundo">CAPÍTULO 1 - UM EVANGELHO DE PODER PARA O HOMEM MORIBUNDO</a></li>
@@ -214,8 +215,10 @@ blockquote,
     <li><a href="#cap-tulo-15-um-em-cristo">CAPÍTULO 15 - UM EM CRISTO</a></li>
     <li><a href="#cap-tulo-16-instru-es-finais">CAPÍTULO 16 - INSTRUÇÕES FINAIS</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <p>Vida Através da Morte</p>
 <p>Charles Stanley</p>
 <h2 id="introdu-o-a-carta-magna-da-humanidade">INTRODUÇÃO - A &quot;CARTA MAGNA&quot; DA HUMANIDADE</h2>
@@ -573,8 +576,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -582,7 +584,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

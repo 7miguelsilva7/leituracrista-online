@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/w.-kelly">W. Kelly</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#livro-de-ester">LIVRO DE ESTER</a></li>
     <li><a href="#primeiro-cap-tulo">PRIMEIRO CAPÍTULO</a></li>
@@ -208,8 +209,10 @@ blockquote,
     <li><a href="#nono-cap-tulo">NONO CAPÍTULO</a></li>
     <li><a href="#d-cimo-cap-tulo">DÉCIMO CAPÍTULO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="livro-de-ester">LIVRO DE ESTER</h2>
 <p>INTRODUÇÃO</p>
 <p>O livro de Ester é uma das poucas porções das Escrituras que nos chamam a atenção pela ausência do nome de Deus. Isto tem, com frequência, surpreendido a muitos: os próprios judeus não eram capazes de compreender o por quê, e há hoje muitos cristãos que não diferem muito deles. E isto chegou ao ponto de se ter tornado um hábito para alguns, especialmente nestes últimos tempos, tratarem o livro de Ester com uma certa medida de descrédito, como se a ausência do nome do Senhor fosse algo suspeito — como se o livro não fosse de Deus pelo fato de o nome de Deus não ser encontrado nele. Espero mostrar que o fato do nome de Deus não ser encontrado faz parte da excelência do livro, pois há ocasiões em que Deus encobre Sua glória. Não há ocasião em que Ele não opere, mas Ele nem sempre permite que Seu nome seja escutado, ou que Seus caminhos sejam vistos. Quero mostrar que é precisamente este o caráter que o livro exigia — que o nome de Deus não fosse encontrado ali. Por conseguinte, ao invés de despertar uma discussão quanto à participação de Ester no volume sagrado, isto irá mostrar a perfeição dos caminhos de Deus, até mesmo neste fato tão excepcional que é a ausência de Seu nome em todo um livro.</p>
@@ -329,8 +332,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -338,7 +340,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

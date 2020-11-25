@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/bruce-anstey">Bruce Anstey</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#uma-variedade-de-reuni-es">Uma Variedade de Reuniões</a></li>
     <li><a href="#reuni-es-de-assembleia">REUNIÕES DE ASSEMBLEIA</a></li>
@@ -210,8 +211,10 @@ blockquote,
     <li><a href="#reuni-o-de-irm-os-ou-reuni-o-de-cuidados">REUNIÃO DE IRMÃOS (ou REUNIÃO DE CUIDADOS)</a></li>
     <li><a href="#reuni-o-de-comunh-o-ou-festa-de-amor">REUNIÃO DE COMUNHÃO (ou Festa de Amor)</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="uma-variedade-de-reuni-es">Uma Variedade de Reuniões</h2>
 <p>Uma assembleia baseada nas Escrituras terá uma variedade de reuniões como na igreja primitiva. A exortação nas escrituras é de não abandonarmos nossa congregação (<a href="http://mysword.info/b?r=Heb_10:25">Hebreus 10:25</a>). Procurando no livro de Atos e nas Epístolas, vemos que a igreja primitiva perseverava numa variedade de reuniões (<a href="http://mysword.info/b?r=Act_2:42">Atos 2:42</a>). Uma assembleia baseada nas escrituras hoje, sob condições normais, terá um menu repleto de reuniões também. Essas reuniões se enquadram em duas categorias: Reuniões de Assembleia e Reuniões da Assembleia.</p>
 <p>Reuniões de Assembleia são reuniões onde o Senhor está no centro, no sentido coletivo (<a href="http://mysword.info/b?r=Mat_18:20">Mateus 18:20</a>), conduzindo e guiando os procedimentos pelo Espírito Santo – podendo ser em adoração, orações, ministério ou para as decisões administrativas necessárias. Nessas reuniões nada é pré-arranjado como quem vai fazer o quê; tudo é deixado ao Senhor para dirigir em Espírito de santa espontaneidade.</p>
@@ -343,8 +346,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -352,7 +354,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

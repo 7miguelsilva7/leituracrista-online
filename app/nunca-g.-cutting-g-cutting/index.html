@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-cutting">G. Cutting</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#nunca">NUNCA!</a></li>
     <li><a href="#o-fogo-que-nunca-se-apaga">O FOGO QUE NUNCA SE APAGA</a></li>
@@ -205,8 +206,10 @@ blockquote,
     <li><a href="#as-ovelhas-um-presente-recebido-do-pai">AS OVELHAS - UM PRESENTE RECEBIDO DO PAI</a></li>
     <li><a href="#ser-o-todos-ovelhas">SERÃO TODOS OVELHAS?</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="nunca">NUNCA!</h2>
 <p>Será que alguma vez você se deu conta, querido leitor, de que a mesma palavra que concede o mais doce consolo ao verdadeiro crente, extingue completamente qualquer raio de esperança para o incrédulo, e não lhe deixa coisa alguma além de trevas e total desespero? Esta palavra é a mesma que aparece no início deste artigo.</p>
 <p>Para tornar isso mais claro, deixe-nos fazer duas perguntas que, provindas dos lábios do Senhor Jesus Cristo, são ambas respondidas por esta mesma palavra.</p>
@@ -312,8 +315,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -321,7 +323,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

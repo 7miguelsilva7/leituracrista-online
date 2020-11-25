@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -196,8 +197,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#381">#381</a></li>
     <li><a href="#ef-sios-1-vers-1-8"><a href="http://mysword.info/b?r=Eph_1:1-8">EFÉSIOS 1, Vers. 1-8</a></a></li>
@@ -216,8 +217,10 @@ blockquote,
     <li><a href="#388">#388</a></li>
     <li><a href="#ef-sios-6"><a href="http://mysword.info/b?r=Eph_6">EFÉSIOS 6</a></a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="381">#381</h2>
 <p>Precisamos de uma vontade quebrada, confiança em Deus, comunhão com Aquele que sofreu por nós, a fim de podermos nos gloriar nos sofrimentos.</p>
 <h2 id="ef-sios-1-vers-1-8"><a href="http://mysword.info/b?r=Eph_1:1-8">EFÉSIOS 1, Vers. 1-8</a></h2>
@@ -355,8 +358,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -364,7 +366,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#um-deus-justo-e-salvador">UM DEUS JUSTO E SALVADOR</a></li>
     <li><a href="#padr-o-de-deus">PADRÃO DE DEUS</a></li>
@@ -203,8 +204,10 @@ blockquote,
     <li><a href="#o-perd-o">O PERDÃO</a></li>
     <li><a href="#se-voc-deseja-ter-poder-sobre-seus-pecados">SE VOCÊ DESEJA TER PODER SOBRE SEUS PECADOS&hellip;</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="um-deus-justo-e-salvador">UM DEUS JUSTO E SALVADOR</h2>
 <p>&quot;Anunciai, e chegai-vos, e tomai conselho todos juntos: quem fez ouvir isto desde a antiguidade? Quem desde então o anunciou? Porventura não sou eu, o Senhor? E não há outro Deus senão eu; Deus JUSTO E SALVADOR não há fora de mim.&quot; <a href="http://mysword.info/b?r=Isa_45:21">Isaías 45:21</a></p>
 <p>Todas as pessoas têm um certo conhecimento do bem e do mal; tal coisa elas dizem ser boa e tal coisa má. Mas talvez não existam duas pessoas que possuam exatamente o mesmo padrão do que seja bem e do que seja mal. O que as pessoas fazem é estabelecer um tal padrão do bem que possa incluir a elas próprias, e um tal padrão de mal que as exclua, e inclua outras.</p>
@@ -291,8 +294,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -300,7 +302,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

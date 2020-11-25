@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,10 +194,10 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-h.-mackintosh">C. H. Mackintosh</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
-    <li><a href="#a-ceia-do-senhor">A Ceia do Senhor</a></li>
+    <li><a href="#notas-do-editor">Notas do Editor</a></li>
     <li><a href="#pref-cio-do-autor">PREFÁCIO DO AUTOR</a></li>
     <li><a href="#pensamentos-acerca-da-ceia-do-senhor">PENSAMENTOS ACERCA DA CEIA DO SENHOR</a></li>
     <li><a href="#1-a-natureza-da-ordena-o-da-ceia-do-senhor">1-A NATUREZA DA ORDENAÇÃO DA CEIA DO SENHOR</a></li>
@@ -204,12 +205,13 @@ blockquote,
     <li><a href="#3-para-quem-foi-institu-da-a-ceia-do-senhor">3-PARA QUEM FOI INSTITUÍDA A CEIA DO SENHOR</a></li>
     <li><a href="#4-a-ocasi-o-e-a-maneira-de-celebrar-a-ceia-do-senhor">4-A OCASIÃO E A MANEIRA DE CELEBRAR A CEIA DO SENHOR</a></li>
   </ul>
-</nav>  
-</div>
-<h2 id="a-ceia-do-senhor">A Ceia do Senhor</h2>
+</nav>
+
+<p></p>
+
 <p>C. H. Mackintosh</p>
 <p>Tradução de Mario Persona</p>
-<p>Notas do Editor</p>
+<h2 id="notas-do-editor">Notas do Editor</h2>
 <p>Desde que foi escrito por Charles H. Mackintosh (1820-1896), este artigo sobre a Ceia do Senhor tem sido de grande auxílio a milhares de cristãos em todo o mundo. Particularmente no Brasil, foi um dos instrumentos usados por Deus para ajudar a despertar a consciência de vários irmãos, hoje reunidos somente ao nome do Senhor, para a verdade, hoje tão menosprezada, da unidade do corpo de Cristo e da expressão dessa unidade no “um só pão”. Aqueles que o leram, certamente não ficaram alheios à importância e ao privilégio de se obedecer à ordenança do Senhor, celebrando a Sua Ceia, memorial de Sua morte por nós, da maneira, no lugar e sobre os fundamentos que Ele próprio instituiu.</p>
 <p>Visando tornar disponível a um maior número de pessoas as verdades que este texto expõe com tanta clareza, Verdades Vivas publicou, em 1988, uma edição de A Ceia do Senhor, valendo-se de uma tradução então existente, feita em Portugal, eliminando do texto apenas as características e grafia peculiares àquele país. Esgotada essa edição, decidimos fazer uma nova tradução a partir do original em inglês, voltando a incluir os parágrafos que, por alguma razão a nós desconhecida, haviam sido omitidos na tradução feita em Portugal.</p>
 <p>Sendo assim, apresentamos aos leitores de língua portuguesa a versão integral do texto de C. H. Mackintosh, esperando que muitos possam ter seus corações tocados por tão importante assunto, e venham a atender ao amoroso convite do Senhor, celebrando a memória da Sua morte, até que Ele venha nos buscar.</p>
@@ -372,8 +374,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -381,7 +382,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

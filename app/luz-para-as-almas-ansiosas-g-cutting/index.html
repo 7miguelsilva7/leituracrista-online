@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-cutting">G. Cutting</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#introdu-o">Introdução</a></li>
     <li><a href="#o-problema-espiritual">O Problema Espiritual</a></li>
@@ -223,8 +224,10 @@ blockquote,
     <li><a href="#se-eu-n-o-for-um-dos-eleitos-n-o-posso-ser-salvo-nem-posso-crer-se-deus-n-o-me-der-poder-para-isso">Se eu não for um dos Eleitos não posso ser salvo, nem posso crer se Deus não me der poder para isso.</a></li>
     <li><a href="#uma-palavra-de-aconselhamento">Uma Palavra De Aconselhamento</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="introdu-o">Introdução</h2>
 <p>Se houve alguma coisa que pesou mais sobre o coração do autor ao escrever estas páginas, foi o pensamento de que a maioria dos que professam fé em Cristo praticam bem pouco essa fé. Em nossa preocupação com a idéia de levar paz às pessoas, existe um perigo especial que precisamos observar e orar para nos preservarmos dele e, ou seja, intrometer-nos (embora involuntariamente) entre Deus e os exercícios espirituais do indivíduo.</p>
 <p>Este risco nunca foi provavelmente maior do que numa época superficial como a nossa. É fácil possuir hoje uma certa loquacidade em assuntos religiosos sem que a alma tenha sido absolutamente despertada. Ou, caso haja alguma espiritualidade, o caráter da mesma é tão pouco profundo que mal se deixa perceber em sua vida e comportamento diários.</p>
@@ -695,8 +698,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -704,7 +706,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/w.-j.-missen">W. J. Missen</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-falar-em-l-nguas-e-o-movimento-carism-tico">O FALAR EM LÍNGUAS E O MOVIMENTO CARISMÁTICO</a></li>
     <li><a href="#cap-tulo-1-l-nguas-for-a-espiritual-for-a-sat-nica-ou-o-qu">Capítulo 1 - Línguas&hellip; força espiritual, força satânica ou o quê?</a></li>
@@ -219,8 +220,10 @@ blockquote,
     <li><a href="#cap-tulo-4-ltimas-palavras-de-advert-ncia">Capítulo 4 - Últimas palavras de advertência.</a></li>
     <li><a href="#a-experi-ncia-deve-basear-se-na-doutrina">A experiência deve basear-se na doutrina.</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-falar-em-l-nguas-e-o-movimento-carism-tico">O FALAR EM LÍNGUAS E O MOVIMENTO CARISMÁTICO</h2>
 <p>Algumas sérias advertências “Amados, não creiais a todo o espírito&hellip;” <a href="http://mysword.info/b?r=1Jo_4:1">1 João 4:1</a></p>
 <h2 id="cap-tulo-1-l-nguas-for-a-espiritual-for-a-sat-nica-ou-o-qu">Capítulo 1 - Línguas&hellip; força espiritual, força satânica ou o quê?</h2>
@@ -413,8 +416,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -422,7 +424,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

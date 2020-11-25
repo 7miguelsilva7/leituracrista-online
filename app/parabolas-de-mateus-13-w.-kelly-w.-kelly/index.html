@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/w.-kelly">W. Kelly</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#par-bolas-de-mateus-13">PARÁBOLAS DE <a href="http://mysword.info/b?r=Mat_13">MATEUS 13</a></a></li>
     <li><a href="#o-semeador">O SEMEADOR</a></li>
@@ -208,8 +209,10 @@ blockquote,
     <li><a href="#rede-lan-ada-ao-mar">REDE LANÇADA AO MAR</a></li>
     <li><a href="#conclus-o">CONCLUSÃO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="par-bolas-de-mateus-13">PARÁBOLAS DE <a href="http://mysword.info/b?r=Mat_13">MATEUS 13</a></h2>
 <p>Parábolas de <a href="http://mysword.info/b?r=Mat_13">Mateus 13</a> representa o comentário sobre o mesmo capítulo do Evangelho e é parte do livro Lectures on The Gospel of Matthew escrito por William Kelly e publicado pela primeira vez em 1868: Na impossibilidade de publicarmos, no momento, o livro na sua íntegra, procuramos trazer aos leitores ao menos uma pequena parte que, temos certeza, será de grande valor a todo aquele que se alegra em conhecer um pouco mais da Palavra de Deus.</p>
 <p>Ao terminar o <a href="http://mysword.info/b?r=Mat_12">capítulo 12 do Evangelho de Mateus</a>, vemos que o Senhor se desfaz de todos os vínculos naturais que o conectavam com Israel. Estou me referindo simplesmente ao fato de Ele haver demonstrado isto como um aspecto do Seu ensino, pois sabemos que, historicamente, o momento para o real e derradeiro rompimento com Israel aconteceu na cruz. Porém, quanto ao Seu ministério, se podemos dizer assim, o rompimento ocorreu na passagem do <a href="http://mysword.info/b?r=Mat_12">capítulo 12</a> para o <a href="http://mysword.info/b?r=Mat_13">13</a> do Evangelho de Mateus. Ele Se valeu de uma alusão feita à Sua mãe e irmãos para dizer qual era o Seu verdadeiro parentesco, ou seja, não mais com aqueles que estavam conectados com Ele pela carne, mas, a única família que Ele pode reconhecer a partir de então são aqueles que fazem a vontade de Seu Pai que está nos céus. Ele não reconhece nada além do vínculo que é formado pela Palavra de Deus quando recebida no coração e obedecida adequadamente.</p>
@@ -339,8 +342,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -348,7 +350,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

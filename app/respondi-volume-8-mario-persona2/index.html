@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/mario-persona">Mario Persona</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-que-acha-do-universalismo">O que acha do universalismo?</a></li>
     <li><a href="#para-ser-salvo-preciso-dar-tudo-aos-pobres">Para ser salvo preciso dar tudo aos pobres?</a></li>
@@ -247,8 +248,10 @@ blockquote,
     <li><a href="#os-crist-os-devem-combater-o-casamento-gay">Os cristãos devem combater o casamento gay?</a></li>
     <li><a href="#qualquer-crist-o-pode-participar-da-ceia">Qualquer cristão pode participar da ceia?</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-que-acha-do-universalismo">O que acha do universalismo?</h2>
 <p>O universalismo vai contra o ensino das Escrituras e é claramente uma doutrina demoníaca, apesar de hoje ser aceito em muitos círculos da cristandade. O que o universalismo afirma é que no final todos serão salvos pela misericórdia e graça de Deus e que essa salvação não estaria limitada a uma decisão tomada nesta vida, mas também no pós vida ou simplesmente baseada na misericórdia divina. Nós, brasileiros, temos uma expressão na política que explica de forma magnífica o universalismo melhor que muitos teólogos e enciclopédias cristãs são capazes de fazer: “Universalismo quer dizer que no final vai tudo acabar em pizza”.</p>
 <p>Os que professam o universalismo estão espalhados pelas faculdades de teologia ensinando suas doutrinas, como William Barclay, que traz o pomposo título de “Professor de Divindade e Crítica Bíblica” da Universidade de Glasgow. Ele é autor de vários livros e comentários bíblicos, de uma tradução do Novo Testamento e de uma série de estudos bíblicos. Este homem é apenas mais um exemplar das “aves” ou agentes de Satanás que o Senhor alertou que iriam fazer seus ninhos na grande árvore em que se tornou o aspecto exterior do Reino tipificado pelo pé de mostarda da parábola, ou cujo fermento viria a fermentar toda a massa dando a ela um crescimento artificial e inclusivo a toda espécie de erro.</p>
@@ -1411,8 +1414,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -1420,7 +1422,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

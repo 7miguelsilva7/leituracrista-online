@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/bruce-anstey">Bruce Anstey</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#dois-dias-nas-escrituras">DOIS DIAS NAS ESCRITURAS</a></li>
     <li><a href="#1-a-condi-o-da-igreja-como-laodic-ia">1. A Condição da Igreja como Laodicéia</a></li>
@@ -218,8 +219,10 @@ blockquote,
     <li><a href="#mateus-15-1-39">Mateus 15:1-39</a></li>
     <li><a href="#mateus-17-1-9">Mateus 17:1-9</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="dois-dias-nas-escrituras">DOIS DIAS NAS ESCRITURAS</h2>
 <p>O Senhor prometeu, &quot;Na casa de Meu Pai há muitas moradas; se não fosse assim, Eu vo-lo teria dito. Vou preparar-vos lugar. E quando Eu for, e vos preparar lugar, virei outra vez, e vos levarei para Mim mesmo, para que onde Eu estiver estejais vós também&quot; (<a href="http://mysword.info/b?r=Joh_14:2-3">João 14:2-3</a>). Ele também declarou: &quot;Certamente cede venho&quot; (<a href="http://mysword.info/b?r=Rev_22:20">Apocalipse 22:20</a>). A esperança apropriada ao cristão é aguardar o Senhor vindo a qualquer memento (<a href="http://mysword.info/b?r=1Th_1:9-10">1 Tessalonicenses 1:9-10</a>). O Senhor não revelou uma data especifica de quando Ele iria voltar, para que pudesse haver uma esperança sempre presente para a Igreja ao longo de todo o período de sua jornada na Terra. O apóstolo Paulo em seus dias incluía-se entre aqueles que esperavam ser arrebatados na vinda do Senhor. Ele dizia: &quot;Nós, os que ficarmos vivos, seremos arrebatados juntamente com eles&quot; (<a href="http://mysword.info/b?r=1Th_4:17">1 Tessalonicenses 4:17</a> - Veja também <a href="http://mysword.info/b?r=1Co_15:51">1 Coríntios 15:51</a>). Embora não devamos fixar uma data para a vinda do Senhor, precisamos discernir os tempos (<a href="http://mysword.info/b?r=Mat_16:3">Mateus 16:3</a>).</p>
 <p>Satanás está fazendo tudo o que pode para convencer a Igreja a se acomodar aqui neste mundo. Uma de suas várias maneiras de fazer isto é tirar da Igreja a esperança presente da vinda do Senhor. Hoje em dia, devido a um ensino errôneo, muitos cristãos amados deixaram de lado esta esperança e não estão aguardando a vinda do Senhor para qualquer memento. Ao invés disto, estão olhando para os eventos proféticos, esperando que eles se cumpram primeiro. Trata-se de um erro. A profecia propriamente dita não está se cumprindo hoje. A profecia não tem a ver com a Igreja, mas sim com Israel e as nações que irão povoar a Terra milenial. Já que Israel tem sido, na época atual, posto de lado por causa de sua rejeição a Cristo, a profecia foi suspensa (veja as setenta semanas de Daniel - <a href="http://mysword.info/b?r=Dan_9">Daniel 9</a>; <a href="http://mysword.info/b?r=Rom_11">Romanos 11</a>) até que venha a plenitude dos gentios e a Igreja seja levada para a glória. Não estamos esperando pelo cumprimento da profecia, estamos esperando pela vinda do Senhor. Existem, porém, certos indícios inequívocos que elevam nosso coração ao céu em uma sempre nova expectativa pela volta iminente do Senhor.</p>
@@ -341,8 +344,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -350,7 +352,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

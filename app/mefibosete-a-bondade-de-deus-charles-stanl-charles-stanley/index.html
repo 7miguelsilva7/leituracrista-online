@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/charles-stanley">Charles Stanley</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#mefibosete-a-bondade-de-deus">MEFIBOSETE - A BONDADE DE DEUS</a></li>
     <li><a href="#o-homem-conclui-que-deus-seu-inimigo">O HOMEM CONCLUI QUE DEUS É SEU INIMIGO</a></li>
@@ -207,8 +208,10 @@ blockquote,
     <li><a href="#mas-a-vossa-tristeza-se-converter-em-alegria">MAS A VOSSA TRISTEZA SE CONVERTERÁ EM ALEGRIA</a></li>
     <li><a href="#o-fruto-de-uma-f-salvadora">O FRUTO DE UMA FÉ SALVADORA</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="mefibosete-a-bondade-de-deus">MEFIBOSETE - A BONDADE DE DEUS</h2>
 <p>Certa manhã bem cedo, há muitos anos, estava lendo o <a href="http://mysword.info/b?r=2Sa_9">capítulo 9 de 2 Samuel</a>. Depois de lê-lo uma vez, pensei, &quot;Que capítulo estranho, acerca de um jovem aleijado de ambos os pés&quot;. Li-o novamente, e ainda não podia ver nada nele.</p>
 <p>Depois de lê-lo pela terceira vez, meus olhos pararam nestas palavras: &quot;Decerto usarei contigo de beneficência por amor de Jônatas, teu pai&quot; (<a href="http://mysword.info/b?r=2Sa_9:7">2 Samuel 9:7</a>). Um pensamento brilhou de repente em minha mente: &quot;Ah! esta é uma figura da bondade de Deus, por meio de Jesus Cristo&quot;. Que figura estava então perante mim - como uma bela paisagem ao romper da manhã. À medida que os anos passaram, a beleza dessa imagem tem aumentado cada vez mais em minha mente. Por muitas vezes fui guiado a pregar a Cristo a partir desta figura, e raramente sem que almas fossem convertidas a Deus. Isto me encoraja a discorrer, em fé, sobre esta interessante porção da Palavra de Deus juntamente com meus leitores, confiando que Deus irá usá-la para bênção de muitas almas.</p>
@@ -327,8 +330,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -336,7 +338,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

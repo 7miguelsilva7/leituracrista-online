@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-e.-lunden">C. E. Lunden</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-c-ntico-dos-c-nticos-do-noivo">O CÂNTICO DOS CÂNTICOS DO NOIVO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-c-ntico-dos-c-nticos-do-noivo">O CÂNTICO DOS CÂNTICOS DO NOIVO</h2>
 <p>C. E. Lunden</p>
 <p>A criação não seria completa sem a mulher, portanto enquanto Adão dormia, Deus tirou uma costela do seu lado e formou a mulher. Ela se tornou osso de seus ossos e carne de sua carne. Seu nome, Eva, significa mãe de todos os viventes. Cristo em ressurreição é o último Adão, o primogênito da nova criação, e a Igreja se torna Sua noiva. Somos membros do Seu corpo, de Sua carne e de Seus ossos (<a href="http://mysword.info/b?r=Eph_5">Efésios 5</a>). O Cristo não será completo até que Sua noiva esteja no seu lugar ao Seu lado, a plenitude dEle que preenche tudo em todos. Ela tomará o lugar da mãe de todos os viventes, e é vista como a santa e celestial Jerusalém, possuindo a glória de Deus.</p>
@@ -274,8 +277,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -283,7 +285,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

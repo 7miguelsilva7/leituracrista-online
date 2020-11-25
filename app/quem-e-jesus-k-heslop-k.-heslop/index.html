@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/k.-heslop">K. Heslop</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#quem-jesus">QUEM É JESUS?</a></li>
     <li><a href="#um-menino-um-filho">UM MENINO&hellip; UM FILHO</a></li>
@@ -202,8 +203,10 @@ blockquote,
     <li><a href="#eis-me-aqui">EIS-ME AQUI</a></li>
     <li><a href="#nosso-perfeito-sacrif-cio">NOSSO PERFEITO SACRIFÍCIO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="quem-jesus">QUEM É JESUS?</h2>
 <p>O mundo hoje está cheio de confusão e engano acerca de Jesus; quem Ele é, o que fez, e o que ensinou. Parte disso se deve à ignorância, mas muito é resultado da obra de Satanás para manter os homens afastados de Deus. Apesar de ser Jesus o fundamento da fé cristã, nem sempre temos uma compreensão clara de Quem Ele é! Dizer que Jesus é Deus santo, e perfeito Homem é verdade, mas parece ser uma contradição. Nossa mente finita tem dificuldades para compreender o conceito de um Deus divino. Mas em Jesus vemos tanto a divindade como a perfeita humanidade.</p>
 <h2 id="um-menino-um-filho">UM MENINO&hellip; UM FILHO</h2>
@@ -290,8 +293,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -299,7 +301,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

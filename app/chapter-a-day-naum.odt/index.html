@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -196,16 +197,18 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#1053">#1053</a></li>
     <li><a href="#naum-1"><a href="http://mysword.info/b?r=Nah_1">NAUM 1</a></a></li>
     <li><a href="#1054">#1054</a></li>
     <li><a href="#naum-2"><a href="http://mysword.info/b?r=Nah_2">NAUM 2</a></a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="1053">#1053</h2>
 <p>A criação é obra dos dedos de Deus (<a href="http://mysword.info/b?r=Psa_8:3">Sl 8:3</a>)&hellip; o castigo do ímpio é obra da mão de Deus (<a href="http://mysword.info/b?r=Psa_39:10">Sl 39:10</a>)&hellip; a salvação é obra do braço de Deus (<a href="http://mysword.info/b?r=Psa_77:1">Sl 77:1</a>).</p>
 <h2 id="naum-1"><a href="http://mysword.info/b?r=Nah_1">NAUM 1</a></h2>
@@ -279,8 +282,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -288,7 +290,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

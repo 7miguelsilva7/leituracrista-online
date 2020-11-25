@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -196,8 +197,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#432">#432</a></li>
     <li><a href="#1-samuel-1-vers-1-11"><a href="http://mysword.info/b?r=1Sa_1:1-11">1 SAMUEL 1, Vers. 1-11</a></a></li>
@@ -270,8 +271,10 @@ blockquote,
     <li><a href="#466">#466</a></li>
     <li><a href="#1-samuel-31"><a href="http://mysword.info/b?r=1Sa_31">1 SAMUEL 31</a></a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="432">#432</h2>
 <p>Minha reputação é o que eu sou na luz (em público). Meu caráter é o que eu sou no escuro (na intimidade).</p>
 <h2 id="1-samuel-1-vers-1-11"><a href="http://mysword.info/b?r=1Sa_1:1-11">1 SAMUEL 1, Vers. 1-11</a></h2>
@@ -600,8 +603,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -609,7 +611,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

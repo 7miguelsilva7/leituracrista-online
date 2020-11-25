@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-mesmo-senhor-descer-do-c-u">&quot;O MESMO SENHOR DESCERÁ DO CÉU&quot;</a></li>
     <li><a href="#cap-tulo-primeiro-a-f-o-amor-e-a-esperan-a">Capítulo Primeiro - A Fé, o Amor e a Esperança</a></li>
@@ -203,8 +204,10 @@ blockquote,
     <li><a href="#cap-tulo-quarto-o-mesmo-senhor">Capítulo Quarto - O Mesmo Senhor</a></li>
     <li><a href="#cap-tulo-quinto-conservados-irrepreens-veis">Capítulo Quinto - Conservados Irrepreensíveis</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-mesmo-senhor-descer-do-c-u">&quot;O MESMO SENHOR DESCERÁ DO CÉU&quot;</h2>
 <p>Um Breve Estudo sobre 1 Tessalonicenses</p>
 <p>A volta do Senhor, amado irmão, é o assunto que gostaria de tratar. Antes da vinda do Senhor a este mundo, as Escrituras não mostravam muita coisa acerca do céu. Porém, tão logo Ele aqui chegou, veio do céu um testemunho dirigido aos pastores de ovelhas, que anunciava haver glória a Deus nas maiores alturas e paz na Terra aos homens a quem Ele quer bem(????) . E a primeira palavra a testemunhar do Senhor veio do céu - pela voz de Deus - dizendo: &quot;Tu és Meu Filho amado, em Ti Me tenho comprazido&quot; (<a href="http://mysword.info/b?r=Luk_3:22">Lucas 3:22</a>). Em <a href="http://mysword.info/b?r=Joh_17">João 17</a> encontramos o Senhor aqui na Terra conversando com Seu Pai no céu acerca do Seu povo celestial, com o coração transbordando de amor e cuidado para com os Seus. Então, depois de tudo consumado e de volta ao céu a fim de Se assentar à destra do Seu Pai, a glória pôde brilhar vinda das alturas, pois Deus quis que a glória do Seu amado Filho fosse vista. Essa glória foi a que literalmente brilhou quando Estêvão foi martirizado; ele viu o Filho do homem olhando para si e pôde falar com Ele. Na epístola aos Hebreus, vemos coisas maravilhosas pois este Homem, Jesus, está no céu. Todas as coisas tão diferentes que encontramos naquela epístola são apresentadas pelo Espírito Santo a fim de alimentar as nossas almas com coisas celestiais. Se minha cidadania é celestial, o que mais poderia esperar? Que deveria haver uma porção maior das coisas deste mundo em minha mente? Mais das coisas deste mundo em meu coração? Ou deveria eu esperar que houvesse mais das coisas do céu em minha mente; mais das coisas do céu em meu coração? Oh! Certamente meu desejo deve ser que haja mais das coisas celestiais em minha mente e mais das coisas celestiais em meu coração!</p>
@@ -315,8 +318,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -324,7 +326,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

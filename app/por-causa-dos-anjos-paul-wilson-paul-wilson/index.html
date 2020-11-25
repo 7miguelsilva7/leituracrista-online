@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/paul-wilson">Paul Wilson</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#por-causa-dos-anjos">POR CAUSA DOS ANJOS</a></li>
     <li><a href="#uma-quest-o-de-ordem">UMA QUESTÃO DE ORDEM</a></li>
@@ -202,8 +203,10 @@ blockquote,
     <li><a href="#um-exemplo-dado-pela-pr-pria-natureza">UM EXEMPLO DADO PELA PRÓPRIA NATUREZA</a></li>
     <li><a href="#outras-distor-es">OUTRAS DISTORÇÕES</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="por-causa-dos-anjos">POR CAUSA DOS ANJOS</h2>
 <p>&quot;Mas quero que saibais que Cristo é a cabeça de todo o varão, e o varão a cabeça da mulher; e Deus a cabeça de Cristo. Todo o homem que ora ou profetiza, tendo a cabeça coberta, desonra a sua própria cabeça. Mas toda a mulher que ora ou profetiza com a cabeça descoberta, desonra a sua própria cabeça, porque é como se estivesse rapada. Portanto, se a mulher não se cobre com véu, tosquie-se também. Mas, se para a mulher é coisa indecente tosquiar-se ou rapar-se, que ponha o véu.</p>
 <p>&quot;O varão pois não deve cobrir a cabeça, porque é a imagem e glória de Deus, mas a mulher é a glória do varão. Porque o varão não provém da mulher, mas a mulher do varão. Porque também o varão não foi criado por causa da mulher, mas a mulher por causa do varão. Portanto, a mulher deve ter sobre a cabeça sinal de poderio, por causa dos anjos. Todavia, nem o varão é sem a mulher, nem a mulher sem o varão, no Senhor. Porque, como a mulher provém do varão, assim também o varão provém da mulher, mas tudo vem de Deus.</p>
@@ -290,8 +293,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -299,7 +301,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

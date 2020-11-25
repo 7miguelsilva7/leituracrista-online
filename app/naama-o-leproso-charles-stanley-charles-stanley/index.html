@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/charles-stanley">Charles Stanley</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#naam-o-leproso">NAAMÃ, O LEPROSO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="naam-o-leproso">NAAMÃ, O LEPROSO</h2>
 <p>CHARLES STANLEY</p>
 <p>&quot;Naamã, chefe do exército do rei da Síria, era um grande homem diante do seu senhor, e de muito respeito; porque por ele o Senhor dera livramento aos siros: e era este varão homem valoroso porém leproso.&quot; (<a href="http://mysword.info/b?r=2Ki_5:1">2 Reis 5:1</a>) Quanto vale, afinal, a grandeza nas coisas deste mundo? Um homem pode se tornar bem famoso; pode prosperar nos negócios até superar quem quer que seja, ou pode escalar o mais alto pináculo de honra da grandeza política ou militar. Naamã era tudo isso, mas ele era leproso. Assim também, o homem, não importa qual posição ocupe neste mundo, é um pecador. Ah! isto estraga tudo; torna amargo todo e qualquer cálice deste mundo.</p>
@@ -275,8 +278,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -284,7 +286,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

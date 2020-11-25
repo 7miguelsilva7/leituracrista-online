@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/desconhecido">DESCONHECIDO</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li>
       <ul>
@@ -202,8 +203,10 @@ blockquote,
       </ul>
     </li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h3 id="considerando-meu-irm-o">CONSIDERANDO MEU IRMÃO</h3>
 <p>&quot;O amor cobre todas as transgressões&quot; (<a href="http://mysword.info/b?r=Pro_10:12">Provérbios 10:12</a>). Que maravilhosa declaração é esta! Implica em algo muito prático e ativo, nada teórico, pois é a marca característica pela qual os cristãos são conhecidos (<a href="http://mysword.info/b?r=Joh_13:35">João 13:35</a>). Amor é a diferença entre religião e Cristianismo, entre sinceridade e o que é abstrato e superficial. É o único motivo para um serviço aceitável ao Senhor.</p>
 <p>Este amor, posto por Deus nos corações dos crentes (<a href="http://mysword.info/b?r=Rom_5:5">Romanos 5:5</a>), é o poder que nos capacita a agirmos como devemos. É amor que se regozija quando outros, e não nós, estão sendo louvados e honrados; amor que é grato quando o Senhor usa outros para promoção de Sua Glória, sem inveja, ciúmes ou qualquer sentimento indigno que possamos imaginar.</p>
@@ -274,8 +277,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -283,7 +285,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

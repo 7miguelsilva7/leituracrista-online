@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/verdades-b%C3%ADblicas">Verdades Bíblicas</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#a-vit-ria-de-jos">A Vitória de José</a></li>
     <li><a href="#a-batalha">A Batalha</a></li>
@@ -202,8 +203,10 @@ blockquote,
     <li><a href="#a-vit-ria-verdades-b-blicas">A VITÓRIA - VERDADES BÍBLICAS</a></li>
     <li><a href="#conserve-se-puro">Conserve-se Puro</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="a-vit-ria-de-jos">A Vitória de José</h2>
 <p><a href="http://mysword.info/b?r=Gen_39">Gênesis 39</a></p>
 <p>Quando José era jovem, conseguiu uma vitória que mudou toda a sua vida. Ele havia sido vendido como escravo para o Egito, mas o Senhor estava com ele e o fazia prosperar. Quando José foi feito mordomo-mor sobre tudo o que possuía Potifar, capitão da guarda de Faraó, Deus o abençoava e ajudava em tudo o que José fazia. Então José teve que tomar uma decisão que iria mudar sua vida.</p>
@@ -277,8 +280,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -286,7 +288,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

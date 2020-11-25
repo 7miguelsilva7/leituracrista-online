@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/paul-wilson">Paul Wilson</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#televis-o">TELEVISÃO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="televis-o">TELEVISÃO</h2>
 <p>Sentimo-nos na obrigação de examinar o assunto da televisão no lar e, sobretudo, em como isto afeta o cristão. Com o rápido crescimento deste último gigante do mundo da diversão e entretenimento, e com o aumento da propaganda para que os cristãos abram os seus lares a esta obra-prima da invenção humana, cremos que é hora de encarar o assunto de frente.</p>
 <p>Sendo assim, seria apropriado nos lembrarmos de uma pergunta que fez o profeta Isaías ao rei Ezequias: &quot;Que viram em tua casa?&quot; (<a href="http://mysword.info/b?r=2Ki_20:15">2 Reis 20:15</a>). Este moderno meio de comunicação irá trazer ao lar uma variedade de cenas e imagens como um alimento cotidiano para seus habitantes e hóspedes. Será para a glória de Deus? Aumentará nossa ocupação com as coisas celestiais? Poderá nos ajudar a crescer no conhecimento de nosso Senhor e Salvador Jesus Cristo? Ou será algo mais para desviar nossa atenção do Único que é digno de nossa ocupação principal?</p>
@@ -285,8 +288,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -294,7 +296,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

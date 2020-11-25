@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/e.-j.-checkley">E. J. Checkley</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-centro-de-todo-descanso">O CENTRO DE TODO DESCANSO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-centro-de-todo-descanso">O CENTRO DE TODO DESCANSO</h2>
 <p>O próprio Deus é o único centro de todo descanso. Em toda a criação há movimento. A crosta terrestre sofre mudanças - enquanto umas ilhas são formadas, outras desaparecem sob as ondas. Terremotos atiram ao solo edifícios antes considerados sólidos. Erupções vulcânicas cobrem de destruição populações inteiras. Primavera, verão, outono e inverno se sucedem propiciando plantios e colheitas. Os rios correm para o mar, e a evaporação leva suas águas de volta aos picos das montanhas. Crianças nascem, crescem, atingem a idade adulta e então suas vidas começam a declinar, até que morrem. Outras vêm para seguir o mesmo curso. Todas as coisas estão cheias de movimento; onde encontraremos descanso?</p>
 <p>Se nos colocamos, em pensamento, no centro do universo, veremos que cada planeta, cada estrela, encontra-se em um movimento rápido demais para a mente humana acompanhar. Quando consideramos a Lua em sua órbita ao redor da Terra, a Terra e sua Lua companheira ao redor do Sol, e o Sol, com a Terra e a Lua, e os outros planetas do sistema solar e suas luas, e todas as estrelas do céu girando em suas órbitas, a mente perde-se na vastidão do mecanismo celeste e, desnorteada, pergunta onde pode ser encontrado o descanso.</p>
@@ -308,8 +311,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -317,7 +319,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

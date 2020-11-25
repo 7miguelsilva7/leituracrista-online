@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,16 +194,18 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-cutting">G. Cutting</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#seguran-a-certeza-e-gozo-da-salva-o-eterna">Segurança, Certeza e Gozo da Salvação Eterna</a></li>
     <li><a href="#caminho-da-salva-o">CAMINHO DA SALVAÇÃO</a></li>
     <li><a href="#o-conhecimento-da-salva-o">O CONHECIMENTO DA SALVAÇÃO</a></li>
     <li><a href="#o-gozo-da-salva-o">O GOZO DA SALVAÇÃO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="seguran-a-certeza-e-gozo-da-salva-o-eterna">Segurança, Certeza e Gozo da Salvação Eterna</h2>
 <p>Quando estamos numa estação ferroviária ouvimos, com certa freqüência, a seguinte pergunta: &quot;Em que classe você está viajando?&quot; Você, leitor, com toda a certeza está de viagem - de viagem para a eternidade - e pode ser que neste momento esteja muito próximo da estação final: a Morte. Permita-me, então, que lhe pergunte: &quot;Nesta jornada pela vida, em que classe você está viajando?&quot;</p>
 <p>Neste caso podemos pensar em três diferentes classes, e vou explicar quais são a fim de que você possa responder à minha pergunta como que diante de Deus; sim, diante dAquele a Quem certamente todos nós temos que prestar contas.</p>
@@ -350,8 +353,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -359,7 +361,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/w.-fereday">W. FEREDAY</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#para-que-servem-os-milagres">PARA QUE SERVEM OS MILAGRES?</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="para-que-servem-os-milagres">PARA QUE SERVEM OS MILAGRES?</h2>
 <p>W. FEREDAY</p>
 <p>Vivemos em uma época de incredulidade. Os homens dizem não acreditar mais em milagres. Isto é dito não apenas entre ateus ou céticos, mas na própria Cristandade, onde o evangelho derrama sua luz. Só falta a Cristandade dar mais um passo em sua senda de incredulidade: repudiar o próprio Deus. Este passo será dado muito em breve quando o homem se endeusar na pessoa do filho da perdição, o Anticristo, que é encontrado nas Escrituras (<a href="http://mysword.info/b?r=2Th_2:3,4">2 Tessalonicenses 2:3,4</a>). Quando isso acontecer, não haverá mais lugar para Deus e Seu Filho. Por incrível que possa parecer, nessa ocasião os homens estarão novamente crendo em milagres. &quot;Sinais e prodígios de mentira&quot; irão se manifestar e serão cridos. Não é somente o céu que produz maravilhas &ndash; o inferno também as manifesta. Isto foi testemunhado por Moisés em sua época e será testemunhado novamente no dia do Anticristo.</p>
@@ -266,8 +269,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -275,7 +277,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

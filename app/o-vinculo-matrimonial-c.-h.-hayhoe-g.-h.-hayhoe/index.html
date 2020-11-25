@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-h.-hayhoe">G. H. Hayhoe</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-que-dizem-as-escrituras-acerca-de-div-rcio-e-novo-casamento">O QUE DIZEM AS ESCRITURAS ACERCA DE DIVÓRCIO E NOVO CASAMENTO</a></li>
     <li><a href="#o-v-nculo-matrimonial">O VÍNCULO MATRIMONIAL</a></li>
@@ -210,8 +211,10 @@ blockquote,
     <li><a href="#1-cor-ntios-6-9-11">1 Coríntios 6:9-11:</a></li>
     <li><a href="#romanos-6-17">Romanos 6:17:</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-que-dizem-as-escrituras-acerca-de-div-rcio-e-novo-casamento">O QUE DIZEM AS ESCRITURAS ACERCA DE DIVÓRCIO E NOVO CASAMENTO</h2>
 <p>É importante reconhecer que &quot;casado&quot; significa uma posição assumida por um tempo determinado e de uma forma que é reconhecida como tal pelas &quot;potestades que há&quot; (<a href="http://mysword.info/b?r=Rom_13:1">Romanos 13:1</a>). Quando um homem e uma mulher se unem, eles tornam-se &quot;dois numa só carne&quot; (<a href="http://mysword.info/b?r=1Co_6:16">1 Coríntios 6:16</a>), mas isso não é exatamente o matrimônio no sentido bíblico (<a href="http://mysword.info/b?r=Joh_4:18">João 4:18</a>). O matrimônio é algo legal; algo que conta com um certo reconhecimento público do evento, como em <a href="http://mysword.info/b?r=Joh_2:1">João 2:1</a>, enquanto que a relação matrimonial é a consumação do matrimônio. Trata-se de fornicação quando um homem ou mulher tem uma relação sexual aparte do matrimônio (<a href="http://mysword.info/b?r=Gen_34:1-31">Gênesis 34:1-31</a>; <a href="http://mysword.info/b?r=1Co_6:15-18">1 Coríntios 6:15-18</a>). Até mesmo a esposa de Caim já era sua mulher quando tiveram uma relação (<a href="http://mysword.info/b?r=Gen_4:17">Gênesis 4:17</a>).</p>
 <p>Se uma pessoa casada comete adultério, seja homem ou mulher, torna-se uma só carne com o outro (<a href="http://mysword.info/b?r=1Co_6:16">1 Coríntios 6:16</a>), mas não é isso, em si, que rompe o matrimônio. É um pecado muito sério aos olhos de Deus, e exige a ação da assembléia (<a href="http://mysword.info/b?r=Gen_39:9">Gênesis 39:9</a>; <a href="http://mysword.info/b?r=Pro_6:32-33">Provérbios 6:32-33</a>; <a href="http://mysword.info/b?r=1Co_5:11-13">1 Coríntios 5:11-13</a>). É também um sério pecado contra o cônjuge, pois rompe o vínculo que existe entre marido e mulher. Isso também atrai o solene governo de Deus (<a href="http://mysword.info/b?r=2Sa_12:10">2 Samuel 12:10</a>), porém, legalmente, o matrimônio permanece, a menos que seja rompido diante das &quot;potestades que há&quot; (<a href="http://mysword.info/b?r=Rom_13:1">Romanos 13:1</a>). Portanto, a questão que gostaríamos de considerar neste artigo é esta: Será que as Escrituras permitem que o matrimônio seja rompido diante das &quot;potestades que há&quot; (<a href="http://mysword.info/b?r=Rom_13:1">Romanos 13:1</a>), e com que fundamento? Será que Deus permite um novo casamento, se o matrimônio for rompido de uma forma bíblica? A busca, em oração, das passagens das Escrituras a seguir, irá mostrar a vontade de Deus nestes assuntos, porém cada caso é único e deve ser considerado diante do Senhor, o qual é o Único que pode dar a sabedoria necessária. É isto que significa discernimento sacerdotal (<a href="http://mysword.info/b?r=Lev_13:5-6">Levítico 13:5-6</a>), pois &quot;o Senhor é o Deus da sabedoria, por Ele são as obras pesadas na balança&quot; (<a href="http://mysword.info/b?r=1Sa_2:3">1 Samuel 2:3</a>).</p>
@@ -320,8 +323,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -329,7 +331,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

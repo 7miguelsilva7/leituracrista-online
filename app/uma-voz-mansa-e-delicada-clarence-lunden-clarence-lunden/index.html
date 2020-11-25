@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-lunden">C. Lunden</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#uma-voz-mansa-e-delicada">UMA VOZ MANSA E DELICADA</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="uma-voz-mansa-e-delicada">UMA VOZ MANSA E DELICADA</h2>
 <p>“&hellip; uma voz mansa e delicada” ( <a href="http://mysword.info/b?r=1Ki_19:1-18">1 Reis 19:1-18</a>) Deus geralmente usa homens para falar Sua palavra para outros homens. Elias foi um desses mensageiros. Em <a href="http://mysword.info/b?r=1Ki_19">1 Reis 19</a>, nós vemos o arrependimento de Elias, o qual é uma das sete figuras de arrependimento em seu ministério. Além da missão de Elias para com Israel, seu ministério e carreira descrevem também eventos futuros para os gentios.</p>
 <p>Por causa da queda no jardim do Éden, o homem adquiriu uma consciência a qual o introduz numa batalha interior que ele não pode evitar. A saída desse problema depende de sua resposta quanto à moral a ele revelada. A luz de Deus é dada, por Sua palavra, em forma de princípios, e o arrependimento é um dos primeiros.</p>
@@ -317,8 +320,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -326,7 +328,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

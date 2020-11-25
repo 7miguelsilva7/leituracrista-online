@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/mario-persona">Mario Persona</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#bruxaria-macumba-e-feiti-aria-funcionam">Bruxaria, macumba e feitiçaria funcionam?</a></li>
     <li><a href="#o-que-voc-acha-do-transplante-de-cabe-a">O que você acha do transplante de cabeça?</a></li>
@@ -248,8 +249,10 @@ blockquote,
     <li><a href="#por-que-n-o-consigo-compartilhar-nada-com-os-irm-os">Por que não consigo compartilhar nada com os irmãos?</a></li>
     <li><a href="#cor-dat-e-abir-o-foram-lan-ados-vivos-no-inferno">Coré, Datã e Abirão foram lançados vivos no inferno?</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="bruxaria-macumba-e-feiti-aria-funcionam">Bruxaria, macumba e feitiçaria funcionam?</h2>
 <p>Trabalhei numa empresa onde a secretária que dava suporte ao meu setor era “<em>Mãe de Santo”</em> e dona de uma loja de artigos de religiões afro-brasileiras. Conversávamos bastante, eu falando do evangelho, ela explicando como funcionavam seus “<em>trabalhos”</em>. Um dia ela até me pediu conselho do que dizer a um amigo que queria se suicidar.</p>
 <p>Talvez tenha funcionado em parte o que falei para ela passar ao amigo, pois não tive notícia de sua morte, mas também não tive notícia de sua conversão.</p>
@@ -1177,8 +1180,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -1186,7 +1188,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

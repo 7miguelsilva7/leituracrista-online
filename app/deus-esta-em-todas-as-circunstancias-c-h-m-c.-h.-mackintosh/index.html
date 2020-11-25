@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-h.-mackintosh">C. H. MACKINTOSH</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#deus-est-em-todas-as-circunst-ncias">DEUS ESTÁ EM TODAS AS CIRCUNSTÂNCIAS</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="deus-est-em-todas-as-circunst-ncias">DEUS ESTÁ EM TODAS AS CIRCUNSTÂNCIAS</h2>
 <p>C. H. MACKINTOSH</p>
 <p>Não há nada que ajude tanto o cristão a suportar as provas que encontra em seu caminho do que o hábito de ver Deus em todas as circunstâncias. Não há circunstância, por mais trivial ou comum que seja, que não possa ser considerada como um mensageiro de Deus, se apenas o ouvido tiver sido circuncidado para ouvir, e a mente for espiritual para entender a mensagem. Se perdermos de vista essa valiosa verdade, a vida, em inúmeras ocasiões, não será mais do que maçante monotonia, não nos apresentando nada além de circunstâncias ordinárias, comuns. Por outro lado, se pudermos lembrar, à medida que começamos cada novo dia, que a mão de nosso Pai pode ser identificada em cada cena – se pudermos ver, tanto na menor como na mais pesada circunstância, um pouco da presença divina, quão significativa não se tornará a história de cada um de nossos dias!</p>
@@ -272,8 +275,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -281,7 +283,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

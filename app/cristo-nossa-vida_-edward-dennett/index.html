@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/edward-dennet">Edward Dennet</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#cristo-nossa-vida">CRISTO, NOSSA VIDA</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="cristo-nossa-vida">CRISTO, NOSSA VIDA</h2>
 <p>Quando o Senhor Jesus veio ao mundo, trevas cobriam a Terra, e as pessoas estavam em densa escuridão; sim, a noite de morte prevalecia por todo o globo terrestre. Era, usando a linguagem de Jó ao falar da morte, uma terra de escuridão e sombra de morte; &quot;terra escuríssima, como a própria escuridão; terra da sombra da morte e sem ordem alguma, e onde a luz é como a escuridão&quot; (<a href="http://mysword.info/b?r=Job_10:21-22">Jó 10:21-22</a>). &quot;Portanto, como por um homem entrou o pecado no mundo, e pelo pecado a morte, assim também a morte passou a todos os homens por isso que todos pecaram&quot; (<a href="http://mysword.info/b?r=Rom_5:12">Romanos 5:12</a>). Portanto, não havia nem sequer um raio de luz para aliviar a completa escuridão do estado e da condição do homem. E não era só isso, mas Satanás também reinava; pois pelo pecado do homem, Satanás adquiriu direitos sobre ele, e o manteve assim em completa submissão à sua vontade. Satanás tornou-se, portanto, o príncipe deste mundo (<a href="http://mysword.info/b?r=Joh_12:31">João 12:31</a>). &quot;Mas, vindo a plenitude dos tempos, Deus enviou Seu Filho, nascido de mulher, nascido sob a lei&quot; (<a href="http://mysword.info/b?r=Gal_4:4">Gálatas 4:4</a>). &quot;No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio com Deus. Todas as coisas foram feitas por Ele, e sem Ele nada do que foi feito se fez. NEle estava a vida, e a vida era a luz dos homens. E a luz resplandece nas trevas, e as trevas não a compreenderam&quot; (<a href="http://mysword.info/b?r=Joh_1:1-5">João 1:1-5</a>).</p>
 <p>Portanto Cristo entrou neste cenário de trevas e imediatamente houve duas esferas morais distintas. Ao redor dEle tudo era trevas - as trevas da morte; nEle estava a vida, e a vida era a luz dos homens. A luz e as trevas estavam assim em contato; pois a luz brilhou em meio às trevas, e as trevas não a compreenderam. Mas ali estava Cristo, tendo vida em Si mesmo e, por conseguinte, sendo Ele a &quot;luz verdadeira, que ilumina a todo o homem que vem ao mundo&quot; (<a href="http://mysword.info/b?r=Joh_1:9">João 1:9</a>). É verdade que poucos a receberam, mas ali estava a luz brilhando para todos, de modo que se alguém permaneceu nas trevas foi porque não voltou sua face para a luz. &quot;Estava no mundo, e o mundo foi feito por Ele, e o mundo não O conheceu. Veio para o que era Seu, e os Seus não O receberam. Mas, a todos quantos O receberam, deu-lhes o poder de serem feitos filhos de Deus, aos que crêem no Seu nome; os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus&quot; (<a href="http://mysword.info/b?r=Joh_1:10-13">João 1:10-13</a>). Só estes - todos quantos O receberam - foram iluminados e, tendo sido iluminados, receberam vida, pois nasceram de Deus.</p>
@@ -283,8 +286,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -292,7 +294,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/mario-persona">Mario Persona</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#eu-eu-eu">Eu, eu eu!</a></li>
     <li><a href="#esperar-no-senhor">Esperar no Senhor</a></li>
@@ -366,8 +367,10 @@ blockquote,
     <li><a href="#da-lei-para-a-gra-a">Da Lei para a graça</a></li>
     <li><a href="#alegria-alegria">Alegria, alegria!</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="eu-eu-eu">Eu, eu eu!</h2>
 <p><a href="http://mysword.info/b?r=Luk_12:15-21"><strong>Lucas 12:15-21</strong></a></p>
 <p><em>Jesus conta uma parábola: “A terra de certo homem rico produziu muito bem. Ele pensou consigo mesmo: ‘O que [eu] vou fazer? Não tenho onde armazenar minha colheita’. Então disse: ‘Já sei o que [eu] vou fazer. [Eu] vou derrubar os meus celeiros e [eu vou] construir outros maiores, e ali [eu] guardarei toda a minha safra e todos os meus bens. E [eu] direi a mim mesmo: Você tem grande quantidade de bens, armazenados para muitos anos. Descanse, coma, beba e alegre-se’. Contudo, Deus lhe disse: ‘Insensato! Esta mesma noite a sua vida lhe será exigida. Então, quem ficará com o que você preparou?’ Assim acontece com quem guarda para si riquezas, mas não é rico para com Deus” (</em><a href="http://mysword.info/b?r=Luk_12:15-21"><em>Lucas 12:15-21</em></a><em>).</em></p>
@@ -1987,8 +1990,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -1996,7 +1998,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

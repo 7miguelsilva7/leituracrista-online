@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-h.-hayhoe">G. H. Hayhoe</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#uma-palavra-sobre-noivado">UMA PALAVRA SOBRE NOIVADO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="uma-palavra-sobre-noivado">UMA PALAVRA SOBRE NOIVADO</h2>
 <p>&quot;&hellip;e foi-lhe ela por mulher e amou-a&quot; (<a href="http://mysword.info/b?r=Gen_24:67">Gênesis 24:67</a>). Tal é o grande clímax para esta maravilhosa história de amor encontrada na Palavra de Deus, a qual nós gostaríamos de considerar em conexão com sua aplicação prática para esta importante decisão na vida dos jovens cristãos.</p>
 <p>Costuma-se dizer que todos buscam a satisfação de suas afeições e, maravilha das maravilhas, Deus é amor e deseja encontrar a satisfação de Suas Divinas afeições na bênção do homem redimido. Cristo, o Filho bendito de Deus em Humanidade, terá uma esposa como o objeto do Seu amoroso coração por toda a Eternidade. A alma que aprendeu isto e experimentou do Seu amor, encontrou a verdadeira felicidade, ou seja, a verdadeira porção de satisfação, a qual terá seu grande clímax no &quot;casamento do Cordeiro&quot; que se dará no Céu.</p>
@@ -304,8 +307,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -313,7 +315,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -196,8 +197,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/chapter-a-day">Chapter a Day</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#684">#684</a></li>
     <li><a href="#mateus-1"><a href="http://mysword.info/b?r=Mat_1">MATEUS 1</a></a></li>
@@ -274,8 +275,10 @@ blockquote,
     <li><a href="#720">#720</a></li>
     <li><a href="#mateus-28"><a href="http://mysword.info/b?r=Mat_28">MATEUS 28</a></a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="684">#684</h2>
 <p>Quando você conhece o coração de Deus, jamais irá questionar Sua vontade. A vontade de Deus é Sua expressão do Seu amor por mim. O maior conhecimento que um homem possa ter é conhecer a vontade de Deus - sua maior realização é fazê-la.</p>
 <h2 id="mateus-1"><a href="http://mysword.info/b?r=Mat_1">MATEUS 1</a></h2>
@@ -640,8 +643,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -649,7 +651,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

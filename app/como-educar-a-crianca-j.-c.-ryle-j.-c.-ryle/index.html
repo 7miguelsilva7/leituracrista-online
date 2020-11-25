@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/j.-c.-ryle">J. C. Ryle</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#criai-os-na-doutrina-e-admoesta-o-do-senhor-ef-6-4">“Criai-os na doutrina e admoestação do Senhor” (Ef 6:4).</a></li>
     <li><a href="#primeiro-se-pretendemos-educar-nossos-filhos-com-sabedoria-devemos-educ-los-de-acordo-com-a-palavra-de-deus">Primeiro, se pretendemos educar nossos filhos com sabedoria, devemos educá-los de acordo com a Palavra de Deus.</a></li>
@@ -215,8 +216,10 @@ blockquote,
     <li><a href="#eduque-os-lembrando-continuamente-o-poder-do-pecado">Eduque-os, lembrando continuamente o poder do pecado.</a></li>
     <li><a href="#eduque-os-com-cont-nua-ora-o-por-b-n-o-em-tudo-o-que-voc-est-fazendo">Eduque-os com contínua oração por bênção em tudo o que você está fazendo.</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <p>Como Educar a Criança?</p>
 <p>Prefácio</p>
 <p>Ao publicarmos “Como Educar A Criança?”, sentimos que é importante lembrar, antes de tudo, que coisa alguma pode ser feita apropriadamente se os pais ou responsáveis não forem verdadeiros filhos de Deus. Se este livreto caiu nas mãos de uma mãe ou de um pai incrédulo, nosso desejo é que você aceite o Senhor Jesus como Salvador.</p>
@@ -366,8 +369,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -375,7 +377,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

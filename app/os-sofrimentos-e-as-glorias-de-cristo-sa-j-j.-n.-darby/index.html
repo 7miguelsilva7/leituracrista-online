@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#os-sofrimentos-e-as-gl-rias-de-cristo-no-salmo-22">OS SOFRIMENTOS E AS GLÓRIAS DE CRISTO NO SALMO 22</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="os-sofrimentos-e-as-gl-rias-de-cristo-no-salmo-22">OS SOFRIMENTOS E AS GLÓRIAS DE CRISTO NO SALMO 22</h2>
 <p>A suma da verdade ensinada neste salmo é que &quot;louvarão ao Senhor os que O buscam&quot; (<a href="http://mysword.info/b?r=Psa_22:26">Salmos 22:26</a>). Trata-se do fruto da pura graça, expressa de uma maneira notável e bem diferente de uma esperança ou promessa. Com toda a certeza, o fato de que o Santo devesse ser desamparado por Deus não se trata de uma promessa, e é esta a base que é posta aqui para o louvor.</p>
 <p>No <a href="http://mysword.info/b?r=Psa_19">Salmos 19</a> temos o testemunho da criação e da lei. É solene pensarmos que tudo aquilo que o homem tocou, ele corrompeu. A criação geme enquanto o homem se encontra ali. Mas se olho para onde o homem não pode alcançar, a Lua, as estrelas etc., tudo é glorioso.* &quot;Os céus manifestam a glória de Deus e o firmamento anuncia a obra das Suas mãos.&quot; (<a href="http://mysword.info/b?r=Psa_19:1">Salmos 19:1</a>). &quot;A lei do Senhor é perfeita, e refrigera a alma: o testemunho do Senhor é fiel, e dá sabedoria aos símplices. Os preceitos do Senhor são retos, e alegram o coração: o mandamento do Senhor é puro, e alumia os olhos. O temor do Senhor é limpo, e permanece eternamente; os juízos do Senhor são verdadeiros e justos juntamente. Mais desejáveis são do que o ouro, sim, do que muito ouro fino; e mais doces do que o mel e o licor dos favos. Também por eles é admoestado o Teu servo; e em os guardar há grande recompensa.&quot; (<a href="http://mysword.info/b?r=Psa_19:7-11">Salmos 19:7-11</a>). A questão aqui não está em se o homem pode ou não guardá-la, mas na sua perfeição intrínseca e no seu valor para aqueles que, por graça, desfrutam da sua luz. Nenhum destes testemunhos pode ser mudado.</p>
@@ -282,8 +285,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -291,7 +293,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/darby">Darby</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#adora-o-crist">ADORAÇÃO CRISTÃ</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="adora-o-crist">ADORAÇÃO CRISTÃ</h2>
 <p>Os dois grandes elementos da adoração cristã são a presença do Espírito Santo e a recordação do sacrifício de Cristo, a qual é comemorada na ceia do Senhor. Porém, nesta adoração, as afeições estão conectadas com todo o nosso relacionamento com Deus e aí se desenvolvem. Deus, em Sua majestade, é adorado. Os dons de Sua própria providência são reconhecidos. Ele, que é Espírito, é adorado em espírito e em verdade. Apresentamos a Deus, como nosso Pai - o Pai de nosso Senhor Jesus Cristo - a expressão das santas afeições que Ele produziu em nós; pois Ele nos buscou quando estávamos bem longe, e nos trouxe para junto de Si como Seus filhos amados, dando-nos o Espírito de adoção e associando-nos (que tremenda graça!) com Seu bem amado Filho. Adoramos a nosso Deus-Salvador, que nos purificou de nossos pecados e nos colocou em Sua presença sem mancha alguma, sendo a Sua santidade e a Sua justiça, que foram tão maravilhosamente expostas em nossa redenção, para nós uma fonte de gozo que não finda; pois por meio da perfeita obra de Cristo estamos na luz assim como Ele próprio está na luz.</p>
 <p>É o próprio Espírito Santo que nos revela estas coisas celestiais, e a glória que há de vir que já opera em nós a fim de produzir afeições adequadas a um tal bendito parentesco com Deus. É Ele o vínculo de união entre estas coisas e o coração. Mas, dando tamanha amplitude às nossas almas, Ele nos faz sentir que somos filhos da mesma família e membros do mesmo corpo; unindo-nos, por meio das mútuas afeições e sentimentos que nos são comuns, nesta adoração elevada a Ele que é o Objeto de nossa adoração. O próprio Senhor Jesus encontra-Se presente em nosso meio, em conformidade com Sua promessa. Em poucas palavras, a adoração é exercitada em conexão às mais doces recordações de Seu amor, quer consideremos Sua obra na cruz, ou tenhamos em mente Sua sempre atual e terna afeição para conosco. Ele deseja que nos lembremos dEle.</p>
@@ -265,8 +268,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -274,7 +276,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

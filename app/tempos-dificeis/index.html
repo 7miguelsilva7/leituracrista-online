@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/desconhecido">DESCONHECIDO</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#tempos-dif-ceis">TEMPOS DIFÍCEIS</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="tempos-dif-ceis">TEMPOS DIFÍCEIS</h2>
 <p>Passamos por tempos difíceis em nossa vida. Pode acontecer de ficarmos sem dinheiro, ou talvez perdermos algo ou alguém de grande valor para nós, ou mesmo passarmos por dificuldades em nossos estudos ou em nosso trabalho. Poderá ser que venham sobre nós tempos de dificuldades tais que nunca foram experimentadas por outros. Mas devemos nos lembrar de que tudo o que nos acontece é permitido por Deus.</p>
 <p>Deus tem um propósito em tudo aquilo que Ele permite que passemos. &quot;E sabemos que todas as coisas contribuem juntamente para o bem daqueles que amam a Deus, daqueles que são chamados por seu decreto.&quot; (<a href="http://mysword.info/b?r=Rom_8:28">Rom. 8:28</a>). &quot;Porque a nossa leve e momentânea tribulação produz para nós um peso eterno de glória mui excelente.&quot; (<a href="http://mysword.info/b?r=2Co_4:17">II Cor. 4:17</a>).</p>
@@ -267,8 +270,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -276,7 +278,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

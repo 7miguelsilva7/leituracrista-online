@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-h.-mackintosh">C. H. Mackintosh</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#aux-lio-ou-empecilho">AUXÍLIO OU EMPECILHO</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="aux-lio-ou-empecilho">AUXÍLIO OU EMPECILHO</h2>
 <p>Que és tu?</p>
 <p>De entre os muitos favores que nos são concedidos pelo nosso bondoso Senhor, um dos mais elevados é, sem dúvida, o privilegio de estarmos presentes na Assembléia do Seu amado povo. Podemos assegurar, com confiança, que todo aquele que verdadeiramente ama a Cristo, se alegará, com os Seus onde Ele prometeu estar, seja qual for o caráter da reunião; quer seja para tomar a Ceia do Senhor, e assim recordar a Sua morte, quer para estudar a Palavra de Deus e conhecer a Sua vontade, quer para oração a fim de lhe narrarmos as nossas necessidades e receber bênçãos do Seu inesgotável tesouro - todo o coração devoto desejará estar aí presente. E podemos estar certos de que qualquer que voluntariamente negligenciar comparecer na Assembléia, conserva a sua alma num estado frio, morto e perigoso. Descuidar-se alguém de se congregar é dar o primeiro passo no plano inclinado que conduz ao abandono de Cristo e dos Seus preciosos interesses (<a href="http://mysword.info/b?r=Heb_10:25-27">Hebreus 10:25-27</a>).</p>
@@ -290,8 +293,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -299,7 +301,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

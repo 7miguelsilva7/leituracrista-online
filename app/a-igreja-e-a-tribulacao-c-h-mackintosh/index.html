@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,9 +194,11 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/c.-h.-mackintosh">C. H. MACKINTOSH</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents"></nav>  
-</div>
+
+<nav id="TableOfContents"></nav>
+
+<p></p>
+
 <p>A Igreja e a Tribulação</p>
 <p>C. H. MACKINTOSH</p>
 <p>Talvez não exista uma doutrina errônea que tenha sido mais prejudicial às almas dos filhos de Deus do que aquela professada pelos que supõem que a igreja de Deus passará pela &quot;grande tribulação&quot;. Tal declaração subverte a revelação de Deus acerca da Igreja como corpo e noiva de Cristo, reduzindo o povo celestial ao nível de associações judaicas, e os priva de uma atitude de expectativa e anseio pela vinda de Cristo a qualquer momento. Tais pessoas mergulham em um ponto de vista político da vinda do Senhor, ao olharem para os acontecimentos ao invés de olharem para a Sua Pessoa, ou ao se preocuparem mais com o aparecimento do anticristo do que com o de Cristo. Desta forma, as afeições, consciência e esperança da alma ficam seriamente danificadas por tal doutrina.</p>
@@ -263,8 +266,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -272,7 +274,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

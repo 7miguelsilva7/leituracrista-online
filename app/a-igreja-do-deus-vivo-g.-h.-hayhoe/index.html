@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,8 +194,8 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/g.-h.-hayhoe">G. H. Hayhoe</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-temor-do-senhor-o-princ-pio-da-sabedoria">O TEMOR DO SENHOR É O PRINCÍPIO DA SABEDORIA</a></li>
     <li><a href="#para-que-saibas-como-conv-m-andar">PARA QUE SAIBAS COMO CONVÉM ANDAR</a></li>
@@ -209,8 +210,10 @@ blockquote,
     <li><a href="#crido-no-mundo">CRIDO NO MUNDO</a></li>
     <li><a href="#recebido-acima-na-gl-ria">RECEBIDO ACIMA NA GLÓRIA</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <p>A IGREJA DO DEUS VIVO</p>
 <p>G. H. Hayhoe</p>
 <p>(Palestra a Cristãos - La Mirada, Dezembro de 1985) &quot;Esse povo que formei para Mim, para que Me desse louvor.&quot; (<a href="http://mysword.info/b?r=Isa_43:21">Is 43:21</a>) &quot;E todos os do teu povo serão justos, para sempre herdarão a Terra; serão renovos por Mim plantados, obra das Minhas mãos, para que Eu seja glorificado. O mais pequeno virá a ser mil, e o mínimo um povo grandíssimo: Eu, o Senhor, a seu tempo o farei prontamente.&quot; (<a href="http://mysword.info/b?r=Isa_60:21-22">Is 60:21-22</a>) &quot;Portanto, quer comais quer bebais, ou façais outra qualquer coisa, fazei tudo para glória de Deus.&quot; (<a href="http://mysword.info/b?r=1Co_10:31">1 Co 10:31</a>) &quot;Quando vier para ser glorificado nos Seus santos, e para Se fazer admirável naquele dia em todos os que crêem (porquanto o nosso testemunho foi crido entre vós). Pelo que também rogamos sempre por vós, para que o nosso Deus vos faça dignos da Sua vocação, e cumpra todo o desejo da Sua bondade, e a obra da fé com poder; para que o nome de nosso Senhor Jesus Cristo seja em vós glorificado, e vós nEle, segundo a graça de nosso Deus e do Senhor Jesus Cristo.&quot; (<a href="http://mysword.info/b?r=2Th_1:10-12">2Ts 1:10-12</a>).</p>
@@ -313,8 +316,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -322,7 +324,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 

@@ -168,6 +168,7 @@ blockquote,
 </style>
 </head>
 
+
 <body>
   <nav class="custom-navbar">
   <div class="container">
@@ -193,13 +194,15 @@ blockquote,
 <small><code><a href="https://leituracrista.com/app/tags/w.-scott">W. SCOTT</a></code></small>
 
 </p>
-<div class="toc">
-    <nav id="TableOfContents">
+
+<nav id="TableOfContents">
   <ul>
     <li><a href="#o-falso-messias">O FALSO MESSIAS</a></li>
   </ul>
-</nav>  
-</div>
+</nav>
+
+<p></p>
+
 <h2 id="o-falso-messias">O FALSO MESSIAS</h2>
 <p>W. SCOTT</p>
 <p>Uma determinada pessoa, um homem judeu e apóstata, é o Anticristo que encontramos nas profecias das Escrituras. Há aqueles que costumam apresentar o Anticristo como o líder civil do Império Romano, mas não é verdade. O Anticristo é o falso messias,o ministro de Satanás para com os judeus em Jerusalém, operando sinais e fazendo maravilhas por meio de um poder vindo diretamente de Satanás. Ele se assenta no templo de Deus, que estará construído em Jerusalém, e exige ser adorado como Deus. A Besta (Roma),o falso profeta ou Anticristo, e também o dragão (Satanás) são deificados e adorados, numa imitação da adoração que é devida ao Pai, Filho e Espírito Santo. A nação apóstata de Israel aceita o Anticristo como seu rei.</p>
@@ -284,8 +287,7 @@ window.cookieconsent.initialise({
               $('.scrollToTop').fadeOut();
           }
       });
-
-      
+    
       $('.scrollToTop').click(function () {
           $('html, body').animate({
               scrollTop: 0
@@ -293,7 +295,37 @@ window.cookieconsent.initialise({
           return false;
       });
 
+
+
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+var list=$(this),
+    select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+  window.open($(this).val(),'_newtab')
+});
+$('>li a', this).each(function(){
+  var option=$(document.createElement('option'))
+   .appendTo(select)
+   .val(this.href)
+   .html($(this).html());
+  if($(this).attr('class') === 'selected'){
+    option.attr('selected','selected');
+  }
+});
+list.remove();
+});
+  
   });
+
+
 </script>
 
 
