@@ -52,6 +52,8 @@ $("#content").each(function() {
               // .replace(/(\/[0-9]{1,3})-[0-9]{1,3}/, '$1')
               .replace(/\/1pd\//gi,"/1pe/")
               .replace(/\/2pd\//gi,"/2pe/")
+              .replace(/\/Numero\//gi, "/Números/")
+
               ; 
               $(this).attr("href", newUrl); 
   });
