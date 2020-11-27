@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   var str = document.getElementById("content").innerHTML; 
   var res = str
+  .replace(/([0-9]{1,3}), ([0-9]{1,3}:[0-9]{1,3})/gi, "$1; $2")
   .replace(/([0-9]{1,3}:[0-9]{1,3}) e ([0-9]{1,3}:[0-9]{1,3})/gi,"$1; $2")
   .replace(/Êxodo /gi,"Exodo ")
   .replace(/Êx /gi,"Ex ")
