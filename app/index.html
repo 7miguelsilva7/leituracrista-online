@@ -182,23 +182,25 @@ blockquote,
 
 
 <body onscroll="onscrolling()" onload="saveBookActived()">
-  <nav class="custom-navbar">
+  <nav style="position:fixed; width:100%;top:0" class="custom-navbar">
   <div class="container">
     
-    <a href="/app/">Início</a>
+    <a onclick="removeNameBookActived()" href="/app/">Início</a>
     
-    <a href="/app/tags/">Autores</a>
+    <a onclick="removeNameBookActived()" href="/app/tags/">Autores</a>
     
-    <a href="/app/about/">Sobre</a>
+    <a onclick="removeNameBookActived()" href="/app/about/">Sobre</a>
     
-    <a href="/app/index.xml"></a>
+    <a onclick="removeNameBookActived()" href="/app/index.xml"></a>
     
   </div>
 </nav>
   
   <div class="container" style="font-size: 20px;font-family: Helvetica; color:#474747">
-  
-  <p></p>
+    <br><br><br>
+    
+    <p></p><p></p>
+    <p></p><p></p>
   
 <p>   </p>
   </div>
