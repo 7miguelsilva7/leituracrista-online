@@ -101,10 +101,17 @@ function removeNameBookActived(){
   var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
   
   function onscrolling(){
-  positionScrollValue = $(window).scrollTop();
-  localStorage.setItem(positionScrollKey, positionScrollValue);
+  // positionScrollValue = $(window).scrollTop();
+  // localStorage.setItem(positionScrollKey, positionScrollValue);
   // End get and Set Scroll Position
   }
+
+  $(document).ready(function(){
+    $('#content').scroll(function(){
+    positionScrollValue = $(window).scrollTop();
+    localStorage.setItem(positionScrollKey, positionScrollValue);
+    });
+  });
   
   console.log(positionScrollKey)
   console.log(localStorage.getItem(positionScrollKey));
