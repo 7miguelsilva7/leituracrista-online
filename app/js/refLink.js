@@ -93,32 +93,25 @@ document.write("<div align='center'><a href='../' onclick='setLivroStatus0();rem
 // scrooling
 
 function removeNameBookActived(){
-  localStorage.removeItem('NameBookActivedKey');
-  }
-  
-  
-  var aScroll = 'scroll-'
-  var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
-  
-  function onscrolling(){
-  // positionScrollValue = $(window).scrollTop();
-  // localStorage.setItem(positionScrollKey, positionScrollValue);
-  // End get and Set Scroll Position
-  }
+localStorage.removeItem('NameBookActivedKey');
+}
 
-  $(document).ready(function(){
-    $('#content').scroll(function(){
-    positionScrollValue = $(window).scrollTop();
-    localStorage.setItem(positionScrollKey, positionScrollValue);
-    });
-  });
-  
-  console.log(positionScrollKey)
-  console.log(localStorage.getItem(positionScrollKey));
-  
-  if(localStorage.hasOwnProperty(positionScrollKey)){
-    var target = $('#scroll');
-    target.css('overflow-y', 'hidden');
-    $(window).scrollTop(localStorage.getItem(positionScrollKey));
-    target.css('overflow-y', 'auto');
-  }
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+// End get and Set Scroll Position
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
