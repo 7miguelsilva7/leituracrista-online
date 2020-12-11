@@ -88,3 +88,30 @@ else
 document.write("<div align='center'><a href='../' onclick='setLivroStatus0();removeNameBookActived()'>Desmarcar Livro Como Lido</a></div><br><br")
 }
 //Fim Marcar livros como lido ou não
+
+
+// scrooling
+
+function removeNameBookActived(){
+  localStorage.removeItem('NameBookActivedKey');
+  }
+  
+  
+  var aScroll = 'scroll-'
+  var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+  
+  function onscrolling(){
+  positionScrollValue = $(window).scrollTop();
+  localStorage.setItem(positionScrollKey, positionScrollValue);
+  // End get and Set Scroll Position
+  }
+  
+  console.log(positionScrollKey)
+  console.log(localStorage.getItem(positionScrollKey));
+  
+  if(localStorage.hasOwnProperty(positionScrollKey)){
+    var target = $('#scroll');
+    target.css('overflow-y', 'hidden');
+    $(window).scrollTop(localStorage.getItem(positionScrollKey));
+    target.css('overflow-y', 'auto');
+  }
