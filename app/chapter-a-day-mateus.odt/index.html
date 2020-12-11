@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -596,6 +602,18 @@ blockquote,
 <p>Depois de nós, os crentes, sermos levados para o céu (talvez hoje) Deus irá abrir os olhos de um pequeno número de Judeus, para que entendam que Jesus era verdadeiramente seu Messias! Este pequeno grupo é conhecido como &quot;remanescente&quot;. Em nosso capítulo de hoje, estes cinco versículos são uma figura do grupo futuro; a ascensão do Senhor não é mencionada pois este evangelho é principalmente acerca de Israel, portanto a história continua até os dias futuros.</p>
 <p>Há mais de 85 citações ou alusões a versículos do Antigo Testamento encontradas em Mateus. Assim este livro maravilhoso, instrutivo, mas claramente Judaico, chega ao fim, trazendo em si novos tesouros a serem descobertos.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -629,7 +647,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -702,5 +719,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

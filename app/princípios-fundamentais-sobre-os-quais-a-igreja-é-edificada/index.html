@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -242,6 +248,18 @@ blockquote,
 <p>A última coisa que mencionei foi &quot;oração&quot;. Ela ocupa um grande lugar nas Escrituras. O Senhor Jesus nos deixou exemplo; Ele era um homem de oração. Quando olhamos para a vida dos apóstolos vemos que também eram homens de oração. Quando Pedro estava na prisão e sua cabeça estava para ser decepada no dia seguinte, os santos de Deus estavam na casa da mãe de João Marcos, de joelhos, para passarem a noite em oração. Não estavam simplesmente repetindo rezas; eles estavam orando fervorosamente. Aquelas orações penetraram na presença de Deus; elas subiram até o trono de Deus, e Deus as ouviu e respondeu de maneira poderosa. Pedro foi gloriosamente libertado. Mas assim que foi libertado e pôde entender o que havia acontecido, seguiu direto para aquele poderoso gerador de sua libertação - aquela pequena reunião de oração em um lar. Suponha que você estivesse vivendo naquele tempo e soubesse que Pedro estava sendo perseguido e que seria morto. Será que você diria, &quot;Estou cansado hoje; acho que vou ficar em casa hoje à noite. Acho que não vou à reunião de oração&quot; Então no dia seguinte você escutaria o que aconteceu. Certamente ficaria desapontado; você diria, &quot;Eu gostaria de ter estado ali e orado a Deus por Pedro&quot;. Oh, sim, você teria desejado estar naquela reunião de oração. Não despreze a reunião de oração e não a tenha como algo de pouca importância; uma assembléia sem reunião de oração é uma assembléia doente. Graças a Deus hoje é dia de reunião de oração! Estivemos ocupados com o caminho simples dos santos do Novo Testa mento. Será que deseja mos, no pouco tempo que nos resta, andar na simplicidade daquele caminho, deixando zelosamente de lado tudo o que seja contrário a ele, que nos faça desviar dele, ou que acrescente alguma coisa a ele? Se estivermos desejosos de seguir por ele, algum dia poderemos ouvir, &quot;Bem está, servo bom e fiel&quot;; não &quot;servo bom e bem sucedido&quot;, mas &quot;servo bom e fiel&quot;. Que Deus conceda que seja assim. Fundamental Principles on Which the Church Isaías Built</p>
 <p>C.H.Brown</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -275,7 +293,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -348,5 +365,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

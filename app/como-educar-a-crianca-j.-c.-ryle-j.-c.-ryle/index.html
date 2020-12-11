@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -322,6 +328,18 @@ blockquote,
 <p>Oh! Tenha cuidado para que sua própria negligência não lhe traga miséria na sua velhice. “Derrama o teu coração como águas diante da face do Senhor: levanta a eles as tuas mãos, pela vida de teus filhinhos” (<a href="http://mysword.info/b?r=Lam_2:19">Lm 2:19</a>).</p>
 <p>Nota do Editor: O texto aqui publicado é “The duties of parents”, de autoria de J. C. Ryle, e foi editado, contemporizado e adaptado por H. E. Hayhoe. O original inglês pode ser encontrado na web. John Charles Ryle nasceu em 1816 e faleceu em 1900 na Inglaterra.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -355,7 +373,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -428,5 +445,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

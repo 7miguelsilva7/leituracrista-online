@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -254,6 +260,18 @@ blockquote,
 <p>Que o Senhor possa nos dirigir dentro do poder dessas coisas. Que elas não venham habitar como dogmas ou doutrinas na região de nosso intelecto, mas entrem e permaneçam no coração como realidades sagradas e poderosamente influentes! Que possamos conhecer o poder santificador da verdade (<a href="http://mysword.info/b?r=Joh_17:17">João 17:17</a>); o poder santificador da fé (<a href="http://mysword.info/b?r=Act_26:18">Atos 26:18</a>); o poder santificador do nome de Jesus (<a href="http://mysword.info/b?r=1Co_1:30">1 Coríntios 1:30</a>; <a href="http://mysword.info/b?r=1Co_6:2">6:2</a>); a santificação do Espírito Santo (<a href="http://mysword.info/b?r=1Pe_1:2">1 Pd 1:2</a>); a graça santificadora do Pai (<a href="http://mysword.info/b?r=Jud_1">Judas 1</a>).</p>
 <p>C.H.Mackintosh</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -287,7 +305,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -360,5 +377,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

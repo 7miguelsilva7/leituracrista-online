@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -285,6 +291,18 @@ blockquote,
 <p>Portanto você pode ver que o livro não se aplica, em nenhum detalhe, a nós, quanto ao que Ester significa; mas podemos, certamente e com toda razão, receber todo o conforto da poderosa mão de Deus. Onde os homens não conseguem ver mais do que as circunstâncias que se desenvolvem ao nosso redor, nós sabemos que “todas as coisas contribuem juntamente para o bem daqueles que amam a Deus, daqueles que são chamados por seu decreto” (<a href="http://mysword.info/b?r=Rom_8:28">Romanos 8:28</a>). Talvez não vejamos a maneira, mas conhecemos o Deus, vemos o Deus, podemos nos aproximar do Deus que controla todas as coisas a nosso favor. Em resumo, portanto, a providência de Deus é uma verdade universal, até que venha o dia em que as tratativas de Deus serão públicas e manifestas, e Seu nome estará sobre o Seu povo. Entrementes podemos contar com isso para Israel. Sabemos que agora eles estão dispersos — que agora encontram-se em uma condição completamente irregular, mas chegará o dia quando Deus irá colocar o gentio de lado, e tratar com Israel, e nossos corações podem se regozijar com isso. Não será uma perda para nós, sermos deixados de lado, se o motivo for tratar de Israel. Sim, na verdade não será mesmo uma perda para nós. Estaremos com o Senhor Jesus nas alturas, e será só depois que isto acontecer que Deus julgará o gentio e chamará de volta o judeu.</p>
 <p>William Kelly</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -318,7 +336,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -391,5 +408,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

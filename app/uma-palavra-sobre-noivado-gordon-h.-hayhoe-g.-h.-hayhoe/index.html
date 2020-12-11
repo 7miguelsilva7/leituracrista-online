@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -260,6 +266,18 @@ blockquote,
 <p>Não podemos separar nossa vida do lar, de nossa vida na assembléia, e nem podemos escapar do governo de Deus conectado com ela. Um casamento errado irá afetar toda a sua vida, e um feliz casamento irá ajudá-lo em cada ponto da sua vida. Oh! amados jovens, ponderem isso muito bem! Mesmo assim Deus é o Deus de toda graça, maior do que todas as nossas falhas e defeitos, apesar dos quais, Ele tem prometido nunca deixar-nos ou desamparar-nos; não podemos escapar de Seu governo em nossa vida. Que o Senhor Se compraz em usar estas poucas notas para Sua glória de benção das queridas ovelhas do rebanho de Deus, nesta grande e solene decisão: &quot;Com quem me casarei?&quot;. Aqueles que seguem a sabedoria da preciosa Palavra de Deus, em comunhão e dependência d’Ele, não procederão erradamente, mas aqueles que escolhem seguir sua própria sabedoria e seus próprios caminhos, podem somente esperar dores. É o desejo do Senhor abençoá-lo, amado jovem leitor, e Ele deseja que você desfrute de verdadeira felicidade, porque &quot;A benção do Senhor é que enriquece, e não acrescenta dores&quot; (<a href="http://mysword.info/b?r=Pro_10:22">Provérbios 10:22</a>).</p>
 <p>Gordon H. Hayhoe</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -293,7 +311,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -366,5 +383,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

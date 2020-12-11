@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -240,6 +246,18 @@ blockquote,
 <p>Ao nosso ver, a estrela caída por ocasião do primeiro &quot;ai&quot; é, sem dúvida alguma, o Anticristo (<a href="http://mysword.info/b?r=Rev_8:10,11">Apocalipse 8:10,11</a>; <a href="http://mysword.info/b?r=Rev_9:12">9:12</a>). A que outro personagem do Apocalipse poderia se aplicar tal descrição? As reivindicações espirituais e pretensões religiosas de Satanás são sustentadas e cumpridas pelo Anticristo, enquanto que sua soberania temporal sobre o mundo é estabelecida no reinado e na pessoa do príncipe Romano. A agonia que se segue é agonia da alma e da consciência, e não agonia física. O Anticristo parece ser o instrumento escolhido pelo diabo para aflição da alma e da consciência, enquanto que, para o sofrimento do corpo, a força bruta da Besta recebe total liberdade de ação, satisfazendo-se com cenas de crueldade e derramamento de sangue, atormentando os corpos dos seres humanos.</p>
 <p>W. Scott</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -273,7 +291,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -346,5 +363,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

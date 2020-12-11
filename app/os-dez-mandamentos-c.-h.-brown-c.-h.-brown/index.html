@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -263,6 +269,18 @@ blockquote,
 <p>&quot;Mas é grande ganho a piedade com contentamento. Porque nada trouxemos para este mundo, e manifesto é que nada podemos levar dele. Tendo, porém, sustento, e com que nos cobrirmos, estejamos com isto contentes. Mas os que querem ser ricos caem em tentação e em laço, e em muitas concupiscências loucas e nocivas, que submergem os homens na perdição e ruína. Porque o amor do dinheiro é a raiz de toda a espécie de males; e nessa cobiça alguns se desviaram da fé, e se traspassaram a si mesmos com muitas dores. Mas tu, oh homem de Deus, foge destas coisas&quot; (<a href="http://mysword.info/b?r=1Ti_6:6-11">1 Timóteo 6:6-11</a>). Quão verídica é a Palavra de Deus! Não temos visto todas estas afirmações das Escrituras confirmadas na vida dos santos? Às vezes nossos jovens acham que devem buscar alcançar o nível de vida que vêem nos outros. O resultado disso é a cobiça de uma coisa após outra. A verdade é que o fato de vivermos na época mais próspera que o mundo jamais conheceu tem contribuído para acelerar o desejo de querermos sempre mais. Quanto mais tivermos, mais vamos querer ter. Não há limite. Mas, quão diferente é o Espírito de Cristo! O de dar, e não o de conseguir. Assim nos ensinou: &quot;Mais bem-aventurada coisa é dar do que receber&quot; (<a href="http://mysword.info/b?r=Act_20:35">Atos 20:35</a>). Porém não estou dizendo que devemos dar tudo o que temos. Houve apenas um homem, que é mencionado na Bíblia, a quem o Senhor deu esse conselho - o jovem rico de <a href="http://mysword.info/b?r=Luk_18">Lucas 18</a>. E disse isso para que ele se desse conta do câncer que lhe corroía a própria alma - a cobiça. Não, irmão, as possessões terrenais não constituem o segredo da felicidade. A felicidade é um estado de espírito. É o desfrutar da Pessoa e Obra de Cristo que conserva o coração em descanso e paz. Tenho encontrado pessoas, santos de Deus, que nada possuem das coisas deste mundo, e ainda assim irradiam felicidade. Eles têm Cristo.</p>
 <p>Em resumo, no cristianismo não estamos sob a lei, porém sob a graça. Não estamos sob a letra dos dez mandamentos. Estamos sob o seu equivalente moral ensinado nas epístolas, exceto no caso do único mandamento que era cerimonial, ou seja, o shabbat. Não existe nada que tenha o seu equivalente no cristianismo. Os outros nove mandamentos - quanto ao seu conteúdo moral - nós os temos, porém não da forma de &quot;fareis&quot; e &quot;não fareis&quot;, porém como a expressão da nova natureza que temos, como nascidos de Deus. Jamais nos lamentaremos se assim os respeitarmos. Será para nosso bem agora e por toda a eternidade. A justiça da lei será cumprida em nós (<a href="http://mysword.info/b?r=Rom_8:4">Romanos 8:4</a>). Assim o fruto do Espírito será produzido em amor para com Deus e para com todos que são nascidos de Deus. &quot;O amor não faz mal ao próximo. De sorte que o cumprimento da lei é o amor&quot; (<a href="http://mysword.info/b?r=Rom_13:10">Romanos 13:10</a>).</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -296,7 +314,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -369,5 +386,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

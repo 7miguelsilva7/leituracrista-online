@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -222,6 +228,18 @@ blockquote,
 <p>Os instintos de nossa mente renovada nos sugerem que sigamos o mesmo caminho celestial com igual certeza e desembaraço. O chamado de Deus nos indica esse caminho, e todo o Seu ensino exige que o trilhemos. Os passatempos, costumes, interesses e prazeres dos filhos de Caim nada significam para esses peregrinos. Como ocorre ainda hoje, eles deixam bem claro que rejeitam a idéia de que este mundo seja capaz de lhes trazer satisfação. Eles estão descontentes com o mundo e não se esforçam nem um pouco para inverter esta situação. É nisto que está fundamentada a sua separação da senda de Caim e de sua casa. Eles não estavam preocupados com o país que os cercava, mas procuraram uma pátria melhor, isto é, a pátria celestial. Eles são completamente contra o caminho de Caim, e têm um claro discernimento do caminho de Deus O Senhor deseja que sigamos esse mesmo padrão, estando no mundo, mas não sendo do mundo. Somos do céu, embora ainda não estejamos lá (exceto no que diz respeito à nossa posição em Cristo). Paulo, no Espírito Santo, desejou também que fôssemos assim, seguindo o exemplo daqueles cuja &quot;cidade está nos céus&quot; (<a href="http://mysword.info/b?r=Php_3:20">Fp 3:20</a>). Pedro, no mesmo Espírito, desejou que fôssemos como &quot;peregrinos e forasteiros&quot;, abstendo-nos &quot;das concupiscências carnais&quot; (<a href="http://mysword.info/b?r=1Pe_2:11">1 Pd 2:11</a>). Tiago nos convoca, no mesmo Espírito, a sabermos que &quot;a amizade do mundo é inimizade contra Deus&quot; (<a href="http://mysword.info/b?r=Jas_4:4">Tiago 4:4</a>). E João nos separa como de um só golpe: &quot;Sabemos que somos de Deus, e que todo o mundo está no maligno&quot; (<a href="http://mysword.info/b?r=1Jo_5:19">1 João 5:19</a>).</p>
 <p>J. G. Bellet</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -255,7 +273,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -328,5 +345,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

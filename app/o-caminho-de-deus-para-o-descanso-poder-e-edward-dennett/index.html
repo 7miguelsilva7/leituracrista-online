@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -304,6 +310,18 @@ blockquote,
 <p>Concluindo, podemos assinalar rapidamente as características do santo consagrado. Primeiro, e mais importante, ele não tem vontade própria. Como o apóstolo, ele diz: Não eu, mas Cristo vive em mim. Estando crucificado com Cristo, a vontade própria, na maneira como se encontra ligada ao velho homem, já saiu de diante de Deus, e consequentemente a tratamos como já julgada e rejeitamos as suas atividades. A vontade de Cristo é nossa única lei; e somos dEle, para o Seu único e absoluto uso. Além disso, o crente consagrado procura somente a exaltação de Cristo. Consideremos outra vez o apóstolo Paulo, quando na prisão, e com a possibilidade do martírio diante de si, e descobriremos que sua intensa expectativa e esperança eram de que em nada fosse confundido ou envergonhado, mas que com toda a confiança, como sempre, e agora também, Cristo fosse engrandecido em seu corpo, fosse pela vida ou pela morte (<a href="http://mysword.info/b?r=Php_1:20">Filipenses 1.20</a>). O eu desapareceu de sua vista, e a glória de Cristo tomou conta de sua alma.</p>
 <p>Aprendemos com isso que Cristo era o tudo da vida do apóstolo, seu motivo e objetivo - uma evidente característica de consagração. &quot;Para mim&quot;, dizia ele, “o viver é Cristo”. E já que o morrer era ganho, ele não tinha escolha, pelo fato de que Cristo era tudo para ele, e Cristo somente sabia qual a melhor maneira de o apóstolo servi-Lo. E, por fim, sua esperança era de estar com Cristo. Quando Cristo é o objeto de nossas afeições, se Ele enche nosso coração, não podemos fazer nada mais, além de almejarmos estar com Ele. Onde estiver o seu tesouro, aí estará também o seu coração, e o coração sempre deseja ardentemente estar com seu tesouro. Sendo assim, se a morte estiver diante do crente consagrado, ele dirá como Paulo: “Desejo partir, e estar com Cristo, porque isto é ainda muito melhor”; e se a morte não estiver diante dele, o crente estará vivendo naquele poder da bendita esperança do retorno de Cristo, para poder estar com seu Senhor para todo o sempre. Pois é esta a esperança que o próprio Senhor coloca diante da alma; de maneira que, se Ele diz: “Certamente cedo venho”, o coração daquele que é consagrado irá, na linguagem do apóstolo João, responder: “Amém. Ora vem, Senhor Jesus” (<a href="http://mysword.info/b?r=Rev_22:20">Ap 22.20</a>).</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -337,7 +355,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -410,5 +427,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

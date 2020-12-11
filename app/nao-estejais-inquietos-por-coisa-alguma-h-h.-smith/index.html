@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -216,6 +222,18 @@ blockquote,
 <p>Há muito tempo Ana descobriu isso, quando, em sua amarga tribulação, pôde dizer: &quot;Tenho derramado a minha alma perante o Senhor&quot;. Como resultado, lemos que &quot;o seu semblante já não era triste&quot; (<a href="http://mysword.info/b?r=1Sa_1:15-18">1 Samuel 1:15-18</a>). Contudo, naquele momento, suas circunstâncias continuavam exatamente as mesmas. É verdade que depois o Senhor mudou as suas circunstâncias, mas primeiro Ele mostrou que tinha o poder de mudar Ana. Da dor de coração e amargura de alma ela foi levada a uma grande paz - a paz de Deus que excede todo o entendimento - por ter levado seus pedidos ao conhecimento de Deus.</p>
 <p>H. Smith, &quot;Seven Exortations&quot;, Pág. 10.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -249,7 +267,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -322,5 +339,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

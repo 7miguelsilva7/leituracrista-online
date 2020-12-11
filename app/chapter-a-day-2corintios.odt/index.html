@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -350,6 +356,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=2Co_13:5">2 Co 13:5</a> Sua resposta. &quot;Examinai-vos a vós mesmos&hellip; estais salvos&hellip; por intermédio da pregação de quem fostes salvos?&quot; Evidentemente eles teriam que admitir que havia sido por intermédio da pregação de Paulo, por isso ele diz, &quot;Esta é vossa prova de que Cristo tem falado por meu intermédio&quot;.</p>
 <p><a href="http://mysword.info/b?r=2Co_13:11">2 Co 13:11</a> Paulo não achou fácil escrever estas 2 cartas. Ele amava muito aqueles crentes, e foi doloroso para ele ter que adverti-los e corrigi-los. Agora que tinha terminado, ele fala de modo tão gentil, &quot;Quanto ao mais, irmãos, regozijai-vos&quot;. Se pertencemos a nosso Senhor Jesus somos verdadeiramente &quot;irmãos&quot; e podemos saudar alegremente uns aos outros deste modo. &quot;Sede perfeitos&quot; - ele não desejava nada menos para eles do que um seguir ao Senhor de modo sincero e fiel. &quot;Sede consolados&quot; - Ele sabia o que era ser consolado na tribulação, e ele queria que eles soubessem disso também. &quot;Sede de um mesmo parecer, vivei em paz&quot;. Desejamos isto?</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -383,7 +401,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -456,5 +473,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

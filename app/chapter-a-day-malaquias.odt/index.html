@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -254,6 +260,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=Mal_4:2">Ml 4:2</a> Mas, que contraste para essas pessoas!</p>
 <p><a href="http://mysword.info/b?r=Mal_4:5-6">Ml 4:5-6</a> Um homem se levantará antes que o Senhor volte em glória. (Não para nós - não existe nenhum acontecimento que deva acontecer antes que Ele volte para nós). Ele chamará o povo ao arrependimento antes que venha o grande e terrível dia do Senhor Jesus. Alguns irão escutá-lo. Assim termina o Antigo Testamento, com a promessa do amanhecer do Sol da Justiça, o Senhor Jesus, vindo em poder. (O Novo Testamento termina com a promessa de Sua vinda como Estrela da Manhã - para nós).</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -287,7 +305,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -360,5 +377,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

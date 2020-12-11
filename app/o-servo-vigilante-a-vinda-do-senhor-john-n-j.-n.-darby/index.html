@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -242,6 +248,18 @@ blockquote,
 <p>E agora o ponto que volto a tratar é este: A vinda do Senhor influencia e conforma a vida do cristão na sua totalidade. Você não pode separar coisa alguma de todo o curso da vida do cristão da vinda do Senhor Jesus; e não só da primeira, como também da segunda vinda. Ele já veio uma vez e, para os que O esperam, virá uma segunda vez para salvação. É verdade que Ele vem e habita em nós; mas estamos nos referindo às passagens que falam da vinda real. Tanto faz se você trata da santidade, ou do serviço; da conversão ou do ministério, ou ainda de uma pessoa que já morreu; tudo está conectado à vinda de Cristo. Ele avisa para que sejamos achados vigiando. Eu poderia citar outras passagens, mas já citei um número suficiente para mostrar que a vinda do Senhor está ligada a tudo na vida cristã. Quando O virmos como Ele é, então, e só então, seremos como Ele é, em conformidade com o propósito de Deus. E agora pergunto: Você está esperando pelo Filho de Deus vindo do céu? O fato de Ele haver carregado os pecados de muitos é a única base de esperança para qualquer pecador; isto é, a obra terminada que nos capacita, pela fé, a olhar para Ele quando selados pelo Espírito Santo. Então, pergunto, o que estou esperando? Estou esperando pelo Filho de Deus vindo do céu. Será que você pode dizer: &quot;Estou aguardando Cristo&quot;? Não sei quando Ele virá. &quot;Bem-aventurados aqueles servos, os quais, quando o Senhor vier, achar vigiando!&quot; (<a href="http://mysword.info/b?r=Luk_12:37">Lucas 12:37</a>). Não pergunto a você se você entende a respeito da vinda do Senhor. Foi para esperar por Ele que eles se converteram. O que acordou as virgens foi: &quot;Aí vem o Esposo!&quot; (<a href="http://mysword.info/b?r=Mat_25:6">Mateus 25:6</a>). Será que você está verdadeiramente esperando pelo Filho de Deus vindo do céu? Você gostaria que Ele viesse hoje à noite? Pedro explica a razão da demora. Ele diz que é a Sua longanimidade para salvação, não querendo que alguns se percam (<a href="http://mysword.info/b?r=2Pe_3:9">2 Pd 3:9</a>). O que você pensaria se soubesse que Ele vem hoje à noite? Será que seria exatamente o que sua alma estaria desejando? Há pessoas que pensam que o evangelho pararia de ser pregado se ficássemos esperando o Filho de Deus vindo do céu. Será que ao aceitar o testemunho de Deus de que viria o dilúvio, Noé parou de pregar? Longe disso, foi exatamente o que estimulou a sua pregação. Que o Senhor possa fazer com que estejamos prontos, para que, quando Ele vier, nos encontre esperando por Ele.</p>
 <p>J.N.Darby</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -275,7 +293,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -348,5 +365,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

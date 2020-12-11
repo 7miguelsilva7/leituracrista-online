@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -594,6 +600,18 @@ blockquote,
 <h2 id="deuteronômio-34">DEUTERONÔMIO 34</h2>
 <p><a href="http://mysword.info/b?r=Deu_34:1-5">Dt 34:1-5</a> Um ato de desobediência fez com que Moisés perdesse a chance de entrar na terra da promessa com seu amado povo. Mas é isto o que Deus está nos mostrando neste livro de Deuteronômio. A obediência traz bênção, mas a graça de Deus é tão grande, que Ele eleva Moisés até o cume de uma montanha, e dá a Moisés uma visão celestial da terra do ponto de vista de Deus! Podemos supor que todos os desapontamentos que Moisés possa ter tido por não entrar na terra tenham agora se dissipado enquanto ele acompanha o Deus que amou e serviu tão fielmente nesta maravilhosa vista da terra. Deus sempre dá algo melhor. Assim termina este magnífico livro de Deuteronômio. Que o próprio Deus possa abençoar você com sua leitura.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -627,7 +645,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -700,5 +717,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

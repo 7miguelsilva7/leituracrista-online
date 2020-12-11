@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -264,6 +270,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=col_4:7-8">Cl 4:7-8</a> Paulo sempre gostou de ouvir de como eles estavam indo, mas ele sabia que eles também queriam saber como ele estava. Este amor de uns para com os outros é o Cristianismo em sua totalidade. Poderia haver algo mais doce entre os crentes?</p>
 <p><a href="http://mysword.info/b?r=col_4:9-11">Cl 4:9-11</a> Repare como ele se limita a fazer breves comentários sobre estes seguidores. Será que teríamos permanecido com o apóstolo Paulo se tivéssemos estado com ele na sua época? Hoje é nossa época de permanecermos com o Senhor. Logo Ele virá, e o dia da fé estará terminado. Trata-se da maravilhosa sabedoria de Deus que ocultou a verdade do Novo Testamento sob a superfície do Antigo Testamento. A senda do progresso, ou os passos desde o princípio, seguem para o glorioso futuro celestial. Tudo é absolutamente necessário. A verdade do Cristianismo é aprendida no Novo Testamento, mas o Antigo Testamento é como uma série de figuras que ilustram o Novo. É por isso que alternamos entre um e outro.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -297,7 +315,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -370,5 +387,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -223,6 +229,18 @@ blockquote,
 <p>Mas não era somente nas coisas grandes e tão manifestas e visíveis que Deus cuidava deles, ou cuida de nós hoje mesmo neste mundo arruinado. Nós também podemos observar o Seu terno cuidado em nossos problemas e necessidades, por menores que sejam. &quot;Nunca se envelheceu o teu vestido sobre ti, nem se inchou o teu pé estes quarenta anos&quot; (<a href="http://mysword.info/b?r=Deu_8:4">Deut. 8:4</a>). Talvez os próprios israelitas nunca tivessem meditado nestes milagres que nada tinham de espetacular: a duração da roupa e o bem estar dos pés. Não se dá o mesmo conosco? Quantos detalhes do cuidado de nosso Pai nos passam despercebidos! Quão ingratos somos!</p>
 <p>Autor desconhecido</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -256,7 +274,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -329,5 +346,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

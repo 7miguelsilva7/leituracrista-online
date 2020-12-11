@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -238,6 +244,18 @@ blockquote,
 <p>Está a sua voz afinada para louvar junto com Cristo? Ele saiu da ira e das trevas da cruz e foi para a luz e o amor da presença de Seu Pai e está louvando. Pode você louvar junto com Ele? Aí desaparece todo a apreensão. Você crê que &quot;Ele o fez&quot;? (<a href="http://mysword.info/b?r=Psa_22:31">Salmos 22:31</a>). Oh, amado, quão triste é vermos que aqueles que O buscam estancam longe do Seu coração! O que é que você crê? E em Quem crê? Acaso você não sabe que Ele tomou o cálice da ira de Deus até o fim? E, com tudo isso, as coisas ainda permanecem incertas para você? Se você ainda estiver pensando no que você é, digo-lhe que encontra-se a mil quilômetros de onde deveria estar. Se você buscá-Lo, a Sua Palavra lhe garante que deve louvá-Lo. Ele está na presença de Deus como a consequência de Sua obra. Que nossos corações possam trazer o selo de que Deus é verdadeiro! Como um Pai, Ele pode castigar, mas os açoites são a maneira de um Pai tratar com o coração de Seus filhos. Possa você não rejeitar o testemunho de Jesus, que Ele gastou a Sua vida, havendo sofrido de uma vez por todas, o Justo pelo injusto, para que sua alma pudesse ter paz com Deus agora mesmo. &quot;Ele o fez.&quot; (<a href="http://mysword.info/b?r=Psa_22:31">Salmos 22:31</a>).</p>
 <p>J. N. Darby</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -271,7 +289,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -344,5 +361,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

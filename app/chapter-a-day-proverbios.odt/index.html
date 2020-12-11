@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -628,6 +634,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=Pro_31:30-31">Pv 31:30-31</a> Aqui está o segredo de sua vida devotada&hellip; ela teme o Senhor! O <a href="http://mysword.info/b?r=Pro_1:7">sétimo</a> versículo do primeiro capítulo deste Livro de Provérbios nos fala do que este temor é o início. Veja você mesmo.</p>
 <p><a href="http://mysword.info/b?r=Pro_31:30">Pv 31:30</a> Algumas pessoas podem se orgulhar de sua aparência - mas será que existe um caráter verdadeiro por detrás do charme? É possível que o <a href="http://mysword.info/b?r=Pro_31:30">último</a> versículo nos dê uma idéia do tribunal de Cristo quando todos os nossos Atos serão pesados por Deus. Possamos redimir o tempo pois os dias são maus.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -661,7 +679,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -734,5 +751,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

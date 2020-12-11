@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -281,6 +287,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=Jas_5:14-15">Tg 5:14-15</a> O pecado podia ter sido o responsável pela enfermidade, portanto era necessário que houvesse a confissão das ofensas e a oração. Deus faria a Sua parte. Tudo isso é muito diferente dos assim chamados &quot;curandeiros de fé&quot; de nossos dias. Lembre-se mais uma vez de que este livro não é totalmente de doutrina cristã. Os crentes Judeus ainda não tinham sido libertos de seus velhos hábitos.</p>
 <p><a href="http://mysword.info/b?r=Jas_5:19-20">Tg 5:19-20</a> Uma bela promessa para aqueles que têm uma profunda preocupação e cuidado pelo bem-estar de outros crentes. Se vêem um crente descuidado, e oram por ele, e falam com ele sobre sua vida descuidada, &hellip;e aquela pessoa é restaurada, então acontecem duas coisas. A pessoa é salva de morrer - e os pecados nos quais insistia param de ser praticados, e, portanto, não são mais vistos (são cobertos). Mas lembre-se também de que se aquele crente descuidado recusar a correção, o Senhor pode agir de uma maneira totalmente diferente.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -314,7 +332,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -387,5 +404,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

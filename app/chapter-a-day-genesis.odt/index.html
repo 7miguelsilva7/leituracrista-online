@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -694,6 +700,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=Gen_50:22-26">Gn 50:22-26</a> Lindo final. A fé de José o leva muito além do caixão no Egito. Ela alcança um dia melhor. Um dia eterno. &quot;Deus certamente vos visitará!&quot; Assim ele dá ordens a respeito de seus ossos. Que estes também deveriam ser levados de volta à terra (e foram - veja Js <a href="http://mysword.info/b?r=Jos_24:32">24:32</a>, <a href="http://bibliaonline.com.br/acf/Ex:13:19">Ex 13:19</a>, <a href="http://mysword.info/b?r=Heb_11:22">Hb 11:22</a>).</p>
 <p>Na última referência vemos o valor dado por Deus à fé de José. O Egito só podia dar um caixão. Este mundo é nosso Egito. Mas podemos agradecer a nosso bendito Senhor Jesus Cristo, pois por Ele podemos dizer, &quot;Certamente vos visitará Deus&quot;!</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -727,7 +745,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -800,5 +817,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

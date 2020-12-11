@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -1245,6 +1251,18 @@ blockquote,
 <p>Porém, não se tratava simplesmente do Nome do Eterno que eles tinham de anunciar, nem a sua missão era somente em relação com o Seu trono em Jerusalém. Senhor dos céus e da Terra, os Seus discípulos deviam proclamá-Lo por todas as nações, baseando a sua doutrina na confissão do Pai, do Filho e do Espírito Santo. Eles deviam ensinar, não a lei, mas os preceitos de Jesus. O Senhor estaria com eles, com os discípulos que assim O confessassem, até à consumação dos séculos (versos <a href="https://mysword.info/b?r=Mat_28:18-20">18-20</a>). É isto que liga tudo o que será realizado até que Cristo Se assente no grande trono branco, como lemos em <a href="https://mysword.info/b?r=Rev_20:11">Apocalipse 20:11</a>, com o testemunho que Ele próprio deu na Terra, no meio de Israel. É o testemunho do reino e do seu Chefe, uma vez rejeitado por um povo que O não conhecia. Isto liga o testemunho dado às nações com um Remanescente em Israel, reconhecendo Jesus como O Messias, mas agora ressuscitado de entre os mortos, como Ele mesmo tinha dito, mas não com um Cristo reconhecido como assumpto ao Céu. Jesus não é somente apresentado, nem tampouco Jeová, como o objetivo do testemunho, mas a revelação do Pai, do Filho e do Espírito Santo como Santo Nome mediante o qual as nações foram postas em relação com Deus.</p>
 <p>FIM DO EVANGELHO SEGUNDO S. MATEUS</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -1278,7 +1296,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -1351,5 +1368,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

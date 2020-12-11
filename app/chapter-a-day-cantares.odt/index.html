@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -309,6 +315,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=son_8:8-9">Ct 8:8-9</a> Para entender isto, você precisa se lembrar do que aconteceu há muito tempo atrás na história de Israel. O reino foi dividido em dois reinos - Judá e Benjamim, chamados o reino de Judá, e as outras dez tribos, conhecidas como reino de Israel. Este último foi levado para o cativeiro. Estão hoje espalhados por algum lugar do mundo. O Senhor Jesus nasceu na tribo de Judá. Mas quando o Senhor Jesus retornar em glória, irá reunir as dez tribos perdidas, trazendo-as de todo o mundo. Essas tribos formam a &quot;irmã pequena&quot;. Não tiveram parte na rejeição do Salvador, mas foram adoradores de ídolos. Todavia, entrarão na bênção também, no final, mas não em uma bênção tão grande quanto Judá.</p>
 <p><a href="http://mysword.info/b?r=son_8:11-14">Ct 8:11-14</a> Refere-se a toda a Terra no milênio. A Terra estará então unificada; cada coração estará cheio de gozo pois o Senhor Jesus é sua fonte. Você já percebeu o progresso nos três versículos mencionados quando estávamos lendo <a href="http://mysword.info/b?r=son_2:16">2:16</a>? Com frequência colocamos a nós mesmos em primeiro lugar como acontece naquele versículo. O segundo fala de algum progresso, mas ela ainda continua pensando um pouco no amor que tem por ele. Mas o <a href="http://mysword.info/b?r=son_8:3">terceiro</a> versículo nos diz que o amor de Cristo por nós é o amor supremo. Está compreendendo?</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -342,7 +360,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -415,5 +432,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -1387,6 +1393,18 @@ blockquote,
 <p>Cremos que nosso trabalho está terminado no que diz respeito a este assunto. Encomendamos este trabalho na mãos de Deus para que Ele use como quiser. Cremos que Deus irá fazer dele uma bênção para nossos leitores. Apresentamos o que a verdade dispensacional é, e demonstramos que isso está de acordo com as Escrituras. Também demonstramos que a Teologia do Pacto é um sistema de interpretação que não está em conformidade com as Escrituras. Na verdade ele chega a fazer uma séria corrupção da Palavra de Deus. Ao expor seu erro buscamos fazê-lo com sinceridade e amor. O resto fica nas mãos do Senhor, pois somente Ele pode aplicar a verdade nas almas.</p>
 <p>Nossa oração é que todo verdadeiro crente venha a ter um “coração honesto” (<a href="http://mysword.info/b?r=Luk_8:15">Lucas 8:15</a>) que possa receber a verdade conforme apresentada pelas Escrituras. O Espírito de Deus é o Mestre que está acima de todos, e Ele pode e irá aplicar estas coisas nas almas desejosas de aprender (<a href="http://mysword.info/b?r=Joh_7:17">João 7:17</a>; <a href="http://mysword.info/b?r=Joh_16:13">16:13</a>). Que Deus possa abençoar Sua Palavra (<a href="http://mysword.info/b?r=Isa_55:11">Isaías 55:11</a>).</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -1420,7 +1438,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -1493,5 +1510,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

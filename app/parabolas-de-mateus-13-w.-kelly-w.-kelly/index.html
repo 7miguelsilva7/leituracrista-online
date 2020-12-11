@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -293,6 +299,18 @@ blockquote,
 <h2 id="conclusão">CONCLUSÃO</h2>
 <p>Nos <a href="http://mysword.info/b?r=Mat_8">capítulos 8</a> e <a href="http://mysword.info/b?r=Mat_9">9 de Mateus</a>, encontramos exemplos de surpreendentes mudanças. Assim, a travessia do lago na tempestade que é repreendida, a cura dos endemoninhados, a ressurreição da filha de Jairo e a cura da mulher que padecia de hemorragia, são assuntos pertencentes, do ponto de vista histórico, ao intervalo entre as parábolas, com as quais estivemos ocupados até agora, e a rejeição sofrida por nosso bendito Senhor, a qual nosso evangelista passa a relatar na sequência do seu evangelho. Busquei explicar o princípio no qual, conforme creio, o Espírito Santo desejou agir ao colocar os eventos numa ordem que pudesse traçar, de maneira clara, o ministério messiânico de nosso Senhor em Israel, com Sua rejeição e as consequências disto. É por esta razão que, havendo incluído antes os fatos intermediários, a sequência natural é a incredulidade de Israel diante do Seu ensino. Ele estava no Seu próprio país e os ensinava em suas sinagogas; mas o resultado, ao invés de ser de admiração diante de Sua sabedoria e obras poderosas, é desdenhosamente questionado: “Não é este o filho do carpinteiro?&hellip; E escandalizavam-se nele”. Ali estava um Profeta, mas sem honra em Seu próprio país e em Sua própria casa. A manifestação de glória era inegável ─ mas o vaso não estava sendo recebido de acordo com a vontade de Deus, porém é julgado segundo a vista e as apreensões da natureza humana. (<a href="http://mysword.info/b?r=Mat_13:54-58">Mateus 13:54-58</a>)</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -326,7 +344,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -399,5 +416,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

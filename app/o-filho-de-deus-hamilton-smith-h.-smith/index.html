@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -298,6 +304,18 @@ blockquote,
 <p>A nossa grande preocupação deve ser a de aprender o que está escrito, e aceitar a verdade como escrita, sem dúvida e sem raciocínio. Deus dá prazo curto para o homem que questiona a Sua revelação, pois quando em relação àquilo que é inescrutável o homem pergunta: “Como?” Deus responde: “Insensato” (<a href="http://mysword.info/b?r=1Co_15:36">1 Coríntios 15:36</a>). Mas quando a razão orgulhosa é deixada para trás, a fé simples e a afeição viajarão longe nas profundidades da glória, “Como está escrito: As coisas que o olho não viu, e o ouvido não ouviu, E não subiram ao coração do homem, São as que Deus preparou para os que o amam” (<a href="http://mysword.info/b?r=1Co_2:9">1Co 2:9</a>). Possam ser nossos o amar, o escutar e o adorar.</p>
 <p>HAMILTON SMITH</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -331,7 +349,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -404,5 +421,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

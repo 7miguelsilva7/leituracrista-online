@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -394,6 +400,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=Jer_52:17-23">Jr 52:17-23</a> Os vasos da casa do Senhor são todos levados para a Babilônia. Por que toda essa destruição? Simplesmente porque o reino de Judá, desde o rei até os mais pobres, tinha abandonado sua fé no Deus que os amou, mas Sua santidade exigia esse castigo. Que a leitura deste Livro crie em nós um efeito de sobriedade.</p>
 <p>Sumário: Israel, apesar de toda a bondade de Deus, O abandonou e se voltou para a Idolatria. Por isso Deus entregou o governo do mundo aos Gentios. Permanece assim até hoje. Mas sabemos que Deus encontrou uma maneira de abençoar Israel e o mundo no futuro, e isso ao dar o Seu Filho, o Senhor Jesus Cristo, para ser um sacrifício na cruz! Assim Deus pode ser justo e certo em perdoar os pecados de cada um, sim, de todos os que colocarem sua confiança em Cristo.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -427,7 +445,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -500,5 +517,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -556,6 +562,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=1Sa_31:7-10">1 Sm 31:7-10</a> Os Filisteus pagãos agora se gabam de sua vitória sobre Israel e sobre o rei Saul. Saul havia sido tão poderosa e Davi tão desprezado. Eis o fim daquele soberbo rei.</p>
 <p><a href="http://mysword.info/b?r=1Sa_31:11-13">1 Sm 31:11-13</a> Ficamos felizes ao lermos a respeito dos homens valentes que honraram Saul, como o rei ungido de Deus, mesmo depois de tamanho fracasso. Veremos mais tarde que Davi notou isso, e mostrou sua gratidão àqueles homens que arriscaram suas vidas para demonstrar respeito ao seu derrotado rei Saul. Olhemos para trás, para este livro que acabamos de ler. Que histórias de fracassos de homens! Quase que todos eles! Parece até que Deus estava desistindo deles&hellip; Samuel, o profeta, havia morrido, o rei Saul e seus filhos são mortos pelos Filisteus; até Davi fugiu e foi morar com os Filisteus, os piores inimigos de Israel. Tudo acabou. Não há esperança ou bênção para Israel, exceto na misericórdia de Deus! Mas é exatamente isto que encontramos no segundo livro de Samuel.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -589,7 +607,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -662,5 +679,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

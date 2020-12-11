@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -245,6 +251,18 @@ blockquote,
 <p>Ao terminar, vamos abrir em <a href="http://mysword.info/b?r=Rom_5:3-21">Romanos 5. Leia desde o versículo 3</a> (estes são os resultados de se esperar): &quot;E não somente isto, mas também nos gloriamos nas tribulações&quot;. Tribulação - nos gloriamos nela; nos alegramos por ela. &quot;Por que você se alegra com a tribulação?&quot; Porque sabemos &quot;que a tribulação produz a paciência (ou perseverança)&quot;. É agradável vermos alguém que pode seguir serenamente sob o fogo da tribulação e não entrar em colapso - apenas seguir quieto, caminhando com o Senhor; fazendo o bem àqueles que estão ao seu redor; feliz; contente por estar onde o Senhor o colocou. Sabemos que a tribulação produz perseverança, e que daquela perseverança (paciência) vem a experiência. Qual é o proveito da experiência? Porque, da experiência provém a esperança. Você olha para trás e diz, &quot;O Senhor fez provisão para mim naquela tribulação; eu esperei por Ele e Ele me livrou. Ele usou daquela situação para me fortalecer”. Por isso há esperança. &quot;E a esperança não traz confusão, porquanto o amor de Deus está derramado em nossos corações pelo Espírito Santo que nos foi dado.&quot; Nós podemos não estar certos da vontade do Senhor; mas estamos certos de uma coisa: Ele nos ama. Esperemos por Ele!</p>
 <p>Robert Pilkington</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -278,7 +296,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -351,5 +368,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

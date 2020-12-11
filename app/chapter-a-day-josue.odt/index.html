@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -463,6 +469,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=Jos_24:16-28">Js 24:16-28</a> A escolha e a decisão era deles, mas deve ser em santidade. Não podemos permitir &quot;deuses estranhos&quot; em nossa vida tampouco. Veja 1 João <a href="http://mysword.info/b?r=1Jo_5:19-21">5:19-21</a>.</p>
 <p><a href="http://mysword.info/b?r=Jos_24:29-33">Js 24:29-33</a> Que bom é ver o povo seguindo o Senhor como resultado da fidelidade de Josué e dos anciãos com ele. Os Cristãos são hoje lembrados de que devem recordar e seguir a fé daqueles que vieram antes de nós - <a href="http://mysword.info/b?r=Heb_13:7-8">Hb 13:7-8</a>, para que em todas as coisas Cristo possa ter a primazia. Este maravilhoso livro começou com a morte do Mediador, Moisés. Terminou com a morte do sacerdote, Eleazer. Estes homens foram apenas tipos (figuras) de Cristo, nosso verdadeiro Mediador - <a href="http://mysword.info/b?r=1Ti_2:5">1Tm 2:5</a>, e nosso grande Sumo Sacerdote - <a href="http://mysword.info/b?r=Heb_4:14">Hb 4:14</a>. Ele vive para sempre. E leia João <a href="http://mysword.info/b?r=Joh_11:26">11:26</a> para conhecer a parte que cabe ao crente.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -496,7 +514,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -569,5 +586,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

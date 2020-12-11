@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -233,6 +239,18 @@ blockquote,
 <p>Nosso desejo deve ser o de servir e honrar Àquele que morreu por nós. Ele nos deu o Espírito Santo para habitar em nós (<a href="http://mysword.info/b?r=1Co_6:19">1 Co 6:19</a>). Sendo assim, como devemos agir? Em Romanos somos instruídos a apresentar os nossos corpos como sacrifício vivo a Deus (<a href="http://mysword.info/b?r=Rom_12:1">Rm 12:1</a>). Nossas vidas, o que dizemos, o que fazemos, e até mesmo o que pensamos, deve ser para a honra de Deus. Conservemo-nos puros assim como Ele é puro (<a href="http://mysword.info/b?r=1Ti_5:22">1Tm 5:22</a>; <a href="http://mysword.info/b?r=1Jo_3:3">1 jo 3:3</a>). Nossa vida deve ser de tal forma a sermos santificados, úteis para o Senhor e prontos para toda boa obra (<a href="http://mysword.info/b?r=2Ti_2:21">2Tm 2:21</a>). Um vaso contaminado não serve para uso do Senhor. Conserve-se puro.</p>
 <p>Verdades Bíblicas</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -266,7 +284,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -339,5 +356,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -230,6 +236,18 @@ blockquote,
 <p>O crente deve honrar o Senhorio de Cristo, reconhecendo-O como Senhor. O mundo religioso Lhe nega esta honra e quase universalmente se refere a Ele como &quot;Jesus&quot;, o nome de Sua humanidade. Vemos como Paulo, em suas epístolas, cuidadosamente O trata honradamente como &quot;O Senhor Jesus Cristo&quot;.</p>
 <p>Os crentes devem tratar de, a qualquer custo, se reunir para estudar a Palavra a fim de se edificarem uns aos outros na fé. Muitas vezes isto tem que ser feito em pequenas reuniões caseiras, porque a verdade não é aceita em lugares humanamente elevados. &quot;Saiamos, pois, a Ele fora do arraial, levando o Seu vitupério&quot; (<a href="http://mysword.info/b?r=Heb_13:13">Hebreus 13:13</a>).</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -263,7 +281,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -336,5 +353,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

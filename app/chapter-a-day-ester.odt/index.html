@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -295,6 +301,18 @@ blockquote,
 <h2 id="ester-10">ESTER 10</h2>
 <p>Uma descrição da glória e honra de Mordecai. Sua história começa como um desconhecido Judeu, cativo na terra de um orgulhoso rei Gentio. Deus prometeu bênção para sua amada nação, os Judeus. E Ele cumprirá Sua promessa, apesar de já ter havido épocas quando eles foram mais odiados e perseguidos que qualquer outra raça. E ainda haverá épocas quando eles passarão por terrível tribulação. Mas no final brilharão em sua própria terra, abençoados pela própria fidelidade de Deus. Assim termina nossa história de Ester. Você já aprendeu seu significado em relação ao futuro de Israel? Tenha cuidado para não confundir esta história com o Cristianismo (não nos vingamos de nossos inimigos). Mas trata-se de uma figura do que irá acontecer com os inimigos de Israel no futuro. Deus irá usar Israel para castigar seus inimigos, que os odiaram e perseguiram. (Gaste um minuto para ler Zacarias <a href="http://mysword.info/b?r=Zec_12:8-9">12:8-9</a> para ver isso).</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -328,7 +346,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -401,5 +418,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

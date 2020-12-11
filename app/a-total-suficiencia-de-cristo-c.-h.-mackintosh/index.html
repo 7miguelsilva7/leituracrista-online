@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -331,6 +337,18 @@ blockquote,
 <p>Não há, e nem poderia existir, qualquer falta no Cristo de Deus. Sua expiação e Sua intercessão devem satisfazer todos os anseios da consciência mais profundamente exercitada. As glórias morais – a poderosa atração de Sua divina Pessoa – devem satisfazer as mais intensas aspirações e desejos do coração. E sua inigualável revelação – esse volume sem preço – contém entre suas capas tudo o que possamos necessitar, do princípio ao fim de nossa carreira cristã.</p>
 <p>Leitor cristão: acaso essas coisas não são assim? Acaso você não reconhece a verdade que há nelas, do mais íntimo do seu ser moral renovado? Se assim for, será que você está descansando, em tranquilo repouso, na obra de Cristo? Está se deleitando em Sua Pessoa? Está se sujeitando, em todas as coisas, à autoridade da Sua Palavra? Deus queira que assim possa ser com você, e com todos os que professam o Seu nome! Possa haver um testemunho cada vez mais pleno, mais claro e mais decidido para a total suficiência de Cristo, até aquele dia.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -364,7 +382,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -437,5 +454,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

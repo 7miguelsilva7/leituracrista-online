@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -485,6 +491,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=1Ki_22:41-50">1 Rs 22:41-50</a> Havia algumas coisas que Jeosafá falhou em fazer (Deus não perde nada que acontece em nossa vida), mas pelo menos ele parece haver aprendido sua lição com Acabe - <a href="http://mysword.info/b?r=1Ki_22:49">vers. 49</a>. E fez algumas coisas boas que são também registradas - <a href="http://mysword.info/b?r=1Ki_22:46">vers. 46</a>. Deus está tudo sobre o Seu povo - Salmos <a href="http://mysword.info/b?r=Psa_87:6">87:6</a> - (o que Ele está escrevendo de nós?)</p>
 <p><a href="http://mysword.info/b?r=1Ki_22:51-53">1 Rs 22:51-53</a> Outro rei das 10 tribos - outra triste história de &quot;tal pai, tal filho&quot;.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -518,7 +536,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -591,5 +608,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

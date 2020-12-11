@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -294,6 +300,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=1Ti_6:11-12">1Tm 6:11-12</a> Timóteo é instruído a &quot;fugir&quot;, a &quot;seguir&quot; e a &quot;lutar&quot;. Ele deve fugir do espírito de cobiça que é natural a todos nós. Ele deve seguir as maravilhosas qualidades apresentadas aqui. Ele deve combater o bom combate da fé. Timóteo havia aprendido o quão rico era nas coisas espirituais; ele deveria se apegar a essas coisas.</p>
 <p><a href="http://mysword.info/b?r=1Ti_6:13-16">1Tm 6:13-16</a> Nós que conhecemos o Senhor Jesus devemos nos lembrar da majestade que Lhe pertence. Que grande tolice deixarmos de representar Alguém assim, para sermos levados pelas honras passageiras da riqueza deste mundo.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -327,7 +345,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -400,5 +417,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

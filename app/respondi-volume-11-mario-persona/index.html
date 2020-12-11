@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -1900,6 +1906,18 @@ blockquote,
 <p>Uma pessoa que conheça a Bíblia saberá discernir um evangelho falso de um verdadeiro. Geralmente o falso vem numa embalagem tão bonita e apetitosa que faz seu receptor baixar a guarda e tomar o veneno. O falso não tem sangue e irá falar de sentir-se bem, mudança de vida, prosperidade financeira, proteção contra todos os males desta vida, sorte no amor e muitas outras coisas que apelam para os desejos comuns de todos os seres humanos. Alguns parecem vender a ideia de que você se transformará num Super-Homem ou Mulher-Maravilha, de tanto poder que terá à sua disposição. Gostam de usar passagens como “Mil cairão ao teu lado, e dez mil à tua direita, mas não chegará a ti” (<a href="http://mysword.info/b?r=Psa_91:7">Salmos 91:7</a>), como se o evangelho fosse um poderoso amuleto, não para ser ouvido e crido, mas para ser levado atrás da orelha como se fosse um ramo de arruda.</p>
 <p>Mas evangelhos assim não tem nada do sangue derramado para expiar nossos pecados, nada da obra substitutiva de Jesus, o Cordeiro de Deus, para nos salvar eternamente. Pode ser uma mensagem apenas social, religiosa ou de mudança de sorte ou conduta, e quem não entender o que é realmente o cerne do verdadeiro evangelho pode cair na conversa e comprar gato por lebre. Como se costuma dizer, o livro se compra pela capa, não é mesmo? Parece ser este o caso de alguém que me escreveu seduzido pela capa ou embalagem de boas maneiras das pessoas que costumam levar até ele um evangelho distorcido, que diz ser Jesus um “deus” menor, nega a Trindade e prega uma salvação terrena obtida por meio de boas obras e da filiação à sua organização religiosa.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -1933,7 +1951,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -2006,5 +2023,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

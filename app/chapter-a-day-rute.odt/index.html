@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -267,6 +273,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=Rut_4:1-12">Rt 4:1-12</a> Boaz era sem dúvida alguma um homem correto. De acordo com as Escrituras (<a href="http://mysword.info/b?r=Lev_25:25-28">Lv 25:25-28</a>) ele sabia que o parente mais próximo do finado marido de Rute tinha a responsabilidade de comprar de volta (redimir) a terra que antes lhe pertencia. Assim, Boaz encontra-se com sua parente mais próxima na cidade. Rute é uma figura de Israel, que entrará em grande bênção no futuro milênio. Todavia, podemos vê-la também como uma figura de um pecador perdido. O parente mais próximo pode ser uma figura da &quot;lei&quot;, que não podia redimir. Mas a lei precisava ter sua chance, o que ocorreu, embora jamais pudesse resolver o problema. Só Cristo pode nos redimir do pecado. Boaz pode tomar Rute por esposa.</p>
 <p><a href="http://mysword.info/b?r=Rut_4:13-22">Rt 4:13-22</a> Mais tarde nasce um filho. Ele torna-se o ancestral do grande Rei Davi. Mas de Mateus <a href="http://mysword.info/b?r=Mat_1">capítulo 1</a>, podemos traçar esta linhagem até um que é maior que Davi, e desta forma podemos aprender que esta história representa mais que apenas uma história de amor terrenal, pois nos leva ao nascimento do Filho do Homem, o Senhor Jesus. A nação de Israel se regozijou em Davi, mas, nAquele que foi o maior Filho do grande Davi, todas as nações da Terra se regozijarão. (No milênio).</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -300,7 +318,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -373,5 +390,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -616,6 +622,18 @@ blockquote,
 <p>Agora perguntamos: “Quem foi que mudou sua doutrina eclesiástica? Quem foi que abandonou a verdade que tinha sido graciosamente recuperada para os santos por aqueles dotados irmãos que Deus levantou para esse propósito? Aqueles que procuram preservar as coisas que nos foram ensinadas por aqueles irmãos do passado tão somente buscam guardar “o bom depósito” de verdade (<a href="http://mysword.info/b?r=2Ti_1:14">2Tm 1:14</a>) que foi recuperada para a igreja. Ela nos foi legada por uma geração anterior de homens fiéis. Temos de admitir que ela tem sido mantida em meio a muita fraqueza, mas este tem sido nosso grande objetivo. Recordamos a exortação de Paulo a Timóteo com respeito às coisas que ele havia escutado de Paulo. Era para ele transmitir a mesma verdade a homens fiéis que pudessem instruir outros. Enfatizamos que deveria ser a mesma verdade, pois Paulo estava instruindo Timóteo a ensinar a outros as mesmas coisas que ele (Timóteo) tinha aprendido de Paulo (<a href="http://mysword.info/b?r=2Ti_2:2">2Tm 2:2</a>). Ele não devia alterá-las ao seu bel prazer para depois passá-las adiante, pois se ele e outros fizessem isso a verdade que Paulo lhe havia dado logo estaria perdida.</p>
 <p>O cerne da questão está em que esses que se amalgamaram tiveram de abrir mão da verdade do único centro de reunião a fim de conseguirem juntar os vários grupos de irmãos em sua reunião. Ao apontarmos estas coisas não é nossa intenção acusar ou ofender, mas mostrar exatamente o que aconteceu. Na verdade parece que sempre que alguém abandona a mesa do Senhor essa pessoa passa a acreditar que a mesa não está em um único lugar.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -649,7 +667,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -722,5 +739,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

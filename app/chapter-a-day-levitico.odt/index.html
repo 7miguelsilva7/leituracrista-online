@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -537,6 +543,18 @@ blockquote,
 <p>Este capítulo nos fala de pessoas que faziam votos (promessas) a Deus. Cada uma tinha um valor diferente. Isto nos faz pensar do Senhor Jesus e do valor que foi dado a Ele. Leia <a href="http://mysword.info/b?r=Zec_11:12-13">Zc 11:12-13</a>. Também <a href="http://mysword.info/b?r=Mat_27:9-10">Mt 27:9-10</a>.</p>
 <p><strong>O Senhor Jesus é Aquele que veio ao mundo e nos redimiu (pagou por nós) com Seu sangue. Nós crentes somos dEle agora.</strong> <a href="http://mysword.info/b?r=1Co_6:19-20"><strong>1 Co 6:19-20</strong></a><strong>.</strong> <a href="http://mysword.info/b?r=Rom_14:7-9"><strong>Rm 14:7-9</strong></a><strong>. Quão próximo Deus Se mantinha do Seu povo e da Sua terra. E isto é exatamente a maneira como Ele quer fazer conosco agora. Pense no fato de que este livro foi escrito cerca de 1.300 anos antes de Cristo nascer, e todas estas histórias têm significados que se cumprem nEle - alguns ainda futuros.</strong></p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -570,7 +588,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -643,5 +660,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

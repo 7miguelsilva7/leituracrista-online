@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -844,6 +850,18 @@ blockquote,
 <p>E AGORA, QUERIDO LEITOR, ao terminar, se como pecador perdido, aos olhos de Deus, tiver crido de todo o coração, tiver aceitado o Senhor Jesus como tendo sofrido na cruz por todos os pecados cometidos por você, e tendo ressuscitado para sua justificação, então o Cristo na glória é Aquele em Quem você está agora firme e seguro. (Veja <a href="http://mysword.info/b?r=Eph_1:20">Ef 1:20</a> e <a href="http://mysword.info/b?r=Eph_6">cap. 6</a>; <a href="http://mysword.info/b?r=Rom_5:2">Romanos 5:2</a>). Você já tem, portanto, a vida eterna. (Veja <a href="http://mysword.info/b?r=1Jo_5:13">1 João 5:13</a>). Você está nos ombros do Bom Pastor, e Ele nunca o deixará de assim conduzir, até que o tenha introduzido no Lar celestial. (<a href="http://mysword.info/b?r=Luk_15:6">Lc 15:6</a>) Se, assim, verdadeiramente creu, você já foi feito membro do Corpo de Cristo, a Igreja verdadeira, ligado ao seu Senhor pelo Espírito Santo. (<a href="http://mysword.info/b?r=Act_2:47">Atos 2:47</a>; <a href="http://mysword.info/b?r=1Co_12:13">1 Co 12:13</a>). E agora, a caminho do Lar, Ele Se alegra em reunir os Seus em torno de Si, “fora do arraial” (<a href="http://mysword.info/b?r=Heb_13:13">Hb 13:13</a>), e ao Seu nome exclusivamente (<a href="http://mysword.info/b?r=Mat_18:20">Mt 18:20</a>), até que volte para levar-nos todos a esse Lar, para estarmos com Ele e sermos semelhantes a Ele, por todo o sempre, na glória, para o Seu eterno louvor!</p>
 <p>Eu e Ele, em radiante glória, Iremos profundo gozo desfrutar; Meu gozo será estar com Ele pra sempre, E o dele, de ter-me no Seu Lar.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -877,7 +895,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -950,5 +967,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

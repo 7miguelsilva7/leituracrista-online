@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -241,6 +247,18 @@ blockquote,
 <p>Apresentamos, a seguir, alguns versículos que podem ser aplicados ao nosso tema: &quot;Declara-me que é o que tens em casa.&quot; (<a href="http://mysword.info/b?r=2Ki_4:2">2 Reis 4:2</a>) &quot;Entra e vê as malignas abominações&hellip; pintadas na parede.&quot; (<a href="http://mysword.info/b?r=Eze_8:9-10">Ezequiel 8:9-10</a>) &quot;Não meterás pois abominação em tua casa, para que não sejas anátema, assim com ela: de todo a detestarás e de todo a abominarás, porque anátema é.&quot; (<a href="http://mysword.info/b?r=Deu_7:26">Deuteronômio 7:26</a>) &quot;Amados&hellip; purifiquemo-nos de toda a imundícia&hellip;&quot; (<a href="http://mysword.info/b?r=2Co_7:1">2 Coríntios 7:1</a>) &quot;Abstende-vos de toda a aparência do mal.&quot; (<a href="http://mysword.info/b?r=1Th_5:22">1 Tessalonicenses 5:22</a>) &quot;Atendei ao que ides ouvir.&quot; (<a href="http://mysword.info/b?r=Mar_4:24">Marcos 4:24</a>) &quot;Não toqueis nada imundo.&quot; (<a href="http://mysword.info/b?r=2Co_6:17">2 Coríntios 6:17</a>) &quot;&hellip;não é do Pai, mas do mundo.&quot; (<a href="http://mysword.info/b?r=1Jo_2:16">1 João 2:16</a>) &quot;&hellip;porque não sois do mundo.&quot; (<a href="http://mysword.info/b?r=Joh_15:19">João 15:19</a>) &quot;Que comunhão tem a luz com as trevas?&quot; (<a href="http://mysword.info/b?r=2Co_6:14">2 Coríntios 6:14</a>) &quot;Sê o exemplo dos fiéis.&quot; (<a href="http://mysword.info/b?r=1Ti_4:12">1 Timóteo 4:12</a>) Terminamos deixando para meditação o versículo no Salmos 119:37 que deixa claro ao cristão a posição que deve tomar em relação à televisão: &quot;Desvia os meus olhos de contemplarem a vaidade.&quot;</p>
 <p>Paul Wilson</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -274,7 +292,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -347,5 +364,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

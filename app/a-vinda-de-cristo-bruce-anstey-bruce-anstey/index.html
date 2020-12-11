@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -223,6 +229,18 @@ blockquote,
 <p>Em um certo sentido, existem três vindas; Sua vinda para o que era Seu (quando veio ao mundo, <a href="http://mysword.info/b?r=Joh_1:10,11">João 1:10,11</a>: <a href="http://mysword.info/b?r=Heb_10:7">Hebreus 10:7</a>), Sua vinda para os que são Seus (no arrebatamento, <a href="http://mysword.info/b?r=Joh_14:2,3">João 14:2,3</a>; <a href="http://mysword.info/b?r=1Th_4:15-18">I Tess. 4:15-18</a>), e Sua vinda com os que são Seus (na vinda de Cristo, <a href="http://mysword.info/b?r=Jud_1:14">Jud. 14</a>).</p>
 <p>&quot;Outline of Prophetic Events&quot; - B. Anstey</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -256,7 +274,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -329,5 +346,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

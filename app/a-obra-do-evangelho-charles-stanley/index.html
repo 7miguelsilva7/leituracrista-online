@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -805,6 +811,18 @@ blockquote,
 <p>De que pode o crente necessitar, ou o que pode desejar mais, além de graça para andar de modo digno desta elevada vocação em Cristo Jesus? Ele é, assim, nossa justiça, mas não para tornar bom o homem sob a lei, mas por Ele ser o que é agora; por ser o que foi feito para nós, como ressurreto dentre os mortos. Tal como Ele é assim somos nós, e tudo provém de Deus. Oh, que diferença é sentida e desfrutada, quando chegamos ao fim de toda a esperança na carne sob a lei e encontramos tudo em Cristo ressurreto! Não mais eu, mas Cristo. Oh Deus, nosso Pai, abençoa estas poucas observações para o livramento de muitas almas; e ao Teu nome seja todo o louvor!</p>
 <p>Charles Stanley foi chamado para o lar celestial no dia 30 de março de 1890, após uma vida devotada ao serviço de Cristo.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -838,7 +856,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -911,5 +928,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

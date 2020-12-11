@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -576,6 +582,18 @@ blockquote,
 <p>Suponha que Deus tivesse parado no final, que utilidade teria este Livro? jó poderia ter dito, &quot;Bem, quando tudo era próspero eu era os olhos do cego (<a href="http://mysword.info/b?r=Job_29:15">29:15</a>) e quando as coisas iam mal eu era paciente&quot;. Teria sido muito ruim. Mas isso não iria acontecer. Mesmo que seus amigos estivessem totalmente errados por pensar que este mundo era um exemplo do justo governo de Deus, Jó entende de repente o que é na realidade, e por isso temos o <a href="http://mysword.info/b?r=Job_42:6">versículo 6</a>.</p>
 <p><a href="http://bibliaonline.com.br/acf/J%C3%B3/42/7-17">Jó 42:7-17</a> Os pensamentos de Jó se voltam para seus amigos. Ele até ora por eles! E ao fazer isso, Deus age em favor de Jó, e lhe dá em dobro tudo o que tinha antes! Feliz Jó. (Felizes somos nós, se já tivermos sido humilhados para nos enxergar do modo como Deus nos vê. Então nossos olhos serão abertos e seremos capazes de dizer, &quot;graças a Deus que sempre me deixa passar por tribulações&quot;). O Livro de Jó foi de ajuda?</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -609,7 +627,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -682,5 +699,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

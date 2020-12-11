@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -386,6 +392,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=Heb_13:10">Hb 13:10</a> O Cristianismo é algo totalmente novo e diferente do Antigo Testamento. Leia o <a href="https://mysword.info/b?r=Heb_13:15">versículo 15</a> com o <a href="https://mysword.info/b?r=Heb_13:10">vers. 10</a>.</p>
 <p><a href="http://mysword.info/b?r=Heb_13:13">Hb 13:13</a> Jesus foi levado para fora da cidade religiosa de Jerusalém e ali foi crucificado. Se os crentes quiserem estar conforme Ele hoje, serão reunidos ao redor da Pessoa do Senhor Jesus, fora de todas as religiões e denominações dos homens. Estar reunido em redor de qualquer outro nome é desobedecer Ef <a href="http://mysword.info/b?r=Eph_4:3">4:3</a>. Cristo está rejeitado, Ele foi expulso por este mundo religioso. Não nos é dito para sairmos a uma igreja ou credo, mas a Ele. Acaso Ele atrai seu coração?</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -419,7 +437,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -492,5 +509,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

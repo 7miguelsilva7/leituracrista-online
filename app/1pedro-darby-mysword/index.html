@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -546,6 +552,18 @@ blockquote,
 <p>Nos últimos meses do ano 1880 John Nelson Darby sofreu muito. Teve problemas de respiração bem como de coração. Em dezembro houve uma leve melhora da forma que pôde escrever a um conhecido: &quot;Pela bondade de Deus estou indo muito melhor. Na verdade nem entendo que estive tão perto da morte. Embora não com muita frequência, ainda assim posso ir às reuniões. Também posso fazer o meu trabalho costumeiro. É certo que nos meses que seguirão haverá uma mudança acontecendo comigo frente a minha iminente despedida desse mundo, porém não há mudança com vistas à doutrina e os meus pontos de vista. Isso não mudou; tudo encontrei confirmado. É um doce e lindo pensamento, que tudo aquilo que ensinei o fiz em Deus. No meu interior tenho certeza de que pertenço a um outro mundo&hellip; por quanto tempo ainda pertencerá a mim não sei. Para a saída, a palavra do amado Senhor é importante: &quot;Não são do mundo, como eu do mundo não sou&quot; (<a href="https://mysword.info/b?r=Joh_17:16">Jo 17:16</a>). — Nesse sentido a mudança é perceptível e estou a esperando.&quot; No ano 1881, John Nelson darby ainda estava trabalhando na edição de seu hinário inglês. No dia 15 de dezembro de 1881, escreveu o prefácio para a Bíblia francesa que foi publicada em 1882. No final de janeiro, a sua constituição física lhe permitiu cumprir apenas a metade de suas tarefas diárias. Nas últimas semanas foi recebido e cuidado na casa do irmão Hammond em Bournemouth. Foi ali que ele faleceu no dia 29 de abril de 1882. Numa lápide simples e branca do cemitério de Bournemouth se lê as palavras: John Nelson Darby Como um desconhecido e bem-conhecido.</p>
 <p>faleceu no Senhor em 29 de abril de 1882 81 anos <a href="https://mysword.info/b?r=2Co_5:21">2 Coríntios 5:21</a> “Senhor, me deixa esperar em Ti, a minha vida seja consagrada a Ti, desconhecido aqui na terra, servo Teu, então herdar a felicidade do céu.” J. N. D.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -579,7 +597,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -652,5 +669,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

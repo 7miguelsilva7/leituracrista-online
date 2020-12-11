@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -243,6 +249,18 @@ blockquote,
 <p>Se você deseja uma receita para o sucesso, aqui está ela. O seu &quot;livro da lei&quot; é a Palavra de Deus, e a promessa permanece tão válida para você hoje, como era para Josué. Posso dizer até que a promessa é bem melhor do que quando foi feita a Josué, pois hoje podemos recebê-la com muito mais certeza. Temos a revelação de Deus em Cristo, e a total certeza de que se colocarmos a Cristo em primeiro lugar, iremos ter um caminho próspero e seremos bem sucedidos. Portanto, nunca pense que viver para Cristo significa levar uma vida de fracasso. Nunca será assim. Uma vida vivida em função deste mundo, isto sim, resultará em fracasso no seu final, tendo em vista o dia vindouro. Desejo insistir, jovem, para que, pela graça de Deus, tenha a Cristo como a razão do seu viver. Faça da Palavra de Deus a base sobre a qual está firmada a sua vida, e, assim, será bem sucedido!</p>
 <p>C.H.Brown</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -276,7 +294,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -349,5 +366,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

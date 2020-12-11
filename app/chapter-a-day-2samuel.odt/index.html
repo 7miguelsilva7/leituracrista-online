@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -448,6 +454,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=2Sa_24:17">2 Sm 24:17</a> O homem culpado fala com Deus e é ouvido.</p>
 <p><a href="http://mysword.info/b?r=2Sa_24:18-25">2 Sm 24:18-25</a> Um Gentio provê o lugar para um altar ser construído, para sacrifício ao Senhor. (Irá custar a você alguma coisa se quiser se separar de outros crentes para adorar a Deus em verdade). O local era o mesmo onde o grande templo de Salomão seria construído. (Isto é uma figura de um dia ainda mais importante que acontecerá neste mundo - uma conexão entre o céu e a terra. Pois perto daqui morreu nosso bendito Senhor Jesus sobre a cruz, derramando Seu precioso sangue, para que nós, crentes, possamos estar aptos para entrar na presença de Deus).</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -481,7 +499,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -554,5 +571,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

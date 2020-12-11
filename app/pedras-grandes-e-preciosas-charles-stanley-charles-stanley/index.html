@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -258,6 +264,18 @@ blockquote,
 <p>Há trabalho para cada construtor, e para cada homem que encontrou descanso para a sua própria alma. Alguns podem estar derrubando os altivos cedros, outros brandindo a picareta da convicção nas profundezas da mina, outros arrastando pedras com as poderosas cordas do amor divino, e outros preparando juntos a construção. Não diga: Não há nada para eu fazer. &quot;Porventura não está convosco o Senhor vosso Deus?&hellip; levantai-vos, e edificai&quot; (<a href="http://mysword.info/b?r=1Ch_22:18-19">1 Crônicas 22:18-19</a>). Que Deus nos dê mais disposição de coração, mais singeleza de olhos, mais simplicidade de fé; e à medida que o edifício cresce em silencioso poder, sim, quando a derradeira pedra destinada ao seu topo for colocada com um brado, a Ele seja dado todo o louvor!</p>
 <p>C. Stanley Great Stones and Costly, Charles Stanley</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -291,7 +309,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -364,5 +381,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

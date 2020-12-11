@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -1604,6 +1610,18 @@ blockquote,
 <p>O outro e único tipo de imposição de mãos é mencionado em conexão com a cura do enfermo. O próprio Senhor impôs suas mãos sobre o enfermo (<a href="http://mysword.info/b?r=Luk_4:40">Lc 4:40</a>), e comissionou seus discípulos, depois de sua ressurreição, a fazerem o mesmo (<a href="http://mysword.info/b?r=Mar_16:18">Mc 16:18</a>). Mas se, por um lado, os “dons de cura” eram encontrados na assembleia em Corinto, não existem indícios de que a comissão dada aos discípulos tivesse sido estendida a outros. Já escrevi o suficiente para ajudar o leitor na investigação do assunto, e este, valendo-se dos casos mencionados dentro de seu contexto, será capaz de compreender a verdade envolvida nisso e a avaliar o assunto “imposição de mãos” quando comparado às presunçosas reivindicações feitas nos meios eclesiásticos. —Traduzido de “The Christian’s Friend and Instructor” – 1893.</p>
 <hr>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -1637,7 +1655,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -1710,5 +1727,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

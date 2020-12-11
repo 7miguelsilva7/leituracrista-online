@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -226,6 +232,18 @@ blockquote,
 <p>Considere ser algo de grande importância quando falar de Jesus àquele seu colega de escola, ou ao seu companheiro no trabalho. Dê um folheto evangelístico ao balconista do armazém, ao vendedor que bate à sua porta, ou à pessoa que está sentada ao seu lado no ônibus. Dê grande valor à sua pequena classe de escola dominical. É melhor encaminhar uma alma, como pecador perdido, para os pés de Jesus a fim de receber salvação, do que enganar mil pessoas levando-as a uma profissão vazia de fé. É muito melhor ouvir de nosso Senhor o &quot;Bem está&quot; por alguma pequena coisa feita corretamente, do que o aplauso do mundo e a repreensão do Senhor por grandes coisas que Sua Palavra claramente condena (<a href="http://mysword.info/b?r=Rev_3:15-18">Apocalipse 3:15-18</a>).</p>
 <p>J. T. Armet</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -259,7 +277,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -332,5 +349,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

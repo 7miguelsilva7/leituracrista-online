@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -277,6 +283,18 @@ blockquote,
 <p>“Há um só corpo”. Ele não diz, “havia um só corpo” ou “haverá um só corpo”. Não, ele diz “há um só corpo”. Eis aqui nossa autoridade para crer e confessar esta gloriosa verdade e usá-la em nosso testemunho prático contra tudo aquilo que venha negá-la. O primeiro passo ao confessar a unidade da igreja de Deus é sair das divisões da cristandade. Não devemos parar antes disso para perguntar qual deve ser nosso segundo passo. Deus nunca dá luz para dois passos de uma só vez. É verdade que não há mais do que um só corpo? Isto é inquestionável. Deus o afirma. Bem, então as divisões, as seitas e os sistemas da cristandade estão totalmente contra o pensamento, a vontade e a palavra de Deus. É verdade. O que devemos fazer? Abandonar isso tudo. Este é, podemos estar seguros, o primeiro passo na direção certa. Se o lugar que ocupamos for falso, então toda a nossa perspectiva será falsa. Devemos adotar uma posição verdadeira e então nossa perspectiva será correta. É impossível fazer qualquer confissão prática da unidade da igreja de Deus e, ao mesmo tempo, permanecer ligado àquilo que nega isto na prática. Acabaremos tendo a teoria nos domínios de nosso entendimento, enquanto negamos a realidade em nossa carreira prática. Porém, se desejamos confessar a verdade do único corpo, nosso primeiro compromisso — nosso dever primário — é estar em total separação de todas as seitas e divisões da cristandade. “Todavia” — alguns podem inquirir — “será que isso não resultaria na formação de uma nova seita, e não apenas isto, mas na formação da mais restrita e intolerante dentre todas as seitas?” De modo algum. Pode parecer isso, segundo o raciocínio meramente natural — até mesmo de natureza religiosa. Mas a questão é: As divisões da cristandade estão em conformidade com Deus? Os muitos corpos da igreja professa estão em conformidade com o “um só corpo” de <a href="http://mysword.info/b?r=Eph_4">Efésios 4</a>? É claro que não. Portanto é nosso dever divinamente designado sairmos fora disso tudo, e é impossível pensar que o fato de colocar em prática um dever divinamente ordenado poderia levar ao sectarismo ou ao cisma. Ao contrário, trata-se de um testemunho em direta e positiva oposição ao sectarismo e, além disso, o primeiro grande passo para a manutenção da unidade do Espírito no vínculo da paz é sair das divisões da cristandade. E depois? Olhar para Jesus, e isto significa continuar até o fim. Será que isto — repetimos a pergunta — significa formar uma nova seita ou se filiar a um novo corpo? De modo algum, trata-se de fugir das ruínas ao nosso redor para encontrar nossa fonte na total suficiência do nome de Jesus. Trata-se de abandonar o barco ao ouvir a ordem de Jesus, manter o olhar fixo nEle em meio ao lamaçal revolto, até chegarmos à segurança do porto de glória e descanso eternos.</p>
 <p>C. H. M.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -310,7 +328,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -383,5 +400,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

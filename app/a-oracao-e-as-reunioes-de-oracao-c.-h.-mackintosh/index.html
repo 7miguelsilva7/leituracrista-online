@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -300,6 +306,18 @@ blockquote,
 <p>Que sejam nossas reuniões de oração verdadeiros reuniões de oração, o lugar para expressarmos a necessidade e esperarmos bênção. Permitamos que estas reuniões sejam o lugar onde o povo de Deus se reúne unânime para agarrar-se ao trono de Deus, para entrar nos verdadeiros tesouros dos céus e tomar tudo o que quer para si mesmo, para sua família, para toda a igreja de Deus e para a vinha de Cristo.</p>
 <p>Este é o verdadeiro modelo de uma reunião de oração escritural. Deus permita que o povo de Deus em todos os lugares abram os olhos. Que o Espírito Santo nos comova e imprima o valor, a importância e a necessidade urgente de estarmos unidos, de crermos, sermos específicos, de insistirmos e perseverarmos em todas as nossas orações e reuniões de oração!</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -333,7 +351,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -406,5 +423,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

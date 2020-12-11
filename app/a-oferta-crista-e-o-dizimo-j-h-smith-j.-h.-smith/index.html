@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -219,6 +225,18 @@ blockquote,
 <p>Para que o leitor possa meditar mais sobre o assunto, deixamos as passagens do Novo Testamento que dizem respeito à oferta cristã, individual ou coletiva: (<a href="http://mysword.info/b?r=Act_11:27-30">At 11:27-30</a>; <a href="http://mysword.info/b?r=Rom_12:8,13">Romanos 12:8,13</a>; <a href="http://mysword.info/b?r=1Co_16:1-3">1 Coríntios 16:1-3</a>; <a href="http://mysword.info/b?r=2Co_8">2 Coríntios 8</a> e <a href="http://mysword.info/b?r=2Co_9">9</a>; <a href="http://mysword.info/b?r=Gal_6:6">Gálatas 6:6</a>; <a href="http://mysword.info/b?r=Php_4:10-19">Filipenses 4:10-19</a>; <a href="http://mysword.info/b?r=1Ti_6:17-19">1 Timóteo 6:17-19</a>; <a href="http://mysword.info/b?r=Heb_13:15-16">Hebreus 13:15-16</a>; <a href="http://mysword.info/b?r=Jas_2:15-16">Tiago 2:15-16</a>; <a href="http://mysword.info/b?r=1Pe_4:9-10">1 Pd 4:9-10</a>; <a href="http://mysword.info/b?r=1Jo_3:16-18">1 João 3:16-18</a>).</p>
 <p>J. H. SMITH</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -252,7 +270,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -325,5 +342,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

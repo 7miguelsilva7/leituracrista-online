@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -516,6 +522,18 @@ blockquote,
 <p><a href="http://mysword.info/b?r=2Ki_25:22-26">2 Rs 25:22-26</a> A maioria das pessoas que permaneceu na terra buscaram ajuda no Egito. (Deus lhes havia dito que se sujeitassem ao rei de Babilônia e Ele os preservaria). Mas eles se recusaram e são destruídos (leia sobre o mesmo incidente em <a href="http://mysword.info/b?r=Jer_43">Jeremias 43</a>).</p>
 <p>Assim chegamos ao final deste livro de 2 Reis, com muitos incidentes, alguns brilhantes mas a maior parte deles negros; com muitos homens, mulheres, jovens e crianças, alguns fiéis, alguns infiéis a Deus. Como será vista a sua vida e a minha quando for revista diante do Senhor Jesus Cristo? Esta é nossa única oportunidade de vivermos em fidelidade a Ele. <a href="http://mysword.info/b?r=Pro_14:23">Pv 14:23</a> diz que &quot;em todo trabalho há proveito&quot;. Mas na vida do crente nenhum trabalho pode dar um fruto mais rico e duradouro que a paciente leitura e prática da Palavra de Deus, feita em oração. Muitos descobriram que esta é uma vida de gozo. (Nós crentes não podemos progredir, ao contrário, iremos cada vez mais para baixo, se não estivermos dispostos a nos separar do mal religioso que nos cerca. Será que isto faz soar uma corda em seu coração?)</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -549,7 +567,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -622,5 +639,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -245,6 +251,18 @@ blockquote,
 <p>Finalmente, nos é ordenado que olhemos para diante, para o dia da redenção. Assim nos é dito que o Espírito que em nós habita &quot;é o penhor da nossa herança, para redenção da possessão de Deus, para louvor da Sua glória&quot; (<a href="http://mysword.info/b?r=Eph_1:14">Efésios 1:14</a>); e ainda, que não devemos entristecer &quot;o Espírito Santo de Deus, no Qual estais selados para o dia da redenção&quot; (<a href="http://mysword.info/b?r=Eph_4:30">Efésios 4:30</a>). Será então que todos os frutos da redenção serão alcançados e desfrutados, quando o Senhor tomar posse, em poder, de tudo o que já foi adquirido pelo Seu precioso sangue. Já nos ocupamos disto no que diz respeito ao corpo. Mas há mais do que isso. Temos o Espírito como Penhor de nosso futuro pleno de participação na herança que pertence a Cristo - uma herança sobre a qual Ele tem direito pela redenção, quando adquiriu todas as coisas para Si mesmo, mas das quais Ele só tomará posse por Seu poder quando tiver reunido todos os co-herdeiros para que desfrutem delas Consigo. É por isto que esperamos - não apenas pela vinda de Cristo, pela ressurreição de nossos corpos, e por sermos glorificados juntamente com Ele, mas também pelo tempo quando, como co-herdeiros com Ele, entraremos, com Ele, na posse de toda aquela cena de domínio, bênção e glória, que Ele adquiriu por Sua morte - Sua obra de redenção - sendo tudo a aquisição de Seu próprio sangue precioso. Que maravilha é que nos seja dito que essa consumação é para o louvor da glória da Sua graça; o nosso compartilhar com Cristo em Sua herança será para louvor da Sua glória. É numa cena assim de bênção e exaltação que, pela graça de nosso Deus, entraremos muito em breve. Pois já que somos filhos, somos herdeiros, herdeiros de Deus, e co-herdeiros com Cristo; e Ele está aguardando pelo momento em que poderá cumprir o desejo de Seu próprio coração de ter-nos Consigo mesmo, em conformidade com Sua própria oração: &quot;Pai, aqueles que Me deste quero que, onde Eu estiver, também eles estejam Comigo, para que vejam a Minha glória que Me deste: porque Tu Me hás amado antes da criação do mundo&quot; (<a href="http://mysword.info/b?r=Joh_17:24">João 17:24</a>). Possa Ele capacitar-nos a andar agora como aqueles que esperam pela consumação de uma bênção tal!</p>
 <p>Edward Dennett - &quot;Christ Our Redeemer&quot; - Unsearchable Riches, Pág. 21</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -278,7 +296,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -351,5 +368,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

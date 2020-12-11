@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -270,6 +276,18 @@ blockquote,
 <p>Em um mundo onde existe tanta mudança temos a Palavra de Deus que auxilia, que instrui, aquelas coisas firmes que Deus estabeleceu, de modo a podermos seguir em paz, tendo a divina direção que provém da mesma Pessoa cujo nome é &quot;Maravilhoso, Conselheiro, Deus forte, Pai da eternidade, Príncipe da paz&quot; (<a href="http://mysword.info/b?r=Isa_9:6">Isaías 9:6</a>). Possamos nos voltar para Ele e ter nossos olhos fixos nEle. O resultado será uma transformação em nós que nos fará um pouco mais como Aquele que não muda.</p>
 <p>Gordon Hayhoe &quot;The Friend And The Things That Never Change&quot;; palestra a cristãos em La Mirada, CA, 29:12:85.</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -303,7 +321,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -376,5 +393,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>

@@ -166,10 +166,16 @@ blockquote,
 }
 
 </style>
+
+  <style>
+#scroll {overflow-y: auto;}
+  </style>
+
+
 </head>
 
 
-<body>
+<body onscroll="onscrolling()" onload="saveBookActived()">
   <nav class="custom-navbar">
   <div class="container">
     
@@ -249,6 +255,18 @@ blockquote,
 <p>Lembre-se de que Deus nunca dá luz para dois passos de uma vez. Se Ele deu a você luz para um passo, então, no temor e amor do Seu Nome, dê aquele passo, e você irá, com certeza, conseguir mais luz - sim, cada vez mais. Mas se houver uma recusa para agir, a luz que há em você se transformará em rude escuridão, seu pé tropeçará nas montanhas de erro que estão em ambos os lados do caminho reto e estreito da obediência; e você acabará se tornando uma pedra de tropeço no caminho de outros. Algumas das mais opressivas pedras de tropeço existentes hoje no caminho daqueles que buscam ansiosamente, podem ser achadas em pessoas que um dia pareciam possuir a verdade, mas se desviaram dela. A luz que havia neles transformou-se em trevas, e oh, quão grandes e pavorosas trevas! Como é triste vermos aqueles que deveriam ser carregadores de luz, agindo como verdadeiros obstáculos para cristãos novos e sinceros! Mas, jovem cristão, não se deixe impedir por eles. O caminho é claro. &quot;O temor do Senhor é a sabedoria, e apartar-se do mal é a inteligência&quot;. Que cada um escute e obedeça por si mesmo a voz do Senhor. &quot;As Minhas ovelhas ouvem a Minha voz, e Eu conheço-as, e elas Me seguem&quot; (<a href="http://mysword.info/b?r=Joh_10:27">João 10:27</a>). Que o Senhor seja louvado por esta preciosa palavra! Ela põe cada um no lugar de responsabilidade direta para com o próprio Cristo; diz-nos claramente o que é o caminho de Deus, e, de modo igualmente claro, como encontrá-lo.</p>
 <p>C.H.Mackintosh</p>
 
+
+<script>
+function saveBookActived()
+{
+var NameBookActived = window.location.href;
+localStorage.setItem('NameBookActivedKey', NameBookActived)
+console.log(localStorage.getItem('NameBookActivedKey'));
+}
+
+</script>
+
+<script src="https://leituracrista.com/app/js/custom.js"></script>
     </article>
   </div>
 
@@ -282,7 +300,6 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
 
 
 <script>
@@ -355,5 +372,41 @@ window.cookieconsent.initialise({
 <script src="../js/refLink.js"></script>
 </body>
 
+<script>
+  
+  $(document).ready(function() {
+  $('.load').hide();
+  });
+
+
+
+
+function removeNameBookActived(){
+localStorage.removeItem('NameBookActivedKey');
+}
+
+
+var aScroll = 'scroll-'
+var positionScrollKey = document.getElementsByTagName("title")[0].innerHTML;
+
+function onscrolling(){
+positionScrollValue = $(window).scrollTop();
+localStorage.setItem(positionScrollKey, positionScrollValue);
+
+}
+
+console.log(positionScrollKey)
+console.log(localStorage.getItem(positionScrollKey));
+
+if(localStorage.hasOwnProperty(positionScrollKey)){
+  var target = $('#scroll');
+  target.css('overflow-y', 'hidden');
+  $(window).scrollTop(localStorage.getItem(positionScrollKey));
+  target.css('overflow-y', 'auto');
+}
+
+
+
+</script>
 
 </html>
