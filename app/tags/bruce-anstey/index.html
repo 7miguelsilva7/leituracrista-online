@@ -361,12 +361,20 @@ window.cookieconsent.initialise({
 
 
   
+  
+  function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 60);
+  }
+}
+  
   $("ul").addClass("selectdropdown");
 
   $('ul.selectdropdown').each(function(){
     var list=$(this),
         select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
       window.open($(this).val(),'_self')
+      offsetAnchor();
     });
     $('>li a', this).each(function(){
       var option=$(document.createElement('option'))
@@ -402,11 +410,7 @@ window.cookieconsent.initialise({
 
 <script src="../js/refLink.js"></script>
 
-<script>
-  
 
-
-</script>
 
 </body>
 

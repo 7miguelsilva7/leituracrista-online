@@ -619,6 +619,7 @@ $reset.on('click', function() {
 
 
 
+// RESOLVER SCROLL AO CLICAR EM UMA ANCORA
 // Aqui nós estaremos realizando o scroll da página para 45px acima
 // de onde ela está atualmente
 function offsetAnchor() {
