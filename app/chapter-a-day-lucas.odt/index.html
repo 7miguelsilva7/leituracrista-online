@@ -635,7 +635,7 @@ window.cookieconsent.initialise({
   
   function offsetAnchor() {
   if (location.hash.length !== 0) {
-    window.scrollTo(window.scrollX, window.scrollY - 60);
+    window.scrollTo(window.scrollX, window.scrollY - 80);
   }
 }
   
@@ -655,6 +655,7 @@ window.cookieconsent.initialise({
       if($(this).attr('class') === 'selected'){
         option.attr('selected','selected');
       }
+      $("select").addClass("selectdropdown");
     });
     list.remove();
     });
@@ -675,6 +676,13 @@ window.cookieconsent.initialise({
       right: 20px;
       display: none;
   }
+  .selectdropdown {
+  white-space: nowrap; 
+  width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
 </style>
 <a href="#"  class="scrollToTop">
   <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
