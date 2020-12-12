@@ -108,7 +108,7 @@ function onscrolling(){
 }
 
 $(document).ready(function(){
-  $(window).scroll(function(){
+$(window).scroll(function(){
 positionScrollValue = $(window).scrollTop();
 localStorage.setItem(positionScrollKey, positionScrollValue);
 // console.log(positionScrollKey)
