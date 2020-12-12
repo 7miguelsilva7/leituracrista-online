@@ -5379,25 +5379,6 @@ if(localStorage.hasOwnProperty('NameBookActivedKey')){
   }
 
 
-var aStatus='Status'
-var bookNameStatus = document.getElementsByTagName("title")[0].innerHTML;
-var livroStatus = bookNameStatus.concat(aStatus)
-
-if (localStorage.getItem(livroStatus) === null) {
-  
-localStorage.setItem(livroStatus, 0)
-}
-
-function setLivroStatus0()
-{
-localStorage.setItem(livroStatus, 0)
-}
-function setLivroStatus1()
-{
-localStorage.setItem(livroStatus, 1)
-}
-
-
 </script>
 
 
