@@ -65,7 +65,6 @@ $("#content").each(function() {
 var session = localStorage.ref;
 if ( session == 1 )
 {
-alert(session)
   $('a[href^="https://"]').each(function(){ 
     var oldUrl = $(this).attr("href"); 
     var newUrl = oldUrl
