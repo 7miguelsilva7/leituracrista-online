@@ -69,7 +69,6 @@ if ( session == 1 )
     var oldUrl = $(this).attr("href"); 
     var newUrl = oldUrl
    
-    .replace(/bibliaonline.com.br\/acf\/1pedro\//gi, "mysword.info\/b?r\=1Pe_")
     .replace(/bibliaonline.com.br\/acf\/rm\//gi, "mysword.info\/b?r\=Rom_") 
     .replace(/bibliaonline.com.br\/acf\/1co\//gi, "mysword.info\/b?r\=1Co_")
     .replace(/bibliaonline.com.br\/acf\/1cr\//gi, "mysword.info\/b?r\=1Ch_")
@@ -194,9 +193,6 @@ if ( session == 1 )
     .replace(/bibliaonline.com.br\/acf\/jonas\//gi, "mysword.info\/b?r\=Jon_")
     .replace(/bibliaonline.com.br\/acf\/jo.o\//gi, "mysword.info\/b?r\=Joh_")
     .replace(/bibliaonline.com.br\/acf\/jó\//gi, "mysword.info\/b?r\=Job_")
-    .replace(/bibliaonline.com.br\/acf\/j%C3%B3\//gi, "mysword.info\/b?r\=Job_")
-    .replace(/bibliaonline.com.br\/acf\/J%C3%B3\//gi, "mysword.info\/b?r\=Job_")
-    .replace(/bibliaonline.com.br\/acf\/J%C3%93\//gi, "mysword.info\/b?r\=Job_")
     .replace(/bibliaonline.com.br\/acf\/jeremias\//gi, "mysword.info\/b?r\=Jer_")
     .replace(/bibliaonline.com.br\/acf\/josu.\//gi, "mysword.info\/b?r\=Jos_")
     .replace(/bibliaonline.com.br\/acf\/ju.zes\//gi, "mysword.info\/b?r\=Jdg_")
