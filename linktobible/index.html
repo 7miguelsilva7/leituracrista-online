@@ -1,318 +1,154 @@
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 
-<head>
-    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+
+    <head>
+
+        <title>Bible2Link</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- VERSO POPUP INÍCIO -->
+<script type='text/javascript'>
+
     
-    <meta charset="UTF-8">
-  
-  
-    <style>
-  
-  
-  
-    .container{
-      display: flex;
-      flex-direction: column;
-    }
-    .titulo {
-       font-size: 3vw;
-            background-color: #1111;
-            text-align: center;
-            padding: 3vw;
-            position: relative;
-    }
-    .ctnFlex{
-      display: flex;
-      justify-content: space-between;
-    }
-     div.op1 {
-            width: 100%;
-            background-color: white;
-            min-width:40vw;
-            border:1px solid black; 
-            padding: 0vw 1vw 0vw 1vw;
-            overflow:auto; 
-    
-    
-        }
-    
-        div.op2 {
-            width: 50%;
-            background-color: white;
-            display: inline-block;
-            margin-right: 0vw;
-            padding: 0vw 1vw 5vw 1vw;
-            min-width:40vw;
-            overflow:auto; 
-            border:1px solid black; 
-            
-        }
-    
-        [contentEditable=true]:empty:not(:focus):before{
-        content:attr(data-text)
-  
-        
-    }
-    .divButton
-    {
-    left: 50%;
-    margin-left: -10px; /* A metade de sua largura. */
-    position: absolute;
-    width: 200px; /* O valor que você desejar. */
-    }
-    
-  @media print {
-    .noPrint
-    {
-      display:none
-    }}
-  
-  @media print {
-      div.receber_conteudo {
-          background-color: white;
-          height: 100%;
-          width: 100%;
-          position: fixed;
-          top: 0;
-          left: 0;
-          margin: 0;
-          padding: 15px;
-          font-size: 14px;
-          line-height: 18px;
-          border:0; 
-          z-index: 9999999;
-      }
-  }
-  
-  
-  
-  
-    </style>
+    //]]>
+    </script>
+    <!-- VERSO POPUP FIM -->
 
-</head>
-  
-  <body>
-    <input type="button" onclick="toBibliaOn()" id="btnMoverConteudo" value="Link to BibliaOnline"/>
+    </head>
+    <body>
 
-    <a href="#" ><input type="button" onclick="toMySword()" id="btnMoverConteudoMySword" value="Link to MySword"/></a>
+<!-- <input type="button" value="Linkar Referências!" id="btn" /> -->
+        <div class="content" id="content" >
+<br />
+Gênesis 1 <br>
+Exodo 1 <br>
+Levítico 1 <br>
+Números 1 <br>
+Deuteronômio 1 <br>
+Josué 1 <br>
+Juízes 1 <br>
+Rute 1 <br>
+1 Samuel 1 <br>
+2 Samuel 1 <br>
+1 Reis 1 <br>
+2 Reis 1 <br>
+1 Crônicas 1 <br>
+2 Crônicas 1 <br>
+Esdras 1 <br>
+Neemias 1 <br>
+Ester 1 <br>
+Jó 1 <br>
+Salmos 1 <br>
+Provérbios 1 <br>
+Eclesiastes 1 <br>
+Cantares 1 <br>
+Isaías 1 <br>
+Jeremias 1 <br>
+Lamentações 1 <br>
+Ezequiel 1 <br>
+Daniel 1 <br>
+Oseias 1 <br>
+Joel 1 <br>
+Amós 1 <br>
+Obadias 1 <br>
+Jonas 1 <br>
+Miqueias 1 <br>
+Naum 1 <br>
+Habacuque 1 <br>
+Sofonias 1 <br>
+Ageu 1 <br>
+Zacarias 1 <br>
+Malaquias 1 <br>
 
-      <input type="button" onclick="solveProblem()" id="solveProblem" value="Solve Problem Chapter Ref"/>
+<br>
 
-        <!-- <input type="button" onclick="test()" value="Teste"/> -->
+Marcos 1 <br>
+Lucas 1 <br>
+João 1 <br>
+Atos dos Apóstolos 1 <br>
+Romanos 1 <br>
+1 Coríntios 1 <br>
+2 Coríntios 1 <br>
+Gálatas 1 <br>
+Efésios 1 <br>
+Filipenses 1 <br>
+Colossenses 1 <br>
+1 Tessalonicenses 1 <br>
+2 Tessalonicenses 1 <br>
+1 Timóteo 1 <br>
+2 Timóteo 1 <br>
+Tito 1 <br>
+Filemom 1 <br>
+Hebreus 1 <br>
+Tiago 1 <br>
+1 Pedro 1 <br>
+2 Pedro 1 <br>
+1 João 1 <br>
+2 João 1 <br>
+3 João 1 <br>
+Judas 1 <br>
+Apocalipse 1 <br>
+<br>
+Êxodo 2 <br>
+Êx 2 <br>
+Mateus 5:10-12 <br>
+Jo 3:16; 7.1, 3; 3:20; Mt 2:3, 5, 2-7; 3:1; Lc 2:1; 3:12
+ <br>
+Jó 42:2 <br>
+João 1 <br>
+João 10.1 <br>
 
-    <div class="container">
-      <div  class="titulo">From e-Sword ToolTip to Bol/MyS</div>
-      <div class="ctnFlex">
-         <div id="conteudo" contenteditable="true" class="op1 conteudo noPrint" data-text="Enter text here"></div>
-         <!-- <div id="receber_conteudo" class="op2 receber_conteudo"></div> -->
-        
-      </div>
-      
-    </div>
-    <div style="position:fixed; bottom: 1px" class="divButton">
-      <a href="#">
-        <button>
-          ^<br>^
-        </button>
-      </a>
-    </div>
-    
-    
-  
-  <script>
+Lucas 1 <br>
+Lucas 1.1 <br>
 
-      // $('#btnMoverConteudo').click(function(){
-      // // // limpa o valor de receber_conteudo
-      // // $('.receber_conteudo').html('');
-      // //   // copia o conteÃºdo em .receber_conteudo
-      // // $('.receber_conteudo').append($('.conteudo').html());
-      // // $('.conteudo').html('');
+1 Co. 2:12 <br>
 
-  
-      // toBibliaOn(); 																
-      // });
+1 João 1.3; 1:20; 3:12; 1:7 <br>    
 
-      // $('#btnMoverConteudoMySword').click(function(){
-      // // // limpa o valor de receber_conteudo
-      // // $('.receber_conteudo').html('');
-      // //   // copia o conteÃºdo em .receber_conteudo
-      // // $('.receber_conteudo').append($('.conteudo').html());
-      // // $('.conteudo').html('');
-  
-      // toMySword(); 																
-      // });
-  
-  function toBibliaOn(){
-  var siteBiblia = "https://bibliaonline.com.br"
-  var version = "acf"
-  
-  var toBibliaOn = document.getElementById('conteudo').innerHTML
-  res = toBibliaOn
-  .replace(/1Co_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1co/$1/$2\">1 Co $1:$2</a>")
-  .replace(/1Ch_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1cr/$1/$2\">1 Cr $1:$2</a>")
-  .replace(/1Jn_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1jo/$1/$2\">1 Jo $1:$2</a>")
-  .replace(/1Pe_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1pe/$1/$2\">1 Pe $1:$2</a>")
-  .replace(/1Ki_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1rs/$1/$2\">1 Rs $1:$2</a>")
-  .replace(/1Sa_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1sm/$1/$2\">1 Sm $1:$2</a>")
-  .replace(/1Th_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1ts/$1/$2\">1 Ts $1:$2</a>")
-  .replace(/1Ti_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/1tm/$1/$2\">1 Tm $1:$2</a>")
-  .replace(/2Co_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/2co/$1/$2\">2 Co $1:$2</a>")
-  .replace(/2Ch_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/2cr/$1/$2\">2 Cr $1:$2</a>")
-  .replace(/2Jn_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/2jo/$1/$2\">2 Jo $1:$2</a>")
-  .replace(/2Pe_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/2pe/$1/$2\">2 Pe $1:$2</a>")
-  .replace(/2Ki_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/2rs/$1/$2\">2 Rs $1:$2</a>")
-  .replace(/2Sa_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/2sm/$1/$2\">2 Sm $1:$2</a>")
-  .replace(/2Th_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/2ts/$1/$2\">2 Ts $1:$2</a>")
-  .replace(/2Ti_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/2tm/$1/$2\">2 Tm $1:$2</a>")
-  .replace(/3Jn_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/3jo/$1/$2\">3 Jo $1:$2</a>")
-  .replace(/Hag_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ag/$1/$2\">Ag $1:$2</a>")
-  .replace(/Amo_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/am/$1/$2\">Am $1:$2</a>")
-  .replace(/Rev_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ap/$1/$2\">Ap $1:$2</a>")
-  .replace(/Act_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/atos/$1/$2\">Atos $1:$2</a>")
-  .replace(/Son_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ct/$1/$2\">Ct $1:$2</a>")
-  .replace(/Col_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/cl/$1/$2\">Cl $1:$2</a>")
-  .replace(/Dan_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/dn/$1/$2\">Dn $1:$2</a>")
-  .replace(/Deu_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/dt/$1/$2\">Dt $1:$2</a>")
-  .replace(/Ecc_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ec/$1/$2\">Ec $1:$2</a>")
-  .replace(/Eph_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ef/$1/$2\">Ef $1:$2</a>")
-  .replace(/Ezr_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ed/$1/$2\">Ed $1:$2</a>")
-  .replace(/Est_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/et/$1/$2\">Et $1:$2</a>")
-  .replace(/Exo_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ex/$1/$2\">Ex $1:$2</a>")
-  .replace(/Eze_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ez/$1/$2\">Ez $1:$2</a>")
-  .replace(/Phm_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/fm/$1/$2\">Fm $1:$2</a>")
-  .replace(/Php_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/fp/$1/$2\">Fp $1:$2</a>")
-  .replace(/Gal_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/gl/$1/$2\">Gl $1:$2</a>")
-  .replace(/Gen_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/gn/$1/$2\">Gn $1:$2</a>")
-  .replace(/Hab_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/hc/$1/$2\">Hc $1:$2</a>")
-  .replace(/Heb_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/hb/$1/$2\">Hb $1:$2</a>")
-  .replace(/Isa_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/is/$1/$2\">Is $1:$2</a>")
-  .replace(/Jer_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/jr/$1/$2\">Jr $1:$2</a>")
-  .replace(/Job_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/jó/$1/$2\">Jó $1:$2</a>")
-  .replace(/Joh_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/jo/$1/$2\">Jo $1:$2</a>")
-  .replace(/Joe_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/jl/$1/$2\">Jl $1:$2</a>")
-  .replace(/Jon_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/jn/$1/$2\">Jn $1:$2</a>")
-  .replace(/Jos_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/js/$1/$2\">Js $1:$2</a>")
-  .replace(/Jud_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/jd/$1/$2\">Jd $1:$2</a>")
-  .replace(/Jdg_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/jz/$1/$2\">Jz $1:$2</a>")
-  .replace(/Lam_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/lm/$1/$2\">Lm $1:$2</a>")
-  .replace(/Lev_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/lv/$1/$2\">Lv $1:$2</a>")
-  .replace(/Luk_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/lc/$1/$2\">Lc $1:$2</a>")
-  .replace(/Mal_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ml/$1/$2\">Ml $1:$2</a>")
-  .replace(/Mar_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/mc/$1/$2\">Mc $1:$2</a>")
-  .replace(/Mat_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/mt/$1/$2\">Mt $1:$2</a>")
-  .replace(/Mic_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/mq/$1/$2\">Mq $1:$2</a>")
-  .replace(/Nah_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/na/$1/$2\">Na $1:$2</a>")
-  .replace(/Neh_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ne/$1/$2\">Ne $1:$2</a>")
-  .replace(/Num_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/nm/$1/$2\">Nm $1:$2</a>")
-  .replace(/Oba_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/ob/$1/$2\">Ob $1:$2</a>")
-  .replace(/Hos_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/os/$1/$2\">Os $1:$2</a>")
-  .replace(/Pro_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/pv/$1/$2\">Pv $1:$2</a>")
-  .replace(/Rom_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/rm/$1/$2\">Rm $1:$2</a>")
-  .replace(/Rth_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/rt/$1/$2\">Rt $1:$2</a>")
-  .replace(/Psa_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/sl/$1/$2\">Sl $1:$2</a>")
-  .replace(/Zep_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/sf/$1/$2\">Sf $1:$2</a>")
-  .replace(/Jas_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/tg/$1/$2\">Tg $1:$2</a>")
-  .replace(/Tit_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/tt/$1/$2\">Tt $1:$2</a>")
-  .replace(/Zec_([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + "/" + version + "/zc/$1/$2\">Zc $1:$2</a>")
-  
+1 João 3.1,3,5 e 7-11 (abreviado, junto, ponto, vírgula e sequencia com “e”)<br>
+1João 1:1 (junto, dois pontos)<br>
+1João 1.1 (junto, ponto)<br>
+1 João 1:1 (separado, dois pontos)<br>
+1 João 1.1 (separado, ponto)<br>
+1 João 1.1-5 (separado, ponto, sequencia)<br>
+1João 1.1-5 (junto, dois pontos, sequencia)<br>
+1 João 1.1-5 (separado, ponto, sequencia)<br>
+1João 1:1-5 (junto, dois pontos, sequencia)<br>
+1 João 1:1, 3, 5-7 (separado, dois pontos, vírgula e sequencia)<br>
+1João 1:1,3,5-7 (junto, dois pontos, vírgula e sequencia)<br>
+1 João 1.1, 3, 5-7 (separado, ponto, vírgula e sequencia)<br>
+1João 1.1,3,5-7 (junto, ponto, vírgula e sequencia)<br>
+1João 1.1,3,5 e 7 (junto, ponto, vírgula e sequencia com “e”)<br>
+1 João 1.1,3,5,9 e 7,8 (separado, ponto, vírgula e sequencia com “e”)<br>
+<br>
+Abreviado<br>
+<br>
+Jo 7.1,3 <br>
+Mt 2:3,5,2-7 <br>
+1Jo 1:1,2; 1:1 (abreviado, junto, ponto)<br>
+1 Jo 1.1 (abreviado, separado, ponto)<br>
+1Jo 1:1 (abreviado, junto, dois pontos)<br>
+1Jo 1:5,6 (abreviado, junto, dois pontos)<br>
+1 Jo 1:1 (abreviado, separado, dois pontos)<br>
+1 Jo 1.1-5 (abreviado, separado, ponto, sequencia)<br>
+1Jo 1.1-5 (abreviado, junto, ponto, sequencia)<br>
+1 Jo 1:1-5 (abreviado, separado, dois pontos, sequencia)<br>
+1Jo 1:1-5 (abreviado, junto, dois pontos, sequencia)<br>
+1 Jo 1.3,4,5-7 (abreviado, separado, ponto, vírgula e sequencia)<br>
+1Jo 1.3,4,5-7 (abreviado, junto, ponto, vírgula e sequencia)<br>
+1 Jo 1:3,4,5-7 (abreviado, separado, dois pontos, vírgula e sequencia)<br>
+1Jo 1:3, 4, 5-7 (abreviado, junto, dois pontos, vírgula e sequencia)<br>
+1Jo 1.1,3,5 e 10 (abreviado, junto, ponto, vírgula e sequencia com “e”)<br>
+2 Jo 1.1 <br>
+2 Jo 2 <br>
+Lucas 2:3; 5:6,7; <br>
+Lc 2:12
 
-  document.getElementById('conteudo').innerHTML = res
+</div>
 
-  }
+<script src="refLink.js"></script>
 
-  function toMySword(){
-  var siteBiblia = "https://mysword.info/b/?r="
-  var version = ""
-  
-  var toBibliaOn = document.getElementById('conteudo').innerHTML
-  res = toBibliaOn
-  .replace(/(1Co_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Co $2:$3</a>")
-  .replace(/(1Ch_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Cr $2:$3</a>")
-  .replace(/(1Jn_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Jo $2:$3</a>")
-  .replace(/(1Pe_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Pe $2:$3</a>")
-  .replace(/(1Ki_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Rs $2:$3</a>")
-  .replace(/(1Sa_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Sm $2:$3</a>")
-  .replace(/(1Th_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Ts $2:$3</a>")
-  .replace(/(1Ti_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">1 Tm $2:$3</a>")
-  .replace(/(2Co_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">2 Co $2:$3</a>")
-  .replace(/(2Ch_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">2 Cr $2:$3</a>")
-  .replace(/(2Jn_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">2 Jo $2:$3</a>")
-  .replace(/(2Pe_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">2 Pe $2:$3</a>")
-  .replace(/(2Ki_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">2 Rs $2:$3</a>")
-  .replace(/(2Sa_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">2 Sm $2:$3</a>")
-  .replace(/(2Th_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">2 Ts $2:$3</a>")
-  .replace(/(2Ti_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">2 Tm $2:$3</a>")
-  .replace(/(3Jn_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">3 Jo $2:$3</a>")
-  .replace(/(Hag_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ag $2:$3</a>")
-  .replace(/(Amo_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Am $2:$3</a>")
-  .replace(/(Rev_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ap $2:$3</a>")
-  .replace(/(Act_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Atos $2:$3</a>")
-  .replace(/(Son_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ct $2:$3</a>")
-  .replace(/(Col_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Cl $2:$3</a>")
-  .replace(/(Dan_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Dn $2:$3</a>")
-  .replace(/(Deu_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Dt $2:$3</a>")
-  .replace(/(Ecc_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ec $2:$3</a>")
-  .replace(/(Eph_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ef $2:$3</a>")
-  .replace(/(Ezr_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ed $2:$3</a>")
-  .replace(/(Est_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Et $2:$3</a>")
-  .replace(/(Exo_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ex $2:$3</a>")
-  .replace(/(Eze_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ez $2:$3</a>")
-  .replace(/(Phm_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Fm $2:$3</a>")
-  .replace(/(Php_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Fp $2:$3</a>")
-  .replace(/(Gal_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Gl $2:$3</a>")
-  .replace(/(Gen_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Gn $2:$3</a>")
-  .replace(/(Hab_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Hc $2:$3</a>")
-  .replace(/(Heb_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Hb $2:$3</a>")
-  .replace(/(Isa_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Is $2:$3</a>")
-  .replace(/(Jer_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Jr $2:$3</a>")
-  .replace(/(Job_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Jó $2:$3</a>")
-  .replace(/(Joh_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Jo $2:$3</a>")
-  .replace(/(Joe_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Jl $2:$3</a>")
-  .replace(/(Jon_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Jn $2:$3</a>")
-  .replace(/(Jos_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Js $2:$3</a>")
-  .replace(/(Jud_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Jd $2:$3</a>")
-  .replace(/(Jdg_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Jz $2:$3</a>")
-  .replace(/(Lam_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Lm $2:$3</a>")
-  .replace(/(Lev_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Lv $2:$3</a>")
-  .replace(/(Luk_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Lc $2:$3</a>")
-  .replace(/(Mal_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ml $2:$3</a>")
-  .replace(/(Mar_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Mc $2:$3</a>")
-  .replace(/(Mat_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Mt $2:$3</a>")
-  .replace(/(Mic_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Mq $2:$3</a>")
-  .replace(/(Nah_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Na $2:$3</a>")
-  .replace(/(Neh_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ne $2:$3</a>")
-  .replace(/(Num_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Nm $2:$3</a>")
-  .replace(/(Oba_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Ob $2:$3</a>")
-  .replace(/(Hos_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Os $2:$3</a>")
-  .replace(/(Pro_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Pv $2:$3</a>")
-  .replace(/(Rom_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Rm $2:$3</a>")
-  .replace(/(Rth_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Rt $2:$3</a>")
-  .replace(/(Psa_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Sl $2:$3</a>")
-  .replace(/(Zep_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Sf $2:$3</a>")
-  .replace(/(Jas_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Tg $2:$3</a>")
-  .replace(/(Tit_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Tt $2:$3</a>")
-  .replace(/(Zec_)([0-9]{1,3}):(([0-9]{1,3})-([0-9]{1,3})|([0-9]{1,3}))/g, "<a target=\"_blank\" href=\"" + siteBiblia + version + "$1$2:$3\">Zc $2:$3</a>")
-  
-  document.getElementById('conteudo').innerHTML = res
-  }
-
-  function solveProblem(){
-  
-  var toBibliaOn = document.getElementById('conteudo').innerHTML
-  res = toBibliaOn
-  
-.replace(/\, ([0-9]{1,2})\:/g, "\; $1\:")
-.replace(/\, ([0-9]{3})\:/g, "\; $1\:")
-.replace(/\,\n([0-9]{1,2})\:/g, "\; $1\:")
-.replace(/At ([0-9]{1,2})/g, "Atos $1")
-.replace(/At\n([0-9]{1,2})/g, "Atos $1")
-.replace(/Fl ([0-9]{1,2}):/g, "Fp $1:")
-
-  document.getElementById('conteudo').innerHTML = res
-
-  }
-  </script>
-  
-  
-  
+</body>
