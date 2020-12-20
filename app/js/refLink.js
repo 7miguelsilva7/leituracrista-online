@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+// muda vírgula para ponto, onde necessário
+  $("#content").each(function() {
+    var html = $(this).html().toString();
+        html = html.replace(/([0-9]{1,3}), ([0-9]{1,3}:[0-9]{1,3})/gi, "$1; $2")
+        ;
+        $(this).html(html);
+    });
+// muda vírgula para ponto, onde necessário
+
+
   $books = "1 Cor.ntios,1 Cr.nicas,1 Jo.o,1 Pedro,1 Reis,1 Samuel,1 Tessalonicenses,1 Tim.teo,2 Cor.ntios,2 Cr.nicas,2 Jo.o,2 Pedro,2 Reis,2 Samuel,2 Tessalonicenses,2 Tim.teo,3 Jo.o,Ageu,Am.s,Apocalipse,Atos dos Ap.stolos,Atos,Cantares,Colossenses,Daniel,Deuteron.mio,Eclesiastes,Ef.sios,Esdras,Ester,.xodo,Exodo,.x,Ex,Ezequiel,Filemom,Filipenses,Gálatas,G.nesis,Genesis,Habacuque,Hebreus,Isa.as,Jeremias,Jó,Jo.o,Joel,Jonas,Josu.,Judas,Ju.zes,Lamenta..es,Lev.tico,Lucas,Malaquias,Marcos,Mateus,Miqueias,Naum,Neemias,N.meros,N.mero,Obadias,Oseias,Prov.rbios,Romanos,Rute,Salmos,Salmo,Sofonias,Tiago,Tito,Zacarias,1Cor.ntios,1Cr.nicas,1Jo.o,1Pedro,1Reis,1Samuel,1Tessalonicenses,1Tim.teo,2Cor.ntios,2Cr.nicas,2Jo.o,2Pedro,2Reis,2Samuel,2Tessalonicenses,2Tim.teo,3Jo.o,1 Co,1 Cr,1 Jo,1 Pe,1 Rs,1 Sm,1 Ts,1 Tm,2 Co,2 Cr,2 Jo,2 Pe,2 Rs,2 Sm,2 Ts,2 Tm,3 Jo,1Co,1Cr,1Jo,1Pe,1Pd,1 Pd,2Pd,2 Pd,1Rs,1Sm,1Ts,1Tm,2Co,2Cr,2Jo,2Pe,2Rs,2Sm,2Ts,2Tm,3Jo,Ag,Am,Ap,At,Ct,Cl,Dn,Dt,Ec,Ef,Ed,Et,.x,Ez,Fm,Fp,Gl,Gn,Hc,Hb,Is,Jr,Jó,Jo,Jl,Jn,Js,Jd,Jz,Lm,Lv,Lc,Ml,Mc,Mt,Mq,Na,Ne,Nm,Ob,Os,Pv,Rm,Rt,Sl,Sf,Tg,Tt,Zc,1 Co.,1 Cr.,1 Jo.,1 Pe.,1 Rs.,1 Sm.,1 Ts.,1 Tm.,2 Co.,2 Cr.,2 Jo.,2 Pe.,2 Rs.,2 Sm.,2 Ts.,2 Tm.,3 Jo.,1Co.,1Cr.,1Jo.,1Pe.,1Rs.,1Sm.,1Ts.,1Tm.,2Co.,2Cr.,2Jo.,2Pe.,2Rs.,2Sm.,2Ts.,2Tm.,3Jo.,Ag.,Am.,Ap.,At.,Ct.,Cl.,Dn.,Dt.,Ec.,Ef.,Ed.,Et.,.x.,Ez.,Fm.,Fp.,Gl.,Gn.,Hc.,Hb.,Is.,Jr.,Jó.,Jo.,Jl.,Jn.,Js.,Jd.,Jz.,Lm.,Lv.,Lc.,Ml.,Mc.,Mt.,Mq.,Na.,Ne.,Nm.,Ob.,Os.,Pv.,Rm.,Rt.,Sl.,Sf.,Tg.,Tt.,Zc."
   var searchTerm = $books.split(",");
   host = "https://bibliaonline.com.br/acf/"
@@ -7,17 +17,29 @@ $(document).ready(function(){
 $("#content").each(function() {
   capTerms = '(([0-9]{1,3}(\.|:)[0-9]{1,3}((,| ,|, |-| e )[0-9]{1,3}){1,});|([0-9]{1,3}(\.|:)[0-9]{1,3}(;|)))( [0-9]{1,3}(\.|:))'
   var html = $(this).html().toString();
+  
+  // adiciona nome de livros onde falta
   var pattern = "(" + searchTerm.join('|') + ") " + capTerms;
   var rg = new RegExp(pattern, 'ig');
-      var match = rg.exec(html);
+  var match = rg.exec(html);
+  // adiciona nome de livros onde falta
+
+  // adiciona dois pontos e vírgulas a livro
+  var pattern2 = "; (" + searchTerm.join('|') + " " + capTerms + ")";
+  var rg2 = new RegExp(pattern2, 'ig');
+  var match = rg2.exec(html);
+  // adiciona dois pontos e vírgulas a livro
+
   
       html = html
+  .replace(/([0-9]{1,3}), ([0-9]{1,3}:[0-9]{1,3})/gi, "$1; $2")
   .replace(/.xodo/ig, "Exodo")
   .replace(/Êxodo/ig, "Exodo")
   .replace(/Êx /gi, "Ex ")
   .replace(/G.nesis/gi, "Genesis")
-  .replace(/([0-9]{1,3}), ([0-9]{1,3}:[0-9]{1,3})/gi, "$1; $2")
   .replace(/([0-9]{1,3}:[0-9]{1,3}) e ([0-9]{1,3}:[0-9]{1,3})/gi,"$1; $2")
+
+  .replace(rg2, ';; $1 $2')
       
   .replace(rg, '$1 $2; $1$10')
   .replace(rg, '$1 $2; $1$10')
@@ -71,7 +93,6 @@ $("#content").each(function() {
               ; 
               $(this).attr("href", newUrl); 
   });
-
 
 // verifica valor de session e determina referencias 
 var session = localStorage.ref;
