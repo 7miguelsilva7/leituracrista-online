@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
-// muda vírgula para ponto, onde necessário
+// muda vírgula para ponto, onde necessário e faz outras configurações
   $("#content").each(function() {
     var html = $(this).html().toString();
         html = html.replace(/([0-9]{1,3}), ([0-9]{1,3}:[0-9]{1,3})/gi, "$1; $2")
+        .replace(/:([0-9]{1,3})-([0-9]{1,3}:[0-9]{1,3})/gi, " - $2")
+        .replace(/:([0-9]{1,3})–([0-9]{1,3}:[0-9]{1,3})/gi, " – $2")
         ;
         $(this).html(html);
     });
@@ -89,7 +91,18 @@ $("#content").each(function() {
               .replace(/\/1pd\//gi,"/1pe/")
               .replace(/\/2pd\//gi,"/2pe/")
               .replace(/\/N.mero\//gi, "/Numeros/")
+              
+              .replace(/(\/filemom)\/([0-9]{1,3})(?!\/)/gi, "$1/1/$2")
+              .replace(/(\/fm)\/([0-9]{1,3})(?!\/)/gi, "$1/1/$2")
 
+              .replace(/(\/2joao)\/([0-9]{1,3})(?!\/)/gi, "$1/1/$2")
+              .replace(/(\/2jo)\/([0-9]{1,3})(?!\/)/gi, "$1/1/$2")
+
+              .replace(/(\/3joao)\/([0-9]{1,3})(?!\/)/gi, "$1/1/$2")
+              .replace(/(\/3jo)\/([0-9]{1,3})(?!\/)/gi, "$1/1/$2")
+
+              .replace(/(\/judas)\/([0-9]{1,3})(?!\/)/gi, "$1/1/$2")
+              .replace(/(\/jd)\/([0-9]{1,3})(?!\/)/gi, "$1/1/$2")
               ; 
               $(this).attr("href", newUrl); 
   });
