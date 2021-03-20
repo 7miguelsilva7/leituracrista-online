@@ -330,7 +330,7 @@ endforeach;
     </div>
 </div>
 
-<div id="interlinear" class="inter">
+<div id="interlinear" class="inter verseTextP">
 </div>
 
 <script>
