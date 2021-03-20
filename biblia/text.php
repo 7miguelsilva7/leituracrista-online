@@ -496,7 +496,7 @@ $('#holdBtn').on("mousedown",function(){
 });
 </script>
 
-<div id="interlinear" class="inter">
+<div id="interlinear" class="inter verseTextP">
 </div>
 
 
