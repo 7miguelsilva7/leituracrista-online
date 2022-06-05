@@ -3,7 +3,7 @@
 $tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
 //verifica se o cookie está definido
 if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
-  $version="ARF";
+  $version="ACF";
   // document.cookie = "version=ARA; expires=Thu, 31 Dec 2099 23:59:59 GMT";
 } else {
   $version=$_COOKIE['version'];
@@ -259,7 +259,7 @@ endforeach;
 <p></p>
 (<a href="#"><span onClick="SetCookie('version','ARC95','365')" style="cursor:pointer"><b>ARC95</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Revista e Corrigida (1898, 1995). 
 <p></p>
-(<a href="#"><span onClick="SetCookie('version','ARF','365')" style="cursor:pointer"><b>ARF</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Corrigida e Revisada Fiel ao Texto Original - Sociedade Bíblica Trinitariana do Brasil. 
+(<a href="#"><span onClick="SetCookie('version','ACF','365')" style="cursor:pointer"><b>ACF</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no século XVII (ca. 1680), Edição Corrigida e Revisada Fiel ao Texto Original - Sociedade Bíblica Trinitariana do Brasil. 
 <p></p>
 (<a href="#"><span onClick="SetCookie('version','AIB','365')" style="cursor:pointer"><b>AIB</b></span></a>) Bíblia Sagrada, traduzida por João Ferreira de Almeida no Século XVII (ca. 1680) Edição Revisada pela Imprensa Bíblica Brasileira em 1967.
 <p></p>

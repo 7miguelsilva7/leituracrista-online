@@ -11,7 +11,7 @@ if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
     // Se localmente
     $host='localhost';
     $username='root';
-    $password='';
+    $password='root';
     $db='biblia';
 }
 
