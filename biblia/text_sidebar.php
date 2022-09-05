@@ -310,7 +310,7 @@ endforeach;
 <p></p>
 (<a href="#"><span onClick="SetCookie('version','ARC95','365')" style="cursor:pointer"><b>ARC95</b></span></a>) Edição Revista e Corrigida (1898, 1995). 
 <p></p>
-(<a href="#"><span onClick="SetCookie('version','ARF','365')" style="cursor:pointer"><b>ARF</b></span></a>) Edição Corrigida e Revisada Fiel ao Texto Original.
+(<a href="#"><span onClick="SetCookie('version','ACF','365')" style="cursor:pointer"><b>ACF</b></span></a>) Edição Corrigida e Revisada Fiel ao Texto Original.
 <p></p>
 (<a href="#"><span onClick="SetCookie('version','AIB','365')" style="cursor:pointer"><b>AIB</b></span></a>) Edição Revisada pela Imprensa Bíblica Brasileira em 1967.
 <p></p>

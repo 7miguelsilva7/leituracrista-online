@@ -286,6 +286,7 @@ endforeach;
 </form>
 </div>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
 <script>
   $(function($){   
@@ -306,6 +307,13 @@ endforeach;
     location.reload();
 
 	}
-
+  
+  var value = $.cookie("version");
+  if(value){
+  }else{
+    SetCookie('version','JND','365')
+    window.scrollTo(0, 0); 
+    location.reload();
+  }
 
 </script>
