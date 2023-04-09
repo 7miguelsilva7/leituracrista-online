@@ -1,5 +1,5 @@
 let CURRENT_CACHES = {
-  offline: 'offlineHinario-v3'
+  offline: 'offlineHinario-v4'
 };
 
 
