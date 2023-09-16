@@ -1,10 +1,11 @@
 <?php
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
 
 $tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
 //verifica se o cookie está definido
 if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
-  $version="ACF";
-  // document.cookie = "version=ARA; expires=Thu, 31 Dec 2099 23:59:59 GMT";
+  setcookie('version', $version, strtotime('Thu, 31 Dec 2099 23:59:59 GMT'));
 } else {
   $version=$_COOKIE['version'];
 }
@@ -282,7 +283,7 @@ endforeach;
 
 <div class="Topsearch"  align="center">
 <form action="busca.php?page=1">
-  <input style="" name="q" autofocus placeholder="Busca">
+  <input name="q" autofocus placeholder="Busca">
 </form>
 </div>
 
@@ -311,7 +312,7 @@ endforeach;
   var value = $.cookie("version");
   if(value){
   }else{
-    SetCookie('version','JND','365')
+    SetCookie('version','ACF','365')
     window.scrollTo(0, 0); 
     location.reload();
   }

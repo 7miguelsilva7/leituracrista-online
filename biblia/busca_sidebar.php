@@ -71,16 +71,41 @@ if (isset($_POST['page'])) {
 $no_of_records_per_page = 10;
 $offset = ($page-1) * $no_of_records_per_page;
 
+$keywords = explode(" ", $q);
+// Filtrando palavras-chave com mais de 3 caracteres
+$filteredKeywords = array_filter($keywords, function ($keyword) {
+  return mb_strlen($keyword, 'utf-8') > 3;
+});
+
+// Construindo a string de consulta com palavras-chave filtradas
+$searchQuery = implode(" +", $filteredKeywords);
+
+// Inicializando a parte da consulta que avalia a relevância
+$relevanceCases = "";
+for ($i = 0; $i < count($keywords); $i++) {
+    $relevanceCases .= "WHEN MATCH(text) AGAINST('+" . $keywords[$i] . "' IN BOOLEAN MODE) THEN 1 ";
+}
+
+
 
 // $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='$version'";
-$total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') 
+$total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q' IN BOOLEAN MODE) 
 and version='$version'";
 $result = mysqli_query($mysqli,$total_pages_sql);
 $total_rows = mysqli_fetch_array($result)[0];
 // echo $total_rows;
 $total_pages = ceil($total_rows / $no_of_records_per_page);
-$sql = "SELECT ord, book, cap, verse, version, text FROM biblias WHERE MATCH(text) AGAINST('$q')
-and version='$version' LIMIT $offset, $no_of_records_per_page";
+$sql = "SELECT ord, book, cap, verse, version, text, 
+    (CASE 
+        WHEN MATCH(text) AGAINST('+$searchQuery' IN BOOLEAN MODE) THEN " . (count($filteredKeywords) + 1) . "
+        $relevanceCases
+        ELSE 0 
+    END) AS relevance
+    FROM biblias
+    WHERE MATCH(text) AGAINST('$q' IN BOOLEAN MODE)
+    AND version='$version' 
+    ORDER BY relevance DESC
+    LIMIT $offset, $no_of_records_per_page";
 $res_data = mysqli_query($mysqli,$sql);
 while($row = mysqli_fetch_array($res_data)){
 
@@ -88,7 +113,7 @@ while($row = mysqli_fetch_array($res_data)){
   <a onClick="getCapsAndText(\'' . $version . '\','. $row['ord'] .',\''. $row['book'] . '\','. $row['cap'] .');setUrl(\'' . $version . '\','. $row['ord'] .','. $row['cap'] .',\'' . $row['book'] . '\');localStorage.setItem(\'verse\',\''. $row['verse'] .'\')"
   style="font-size:18px">'.$row['book']. ' '.$row['cap']. ':' . $row['verse'] .'&nbsp;</a>
   <div class="verseText" id="divVersesTexts">
-  <span class="verseTextP resultado" style="font-size:20px"  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
+  <span class="verseTextP resultado" style="font-size:20px"  id="verse'. $row['verse'] .'">' . $row['text'] . $row['relevance'] . '</span></div></p><hr>';
 
 }
 mysqli_close($mysqli);
@@ -169,7 +194,13 @@ $(".resultado").each(function() {
     var rg = new RegExp(pattern, 'ig');
     var match = rg.exec(html);
 
-    html = html.replace(rg, '<span style="color:red">$1</span>');
+    html = html.replace(rg, function(matched) {
+        if (matched.length > 2) {
+            return '<span style="color:red">' + matched + '</span>';
+        } else {
+            return matched;
+        }
+    });
     $(this).html(html);
 });
 

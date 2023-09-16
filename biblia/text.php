@@ -260,8 +260,6 @@ $v = $_GET['v']; //Order
 <a href="cap.php?o=<?php echo $o . '&b=' . $b ?>"><button>Capítulos</button></a>
 </div> -->
 
-
-
 <div align="center">
 <div align="left">
 

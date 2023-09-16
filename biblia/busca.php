@@ -182,7 +182,8 @@ div.cap{
 
 <body id="noScroll">
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 //verifica se o cookie está definido
 if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
@@ -191,7 +192,7 @@ if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 } else {
   $version=$_COOKIE['version'];
 }
-
+echo $version;
 // book and cap get
 $q = $_GET['q']; //book
 ?>
@@ -221,6 +222,20 @@ if (isset($_GET['page'])) {
 $no_of_records_per_page = 10;
 $offset = ($page-1) * $no_of_records_per_page;
 
+$keywords = explode(" ", $q);
+// Filtrando palavras-chave com mais de 3 caracteres
+$filteredKeywords = array_filter($keywords, function ($keyword) {
+  return mb_strlen($keyword, 'utf-8') > 3;
+});
+
+// Construindo a string de consulta com palavras-chave filtradas
+$searchQuery = implode(" +", $filteredKeywords);
+
+// Inicializando a parte da consulta que avalia a relevância
+$relevanceCases = "";
+for ($i = 0; $i < count($keywords); $i++) {
+    $relevanceCases .= "WHEN MATCH(text) AGAINST('+" . $keywords[$i] . "' IN BOOLEAN MODE) THEN 1 ";
+}
 
 // $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='ARA'";
 $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') 
@@ -229,19 +244,29 @@ $result = mysqli_query($mysqli,$total_pages_sql);
 $total_rows = mysqli_fetch_array($result)[0];
 // echo $total_rows;
 $total_pages = ceil($total_rows / $no_of_records_per_page);
-$sql = "SELECT ord, book, cap, verse, version, text FROM biblias WHERE MATCH(text) AGAINST('$q')
-and version='$version' LIMIT $offset, $no_of_records_per_page";
+$sql = "SELECT ord, book, cap, verse, version, text, 
+(CASE 
+    WHEN MATCH(text) AGAINST('+$searchQuery' IN BOOLEAN MODE) THEN " . (count($filteredKeywords) + 1) . "
+    $relevanceCases
+    ELSE 0 
+END) AS relevance
+FROM biblias
+WHERE MATCH(text) AGAINST('$q' IN BOOLEAN MODE)
+AND version='$version' 
+ORDER BY relevance DESC
+LIMIT $offset, $no_of_records_per_page";
 $res_data = mysqli_query($mysqli,$sql);
 while($row = mysqli_fetch_array($res_data)){
 
   echo '
   <a href="text.php?o=' . $row['ord'] . '&b=' . $row['book'] . '&c=' . $row['cap'] . '&v=' . $row['version'] . '#verse' . $row['verse'] . '" style="font-size:18px">'.$row['book']. ' '.$row['cap'] . ':' . $row['verse'] .'&nbsp;</a>
   <div class="verseText" id="divVersesTexts">
-  <span  id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
+  <span class="verseTextP resultado" id="verse'. $row['verse'] .'">' . $row['text'] . '</span></div></p><hr>';
 
 }
 mysqli_close($mysqli);
 ?>
+
 <div align="center">
 <ul class="pagination">
 <li><a href="?page=1&q=<?php echo $q?>">Início</a></li>
@@ -267,3 +292,25 @@ mysqli_close($mysqli);
   <input style="" name="q" value="<?php echo $q?>" autofocus placeholder="Busca">
 </form>
 </div>
+
+<script>
+  $q = '<?php echo $q ?>'
+  var searchTerm = $q.split(" ");
+
+  $(".resultado").each(function() {
+    var html = $(this).html().toString();
+    var pattern = "\\b(" + searchTerm.join('|') + ")\\b";
+    var rg = new RegExp(pattern, 'ig');
+    var match = rg.exec(html);
+
+    html = html.replace(rg, function(matched) {
+        if (matched.length > 2) {
+            return '<span style="color:red">' + matched + '</span>';
+        } else {
+            return matched;
+        }
+    });
+    $(this).html(html);
+});
+
+</script>
