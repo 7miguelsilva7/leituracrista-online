@@ -225,7 +225,7 @@ $offset = ($page-1) * $no_of_records_per_page;
 $keywords = explode(" ", $q);
 // Filtrando palavras-chave com mais de 3 caracteres
 $filteredKeywords = array_filter($keywords, function ($keyword) {
-  return mb_strlen($keyword, 'utf-8') > 3;
+  return mb_strlen($keyword, 'utf-8') > 2;
 });
 
 // Construindo a string de consulta com palavras-chave filtradas
@@ -233,8 +233,16 @@ $searchQuery = implode(" +", $filteredKeywords);
 
 // Inicializando a parte da consulta que avalia a relevância
 $relevanceCases = "";
-for ($i = 0; $i < count($keywords); $i++) {
-    $relevanceCases .= "WHEN MATCH(text) AGAINST('+" . $keywords[$i] . "' IN BOOLEAN MODE) THEN 1 ";
+// for ($i = 0; $i < count($keywords); $i++) {
+//   $relevanceCases .= "WHEN MATCH(text) AGAINST('+" . $keywords[$i] . "' IN BOOLEAN MODE) THEN 1 ";
+// }
+
+// Loop para construir as condições dinâmicas
+for ($i = count($filteredKeywords); $i > 0; $i--) {
+  // Formata a parte da consulta correspondente à quantidade de palavras
+  $formattedKeywords = implode(' +', array_slice($filteredKeywords, 0, $i));
+  // Constrói a condição WHEN com a contagem de palavras
+  $relevanceCases .= "WHEN MATCH(text) AGAINST('+$formattedKeywords' IN BOOLEAN MODE) THEN " . $i . "\n";
 }
 
 // $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='ARA'";
@@ -246,7 +254,7 @@ $total_rows = mysqli_fetch_array($result)[0];
 $total_pages = ceil($total_rows / $no_of_records_per_page);
 $sql = "SELECT ord, book, cap, verse, version, text, 
 (CASE 
-    WHEN MATCH(text) AGAINST('+$searchQuery' IN BOOLEAN MODE) THEN " . (count($filteredKeywords) + 1) . "
+    -- WHEN MATCH(text) AGAINST('+$searchQuery' IN BOOLEAN MODE) THEN " . (count($filteredKeywords) + 1) . "
     $relevanceCases
     ELSE 0 
 END) AS relevance

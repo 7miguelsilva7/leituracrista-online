@@ -1,103 +1,115 @@
 <html>
-    
+
 <head>
-<meta property="og:type" content="bible">
-<meta property="og:title" content="Bíblia Sagrada">
-<meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
-<meta property="og:image" content="img/bible.png">
+  <meta property="og:type" content="bible">
+  <meta property="og:title" content="Bíblia Sagrada">
+  <meta property="og:description" content="Bíblia Sagrada Online, pesquise e compare versões">
+  <meta property="og:image" content="img/bible.png">
   <title>Busca</title>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="img/bible.png">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/bible.png">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-<link rel="stylesheet" href="main.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
-<style>
-hr { margin:  10px 10px; }
-a {
-    color:blue;
-    text-decoration: none;
-    cursor:pointer;
+  <style>
+    hr {
+      margin: 10px 10px;
     }
-</style>
+
+    a {
+      color: blue;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
 
 </head>
 
 <body id="noScroll">
-<?
-$q = $_POST['txtsearch']; //book
-?>
-<script>
-  $('#Caps').html('<span style="font-size:20px" >Resultados para  <?php echo '<span style="color:blue;">"' . $q .'"</span></span>'?>');
-</script>
+  <?
+  $q = $_POST['txtsearch']; //book
+  ?>
+  <script>
+    $('#Caps').html('<span style="font-size:20px" >Resultados para  <?php echo '<span style="color:blue;">"' . $q . '"</span></span>' ?>');
+  </script>
 
-<?php
-$tomorrow_cookie  = mktime (0, 0, 0, date("m")  , date("d"), date("y")+5);
-//verifica se o cookie está definido
-if(!isset($_COOKIE['version'])) { // verifica se o cookie está definido
-  $version="ARF";
-  // setcookie("version", '$version', $tomorrow_cookie);
-} else {
-  $version=$_COOKIE['version'];
-}
+  <?php
+  $tomorrow_cookie  = mktime(0, 0, 0, date("m"), date("d"), date("y") + 5);
+  //verifica se o cookie está definido
+  if (!isset($_COOKIE['version'])) { // verifica se o cookie está definido
+    $version = "ARF";
+    // setcookie("version", '$version', $tomorrow_cookie);
+  } else {
+    $version = $_COOKIE['version'];
+  }
 
-// book and cap get
-?>
+  // book and cap get
+  ?>
 
-<div align="center">
-<div align="left">
+  <div align="center">
+    <div align="left">
 
-<?php
+<br>
+<!-- <div>
+  Filtros: 
+<button class="float-right">Antigo Testamento</button>
+<button class="float-right">Novo Testamento</button>
+</div> -->
+<br>
+      <?php
 
-?><br>
+      // connection
+      require_once 'dbconnect.php';
 
-<?php
+      if (isset($_POST['page'])) {
+        $page = $_POST['page'];
+      } else {
+        $page = 1;
+      }
+      $no_of_records_per_page = 10;
+      $offset = ($page - 1) * $no_of_records_per_page;
 
-// connection
-require_once 'dbconnect.php';  
+      $keywords = explode(" ", $q);
+      // Filtrando palavras-chave com mais de 3 caracteres
+      $filteredKeywords = array_filter($keywords, function ($keyword) {
+        return mb_strlen($keyword, 'utf-8') > 2;
+      });
 
-if (isset($_POST['page'])) {
-  $page = $_POST['page'];
-} else {
-  $page = 1;
-}
-$no_of_records_per_page = 10;
-$offset = ($page-1) * $no_of_records_per_page;
+      // Construindo a string de consulta com palavras-chave filtradas
+      $searchQuery = implode(" +", $filteredKeywords);
 
-$keywords = explode(" ", $q);
-// Filtrando palavras-chave com mais de 3 caracteres
-$filteredKeywords = array_filter($keywords, function ($keyword) {
-  return mb_strlen($keyword, 'utf-8') > 3;
-});
+      // Inicializando a parte da consulta que avalia a relevância
+      $relevanceCases = "";
+      // for ($i = 0; $i < count($keywords); $i++) {
+      //   $relevanceCases .= "WHEN MATCH(text) AGAINST('+" . $keywords[$i] . "' IN BOOLEAN MODE) THEN 1 ";
+      // }
 
-// Construindo a string de consulta com palavras-chave filtradas
-$searchQuery = implode(" +", $filteredKeywords);
+      // Loop para construir as condições dinâmicas
+      for ($i = count($filteredKeywords); $i > 0; $i--) {
+        // Formata a parte da consulta correspondente à quantidade de palavras
+        $formattedKeywords = implode(' +', array_slice($filteredKeywords, 0, $i));
+        // Constrói a condição WHEN com a contagem de palavras
+        $relevanceCases .= "WHEN MATCH(text) AGAINST('+$formattedKeywords' IN BOOLEAN MODE) THEN " . $i . "\n";
+      }
 
-// Inicializando a parte da consulta que avalia a relevância
-$relevanceCases = "";
-for ($i = 0; $i < count($keywords); $i++) {
-    $relevanceCases .= "WHEN MATCH(text) AGAINST('+" . $keywords[$i] . "' IN BOOLEAN MODE) THEN 1 ";
-}
-
-
-
-// $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='$version'";
-$total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q' IN BOOLEAN MODE) 
+      // $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q') and version='$version'";
+      $total_pages_sql = "SELECT COUNT(book), text FROM biblias WHERE MATCH(text) AGAINST('$q' IN BOOLEAN MODE) 
 and version='$version'";
-$result = mysqli_query($mysqli,$total_pages_sql);
-$total_rows = mysqli_fetch_array($result)[0];
-// echo $total_rows;
-$total_pages = ceil($total_rows / $no_of_records_per_page);
-$sql = "SELECT ord, book, cap, verse, version, text, 
+      $result = mysqli_query($mysqli, $total_pages_sql);
+      $total_rows = mysqli_fetch_array($result)[0];
+      // echo $total_rows;
+      $total_pages = ceil($total_rows / $no_of_records_per_page);
+      $sql = "SELECT ord, book, cap, verse, version, text, 
     (CASE 
-        WHEN MATCH(text) AGAINST('+$searchQuery' IN BOOLEAN MODE) THEN " . (count($filteredKeywords) + 1) . "
+        -- WHEN MATCH(text) AGAINST('+$searchQuery' IN BOOLEAN MODE) THEN " . (count($filteredKeywords) + 1) . "
         $relevanceCases
         ELSE 0 
     END) AS relevance
@@ -106,105 +118,153 @@ $sql = "SELECT ord, book, cap, verse, version, text,
     AND version='$version' 
     ORDER BY relevance DESC
     LIMIT $offset, $no_of_records_per_page";
-$res_data = mysqli_query($mysqli,$sql);
-while($row = mysqli_fetch_array($res_data)){
+      $res_data = mysqli_query($mysqli, $sql);
+      while ($row = mysqli_fetch_array($res_data)) {
 
-  echo '
-  <a onClick="getCapsAndText(\'' . $version . '\','. $row['ord'] .',\''. $row['book'] . '\','. $row['cap'] .');setUrl(\'' . $version . '\','. $row['ord'] .','. $row['cap'] .',\'' . $row['book'] . '\');localStorage.setItem(\'verse\',\''. $row['verse'] .'\')"
-  style="font-size:18px">'.$row['book']. ' '.$row['cap']. ':' . $row['verse'] .'&nbsp;</a>
+        echo '
+  <a onClick="getCapsAndText(\'' . $version . '\',' . $row['ord'] . ',\'' . $row['book'] . '\',' . $row['cap'] . ');setUrl(\'' . $version . '\',' . $row['ord'] . ',' . $row['cap'] . ',\'' . $row['book'] . '\');localStorage.setItem(\'verse\',\'' . $row['verse'] . '\')"
+  style="font-size:18px">' . $row['book'] . ' ' . $row['cap'] . ':' . $row['verse'] . '&nbsp;</a>
   <div class="verseText" id="divVersesTexts">
-  <span class="verseTextP resultado" style="font-size:20px"  id="verse'. $row['verse'] .'">' . $row['text'] . $row['relevance'] . '</span></div></p><hr>';
+  <span class="verseTextP resultado" style="font-size:20px"  id="verse' . $row['verse'] . '">' . $row['text'] . '</span></div></p><hr>';
+      }
+      mysqli_close($mysqli);
+      ?>
+      <div align="center">
+        <ul class="pagination">
+          <li><a onclick="start()">Início</a></li>
+          <li class="<?php if ($page <= 1) {
+                        echo 'disabled';
+                      } ?>">
+            <a onclick="backpage()">
+              << Anterior</a>
+          </li>
+          <li class="<?php if ($page >= $total_pages) {
+                        echo 'disabled';
+                      } ?>">
+            <a onclick="forward()">Próximo >></a>
+          </li>
+          <li><a onclick="end()">Fim</a></li>
+        </ul>
+      </div>
+      <!-- textos dos versiculo -->
 
-}
-mysqli_close($mysqli);
-?>
-<div align="center">
-<ul class="pagination">
-<li><a onclick="start()">Início</a></li>
-<li class="<?php if($page <= 1){ echo 'disabled'; } ?>">
-  <a onclick="backpage()" ><< Anterior</a>
-</li>
-<li class="<?php if($page >= $total_pages){ echo 'disabled'; } ?>">
-  <a  onclick="forward()" >Próximo >></a>
-</li>
-<li><a onclick="end()" >Fim</a></li>
-</ul>
-</div>
-<!-- textos dos versiculo -->
+    </div>
+  </div>
 
-</div>
-</div>
 
-<script>
-function backpage(){
-    event.preventDefault();
-    var page = '<?php echo $page?>'
-    if( page <= 1){ } else{
-    var q = '<?php echo $q ?>'
-    var p = '<?php echo $page - 1 ?>'
-    $("#Text").load("busca_sidebar.php", {"txtsearch": q, "page": p });
-    $('html, body').animate({scrollTop: 0}, 'fast');
-    return false;
+  <script>
+
+    function backpage() {
+      event.preventDefault();
+      var page = '<?php echo $page ?>'
+      if (page <= 1) {} else {
+        var q = '<?php echo $q ?>'
+        var p = '<?php echo $page - 1 ?>'
+        $("#Text").load("busca_sidebar.php", {
+          "txtsearch": q,
+          "page": p
+        });
+        $('html, body').animate({
+          scrollTop: 0
+        }, 'fast');
+        return false;
+
+      }
+    };
+
+    function forward() {
+      event.preventDefault();
+      var page = '<?php echo $page ?>'
+      var total_pages = '<?php echo $total_pages ?>'
+      if (page == total_pages) {} else {
+        var q = '<?php echo $q ?>'
+        var p = '<?php echo $page + 1 ?>'
+        $("#Text").load("busca_sidebar.php", {
+          "txtsearch": q,
+          "page": p
+        });
+        $('html, body').animate({
+          scrollTop: 0
+        }, 'fast');
+        return false;
+
+      }
+    };
+
+    function end() {
+      event.preventDefault();
+      var total_pages = '<?php echo $total_pages ?>'
+      var q = '<?php echo $q ?>'
+      $("#Text").load("busca_sidebar.php", {
+        "txtsearch": q,
+        "page": total_pages
+      });
+      $('html, body').animate({
+        scrollTop: 0
+      }, 'fast');
+      return false;
+    }
+
+    function start() {
+      event.preventDefault();
+      var q = '<?php echo $q ?>'
+      $("#Text").load("busca_sidebar.php", {
+        "txtsearch": q,
+        "page": 1
+      });
+      $('html, body').animate({
+        scrollTop: 0
+      }, 'fast');
+      return false;
 
     }
-};
 
-function forward(){
-    event.preventDefault();
-    var page = '<?php echo $page?>'
-    var total_pages = '<?php echo $total_pages?>'
-    if( page == total_pages){ } else {
-    var q = '<?php echo $q ?>'
-    var p = '<?php echo $page + 1 ?>'
-    $("#Text").load("busca_sidebar.php", {"txtsearch": q, "page": p });
-    $('html, body').animate({scrollTop: 0}, 'fast');
-    return false;
+    $(document).ready(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 'fast');
+    })
 
-    }
-};
+    $q = '<?php echo $q ?>'
+    var searchTerm = $q.split(" ");
 
-function end(){
-    event.preventDefault();
-    var total_pages = '<?php echo $total_pages?>'
-    var q = '<?php echo $q ?>'
-    $("#Text").load("busca_sidebar.php", {"txtsearch": q, "page": total_pages });
-    $('html, body').animate({scrollTop: 0}, 'fast');
-    return false;
-}
+    $(".resultado").each(function() {
+      var html = $(this).html().toString();
+      var pattern = "\\b(" + searchTerm.join('|') + ")\\b";
+      var rg = new RegExp(pattern, 'ig');
+      var match = rg.exec(html);
 
-function start(){
-    event.preventDefault();
-    var q = '<?php echo $q ?>'
-    $("#Text").load("busca_sidebar.php", {"txtsearch": q, "page": 1 });
-    $('html, body').animate({scrollTop: 0}, 'fast');
-    return false;
-
-}
-
-$(document).ready(function(){
-$('html, body').animate({scrollTop: 0}, 'fast');
-})
-
-$q = '<?php echo $q ?>'
-var searchTerm = $q.split(" ");
- 
-$(".resultado").each(function() {
-    var html = $(this).html().toString();
-    var pattern = "\\b(" + searchTerm.join('|') + ")\\b";
-    var rg = new RegExp(pattern, 'ig');
-    var match = rg.exec(html);
-
-    html = html.replace(rg, function(matched) {
+      html = html.replace(rg, function(matched) {
         if (matched.length > 2) {
-            return '<span style="color:red">' + matched + '</span>';
+          return '<span style="color:red">' + matched + '</span>';
         } else {
-            return matched;
+          return matched;
         }
+      });
+      $(this).html(html);
     });
-    $(this).html(html);
-});
 
-</script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-<br><br>
-<br><br>
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+
+  </script>
+
+  <br><br>
+  <br><br>
