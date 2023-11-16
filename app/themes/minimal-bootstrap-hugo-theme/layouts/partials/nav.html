@@ -1,0 +1,7 @@
+<nav style="position:fixed; width:100%;top:0" class="custom-navbar">
+  <div class="container">
+    {{ range .Site.Menus.nav }}
+    <a onclick="removeNameBookActived()" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+  </div>
+</nav>

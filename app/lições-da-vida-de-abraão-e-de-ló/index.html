@@ -430,7 +430,7 @@ window.cookieconsent.initialise({
 
 
   var str = document.getElementById("TableOfContents").innerHTML; 
-  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  var res = str.replace(/<a href="http://.*">/g, '').replace(/"></a>/g, '">');
   document.getElementById("TableOfContents").innerHTML = res;
 
 

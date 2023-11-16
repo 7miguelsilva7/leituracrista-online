@@ -1,0 +1,19 @@
+let CURRENT_CACHES_RIE = {
+  offline_rie: 'readinenglish-APP'
+};
+
+
+const OFFLINE_URL_RIE = 'index.html';
+
+var OFFLINE_URLs_RIE = [
+  '/app/readinenglish/',
+  '/app/readinenglish/index.html',
+  '/app/readinenglish/css/main.css',
+  '/app/readinenglish/css/normalize.css',
+  '/app/readinenglish/css/typo.css',
+  '/app/readinenglish/js/custom.js',
+  '/app/readinenglish/img/voltar.png',
+  '/app/readinenglish/img/up.png',
+  '/app/readinenglish/closeWindow.html',
+  
+  

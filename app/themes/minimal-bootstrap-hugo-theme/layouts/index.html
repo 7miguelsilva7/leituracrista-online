@@ -1,0 +1,49 @@
+{{- define "main" -}}
+
+{{ $homepage := "Home" }}
+{{ with .Site.Menus.nav }}
+  {{ range first 1 . }}
+    {{ $homepage = .Name }}
+  {{ end }}
+{{ end }}
+<h1>{{ $homepage }}</h1>
+
+{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ range $pages.ByPublishDate }}
+  <p>
+    <span id="{{ .Title | markdownify }}"></span>
+    <script>
+     var livroStatusTitle = '{{ .Title | markdownify }} | Leitura Cristã'.concat('Status')
+      if(localStorage.hasOwnProperty(livroStatusTitle))
+      {
+        if (localStorage.getItem(livroStatusTitle) == '1')
+      {
+        var element = document.getElementById("{{ .Title | markdownify }}");
+        element.innerHTML = '<span style="color:#04B404">LIDO</span>';
+      }}
+    </script>
+    <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    <!-- {{ $customDateFormat := "January 2, 2006" }}
+    {{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
+    <br>
+    <small class="text-secondary">{{ .PublishDate.Format $customDateFormat }}</small> -->
+    {{ partial "tags" . }}
+    {{ if eq .Site.Params.showPostSummary true }}
+    <br>
+    {{ .Summary }}
+    {{ end }}
+  </p>
+{{ end }}
+
+<script>
+// Leva vai ao livro mais recente
+if(localStorage.hasOwnProperty('NameBookActivedKey')){
+  location.replace(localStorage.getItem('NameBookActivedKey'));
+  }
+
+
+</script>
+
+<!-- <script type="text/javascript" src="../app/js/custom.js"></script> -->
+
+{{- end -}}

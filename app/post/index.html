@@ -208,7 +208,7 @@ blockquote,
 
 
   <p>
-    <a href="https://leituracrista.com/app/1pedro-darby-mysword/">1ª Pedro - Estudo Sobre a Palavra de Deus</a>
+    <a href='../closeWindow.html' target='closeWindow' onclick="window.open('https://leituracrista.com/app/1pedro-darby-mysword/')">1ª Pedro - Estudo Sobre a Palavra de Deus</a>
     
     
     
@@ -1244,7 +1244,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://leituracrista.com/app/tiago-darby-mysword/">Estudo Sobre a Palavra de Deus - Tiago</a>
+    <a href='../closeWindow.html' target='closeWindow' onclick="window.open('https://leituracrista.com/app/tiago-darby-mysword/')">Estudo Sobre a Palavra de Deus - Tiago</a>
     
     
     
@@ -2119,7 +2119,7 @@ window.cookieconsent.initialise({
 
 
   var str = document.getElementById("TableOfContents").innerHTML; 
-  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  var res = str.replace(/<a href="http://.*">/g, '').replace(/"></a>/g, '">');
   document.getElementById("TableOfContents").innerHTML = res;
 
 

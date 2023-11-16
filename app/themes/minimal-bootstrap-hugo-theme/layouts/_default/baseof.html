@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+{{ partial "head.html" . }}
+
+
+<body onscroll="onscrolling()" onload="saveBookActived()">
+  {{ partial "nav.html" . }}
+  
+  <div class="container" style="font-size: 20px;font-family: Helvetica; color:#474747">
+    <br><br><br>
+    {{ partial "tags" . }}
+    <p></p><p></p>
+    <p></p><p></p>
+  {{ .TableOfContents }}
+<p>   </p>
+  </div>
+
+  <div id="content" style="font-size: 20px;font-family: Helvetica; color:#474747" class="container">
+    <article>
+      {{ block "main" . }}{{ end }}
+    </article>
+  </div>
+
+  {{ partial "bootstrap-js.html" . }}
+  {{ partial "google-analytics-async.html" . }}
+  {{ partial "mastodon-js.html" . }}
+  {{ partial "cookie-consent.html" . }}
+
+<script>
+  $(document).ready(function () {
+
+      //Verifica se a Janela está no topo
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+    //Onde a mágia acontece! rs
+      $('.scrollToTop').click(function () {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 200);
+          return false;
+      });
+
+
+// retira links de bíblia
+  var str = document.getElementById("TableOfContents").innerHTML; 
+  var res = str.replace(/<a href="http:\/\/.*">/g, '').replace(/"><\/a>/g, '">');
+  document.getElementById("TableOfContents").innerHTML = res;
+
+
+
+  // convert UL to Select
+  // SCROLL TO ANCHOR
+  function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 80);
+  }
+}
+  
+  $("ul").addClass("selectdropdown");
+
+  $('ul.selectdropdown').each(function(){
+    var list=$(this),
+        select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+      window.open($(this).val(),'_self')
+      offsetAnchor();
+    });
+    $('>li a', this).each(function(){
+      var option=$(document.createElement('option'))
+      .appendTo(select)
+      .val(this.href)
+      .html($(this).html());
+      if($(this).attr('class') === 'selected'){
+        option.attr('selected','selected');
+      }
+      $("select").addClass("selectdropdown");
+    });
+    list.remove();
+    });
+// fim convert UL to Select
+
+// remove links da página  
+    $('#content a').contents().unwrap();
+
+  });
+
+</script>
+
+<!-- topo da página -->
+<style>
+  .scrollToTop {
+      position: fixed;
+      bottom: 8px;
+      right: 20px;
+      display: none;
+  }
+  .selectdropdown {
+  white-space: nowrap; 
+  width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+</style>
+<a href="#"  class="scrollToTop">
+  <h5 align="center " style="font-size: 18px;">^ <br>Topo</h5>
+</a>
+
+<script src="../js/refLink.js"></script>
+
+
+</body>
+
+
+
+</html>
