@@ -246,7 +246,7 @@ if (!isset($_COOKIE['version'])) { // verifica se o cookie está definido
 
 <body id="noScroll">
 
-  <?
+  <?php
   if (!empty($_GET['b'])) {
     $b = $_GET['b']; //book
     $c = $_GET['c']; //cap
@@ -255,7 +255,7 @@ if (!isset($_COOKIE['version'])) { // verifica se o cookie está definido
   } else { ?>
 
     <script>
-      var v = '<? echo $version ?>'
+      var v = "<?php echo $version ?>"
       var o = 1
       var b = 'Gênesis'
       var c = 1
@@ -272,7 +272,7 @@ if (!isset($_COOKIE['version'])) { // verifica se o cookie está definido
       location.reload();
     </script>
 
-  <? } ?>
+  <?php } ?>
 
   <div id='box'>
 
@@ -359,7 +359,7 @@ if (!isset($_COOKIE['version'])) { // verifica se o cookie está definido
   <div id="interlinear" class="inter verseTextP">
   </div>
 
-  <script>
+    <script>
     // Script de Busca
     $(document).on("submit", "#formSearch", function(event) {
       event.preventDefault();

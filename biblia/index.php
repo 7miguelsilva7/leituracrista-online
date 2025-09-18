@@ -172,7 +172,6 @@ textarea:focus, input:focus, select:focus {
 
 a:link{
 text-decoration: none;
-active: 
 }
 
 div.book{

@@ -15,7 +15,7 @@ group by cap
 $stm = $PDO->prepare($sql);  
 $stm->execute();  
 $dados = $stm->fetchAll(PDO::FETCH_OBJ);  
-?><span style="font-size:16px;">Capítulos <?
+?><span style="font-size:16px;">Capítulos <?php
 foreach($dados as $reg):
   if ($cap == $reg->cap){
   echo '<a style="cursor:pointer;width:20px; color:red;font-weight:bold" onClick="getText(\'' . $version .'\',' . $reg->ord . ',' . $reg->cap . ',\''. $reg->book . '\')"> ' . $reg->cap . ' </a>';
