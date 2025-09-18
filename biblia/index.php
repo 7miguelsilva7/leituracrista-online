@@ -184,6 +184,38 @@ div.book{
 </head>
 <body>
 
+<!-- Modal -->
+<div class="modal fade" id="alertaModal" tabindex="-1" role="dialog" aria-labelledby="alertaModalLabel" aria-hidden="true" style="z-index:9999;">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="background:yellow;">
+      <div class="modal-header" style="border-bottom:0;">
+        <h5 class="modal-title" id="alertaModalLabel" style="font-size:18px;">Aviso</h5>
+      </div>
+      <div class="modal-body text-center" style="font-size:16px;">
+        Em breve esta ferramenta estará disponível apenas no endereço nabiblia.net. <br>
+        Acesse o novo endereço clicando no link <a target="_blank" style="color:blue" href="https://nabiblia.net"><b>nabiblia.net</b></a>
+      </div>
+      <div class="modal-footer" style="border-top:0;">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    localStorage.removeItem('alertaModalShown');
+    localStorage.removeItem('alertaModalDate');
+    if (!localStorage.getItem('alertaModalShown') || new Date().toDateString() !== localStorage.getItem('alertaModalDate')) {
+      $('#alertaModal').modal('show');
+      localStorage.setItem('alertaModalShown', 'true');
+      localStorage.setItem('alertaModalDate', new Date().toDateString());
+    } else {
+      $('#alertaModal').modal('hide');
+    }
+  });
+</script>
+
 <!-- <div class="config" style="position: fixed; cursor: pointer; width:40; height:40; top:20; right:20;"><img width="40" src="img/config.png" alt="Configurações"></div>    -->
 
 <hr><hr><hr>
